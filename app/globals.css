@@ -251,3 +251,8 @@
 .calendar-more{text-align:center;padding:25px}
 .calendar-more button{padding:12px 20px;background:#6d5b50;color:#fff;border:0}
 @media(max-width:600px){.calendar-archive .sculpt-calendar-intro{flex-wrap:wrap}.calendar-collapse-all{margin:0}.calendar-year>h3{font-size:32px}.calendar-month-events{padding-left:5px}.calendar-artwork{gap:12px}.calendar-artwork-image{width:70px;min-width:70px}.calendar-kit-link{font-size:20px}}
+
+/* Release lifecycle badges, distinct from retailer stock */
+.unified-badge.closed{background:#eee6e2;color:#846e60}
+.unified-badge.delayed{background:#f3e6de;color:#975e45}
+.sculpt-quick-filters{scrollbar-width:thin}
