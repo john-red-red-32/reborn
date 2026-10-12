@@ -18,7 +18,7 @@ export const nikkiKits:VerifiedKit[]=[
     "sourceProductId": "15668445085856",
     "editionSize": 2500,
     "sizeDescription": "Approx 19/20” (bent legs)",
-    "edition": "Artist lists 2,500 produced",
+    "edition": "Artist-listed edition size: 2,500",
     "variants": [
       {
         "id": "56944007348384",
@@ -59,7 +59,7 @@ export const nikkiKits:VerifiedKit[]=[
     "editionSize": 3500,
     "sizeDescription": "Approx 19/20” (bent legs)",
     "headCircumference": "12.5”",
-    "edition": "Artist lists 3,500 produced",
+    "edition": "Artist-listed edition size: 3,500",
     "variants": [
       {
         "id": "52365247250592",
@@ -100,7 +100,7 @@ export const nikkiKits:VerifiedKit[]=[
     "editionSize": 3700,
     "sizeDescription": "Approx 24/25” (bent legs)",
     "headCircumference": "16”",
-    "edition": "Artist lists 3,700 produced",
+    "edition": "Artist-listed edition size: 3,700",
     "variants": [
       {
         "id": "45233953734816",
@@ -132,7 +132,7 @@ export const nikkiKits:VerifiedKit[]=[
     "editionSize": 3700,
     "sizeDescription": "Approx 17/18” (bent legs)",
     "headCircumference": "13.5”",
-    "edition": "Artist lists 3,700 produced",
+    "edition": "Artist-listed edition size: 3,700",
     "variants": [
       {
         "id": "37381843419296",
@@ -173,7 +173,7 @@ export const nikkiKits:VerifiedKit[]=[
     "editionSize": 400,
     "sizeDescription": "Approx 17.5”",
     "headCircumference": "12”",
-    "edition": "Artist lists 400 produced",
+    "edition": "Artist-listed edition size: 400",
     "variants": [
       {
         "id": "31666268110900",
@@ -214,7 +214,7 @@ export const nikkiKits:VerifiedKit[]=[
     "editionSize": 600,
     "sizeDescription": "Approx 19” (very curled legs)",
     "headCircumference": "13.5”",
-    "edition": "Artist lists 600 produced",
+    "edition": "Artist-listed edition size: 600",
     "variants": [
       {
         "id": "31238634668084",
@@ -244,7 +244,7 @@ export const nikkiKits:VerifiedKit[]=[
     "variantSource": "shopify",
     "sourceProductId": "4355636690996",
     "editionSize": 180,
-    "edition": "Artist lists 180 produced",
+    "edition": "Artist-listed edition size: 180",
     "variants": [
       {
         "id": "31238602752052",
@@ -320,7 +320,7 @@ export const nikkiKits:VerifiedKit[]=[
     "variantSource": "shopify",
     "sourceProductId": "4355623190580",
     "editionSize": 180,
-    "edition": "Artist lists 180 produced",
+    "edition": "Artist-listed edition size: 180",
     "variants": [
       {
         "id": "31238554452020",
@@ -359,7 +359,7 @@ export const nikkiKits:VerifiedKit[]=[
     "variantSource": "shopify",
     "sourceProductId": "4355615227956",
     "editionSize": 500,
-    "edition": "Artist lists 500 produced",
+    "edition": "Artist-listed edition size: 500",
     "variants": [
       {
         "id": "31238528499764",
@@ -399,7 +399,7 @@ export const nikkiKits:VerifiedKit[]=[
     "sourceProductId": "4355603529780",
     "editionSize": 700,
     "headCircumference": "14.5\"",
-    "edition": "Artist lists 700 produced",
+    "edition": "Artist-listed edition size: 700",
     "variants": [
       {
         "id": "31238468042804",
@@ -439,7 +439,7 @@ export const nikkiKits:VerifiedKit[]=[
     "sourceProductId": "4355591372852",
     "editionSize": 450,
     "headCircumference": "14.5\"",
-    "edition": "Artist lists 450 produced",
+    "edition": "Artist-listed edition size: 450",
     "variants": [
       {
         "id": "35466513875104",
@@ -518,7 +518,7 @@ export const nikkiKits:VerifiedKit[]=[
     "editionSize": 600,
     "sizeDescription": "Approx 20”",
     "headCircumference": "13.5”",
-    "edition": "Artist lists 600 produced",
+    "edition": "Artist-listed edition size: 600",
     "variants": [
       {
         "id": "31238286901300",
@@ -559,7 +559,7 @@ export const nikkiKits:VerifiedKit[]=[
     "editionSize": 900,
     "sizeDescription": "Approx 20”",
     "headCircumference": "13.5”",
-    "edition": "Artist lists 900 produced",
+    "edition": "Artist-listed edition size: 900",
     "variants": [
       {
         "id": "36340324532384",
