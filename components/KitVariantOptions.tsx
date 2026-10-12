@@ -37,7 +37,7 @@ export default function KitVariantOptions({variants,offers,basePhotos=[]}:{varia
   const minTotal=from&&minPrices.length?Math.min(...minPrices):undefined;
   return <div key={offer.url} className="kit-variant-offer">
    <div><strong>{offer.retailer}</strong><small>{status==="preorder"?"Pre-order":status==="available"?"Listed available":"Unavailable"} · Checked {offer.checkedAt}</small>
-   {from&&minTotal!==undefined&&<small>Different configurations from <LocalizedOfferPrice total={minTotal} originalCurrency={offer.currency} compact showDeposit={false}/></small>}
+   {from&&minTotal!==undefined&&<small>From <LocalizedOfferPrice total={minTotal} originalCurrency={offer.currency} compact showDeposit={false}/></small>}
    {offer.note&&<small>{offer.note}</small>}</div>
    <div className="offer-amount">{total!==undefined||deposit!==undefined?<LocalizedOfferPrice total={total} deposit={deposit} balance={status==="preorder"?balance:undefined} originalCurrency={offer.currency} showDeposit={status==="preorder"}/>:<strong>Price not confirmed for this option</strong>}
    <a href={option?.url??offer.url} target="_blank" rel="noopener noreferrer">Check seller ↗</a></div>
