@@ -60,24 +60,31 @@ def match_candidates(artist_id, source_names, accepted_names, approved_aliases=N
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--gallery", required=True, help="A Wix gallery evidence JSON file")
-    parser.add_argument("--manifest", required=True, help="Reviewed artist name/alias manifest JSON")
+    parser.add_argument("--gallery", required=True, help="Wix gallery evidence JSON file")
+    parser.add_argument("--manifest", help="Specific reviewed artist source manifest")
+    parser.add_argument("--manifest-dir", default="config/artist-sources", help="Registered artist manifests")
     parser.add_argument("--out", required=True)
     args = parser.parse_args()
     gallery = json.loads(Path(args.gallery).read_text(encoding="utf-8"))
-    manifest = json.loads(Path(args.manifest).read_text(encoding="utf-8"))
-    allowed = {h.lower() for h in manifest["allowed_hosts"]}
     host = (urlsplit(gallery.get("source", "")).hostname or "").lower()
-    if host not in allowed:
-        raise SystemExit("Source host does not match this artist's reviewed manifest")
-    output = match_candidates(manifest["artist_id"],
-        [c["title"] for c in gallery.get("kit_candidates", [])],
-        manifest["accepted_names"], manifest.get("approved_aliases"))
-    output.update({"source":gallery.get("source"),"source_scan_at":gallery.get("source_scan_at"),
-                   "manifest_version":manifest.get("version",1)})
+    paths = [Path(args.manifest)] if args.manifest else sorted(Path(args.manifest_dir).glob("*.json"))
+    matching = [m for path in paths if host in {h.lower() for h in (m := json.loads(path.read_text(encoding="utf-8")))["allowed_hosts"]}]
+    if len(matching) > 1:
+        raise SystemExit("Multiple artist manifests claim this host")
+    if matching:
+        manifest = matching[0]
+        output = match_candidates(manifest["artist_id"],
+            [c["title"] for c in gallery.get("kit_candidates", [])],
+            manifest["accepted_names"], manifest.get("approved_aliases"))
+        output["manifest_version"] = manifest.get("version", 1)
+    else:
+        output = {"status": "source_unregistered", "source": gallery.get("source"),
+                  "warning": "No registered artist manifest for host; no identity matches inferred."}
+    output.update({"source": gallery.get("source"), "source_scan_at": gallery.get("source_scan_at")})
     out = Path(args.out)
-    out.parent.mkdir(parents=True,exist_ok=True)
-    out.write_text(json.dumps(output,ensure_ascii=False,indent=2),encoding="utf-8")
-    print(f"{output['artist_id']}: {len(output['exact_and_approved_matches'])} matched, {len(output['requires_review'])} review items")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Artist identity: {output.get('artist_id', 'unregistered')}, matched={len(output.get('exact_and_approved_matches', []))}, review={len(output.get('requires_review', []))}")
+
 if __name__ == "__main__":
     main()
