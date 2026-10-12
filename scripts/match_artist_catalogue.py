@@ -68,7 +68,11 @@ def main():
     gallery = json.loads(Path(args.gallery).read_text(encoding="utf-8"))
     host = (urlsplit(gallery.get("source", "")).hostname or "").lower()
     paths = [Path(args.manifest)] if args.manifest else sorted(Path(args.manifest_dir).glob("*.json"))
-    matching = [m for path in paths if host in {h.lower() for h in (m := json.loads(path.read_text(encoding="utf-8")))["allowed_hosts"]}]
+    matching = []
+    for path in paths:
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+        if host in {h.lower() for h in manifest["allowed_hosts"]}:
+            matching.append(manifest)
     if len(matching) > 1:
         raise SystemExit("Multiple artist manifests claim this host")
     if matching:
