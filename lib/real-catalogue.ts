@@ -3,8 +3,9 @@
  * Sources checked 2026-10-12. Attribution links are to original publisher sites.
  * No third-party images reproduced.
  */
+import type {SculptLifecycle} from "./sculpt-status";
 export type VerifiedArtist = {slug:string;name:string;website:string;bio:string;source:string};
-export type VerifiedKit = {slug:string;name:string;artistSlug:string;edition?:string;releaseInfo?:string;releaseDate?:string;preorderOpensAt?:string;statusLabel:string;statusChecked:string;photos?:{url:string;credit:string;source:string}[];sources:{label:string;url:string;kind:"artist"|"retailer"}[]};
+export type VerifiedKit = {slug:string;name:string;artistSlug:string;edition?:string;releaseInfo?:string;releaseDate?:string;preorderOpensAt?:string;preorderClosesAt?:string;lifecycle?:SculptLifecycle;lifecycleCheckedAt?:string;lifecycleSource?:string;productionRun?:number;statusLabel:string;statusChecked:string;photos?:{url:string;credit:string;source:string}[];sources:{label:string;url:string;kind:"artist"|"retailer"}[]};
 export const artists:VerifiedArtist[]=[
 {slug:"cassie-ann-love",name:"Cassie Ann Love",website:"https://www.cassielove.co.uk/",bio:"Independent reborn sculptor, previously known as Cassie Brace. Her official portfolio includes a range of original reborn doll sculpts.",source:"https://www.cassielove.co.uk/"},
 {slug:"joanna-kazmierczak",name:"Joanna Kazmierczak",website:"https://macphersoncrafts.com/",bio:"Sculptor whose Willow release is featured by specialist retailer MacPherson Arts & Crafts.",source:"https://macphersoncrafts.com/"},
