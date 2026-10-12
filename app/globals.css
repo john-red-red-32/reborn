@@ -256,3 +256,12 @@
 .unified-badge.closed{background:#eee6e2;color:#846e60}
 .unified-badge.delayed{background:#f3e6de;color:#975e45}
 .sculpt-quick-filters{scrollbar-width:thin}
+
+/* Sculptor directory: searchable, portrait-led without fabricated headshots */
+.sculptor-directory-tools{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 26px}
+.sculptor-directory-search{display:flex;align-items:center;gap:11px;flex:1;max-width:500px;height:49px;padding:0 15px;background:#fffdf9;border:1px solid var(--line);color:#9b8574}
+.sculptor-directory-search input{border:0;background:transparent;outline:0;width:100%;min-width:0;font:13px "DM Sans",sans-serif;color:#604f43}
+.sculptor-directory-tools>span{font-size:11px;color:#a08f80;white-space:nowrap}
+.artist-directory-picture{position:relative;overflow:hidden}
+.artist-directory-picture img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;filter:none}
+@media(max-width:580px){.sculptor-directory-tools{align-items:stretch;flex-direction:column;gap:8px}.sculptor-directory-search{max-width:none;width:100%}.sculptor-directory-tools>span{align-self:flex-end}}
