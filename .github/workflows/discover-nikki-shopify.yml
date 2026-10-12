@@ -28,7 +28,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: artist-discovery-${{ github.ref }}
+  group: nikki-shopify-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
