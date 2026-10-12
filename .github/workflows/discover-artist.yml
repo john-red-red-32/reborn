@@ -32,11 +32,18 @@ jobs:
             --max-pages "$MAX_PAGES" \
             --delay 1.5 \
             --out artifacts/source-discovery.json
+      - name: Generate source-attributed sculpt candidates
+        run: |
+          python3 scripts/extract_sculpt_candidates.py \
+            --input artifacts/source-discovery.json \
+            --out artifacts/extraction-candidates.json
       - name: Upload discovery evidence for manual review
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: artist-discovery
-          path: artifacts/source-discovery.json
+          path: |
+            artifacts/source-discovery.json
+            artifacts/extraction-candidates.json
           retention-days: 30
           if-no-files-found: warn
