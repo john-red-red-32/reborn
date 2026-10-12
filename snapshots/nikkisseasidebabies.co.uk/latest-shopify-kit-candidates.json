@@ -1,7 +1,7 @@
 {
   "adapter": "shopify-original-kit-v1",
   "source": "https://nikkisseasidebabies.co.uk/",
-  "observed_at": "2026-10-12T22:41:53.025306+00:00",
+  "observed_at": "2026-10-12T22:43:09.739068+00:00",
   "platform_detected": {
     "shopify": 12
   },
@@ -10,8 +10,8 @@
       "shopify_product_id": "15808873726112",
       "handle": "prototype-lola-complete-baby-reborn-by-nikki-johnston-sculpted-by-beatriz-clemente",
       "source_url": "https://nikkisseasidebabies.co.uk/products/prototype-lola-complete-baby-reborn-by-nikki-johnston-sculpted-by-beatriz-clemente",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "PROTOTYPE Lola - Reborn by Nikki Johnston, Sculpted by Beatriz Clemente",
       "sculpt_name_candidate": "PROTOTYPE Lola - Reborn by Nikki Johnston, Sculpted by Beatriz Clemente",
       "sculpt_name_basis": "retailer_title_review",
@@ -37,7 +37,7 @@
           "option_values": {
             "Options": "Full Payment - £2100"
           },
-          "price_native": null,
+          "price_native": 2100.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -51,7 +51,7 @@
           "option_values": {
             "Options": "Layaway Non-Refundable Deposit Payment - £733 - Total Price £2200"
           },
-          "price_native": null,
+          "price_native": 733.0,
           "compare_at_price_native": null,
           "price_kind": "deposit_only",
           "availability_flag": false,
@@ -60,7 +60,9 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
+      "distinct_full_prices": [
+        2100.0
+      ],
       "from_price_native": null,
       "has_genuine_full_price_range": false,
       "seller_availability_flags": [
@@ -403,8 +405,8 @@
       "shopify_product_id": "15668445085856",
       "handle": "christopher-in-stock-copy",
       "source_url": "https://nikkisseasidebabies.co.uk/products/christopher-in-stock-copy",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "NEW - Mabel - Pre Order",
       "sculpt_name_candidate": "Mabel",
       "sculpt_name_basis": "artist_kit_spec",
@@ -430,7 +432,7 @@
           "option_values": {
             "Options": "Mabel Kit - NO Belly Plate"
           },
-          "price_native": null,
+          "price_native": 99.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": true,
@@ -444,7 +446,7 @@
           "option_values": {
             "Options": "Mabel Kit - WITH Belly Plate"
           },
-          "price_native": null,
+          "price_native": 115.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": true,
@@ -458,18 +460,21 @@
           "option_values": {
             "Options": "Belly Plate ONLY - NO KIT!!"
           },
-          "price_native": null,
+          "price_native": 16.0,
           "compare_at_price_native": null,
-          "price_kind": "full_purchase",
+          "price_kind": "accessory_only",
           "availability_flag": true,
           "image_id": "43158118596768",
           "source_product_url": "https://nikkisseasidebabies.co.uk/products/christopher-in-stock-copy"
         }
       ],
       "variant_total": 3,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        99.0,
+        115.0
+      ],
+      "from_price_native": 99.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         true,
         true,
@@ -813,8 +818,8 @@
       "shopify_product_id": "15193550913696",
       "handle": "prototype-wes-sculpted-by-mitre-kooi",
       "source_url": "https://nikkisseasidebabies.co.uk/products/prototype-wes-sculpted-by-mitre-kooi",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "PROTOTYPE Wes Reborn by Nikki Johnston - Sculpted by Mitre Kooi",
       "sculpt_name_candidate": "PROTOTYPE Wes Reborn by Nikki Johnston - Sculpted by Mitre Kooi",
       "sculpt_name_basis": "retailer_title_review",
@@ -840,7 +845,7 @@
           "option_values": {
             "Option": "Prototype Wes ONLY"
           },
-          "price_native": null,
+          "price_native": 2250.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -854,7 +859,7 @@
           "option_values": {
             "Option": "Prototype Wes AND Elsie - £200 DISCOUNT"
           },
-          "price_native": null,
+          "price_native": 4300.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -863,9 +868,12 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        2250.0,
+        4300.0
+      ],
+      "from_price_native": 2250.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         false,
         false
@@ -1210,8 +1218,8 @@
       "shopify_product_id": "15193549701280",
       "handle": "prototype-elsie-sculpted-by-mirte-kooi",
       "source_url": "https://nikkisseasidebabies.co.uk/products/prototype-elsie-sculpted-by-mirte-kooi",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "PROTOTYPE Elsie Reborn by Nikki Johnston - Sculpted by Mirte Kooi",
       "sculpt_name_candidate": "PROTOTYPE Elsie Reborn by Nikki Johnston - Sculpted by Mirte Kooi",
       "sculpt_name_basis": "retailer_title_review",
@@ -1237,7 +1245,7 @@
           "option_values": {
             "Option": "Prototype Elsie ONLY"
           },
-          "price_native": null,
+          "price_native": 2250.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -1251,7 +1259,7 @@
           "option_values": {
             "Option": "Prototype Elsie AND Wes - £200 DISCOUNT"
           },
-          "price_native": null,
+          "price_native": 4300.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -1260,9 +1268,12 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        2250.0,
+        4300.0
+      ],
+      "from_price_native": 2250.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         false,
         false
@@ -1607,8 +1618,8 @@
       "shopify_product_id": "15049931915424",
       "handle": "prototype-farrah-reborn-by-nikki-johnston",
       "source_url": "https://nikkisseasidebabies.co.uk/products/prototype-farrah-reborn-by-nikki-johnston",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "PROTOTYPE Farrah - Complete Baby Reborn by Nikki Johnston, Sculpted by Ebtehal Abul",
       "sculpt_name_candidate": "PROTOTYPE Farrah - Complete Baby Reborn by Nikki Johnston, Sculpted by Ebtehal Abul",
       "sculpt_name_basis": "retailer_title_review",
@@ -1634,7 +1645,7 @@
           "option_values": {
             "Options": "Full Payment - £1999"
           },
-          "price_native": null,
+          "price_native": 1999.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -1648,7 +1659,7 @@
           "option_values": {
             "Options": "Layaway Non-Refundable Deposit Payment - £700 - Total Price £2100"
           },
-          "price_native": null,
+          "price_native": 700.0,
           "compare_at_price_native": null,
           "price_kind": "deposit_only",
           "availability_flag": false,
@@ -1657,7 +1668,9 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
+      "distinct_full_prices": [
+        1999.0
+      ],
       "from_price_native": null,
       "has_genuine_full_price_range": false,
       "seller_availability_flags": [
@@ -1936,8 +1949,8 @@
       "shopify_product_id": "15049904357536",
       "handle": "christopher-pre-order-may-2025",
       "source_url": "https://nikkisseasidebabies.co.uk/products/christopher-pre-order-may-2025",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Christopher - IN STOCK",
       "sculpt_name_candidate": "Christopher",
       "sculpt_name_basis": "artist_kit_spec",
@@ -1963,7 +1976,7 @@
           "option_values": {
             "Options": "NO Belly Plate"
           },
-          "price_native": null,
+          "price_native": 99.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": true,
@@ -1977,7 +1990,7 @@
           "option_values": {
             "Options": "WITH Belly Plate"
           },
-          "price_native": null,
+          "price_native": 115.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -1991,18 +2004,21 @@
           "option_values": {
             "Options": "Belly Plate ONLY - NO KIT!!"
           },
-          "price_native": null,
+          "price_native": 16.0,
           "compare_at_price_native": null,
-          "price_kind": "full_purchase",
+          "price_kind": "accessory_only",
           "availability_flag": false,
           "image_id": null,
           "source_product_url": "https://nikkisseasidebabies.co.uk/products/christopher-pre-order-may-2025"
         }
       ],
       "variant_total": 3,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        99.0,
+        115.0
+      ],
+      "from_price_native": 99.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         true,
         false,
@@ -2344,8 +2360,8 @@
       "shopify_product_id": "13600336380064",
       "handle": "reborn-kovu",
       "source_url": "https://nikkisseasidebabies.co.uk/products/reborn-kovu",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Reborn Baby Kovu",
       "sculpt_name_candidate": "Reborn Baby Kovu",
       "sculpt_name_basis": "retailer_title_review",
@@ -2369,7 +2385,7 @@
           "seller_sku": null,
           "label": "Default Title",
           "option_values": {},
-          "price_native": null,
+          "price_native": 1950.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -2378,7 +2394,9 @@
         }
       ],
       "variant_total": 1,
-      "distinct_full_prices": [],
+      "distinct_full_prices": [
+        1950.0
+      ],
       "from_price_native": null,
       "has_genuine_full_price_range": false,
       "seller_availability_flags": [
@@ -2408,8 +2426,8 @@
       "shopify_product_id": "13600332382368",
       "handle": "reborn-baby-luciano",
       "source_url": "https://nikkisseasidebabies.co.uk/products/reborn-baby-luciano",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Reborn Baby Luciano",
       "sculpt_name_candidate": "Reborn Baby Luciano",
       "sculpt_name_basis": "retailer_title_review",
@@ -2433,7 +2451,7 @@
           "seller_sku": null,
           "label": "Default Title",
           "option_values": {},
-          "price_native": null,
+          "price_native": 2130.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -2442,7 +2460,9 @@
         }
       ],
       "variant_total": 1,
-      "distinct_full_prices": [],
+      "distinct_full_prices": [
+        2130.0
+      ],
       "from_price_native": null,
       "has_genuine_full_price_range": false,
       "seller_availability_flags": [
@@ -2472,8 +2492,8 @@
       "shopify_product_id": "12529735598240",
       "handle": "prototype-winnie-complete-baby-reborn-by-nikki-johnston-sculpted-by-cassie-brace",
       "source_url": "https://nikkisseasidebabies.co.uk/products/prototype-winnie-complete-baby-reborn-by-nikki-johnston-sculpted-by-cassie-brace",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Prototype Winnie  - Complete Baby Reborn by Nikki Johnston, Sculpted by Cassie Brace",
       "sculpt_name_candidate": "Prototype Winnie  - Complete Baby Reborn by Nikki Johnston, Sculpted by Cassie Brace",
       "sculpt_name_basis": "retailer_title_review",
@@ -2499,7 +2519,7 @@
           "option_values": {
             "Payment in Full": "Payment In Full - GBP £2500"
           },
-          "price_native": null,
+          "price_native": 2500.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -2513,7 +2533,7 @@
           "option_values": {
             "Payment in Full": "Layaway Deposit Payment - GBP £867 - Total Price GBP £2600"
           },
-          "price_native": null,
+          "price_native": 867.0,
           "compare_at_price_native": null,
           "price_kind": "deposit_only",
           "availability_flag": false,
@@ -2522,7 +2542,9 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
+      "distinct_full_prices": [
+        2500.0
+      ],
       "from_price_native": null,
       "has_genuine_full_price_range": false,
       "seller_availability_flags": [
@@ -2761,8 +2783,8 @@
       "shopify_product_id": "9569592705184",
       "handle": "pickle-pre-order-1st-11th-july",
       "source_url": "https://nikkisseasidebabies.co.uk/products/pickle-pre-order-1st-11th-july",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "PICKLE - (Sold Out)",
       "sculpt_name_candidate": "Pickle",
       "sculpt_name_basis": "artist_kit_spec",
@@ -2788,7 +2810,7 @@
           "option_values": {
             "Deposit or Full Payment": "Pickle Kit"
           },
-          "price_native": null,
+          "price_native": 119.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -2797,7 +2819,9 @@
         }
       ],
       "variant_total": 1,
-      "distinct_full_prices": [],
+      "distinct_full_prices": [
+        119.0
+      ],
       "from_price_native": null,
       "has_genuine_full_price_range": false,
       "seller_availability_flags": [
@@ -3139,8 +3163,8 @@
       "shopify_product_id": "5912079597728",
       "handle": "gift-card-all-values",
       "source_url": "https://nikkisseasidebabies.co.uk/products/gift-card-all-values",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Gift Card - All Values",
       "sculpt_name_candidate": "Gift Card - All Values",
       "sculpt_name_basis": "retailer_title_review",
@@ -3166,7 +3190,7 @@
           "option_values": {
             "Denominations": "£10.00"
           },
-          "price_native": null,
+          "price_native": 10.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": true,
@@ -3180,7 +3204,7 @@
           "option_values": {
             "Denominations": "£25.00"
           },
-          "price_native": null,
+          "price_native": 25.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": true,
@@ -3194,7 +3218,7 @@
           "option_values": {
             "Denominations": "£50.00"
           },
-          "price_native": null,
+          "price_native": 50.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": true,
@@ -3208,7 +3232,7 @@
           "option_values": {
             "Denominations": "£75.00"
           },
-          "price_native": null,
+          "price_native": 75.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": true,
@@ -3222,7 +3246,7 @@
           "option_values": {
             "Denominations": "£100.00"
           },
-          "price_native": null,
+          "price_native": 100.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": true,
@@ -3236,7 +3260,7 @@
           "option_values": {
             "Denominations": "£150.00"
           },
-          "price_native": null,
+          "price_native": 150.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": true,
@@ -3245,9 +3269,16 @@
         }
       ],
       "variant_total": 6,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        10.0,
+        25.0,
+        50.0,
+        75.0,
+        100.0,
+        150.0
+      ],
+      "from_price_native": 10.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         true,
         true,
@@ -3280,10 +3311,10 @@
       "shopify_product_id": "5694458495136",
       "handle": "new-delilah-pre-order-in-november",
       "source_url": "https://nikkisseasidebabies.co.uk/products/new-delilah-pre-order-in-november",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Delilah - (Sold Out)",
-      "sculpt_name_candidate": "Delilah , by Nikki Johnston",
+      "sculpt_name_candidate": "Delilah",
       "sculpt_name_basis": "artist_kit_spec",
       "source_product_type": "",
       "classification": "original_kit_candidate",
@@ -3307,7 +3338,7 @@
           "option_values": {
             "Pre-Order": "NO Belly Plate"
           },
-          "price_native": null,
+          "price_native": 95.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -3321,7 +3352,7 @@
           "option_values": {
             "Pre-Order": "WITH Belly Plate"
           },
-          "price_native": null,
+          "price_native": 119.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -3330,9 +3361,12 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        95.0,
+        119.0
+      ],
+      "from_price_native": 95.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         false,
         false
@@ -3657,8 +3691,8 @@
       "shopify_product_id": "5845209612448",
       "handle": "delilah-belly-plate-pre-order",
       "source_url": "https://nikkisseasidebabies.co.uk/products/delilah-belly-plate-pre-order",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Delilah Belly Plate (Temporarily Out Of Stock)",
       "sculpt_name_candidate": "Delilah Belly Plate (Temporarily Out Of Stock",
       "sculpt_name_basis": "retailer_title_review",
@@ -3682,7 +3716,7 @@
           "seller_sku": null,
           "label": "Default Title",
           "option_values": {},
-          "price_native": null,
+          "price_native": 15.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -3691,7 +3725,9 @@
         }
       ],
       "variant_total": 1,
-      "distinct_full_prices": [],
+      "distinct_full_prices": [
+        15.0
+      ],
       "from_price_native": null,
       "has_genuine_full_price_range": false,
       "seller_availability_flags": [
@@ -3793,8 +3829,8 @@
       "shopify_product_id": "5627976122528",
       "handle": "19-21-belly-plate",
       "source_url": "https://nikkisseasidebabies.co.uk/products/19-21-belly-plate",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "18-21” Belly Plate - (Temporarily Out Of Stock)",
       "sculpt_name_candidate": "18-21” Belly Plate - (Temporarily Out Of Stock",
       "sculpt_name_basis": "retailer_title_review",
@@ -3818,7 +3854,7 @@
           "seller_sku": null,
           "label": "Default Title",
           "option_values": {},
-          "price_native": null,
+          "price_native": 15.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -3827,7 +3863,9 @@
         }
       ],
       "variant_total": 1,
-      "distinct_full_prices": [],
+      "distinct_full_prices": [
+        15.0
+      ],
       "from_price_native": null,
       "has_genuine_full_price_range": false,
       "seller_availability_flags": [
@@ -3921,14 +3959,14 @@
       "shopify_product_id": "4506891059252",
       "handle": "advanced-rooting-level-3-coming-soon",
       "source_url": "https://nikkisseasidebabies.co.uk/products/advanced-rooting-level-3-coming-soon",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Advanced Rooting (Level 3 - Coming Soon)",
       "sculpt_name_candidate": "Advanced Rooting (Level 3 - Coming Soon",
       "sculpt_name_basis": "retailer_title_review",
       "source_product_type": "Course",
-      "classification": "needs_review",
-      "classification_basis": "insufficient_explicit_kit_evidence",
+      "classification": "non_kit_excluded",
+      "classification_basis": "title_non_kit",
       "description": "Ready for hyper-realistic hair? I've spent years refining my process, and this course will teach you a ton of secrets which took me years to learn through trial and error, saving you time and helping you take your rooting to the next level! Let's begin my Advanced Rooting Course! (Level 2 → Level 3) In this course you'll have access to 7 exclusive video tutorials created by me for you, spread over 7 weeks for you to study at your own pace. The course is a combination of full-length video tutorials and quizzes. These tutorials will include all the information you need to take your rooting from Intermediate (Level 2) to Advanced! (Level 3). If you are experienced but still developing your rooting technique, I would highley recommend taking Level 2 prior to the Level 3 to make sure you have the intermediate knowledge needed to get the most from Level 3! I've already purchased, let me in!",
       "published_kit_facts": {
         "published_kit_length": null,
@@ -3946,7 +3984,7 @@
           "seller_sku": "NSB-OLC-RC3",
           "label": "Default Title",
           "option_values": {},
-          "price_native": null,
+          "price_native": 75.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -3955,7 +3993,9 @@
         }
       ],
       "variant_total": 1,
-      "distinct_full_prices": [],
+      "distinct_full_prices": [
+        75.0
+      ],
       "from_price_native": null,
       "has_genuine_full_price_range": false,
       "seller_availability_flags": [
@@ -3985,14 +4025,14 @@
       "shopify_product_id": "4506880213044",
       "handle": "intermediate-rooting-level-2-coming-soon",
       "source_url": "https://nikkisseasidebabies.co.uk/products/intermediate-rooting-level-2-coming-soon",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Intermediate Rooting (Level 2 - Coming Soon)",
       "sculpt_name_candidate": "Intermediate Rooting (Level 2 - Coming Soon",
       "sculpt_name_basis": "retailer_title_review",
       "source_product_type": "Course",
-      "classification": "needs_review",
-      "classification_basis": "insufficient_explicit_kit_evidence",
+      "classification": "non_kit_excluded",
+      "classification_basis": "title_non_kit",
       "description": "Ready to take your rooting up a notch? I've spent years refining my process, and this course will teach you a ton of things which took me years to learn through trial and error, saving you time and helping you improve the quality of your rooting from beginner to intermediate! Let's perfect that technique! (Level 1 → Level 2) In this course you'll have access to 14 exclusive video tutorials created by me for you, spread over 7 weeks for you to study at your own pace. The course is a combination of full-length video tutorials and quizzes. These tutorials will include all the information you need to take your rooting from Beginner (Level 1) to Intermediate! (Level 2). If you are new to reborning, I would suggest you take the Level 1 before the Level 2 to make sure you have the basics in place, as basics aren't covered in this course! I've already purchased, let me in!",
       "published_kit_facts": {
         "published_kit_length": null,
@@ -4010,7 +4050,7 @@
           "seller_sku": "NSB-OLC-RC2",
           "label": "Default Title",
           "option_values": {},
-          "price_native": null,
+          "price_native": 75.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -4019,7 +4059,9 @@
         }
       ],
       "variant_total": 1,
-      "distinct_full_prices": [],
+      "distinct_full_prices": [
+        75.0
+      ],
       "from_price_native": null,
       "has_genuine_full_price_range": false,
       "seller_availability_flags": [
@@ -4057,14 +4099,14 @@
       "shopify_product_id": "4506847281204",
       "handle": "rooting-for-beginners",
       "source_url": "https://nikkisseasidebabies.co.uk/products/rooting-for-beginners",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Beginners Rooting (Level 1 - Coming Soon)",
       "sculpt_name_candidate": "Beginners Rooting (Level 1 - Coming Soon",
       "sculpt_name_basis": "retailer_title_review",
       "source_product_type": "Course",
-      "classification": "needs_review",
-      "classification_basis": "insufficient_explicit_kit_evidence",
+      "classification": "non_kit_excluded",
+      "classification_basis": "title_non_kit",
       "description": "Always wanted to learn the basics of Rooting? I started reborning when I was 14 years old and I've learnt a lot since then! I've spent years refining my process, and this course shares that process with you so you can jump ahead of the curve and pick up the basics you need to hit the ground running with your rooting! Let's root together! (Level 1) In this course you'll have access to 14 exclusive video tutorials created by me for you, spread over 7 weeks which you can study at your own pace. The course is a combination of full-length video tutorials and quizzes. I will talk you through everything ! From my favourite, tried & tested materials to the intricate rooting process I use on all my prototypes. I've already purchased, let me in!",
       "published_kit_facts": {
         "published_kit_length": null,
@@ -4082,7 +4124,7 @@
           "seller_sku": "NSB-OLC-RC1",
           "label": "Default Title",
           "option_values": {},
-          "price_native": null,
+          "price_native": 75.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -4091,7 +4133,9 @@
         }
       ],
       "variant_total": 1,
-      "distinct_full_prices": [],
+      "distinct_full_prices": [
+        75.0
+      ],
       "from_price_native": null,
       "has_genuine_full_price_range": false,
       "seller_availability_flags": [
@@ -4137,8 +4181,8 @@
       "shopify_product_id": "4466633605172",
       "handle": "vincent-1",
       "source_url": "https://nikkisseasidebabies.co.uk/products/vincent-1",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Vincent - (Sold Out)",
       "sculpt_name_candidate": "Vincent",
       "sculpt_name_basis": "artist_kit_spec",
@@ -4164,8 +4208,8 @@
           "option_values": {
             "Belly Plate Option": "Vincent - WITHOUT BELLY PLATE"
           },
-          "price_native": null,
-          "compare_at_price_native": null,
+          "price_native": 68.0,
+          "compare_at_price_native": 85.0,
           "price_kind": "full_purchase",
           "availability_flag": false,
           "image_id": null,
@@ -4178,8 +4222,8 @@
           "option_values": {
             "Belly Plate Option": "Vincent - WITH BELLY PLATE"
           },
-          "price_native": null,
-          "compare_at_price_native": null,
+          "price_native": 79.0,
+          "compare_at_price_native": 99.0,
           "price_kind": "full_purchase",
           "availability_flag": false,
           "image_id": null,
@@ -4187,9 +4231,12 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        68.0,
+        79.0
+      ],
+      "from_price_native": 68.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         false,
         false
@@ -4378,8 +4425,8 @@
       "shopify_product_id": "4449640087604",
       "handle": "online-tutorials",
       "source_url": "https://nikkisseasidebabies.co.uk/products/online-tutorials",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Online Tutorials",
       "sculpt_name_candidate": "Online Tutorials",
       "sculpt_name_basis": "retailer_title_review",
@@ -4405,7 +4452,7 @@
           "option_values": {
             "Type Option": "Painting Tutorial Only (£75)"
           },
-          "price_native": null,
+          "price_native": 75.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": true,
@@ -4419,7 +4466,7 @@
           "option_values": {
             "Type Option": "Rooting Tutorial Only (£75)"
           },
-          "price_native": null,
+          "price_native": 75.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": true,
@@ -4433,8 +4480,8 @@
           "option_values": {
             "Type Option": "Painting & Rooting Tutorials (10% off!)"
           },
-          "price_native": null,
-          "compare_at_price_native": null,
+          "price_native": 135.0,
+          "compare_at_price_native": 150.0,
           "price_kind": "full_purchase",
           "availability_flag": true,
           "image_id": "13942270033972",
@@ -4442,9 +4489,12 @@
         }
       ],
       "variant_total": 3,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        75.0,
+        135.0
+      ],
+      "from_price_native": 75.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         true,
         true,
@@ -4688,10 +4738,10 @@
       "shopify_product_id": "4355643998260",
       "handle": "trouble",
       "source_url": "https://nikkisseasidebabies.co.uk/products/trouble",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Trouble (Sold Out)",
-      "sculpt_name_candidate": "Trouble by Nikki Johnston",
+      "sculpt_name_candidate": "Trouble",
       "sculpt_name_basis": "artist_kit_spec",
       "source_product_type": "",
       "classification": "original_kit_candidate",
@@ -4715,7 +4765,7 @@
           "option_values": {
             "Belly Plate Option": "Trouble without Belly Plate"
           },
-          "price_native": null,
+          "price_native": 20.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -4729,7 +4779,7 @@
           "option_values": {
             "Belly Plate Option": "Trouble with Belly Plate"
           },
-          "price_native": null,
+          "price_native": 104.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -4738,9 +4788,12 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        20.0,
+        104.0
+      ],
+      "from_price_native": 20.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         false,
         false
@@ -4945,8 +4998,8 @@
       "shopify_product_id": "4355636690996",
       "handle": "lexi",
       "source_url": "https://nikkisseasidebabies.co.uk/products/lexi",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Lexi (Sold Out)",
       "sculpt_name_candidate": "Lexi",
       "sculpt_name_basis": "retailer_title_review",
@@ -4972,7 +5025,7 @@
           "option_values": {
             "Belly Plate Option": "Lexi with Belly Plate"
           },
-          "price_native": null,
+          "price_native": 77.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -4986,7 +5039,7 @@
           "option_values": {
             "Belly Plate Option": "Lexi without Belly Plate"
           },
-          "price_native": null,
+          "price_native": 65.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -4995,9 +5048,12 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        65.0,
+        77.0
+      ],
+      "from_price_native": 65.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         false,
         false
@@ -5146,8 +5202,8 @@
       "shopify_product_id": "4355629187124",
       "handle": "isabella",
       "source_url": "https://nikkisseasidebabies.co.uk/products/isabella",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Isabella (Sold Out)",
       "sculpt_name_candidate": "Isabella",
       "sculpt_name_basis": "retailer_title_review",
@@ -5173,7 +5229,7 @@
           "option_values": {
             "Belly Plate Option": "Isabella with Belly Plate"
           },
-          "price_native": null,
+          "price_native": 104.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -5187,7 +5243,7 @@
           "option_values": {
             "Belly Plate Option": "Isabella without Belly Plate"
           },
-          "price_native": null,
+          "price_native": 89.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -5196,9 +5252,12 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        89.0,
+        104.0
+      ],
+      "from_price_native": 89.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         false,
         false
@@ -5371,8 +5430,8 @@
       "shopify_product_id": "4355623190580",
       "handle": "evie",
       "source_url": "https://nikkisseasidebabies.co.uk/products/evie",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Evie (Sold Out)",
       "sculpt_name_candidate": "Evie",
       "sculpt_name_basis": "retailer_title_review",
@@ -5398,7 +5457,7 @@
           "option_values": {
             "Belly Plate Option": "Evie with Belly Plate"
           },
-          "price_native": null,
+          "price_native": 84.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -5412,7 +5471,7 @@
           "option_values": {
             "Belly Plate Option": "Evie without Belly Plate"
           },
-          "price_native": null,
+          "price_native": 69.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -5421,9 +5480,12 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        69.0,
+        84.0
+      ],
+      "from_price_native": 69.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         false,
         false
@@ -5564,8 +5626,8 @@
       "shopify_product_id": "4355615227956",
       "handle": "princess-charlotte",
       "source_url": "https://nikkisseasidebabies.co.uk/products/princess-charlotte",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Princess Charlotte (Sold Out)",
       "sculpt_name_candidate": "Princess Charlotte",
       "sculpt_name_basis": "retailer_title_review",
@@ -5591,7 +5653,7 @@
           "option_values": {
             "Belly Plate Option": "Charlotte with Belly Plate"
           },
-          "price_native": null,
+          "price_native": 104.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -5605,7 +5667,7 @@
           "option_values": {
             "Belly Plate Option": "Charlotte without Belly Plate"
           },
-          "price_native": null,
+          "price_native": 89.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -5614,9 +5676,12 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        89.0,
+        104.0
+      ],
+      "from_price_native": 89.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         false,
         false
@@ -5773,8 +5838,8 @@
       "shopify_product_id": "4355603529780",
       "handle": "robin-awake",
       "source_url": "https://nikkisseasidebabies.co.uk/products/robin-awake",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Robin, Awake (Sold Out)",
       "sculpt_name_candidate": "Robin, Awake",
       "sculpt_name_basis": "retailer_title_review",
@@ -5800,7 +5865,7 @@
           "option_values": {
             "Belly Plate Option": "Robin Awake without Belly Plate"
           },
-          "price_native": null,
+          "price_native": 89.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -5814,7 +5879,7 @@
           "option_values": {
             "Belly Plate Option": "Robin Awake with Belly Plate"
           },
-          "price_native": null,
+          "price_native": 104.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -5823,9 +5888,12 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        89.0,
+        104.0
+      ],
+      "from_price_native": 89.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         false,
         false
@@ -6006,8 +6074,8 @@
       "shopify_product_id": "4355591372852",
       "handle": "robin-asleep",
       "source_url": "https://nikkisseasidebabies.co.uk/products/robin-asleep",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Robin Asleep (Sold Out)",
       "sculpt_name_candidate": "Robin Asleep",
       "sculpt_name_basis": "retailer_title_review",
@@ -6033,7 +6101,7 @@
           "option_values": {
             "Belly Plate Option": "Robin Asleep Without Belly Plate"
           },
-          "price_native": null,
+          "price_native": 89.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -6047,7 +6115,7 @@
           "option_values": {
             "Belly Plate Option": "Robin Asleep With Belly Plate"
           },
-          "price_native": null,
+          "price_native": 104.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -6061,9 +6129,9 @@
           "option_values": {
             "Belly Plate Option": "BOTH Robin Awake & Asleep - NO Belly Plate"
           },
-          "price_native": null,
+          "price_native": 168.0,
           "compare_at_price_native": null,
-          "price_kind": "full_purchase",
+          "price_kind": "multi_kit_bundle",
           "availability_flag": false,
           "image_id": null,
           "source_product_url": "https://nikkisseasidebabies.co.uk/products/robin-asleep"
@@ -6075,18 +6143,21 @@
           "option_values": {
             "Belly Plate Option": "BOTH Robin Awake & Asleep - WITH Belly Plates"
           },
-          "price_native": null,
+          "price_native": 198.0,
           "compare_at_price_native": null,
-          "price_kind": "full_purchase",
+          "price_kind": "multi_kit_bundle",
           "availability_flag": false,
           "image_id": null,
           "source_product_url": "https://nikkisseasidebabies.co.uk/products/robin-asleep"
         }
       ],
       "variant_total": 4,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        89.0,
+        104.0
+      ],
+      "from_price_native": 89.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         false,
         false,
@@ -6317,8 +6388,8 @@
       "shopify_product_id": "4355567157300",
       "handle": "kiara",
       "source_url": "https://nikkisseasidebabies.co.uk/products/kiara",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Kiara - (Sold Out)",
       "sculpt_name_candidate": "Kiara",
       "sculpt_name_basis": "artist_kit_spec",
@@ -6344,8 +6415,8 @@
           "option_values": {
             "Belly Plate Option": "Kiara - No Belly Plate"
           },
-          "price_native": null,
-          "compare_at_price_native": null,
+          "price_native": 68.0,
+          "compare_at_price_native": 85.0,
           "price_kind": "full_purchase",
           "availability_flag": false,
           "image_id": null,
@@ -6358,8 +6429,8 @@
           "option_values": {
             "Belly Plate Option": "Kiara - With Belly Plate"
           },
-          "price_native": null,
-          "compare_at_price_native": null,
+          "price_native": 79.0,
+          "compare_at_price_native": 99.0,
           "price_kind": "full_purchase",
           "availability_flag": false,
           "image_id": null,
@@ -6367,9 +6438,12 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        68.0,
+        79.0
+      ],
+      "from_price_native": 68.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         false,
         false
@@ -6574,10 +6648,10 @@
       "shopify_product_id": "4355553689652",
       "handle": "posy",
       "source_url": "https://nikkisseasidebabies.co.uk/products/posy",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Posy (Sold Out)",
-      "sculpt_name_candidate": "Posy by Nikki Johnston Find her twin here",
+      "sculpt_name_candidate": "Posy",
       "sculpt_name_basis": "artist_kit_spec",
       "source_product_type": "",
       "classification": "original_kit_candidate",
@@ -6601,7 +6675,7 @@
           "option_values": {
             "Belly Plate Option": "Posy without Belly Plate"
           },
-          "price_native": null,
+          "price_native": 89.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -6615,7 +6689,7 @@
           "option_values": {
             "Belly Plate Option": "Posy with Belly Plate"
           },
-          "price_native": null,
+          "price_native": 104.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -6624,9 +6698,12 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        89.0,
+        104.0
+      ],
+      "from_price_native": 89.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         false,
         false
@@ -6767,10 +6844,10 @@
       "shopify_product_id": "4355543466036",
       "handle": "jack",
       "source_url": "https://nikkisseasidebabies.co.uk/products/jack",
-      "source_scan_at": "2026-10-12T22:41:53.025306+00:00",
-      "source_sha256": "4676a6398696dcd46db29b40e4c5c18a3e94207ae0adf393fa01de9685a1633c",
+      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
+      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
       "name": "Jack (Sold Out)",
-      "sculpt_name_candidate": "Jack by Nikki Johnston Find his twin here",
+      "sculpt_name_candidate": "Jack",
       "sculpt_name_basis": "artist_kit_spec",
       "source_product_type": "",
       "classification": "original_kit_candidate",
@@ -6794,7 +6871,7 @@
           "option_values": {
             "Belly Plate Option": "Jack No Belly Plate"
           },
-          "price_native": null,
+          "price_native": 85.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -6808,7 +6885,7 @@
           "option_values": {
             "Belly Plate Option": "Jack With Belly Plate"
           },
-          "price_native": null,
+          "price_native": 99.0,
           "compare_at_price_native": null,
           "price_kind": "full_purchase",
           "availability_flag": false,
@@ -6817,9 +6894,12 @@
         }
       ],
       "variant_total": 2,
-      "distinct_full_prices": [],
-      "from_price_native": null,
-      "has_genuine_full_price_range": false,
+      "distinct_full_prices": [
+        85.0,
+        99.0
+      ],
+      "from_price_native": 85.0,
+      "has_genuine_full_price_range": true,
       "seller_availability_flags": [
         false,
         false
@@ -6964,6 +7044,6 @@
   "products_seen": 29,
   "original_kit_candidates": 15,
   "finished_dolls_excluded": 7,
-  "component_or_non_kit_excluded": 4,
-  "uncertain_products": 3
+  "component_or_non_kit_excluded": 7,
+  "uncertain_products": 0
 }
