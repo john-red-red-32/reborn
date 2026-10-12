@@ -98,11 +98,11 @@ def option_map(product,variant):
 
 def sculpt_name_candidate(title,body):
     # The artist's explicit 'Kit Spec Name' is stronger than an SEO listing title.
-    match=re.search(r"\\bName\\s*:\\s*(.*?)\\s*(?=(?:Sculptor|Kit length|Kit size|Limb length|Head circumference|Cloth Body|COA|Vinyl|Edition size)\\s*:|$)",body,re.I)
+    match=re.search(r"\bName\s*:\s*(.*?)\s*(?=(?:Sculptor|Kit length|Kit size|Limb length|Head circumference|Cloth Body|COA|Vinyl|Edition size)\s*:|$)",body,re.I)
     if match and len(match.group(1).strip())<95:
         return match.group(1).strip(" .;-"),"artist_kit_spec"
-    cleaned=re.sub(r"(?i)^\\s*new\\s*[-–:]\\s*","",title)
-    cleaned=re.sub(r"(?i)\\s*(?:[-–( ]+)?(?:pre[ -]?order|in stock|sold out)\\s*\\)?\\s*$","",cleaned).strip(" -–()")
+    cleaned=re.sub(r"(?i)^\s*new\s*[-–:]\s*","",title)
+    cleaned=re.sub(r"(?i)\s*(?:[-–( ]+)?(?:pre[ -]?order|in stock|sold out)\s*\)?\s*$","",cleaned).strip(" -–()")
     return cleaned,"retailer_title_review"
 
 def parse_product(product,origin,sha,observed):
