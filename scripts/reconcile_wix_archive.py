@@ -8,6 +8,7 @@ import difflib
 import json
 import re
 from pathlib import Path
+from urllib.parse import urlsplit
 
 VERSION="wix-archive-reconciliation-v1"
 
@@ -81,7 +82,13 @@ def main():
     ap.add_argument("--archive",required=True)
     ap.add_argument("--out",required=True)
     a=ap.parse_args()
-    report=reconcile(json.loads(Path(a.gallery).read_text(encoding="utf-8")),load_archive(a.archive))
+    gallery=json.loads(Path(a.gallery).read_text(encoding="utf-8"))
+    host=(urlsplit(gallery.get("source","")).hostname or "").lower()
+    if host in ("cassielove.co.uk","www.cassielove.co.uk"):
+        report=reconcile(gallery,load_archive(a.archive))
+    else:
+        report={"version":VERSION,"source":gallery.get("source"),"status":"not_applicable",
+                "reason":"Cassie-specific editorial archive reconciliation does not apply to this source."}
     out=Path(a.out);out.parent.mkdir(parents=True,exist_ok=True)
     out.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
     print(f"Reconciliation: {report['published_named_kit_cards']} gallery kits, {report['exact_name_matches']} exact archive matches, {len(report['gallery_names_requiring_alias_review'])} naming reviews, {report['finished_reborn_photos_excluded']} finished-reborn photos excluded")
