@@ -8,6 +8,7 @@ on:
       - 'scripts/extract_wix_galleries.py'
       - 'scripts/reconcile_wix_archive.py'
       - 'scripts/match_artist_catalogue.py'
+      - 'scripts/test_match_artist_catalogue.py'
       - 'config/artist-sources/**'
       - 'scripts/site_platforms.py'
       - 'scripts/save_discovery_snapshot.py'
@@ -38,6 +39,10 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+      - name: Validate matching rules and Python syntax
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_match_artist_catalogue.py' -v
+          python3 -m compileall -q scripts
       - name: Crawl source pages without modifying live catalogue
         env:
           SOURCE_URL: ${{ inputs.url || 'https://www.cassielove.co.uk/' }}
