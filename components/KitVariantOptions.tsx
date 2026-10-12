@@ -10,10 +10,11 @@ export default function KitVariantOptions({variants,offers,basePhotos=[]}:{varia
  const variant=useMemo(()=>variants.find(v=>v.id===selected),[variants,selected]);
  const photos=variant?.photos?.length?variant.photos:basePhotos;
  const hasMultiPrice=offers.some(o=>uniqueTotals(o.variantPrices??[]).size>1);
+ const allUnavailable=offers.length>0&&offers.every(o=>o.status==="unavailable");
  const selectedOffers=offers.map(o=>({offer:o,option:o.variantPrices?.find(p=>p.variantId===selected)}));
  return <section className="kit-variants" aria-label="Kit variations">
- <h2>Choose your kit</h2>
- <p>Options and inclusions can differ. Prices are confirmed retailer observations, not checkout quotes.</p>
+ <h2>{allUnavailable?"Historical kit configurations":"Choose your kit"}</h2>
+ <p>{allUnavailable?"This sculpt is listed as sold out. The options and amounts below are historical shop observations, not purchasable offers.":"Options and inclusions can differ. Prices are dated retailer observations, not checkout quotes."}</p>
  <label className="kit-variant-label" htmlFor="kit-variant-select">Kit configuration</label>
  <select id="kit-variant-select" className="kit-variant-select" value={selected} onChange={e=>setSelected(e.target.value)}>
  {variants.map(v=><option key={v.id} value={v.id}>{v.label}</option>)}
@@ -23,7 +24,7 @@ export default function KitVariantOptions({variants,offers,basePhotos=[]}:{varia
  {!!variant.includedParts?.length&&<small>Includes: {variant.includedParts.join(", ")}</small>}
  </div>}
  {!!photos.length&&<div className="kit-variant-photos">{photos.slice(0,6).map((p,i)=><img key={p.url} src={p.url} alt={`${variant?.label??"Kit"} — view ${i+1}`} loading="lazy"/>)}</div>}
- <h3>{hasMultiPrice?"Prices from participating retailers":"Retailer prices"}</h3>
+ <h3>{allUnavailable?"Historical prices":hasMultiPrice?"Prices from participating retailers":"Retailer prices"}</h3>
  <div className="offer-list">
  {selectedOffers.map(({offer,option})=>{
   const tracked=!!offer.variantPrices?.length;
@@ -36,11 +37,11 @@ export default function KitVariantOptions({variants,offers,basePhotos=[]}:{varia
   const from=uniqueTotals(offer.variantPrices??[]).size>1;
   const minTotal=from&&minPrices.length?Math.min(...minPrices):undefined;
   return <div key={offer.url} className="kit-variant-offer">
-   <div><strong>{offer.retailer}</strong><small>{status==="preorder"?"Pre-order":status==="available"?"Listed available":"Unavailable"} · Checked {offer.checkedAt}</small>
-   {from&&minTotal!==undefined&&<small>From <LocalizedOfferPrice total={minTotal} originalCurrency={offer.currency} compact showDeposit={false}/></small>}
+   <div><strong>{offer.retailer}</strong><small>{status==="preorder"?"Pre-order":status==="available"?"Listed available":"Sold out / unavailable"} · Checked {offer.checkedAt}</small>
+   {from&&minTotal!==undefined&&<small>{allUnavailable?"Historical from":"From"} <LocalizedOfferPrice total={minTotal} originalCurrency={offer.currency} compact showDeposit={false}/></small>}
    {offer.note&&<small>{offer.note}</small>}</div>
    <div className="offer-amount">{total!==undefined||deposit!==undefined?<LocalizedOfferPrice total={total} deposit={deposit} balance={status==="preorder"?balance:undefined} originalCurrency={offer.currency} showDeposit={status==="preorder"}/>:<strong>Price not confirmed for this option</strong>}
-   <a href={option?.url??offer.url} target="_blank" rel="noopener noreferrer">Check seller ↗</a></div>
+   <a href={option?.url??offer.url} target="_blank" rel="noopener noreferrer">{status==="unavailable"?"View original listing ↗":"Check seller ↗"}</a></div>
   </div>;
  })}
  </div>
