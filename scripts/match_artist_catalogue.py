@@ -78,7 +78,7 @@ def main():
     if matching:
         manifest = matching[0]
         output = match_candidates(manifest["artist_id"],
-            [c["title"] for c in gallery.get("kit_candidates", [])] or [c["name"] for c in gallery.get("products", []) if c.get("classification")=="original_kit_candidate"],
+            [c["title"] for c in gallery.get("kit_candidates", [])] or [c.get("sculpt_name_candidate") or c["name"] for c in gallery.get("products", []) if c.get("classification")=="original_kit_candidate"],
             manifest["accepted_names"], manifest.get("approved_aliases"))
         output["manifest_version"] = manifest.get("version", 1)
     else:
