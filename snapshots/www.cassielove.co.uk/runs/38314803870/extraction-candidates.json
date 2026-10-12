@@ -1,0 +1,207 @@
+{
+  "extractor_version": "candidate-extractor-v3-preorder-evidence",
+  "source": "https://www.cassielove.co.uk/",
+  "scan_completed_at": "2026-10-12T22:07:56.970586+00:00",
+  "scan_complete": true,
+  "pages_succeeded": 16,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "name": "Lennox by Cassie Love",
+      "source_url": "https://www.cassielove.co.uk/product-page/preorder-lennox-by-cassie-love-pay-in-full",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "BRAND NEW DOLL KIT - LENNOX BY CASSIE LOVE Limited Edition 400 ww -Blank and unassembled- not a reborn baby doll total price £95 +postage 22&quot; approx Doll kit - blank kit only- Full LimbsIncludes custom fit cloth body Special Certification of Authenticity and Cotton bag",
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_65715b3dff804c21a46290987fae43a4~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1500",
+          "height": "2250"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_4cb3f99745e0427e86d558da5de524f6~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1446",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_4cb6df559b7e4060af1af05304e0e930~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1500",
+          "height": "2250"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_a888acc19e444ec7b411873a717ef9a7~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1477",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1aee0155337e476b885d18debb81d873~mv2.jpeg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2268",
+          "height": "4032"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_65626d994f17422793f85ede5050d7f2~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1500",
+          "height": "2250"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_278304fd029b48e794783cd01bfaaa46~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1500",
+          "height": "1000"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_6aeb7af079054e85b7ef6805b7d55d90~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_4a8c08bf64d64ff49e95a153ae640f20~mv2.jpeg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2730",
+          "height": "4096"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_4c078750846f4c0e87d8477eb110c043~mv2.jpeg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2268",
+          "height": "4032"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_188c2d32a91349be84f47c1cd21cc1cf~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1500",
+          "height": "2250"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_139a63f34594469ebf81d29e933d380a~mv2.jpeg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2730",
+          "height": "4096"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_8587e8e8d30e42c8b017e4cab2c4e38d~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1500",
+          "height": "1000"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_09a8d726489242bba20abcd36eb461d7~mv2.jpeg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "4096",
+          "height": "2730"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_107f43767cd94c5aaf571102326a1b0b~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2048",
+          "height": "1365"
+        }
+      ],
+      "image_count": 15,
+      "advertised_offers": [
+        {
+          "price": "95",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.cassielove.co.uk/product-page/preorder-lennox-by-cassie-love-pay-in-full"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    },
+    {
+      "name": "Lovan by Cassie Love",
+      "source_url": "https://www.cassielove.co.uk/product-page/preorder-lovan-by-cassie-love",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "BRAND NEW DOLL KIT - Limited Edition -Blank and unassembled- not a reborn baby dolltotal price £95 +postage Lovan is my latest doll kit to release to preorder19&quot; approx Doll kit - blank kit only- Full LimbsIncludes custom fit cloth bodySpecial Certification of Authenticity,Cotton bag",
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_946277d39dfb41afa75261d274d5d1e9~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2048",
+          "height": "1366"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_5090b1b094e840d296d312d6e4d84628~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2048",
+          "height": "1362"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_cdfd361bd6874e9c9aedd8c488411a53~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1356",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_487d4d7fb59a4b18b89ebc45980e79be~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2048",
+          "height": "1301"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_0b9130f290cb4f4ca1a26a1127e161f3~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2048",
+          "height": "1366"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_abd5f9b5ebe342428a1be1c6f31fc7c0~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2048",
+          "height": "1362"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_02ac1f1d45434dfcb1b8dfc3c7fb8e2b~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2048",
+          "height": "1365"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_f31222fa89fc4cdbbcab86f16f6f0c67~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2048",
+          "height": "1362"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_a89d558560a74051aa9a8ce82e0c09c1~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2048",
+          "height": "1362"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_a080496e27bb4d61b4a2d9ab06cb7075~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2048",
+          "height": "1365"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_60e25b18b62b4d7fb86c78b65c794ece~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2048",
+          "height": "1362"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_a4c8f99572694ebd84006814d5739a46~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1366",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c2af962030ac428ea30de02bcbf6a410~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2048",
+          "height": "1362"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_2d8c5ca079a44fdda22de4a1fcb2b3a0~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "2048",
+          "height": "1366"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_0ff05562a605472abface64f45a66810~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1508",
+          "height": "2048"
+        }
+      ],
+      "image_count": 15,
+      "advertised_offers": [
+        {
+          "price": "95",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/OutOfStock",
+          "url": "https://www.cassielove.co.uk/product-page/preorder-lovan-by-cassie-love"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    }
+  ],
+  "warnings": [
+    "A crawl can be complete for visible HTML links without covering JavaScript galleries or historical kits.",
+    "Product data are seller claims pending validation; no automatic publication.",
+    "Images are references, not licensed replicas; no download occurs."
+  ]
+}
