@@ -55,7 +55,7 @@ def classification(product):
     head=title.lower()
     if re.search(r"\b(prototype|completed reborn|complete(d)? baby|reborn baby|ready[- ]to[- ]adopt|one.of.a.kind)\b",head):
         return "finished_doll_excluded", "title_explicit_finished_doll"
-    if re.search(r"\b(gift card|tutorials?|online course|training|painting class|rooting class)\b",head):
+    if re.search(r"\b(gift card|tutorials?|online course|training|painting class|rooting class|(?:advanced|intermediate|beginners?)\s+rooting)\b",head):
         return "non_kit_excluded", "title_non_kit"
     if re.search(r"\b(belly plate|body only|vinyl head only)\b",head):
         return "component_excluded", "standalone_component"
@@ -79,11 +79,18 @@ def kit_facts(body):
       "belly_plate_offered":bool(re.search(r"belly\s+plate\s*:\s*(?:optional|available)",body,re.I)),
     }
 
-def money(cents):
+def money(value):
+    """Shopify Product REST JSON uses decimal GBP strings; Ajax .js uses integer pence."""
+    if value is None or isinstance(value,bool):return None
     try:
-        if cents is None or isinstance(cents,bool):return None
-        return round(int(cents)/100,2)
-    except (TypeError,ValueError):return None
+        if isinstance(value,str):
+            clean=value.replace(",","").strip()
+            return round(float(clean),2) if "." in clean else round(int(clean)/100,2)
+        if isinstance(value,int):
+            return round(value/100,2)
+        return round(float(value),2)
+    except (TypeError,ValueError,OverflowError):
+        return None
 
 def option_map(product,variant):
     options=product.get("options") or []
@@ -100,7 +107,10 @@ def sculpt_name_candidate(title,body):
     # The artist's explicit 'Kit Spec Name' is stronger than an SEO listing title.
     match=re.search(r"\bName\s*:\s*(.*?)\s*(?=(?:Sculptor|Kit length|Kit size|Limb length|Head circumference|Cloth Body|COA|Vinyl|Edition size)\s*:|$)",body,re.I)
     if match and len(match.group(1).strip())<95:
-        return match.group(1).strip(" .;-"),"artist_kit_spec"
+        raw=match.group(1).strip(" .;-")
+        raw=re.split(r"(?i)\s+find\s+(?:his|her|their)\s+twin\b",raw)[0].strip(" .;-")
+        raw=re.sub(r"(?i),?\s+by\s+nikki\s+johnston\b.*$","",raw).strip(" .;-")
+        return raw,"artist_kit_spec"
     cleaned=re.sub(r"(?i)^\s*new\s*[-–:]\s*","",title)
     cleaned=re.sub(r"(?i)\s*(?:[-–( ]+)?(?:pre[ -]?order|in stock|sold out)\s*\)?\s*$","",cleaned).strip(" -–()")
     return cleaned,"retailer_title_review"
@@ -116,7 +126,14 @@ def parse_product(product,origin,sha,observed):
     for v in product.get("variants") or []:
         opts=option_map(product,v)
         joined=" ".join(opts.values()).lower()
-        price_kind="deposit_only" if bool(re.search(r"\bdeposit(?:\s+only)?\b",joined)) and not re.search(r"full\s+pay",joined) else "full_purchase"
+        if re.search(r"\bno\s+kit\b|\b(?:belly|tummy)\s+plate\s+only\b",joined):
+            price_kind="accessory_only"
+        elif re.search(r"\bboth\b.*\b(?:awake|asleep|kits?)\b",joined):
+            price_kind="multi_kit_bundle"
+        elif re.search(r"\bdeposit(?:\s+only)?\b",joined) and not re.search(r"full\s+pay",joined):
+            price_kind="deposit_only"
+        else:
+            price_kind="full_purchase"
         variants.append({
             "shopify_variant_id":str(v.get("id") or ""),"seller_sku":v.get("sku") or None,
             "label":v.get("public_title") or v.get("title") or "Standard",
