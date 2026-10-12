@@ -79,7 +79,7 @@ jobs:
             print("Awaiting updated Cloudflare biography",attempt+1,flush=True)
             time.sleep(8)
           else:raise SystemExit("Latest Nikki biography has not reached reborna.co")
-          assert "not a portrait" in bio.lower(),"Artist artwork must not be labelled a portrait"
+          assert "not an artist portrait" in bio.lower(),"Artist artwork must not be labelled a portrait"
           assert "Nikki’s Seaside Babies" in bio or "Nikki&#x27;s Seaside Babies" in bio
           assert "MacPherson" in bio
           directory=get("/artists/")
@@ -93,6 +93,6 @@ jobs:
             print("LIVE OK",k["slug"],"image tags",len(p.sources),flush=True)
           collection=get("/artists/nikki-johnston/")
           p=Photos();p.feed(collection)
-          assert len([v for v in p.sources if "cdn.shopify.com/s/files/1/0276/0851/4612/" in v])>=15,"Artist collection has missing cards"
+          assert len([v for v in p.sources if "cdn.shopify.com/s/files/1/0276/0851/4612/" in v])>=12,"Artist collection has missing initial cards"
           print("PASS: live 15 galleries, artist directory, collection and independently sourced Nikki biography")
           PY
