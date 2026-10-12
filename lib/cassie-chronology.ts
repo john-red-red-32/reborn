@@ -1,0 +1,4 @@
+/** Cassie Ann Love's first 30 sculpts in the original production order supplied by the artist in a MacPherson interview. It is a chronology, not a list of calendar release dates. Names standardised against the artist's current catalogue. Source checked 2026-10-12. */
+export const cassieOriginalProductionOrder=["Hattie","Ella","Junior","Stanley","Sienna","Leelou","Zachary","Phoenix","Toby","Elyse","Nova","Nellie","Sailor Rose","Genevieve","Josephine","Bluebell","Evelyn","Esmae","Tigerlily","Zoey","Xander","Luxe","Roux","Ramsey","Ethon","Luciano","Margot","Romilly","Asia","Ruby"] as const;
+export const cassieChronologySource="https://macphersoncrafts.com/online-store/manufacturer/cassie-brace-love/by%2Ccategory_name";
+export const cassieChronology=Object.fromEntries(cassieOriginalProductionOrder.map((name,index)=>[name.toLowerCase(),index+1])) as Record<string,number>;
