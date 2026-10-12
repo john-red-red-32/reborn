@@ -5,7 +5,7 @@ import json
 import re
 from pathlib import Path
 
-VERSION = "candidate-extractor-v2"
+VERSION = "candidate-extractor-v3-preorder-evidence"
 def txt(v):
     return re.sub(r"\s+"," ", v if isinstance(v,str) else "").strip()
 def products(node):
@@ -47,9 +47,14 @@ def main():
             offer=product.get("offers")
             offers=offer if isinstance(offer,list) else [offer] if isinstance(offer,dict) else []
             prices=[{"price":o.get("price"),"priceCurrency":o.get("priceCurrency"),"availability":o.get("availability"),"url":o.get("url")} for o in offers if isinstance(o,dict)]
+            # Explicit seller preorder wording overrides generic schema InStock, which can enable checkout.
+            description=txt(product.get("description"))
+            statement=" ".join([name,description]).lower()
+            preorder=bool(re.search(r"\\bpre[ -]?order(?:s|ing|ed)?\\b",statement))
+            lifecycle="preorder_advertised" if preorder else "not_confirmed"
             # Use seller-authored structured data only. Never infer kit variations from different offers.
             candidates.append({"name":name,"source_url":page["url"],"evidence_type":"structured_product",
-             "confidence":"structured_unreviewed","description":txt(product.get("description"))[:3000],
+             "confidence":"structured_unreviewed","description":description[:3000],"lifecycle_evidence":lifecycle,
              "images":dedup[:25],"image_count":len(dedup),
              "advertised_offers":prices,"variant_options":[],"review_state":"pending"})
     output={"extractor_version":VERSION,"source":report.get("source"),
