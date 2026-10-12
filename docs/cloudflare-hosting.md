@@ -44,3 +44,7 @@ Original Vercel DNS, saved for rollback:
 **Media-upload secret:** The required `MEDIA_INGEST_TOKEN` is not copied from Vercel. Until configured as a Cloudflare Pages production secret, the upload endpoint denies every call. `MEDIA_BUCKET` is already bound to `reborna-media`.
 
 **Validation:** GitHub smoke workflow verifies homepage, Nikki and Cassie artist pages, Mabel/Christopher kit pages, currency endpoint and a rejected unauthorized media-upload call. Run ID `38320763718` additionally checked both custom hostnames returning Nikki's collection.
+
+
+## 2026-10-13 Nikki media deploy incident
+GitHub's website sync originally appended `[skip ci]` to its Cloudflare branch commits. Cloudflare interprets this as an explicit skip-deployment request, so successful syncs did not update the public website. The `main` sync workflow has now removed that flag. This commit intentionally has no skip marker and forces the first build of the new Shopify image galleries and independently sourced Nikki biography.
