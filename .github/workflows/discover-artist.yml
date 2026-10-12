@@ -1,0 +1,42 @@
+name: Discover artist site
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'Public HTTPS homepage or sculpt index'
+        required: true
+        type: string
+        default: 'https://www.cassielove.co.uk/'
+      max_pages:
+        description: 'Maximum HTML pages to visit (1-80)'
+        required: true
+        default: '30'
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Crawl source pages without modifying live catalogue
+        env:
+          SOURCE_URL: ${{ inputs.url }}
+          MAX_PAGES: ${{ inputs.max_pages }}
+        run: |
+          python3 scripts/discover_artist_site.py \
+            --url "$SOURCE_URL" \
+            --max-pages "$MAX_PAGES" \
+            --delay 1.5 \
+            --out artifacts/source-discovery.json
+      - name: Upload discovery evidence for manual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: artist-discovery
+          path: artifacts/source-discovery.json
+          retention-days: 30
+          if-no-files-found: warn
