@@ -28,7 +28,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: nikki-shopify-${{ github.ref }}
+  group: nikki-shopify-fast-pilot-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
