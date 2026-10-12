@@ -24,7 +24,7 @@ export function mediaObjectKey(ownerType:MediaRecord["ownerType"],ownerId:string
  return `${ownerType}/${safeSegment(ownerId)}/${sha256}.${extension}`;
 }
 export function publicMediaUrl(objectKey:string):string|null{
- const base=process.env.NEXT_PUBLIC_MEDIA_BASE_URL;
+ const base=process.env.NEXT_PUBLIC_MEDIA_BASE_URL || "https://images.reborna.co";
  if(!base||!/^https:\/\//.test(base)||objectKey.includes("..")||objectKey.startsWith("/"))return null;
  return base.replace(/\/$/,"")+"/"+objectKey.split("/").map(encodeURIComponent).join("/");
 }
