@@ -31,7 +31,7 @@ def normalize_card(raw, source_page, frame_kind):
     edition = "limited" if re.search(r"\blimited\s+edition\b", description, re.I) else ("open" if re.search(r"\bopen\s+edition\b", description, re.I) else None)
     size = SIZE_PATTERN.search(description)
     return {
-        "record_type": "original_vinyl_kit" if frame_kind == "Masonry" and "/vinyl-doll-kits" in urlparse(source_page).path else "unverified_gallery_photo",
+        "record_type": ("original_vinyl_kit" if frame_kind == "Masonry" and "/vinyl-doll-kits" in urlparse(source_page).path else ("original_clay_gallery_photo" if "/sculpting" in urlparse(source_page).path else ("finished_reborn_doll_gallery_photo" if "/reborns" in urlparse(source_page).path else "unclassified_gallery_photo"))),
         "title": name,
         "description": description[:400],
         "edition_type": edition,
