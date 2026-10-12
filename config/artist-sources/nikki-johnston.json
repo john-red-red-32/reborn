@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "artist_id": "nikki-johnston",
+  "display_name": "Nikki Johnston",
+  "source_name": "Nikki's Seaside Babies",
+  "allowed_hosts": [
+    "nikkisseasidebabies.co.uk",
+    "www.nikkisseasidebabies.co.uk"
+  ],
+  "platform": "shopify",
+  "currency": "GBP",
+  "accepted_names": [],
+  "approved_aliases": {},
+  "notes": "Shopify pilot: newly discovered original kit names require first-run review. Never classify finished reborns, tutorials, standalone belly plates or deposit-only variants as full kits."
+}
