@@ -65,3 +65,25 @@ jobs:
             assert e.code==401,f"Admin endpoint gave unexpected status {e.code}"
             print("OK protected media API denies unauthenticated POST")
           PY
+      - name: Verify custom domains serve the Cloudflare catalogue
+        run: |
+          python3 - <<'PY'
+          import time,urllib.request,urllib.error
+          opener=urllib.request.build_opener()
+          opener.addheaders=[("User-Agent","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/125.0 Safari/537.36")]
+          urllib.request.install_opener(opener)
+          for host in ["https://reborna.co","https://www.reborna.co"]:
+            url=host+"/artists/nikki-johnston/"
+            error=""
+            for attempt in range(18):
+              try:
+                with urllib.request.urlopen(url,timeout=15) as response:
+                  body=response.read().decode("utf-8","replace")
+                  if response.status==200 and "Nikki Johnston" in body:
+                    print("OK",host,response.status,"Nikki source verified",len(body));break
+                  error=f"wrong response: {response.status} {len(body)}"
+              except Exception as exc:
+                error=str(exc)
+              time.sleep(8)
+            else:raise SystemExit(f"Custom domain not serving Nikki collection: {url}: {error}")
+          PY
