@@ -96,3 +96,19 @@
 .kit-image-status.sold i{background:#ae807f}
 .kit-image-status.unknown i{background:#a59d96}
 @media(max-width:650px){.artist-work .artist-grid{row-gap:35px;column-gap:14px}}
+
+/* Artist catalogue layout: explicit dimensions, isolated from generic gallery rules. */
+.artist-work{width:100%;min-width:0;max-width:100%;overflow:clip}
+.artist-work .artist-grid{display:grid;width:100%;min-width:0;max-width:100%;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:28px;row-gap:48px;align-items:start}
+.artist-work .artist-grid .artist-kit{display:block;width:100%;min-width:0;max-width:100%;overflow:hidden}
+.artist-work .artist-grid .artist-kit-picture{position:relative;display:block;width:100%;height:auto;aspect-ratio:4/5;min-width:0;max-width:100%;overflow:hidden;border-radius:2px;background:#e6d8ca;font-size:0}
+.artist-work .artist-grid .artist-kit-picture>.sculpt-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;max-width:none}
+.artist-work .artist-grid .artist-kit-picture>.sculpt-photo-hover{opacity:0;transition:opacity .3s ease}
+@media(hover:hover){.artist-work .artist-grid .artist-kit:hover .sculpt-photo-hover{opacity:1}}
+.artist-work .artist-grid .artist-kit-picture>.kit-image-status{position:absolute;z-index:5;top:12px;left:12px;width:max-content;max-width:calc(100% - 24px);height:auto;display:inline-flex;align-items:center;font:700 10px/1 "DM Sans",sans-serif;color:#62574e}
+.artist-work .artist-grid .artist-kit-picture>.kit-image-status i{display:inline-block;width:7px;height:7px}
+.artist-work .artist-grid .artist-kit>h3{margin:5px 0 5px;font-size:24px;line-height:1.25}
+.artist-work .artist-grid .artist-kit>small.kit-status-description{margin:12px 0 2px}
+.artist-work .artist-grid .artist-kit>span{margin:0;font-size:12px}
+@media(max-width:900px){.artist-work .artist-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:35px 20px}}
+@media(max-width:560px){.artist-work .artist-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 12px}.artist-work .artist-grid .artist-kit>h3{font-size:20px}.artist-work .artist-grid .artist-kit-picture>.kit-image-status{top:8px;left:8px;padding:7px 8px;font-size:9px}}
