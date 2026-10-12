@@ -54,6 +54,20 @@ class ShopifyKitTests(unittest.TestCase):
     def test_rooting_classes_are_not_sculpt_kits(self):
         self.assertEqual(classification(self.product("Advanced Rooting (Level 3 - Coming Soon)"))[0],"non_kit_excluded")
 
+    def test_legacy_low_option_is_not_fake_starting_kit_price(self):
+        p=self.product("Trouble (Sold Out)")
+        p["variants"]=[
+            {"id":1,"title":"Trouble without Belly Plate","option1":"Without","price":"20.00"},
+            {"id":2,"title":"Trouble with Belly Plate","option1":"With","price":"104.00"}]
+        result=parse_product(p,"https://nikkisseasidebabies.co.uk/","hash","time")
+        self.assertTrue(result["pricing_review_required"])
+        self.assertEqual(result["variants"][0]["price_kind"],"low_price_needs_review")
+        self.assertIsNone(result["from_price_native"])
+    def test_old_specs_do_not_swallow_neighboring_fields(self):
+        facts=kit_facts('Head circumference: 14.5" Arms: Full Legs: Full Eye size: 20mm Body: Included Tummy Plate: Optional add-on')
+        self.assertEqual(facts["published_head_circumference"],'14.5"')
+        self.assertTrue(facts["belly_plate_offered"])
+
     def test_finished_doll_never_kit(self):
         self.assertEqual(classification(self.product("PROTOTYPE Winnie - Complete Reborn Baby, Sculpted by Cassie Brace"))[0],"finished_doll_excluded")
     def test_standalone_component_excluded(self):
