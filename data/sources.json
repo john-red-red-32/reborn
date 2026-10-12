@@ -1,0 +1,36 @@
+{
+  "sources": [
+    {
+      "name": "Cassie Ann Love",
+      "url": "https://www.cassielove.co.uk/",
+      "type": "artist",
+      "status": "candidate_review"
+    },
+    {
+      "name": "MacPherson Arts & Crafts",
+      "url": "https://macphersoncrafts.com/",
+      "type": "retailer",
+      "status": "candidate_review",
+      "note": "Publisher explicitly prohibits reuse of its photos without permission"
+    }
+  ],
+  "pipeline": [
+    "discover_approved_sources",
+    "parse_artist_profiles",
+    "extract_kit_candidates",
+    "resolve_artist_and_kit_duplicates",
+    "discover_retailer_offers",
+    "record_timestamped_status_observations",
+    "manual_review",
+    "publish",
+    "diff_and_notify_after_validation"
+  ],
+  "requirements": [
+    "robots_and_terms_check",
+    "permission_aware_asset_handling",
+    "per_domain_rate_limits",
+    "no_auto_publish",
+    "source_provenance",
+    "stock_and_price_are_timestamped"
+  ]
+}
