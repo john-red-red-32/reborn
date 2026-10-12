@@ -21,7 +21,7 @@ on:
       max_pages:
         description: 'HTML pages (1-80)'
         required: true
-        default: '50'
+        default: '12'
         type: string
 
 permissions:
@@ -29,12 +29,12 @@ permissions:
 
 concurrency:
   group: nikki-shopify-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   shopify:
     runs-on: ubuntu-latest
-    timeout-minutes: 14
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - name: Validate Shopify and identity matching tests
@@ -45,12 +45,12 @@ jobs:
       - name: Crawl public site index with robots rules
         env:
           SOURCE_URL: ${{ inputs.url || 'https://nikkisseasidebabies.co.uk/' }}
-          MAX_PAGES: ${{ inputs.max_pages || '50' }}
+          MAX_PAGES: ${{ inputs.max_pages || '12' }}
         run: |
           python3 scripts/discover_artist_site.py \
             --url "$SOURCE_URL" \
             --max-pages "$MAX_PAGES" \
-            --delay 1.5 \
+            --delay 1.0 \
             --out artifacts/source-discovery.json
       - name: Save generic structured product evidence
         run: |
