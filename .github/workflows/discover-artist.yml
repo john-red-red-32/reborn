@@ -6,6 +6,7 @@ on:
       - 'scripts/discover_artist_site.py'
       - 'scripts/extract_sculpt_candidates.py'
       - 'scripts/extract_wix_galleries.py'
+      - 'scripts/reconcile_wix_archive.py'
       - 'scripts/site_platforms.py'
       - 'scripts/save_discovery_snapshot.py'
       - '.github/workflows/discover-artist.yml'
@@ -59,6 +60,12 @@ jobs:
           python3 scripts/extract_wix_galleries.py \
             --input artifacts/source-discovery.json \
             --out artifacts/wix-gallery-evidence.json
+      - name: Reconcile historical kits against editorial archive
+        run: |
+          python3 scripts/reconcile_wix_archive.py \
+            --gallery artifacts/wix-gallery-evidence.json \
+            --archive lib/cassie-profile.ts \
+            --out artifacts/wix-archive-reconciliation.json
       - name: Persist successful JSON reports on a separate GitHub branch
         if: success()
         env:
@@ -95,5 +102,6 @@ jobs:
             artifacts/source-discovery.json
             artifacts/extraction-candidates.json
             artifacts/wix-gallery-evidence.json
+            artifacts/wix-archive-reconciliation.json
           retention-days: 30
           if-no-files-found: warn
