@@ -7,6 +7,8 @@ on:
       - 'scripts/extract_sculpt_candidates.py'
       - 'scripts/extract_wix_galleries.py'
       - 'scripts/reconcile_wix_archive.py'
+      - 'scripts/match_artist_catalogue.py'
+      - 'config/artist-sources/**'
       - 'scripts/site_platforms.py'
       - 'scripts/save_discovery_snapshot.py'
       - '.github/workflows/discover-artist.yml'
@@ -66,6 +68,12 @@ jobs:
             --gallery artifacts/wix-gallery-evidence.json \
             --archive lib/cassie-profile.ts \
             --out artifacts/wix-archive-reconciliation.json
+      - name: Reconcile artist-scoped kit identities
+        run: |
+          python3 scripts/match_artist_catalogue.py \
+            --gallery artifacts/wix-gallery-evidence.json \
+            --manifest-dir config/artist-sources \
+            --out artifacts/artist-identity-matches.json
       - name: Persist successful JSON reports on a separate GitHub branch
         if: success()
         env:
@@ -103,5 +111,6 @@ jobs:
             artifacts/extraction-candidates.json
             artifacts/wix-gallery-evidence.json
             artifacts/wix-archive-reconciliation.json
+            artifacts/artist-identity-matches.json
           retention-days: 30
           if-no-files-found: warn
