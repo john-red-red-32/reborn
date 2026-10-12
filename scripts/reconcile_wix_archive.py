@@ -91,5 +91,5 @@ def main():
                 "reason":"Cassie-specific editorial archive reconciliation does not apply to this source."}
     out=Path(a.out);out.parent.mkdir(parents=True,exist_ok=True)
     out.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
-    print(f"Reconciliation: {report['published_named_kit_cards']} gallery kits, {report['exact_name_matches']} exact archive matches, {len(report['gallery_names_requiring_alias_review'])} naming reviews, {report['finished_reborn_photos_excluded']} finished-reborn photos excluded")
+    print(f"Reconciliation saved to {out} — {report.get('exact_name_matches',0)} exact matches; status {report.get('status','review_pending')}")
 if __name__=="__main__":main()
