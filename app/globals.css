@@ -165,3 +165,17 @@
 .localized-price small{font-size:10px;color:#978779;line-height:1.5}
 .localized-price.compact small{display:block}
 @media(max-width:800px){.locale-tools{margin-left:0}.locale-tools select{padding:6px 3px;max-width:79px;font-size:10px}}
+
+.unified-card .edition-detail{font-size:11px;color:#958678;line-height:1.5;margin-top:7px}
+.materials-heading{padding:75px 0 45px;max-width:780px}
+.materials-heading h1{font:normal clamp(43px,6vw,70px) "Playfair Display",serif;margin:18px 0}
+.materials-heading p,.materials-footer p{font-size:14px;color:#897c71;line-height:1.9}
+.materials-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.materials-category{padding:35px;border:1px solid var(--line);background:#fffcf8;min-height:235px}
+.materials-category svg{color:#9c826d}
+.materials-category h2,.materials-footer h2{font:normal 29px "Playfair Display",serif;margin:20px 0 12px}
+.materials-category p{font-size:13px;color:#8d7e72;line-height:1.8}
+.materials-category small{display:block;margin-top:24px;color:#9b8574;font-size:10px;letter-spacing:.07em;text-transform:uppercase}
+.materials-footer{margin:60px 0;padding:38px;text-align:center;background:#eee5dc}
+.materials-footer a{display:inline-flex;align-items:center;gap:10px;margin-top:20px;font-size:12px;font-weight:700}
+@media(max-width:650px){.materials-grid{grid-template-columns:1fr}.materials-heading{padding-top:40px}.materials-category{min-height:0}}
