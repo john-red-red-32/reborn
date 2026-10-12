@@ -14,6 +14,7 @@ export function sculptStatus(k:VerifiedKit):DisplayStatus{
  if(lifecycle==="announced")return "announced";
  if(lifecycle==="preorder_closed")return "preorder_closed";
  if(lifecycle==="in_production")return "in_production";
+ if(k.statusLabel.toLowerCase().includes("sold out"))return "sold_out";
  if(offers.length&&offers.every(o=>o.status==="unavailable"))return "unavailable";
  const s=k.statusLabel.toLowerCase();
  if(s.includes("reconfirmation")||s.includes("unverified")||s.includes("unconfirmed")||s.includes("to verify")||s.includes("not established"))return "unknown";
