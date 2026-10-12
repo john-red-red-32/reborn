@@ -1,80 +1,65 @@
 #!/usr/bin/env python3
-"""Create reviewable original-sculpt candidates from a Reborna discovery JSON artifact.
-
-Never writes to the public catalogue. No inferred release dates, ownership or inventory.
-"""
+"""Reborna product extractor: evidence-only candidates from discovery JSON, not public catalogue writes."""
 import argparse
 import json
 import re
-from collections import defaultdict
 from pathlib import Path
-from urllib.parse import urlsplit
 
-VERSION = "candidate-extractor-v1"
-STOP = {"home","about","contact","privacy","terms","blog","shop","gallery","sculpts","archive","portfolio","original","reborn","doll","kit","kits","preorder","pre-order"}
-def clean(text):
-    return re.sub(r"\s+", " ", text or "").strip()
-
-def extract_schema_products(node, result):
-    if isinstance(node, list):
-        for child in node: extract_schema_products(child, result)
-    elif isinstance(node, dict):
-        kind = node.get("@type", [])
-        kinds = [kind] if isinstance(kind, str) else kind if isinstance(kind, list) else []
-        if any(k.lower().split("/")[-1] in ("product", "productgroup") for k in kinds):
-            result.append(node)
-        for key in ("@graph","mainEntity","hasVariant","itemListElement"):
-            if key in node: extract_schema_products(node[key], result)
-
-def derive_candidates(report):
-    entries = []
-    for page in report.get("pages", []):
-        url = page.get("url", "")
-        meta = page.get("metadata") or {}
-        structured = []
-        for obj in page.get("structured_data", []):
-            extract_schema_products(obj, structured)
-        title = clean(page.get("title", ""))
-        for product in structured:
-            name = clean(product.get("name", "")) if isinstance(product.get("name"), str) else ""
-            if name:
-                entries.append({"name":name,"source_url":url,"evidence_type":"structured_product","confidence":"candidate","image_candidates":page.get("image_candidates",[])[:30],"seller_offers_unverified":product.get("offers") is not None})
-        if structured:
-            continue
-        # Metadata-only suggestions are low-confidence; never assume a title is a sculpt.
-        social_title = clean(meta.get("og:title") or meta.get("twitter:title") or title)
-        path = urlsplit(url).path.lower()
-        if not social_title or path in ("","/") or any(x in path for x in ("/about", "/contact", "/privacy", "/terms")):
-            continue
-        if not (any(token in (social_title+" "+path).lower() for token in ("kit", "sculpt", "doll", "gallery", "product", "portfolio"))):
-            continue
-        name = re.split(r"\s+[|–—]\s+", social_title)[0].strip()
-        if len(name)>100 or len(name)<3 or name.lower() in STOP: continue
-        entries.append({"name":name,"source_url":url,"evidence_type":"page_metadata_only","confidence":"low","image_candidates":page.get("image_candidates",[])[:30]})
-    grouped = defaultdict(lambda: {"sources":[],"image_candidates":[]})
-    for item in entries:
-        key=clean(item["name"]).casefold()
-        group=grouped[key]
-        group["name"]=item["name"]
-        group["sources"].append({"url":item["source_url"],"evidence_type":item["evidence_type"],"confidence":item["confidence"]})
-        known={x["url"] for x in group["image_candidates"]}
-        for image in item["image_candidates"]:
-            if image.get("url") not in known:
-                group["image_candidates"].append(image)
-                known.add(image.get("url"))
-    return list(sorted(grouped.values(),key=lambda x:x["name"].casefold()))
-
+VERSION = "candidate-extractor-v2"
+def txt(v):
+    return re.sub(r"\s+"," ", v if isinstance(v,str) else "").strip()
+def products(node):
+    if isinstance(node,list):
+        for x in node: yield from products(x)
+    elif isinstance(node,dict):
+        types=node.get("@type",[])
+        types=types if isinstance(types,list) else [types]
+        if any(isinstance(t,str) and t.lower().split("/")[-1] in ("product","productgroup") for t in types):
+            yield node
+        for k in ("@graph","mainEntity","hasVariant","itemListElement"):
+            if k in node: yield from products(node[k])
+def image_urls(items):
+    for x in items if isinstance(items,list) else [items]:
+        if isinstance(x,str) and x.startswith("https://"): yield {"url":x}
+        elif isinstance(x,dict):
+            u=x.get("contentUrl") or x.get("url")
+            if isinstance(u,str) and u.startswith("https://"):
+                yield {"url":u,"width":x.get("width"),"height":x.get("height")}
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("--input",required=True)
     p.add_argument("--out",default="artifacts/extraction-candidates.json")
     args=p.parse_args()
-    data=json.loads(Path(args.input).read_text(encoding="utf-8"))
-    candidates=derive_candidates(data)
-    out={"extractor_version":VERSION,"source":data.get("source"),"scan_completed_at":data.get("completed_at"),"scan_complete":data.get("complete",False),
-         "pages_succeeded":data.get("pages_succeeded",0),"candidate_count":len(candidates),
-         "candidates":candidates,"warnings":["Titles and images are unverified source candidates only.","Do not publish automatically, infer announcement/release year, or copy remote images without appropriate rights."]}
-    dest=Path(args.out);dest.parent.mkdir(parents=True,exist_ok=True)
-    dest.write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding="utf-8")
-    print(f"Extracted {len(candidates)} review candidates -> {dest}")
-if __name__=="__main__":main()
+    report=json.loads(Path(args.input).read_text(encoding="utf-8"))
+    candidates=[]
+    for page in report.get("pages",[]):
+        for product in products(page.get("structured_data",[])):
+            name=txt(product.get("name"))
+            if not name: continue
+            images=list(image_urls(product.get("image",[])))
+            seen=set(); dedup=[]
+            for image in images:
+                # Wix size-specific image URLs share the same intrinsic asset ID.
+                key=re.search(r"/media/([^/]+)",image["url"])
+                identifier=key.group(1) if key else image["url"].split("?")[0]
+                if identifier not in seen:
+                    seen.add(identifier);dedup.append(image)
+            offer=product.get("offers")
+            offers=offer if isinstance(offer,list) else [offer] if isinstance(offer,dict) else []
+            prices=[{"price":o.get("price"),"priceCurrency":o.get("priceCurrency"),"availability":o.get("availability"),"url":o.get("url")} for o in offers if isinstance(o,dict)]
+            # Use seller-authored structured data only. Never infer kit variations from different offers.
+            candidates.append({"name":name,"source_url":page["url"],"evidence_type":"structured_product",
+             "confidence":"structured_unreviewed","description":txt(product.get("description"))[:3000],
+             "images":dedup[:25],"image_count":len(dedup),
+             "advertised_offers":prices,"variant_options":[],"review_state":"pending"})
+    output={"extractor_version":VERSION,"source":report.get("source"),
+      "scan_completed_at":report.get("completed_at"),"scan_complete":report.get("complete",False),
+      "pages_succeeded":report.get("pages_succeeded",0),"candidate_count":len(candidates),
+      "candidates":candidates,
+      "warnings":["A crawl can be complete for visible HTML links without covering JavaScript galleries or historical kits.",
+                  "Product data are seller claims pending validation; no automatic publication.",
+                  "Images are references, not licensed replicas; no download occurs."]}
+    out=Path(args.out);out.parent.mkdir(parents=True,exist_ok=True)
+    out.write_text(json.dumps(output,indent=2,ensure_ascii=False),encoding="utf-8")
+    print(f"Extracted {len(candidates)} structured product candidates -> {out}")
+if __name__=="__main__": main()
