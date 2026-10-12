@@ -16,10 +16,11 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin, urlsplit, urldefrag
 from urllib.request import Request, urlopen
 from urllib.robotparser import RobotFileParser
+from site_platforms import detect_platform, sitemap_urls
 
 AGENT = "RebornaDiscovery/0.1 (+https://reborna.co; editorial source research)"
 MAX_BYTES = 2_000_000
-PARSER_VERSION = "url-discovery-v1"
+PARSER_VERSION = "url-discovery-v2-platform-sitemaps"
 
 class Extract(HTMLParser):
     def __init__(self):
@@ -69,7 +70,9 @@ def crawl(start_url, max_pages, pause):
     except Exception: raise SystemExit("Robots policy unavailable: aborting safely")
     if not robots.can_fetch(AGENT, start_url):
         raise SystemExit("robots.txt does not permit this starting page")
-    queue, seen, pages = deque([start_url]), set(), []
+    sitemap = sitemap_urls(start_url, AGENT, robots, max_urls=160)
+    queue, seen, pages = deque([start_url, *sitemap]), set(), []
+    platform_counts = {}
     errors = []
     while queue and len(pages) < max_pages:
         url = queue.popleft()
@@ -91,6 +94,8 @@ def crawl(start_url, max_pages, pause):
                 html = data.decode(charset, errors="replace")
                 ex = Extract()
                 ex.feed(html)
+                platform = detect_platform(html, ex.meta)
+                platform_counts[platform] = platform_counts.get(platform, 0) + 1
                 links = [clean_url(v, effective) for v in ex.links]
                 links = sorted(set(x for x in links if x and urlsplit(x).hostname == host))
                 images = []
@@ -101,7 +106,7 @@ def crawl(start_url, max_pages, pause):
                         images.append({"url": src, "alt": item["alt"], "srcset": item["srcset"][:1500]})
                         img_seen.add(src)
                 pages.append({
-                    "url": effective, "observed_at": datetime.now(timezone.utc).isoformat(),
+                    "url": effective, "platform": platform, "observed_at": datetime.now(timezone.utc).isoformat(),
                     "sha256_html": hashlib.sha256(data).hexdigest(),
                     "title": " ".join(ex.titles).strip()[:300],
                     "metadata": ex.meta, "structured_data": ex.jsonld[:25],
@@ -116,7 +121,7 @@ def crawl(start_url, max_pages, pause):
     return {
         "source": start_url, "host": host, "parser_version": PARSER_VERSION,
         "started_from": start_url, "completed_at": datetime.now(timezone.utc).isoformat(),
-        "page_limit": max_pages, "pages_checked": len(seen),
+        "page_limit": max_pages, "sitemap_discovered_urls": len(sitemap), "platforms": platform_counts, "pages_checked": len(seen),
         "pages_succeeded": len(pages), "queue_remaining": len(queue),
         "complete": not queue and not errors, "errors": errors, "pages": pages,
         "notice": "Discovery evidence only. No images copied; no status or release-date inference."
