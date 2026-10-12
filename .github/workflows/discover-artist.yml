@@ -5,6 +5,9 @@ on:
     paths:
       - 'scripts/discover_artist_site.py'
       - 'scripts/extract_sculpt_candidates.py'
+      - 'scripts/extract_wix_galleries.py'
+      - 'scripts/site_platforms.py'
+      - 'scripts/save_discovery_snapshot.py'
       - '.github/workflows/discover-artist.yml'
   workflow_dispatch:
     inputs:
@@ -47,6 +50,15 @@ jobs:
           python3 scripts/extract_sculpt_candidates.py \
             --input artifacts/source-discovery.json \
             --out artifacts/extraction-candidates.json
+      - name: Install browser for Wix gallery discovery
+        run: |
+          python3 -m pip install playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Render public Wix gallery pages
+        run: |
+          python3 scripts/extract_wix_galleries.py \
+            --input artifacts/source-discovery.json \
+            --out artifacts/wix-gallery-evidence.json
       - name: Persist successful JSON reports on a separate GitHub branch
         if: success()
         env:
@@ -82,5 +94,6 @@ jobs:
           path: |
             artifacts/source-discovery.json
             artifacts/extraction-candidates.json
+            artifacts/wix-gallery-evidence.json
           retention-days: 30
           if-no-files-found: warn
