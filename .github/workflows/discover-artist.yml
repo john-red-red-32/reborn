@@ -20,7 +20,11 @@ on:
         type: string
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: artist-discovery-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   discovery:
@@ -43,6 +47,33 @@ jobs:
           python3 scripts/extract_sculpt_candidates.py \
             --input artifacts/source-discovery.json \
             --out artifacts/extraction-candidates.json
+      - name: Persist successful JSON reports on a separate GitHub branch
+        if: success()
+        env:
+          INPUT_URL: ${{ inputs.url || 'https://www.cassielove.co.uk/' }}
+          SOURCE_RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 scripts/save_discovery_snapshot.py \
+            --input-dir artifacts \
+            --output-dir /tmp/reborna-discovery-snapshot \
+            --url "$INPUT_URL" \
+            --run-id "$SOURCE_RUN_ID"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin scrape-results || true
+          if git show-ref --verify --quiet refs/remotes/origin/scrape-results; then
+            git checkout -B scrape-results origin/scrape-results
+          else
+            git checkout --orphan scrape-results
+            git rm -rf --cached . >/dev/null
+          fi
+          mkdir -p snapshots
+          cp -R /tmp/reborna-discovery-snapshot/. snapshots/
+          git add snapshots
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive discovery scan ${SOURCE_RUN_ID} [skip ci]"
+            git push origin HEAD:scrape-results
+          fi
       - name: Upload discovery evidence for manual review
         if: always()
         uses: actions/upload-artifact@v4
