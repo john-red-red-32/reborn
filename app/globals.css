@@ -112,3 +112,31 @@
 .artist-work .artist-grid .artist-kit>span{margin:0;font-size:12px}
 @media(max-width:900px){.artist-work .artist-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:35px 20px}}
 @media(max-width:560px){.artist-work .artist-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 12px}.artist-work .artist-grid .artist-kit>h3{font-size:20px}.artist-work .artist-grid .artist-kit-picture>.kit-image-status{top:8px;left:8px;padding:7px 8px;font-size:9px}}
+
+/* Single artist sculpt collection */
+.unified-collection{width:100%;min-width:0;margin-top:30px}
+.unified-controls{display:grid;grid-template-columns:minmax(230px,1fr) 175px 205px;gap:12px;align-items:end}
+.unified-controls .archive-search{min-width:0;height:45px}
+.unified-select{display:grid;gap:7px;color:#806f62;font-size:11px;font-weight:700}
+.unified-select select{height:45px;border:1px solid var(--line);background:#fffdfb;color:#594b40;padding:0 12px;min-width:0;width:100%;font:12px "DM Sans",sans-serif}
+.unified-explainer{font-size:11px;color:#99897e;margin:18px 0 26px;line-height:1.7}
+.unified-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:27px;row-gap:43px}
+.unified-card{display:block;min-width:0;overflow:hidden}
+.unified-photo{position:relative;width:100%;aspect-ratio:4/5;overflow:hidden;display:grid;place-items:center;background:linear-gradient(135deg,#f3e8dc,#cbb5a3)}
+.unified-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.unified-photo .hover-alt{opacity:0;transition:opacity .3s ease}
+@media(hover:hover){.unified-card:hover .hover-alt{opacity:1}}
+.unverified-photo{background:linear-gradient(130deg,#e8ddd3,#d4c4b6)}
+.placeholder-letter{font:italic 110px "Playfair Display",serif;color:#ffffff96}
+.unified-title{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:15px}
+.unified-title h3{font:normal 25px/1.25 "Playfair Display",serif;margin:0;min-width:0}
+.unified-badge{font:600 10px/1.2 "DM Sans",sans-serif;white-space:nowrap;padding:7px 9px;border-radius:3px;background:#ece8e3;color:#746b61}
+.unified-badge.preorder{background:#e5e9df;color:#627958}
+.unified-badge.upcoming{background:#eee5d8;color:#8b725a}
+.unified-badge.available{background:#e1eaf0;color:#5f788b}
+.unified-badge.shipping{background:#e9e8ed;color:#73718b}
+.unified-badge.sold{background:#ece6e5;color:#937a78}
+.unified-card>p{font-size:12px;color:#948476;line-height:1.5;margin:7px 0 0}
+.unified-load{display:flex;align-items:center;gap:12px;margin:45px auto 0;background:#6d5d51;color:white;border:0;padding:15px 24px;font-size:12px;font-weight:700}
+@media(max-width:850px){.unified-controls{grid-template-columns:1fr 1fr}.unified-controls .archive-search{grid-column:1/-1}.unified-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:18px}}
+@media(max-width:520px){.unified-grid{gap:28px 12px}.unified-title{align-items:flex-start;flex-direction:column;gap:7px;margin-top:12px}.unified-title h3{font-size:21px}.unified-badge{font-size:10px}.unified-card>p{font-size:11px}.unified-controls{gap:9px}}
