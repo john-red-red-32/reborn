@@ -1,0 +1,58 @@
+name: Smoke test Cloudflare-hosted Reborna
+on:
+  push:
+    branches: [cloudflare-pages]
+    paths:
+      - '.github/workflows/smoke-cloudflare.yml'
+      - 'functions/**'
+      - 'next.config.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  remote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Test public Cloudflare pages and APIs
+        env:
+          SITE: https://reborna-site.pages.dev
+        run: |
+          python3 - <<'PY'
+          import json,os,time,urllib.request,urllib.error
+          base=os.environ["SITE"].rstrip("/")
+          checks=[
+            ("/","html"),
+            ("/artists/nikki-johnston/","Nikki Johnston"),
+            ("/artists/cassie-ann-love/","Cassie"),
+            ("/kits/mabel-nikki-johnston/","Mabel"),
+            ("/kits/christopher-nikki-johnston/","Christopher"),
+          ]
+          for path,expected in checks:
+            last=""
+            for attempt in range(20):
+              try:
+                with urllib.request.urlopen(base+path,timeout=15) as response:
+                  html=response.read().decode("utf-8","replace")
+                  assert response.status==200 and expected.lower() in html.lower(),f"Unexpected response or missing text at {path}"
+                  print("OK",path,response.status,len(html));break
+              except Exception as e:
+                last=str(e)
+                time.sleep(5)
+            else:raise SystemExit(f"Failed {path}: {last}")
+          for attempt in range(6):
+            try:
+              with urllib.request.urlopen(base+"/api/exchange-rates",timeout=15) as r:
+                payload=json.load(r)
+                assert r.status==200 and isinstance(payload.get("rates",{}).get("GBP"),(float,int))
+                print("OK exchange rates",payload.get("date"));break
+            except Exception as e:
+              if attempt==5:raise
+              time.sleep(5)
+          try:
+            urllib.request.urlopen(urllib.request.Request(base+"/api/admin/media",data=b"",method="POST"),timeout=15)
+            raise AssertionError("Admin endpoint must deny unauthenticated uploads")
+          except urllib.error.HTTPError as e:
+            assert e.code==401,f"Admin endpoint gave unexpected status {e.code}"
+            print("OK protected media API denies unauthenticated POST")
+          PY
