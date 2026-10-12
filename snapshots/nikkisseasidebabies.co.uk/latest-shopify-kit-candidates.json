@@ -1,7 +1,7 @@
 {
   "adapter": "shopify-original-kit-v1",
   "source": "https://nikkisseasidebabies.co.uk/",
-  "observed_at": "2026-10-12T22:43:09.739068+00:00",
+  "observed_at": "2026-10-12T22:43:51.845362+00:00",
   "platform_detected": {
     "shopify": 12
   },
@@ -10,8 +10,8 @@
       "shopify_product_id": "15808873726112",
       "handle": "prototype-lola-complete-baby-reborn-by-nikki-johnston-sculpted-by-beatriz-clemente",
       "source_url": "https://nikkisseasidebabies.co.uk/products/prototype-lola-complete-baby-reborn-by-nikki-johnston-sculpted-by-beatriz-clemente",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "PROTOTYPE Lola - Reborn by Nikki Johnston, Sculpted by Beatriz Clemente",
       "sculpt_name_candidate": "PROTOTYPE Lola - Reborn by Nikki Johnston, Sculpted by Beatriz Clemente",
       "sculpt_name_basis": "retailer_title_review",
@@ -26,7 +26,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -405,8 +407,8 @@
       "shopify_product_id": "15668445085856",
       "handle": "christopher-in-stock-copy",
       "source_url": "https://nikkisseasidebabies.co.uk/products/christopher-in-stock-copy",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "NEW - Mabel - Pre Order",
       "sculpt_name_candidate": "Mabel",
       "sculpt_name_basis": "artist_kit_spec",
@@ -415,13 +417,15 @@
       "classification_basis": "seller_explicit_blank_kit",
       "description": "................................................................................................... ♥️ PRE ORDER BLANK VINYL MABEL KIT - DUE IN STOCK NOVEMBER 2026 ♥️ ................................................................................................... I do ship worldwide, however you can find a dealer near you HERE .................................................. ✨If you order directly from me, you will receive a special box opening experience, including a signed body and a personalised blanket lovey ✨ .................................................. I'm so excited to introduce you to little Mabel. She has been almost 2 years in the making... but oh so worth the wait ❤️ With her soft pouty lip, and relaxed arms, she captures the quiet stillness of a peacefully sleeping newborn, or even the serenity of a milk-drunk moment. 🥰 Mabel will measure approx 18/19\" with full limbs. I have designed her with a special custom body that gives her the sweetest little rounded belly, as if she has just had a full feed. There will also be the option to add a belly plate at the pre-order. We should start seeing the prototype photos in mid June, with the pre-orders opening not long after. She will be a limited edition, so be sure to mark your calendars so you don't miss out!! ......................... You are buying the BLANK doll kit only. Photos of prototypes are examples only. ......................... Kit Spec Name : Mabel Sculptor: Nikki Johnston Kit length: Approx 19/20” (bent legs) Limb length: Full arms & legs Head circumference: TBD Custom Cloth Body: Included & signed Belly Plate: Optional extra (GBP £15) COA: Included Vinyl: JoyDolls Edition size: 2500 Kit price: £99 *Strictly Limited Edition * ......................... PLEASE NOTE I DO NOT ACCEPT RETURNS OR CANCELLATIONS FOR CHANGE OF MIND OR OTHER SIMILAR REASONS. RETURNS ARE ONLY ACCEPTED AND REFUNDS GIVEN IF THE IS AN EXTREME FAULT WHEN YOU RECEIVE THE KIT. THANK YOU FOR YOUR UNDERSTANDING. BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MAY CARRY. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM COLUMBIA, BRAZIL, ARGENTINA, MIDDLE EAST AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
       "published_kit_facts": {
-        "published_kit_length": "Approx 19/20” (bent legs) Limb length: Full arms & legs Head circumference:",
-        "published_head_circumference": "TBD Custom Cloth Body: Included & signed Belly Plate: O",
+        "published_kit_length": "Approx 19/20” (bent legs)",
+        "published_head_circumference": "TBD",
         "edition_size": 2500,
-        "cloth_body": "Included & signed Belly Plate: Optional extra (GBP £15) COA: Incl",
-        "coa": "Included Vinyl: JoyDolls Edition size: 2500 Kit pr",
-        "manufacturer": "JoyDolls Edition size: 2500 Kit price: £99 *S",
-        "belly_plate_offered": true
+        "cloth_body": "Included & signed",
+        "coa": "Included",
+        "manufacturer": "JoyDolls",
+        "sculptor": "Nikki Johnston",
+        "belly_plate_offered": true,
+        "belly_plate_addon_price_gbp": 15.0
       },
       "currency": "GBP",
       "variants": [
@@ -818,8 +822,8 @@
       "shopify_product_id": "15193550913696",
       "handle": "prototype-wes-sculpted-by-mitre-kooi",
       "source_url": "https://nikkisseasidebabies.co.uk/products/prototype-wes-sculpted-by-mitre-kooi",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "PROTOTYPE Wes Reborn by Nikki Johnston - Sculpted by Mitre Kooi",
       "sculpt_name_candidate": "PROTOTYPE Wes Reborn by Nikki Johnston - Sculpted by Mitre Kooi",
       "sculpt_name_basis": "retailer_title_review",
@@ -834,7 +838,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -1218,8 +1224,8 @@
       "shopify_product_id": "15193549701280",
       "handle": "prototype-elsie-sculpted-by-mirte-kooi",
       "source_url": "https://nikkisseasidebabies.co.uk/products/prototype-elsie-sculpted-by-mirte-kooi",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "PROTOTYPE Elsie Reborn by Nikki Johnston - Sculpted by Mirte Kooi",
       "sculpt_name_candidate": "PROTOTYPE Elsie Reborn by Nikki Johnston - Sculpted by Mirte Kooi",
       "sculpt_name_basis": "retailer_title_review",
@@ -1234,7 +1240,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -1618,8 +1626,8 @@
       "shopify_product_id": "15049931915424",
       "handle": "prototype-farrah-reborn-by-nikki-johnston",
       "source_url": "https://nikkisseasidebabies.co.uk/products/prototype-farrah-reborn-by-nikki-johnston",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "PROTOTYPE Farrah - Complete Baby Reborn by Nikki Johnston, Sculpted by Ebtehal Abul",
       "sculpt_name_candidate": "PROTOTYPE Farrah - Complete Baby Reborn by Nikki Johnston, Sculpted by Ebtehal Abul",
       "sculpt_name_basis": "retailer_title_review",
@@ -1634,7 +1642,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -1949,8 +1959,8 @@
       "shopify_product_id": "15049904357536",
       "handle": "christopher-pre-order-may-2025",
       "source_url": "https://nikkisseasidebabies.co.uk/products/christopher-pre-order-may-2025",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Christopher - IN STOCK",
       "sculpt_name_candidate": "Christopher",
       "sculpt_name_basis": "artist_kit_spec",
@@ -1959,13 +1969,15 @@
       "classification_basis": "seller_explicit_blank_kit",
       "description": "♥️ IN STOCK ♥️ I do ship worldwide, however you can find a dealer near you HERE If you order directly from me, you will receive a special box opening experience, including a signed body and a personalised blanket lovey ♥️ \" I’m am so excited to introduce you to little Christopher !! Little Christopher has been almost 6 years in the making!! But oh so worth the wait ❤️ His little pouty lips, and scrunchy little legs make him seem like he's just settling from a big stretch. He also has the perfect newborn scrunch when lifted. Completely melts my heart! 🥰 He has full limbs, and will be approx 19/20\". I have created him a special custom body that gives him that perfect little belly that looks like it's full of milk. He will also have an optional belly plate that you can add to your pre-order We should start seeing the prototype pictures late May, with the pre order not long after. Mark your calendar's so you don't miss out on this little cutie!! I have fallen completely head over heels in love with him, and I hope you will too! 🥰 You are buying the BLANK doll kit only. Photos of prototypes are examples only. Kit Spec Name : Christopher Sculptor: Nikki Johnston Kit length: Approx 19/20” (bent legs) Limb length: Full arms & legs Head circumference: 12.5” Custom Cloth Body: Included & signed Belly Plate: Optional extra COA: Included Vinyl: JoyDolls Edition size: 3500 BLANK VINYL KIT ONLY *Strictly Limited Edition * PLEASE NOTE I DO NOT ACCEPT RETURNS OR CANCELLATIONS FOR CHANGE OF MIND OR OTHER SIMILAR REASONS. RETURNS ARE ONLY ACCEPTED AND REFUNDS GIVEN IF THE IS AN EXTREME FAULT WHEN YOU RECEIVE THE KIT. THANK YOU FOR YOUR UNDERSTANDING. BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MAY CARRY. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM COLUMBIA, BRAZIL, ARGENTINA, MIDDLE EAST AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
       "published_kit_facts": {
-        "published_kit_length": "Approx 19/20” (bent legs) Limb length: Full arms & legs Head circumference:",
-        "published_head_circumference": "12",
+        "published_kit_length": "Approx 19/20” (bent legs)",
+        "published_head_circumference": "12.5”",
         "edition_size": 3500,
-        "cloth_body": "Included & signed Belly Plate: Optional extra COA: Included Vinyl",
-        "coa": "Included Vinyl: JoyDolls Edition size: 3500 BLANK",
-        "manufacturer": "JoyDolls Edition size: 3500 BLANK VINYL KIT O",
-        "belly_plate_offered": true
+        "cloth_body": "Included & signed",
+        "coa": "Included",
+        "manufacturer": "JoyDolls",
+        "sculptor": "Nikki Johnston",
+        "belly_plate_offered": true,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -2360,8 +2372,8 @@
       "shopify_product_id": "13600336380064",
       "handle": "reborn-kovu",
       "source_url": "https://nikkisseasidebabies.co.uk/products/reborn-kovu",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Reborn Baby Kovu",
       "sculpt_name_candidate": "Reborn Baby Kovu",
       "sculpt_name_basis": "retailer_title_review",
@@ -2376,7 +2388,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -2426,8 +2440,8 @@
       "shopify_product_id": "13600332382368",
       "handle": "reborn-baby-luciano",
       "source_url": "https://nikkisseasidebabies.co.uk/products/reborn-baby-luciano",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Reborn Baby Luciano",
       "sculpt_name_candidate": "Reborn Baby Luciano",
       "sculpt_name_basis": "retailer_title_review",
@@ -2442,7 +2456,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -2492,8 +2508,8 @@
       "shopify_product_id": "12529735598240",
       "handle": "prototype-winnie-complete-baby-reborn-by-nikki-johnston-sculpted-by-cassie-brace",
       "source_url": "https://nikkisseasidebabies.co.uk/products/prototype-winnie-complete-baby-reborn-by-nikki-johnston-sculpted-by-cassie-brace",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Prototype Winnie  - Complete Baby Reborn by Nikki Johnston, Sculpted by Cassie Brace",
       "sculpt_name_candidate": "Prototype Winnie  - Complete Baby Reborn by Nikki Johnston, Sculpted by Cassie Brace",
       "sculpt_name_basis": "retailer_title_review",
@@ -2508,7 +2524,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -2783,8 +2801,8 @@
       "shopify_product_id": "9569592705184",
       "handle": "pickle-pre-order-1st-11th-july",
       "source_url": "https://nikkisseasidebabies.co.uk/products/pickle-pre-order-1st-11th-july",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "PICKLE - (Sold Out)",
       "sculpt_name_candidate": "Pickle",
       "sculpt_name_basis": "artist_kit_spec",
@@ -2793,13 +2811,15 @@
       "classification_basis": "seller_explicit_blank_kit",
       "description": "I do ship worldwide, however you can find a dealer near you HERE \" I’m am so excited to introduce you to little Pickle !! 4 years in the making, little Pickle is a super chunky, 4 month size baby, at about 25” in length. His kit will come with a very special body that I have custom made, to give him his scrumptious ‘pot belly’. 🥰 Just like his little brother Trouble, and as their names suggest, sculpting Pickle hasn’t been without its challenges. 🤣🤦🏻‍♀️ At the beginning, I was having a lot of problems with his head shape and we joked around that he looked like a ‘pickle’, and he was ‘getting me in a pickle’ 🤣 and from there on out, his name was solidified I have fallen completely head over heels in love with him, and I hope you will too! 🥰 You are buying the BLANK doll kit only. Photos of prototypes are examples only. Kit Spec Name : Pickle Sculptor: Nikki Johnston Kit length: Approx 24/25” (bent legs) Limb length: Full arms & legs Head circumference: 16” Custom Cloth Body: Included & signed COA: Included Vinyl: JoyDolls Edition size: 3700 *Strictly Limited Edition * BY CHOOSING DEPOSIT ONLY, YOU WILL RECEIVE AN INVOICE FOR THE REMAINING BALANCE WHEN HE COMES INTO STOCK. THIS WILL BE SENT TO THE EMAIL ADDRESS USED TO PRE ORDER. BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MY CARRY. DEPOSIT PAYMENTS ARE NON-REFUNDABLE. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM BRAZIL, ARGENTINA, MIDDLE EAST AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
       "published_kit_facts": {
-        "published_kit_length": "Approx 24/25” (bent legs) Limb length: Full arms & legs Head circumference:",
-        "published_head_circumference": "16” Custom Cloth Body: Included & signed COA: Included",
+        "published_kit_length": "Approx 24/25” (bent legs)",
+        "published_head_circumference": "16”",
         "edition_size": 3700,
-        "cloth_body": "Included & signed COA: Included Vinyl: JoyDolls Edition size: 370",
-        "coa": "Included Vinyl: JoyDolls Edition size: 3700 *Stric",
-        "manufacturer": "JoyDolls Edition size: 3700 *Strictly Limited",
-        "belly_plate_offered": false
+        "cloth_body": "Included & signed",
+        "coa": "Included",
+        "manufacturer": "JoyDolls",
+        "sculptor": "Nikki Johnston",
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -3163,8 +3183,8 @@
       "shopify_product_id": "5912079597728",
       "handle": "gift-card-all-values",
       "source_url": "https://nikkisseasidebabies.co.uk/products/gift-card-all-values",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Gift Card - All Values",
       "sculpt_name_candidate": "Gift Card - All Values",
       "sculpt_name_basis": "retailer_title_review",
@@ -3179,7 +3199,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -3311,8 +3333,8 @@
       "shopify_product_id": "5694458495136",
       "handle": "new-delilah-pre-order-in-november",
       "source_url": "https://nikkisseasidebabies.co.uk/products/new-delilah-pre-order-in-november",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Delilah - (Sold Out)",
       "sculpt_name_candidate": "Delilah",
       "sculpt_name_basis": "artist_kit_spec",
@@ -3321,13 +3343,15 @@
       "classification_basis": "seller_explicit_blank_kit",
       "description": "THANK YOU SO MUCH FOR ALL YOUR SUPPORT WITH DELILAH! IT MEANS THE WORLD! 🥰🥰🥰 I do ship worldwide, however you can find a dealer near you HERE Order your very own blank Delilah kit. \" I’m am so excited to introduce you to little Delilah !! I'm so overjoyed with how this little bundle has turned out!! Over a year in the making, little Delilah is full of details! From the flowing skin folds on her hands, to the tiny and delicate wrinkles on the souls of her feet; nothing has been overlooked! At 17/18\", this little beauty is the perfect petite newborn/big preemie. I must admit, she makes such an unbelievably cuddly baby! You'll never want to put her down! She is strictly a limited edition, so mark your calendars to make sure you don't miss out! \" You are buying the BLANK doll kit only. Photos of prototypes are examples only. Kit Spec Name : Delilah , by Nikki Johnston Kit length: Approx 17/18” (bent legs) Limb length: Full arms & legs Head circumference: 13.5” Cloth Body: Included & signed Belly Plate: Optional (To add more than one belly top you order click HERE ) COA: Included Vinyl: JoyDolls Edition size: 3700 *Strictly Limited Edition * BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MY CARRY. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM BRAZIL, ARGENTINA, MIDDLE EAST AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
       "published_kit_facts": {
-        "published_kit_length": "Approx 17/18” (bent legs) Limb length: Full arms & legs Head circumference:",
-        "published_head_circumference": "13",
+        "published_kit_length": "Approx 17/18” (bent legs)",
+        "published_head_circumference": "13.5”",
         "edition_size": 3700,
-        "cloth_body": "Included & signed Belly Plate: Optional (To add more than one bel",
-        "coa": "Included Vinyl: JoyDolls Edition size: 3700 *Stric",
-        "manufacturer": "JoyDolls Edition size: 3700 *Strictly Limited",
-        "belly_plate_offered": true
+        "cloth_body": "Included & signed",
+        "coa": "Included",
+        "manufacturer": "JoyDolls",
+        "sculptor": null,
+        "belly_plate_offered": true,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -3691,8 +3715,8 @@
       "shopify_product_id": "5845209612448",
       "handle": "delilah-belly-plate-pre-order",
       "source_url": "https://nikkisseasidebabies.co.uk/products/delilah-belly-plate-pre-order",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Delilah Belly Plate (Temporarily Out Of Stock)",
       "sculpt_name_candidate": "Delilah Belly Plate (Temporarily Out Of Stock",
       "sculpt_name_basis": "retailer_title_review",
@@ -3707,7 +3731,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -3829,8 +3855,8 @@
       "shopify_product_id": "5627976122528",
       "handle": "19-21-belly-plate",
       "source_url": "https://nikkisseasidebabies.co.uk/products/19-21-belly-plate",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "18-21” Belly Plate - (Temporarily Out Of Stock)",
       "sculpt_name_candidate": "18-21” Belly Plate - (Temporarily Out Of Stock",
       "sculpt_name_basis": "retailer_title_review",
@@ -3845,7 +3871,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -3959,8 +3987,8 @@
       "shopify_product_id": "4506891059252",
       "handle": "advanced-rooting-level-3-coming-soon",
       "source_url": "https://nikkisseasidebabies.co.uk/products/advanced-rooting-level-3-coming-soon",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Advanced Rooting (Level 3 - Coming Soon)",
       "sculpt_name_candidate": "Advanced Rooting (Level 3 - Coming Soon",
       "sculpt_name_basis": "retailer_title_review",
@@ -3975,7 +4003,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -4025,8 +4055,8 @@
       "shopify_product_id": "4506880213044",
       "handle": "intermediate-rooting-level-2-coming-soon",
       "source_url": "https://nikkisseasidebabies.co.uk/products/intermediate-rooting-level-2-coming-soon",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Intermediate Rooting (Level 2 - Coming Soon)",
       "sculpt_name_candidate": "Intermediate Rooting (Level 2 - Coming Soon",
       "sculpt_name_basis": "retailer_title_review",
@@ -4041,7 +4071,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -4099,8 +4131,8 @@
       "shopify_product_id": "4506847281204",
       "handle": "rooting-for-beginners",
       "source_url": "https://nikkisseasidebabies.co.uk/products/rooting-for-beginners",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Beginners Rooting (Level 1 - Coming Soon)",
       "sculpt_name_candidate": "Beginners Rooting (Level 1 - Coming Soon",
       "sculpt_name_basis": "retailer_title_review",
@@ -4115,7 +4147,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -4181,8 +4215,8 @@
       "shopify_product_id": "4466633605172",
       "handle": "vincent-1",
       "source_url": "https://nikkisseasidebabies.co.uk/products/vincent-1",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Vincent - (Sold Out)",
       "sculpt_name_candidate": "Vincent",
       "sculpt_name_basis": "artist_kit_spec",
@@ -4191,13 +4225,15 @@
       "classification_basis": "seller_explicit_blank_kit",
       "description": "You are buying the BLANK doll kit only. Photos of prototypes are examples only. \" I’m am so excited to introduce you to Vincent !! Named after Vincent Van Gough , this little one gave me a bit of bother. Through out his sculpting process, I have had to chop his ear of several times, in order to have it in the correct position. Henceforth earning his name 💕 \" Kit Spec Name : Vincent Sculptor: Nikki Johnston Kit length: Approx 17.5” Limb length: Full arms & legs Head circumference: 12” Cloth Body: Included Belly Plate: Optional COA: Included Edition size: 400 (Strictly a limited edition) BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MY CARRY. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM BRAZIL, ARGENTINA, MIDDLE EAST AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
       "published_kit_facts": {
-        "published_kit_length": "Approx 17",
-        "published_head_circumference": "12” Cloth Body: Included Belly Plate: Optional COA: Inc",
+        "published_kit_length": "Approx 17.5”",
+        "published_head_circumference": "12”",
         "edition_size": 400,
-        "cloth_body": "Included Belly Plate: Optional COA: Included Edition size: 400 (S",
-        "coa": "Included Edition size: 400 (Strictly a limited edi",
+        "cloth_body": "Included",
+        "coa": "Included",
         "manufacturer": null,
-        "belly_plate_offered": true
+        "sculptor": "Nikki Johnston",
+        "belly_plate_offered": true,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -4425,8 +4461,8 @@
       "shopify_product_id": "4449640087604",
       "handle": "online-tutorials",
       "source_url": "https://nikkisseasidebabies.co.uk/products/online-tutorials",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Online Tutorials",
       "sculpt_name_candidate": "Online Tutorials",
       "sculpt_name_basis": "retailer_title_review",
@@ -4441,7 +4477,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -4738,8 +4776,8 @@
       "shopify_product_id": "4355643998260",
       "handle": "trouble",
       "source_url": "https://nikkisseasidebabies.co.uk/products/trouble",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Trouble (Sold Out)",
       "sculpt_name_candidate": "Trouble",
       "sculpt_name_basis": "artist_kit_spec",
@@ -4748,13 +4786,15 @@
       "classification_basis": "seller_explicit_blank_kit",
       "description": "TROUBLE IS SOLD OUT. THANK YOU!! 😁❤️ You are buying the BLANK doll kit only. Photos of prototypes are examples only. I’m am so excited to introduce you to Trouble!! Why the name, I hear you ask? Well, this little one has been an adventure right from the word go! I could not for the life of me get the nose to work, so I started again. Then she decided to take up diving and fell off the stand and completely squishing her lips and nose. Once she was fixed, I left her on the table, only for me to come back to a massive gouge in her mouth (from what I have no idea 😂 ) I fix her again and knock her nose in the process. For the life of me, I could not get the nose to look how I wanted after that! So I just chopped it off and started again (again) 😂 🙈 Then just when I finally think she is getting somewhere and is almost ready to bake, I drop her on the edge of table!! 😩 🙈 A troubled birth, but I’m so happy with how she (or he) has turned out! Worth the constant battle. Kit Spec Name: Trouble by Nikki Johnston Kit length: Approx 19” (very curled legs) Limb length: Full legs Head circumference: 13.5” Cloth Body: Included Non-gendered belly plate: Optional add-on Edition site: 600 Strictly Limited Edition BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MY CARRY.",
       "published_kit_facts": {
-        "published_kit_length": "Approx 19” (very curled legs) Limb length: Full legs Head circumference: 13",
-        "published_head_circumference": "13",
+        "published_kit_length": "Approx 19” (very curled legs)",
+        "published_head_circumference": "13.5”",
         "edition_size": 600,
-        "cloth_body": "Included Non-gendered belly plate: Optional add-on Edition site:",
+        "cloth_body": "Included",
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": true
+        "sculptor": null,
+        "belly_plate_offered": true,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -4998,8 +5038,8 @@
       "shopify_product_id": "4355636690996",
       "handle": "lexi",
       "source_url": "https://nikkisseasidebabies.co.uk/products/lexi",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Lexi (Sold Out)",
       "sculpt_name_candidate": "Lexi",
       "sculpt_name_basis": "retailer_title_review",
@@ -5014,7 +5054,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -5202,8 +5244,8 @@
       "shopify_product_id": "4355629187124",
       "handle": "isabella",
       "source_url": "https://nikkisseasidebabies.co.uk/products/isabella",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Isabella (Sold Out)",
       "sculpt_name_candidate": "Isabella",
       "sculpt_name_basis": "retailer_title_review",
@@ -5218,7 +5260,9 @@
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -5430,8 +5474,8 @@
       "shopify_product_id": "4355623190580",
       "handle": "evie",
       "source_url": "https://nikkisseasidebabies.co.uk/products/evie",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Evie (Sold Out)",
       "sculpt_name_candidate": "Evie",
       "sculpt_name_basis": "retailer_title_review",
@@ -5441,12 +5485,14 @@
       "description": "You are buying the BLANK doll kit only. Photos of prototypes are examples only. Details of the kit are as Follow: Size: Head Circumference: Arms: Full Legs: Full Eye Size: N/A Body: FREE Cloth Body Included Tummy Plate: Non Gender Belly Plate Optional £15 Edition Size: 180 Strictly Limited Edition",
       "published_kit_facts": {
         "published_kit_length": null,
-        "published_head_circumference": "Arms: Full Legs: Full Eye Size: N/A Body: FREE Cloth Bo",
+        "published_head_circumference": "Arms: Full Legs: Full Eye Size: N/A Body: FREE Cloth Body Included Tummy Plate: Non Gender Belly Plate Optional £15",
         "edition_size": 180,
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -5626,8 +5672,8 @@
       "shopify_product_id": "4355615227956",
       "handle": "princess-charlotte",
       "source_url": "https://nikkisseasidebabies.co.uk/products/princess-charlotte",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Princess Charlotte (Sold Out)",
       "sculpt_name_candidate": "Princess Charlotte",
       "sculpt_name_basis": "retailer_title_review",
@@ -5637,12 +5683,14 @@
       "description": "You are buying the BLANK doll kit only. Photos of prototypes are examples only. Details of the kit are as Follow: Size: Head Circumference: Arms: Full Legs: Full Eye Size: N/A Body: FREE Cloth Body Included Tummy Plate: Non Gender Belly Plate Optional £15 Edition Size: 500 Strictly Limited Edition",
       "published_kit_facts": {
         "published_kit_length": null,
-        "published_head_circumference": "Arms: Full Legs: Full Eye Size: N/A Body: FREE Cloth Bo",
+        "published_head_circumference": "Arms: Full Legs: Full Eye Size: N/A Body: FREE Cloth Body Included Tummy Plate: Non Gender Belly Plate Optional £15",
         "edition_size": 500,
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -5838,8 +5886,8 @@
       "shopify_product_id": "4355603529780",
       "handle": "robin-awake",
       "source_url": "https://nikkisseasidebabies.co.uk/products/robin-awake",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Robin, Awake (Sold Out)",
       "sculpt_name_candidate": "Robin, Awake",
       "sculpt_name_basis": "retailer_title_review",
@@ -5849,12 +5897,14 @@
       "description": "You are buying the BLANK doll kit only. Photos of prototypes are examples only. Little Robin has woken up! And he is full of character and soul! I am so unbelievably proud of him and his Asleep twin and all their chunky-ness, and I really hope you enjoy them too! You can order his Sleeping twin here . Details of the kit are as Follow: Size: 23\" Head Circumference: 14.5\" Arms: Full Legs: Full Eye Size: N/A Body: FREE Cloth Body Included Tummy Plate: Non Gender Belly Plate Optional £15 Edition Size: 700 Strictly Limited Edition BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MY CARRY. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM BRAZIL, ARGENTINA AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
       "published_kit_facts": {
         "published_kit_length": null,
-        "published_head_circumference": "14",
+        "published_head_circumference": "14.5\" Arms: Full Legs: Full Eye Size: N/A Body: FREE Cloth Body Included Tummy Plate: Non Gender Belly Plate Optional £1",
         "edition_size": 700,
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -6074,8 +6124,8 @@
       "shopify_product_id": "4355591372852",
       "handle": "robin-asleep",
       "source_url": "https://nikkisseasidebabies.co.uk/products/robin-asleep",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Robin Asleep (Sold Out)",
       "sculpt_name_candidate": "Robin Asleep",
       "sculpt_name_basis": "retailer_title_review",
@@ -6085,12 +6135,14 @@
       "description": "You are buying the BLANK doll kit only. Photos of prototypes are examples only. Robin was truly a joy to sculpt and really came from my heart. I am so unbelievably proud of him and all his chunky-ness, and I really hope you enjoy him too! He is a very special edition to celebrate the release of his open eyed twin. Robin's Solo Edition featured 450, followed by the \"Robin Awake Special Edition\" with his twin for which there were 400. He comes with a special COA certifying he is part of the special edition. You can order his Awake twin here . Details of the kit are as Follow: Size: 23\" Head Circumference: 14.5\" Arms: Full Legs: Full Eye Size: N/A Body: FREE Cloth Body Included Tummy Plate: Non Gender Belly Plate Optional £15 Edition Size: 1st edition 450, Special 400 Strictly Limited Edition BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MY CARRY.",
       "published_kit_facts": {
         "published_kit_length": null,
-        "published_head_circumference": "14",
-        "edition_size": 1,
+        "published_head_circumference": "14.5\" Arms: Full Legs: Full Eye Size: N/A Body: FREE Cloth Body Included Tummy Plate: Non Gender Belly Plate Optional £1",
+        "edition_size": 450,
         "cloth_body": null,
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": false
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -6388,8 +6440,8 @@
       "shopify_product_id": "4355567157300",
       "handle": "kiara",
       "source_url": "https://nikkisseasidebabies.co.uk/products/kiara",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Kiara - (Sold Out)",
       "sculpt_name_candidate": "Kiara",
       "sculpt_name_basis": "artist_kit_spec",
@@ -6399,12 +6451,14 @@
       "description": "PLEASE NOTE, ANY ITEM ORDERED FRO THE 17TH TO THE 23RD WILL BE SHIPPED OUT ON THE 24TH MAY. THANK YOU SO MUCH FOR YOUR PATIENCE. ♥️ FOR A LIMITED TIME ONLY, KIARA'S KIT IS 20% OFF. SO IF SHE PULLS ON YOUR HEART STRINGS, DON'T HESITATE! ...................... You are buying the BLANK doll kit only. Photos of prototypes are examples only. I started sculpting her 4 years ago today! June 1st 2014! She was one of the first babies I ever started. Over the years I have improved her, and she has changed as I learned new techniques. I must admit, I am 100% unequivocally, totally, in love with her! The way she lays and curls up so naturally, just like a real squishy newborn baby! I really hope you guys like her as much as I do!! Details of the kit are as follows: Name: Kiara Sculptor: Nikki Johnston Size: 19\" Head Circumference: 13\" Arms: Full Legs: Full Body: FREE Cloth Body Included Tummy Plate: Optional Non Gender Belly Plate Edition: 800 ( Strictly Limited Edition) Vinyl: Soft Neutral Vinyl ...................... BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MY CARRY. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM BRAZIL, ARGENTINA, MIDDLE EAST AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
       "published_kit_facts": {
         "published_kit_length": null,
-        "published_head_circumference": "13\" Arms: Full Legs: Full Body: FREE Cloth Body Include",
+        "published_head_circumference": "13\" Arms: Full Legs: Full Body: FREE Cloth Body Included Tummy Plate: Optional Non Gender Belly Plate Edition: 800 ( Str",
         "edition_size": null,
         "cloth_body": null,
         "coa": null,
-        "manufacturer": "Soft Neutral Vinyl",
-        "belly_plate_offered": false
+        "manufacturer": "Soft Neutral Vinyl ...................... BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT",
+        "sculptor": "Nikki Johnston Size: 19\"",
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -6648,8 +6702,8 @@
       "shopify_product_id": "4355553689652",
       "handle": "posy",
       "source_url": "https://nikkisseasidebabies.co.uk/products/posy",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Posy (Sold Out)",
       "sculpt_name_candidate": "Posy",
       "sculpt_name_basis": "artist_kit_spec",
@@ -6658,13 +6712,15 @@
       "classification_basis": "seller_explicit_blank_kit",
       "description": "You are buying the BLANK doll kit only. Photos of prototypes are examples only. It’s twins!! I’m am so excited to introduce you to Posy and her brother Jack!! Kit Spec Name : Posy by Nikki Johnston Find her twin here Kit length: Approx 20” Limb length: Full legs Head circumference: 13.5” Eye size: 20mm Cloth Body: Included Non-gendered belly plate: Optional add-on Edition size: 600 Strictly Limited Edition BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MY CARRY. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM BRAZIL, ARGENTINA AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
       "published_kit_facts": {
-        "published_kit_length": "Approx 20” Limb length: Full legs Head circumference: 13",
-        "published_head_circumference": "13",
+        "published_kit_length": "Approx 20”",
+        "published_head_circumference": "13.5” Eye size: 20mm",
         "edition_size": 600,
-        "cloth_body": "Included Non-gendered belly plate: Optional add-on Edition size:",
+        "cloth_body": "Included",
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": true
+        "sculptor": null,
+        "belly_plate_offered": true,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
@@ -6844,8 +6900,8 @@
       "shopify_product_id": "4355543466036",
       "handle": "jack",
       "source_url": "https://nikkisseasidebabies.co.uk/products/jack",
-      "source_scan_at": "2026-10-12T22:43:09.739068+00:00",
-      "source_sha256": "afc1cc0ebab7d89977e439be11ff943b61a589d59c4f57a6461c1aab6d0678f8",
+      "source_scan_at": "2026-10-12T22:43:51.845362+00:00",
+      "source_sha256": "dc38771b34fb725bd94653a97e6bc6f6d6ee85f7593908a44004ea37cff84038",
       "name": "Jack (Sold Out)",
       "sculpt_name_candidate": "Jack",
       "sculpt_name_basis": "artist_kit_spec",
@@ -6854,13 +6910,15 @@
       "classification_basis": "seller_explicit_blank_kit",
       "description": "You are buying the BLANK doll kit only. Photos of prototypes are examples only. It’s twins!! I’m am so excited to introduce you to Jack and his sister Posy!! Kit Spec Name : Jack by Nikki Johnston Find his twin here Kit length: Approx 20” Limb length: Full legs Head circumference: 13.5” Cloth Body: Included Non-gendered belly plate: Optional add-on Edition size: 900 Strictly Limited Edition BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MY CARRY. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM BRAZIL, ARGENTINA AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
       "published_kit_facts": {
-        "published_kit_length": "Approx 20” Limb length: Full legs Head circumference: 13",
-        "published_head_circumference": "13",
+        "published_kit_length": "Approx 20”",
+        "published_head_circumference": "13.5”",
         "edition_size": 900,
-        "cloth_body": "Included Non-gendered belly plate: Optional add-on Edition size:",
+        "cloth_body": "Included",
         "coa": null,
         "manufacturer": null,
-        "belly_plate_offered": true
+        "sculptor": null,
+        "belly_plate_offered": true,
+        "belly_plate_addon_price_gbp": null
       },
       "currency": "GBP",
       "variants": [
