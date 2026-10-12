@@ -113,8 +113,8 @@ def crawl(start_url, max_pages, pause):
                     "image_candidates": images[:100], "links": links,
                     "extraction_status": "candidate_unreviewed"
                 })
-                for x in links:
-                    if x not in seen and x not in queue: queue.append(x)
+                for x in reversed(links):
+                    if x not in seen and x not in queue: queue.appendleft(x)
         except (HTTPError, URLError, UnicodeError, ValueError, TimeoutError) as e:
             errors.append({"url": url, "reason": type(e).__name__, "detail": str(e)[:200]})
         time.sleep(pause)
