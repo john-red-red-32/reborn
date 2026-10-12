@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Offline safety tests for Shopify original kit discovery, variants, and exclusion."""
 import unittest
-from extract_shopify_kits import classification, parse_product
+from extract_shopify_kits import classification, parse_product, kit_facts
 
 class ShopifyKitTests(unittest.TestCase):
     def product(self,title="Christopher - In Stock",body="You are buying the BLANK doll kit only. Belly Plate: Optional extra. Edition size: 600",variants=None):
@@ -33,6 +33,27 @@ class ShopifyKitTests(unittest.TestCase):
         self.assertEqual(row["variants"][0]["price_kind"],"deposit_only")
         self.assertEqual(row["distinct_full_prices"],[99.0])
         self.assertFalse(row["has_genuine_full_price_range"])
+    def test_decimal_string_prices_and_accessory_only_do_not_lower_from(self):
+        p=self.product()
+        p["variants"]=[
+            {"id":1,"title":"Mabel Kit - NO Belly Plate","option1":"NO Belly Plate","price":"99.00","available":True},
+            {"id":2,"title":"Mabel Kit - WITH Belly Plate","option1":"WITH Belly Plate","price":"114.00","available":True},
+            {"id":3,"title":"Belly Plate ONLY - NO KIT!!","option1":"Belly Plate ONLY - NO KIT!!","price":"15.00","available":True}]
+        row=parse_product(p,"https://nikkisseasidebabies.co.uk/","hash","time")
+        self.assertEqual([v["price_native"] for v in row["variants"]],[99.0,114.0,15.0])
+        self.assertEqual(row["variants"][2]["price_kind"],"accessory_only")
+        self.assertEqual(row["distinct_full_prices"],[99.0,114.0])
+        self.assertEqual(row["from_price_native"],99.0)
+    def test_specs_keep_decimal_dimensions_and_separate_labels(self):
+        facts=kit_facts('Name: Mabel Sculptor: Nikki Johnston Kit length: Approx 19/20” (bent legs) Head circumference: 13.5” Custom Cloth Body: Included & signed Belly Plate: Optional extra (GBP £15) COA: Included Vinyl: JoyDolls Edition size: 2,500')
+        self.assertEqual(facts["published_head_circumference"],'13.5”')
+        self.assertEqual(facts["cloth_body"],"Included & signed")
+        self.assertEqual(facts["edition_size"],2500)
+        self.assertEqual(facts["manufacturer"],"JoyDolls")
+        self.assertEqual(facts["belly_plate_addon_price_gbp"],15.0)
+    def test_rooting_classes_are_not_sculpt_kits(self):
+        self.assertEqual(classification(self.product("Advanced Rooting (Level 3 - Coming Soon)"))[0],"non_kit_excluded")
+
     def test_finished_doll_never_kit(self):
         self.assertEqual(classification(self.product("PROTOTYPE Winnie - Complete Reborn Baby, Sculpted by Cassie Brace"))[0],"finished_doll_excluded")
     def test_standalone_component_excluded(self):
