@@ -140,3 +140,16 @@
 .unified-load{display:flex;align-items:center;gap:12px;margin:45px auto 0;background:#6d5d51;color:white;border:0;padding:15px 24px;font-size:12px;font-weight:700}
 @media(max-width:850px){.unified-controls{grid-template-columns:1fr 1fr}.unified-controls .archive-search{grid-column:1/-1}.unified-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:18px}}
 @media(max-width:520px){.unified-grid{gap:28px 12px}.unified-title{align-items:flex-start;flex-direction:column;gap:7px;margin-top:12px}.unified-title h3{font-size:21px}.unified-badge{font-size:10px}.unified-card>p{font-size:11px}.unified-controls{gap:9px}}
+
+/* Retailer prices and payment information */
+.unified-card .offer-price{margin-top:8px;font-size:13px;line-height:1.5;font-weight:700;color:#604c40}
+.offer-price span{font-size:11px;font-weight:500;color:#8d796a}
+.offer-price small{display:block;margin-top:2px;font-size:10px;font-weight:400;color:#9a8b80}
+.offer-list{border:1px solid var(--line);margin:15px 0 26px}
+.offer-list>a{display:flex;justify-content:space-between;gap:20px;padding:17px 20px;border-bottom:1px solid var(--line)}
+.offer-list>a:last-child{border-bottom:0}
+.offer-list>a>div{display:flex;flex-direction:column;gap:7px}
+.offer-list strong{font-size:13px}
+.offer-list small{font-size:11px;line-height:1.6;color:#8c7d71}
+.offer-amount{text-align:right;white-space:nowrap}
+@media(max-width:560px){.offer-list>a{padding:15px 12px;gap:9px}.offer-amount{white-space:normal}.unified-card .offer-price{font-size:12px}}
