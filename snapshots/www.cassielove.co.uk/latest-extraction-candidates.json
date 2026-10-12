@@ -1,7 +1,7 @@
 {
-  "extractor_version": "candidate-extractor-v2",
+  "extractor_version": "candidate-extractor-v3-preorder-evidence",
   "source": "https://www.cassielove.co.uk/",
-  "scan_completed_at": "2026-10-12T22:05:24.005124+00:00",
+  "scan_completed_at": "2026-10-12T22:06:03.714047+00:00",
   "scan_complete": true,
   "pages_succeeded": 16,
   "candidate_count": 2,
@@ -12,6 +12,7 @@
       "evidence_type": "structured_product",
       "confidence": "structured_unreviewed",
       "description": "BRAND NEW DOLL KIT - LENNOX BY CASSIE LOVE Limited Edition 400 ww -Blank and unassembled- not a reborn baby doll total price £95 +postage 22&quot; approx Doll kit - blank kit only- Full LimbsIncludes custom fit cloth body Special Certification of Authenticity and Cotton bag",
+      "lifecycle_evidence": "not_confirmed",
       "images": [
         {
           "url": "https://static.wixstatic.com/media/684b25_65715b3dff804c21a46290987fae43a4~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
@@ -107,6 +108,7 @@
       "evidence_type": "structured_product",
       "confidence": "structured_unreviewed",
       "description": "BRAND NEW DOLL KIT - Limited Edition -Blank and unassembled- not a reborn baby dolltotal price £95 +postage Lovan is my latest doll kit to release to preorder19&quot; approx Doll kit - blank kit only- Full LimbsIncludes custom fit cloth bodySpecial Certification of Authenticity,Cotton bag",
+      "lifecycle_evidence": "not_confirmed",
       "images": [
         {
           "url": "https://static.wixstatic.com/media/684b25_946277d39dfb41afa75261d274d5d1e9~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
