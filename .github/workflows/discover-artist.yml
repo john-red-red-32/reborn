@@ -1,5 +1,11 @@
 name: Discover artist site
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/discover_artist_site.py'
+      - 'scripts/extract_sculpt_candidates.py'
+      - '.github/workflows/discover-artist.yml'
   workflow_dispatch:
     inputs:
       url:
@@ -24,8 +30,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Crawl source pages without modifying live catalogue
         env:
-          SOURCE_URL: ${{ inputs.url }}
-          MAX_PAGES: ${{ inputs.max_pages }}
+          SOURCE_URL: ${{ inputs.url || 'https://www.cassielove.co.uk/' }}
+          MAX_PAGES: ${{ inputs.max_pages || '30' }}
         run: |
           python3 scripts/discover_artist_site.py \
             --url "$SOURCE_URL" \
