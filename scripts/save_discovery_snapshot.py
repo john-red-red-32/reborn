@@ -18,7 +18,9 @@ def main():
     slug=re.sub(r"[^a-z0-9.-]+","-",host).strip(".-")[:90]
     if not re.fullmatch(r"[0-9]+",a.run_id): raise SystemExit("Invalid GitHub run ID")
     base=Path(a.input_dir)
-    files=["source-discovery.json","extraction-candidates.json","wix-gallery-evidence.json","wix-archive-reconciliation.json","artist-identity-matches.json"]
+    required=["source-discovery.json","extraction-candidates.json"]
+    optional=["wix-gallery-evidence.json","wix-archive-reconciliation.json","artist-identity-matches.json","shopify-kit-candidates.json"]
+    files=required+[name for name in optional if (base/name).is_file()]
     for name in files:
         source=base/name
         if not source.is_file(): raise SystemExit(f"Missing report {name}")
