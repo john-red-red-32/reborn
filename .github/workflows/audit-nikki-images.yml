@@ -49,3 +49,50 @@ jobs:
             time.sleep(0.25)
           print('PASS: all 15 original kit images reachable; galleries contain',sum(len(k['photos']) for k in kits),'photos')
           PY
+
+      - name: Confirm live Reborna pages display Shopify photos and researched biography
+        run: |
+          python3 - <<'PY'
+          import json,re,time,urllib.request,html
+          from pathlib import Path
+          from html.parser import HTMLParser
+          class Photos(HTMLParser):
+            def __init__(self):
+              super().__init__();self.sources=[]
+            def handle_starttag(self,tag,attrs):
+              if tag=="img":self.sources.append(dict(attrs).get("src",""))
+          text=Path('lib/nikki-shopify-catalogue.ts').read_text()
+          m=re.search(r'export const nikkiKits:VerifiedKit\[\]=(\[[\s\S]*?\]);\s*export const nikkiRetailOffers',text)
+          kits=json.loads(m.group(1))
+          root="https://reborna.co"
+          opener=urllib.request.build_opener()
+          opener.addheaders=[("User-Agent","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/125.0 Safari/537.36")]
+          def get(path):
+            with opener.open(root+path,timeout=25) as r:
+              body=r.read().decode("utf-8","replace")
+              assert r.status==200,(path,r.status)
+              return body
+          for attempt in range(24):
+            bio=get("/artists/nikki-johnston/")
+            if "Princess Charlotte" in bio and "MacPherson Arts" in bio and "FEATURED" not in bio.upper()[:0]:
+              break
+            print("Awaiting updated Cloudflare biography",attempt+1,flush=True)
+            time.sleep(8)
+          else:raise SystemExit("Latest Nikki biography has not reached reborna.co")
+          assert "not a portrait" in bio.lower(),"Artist artwork must not be labelled a portrait"
+          assert "Nikki’s Seaside Babies" in bio or "Nikki&#x27;s Seaside Babies" in bio
+          assert "MacPherson" in bio
+          directory=get("/artists/")
+          assert "cdn.shopify.com/s/files/1/0276/0851/4612/" in directory,"Nikki's directory artwork is absent"
+          for k in kits:
+            body=get("/kits/"+k["slug"]+"/")
+            p=Photos();p.feed(body)
+            expected=k["photos"][0]["url"]
+            assert any(expected==html.unescape(img) for img in p.sources),(k["name"],"primary image missing from published kit page",p.sources[:3])
+            assert "kit-photo-gallery" in body,(k["name"],"gallery missing")
+            print("LIVE OK",k["slug"],"image tags",len(p.sources),flush=True)
+          collection=get("/artists/nikki-johnston/")
+          p=Photos();p.feed(collection)
+          assert len([v for v in p.sources if "cdn.shopify.com/s/files/1/0276/0851/4612/" in v])>=15,"Artist collection has missing cards"
+          print("PASS: live 15 galleries, artist directory, collection and independently sourced Nikki biography")
+          PY
