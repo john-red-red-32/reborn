@@ -1,0 +1,102 @@
+name: Discover Nikki Shopify kits
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/extract_shopify_kits.py'
+      - 'scripts/test_shopify_adapter.py'
+      - 'scripts/match_artist_catalogue.py'
+      - 'scripts/discover_artist_site.py'
+      - 'scripts/site_platforms.py'
+      - 'scripts/save_discovery_snapshot.py'
+      - 'config/artist-sources/nikki-johnston.json'
+      - '.github/workflows/discover-nikki-shopify.yml'
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'Public artist Shopify homepage HTTPS URL'
+        required: true
+        default: 'https://nikkisseasidebabies.co.uk/'
+        type: string
+      max_pages:
+        description: 'HTML pages (1-80)'
+        required: true
+        default: '50'
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: artist-discovery-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  shopify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Shopify and identity matching tests
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_shopify_adapter.py' -v
+          python3 -m unittest discover -s scripts -p 'test_match_artist_catalogue.py' -v
+          python3 -m compileall -q scripts
+      - name: Crawl public site index with robots rules
+        env:
+          SOURCE_URL: ${{ inputs.url || 'https://nikkisseasidebabies.co.uk/' }}
+          MAX_PAGES: ${{ inputs.max_pages || '50' }}
+        run: |
+          python3 scripts/discover_artist_site.py \
+            --url "$SOURCE_URL" \
+            --max-pages "$MAX_PAGES" \
+            --delay 1.5 \
+            --out artifacts/source-discovery.json
+      - name: Save generic structured product evidence
+        run: |
+          python3 scripts/extract_sculpt_candidates.py \
+            --input artifacts/source-discovery.json \
+            --out artifacts/extraction-candidates.json
+      - name: Extract Shopify original kits and configuration options
+        run: |
+          python3 scripts/extract_shopify_kits.py \
+            --input artifacts/source-discovery.json \
+            --max-products 85 \
+            --delay 1.25 \
+            --out artifacts/shopify-kit-candidates.json
+      - name: Safely reconcile artist-scoped kit names
+        run: |
+          python3 scripts/match_artist_catalogue.py \
+            --gallery artifacts/shopify-kit-candidates.json \
+            --manifest-dir config/artist-sources \
+            --out artifacts/artist-identity-matches.json
+      - name: Persist source evidence to GitHub scrape-results branch
+        if: success()
+        env:
+          INPUT_URL: ${{ inputs.url || 'https://nikkisseasidebabies.co.uk/' }}
+          SOURCE_RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 scripts/save_discovery_snapshot.py \
+            --input-dir artifacts \
+            --output-dir /tmp/reborna-discovery-snapshot \
+            --url "$INPUT_URL" \
+            --run-id "$SOURCE_RUN_ID"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin scrape-results || true
+          git checkout -B scrape-results origin/scrape-results
+          mkdir -p snapshots
+          cp -R /tmp/reborna-discovery-snapshot/. snapshots/
+          git add snapshots
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive Shopify artist scan ${SOURCE_RUN_ID} [skip ci]"
+            git push origin HEAD:scrape-results
+          fi
+      - name: Preserve downloadable diagnostic evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nikki-shopify-discovery
+          path: artifacts/*.json
+          retention-days: 30
+          if-no-files-found: warn
