@@ -50,7 +50,7 @@ def main():
             # Explicit seller preorder wording overrides generic schema InStock, which can enable checkout.
             description=txt(product.get("description"))
             statement=" ".join([name,description,page.get("url","")]).lower()
-            preorder=bool(re.search(r"\\bpre[ -]?order(?:s|ing|ed)?\\b",statement))
+            preorder=bool(re.search(r"\bpre[ -]?order(?:s|ing|ed)?\b",statement))
             lifecycle="preorder_advertised" if preorder else "not_confirmed"
             # Use seller-authored structured data only. Never infer kit variations from different offers.
             candidates.append({"name":name,"source_url":page["url"],"evidence_type":"structured_product",
