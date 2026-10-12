@@ -1,0 +1,87 @@
+{
+  "artist_id": "nikki-johnston",
+  "exact_and_approved_matches": [],
+  "requires_review": [
+    {
+      "source_name": "Mabel",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Christopher",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Pickle",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Delilah , by Nikki Johnston",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Vincent",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Trouble by Nikki Johnston",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Lexi",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Isabella",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Evie",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Princess Charlotte",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Robin, Awake",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Robin Asleep",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Kiara",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Posy by Nikki Johnston Find her twin here",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Jack by Nikki Johnston Find his twin here",
+      "suggestions": [],
+      "state": "manual_review_required"
+    }
+  ],
+  "not_seen_in_source": [],
+  "duplicate_source_names": [],
+  "note": "Never assume an unobserved accepted sculpt has been removed or sold out.",
+  "manifest_version": 1,
+  "source": "https://nikkisseasidebabies.co.uk/",
+  "source_scan_at": "2026-10-12T22:41:19.303546+00:00"
+}
