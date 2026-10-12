@@ -71,13 +71,13 @@ def kit_facts(body):
     # 13.5" head circumferences and adjacent belly-plate options must survive.
     labels=r"(?:Name|Sculptor|Kit length|Kit size|Limb length|Head circumference|Custom Cloth Body|Cloth Body|Non-gendered belly plate|Belly Plate|COA|Vinyl|Edition size|Edition site|Kit price)"
     def field(label):
-        m=re.search(rf"(?:{label})\\s*:\\s*(.*?)(?=\\s+{labels}\\s*:|$)",body,re.I)
+        m=re.search(rf"(?:{label})\s*:\s*(.*?)(?=\s+{labels}\s*:|$)",body,re.I)
         return m.group(1).strip(" .;")[:120] if m else None
     edition=field(r"Edition si(?:z|t)e")
-    edition_match=re.search(r"\\b([0-9][0-9,]*)\\b",edition or "")
+    edition_match=re.search(r"\b([0-9][0-9,]*)\b",edition or "")
     edition_size=int(edition_match.group(1).replace(",","")) if edition_match else None
     belly=field(r"(?:Non-gendered )?Belly Plate")
-    belly_price=re.search(r"(?:GBP\\s*)?£\\s*([0-9]+(?:\\.[0-9]{1,2})?)",belly or "",re.I)
+    belly_price=re.search(r"(?:GBP\s*)?£\s*([0-9]+(?:\.[0-9]{1,2})?)",belly or "",re.I)
     return {
       "published_kit_length": field(r"Kit (?:length|size)"),
       "published_head_circumference": field(r"Head circumference"),
@@ -86,7 +86,7 @@ def kit_facts(body):
       "coa":field(r"COA"),
       "manufacturer":field(r"Vinyl"),
       "sculptor":field(r"Sculptor"),
-      "belly_plate_offered":bool(belly and re.search(r"\\boptional|available|add-on\\b",belly,re.I)),
+      "belly_plate_offered":bool(belly and re.search(r"\boptional|available|add-on\b",belly,re.I)),
       "belly_plate_addon_price_gbp":round(float(belly_price.group(1)),2) if belly_price else None
     }
 
