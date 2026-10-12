@@ -69,14 +69,14 @@ def kit_facts(body):
     # Shopify HTML descriptions often collapse paragraphs into a single line.
     # Terminate each field at the next known seller label, not punctuation:
     # 13.5" head circumferences and adjacent belly-plate options must survive.
-    labels=r"(?:Name|Sculptor|Kit length|Kit size|Limb length|Head circumference|Custom Cloth Body|Cloth Body|Non-gendered belly plate|Belly Plate|COA|Vinyl|Edition size|Edition site|Kit price)"
+    labels=r"(?:Name|Sculptor|Kit length|Kit size|Limb length|Head circumference|Custom Cloth Body|Cloth Body|Non-gendered belly plate|Belly Plate|Tummy Plate|COA|Vinyl|Edition size|Edition site|Kit price|Arms|Legs|Eye size|Body)"
     def field(label):
         m=re.search(rf"(?:{label})\s*:\s*(.*?)(?=\s+{labels}\s*:|$)",body,re.I)
         return m.group(1).strip(" .;")[:120] if m else None
     edition=field(r"Edition si(?:z|t)e")
     edition_match=re.search(r"\b([0-9][0-9,]*)\b",edition or "")
     edition_size=int(edition_match.group(1).replace(",","")) if edition_match else None
-    belly=field(r"(?:Non-gendered )?Belly Plate")
+    belly=field(r"(?:Non-gendered )?(?:Belly|Tummy) Plate")
     belly_price=re.search(r"(?:GBP\s*)?£\s*([0-9]+(?:\.[0-9]{1,2})?)",belly or "",re.I)
     return {
       "published_kit_length": field(r"Kit (?:length|size)"),
@@ -155,6 +155,15 @@ def parse_product(product,origin,sha,observed):
             "image_id":str(v.get("featured_image",{}).get("id")) if isinstance(v.get("featured_image"),dict) and v["featured_image"].get("id") else None,
             "source_product_url":url
         })
+    # A very low single-kit option beside a much higher price may actually
+    # represent a legacy deposit or a mistakenly labelled accessory.
+    # Retain the raw seller amount, but do not publish it as a confirmed kit price.
+    provisional=[v["price_native"] for v in variants if v["price_kind"]=="full_purchase" and v["price_native"] is not None]
+    suspicious=bool(provisional and min(provisional)<30 and max(provisional)>min(provisional)*3)
+    if suspicious:
+        for variant in variants:
+            if variant["price_kind"]=="full_purchase" and variant["price_native"]==min(provisional):
+                variant["price_kind"]="low_price_needs_review"
     full_prices=sorted(set(v["price_native"] for v in variants if v["price_kind"]=="full_purchase" and v["price_native"] is not None))
     images=[]
     for item in product.get("images") or []:
@@ -177,6 +186,8 @@ def parse_product(product,origin,sha,observed):
         "distinct_full_prices":full_prices,
         "from_price_native":full_prices[0] if len(full_prices)>1 else None,
         "has_genuine_full_price_range":len(full_prices)>1,
+        "pricing_review_required":suspicious,
+        "pricing_review_reason":"Unusually low option relative to other kit prices; may be deposit or incomplete kit" if suspicious else None,
         "seller_availability_flags":[v["availability_flag"] for v in variants],
         "lifecycle_evidence":lifecycle,"images":images[:40],
         "published_at":product.get("published_at"),"created_at":product.get("created_at"),
