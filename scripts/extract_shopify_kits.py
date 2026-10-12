@@ -66,18 +66,30 @@ def classification(product):
     return "needs_review", "insufficient_explicit_kit_evidence"
 
 def kit_facts(body):
-    def get(pattern):
-        m=re.search(pattern,body,re.I)
-        return m.group(1).strip(" .;") if m else None
+    # Shopify HTML descriptions often collapse paragraphs into a single line.
+    # Terminate each field at the next known seller label, not punctuation:
+    # 13.5" head circumferences and adjacent belly-plate options must survive.
+    labels=r"(?:Name|Sculptor|Kit length|Kit size|Limb length|Head circumference|Custom Cloth Body|Cloth Body|Non-gendered belly plate|Belly Plate|COA|Vinyl|Edition size|Edition site|Kit price)"
+    def field(label):
+        m=re.search(rf"(?:{label})\\s*:\\s*(.*?)(?=\\s+{labels}\\s*:|$)",body,re.I)
+        return m.group(1).strip(" .;")[:120] if m else None
+    edition=field(r"Edition si(?:z|t)e")
+    edition_match=re.search(r"\\b([0-9][0-9,]*)\\b",edition or "")
+    edition_size=int(edition_match.group(1).replace(",","")) if edition_match else None
+    belly=field(r"(?:Non-gendered )?Belly Plate")
+    belly_price=re.search(r"(?:GBP\\s*)?£\\s*([0-9]+(?:\\.[0-9]{1,2})?)",belly or "",re.I)
     return {
-      "published_kit_length": get(r"(?:kit\s+length|kit\s+size)\s*:\s*([^.;]{1,75})"),
-      "published_head_circumference": get(r"head\s+circumference\s*:\s*([^.;]{1,55})"),
-      "edition_size": int(m.group(1)) if (m:=re.search(r"edition\s+si(?:z|t)e\s*:\s*([\d,]+)",body,re.I)) else None,
-      "cloth_body":get(r"(?:custom\s+)?cloth\s+body\s*:\s*([^.;]{1,65})"),
-      "coa":get(r"\bCOA\s*:\s*([^.;]{1,50})"),
-      "manufacturer":get(r"\bvinyl\s*:\s*([^.;]{1,45})"),
-      "belly_plate_offered":bool(re.search(r"belly\s+plate\s*:\s*(?:optional|available)",body,re.I)),
+      "published_kit_length": field(r"Kit (?:length|size)"),
+      "published_head_circumference": field(r"Head circumference"),
+      "edition_size": edition_size,
+      "cloth_body":field(r"(?:Custom )?Cloth Body"),
+      "coa":field(r"COA"),
+      "manufacturer":field(r"Vinyl"),
+      "sculptor":field(r"Sculptor"),
+      "belly_plate_offered":bool(belly and re.search(r"\\boptional|available|add-on\\b",belly,re.I)),
+      "belly_plate_addon_price_gbp":round(float(belly_price.group(1)),2) if belly_price else None
     }
+
 
 def money(value):
     """Shopify Product REST JSON uses decimal GBP strings; Ajax .js uses integer pence."""
