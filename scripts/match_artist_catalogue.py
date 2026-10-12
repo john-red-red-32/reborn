@@ -60,7 +60,7 @@ def match_candidates(artist_id, source_names, accepted_names, approved_aliases=N
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--gallery", required=True, help="Wix gallery evidence JSON file")
+    parser.add_argument("--gallery", required=True, help="Wix or Shopify original-kit candidate evidence JSON file")
     parser.add_argument("--manifest", help="Specific reviewed artist source manifest")
     parser.add_argument("--manifest-dir", default="config/artist-sources", help="Registered artist manifests")
     parser.add_argument("--out", required=True)
@@ -78,13 +78,13 @@ def main():
     if matching:
         manifest = matching[0]
         output = match_candidates(manifest["artist_id"],
-            [c["title"] for c in gallery.get("kit_candidates", [])],
+            [c["title"] for c in gallery.get("kit_candidates", [])] or [c["name"] for c in gallery.get("products", []) if c.get("classification")=="original_kit_candidate"],
             manifest["accepted_names"], manifest.get("approved_aliases"))
         output["manifest_version"] = manifest.get("version", 1)
     else:
         output = {"status": "source_unregistered", "source": gallery.get("source"),
                   "warning": "No registered artist manifest for host; no identity matches inferred."}
-    output.update({"source": gallery.get("source"), "source_scan_at": gallery.get("source_scan_at")})
+    output.update({"source": gallery.get("source"), "source_scan_at": gallery.get("source_scan_at") or gallery.get("observed_at")})
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
