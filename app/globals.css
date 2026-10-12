@@ -68,3 +68,14 @@
  .verify-entry button{justify-content:center}
  .verify-how{grid-template-columns:1fr}
 }
+
+/* Artist biography: always concise until explicitly expanded. */
+.artist-biography>p:first-child{font-weight:600;color:#594c42;line-height:1.85}
+.artist-more{display:none}
+.artist-more.expanded{display:block}
+.artist-readmore{display:inline-flex;align-items:center;gap:7px;border:0;border-bottom:1px solid #ad9682;background:transparent;color:#7e6755;padding:7px 0;margin:6px 0 14px;font-weight:700;font-size:12px}
+.reborn-gallery-note{margin:65px 0 25px;padding:42px;background:#ede4db;border:1px solid #e3d7cb;max-width:100%}
+.reborn-gallery-note h2{font:normal 31px "Playfair Display",serif;margin:14px 0}
+.reborn-gallery-note p{font-size:13px;line-height:1.9;color:#817265;max-width:670px}
+.gallery-coming-soon{font-size:10px;letter-spacing:.14em;font-weight:700;margin-top:25px;color:#957e6b}
+@media(max-width:650px){.reborn-gallery-note{margin-top:40px;padding:27px}.reborn-gallery-note h2{font-size:26px}}
