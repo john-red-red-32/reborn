@@ -37,6 +37,7 @@ def normalize_card(raw, source_page, frame_kind):
         "edition_type": edition,
         "approx_size_inches": size.group(1).replace(" ", "") if size else None,
         "photo_url": image,
+        "image_role": ("artist_kit_catalogue_example_unclassified" if frame_kind == "Masonry" else ("original_clay_sculpture" if "/sculpting" in urlparse(source_page).path else "finished_reborn_gallery")),
         "wix_asset_id": match.group(1),
         "source_page": source_page,
         "gallery_kind": frame_kind,
