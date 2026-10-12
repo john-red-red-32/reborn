@@ -1,0 +1,43 @@
+name: Verify Cloudflare static export
+on:
+  push:
+    branches: [cloudflare-pages]
+    paths:
+      - 'app/**'
+      - 'components/**'
+      - 'lib/**'
+      - 'functions/**'
+      - 'next.config.mjs'
+      - 'package.json'
+      - '.github/workflows/verify-cloudflare.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: cloudflare-static-test
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Build static export
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+          NEXT_PUBLIC_MEDIA_BASE_URL: https://images.reborna.co
+        run: |
+          npm run build
+          test -s out/index.html
+          test -s out/artists/nikki-johnston/index.html
+          test -s out/kits/mabel-nikki-johnston/index.html
+          test -s out/artists/cassie-ann-love/index.html
+          test -f functions/api/exchange-rates.js
+          test -f functions/api/admin/media.js
+          echo "Cloudflare export includes both sculptors and protected Functions"
