@@ -44,6 +44,21 @@ def main():
       return [...dedup.values()].slice(0,200);
     }""")
     result["visible_headings"]=page.locator("h1,h2,h3").all_text_contents()[:70]
+    result["diagnostics"]=page.evaluate("""() => {
+      const html=document.documentElement.outerHTML;
+      const sample=(text)=>{const i=html.indexOf(text);return i<0?"":html.slice(Math.max(0,i-300),i+550)};
+      const elems=[...document.querySelectorAll("wix-image,wix-bg-image,[data-image-info],[data-testid*=gallery],[data-hook*=gallery]")];
+      return {body_text_length:document.body.innerText.length,body_text_sample:document.body.innerText.slice(0,2700),html_length:html.length,
+        leo_sample:sample("Leo"),wix_image_count:document.querySelectorAll("wix-image").length,all_img_count:document.querySelectorAll("img").length,
+        relevant_nodes:elems.length,relevant_html:elems.slice(0,6).map(x=>x.outerHTML.slice(0,1100)),
+        iframe_count:document.querySelectorAll("iframe").length,
+        frames:[...document.querySelectorAll("iframe")].map(x=>({src:x.src,title:x.title})).slice(0,12)};
+    }""")
+    result["frame_diagnostics"]=[]
+    for fr in page.frames[1:8]:
+     try:
+      result["frame_diagnostics"].append({"url":fr.url[:400],"body_sample":fr.locator("body").inner_text(timeout=2500)[:700]})
+     except Exception as ex:result["frame_diagnostics"].append({"url":fr.url[:400],"error":str(ex)[:100]})
     result["state"]="rendered"
    except (BrowserTimeout,Exception) as exc:
     result["state"]="error"
@@ -52,7 +67,7 @@ def main():
     evidence.append(result)
     page.close()
   browser.close()
- output={"adapter":"wix-gallery-browser-v1","source":src.get("source"),"scan_at":src.get("completed_at"),
+ output={"adapter":"wix-gallery-browser-v2-diagnostics","source":src.get("source"),"scan_at":src.get("completed_at"),
  "gallery_pages_examined":len(evidence),"pages":evidence,
  "notice":"Rendered DOM candidate evidence only. No images downloaded, no name/identity inferred from unrelated photos."}
  dest=Path(args.out);dest.parent.mkdir(parents=True,exist_ok=True)
