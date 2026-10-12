@@ -1,0 +1,226 @@
+{
+  "adapter": "wix-gallery-browser-v1",
+  "source": "https://www.cassielove.co.uk/",
+  "scan_at": "2026-10-12T22:09:23.542891+00:00",
+  "gallery_pages_examined": 5,
+  "pages": [
+    {
+      "url": "https://www.cassielove.co.uk/galleries",
+      "platform": "wix",
+      "state": "rendered",
+      "elements": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_7e97ac4b09d64231b58d836ebc7985a9.jpg/v1/fill/w_401,h_265,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/684b25_7e97ac4b09d64231b58d836ebc7985a9.jpg",
+          "alt": "cassiebrace",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_2aafa0eebb9e459687cc8e477c2b2cec~mv2.jpg/v1/fill/w_401,h_265,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/684b25_2aafa0eebb9e459687cc8e477c2b2cec~mv2.jpg",
+          "alt": "69800288_2809047299107656_31783360488412",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "title": "",
+          "caption": ""
+        }
+      ],
+      "errors": [],
+      "visible_headings": [
+        "Galleries"
+      ]
+    },
+    {
+      "url": "https://www.cassielove.co.uk/reborns",
+      "platform": "wix",
+      "state": "rendered",
+      "elements": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "title": "",
+          "caption": ""
+        }
+      ],
+      "errors": [],
+      "visible_headings": [
+        "Reborn Dolls 2008-2019",
+        "Here are some of the reborn dolls I have created in the last 14 years, including many prototypes for other sculpting artists. In most recent years I have focused a lot more of my time on my sculpting work and so my reborning has taken a back seat. Unfortunately I do not take custom orders. When new babies become available I add them to my online store. Join my mailer to be notified of new available reborn dolls."
+      ]
+    },
+    {
+      "url": "https://www.cassielove.co.uk/sculpting",
+      "platform": "wix",
+      "state": "rendered",
+      "elements": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "title": "",
+          "caption": ""
+        }
+      ],
+      "errors": [],
+      "visible_headings": [
+        "Original Clay Sculptures",
+        "All the pictures below are my raw clay sculptures. Most of these sculptures were reproduced into vinyl doll kits"
+      ]
+    },
+    {
+      "url": "https://www.cassielove.co.uk/silicone",
+      "platform": "wix",
+      "state": "rendered",
+      "elements": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "title": "",
+          "caption": ""
+        }
+      ],
+      "errors": [],
+      "visible_headings": []
+    },
+    {
+      "url": "https://www.cassielove.co.uk/vinyl-doll-kits",
+      "platform": "wix",
+      "state": "rendered",
+      "elements": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok",
+          "title": "",
+          "caption": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "title": "",
+          "caption": ""
+        }
+      ],
+      "errors": [],
+      "visible_headings": [
+        "Vinyl Doll Kits"
+      ]
+    }
+  ],
+  "notice": "Rendered DOM candidate evidence only. No images downloaded, no name/identity inferred from unrelated photos."
+}
