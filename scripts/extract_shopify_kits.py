@@ -55,7 +55,7 @@ def classification(product):
     head=title.lower()
     if re.search(r"\b(prototype|completed reborn|complete(d)? baby|reborn baby|ready[- ]to[- ]adopt|one.of.a.kind)\b",head):
         return "finished_doll_excluded", "title_explicit_finished_doll"
-    if re.search(r"\b(gift card|tutorial|online course|training|painting class|rooting class)\b",head):
+    if re.search(r"\b(gift card|tutorials?|online course|training|painting class|rooting class)\b",head):
         return "non_kit_excluded", "title_non_kit"
     if re.search(r"\b(belly plate|body only|vinyl head only)\b",head):
         return "component_excluded", "standalone_component"
@@ -102,7 +102,7 @@ def sculpt_name_candidate(title,body):
     if match and len(match.group(1).strip())<95:
         return match.group(1).strip(" .;-"),"artist_kit_spec"
     cleaned=re.sub(r"(?i)^\\s*new\\s*[-–:]\\s*","",title)
-    cleaned=re.sub(r"(?i)\\s*[-–( ]+\\s*(?:pre[ -]?order|in stock|sold out)\\s*\\)?\\s*$","",cleaned).strip(" -–()")
+    cleaned=re.sub(r"(?i)\\s*(?:[-–( ]+)?(?:pre[ -]?order|in stock|sold out)\\s*\\)?\\s*$","",cleaned).strip(" -–()")
     return cleaned,"retailer_title_review"
 
 def parse_product(product,origin,sha,observed):
