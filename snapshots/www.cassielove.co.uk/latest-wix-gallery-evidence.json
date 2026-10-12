@@ -1,7 +1,7 @@
 {
   "adapter": "wix-gallery-iframe-v4",
   "source": "https://www.cassielove.co.uk/",
-  "source_scan_at": "2026-10-12T22:19:45.820280+00:00",
+  "source_scan_at": "2026-10-12T22:21:06.800749+00:00",
   "pages_examined": 5,
   "kit_cards_found": 50,
   "unverified_gallery_photos_found": 338,
@@ -27,7 +27,7 @@
       "kit_cards": [],
       "unverified_gallery_photos": [
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0615",
           "description": "",
           "edition_type": null,
@@ -40,7 +40,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0632",
           "description": "",
           "edition_type": null,
@@ -53,7 +53,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0599",
           "description": "",
           "edition_type": null,
@@ -66,7 +66,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0625",
           "description": "",
           "edition_type": null,
@@ -79,7 +79,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0628",
           "description": "",
           "edition_type": null,
@@ -92,7 +92,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0620",
           "description": "",
           "edition_type": null,
@@ -105,7 +105,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0609",
           "description": "",
           "edition_type": null,
@@ -118,7 +118,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0603",
           "description": "",
           "edition_type": null,
@@ -131,7 +131,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0600",
           "description": "",
           "edition_type": null,
@@ -144,7 +144,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0596",
           "description": "",
           "edition_type": null,
@@ -157,7 +157,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0589",
           "description": "",
           "edition_type": null,
@@ -170,7 +170,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0592",
           "description": "",
           "edition_type": null,
@@ -183,7 +183,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0587",
           "description": "",
           "edition_type": null,
@@ -196,7 +196,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0585",
           "description": "",
           "edition_type": null,
@@ -209,7 +209,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0580",
           "description": "",
           "edition_type": null,
@@ -222,7 +222,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1360",
           "description": "",
           "edition_type": null,
@@ -235,7 +235,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1356",
           "description": "",
           "edition_type": null,
@@ -248,7 +248,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1322",
           "description": "",
           "edition_type": null,
@@ -261,7 +261,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1315",
           "description": "",
           "edition_type": null,
@@ -274,7 +274,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0572",
           "description": "",
           "edition_type": null,
@@ -287,7 +287,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0563",
           "description": "",
           "edition_type": null,
@@ -300,7 +300,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0558",
           "description": "",
           "edition_type": null,
@@ -313,7 +313,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0719",
           "description": "",
           "edition_type": null,
@@ -326,7 +326,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0716",
           "description": "",
           "edition_type": null,
@@ -339,7 +339,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0700",
           "description": "",
           "edition_type": null,
@@ -352,7 +352,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0679",
           "description": "",
           "edition_type": null,
@@ -365,7 +365,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1387",
           "description": "",
           "edition_type": null,
@@ -378,7 +378,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1393",
           "description": "",
           "edition_type": null,
@@ -391,7 +391,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1374",
           "description": "",
           "edition_type": null,
@@ -404,7 +404,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0988",
           "description": "",
           "edition_type": null,
@@ -417,7 +417,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0993",
           "description": "",
           "edition_type": null,
@@ -430,7 +430,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0990",
           "description": "",
           "edition_type": null,
@@ -443,7 +443,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1204",
           "description": "",
           "edition_type": null,
@@ -456,7 +456,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1191",
           "description": "",
           "edition_type": null,
@@ -469,7 +469,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1188",
           "description": "",
           "edition_type": null,
@@ -482,7 +482,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1196",
           "description": "",
           "edition_type": null,
@@ -495,7 +495,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1202",
           "description": "",
           "edition_type": null,
@@ -508,7 +508,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1623",
           "description": "",
           "edition_type": null,
@@ -521,7 +521,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1613",
           "description": "",
           "edition_type": null,
@@ -534,7 +534,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1601",
           "description": "",
           "edition_type": null,
@@ -547,7 +547,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1603",
           "description": "",
           "edition_type": null,
@@ -560,7 +560,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1841",
           "description": "",
           "edition_type": null,
@@ -573,7 +573,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1837",
           "description": "",
           "edition_type": null,
@@ -586,7 +586,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1823",
           "description": "",
           "edition_type": null,
@@ -599,7 +599,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1824",
           "description": "",
           "edition_type": null,
@@ -612,7 +612,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1829",
           "description": "",
           "edition_type": null,
@@ -625,7 +625,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1272",
           "description": "",
           "edition_type": null,
@@ -638,7 +638,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1257",
           "description": "",
           "edition_type": null,
@@ -651,7 +651,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0047",
           "description": "",
           "edition_type": null,
@@ -664,7 +664,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0060",
           "description": "",
           "edition_type": null,
@@ -677,7 +677,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0055",
           "description": "",
           "edition_type": null,
@@ -690,7 +690,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0030",
           "description": "",
           "edition_type": null,
@@ -703,7 +703,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1738",
           "description": "",
           "edition_type": null,
@@ -716,7 +716,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1733",
           "description": "",
           "edition_type": null,
@@ -729,7 +729,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1720",
           "description": "",
           "edition_type": null,
@@ -742,7 +742,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1754",
           "description": "",
           "edition_type": null,
@@ -755,7 +755,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1740",
           "description": "",
           "edition_type": null,
@@ -768,7 +768,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0773",
           "description": "",
           "edition_type": null,
@@ -781,7 +781,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0744",
           "description": "",
           "edition_type": null,
@@ -794,7 +794,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0752",
           "description": "",
           "edition_type": null,
@@ -807,7 +807,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_1544",
           "description": "",
           "edition_type": null,
@@ -820,7 +820,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0118",
           "description": "",
           "edition_type": null,
@@ -833,7 +833,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0126",
           "description": "",
           "edition_type": null,
@@ -846,7 +846,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0115",
           "description": "",
           "edition_type": null,
@@ -859,7 +859,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0108",
           "description": "",
           "edition_type": null,
@@ -872,7 +872,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0080",
           "description": "",
           "edition_type": null,
@@ -885,7 +885,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "tigerlils.jpg",
           "description": "",
           "edition_type": null,
@@ -898,7 +898,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0395.JPG",
           "description": "",
           "edition_type": null,
@@ -911,7 +911,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0154 - Copy.JPG",
           "description": "",
           "edition_type": null,
@@ -924,7 +924,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "15877653_1410209962324737_515713443_o.jpg",
           "description": "",
           "edition_type": null,
@@ -937,7 +937,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0362.JPG",
           "description": "",
           "edition_type": null,
@@ -950,7 +950,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "18519367_1546109535401445_387342685_o.jpg",
           "description": "",
           "edition_type": null,
@@ -963,7 +963,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0888.JPG",
           "description": "",
           "edition_type": null,
@@ -976,7 +976,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0631.JPG",
           "description": "",
           "edition_type": null,
@@ -989,7 +989,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0632.JPG",
           "description": "",
           "edition_type": null,
@@ -1002,7 +1002,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0588.JPG",
           "description": "",
           "edition_type": null,
@@ -1015,7 +1015,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0870.JPG",
           "description": "",
           "edition_type": null,
@@ -1028,7 +1028,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0373.JPG",
           "description": "",
           "edition_type": null,
@@ -1041,7 +1041,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0637.JPG",
           "description": "",
           "edition_type": null,
@@ -1054,7 +1054,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0880.JPG",
           "description": "",
           "edition_type": null,
@@ -1067,7 +1067,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0872.JPG",
           "description": "",
           "edition_type": null,
@@ -1080,7 +1080,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "18596275_1546109195401479_153525107_o.jpg",
           "description": "",
           "edition_type": null,
@@ -1093,7 +1093,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "17238489_1475945292417870_1331395927_n.jpg",
           "description": "",
           "edition_type": null,
@@ -1106,7 +1106,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0285.JPG",
           "description": "",
           "edition_type": null,
@@ -1119,7 +1119,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0316.JPG",
           "description": "",
           "edition_type": null,
@@ -1132,7 +1132,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC_0389.JPG",
           "description": "",
           "edition_type": null,
@@ -1145,7 +1145,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Franklin by Elisa Marx Prototype",
           "description": "",
           "edition_type": null,
@@ -1158,7 +1158,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Enny by Elisa Marx",
           "description": "",
           "edition_type": null,
@@ -1171,7 +1171,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Quinlynn by Laura Lee eagles",
           "description": "",
           "edition_type": null,
@@ -1184,7 +1184,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Nate by Lilianne Breedveld Prototype",
           "description": "",
           "edition_type": null,
@@ -1197,7 +1197,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Rainer by Romie Strydom",
           "description": "",
           "edition_type": null,
@@ -1210,7 +1210,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Jayden by Natalie Scholl Prototype",
           "description": "Sold/ SOLD OUT",
           "edition_type": null,
@@ -1223,7 +1223,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Noah by Reva Schick",
           "description": "",
           "edition_type": null,
@@ -1236,7 +1236,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Noah by Reva Schick",
           "description": "",
           "edition_type": null,
@@ -1249,7 +1249,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Noah by Reva Schick",
           "description": "",
           "edition_type": null,
@@ -1262,7 +1262,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Micro rooting",
           "description": "Slumberland mohair www.iartreborn.com",
           "edition_type": null,
@@ -1275,7 +1275,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Cadence by Olga Auer Prototype",
           "description": "",
           "edition_type": null,
@@ -1288,7 +1288,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Cadence by Olga Auer Prototype",
           "description": "",
           "edition_type": null,
@@ -1301,7 +1301,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Micro Rooting",
           "description": "",
           "edition_type": null,
@@ -1314,7 +1314,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Jayden by Natalie Scholl Prototype",
           "description": "SOld/ Sold out",
           "edition_type": null,
@@ -1327,7 +1327,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Jayden by Natalie Scholl",
           "description": "Prototype Sold out",
           "edition_type": null,
@@ -1340,7 +1340,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Jayden by Natalie Scholl Prototype",
           "description": "",
           "edition_type": null,
@@ -1353,7 +1353,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Jayden by Natalie Scholl Prototype",
           "description": "",
           "edition_type": null,
@@ -1366,7 +1366,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Jayden by Natalie Scholl Prototype",
           "description": "",
           "edition_type": null,
@@ -1379,7 +1379,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Jayden by Natalie Scholl Prototype",
           "description": "",
           "edition_type": null,
@@ -1392,7 +1392,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Jayden by Natalie Scholl Prototype",
           "description": "",
           "edition_type": null,
@@ -1405,7 +1405,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Jayden by Natalie Scholl Prototype",
           "description": "sold out",
           "edition_type": null,
@@ -1418,7 +1418,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Jayden by Natalie Scholl Prototype",
           "description": "sold out",
           "edition_type": null,
@@ -1431,7 +1431,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Sweet stuff by Maritha Winters",
           "description": "Sold/ Sold out",
           "edition_type": null,
@@ -1444,7 +1444,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Sweet stuff by Maritha Winters",
           "description": "",
           "edition_type": null,
@@ -1457,7 +1457,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Sweet stuff by Maritha Winters",
           "description": "Sold out",
           "edition_type": null,
@@ -1470,7 +1470,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Sweet stuff by Maritha Winters",
           "description": "",
           "edition_type": null,
@@ -1483,7 +1483,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Sweet stuff",
           "description": "",
           "edition_type": null,
@@ -1496,7 +1496,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Welcome back Taylor by Tamie Yarie",
           "description": "",
           "edition_type": null,
@@ -1509,7 +1509,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Welcome back Taylor by Tamie Yarie",
           "description": "",
           "edition_type": null,
@@ -1522,7 +1522,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Deidre by Adrie Stoete",
           "description": "Sold",
           "edition_type": null,
@@ -1535,7 +1535,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Natalie by Liliane Breedveld Prototy",
           "description": "",
           "edition_type": null,
@@ -1548,7 +1548,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Piper by Tamie Yarie",
           "description": "",
           "edition_type": null,
@@ -1561,7 +1561,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Nate by Lilianne Breedveld Prototype",
           "description": "",
           "edition_type": null,
@@ -1574,7 +1574,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Nate by Lilianne Breedveld Prototype",
           "description": "",
           "edition_type": null,
@@ -1587,7 +1587,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Natalie by Lilianne Breedveld Protoy",
           "description": "",
           "edition_type": null,
@@ -1600,7 +1600,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Nate and Natalie Breedveld Twin Prot",
           "description": "SOld out",
           "edition_type": null,
@@ -1613,7 +1613,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Nate by Lilianne Breedveld Prototype",
           "description": "",
           "edition_type": null,
@@ -1626,7 +1626,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Nico by Gudrun Legler",
           "description": "",
           "edition_type": null,
@@ -1639,7 +1639,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Michelle by Evelina Wosnjuk",
           "description": "",
           "edition_type": null,
@@ -1652,7 +1652,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Michelelle by Evelina Wosnjuk",
           "description": "sold",
           "edition_type": null,
@@ -1665,7 +1665,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Nico by Gudrun Legler",
           "description": "",
           "edition_type": null,
@@ -1678,7 +1678,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Corbin by donna Lee",
           "description": "Sold",
           "edition_type": null,
@@ -1691,7 +1691,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Franklin by Elisa Marx prototypes",
           "description": "Sold",
           "edition_type": null,
@@ -1704,7 +1704,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Riley by Jessica Schenk Prototype",
           "description": "Sold/ Sold out",
           "edition_type": null,
@@ -1717,7 +1717,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Riley by Jessica Schenk Prototype",
           "description": "",
           "edition_type": null,
@@ -1730,7 +1730,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Riley by Jessica Schenk Prototype",
           "description": "SOld /sold out",
           "edition_type": null,
@@ -1743,7 +1743,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Riley by Jessica Schenk Prototype",
           "description": "Sold/ sold out",
           "edition_type": null,
@@ -1756,7 +1756,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Enny by Elisa Marx",
           "description": "",
           "edition_type": null,
@@ -1769,7 +1769,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Enny by Elisa Marx",
           "description": "",
           "edition_type": null,
@@ -1782,7 +1782,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Enny by Elisa marx",
           "description": "Sold",
           "edition_type": null,
@@ -1795,7 +1795,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Enny by Elisa Marx",
           "description": "Sold",
           "edition_type": null,
@@ -1808,7 +1808,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Rose by Adrie Stoete Prototype",
           "description": "Sold",
           "edition_type": null,
@@ -1821,7 +1821,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Nicky Jack by Nikki Britt Prototype",
           "description": "Sold/ sold out",
           "edition_type": null,
@@ -1834,7 +1834,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Claire by Romie Strydom Prototype",
           "description": "",
           "edition_type": null,
@@ -1847,7 +1847,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Claire by Romie strydom Prototype",
           "description": "",
           "edition_type": null,
@@ -1860,7 +1860,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Claire by Romie Strydom Prototype",
           "description": "",
           "edition_type": null,
@@ -1873,7 +1873,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Michelle by Evelina Wosnjuk",
           "description": "",
           "edition_type": null,
@@ -1886,7 +1886,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSCF1952.jpg",
           "description": "",
           "edition_type": null,
@@ -1899,7 +1899,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSCF1915.jpg",
           "description": "",
           "edition_type": null,
@@ -1912,7 +1912,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Reese by Andrea Arcello Prototype",
           "description": "",
           "edition_type": null,
@@ -1925,7 +1925,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSCF1411.jpg",
           "description": "",
           "edition_type": null,
@@ -1938,7 +1938,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSCF1286.jpg",
           "description": "",
           "edition_type": null,
@@ -1951,7 +1951,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSCF0337.jpg",
           "description": "",
           "edition_type": null,
@@ -1964,7 +1964,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSCF0318.jpg",
           "description": "",
           "edition_type": null,
@@ -1977,7 +1977,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSCF0314.jpg",
           "description": "",
           "edition_type": null,
@@ -1990,7 +1990,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSCF0254.jpg",
           "description": "",
           "edition_type": null,
@@ -2003,7 +2003,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSCF0218.jpg",
           "description": "",
           "edition_type": null,
@@ -2016,7 +2016,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSCF0069.jpg",
           "description": "",
           "edition_type": null,
@@ -2029,7 +2029,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSCF0049.jpg",
           "description": "",
           "edition_type": null,
@@ -2042,7 +2042,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC08600.jpg",
           "description": "",
           "edition_type": null,
@@ -2055,7 +2055,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC08582.jpg",
           "description": "",
           "edition_type": null,
@@ -2068,7 +2068,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC08541.jpg",
           "description": "",
           "edition_type": null,
@@ -2081,7 +2081,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC08046.jpg",
           "description": "",
           "edition_type": null,
@@ -2094,7 +2094,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC07508.jpg",
           "description": "",
           "edition_type": null,
@@ -2107,7 +2107,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC07288.jpg",
           "description": "",
           "edition_type": null,
@@ -2120,7 +2120,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC07264.jpg",
           "description": "",
           "edition_type": null,
@@ -2133,7 +2133,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC07262.jpg",
           "description": "",
           "edition_type": null,
@@ -2146,7 +2146,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC05785.jpg",
           "description": "",
           "edition_type": null,
@@ -2159,7 +2159,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC05777.jpg",
           "description": "",
           "edition_type": null,
@@ -2172,7 +2172,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC05716.jpg",
           "description": "",
           "edition_type": null,
@@ -2185,7 +2185,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC05714.jpg",
           "description": "",
           "edition_type": null,
@@ -2198,7 +2198,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC03817.jpg",
           "description": "",
           "edition_type": null,
@@ -2211,7 +2211,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC03636.jpg",
           "description": "",
           "edition_type": null,
@@ -2224,7 +2224,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC03433.jpg",
           "description": "",
           "edition_type": null,
@@ -2237,7 +2237,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC03423.jpg",
           "description": "",
           "edition_type": null,
@@ -2250,7 +2250,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC02794.jpg",
           "description": "",
           "edition_type": null,
@@ -2263,7 +2263,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC02737.jpg",
           "description": "",
           "edition_type": null,
@@ -2276,7 +2276,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC02306.jpg",
           "description": "",
           "edition_type": null,
@@ -2289,7 +2289,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC02074.jpg",
           "description": "",
           "edition_type": null,
@@ -2302,7 +2302,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC02071.jpg",
           "description": "",
           "edition_type": null,
@@ -2315,7 +2315,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC02066.jpg",
           "description": "",
           "edition_type": null,
@@ -2328,7 +2328,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC02050.jpg",
           "description": "",
           "edition_type": null,
@@ -2341,7 +2341,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC01946.jpg",
           "description": "",
           "edition_type": null,
@@ -2354,7 +2354,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC01911.jpg",
           "description": "",
           "edition_type": null,
@@ -2367,7 +2367,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC01852.jpg",
           "description": "",
           "edition_type": null,
@@ -2380,7 +2380,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC01797twins.jpg",
           "description": "",
           "edition_type": null,
@@ -2393,7 +2393,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC01705.jpg",
           "description": "",
           "edition_type": null,
@@ -2406,7 +2406,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC01597.jpg",
           "description": "",
           "edition_type": null,
@@ -2419,7 +2419,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC01583.jpg",
           "description": "",
           "edition_type": null,
@@ -2432,7 +2432,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC01503-Copy.jpg",
           "description": "",
           "edition_type": null,
@@ -2445,7 +2445,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC01182.jpg",
           "description": "",
           "edition_type": null,
@@ -2458,7 +2458,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC01149.jpg",
           "description": "",
           "edition_type": null,
@@ -2471,7 +2471,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC01076.jpg",
           "description": "",
           "edition_type": null,
@@ -2484,7 +2484,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC01070.jpg",
           "description": "",
           "edition_type": null,
@@ -2497,7 +2497,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC01055.jpg",
           "description": "",
           "edition_type": null,
@@ -2510,7 +2510,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC01039.jpg",
           "description": "",
           "edition_type": null,
@@ -2523,7 +2523,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC01032.jpg",
           "description": "",
           "edition_type": null,
@@ -2536,7 +2536,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC00879.jpg",
           "description": "",
           "edition_type": null,
@@ -2549,7 +2549,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC00877.jpg",
           "description": "",
           "edition_type": null,
@@ -2562,7 +2562,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC00849.jpg",
           "description": "",
           "edition_type": null,
@@ -2575,7 +2575,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC00832.jpg",
           "description": "",
           "edition_type": null,
@@ -2588,7 +2588,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC00816.jpg",
           "description": "",
           "edition_type": null,
@@ -2601,7 +2601,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC00802.jpg",
           "description": "",
           "edition_type": null,
@@ -2614,7 +2614,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "DSC00787.jpg",
           "description": "",
           "edition_type": null,
@@ -2627,7 +2627,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "d8d275c6-f08d-487a-b931-b567b7f74729.jpg",
           "description": "",
           "edition_type": null,
@@ -2640,7 +2640,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "10891676_742340552509846_7477806798982717522_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2653,7 +2653,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "10806207_742335635843671_39784554367903775_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2666,7 +2666,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "10403402_645672232176679_2077866561760205158_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2679,7 +2679,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "10155761_600766806667222_46737190_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2692,7 +2692,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "10154305_600767093333860_1463981098_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2705,7 +2705,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "1975064_600767090000527_484681892_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2718,7 +2718,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "1966788_600767130000523_130742200_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2731,7 +2731,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "1524624_600766786667224_48250283_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2744,7 +2744,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "1508030_600766960000540_1012441669_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2757,7 +2757,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "1499680_726333680777200_8080871004263525479_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2770,7 +2770,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "1478944_600767013333868_1062088418_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2783,7 +2783,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "599576_327221357355103_746585285_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2796,7 +2796,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "578017_389635864446985_378046177_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2809,7 +2809,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "483575_389635584447013_1249775696_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2822,7 +2822,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "430093_251810904896149_651096508_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2835,7 +2835,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "429878_251812244896015_868327024_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2848,7 +2848,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "429482_389635474447024_626250902_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2861,7 +2861,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "428066_251818294895410_415455321_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2874,7 +2874,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "427542_251822618228311_989326677_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2887,7 +2887,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "426042_251819651561941_1339151085_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2900,7 +2900,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "425222_251807834896456_847868894_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2913,7 +2913,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "424760_251823898228183_935277660_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2926,7 +2926,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "424580_251807128229860_1715649070_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2939,7 +2939,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "423927_251809804896259_881591295_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2952,7 +2952,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "420236_251817021562204_2140295119_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2965,7 +2965,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "420047_251814881562418_515495702_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2978,7 +2978,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "418012_251812308229342_1011218371_n.jpg",
           "description": "",
           "edition_type": null,
@@ -2991,7 +2991,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "418003_251809588229614_741795801_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3004,7 +3004,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "417338_251818454895394_1360775908_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3017,7 +3017,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "409562_251814254895814_1704684469_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3030,7 +3030,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "404929_251816924895547_1983497593_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3043,7 +3043,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "401679_389635577780347_1137486869_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3056,7 +3056,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "401546_251818368228736_1464698677_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3069,7 +3069,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "399322_389635907780314_669857607_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3082,7 +3082,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "66790_389635594447012_1963805836_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3095,7 +3095,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "66448_288270854583487_1842664708_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3108,7 +3108,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "61884_389635224447049_2120842969_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3121,7 +3121,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "22-1.jpg",
           "description": "",
           "edition_type": null,
@@ -3134,7 +3134,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "18-1.jpg",
           "description": "",
           "edition_type": null,
@@ -3147,7 +3147,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "17.jpg",
           "description": "",
           "edition_type": null,
@@ -3160,7 +3160,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "Hattie2.jpg",
           "description": "",
           "edition_type": null,
@@ -3173,7 +3173,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "finished_reborn_doll_gallery_photo",
           "title": "e220a06b-8f99-4f49-8e57-0f9c42e5b9e0.jpg",
           "description": "",
           "edition_type": null,
@@ -3201,7 +3201,7 @@
       "kit_cards": [],
       "unverified_gallery_photos": [
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "",
           "description": "",
           "edition_type": null,
@@ -3214,7 +3214,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "",
           "description": "",
           "edition_type": null,
@@ -3227,7 +3227,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "",
           "description": "",
           "edition_type": null,
@@ -3240,7 +3240,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "",
           "description": "",
           "edition_type": null,
@@ -3253,7 +3253,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "lauri",
           "description": "",
           "edition_type": null,
@@ -3266,7 +3266,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "ce66407f-dd6b-4b74-899a-4e7ee15b5f17",
           "description": "",
           "edition_type": null,
@@ -3279,7 +3279,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Winnie",
           "description": "",
           "edition_type": null,
@@ -3292,7 +3292,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "421860325_920569869432020_5422773121832810130_n",
           "description": "",
           "edition_type": null,
@@ -3305,7 +3305,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "elliot",
           "description": "",
           "edition_type": null,
@@ -3318,7 +3318,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Otillie",
           "description": "",
           "edition_type": null,
@@ -3331,7 +3331,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Lucas",
           "description": "",
           "edition_type": null,
@@ -3344,7 +3344,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "292715000_5611107512234940_7698878478962829578_n (2)",
           "description": "",
           "edition_type": null,
@@ -3357,7 +3357,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Leo2",
           "description": "",
           "edition_type": null,
@@ -3370,7 +3370,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Estella1",
           "description": "",
           "edition_type": null,
@@ -3383,7 +3383,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "peaches",
           "description": "",
           "edition_type": null,
@@ -3396,7 +3396,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "91155918_1066148713761546_78998679605395",
           "description": "",
           "edition_type": null,
@@ -3409,7 +3409,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "91290522_2499549843640313_19186369958046",
           "description": "",
           "edition_type": null,
@@ -3422,7 +3422,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "91539833_1374787109378026_18496691877711",
           "description": "",
           "edition_type": null,
@@ -3435,7 +3435,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "samuel",
           "description": "",
           "edition_type": null,
@@ -3448,7 +3448,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Ava1",
           "description": "",
           "edition_type": null,
@@ -3461,7 +3461,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "28938455_1849407305071665_1320079761_o",
           "description": "",
           "edition_type": null,
@@ -3474,7 +3474,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "71183863_2713998671945853_28378303887793",
           "description": "",
           "edition_type": null,
@@ -3487,7 +3487,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "76920833_2826675450678174_44538369508680",
           "description": "",
           "edition_type": null,
@@ -3500,7 +3500,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "73190485_2761954850483568_65600108303210",
           "description": "",
           "edition_type": null,
@@ -3513,7 +3513,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "69573734_2656969327648788_29793121992620",
           "description": "",
           "edition_type": null,
@@ -3526,7 +3526,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "75588169_2826675340678185_64904671064112",
           "description": "",
           "edition_type": null,
@@ -3539,7 +3539,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "76247729_2826675887344797_90313935571386",
           "description": "",
           "edition_type": null,
@@ -3552,7 +3552,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "28928587_1849406695071726_1438904875_o",
           "description": "",
           "edition_type": null,
@@ -3565,7 +3565,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "28810686_1848096091869453_1288127753_o",
           "description": "",
           "edition_type": null,
@@ -3578,7 +3578,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "75388494_2826675237344862_81702612514698",
           "description": "",
           "edition_type": null,
@@ -3591,7 +3591,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "19149196_1580975098581555_4522864956963958854_n_edited.jpg",
           "description": "",
           "edition_type": null,
@@ -3604,7 +3604,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "19601141_1597562193589512_3156481275164455406_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3617,7 +3617,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "18155416_1524742704204795_927774519_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3630,7 +3630,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "18489697_1545395268806205_5270581083225194647_o.jpg",
           "description": "",
           "edition_type": null,
@@ -3643,7 +3643,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "18142865_1524742540871478_1942141566_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3656,7 +3656,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "DSC_0536.JPG",
           "description": "",
           "edition_type": null,
@@ -3669,7 +3669,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "esme sculpt.jpg",
           "description": "",
           "edition_type": null,
@@ -3682,7 +3682,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "14716312_1317260931619641_879883457882244254_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3695,7 +3695,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "19679873_1600346259977772_1532362729_n_edited.jpg",
           "description": "",
           "edition_type": null,
@@ -3708,7 +3708,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Evelyn.jpg",
           "description": "",
           "edition_type": null,
@@ -3721,7 +3721,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "14370124_1285611328117935_1641319617218312877_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3734,7 +3734,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "15645364_1384244894921244_1903701375_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3747,7 +3747,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "nova.jpg",
           "description": "",
           "edition_type": null,
@@ -3760,7 +3760,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "17352571_1482979338381132_7996787506337025868_n.jpg",
           "description": "",
           "edition_type": null,
@@ -3773,7 +3773,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "clementine.jpg",
           "description": "",
           "edition_type": null,
@@ -3786,7 +3786,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Bluebell",
           "description": "",
           "edition_type": null,
@@ -3799,7 +3799,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Bluebell",
           "description": "",
           "edition_type": null,
@@ -3812,7 +3812,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Nova",
           "description": "",
           "edition_type": null,
@@ -3825,7 +3825,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "esme1.jpg",
           "description": "",
           "edition_type": null,
@@ -3838,7 +3838,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Toby",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -3851,7 +3851,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Elyse",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -3864,7 +3864,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "monroe.jpg",
           "description": "",
           "edition_type": null,
@@ -3877,7 +3877,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Elyse",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -3890,7 +3890,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Elyse Foot",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -3903,7 +3903,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "evelyn2.jpg",
           "description": "",
           "edition_type": null,
@@ -3916,7 +3916,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Elyse",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -3929,7 +3929,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Elyse Hand",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -3942,7 +3942,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "clementine1.jpg",
           "description": "",
           "edition_type": null,
@@ -3955,7 +3955,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Elyse WIP",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -3968,7 +3968,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Sailor Rose",
           "description": "Vinyl Doll kit and Silicone Doll kit 2015",
           "edition_type": null,
@@ -3981,7 +3981,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "monroe1.jpg",
           "description": "",
           "edition_type": null,
@@ -3994,7 +3994,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Sailor Rose",
           "description": "Reborn Doll kit and silicone kit 2015",
           "edition_type": null,
@@ -4007,7 +4007,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Sailor Rose",
           "description": "Reborn Doll kit and silicone kit 2015",
           "edition_type": null,
@@ -4020,7 +4020,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Sailor Rose",
           "description": "Reborn Doll kit and silicone kit 2015",
           "edition_type": null,
@@ -4033,7 +4033,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Elyse",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -4046,7 +4046,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Nellie",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -4059,7 +4059,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Annabel",
           "description": "OOAK",
           "edition_type": null,
@@ -4072,7 +4072,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Oakley",
           "description": "OOAK",
           "edition_type": null,
@@ -4085,7 +4085,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Emerson",
           "description": "OOAK",
           "edition_type": null,
@@ -4098,7 +4098,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Living Doll Clay",
           "description": "I use Living doll to create my sculpts",
           "edition_type": null,
@@ -4111,7 +4111,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Finley",
           "description": "OOAK",
           "edition_type": null,
@@ -4124,7 +4124,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Mini Babies",
           "description": "OOAK",
           "edition_type": null,
@@ -4137,7 +4137,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Phoenix",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -4150,7 +4150,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Monster clay",
           "description": "Cool clay!",
           "edition_type": null,
@@ -4163,7 +4163,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Pheonix draft 1",
           "description": "OOAK",
           "edition_type": null,
@@ -4176,7 +4176,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Phoenix draft 1",
           "description": "OOAK",
           "edition_type": null,
@@ -4189,7 +4189,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Stanley",
           "description": "Reborn Doll kit 2013",
           "edition_type": null,
@@ -4202,7 +4202,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Zachary",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -4215,7 +4215,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Ella",
           "description": "Vinyl Doll kit 2013",
           "edition_type": null,
@@ -4228,7 +4228,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Phoenix",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -4241,7 +4241,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Nellie",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -4254,7 +4254,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Nellie",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -4267,7 +4267,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Sienna Rae",
           "description": "Reborn Doll kit 2014",
           "edition_type": null,
@@ -4280,7 +4280,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Sienna Rae",
           "description": "Reborn Doll kit 2014",
           "edition_type": null,
@@ -4293,7 +4293,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Sienna Rae",
           "description": "Reborn Doll kit 2014",
           "edition_type": null,
@@ -4306,7 +4306,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Leelou",
           "description": "Reborn Doll kit 2014",
           "edition_type": null,
@@ -4319,7 +4319,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Leelou",
           "description": "Reborn Doll kit 2014",
           "edition_type": null,
@@ -4332,7 +4332,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Zachary",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -4345,7 +4345,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Hattie",
           "description": "Reborn Doll kit 2012",
           "edition_type": null,
@@ -4358,7 +4358,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Oakley",
           "description": "OOAK",
           "edition_type": null,
@@ -4371,7 +4371,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Nellie",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -4384,7 +4384,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Phoenix",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -4397,7 +4397,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Nellie",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -4410,7 +4410,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Toby",
           "description": "Reborn Doll kit 2015",
           "edition_type": null,
@@ -4423,7 +4423,7 @@
           "review_status": "source_identified_unreviewed"
         },
         {
-          "record_type": "unverified_gallery_photo",
+          "record_type": "original_clay_gallery_photo",
           "title": "Stanley",
           "description": "Reborn Doll kit 2013",
           "edition_type": null,
