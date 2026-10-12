@@ -49,7 +49,7 @@ export async function onRequestPost({request,env}){
   if(!magic(bytes,mime))return reply({error:"Image content does not match MIME type"},400);
   const digest=new Uint8Array(await crypto.subtle.digest("SHA-256",bytes));
   const sha256=[...digest].map(x=>x.toString(16).padStart(2,"0")).join("");
-  const key=`approved/${ownerType}/${ownerId}/${sha256}.${ext}`;
+  const key=`${ownerType}/${ownerId}/${sha256}.${ext}`;
   try{
     await env.MEDIA_BUCKET.put(key,bytes,{httpMetadata:{contentType:mime,cacheControl:"public,max-age=31536000,immutable"},
       customMetadata:{sourceurl:sourceUrl.slice(0,800),sourcepage:sourcePage.slice(0,800),credit:credit.slice(0,250),rights:"approved"}});
