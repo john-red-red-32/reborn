@@ -1,0 +1,1815 @@
+{
+  "source": "https://www.cassielove.co.uk/",
+  "host": "www.cassielove.co.uk",
+  "parser_version": "url-discovery-v2-platform-sitemaps",
+  "started_from": "https://www.cassielove.co.uk/",
+  "completed_at": "2026-10-12T22:32:57.190542+00:00",
+  "page_limit": 30,
+  "sitemap_discovered_urls": 15,
+  "platforms": {
+    "wix": 16
+  },
+  "pages_checked": 16,
+  "pages_succeeded": 16,
+  "queue_remaining": 0,
+  "complete": true,
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://www.cassielove.co.uk/",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:31.295075+00:00",
+      "sha256_html": "54e98691375a6f92156b972438050c12d53d2a6f0220544081d875af211df3de",
+      "title": "Cassie Brace | Cassie Ann Love Reborn Doll Kits",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "Hand sculpted Original Reborn Doll Kits by Cassie Ann Love (Brace) reproduced in Vinyl. Limited Edition art pieces",
+        "og:title": "Cassie Brace | Cassie Ann Love Reborn Doll Kits",
+        "og:description": "Hand sculpted Original Reborn Doll Kits by Cassie Ann Love (Brace) reproduced in Vinyl. Limited Edition art piecesReborn Doll kits and sculpts by Cassie Brace",
+        "og:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.cassielove.co.uk",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "website",
+        "keywords": "Reborn Doll, Dolls, Reborn, Reborn Baby, Reborn Artist, Doll Kits, Sculptor, Cassie Brace",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Cassie Brace | Cassie Ann Love Reborn Doll Kits",
+        "twitter:description": "Hand sculpted Original Reborn Doll Kits by Cassie Ann Love (Brace) reproduced in Vinyl. Limited Edition art piecesReborn Doll kits and sculpts by Cassie Brace",
+        "twitter:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "LocalBusiness",
+          "name": "BABY DUST NURSERY LIMITED",
+          "url": "https://www.cassielove.co.uk",
+          "image": "https://static.wixstatic.com/media/684b25_0838717657814690a7273890da686976~mv2.png",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "GB",
+            "addressLocality": "Alcester",
+            "postalCode": "B50 4GF",
+            "streetAddress": "45 Chestnut Way"
+          },
+          "telephone": "07875733068"
+        },
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Cassie Love Original",
+          "url": "https://www.cassielove.co.uk"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_2aafa0eebb9e459687cc8e477c2b2cec~mv2.jpg/v1/fill/w_144,h_144,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_2aafa0eebb9e459687cc8e477c2b2cec~mv2.jpg",
+          "alt": "Macie Sculpture",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_d8cbeb146f4d4edcb1676d77cefc7c68~mv2.jpg/v1/fill/w_144,h_144,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_d8cbeb146f4d4edcb1676d77cefc7c68~mv2.jpg",
+          "alt": "Original Clay Feet",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_bc2004c999404799b073738f93364a9e~mv2.jpg/v1/fill/w_147,h_71,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_bc2004c999404799b073738f93364a9e~mv2.jpg",
+          "alt": "Hand sculpted newborn hand",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_d172440020dd47719b6c669715ca0cac~mv2.jpg/v1/fill/w_141,h_144,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_d172440020dd47719b6c669715ca0cac~mv2.jpg",
+          "alt": "19601141_1597562193589512_3156481275164455406_n.jpg",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_f188e73047c4456cba4520c684ec85d1~mv2.jpg/v1/fill/w_144,h_144,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_f188e73047c4456cba4520c684ec85d1~mv2.jpg",
+          "alt": "32871766_1930369680308760_20481566108150",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_e3865bbcf3e243dda1c746b5a3d2d08d~mv2.jpg/v1/fill/w_147,h_71,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_e3865bbcf3e243dda1c746b5a3d2d08d~mv2.jpg",
+          "alt": "78803082_517808965438008_653485199852778",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1b14c60ef97847fa8f4501c34b3f4313~mv2_d_2048_1361_s_2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_1b14c60ef97847fa8f4501c34b3f4313~mv2_d_2048_1361_s_2.jpg",
+          "alt": "66025798_2550003225012066_78321816380448",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_a0a38cef3c40474782ac84ba0377be12~mv2.jpg/v1/fill/w_154,h_173,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_a0a38cef3c40474782ac84ba0377be12~mv2.jpg",
+          "alt": "74355246_2762867273725659_30405388263772",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_9fcb1603139e43e89f0330375f594418~mv2.jpg/v1/fill/w_144,h_144,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_9fcb1603139e43e89f0330375f594418~mv2.jpg",
+          "alt": "19149196_1580975098581555_45228649569639",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_952d6ee3a34d4c29b0ef215393ae10a3~mv2.jpg/v1/fill/w_59,h_59,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_952d6ee3a34d4c29b0ef215393ae10a3~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_6f7248d4864d4544b4c7580f25974049~mv2.jpg/v1/fill/w_60,h_90,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_6f7248d4864d4544b4c7580f25974049~mv2.jpg",
+          "alt": "IMG_4786.jpg",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_2621023d445342d9a33e7927e769128b~mv2.jpg/v1/fill/w_62,h_93,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_2621023d445342d9a33e7927e769128b~mv2.jpg",
+          "alt": "6fc16b53-0f1e-4a0b-b433-a86dd638e67c.jpg",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_65715b3dff804c21a46290987fae43a4~mv2.jpg/v1/fill/w_147,h_221,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_65715b3dff804c21a46290987fae43a4~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_4cb3f99745e0427e86d558da5de524f6~mv2.jpg/v1/fill/w_147,h_208,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_4cb3f99745e0427e86d558da5de524f6~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_946277d39dfb41afa75261d274d5d1e9~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_946277d39dfb41afa75261d274d5d1e9~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_5090b1b094e840d296d312d6e4d84628~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_5090b1b094e840d296d312d6e4d84628~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/product-page/preorder-lennox-by-cassie-love-pay-in-full",
+        "https://www.cassielove.co.uk/product-page/preorder-lovan-by-cassie-love",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.cassielove.co.uk",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:32.914284+00:00",
+      "sha256_html": "54e98691375a6f92156b972438050c12d53d2a6f0220544081d875af211df3de",
+      "title": "Cassie Brace | Cassie Ann Love Reborn Doll Kits",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "Hand sculpted Original Reborn Doll Kits by Cassie Ann Love (Brace) reproduced in Vinyl. Limited Edition art pieces",
+        "og:title": "Cassie Brace | Cassie Ann Love Reborn Doll Kits",
+        "og:description": "Hand sculpted Original Reborn Doll Kits by Cassie Ann Love (Brace) reproduced in Vinyl. Limited Edition art piecesReborn Doll kits and sculpts by Cassie Brace",
+        "og:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.cassielove.co.uk",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "website",
+        "keywords": "Reborn Doll, Dolls, Reborn, Reborn Baby, Reborn Artist, Doll Kits, Sculptor, Cassie Brace",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Cassie Brace | Cassie Ann Love Reborn Doll Kits",
+        "twitter:description": "Hand sculpted Original Reborn Doll Kits by Cassie Ann Love (Brace) reproduced in Vinyl. Limited Edition art piecesReborn Doll kits and sculpts by Cassie Brace",
+        "twitter:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "LocalBusiness",
+          "name": "BABY DUST NURSERY LIMITED",
+          "url": "https://www.cassielove.co.uk",
+          "image": "https://static.wixstatic.com/media/684b25_0838717657814690a7273890da686976~mv2.png",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "GB",
+            "addressLocality": "Alcester",
+            "postalCode": "B50 4GF",
+            "streetAddress": "45 Chestnut Way"
+          },
+          "telephone": "07875733068"
+        },
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Cassie Love Original",
+          "url": "https://www.cassielove.co.uk"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_2aafa0eebb9e459687cc8e477c2b2cec~mv2.jpg/v1/fill/w_144,h_144,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_2aafa0eebb9e459687cc8e477c2b2cec~mv2.jpg",
+          "alt": "Macie Sculpture",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_d8cbeb146f4d4edcb1676d77cefc7c68~mv2.jpg/v1/fill/w_144,h_144,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_d8cbeb146f4d4edcb1676d77cefc7c68~mv2.jpg",
+          "alt": "Original Clay Feet",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_bc2004c999404799b073738f93364a9e~mv2.jpg/v1/fill/w_147,h_71,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_bc2004c999404799b073738f93364a9e~mv2.jpg",
+          "alt": "Hand sculpted newborn hand",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_d172440020dd47719b6c669715ca0cac~mv2.jpg/v1/fill/w_141,h_144,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_d172440020dd47719b6c669715ca0cac~mv2.jpg",
+          "alt": "19601141_1597562193589512_3156481275164455406_n.jpg",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_f188e73047c4456cba4520c684ec85d1~mv2.jpg/v1/fill/w_144,h_144,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_f188e73047c4456cba4520c684ec85d1~mv2.jpg",
+          "alt": "32871766_1930369680308760_20481566108150",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_e3865bbcf3e243dda1c746b5a3d2d08d~mv2.jpg/v1/fill/w_147,h_71,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_e3865bbcf3e243dda1c746b5a3d2d08d~mv2.jpg",
+          "alt": "78803082_517808965438008_653485199852778",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1b14c60ef97847fa8f4501c34b3f4313~mv2_d_2048_1361_s_2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_1b14c60ef97847fa8f4501c34b3f4313~mv2_d_2048_1361_s_2.jpg",
+          "alt": "66025798_2550003225012066_78321816380448",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_a0a38cef3c40474782ac84ba0377be12~mv2.jpg/v1/fill/w_154,h_173,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_a0a38cef3c40474782ac84ba0377be12~mv2.jpg",
+          "alt": "74355246_2762867273725659_30405388263772",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_9fcb1603139e43e89f0330375f594418~mv2.jpg/v1/fill/w_144,h_144,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_9fcb1603139e43e89f0330375f594418~mv2.jpg",
+          "alt": "19149196_1580975098581555_45228649569639",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_952d6ee3a34d4c29b0ef215393ae10a3~mv2.jpg/v1/fill/w_59,h_59,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_952d6ee3a34d4c29b0ef215393ae10a3~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_6f7248d4864d4544b4c7580f25974049~mv2.jpg/v1/fill/w_60,h_90,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_6f7248d4864d4544b4c7580f25974049~mv2.jpg",
+          "alt": "IMG_4786.jpg",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_2621023d445342d9a33e7927e769128b~mv2.jpg/v1/fill/w_62,h_93,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_2621023d445342d9a33e7927e769128b~mv2.jpg",
+          "alt": "6fc16b53-0f1e-4a0b-b433-a86dd638e67c.jpg",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_65715b3dff804c21a46290987fae43a4~mv2.jpg/v1/fill/w_147,h_221,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_65715b3dff804c21a46290987fae43a4~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_4cb3f99745e0427e86d558da5de524f6~mv2.jpg/v1/fill/w_147,h_208,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_4cb3f99745e0427e86d558da5de524f6~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_946277d39dfb41afa75261d274d5d1e9~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_946277d39dfb41afa75261d274d5d1e9~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_5090b1b094e840d296d312d6e4d84628~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_5090b1b094e840d296d312d6e4d84628~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/product-page/preorder-lennox-by-cassie-love-pay-in-full",
+        "https://www.cassielove.co.uk/product-page/preorder-lovan-by-cassie-love",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.cassielove.co.uk/about-me",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:34.532317+00:00",
+      "sha256_html": "61964951107c4d64b477d6e3c5ee38cf05be81a1a281b320eb45dcfcbb72a9fd",
+      "title": "About | Cassie Brace Reborn Doll kits",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "About | Cassie Brace Reborn Doll kits",
+        "og:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "og:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.cassielove.co.uk/about-me",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "website",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "About | Cassie Brace Reborn Doll kits",
+        "twitter:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "twitter:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_071964c852e840f2bcb13da65c0c6107~mv2.jpg/v1/fill/w_108,h_108,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_071964c852e840f2bcb13da65c0c6107~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.cassielove.co.uk/checkout-1",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:36.129624+00:00",
+      "sha256_html": "91a1d2d1c2d27d5802417038b8a7aa826f16b74223bdc2b820863428f4016398",
+      "title": "Checkout  | Cassie Brace Reborn Doll kits",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Checkout  | Cassie Brace Reborn Doll kits",
+        "og:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "og:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.cassielove.co.uk/checkout-1",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "website",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Checkout  | Cassie Brace Reborn Doll kits",
+        "twitter:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "twitter:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.cassielove.co.uk/contact",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:37.733165+00:00",
+      "sha256_html": "703e5e118bf3549f3b73bc2ddf5dff8b3e548962914511fd4798bf33be0eaf86",
+      "title": "Contact | Cassie Brace Reborn Doll kits",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Contact | Cassie Brace Reborn Doll kits",
+        "og:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "og:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.cassielove.co.uk/contact",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "website",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Contact | Cassie Brace Reborn Doll kits",
+        "twitter:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "twitter:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.cassielove.co.uk/dealer-list",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:39.345188+00:00",
+      "sha256_html": "c9e36a877e07181d695d1e8cce471373b461ef0d595003b2448d57bb479cf92f",
+      "title": "International Dealers  | Cassie Brace Reborn Doll kits",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "International Dealers  | Cassie Brace Reborn Doll kits",
+        "og:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "og:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.cassielove.co.uk/dealer-list",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "website",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "International Dealers  | Cassie Brace Reborn Doll kits",
+        "twitter:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "twitter:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_87c1a24cb3d547f3b65521485b18985b~mv2.png/v1/fill/w_972,h_460,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/684b25_87c1a24cb3d547f3b65521485b18985b~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/684b25_87c1a24cb3d547f3b65521485b18985b~mv2.png/v1/fill/w_972,h_460,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/684b25_87c1a24cb3d547f3b65521485b18985b~mv2.png 1x, https://static.wixstatic.com/media/684b25_87c1a24cb3d547f3b65521485b18985b~mv2.png/v1/fill/w_1001,h_474,al_c,q_90,enc_avif,quality_auto/684b25_87c1a24cb3d547f3b65521485b18985b~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.cassielove.co.uk/galleries",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:41.042020+00:00",
+      "sha256_html": "3243deb9b7bea060e16b1c5b2db07c9a21e3d8a769a6379e287032379f15bd47",
+      "title": "Galleries | Cassie Brace Reborn Doll kits",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Galleries | Cassie Brace Reborn Doll kits",
+        "og:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "og:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.cassielove.co.uk/galleries",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "website",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Galleries | Cassie Brace Reborn Doll kits",
+        "twitter:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "twitter:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_7e97ac4b09d64231b58d836ebc7985a9.jpg/v1/fill/w_147,h_110,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_7e97ac4b09d64231b58d836ebc7985a9.jpg",
+          "alt": "cassiebrace",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_2aafa0eebb9e459687cc8e477c2b2cec~mv2.jpg/v1/fill/w_144,h_144,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_2aafa0eebb9e459687cc8e477c2b2cec~mv2.jpg",
+          "alt": "69800288_2809047299107656_31783360488412",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.cassielove.co.uk/product-page/preorder-lennox-by-cassie-love-pay-in-full",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:42.703193+00:00",
+      "sha256_html": "01b5db9383942cf0f72fd2e506d87274b128ee7e06f3bfbfcdb2585dd12cd53c",
+      "title": "Lennox by Cassie Love | Cassie Love Original",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "robots": "index",
+        "og:title": "Lennox by Cassie Love | Cassie Love Original",
+        "og:description": "BRAND NEW DOLL KIT - LENNOX BY CASSIE LOVE Limited Edition 400 ww -Blank and unassembled- not a reborn baby doll total price £95 +postage 22\" approx Doll kit - blank kit only- Full LimbsIncludes custom fit cloth body Special Certification of Authenticity and Cotton bag ",
+        "og:image": "https://static.wixstatic.com/media/684b25_65715b3dff804c21a46290987fae43a4~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+        "og:image:width": "1500",
+        "og:image:height": "2250",
+        "og:url": "https://www.cassielove.co.uk/product-page/preorder-lennox-by-cassie-love-pay-in-full",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "product",
+        "og:availability": "InStock",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "product:price:amount": "95",
+        "product:price:currency": "GBP",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Lennox by Cassie Love | Cassie Love Original",
+        "twitter:description": "BRAND NEW DOLL KIT - LENNOX BY CASSIE LOVE Limited Edition 400 ww -Blank and unassembled- not a reborn baby doll total price £95 +postage 22\" approx Doll kit - blank kit only- Full LimbsIncludes custom fit cloth body Special Certification of Authenticity and Cotton bag ",
+        "twitter:image": "https://static.wixstatic.com/media/684b25_65715b3dff804c21a46290987fae43a4~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "Lennox by Cassie Love",
+          "description": "BRAND NEW DOLL KIT - LENNOX BY CASSIE LOVE Limited Edition 400 ww -Blank and unassembled- not a reborn baby doll total price £95 +postage 22&quot; approx Doll kit - blank kit only- Full LimbsIncludes custom fit cloth body Special Certification of Authenticity and Cotton bag ",
+          "image": [
+            {
+              "@type": "ImageObject",
+              "height": "2250",
+              "width": "1500",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_65715b3dff804c21a46290987fae43a4~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_65715b3dff804c21a46290987fae43a4~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1446",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_4cb3f99745e0427e86d558da5de524f6~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_4cb3f99745e0427e86d558da5de524f6~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2250",
+              "width": "1500",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_4cb6df559b7e4060af1af05304e0e930~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_4cb6df559b7e4060af1af05304e0e930~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1477",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_a888acc19e444ec7b411873a717ef9a7~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_a888acc19e444ec7b411873a717ef9a7~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "4032",
+              "width": "2268",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_1aee0155337e476b885d18debb81d873~mv2.jpeg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_1aee0155337e476b885d18debb81d873~mv2.jpeg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2250",
+              "width": "1500",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_65626d994f17422793f85ede5050d7f2~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_65626d994f17422793f85ede5050d7f2~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "1000",
+              "width": "1500",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_278304fd029b48e794783cd01bfaaa46~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_278304fd029b48e794783cd01bfaaa46~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_6aeb7af079054e85b7ef6805b7d55d90~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_6aeb7af079054e85b7ef6805b7d55d90~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "4096",
+              "width": "2730",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_4a8c08bf64d64ff49e95a153ae640f20~mv2.jpeg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_4a8c08bf64d64ff49e95a153ae640f20~mv2.jpeg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "4032",
+              "width": "2268",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_4c078750846f4c0e87d8477eb110c043~mv2.jpeg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_4c078750846f4c0e87d8477eb110c043~mv2.jpeg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2250",
+              "width": "1500",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_188c2d32a91349be84f47c1cd21cc1cf~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_188c2d32a91349be84f47c1cd21cc1cf~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "4096",
+              "width": "2730",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_139a63f34594469ebf81d29e933d380a~mv2.jpeg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_139a63f34594469ebf81d29e933d380a~mv2.jpeg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "1000",
+              "width": "1500",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_8587e8e8d30e42c8b017e4cab2c4e38d~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_8587e8e8d30e42c8b017e4cab2c4e38d~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2730",
+              "width": "4096",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_09a8d726489242bba20abcd36eb461d7~mv2.jpeg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_09a8d726489242bba20abcd36eb461d7~mv2.jpeg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "1365",
+              "width": "2048",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_107f43767cd94c5aaf571102326a1b0b~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_107f43767cd94c5aaf571102326a1b0b~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            }
+          ],
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.cassielove.co.uk/product-page/preorder-lennox-by-cassie-love-pay-in-full",
+            "priceCurrency": "GBP",
+            "price": "95",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "BABY DUST NURSERY LIMITED",
+              "sameAs": "https://www.cassielove.co.uk"
+            }
+          }
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_65715b3dff804c21a46290987fae43a4~mv2.jpg/v1/fill/w_225,h_338,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_65715b3dff804c21a46290987fae43a4~mv2.jpg",
+          "alt": "Lennox by Cassie Love",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.cassielove.co.uk/product-page/preorder-lovan-by-cassie-love",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:44.321580+00:00",
+      "sha256_html": "dfc17ebe982ef65b57f32c6a2756fe9fc0789f61c68acbc4c7a9616381819dd8",
+      "title": "Lovan by Cassie Love | Cassie Love Original",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "robots": "index",
+        "og:title": "Lovan by Cassie Love | Cassie Love Original",
+        "og:description": "BRAND NEW DOLL KIT - Limited Edition -Blank and unassembled- not a reborn baby dolltotal price £95 +postage Lovan is my latest doll kit to release to preorder19\" approx Doll kit - blank kit only- Full LimbsIncludes custom fit cloth bodySpecial Certification of Authenticity,Cotton bag  ",
+        "og:image": "https://static.wixstatic.com/media/684b25_946277d39dfb41afa75261d274d5d1e9~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+        "og:image:width": "2048",
+        "og:image:height": "1366",
+        "og:url": "https://www.cassielove.co.uk/product-page/preorder-lovan-by-cassie-love",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "product",
+        "og:availability": "out of stock",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "product:price:amount": "95",
+        "product:price:currency": "GBP",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Lovan by Cassie Love | Cassie Love Original",
+        "twitter:description": "BRAND NEW DOLL KIT - Limited Edition -Blank and unassembled- not a reborn baby dolltotal price £95 +postage Lovan is my latest doll kit to release to preorder19\" approx Doll kit - blank kit only- Full LimbsIncludes custom fit cloth bodySpecial Certification of Authenticity,Cotton bag  ",
+        "twitter:image": "https://static.wixstatic.com/media/684b25_946277d39dfb41afa75261d274d5d1e9~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "Lovan by Cassie Love",
+          "description": "BRAND NEW DOLL KIT - Limited Edition -Blank and unassembled- not a reborn baby dolltotal price £95 +postage Lovan is my latest doll kit to release to preorder19&quot; approx Doll kit - blank kit only- Full LimbsIncludes custom fit cloth bodySpecial Certification of Authenticity,Cotton bag  ",
+          "image": [
+            {
+              "@type": "ImageObject",
+              "height": "1366",
+              "width": "2048",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_946277d39dfb41afa75261d274d5d1e9~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_946277d39dfb41afa75261d274d5d1e9~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "1362",
+              "width": "2048",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_5090b1b094e840d296d312d6e4d84628~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_5090b1b094e840d296d312d6e4d84628~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1356",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_cdfd361bd6874e9c9aedd8c488411a53~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_cdfd361bd6874e9c9aedd8c488411a53~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "1301",
+              "width": "2048",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_487d4d7fb59a4b18b89ebc45980e79be~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_487d4d7fb59a4b18b89ebc45980e79be~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "1366",
+              "width": "2048",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_0b9130f290cb4f4ca1a26a1127e161f3~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_0b9130f290cb4f4ca1a26a1127e161f3~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "1362",
+              "width": "2048",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_abd5f9b5ebe342428a1be1c6f31fc7c0~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_abd5f9b5ebe342428a1be1c6f31fc7c0~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "1365",
+              "width": "2048",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_02ac1f1d45434dfcb1b8dfc3c7fb8e2b~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_02ac1f1d45434dfcb1b8dfc3c7fb8e2b~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "1362",
+              "width": "2048",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_f31222fa89fc4cdbbcab86f16f6f0c67~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_f31222fa89fc4cdbbcab86f16f6f0c67~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "1362",
+              "width": "2048",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_a89d558560a74051aa9a8ce82e0c09c1~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_a89d558560a74051aa9a8ce82e0c09c1~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "1365",
+              "width": "2048",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_a080496e27bb4d61b4a2d9ab06cb7075~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_a080496e27bb4d61b4a2d9ab06cb7075~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "1362",
+              "width": "2048",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_60e25b18b62b4d7fb86c78b65c794ece~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_60e25b18b62b4d7fb86c78b65c794ece~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1366",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_a4c8f99572694ebd84006814d5739a46~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_a4c8f99572694ebd84006814d5739a46~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "1362",
+              "width": "2048",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_c2af962030ac428ea30de02bcbf6a410~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_c2af962030ac428ea30de02bcbf6a410~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "1366",
+              "width": "2048",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_2d8c5ca079a44fdda22de4a1fcb2b3a0~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_2d8c5ca079a44fdda22de4a1fcb2b3a0~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1508",
+              "contentUrl": "https://static.wixstatic.com/media/684b25_0ff05562a605472abface64f45a66810~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/684b25_0ff05562a605472abface64f45a66810~mv2.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            }
+          ],
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.cassielove.co.uk/product-page/preorder-lovan-by-cassie-love",
+            "priceCurrency": "GBP",
+            "price": "95",
+            "availability": "https://schema.org/OutOfStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "BABY DUST NURSERY LIMITED",
+              "sameAs": "https://www.cassielove.co.uk"
+            }
+          }
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_946277d39dfb41afa75261d274d5d1e9~mv2.jpg/v1/fill/w_307,h_205,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_946277d39dfb41afa75261d274d5d1e9~mv2.jpg",
+          "alt": "Lovan by Cassie Love",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.cassielove.co.uk/reborns",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:45.920278+00:00",
+      "sha256_html": "364bb6f3cf83eddbb89d2f7ac89ba0d31b54309a6a3333a8039da9e2178411a7",
+      "title": "Reborn Baby Dolls by Cassie Brace",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "Reborn Dolls created by Cassie Brace 2008+",
+        "og:title": "Reborn Baby Dolls by Cassie Brace",
+        "og:description": "Reborn Dolls created by Cassie Brace 2008+Reborn Doll kits and sculpts by Cassie Brace",
+        "og:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.cassielove.co.uk/reborns",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "website",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Reborn Baby Dolls by Cassie Brace",
+        "twitter:description": "Reborn Dolls created by Cassie Brace 2008+Reborn Doll kits and sculpts by Cassie Brace",
+        "twitter:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.cassielove.co.uk/sculpting",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:47.580180+00:00",
+      "sha256_html": "24b2f4576387dc6612b7624c5fdbe58c05af1621d39411d5a46bba79fe9eaf4b",
+      "title": "Sculpting | Cassie Brace Reborn Doll kits",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Sculpting | Cassie Brace Reborn Doll kits",
+        "og:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "og:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.cassielove.co.uk/sculpting",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "website",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Sculpting | Cassie Brace Reborn Doll kits",
+        "twitter:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "twitter:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.cassielove.co.uk/shop",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:49.203549+00:00",
+      "sha256_html": "1d44a4c1a56f2c5c41c074b7596c134638623d7a52a1df0d06dfeae55cbe7227",
+      "title": "Online Store | Cassie Brace Reborn Doll kits",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Online Store | Cassie Brace Reborn Doll kits",
+        "og:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "og:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.cassielove.co.uk/shop",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "website",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Online Store | Cassie Brace Reborn Doll kits",
+        "twitter:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "twitter:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_65715b3dff804c21a46290987fae43a4~mv2.jpg/v1/fill/w_147,h_221,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_65715b3dff804c21a46290987fae43a4~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_4cb3f99745e0427e86d558da5de524f6~mv2.jpg/v1/fill/w_147,h_208,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_4cb3f99745e0427e86d558da5de524f6~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_946277d39dfb41afa75261d274d5d1e9~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_946277d39dfb41afa75261d274d5d1e9~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_5090b1b094e840d296d312d6e4d84628~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/684b25_5090b1b094e840d296d312d6e4d84628~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/product-page/preorder-lennox-by-cassie-love-pay-in-full",
+        "https://www.cassielove.co.uk/product-page/preorder-lovan-by-cassie-love",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.cassielove.co.uk/silicone",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:50.854368+00:00",
+      "sha256_html": "c933065848828b3bae932ea36ee19696d25ab291ec1e15d2361f0c11e97ed619",
+      "title": "Silicone | Cassie Brace Reborn Doll kits",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Silicone | Cassie Brace Reborn Doll kits",
+        "og:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "og:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.cassielove.co.uk/silicone",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "website",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Silicone | Cassie Brace Reborn Doll kits",
+        "twitter:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "twitter:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.cassielove.co.uk/team-4",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:52.457121+00:00",
+      "sha256_html": "f180e9a6a4c0d8ac1805b90c19570e3663f0e853e136994c579ac697004b17fb",
+      "title": "Dealerpage | Cassie Brace Reborn Doll kits",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Dealerpage | Cassie Brace Reborn Doll kits",
+        "og:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "og:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.cassielove.co.uk/team-4",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "website",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Dealerpage | Cassie Brace Reborn Doll kits",
+        "twitter:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "twitter:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.cassielove.co.uk/thank-you-page",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:54.061364+00:00",
+      "sha256_html": "9fbe7f0ece13f448a9c28aca7f561e04732707989dbd47a60a5004e6e53b18ab",
+      "title": "Thank You page | Cassie Brace Reborn Doll kits",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Thank You page | Cassie Brace Reborn Doll kits",
+        "og:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "og:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.cassielove.co.uk/thank-you-page",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "website",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Thank You page | Cassie Brace Reborn Doll kits",
+        "twitter:description": "Reborn Doll kits and sculpts by Cassie Brace",
+        "twitter:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.cassielove.co.uk/vinyl-doll-kits",
+      "platform": "wix",
+      "observed_at": "2026-10-12T22:32:55.690078+00:00",
+      "sha256_html": "e4087c69606b614019472590fd3598fbc7b3b7160c808d4c7120fb9fe84d5c57",
+      "title": "Reborn Doll kits by Cassie Brace",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "Reborn Dolls kits sculpted and reproduced by Cassie Brace, Past and present",
+        "og:title": "Reborn Doll kits by Cassie Brace",
+        "og:description": "Reborn Dolls kits sculpted and reproduced by Cassie Brace, Past and presentReborn Doll kits and sculpts by Cassie Brace",
+        "og:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.cassielove.co.uk/vinyl-doll-kits",
+        "og:site_name": "Cassie Love Original",
+        "og:type": "website",
+        "fb_admins_meta_tag": "SculptorCassieAnnLove",
+        "google-site-verification": "kmXJQDMtCBBAssIs4l1uCpUz4g6cK3D5CTsAcNtjeA0",
+        "fb:admins": "SculptorCassieAnnLove",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Reborn Doll kits by Cassie Brace",
+        "twitter:description": "Reborn Dolls kits sculpted and reproduced by Cassie Brace, Past and presentReborn Doll kits and sculpts by Cassie Brace",
+        "twitter:image": "https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fit/w_2500,h_1330,al_c/e316f544f9094143b9eac01f1f19e697.png"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png",
+          "alt": "Cassie Ann Love Brace Sculptor Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_551,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 1x, https://static.wixstatic.com/media/684b25_c80ce10eceb8488ab7a6461f33f9f92c~mv2.png/v1/fill/w_1102,h_428,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Alternate%20Horizontal%20White.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png",
+          "alt": "Instagram",
+          "srcset": "https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 1x, https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40898a93cfff4578b1779073137eb1b4.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 1x, https://static.wixstatic.com/media/aebe5b6fd55f471a936c72ff2c8289d7.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/aebe5b6fd55f471a936c72ff2c8289d7.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png",
+          "alt": "TikTok ",
+          "srcset": "https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 1x, https://static.wixstatic.com/media/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_c7468ec61d494ead83af6058b76cadc0~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png",
+          "alt": "Cassie Ann Love Originals Brace Reborn doll kits",
+          "srcset": "https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_346,h_247,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 1x, https://static.wixstatic.com/media/684b25_1f7d10412b2248c288770b39a394b198~mv2.png/v1/fill/w_692,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cassie%20Ann%20Love%20Originals_Watermark%20White.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.cassielove.co.uk",
+        "https://www.cassielove.co.uk/about-me",
+        "https://www.cassielove.co.uk/contact",
+        "https://www.cassielove.co.uk/dealer-list",
+        "https://www.cassielove.co.uk/galleries",
+        "https://www.cassielove.co.uk/reborns",
+        "https://www.cassielove.co.uk/sculpting",
+        "https://www.cassielove.co.uk/shop",
+        "https://www.cassielove.co.uk/vinyl-doll-kits"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    }
+  ],
+  "notice": "Discovery evidence only. No images copied; no status or release-date inference."
+}
