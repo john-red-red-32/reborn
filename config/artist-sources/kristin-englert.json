@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "artist_id": "kristin-englert",
+  "display_name": "Kristin Englert",
+  "source_name": "Kristin Englert official sculptor website",
+  "allowed_hosts": [
+    "siliconeartdolls.com"
+  ],
+  "platform": "shopify",
+  "currency": "USD",
+  "accepted_names": [],
+  "approved_aliases": {},
+  "notes": "Research source only. Product ownership, variants, edition counts, prices, media rights and live availability require evidence-led editorial review. Do not automatically publish."
+}
