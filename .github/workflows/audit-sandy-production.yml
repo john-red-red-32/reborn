@@ -1,0 +1,59 @@
+name: Audit published Sandy Faber portfolio
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-sandy-production.yml'
+      - 'lib/sandy-gallery-catalogue.ts'
+      - 'lib/real-catalogue.ts'
+      - 'lib/sandy-artist-stories.ts'
+      - 'app/artists/[slug]/page.tsx'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify Sandy vinyl versus silicone kit claims on production
+        run: |
+          python3 - <<'PY'
+          import json,re,time,urllib.request
+          text=open('lib/sandy-gallery-catalogue.ts',encoding='utf8').read()
+          m=re.search('export const sandyOriginalKits:VerifiedKit\[\]=([\s\S]*?);\s*$',text)
+          assert m
+          kits=json.loads(m.group(1))
+          assert len(kits)==15
+          assert len(set(k['slug'] for k in kits))==15
+          vinyl=[k for k in kits if k['material']=='vinyl']
+          silicone=[k for k in kits if k['material']=='silicone']
+          assert len(vinyl)==13
+          assert set(k['name'] for k in silicone)=={'Bobby','Bodhi'}
+          assert len([k for k in kits if k.get('photos')])==4
+          assert all(k['sources'][0]['url'].startswith('https://www.sandysbabies.com/') for k in kits)
+          headers={'User-Agent':'Mozilla/5.0 (compatible; RebornaAudit/1.0)'}
+          routes=[('/artists/sandy-faber/','Sandy Faber')]+[('/kits/'+k['slug']+'/',k['name']) for k in kits]
+          for attempt in range(35):
+            failures=[]
+            for path,name in routes:
+              try:
+                with urllib.request.urlopen(urllib.request.Request('https://reborna.co'+path,headers=headers),timeout=16) as res:
+                  html=res.read(1_800_000).decode('utf8','replace')
+                  if res.status!=200 or name not in html:raise ValueError('missing heading/status')
+                  if path.startswith('/kits/') and 'Material' not in html:raise ValueError('missing material')
+              except Exception as e:failures.append((path,str(e)[:100]))
+            if not failures:
+              print('PASS',len(routes),'published Sandy routes (13 vinyl, 2 silicone)',flush=True)
+              break
+            print('Awaiting Cloudflare build:',attempt+1,failures[:3],flush=True)
+            time.sleep(8)
+          else:raise SystemExit('Sandy portfolio has not arrived on production')
+          for k in kits:
+            for p in k.get('photos',[])[:1]:
+              with urllib.request.urlopen(urllib.request.Request(p['url'],headers=headers),timeout=15) as res:
+                assert res.status==200 and res.headers.get('Content-Type','').startswith('image/'),k['name']
+          print('PASS all four name-labelled artist-hosted original photo sources')
+          print('No unlabeled photos guessed; unavailable image records remain sourced text-only.')
+          PY
