@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "artist_id": "gudrun-legler",
+  "display_name": "Gudrun Legler",
+  "source_name": "Gudrun Legler official sculptor website",
+  "allowed_hosts": [
+    "www.gudrun-legler-onlineshop.de",
+    "gudrun-legler-onlineshop.de"
+  ],
+  "platform": "jimdo",
+  "accepted_names": [],
+  "approved_aliases": {},
+  "notes": "Official blank doll kits and sculpt identities to be confirmed by source page. No use of third-party photos or current availability inference."
+}
