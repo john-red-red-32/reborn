@@ -1,0 +1,231 @@
+{
+  "extractor_version": "candidate-extractor-v3-preorder-evidence",
+  "source": "https://nikkisseasidebabies.co.uk/",
+  "scan_completed_at": "2026-10-13T17:14:01.914228+00:00",
+  "scan_complete": false,
+  "pages_succeeded": 12,
+  "candidate_count": 7,
+  "candidates": [
+    {
+      "name": "18-21” Belly Plate - (Temporarily Out Of Stock)",
+      "source_url": "https://nikkisseasidebabies.co.uk/products/19-21-belly-plate",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "Originally that of Kiara’s, this belly plate will fit reborns from size 18-21”. It is non-gendered, so has great versatility with working for either a boy or a girl. The beautiful neutral vinyl will make matching this belly plate to most kits super easy. It has the most beautiful shape to it, meaning it will fit perfectly over the body, as well as around the neck and limbs 💕 THIS LISTING IS FOR AN UNPAINTED BELLY PLATE ONLY. BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MY CARRY. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM BRAZIL, ARGENTINA, MIDDLE EAST AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://nikkisseasidebabies.co.uk/cdn/shop/products/image_2048x.jpg?v=1599929486"
+        }
+      ],
+      "image_count": 1,
+      "advertised_offers": [
+        {
+          "price": 15.0,
+          "priceCurrency": "GBP",
+          "availability": "http://schema.org/OutOfStock",
+          "url": "https://nikkisseasidebabies.co.uk/products/19-21-belly-plate?variant=36217334792352"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    },
+    {
+      "name": "Advanced Rooting (Level 3 - Coming Soon)",
+      "source_url": "https://nikkisseasidebabies.co.uk/products/advanced-rooting-level-3-coming-soon",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "Ready for hyper-realistic hair? I've spent years refining my process, and this course will teach you a ton of secrets which took me years to learn through trial and error, saving you time and helping you take your rooting to the next level! Let's begin my Advanced Rooting Course! (Level 2 → Level 3) In this course you'll have access to 7 exclusive video tutorials created by me for you, spread over 7 weeks for you to study at your own pace. The course is a combination of full-length video tutorials and quizzes. These tutorials will include all the information you need to take your rooting from Intermediate (Level 2) to Advanced! (Level 3). If you are experienced but still developing your rooting technique, I would highley recommend taking Level 2 prior to the Level 3 to make sure you have the intermediate knowledge needed to get the most from Level 3! I've already purchased, let me in!",
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://nikkisseasidebabies.co.uk/cdn/shop/products/C1EAF379-3DD3-45E0-8537-0731E6499B22_1440x.jpg?v=1587432142"
+        }
+      ],
+      "image_count": 1,
+      "advertised_offers": [
+        {
+          "price": 75.0,
+          "priceCurrency": "GBP",
+          "availability": "http://schema.org/OutOfStock",
+          "url": "https://nikkisseasidebabies.co.uk/products/advanced-rooting-level-3-coming-soon?variant=31819449696308"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    },
+    {
+      "name": "Christopher - IN STOCK",
+      "source_url": "https://nikkisseasidebabies.co.uk/products/christopher-pre-order-may-2025",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "♥️ IN STOCK ♥️ I do ship worldwide, however you can find a dealer near you HERE If you order directly from me, you will receive a special box opening experience, including a signed body and a personalised blanket lovey ♥️ \"I’m am so excited to introduce you to little Christopher!! Little Christopher has been almost 6 years in the making!! But oh so worth the wait ❤️ His little pouty lips, and scrunchy little legs make him seem like he's just settling from a big stretch. He also has the perfect newborn scrunch when lifted. Completely melts my heart! 🥰 He has full limbs, and will be approx 19/20\". I have created him a special custom body that gives him that perfect little belly that looks like it's full of milk. He will also have an optional belly plate that you can add to your pre-order We should start seeing the prototype pictures late May, with the pre order not long after. Mark your calendar's so you don't miss out on this little cutie!! I have fallen completely head over heels in love with him, and I hope you will too! 🥰 You are buying the BLANK doll kit only.Photos of prototypes are examples only. Kit Spec Name: Christopher Sculptor: Nikki JohnstonKit length: Approx 19/20” (bent legs)Limb length: Full arms &amp; legsHead circumference: 12.5”Custom Cloth Body: Included &amp; signed Belly Plate: Optional extra COA: Included Vinyl: JoyDollsEdition size: 3500 BLANK VINYL KIT ONLY *Strictly Limited Edition * PLEASE NOTE I DO NOT ACCEPT RETURNS OR CANCELLATIONS FOR CHANGE OF MIND OR OTHER SIMILAR REASONS. RETURNS ARE ONLY ACCEPTED AND REFUNDS GIVEN IF THE IS AN EXTREME FAULT WHEN YOU RECEIVE THE KIT. THANK YOU FOR YOUR UNDERSTANDING. BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MAY CARRY. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM COLUMBIA, BRAZIL, ARGENTINA, MIDDLE EAST AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
+      "lifecycle_evidence": "preorder_advertised",
+      "images": [
+        {
+          "url": "https://nikkisseasidebabies.co.uk/cdn/shop/files/1_926eb9f0-75a8-4cb7-8c7c-63f334b626e6_5008x.jpg?v=1749507855"
+        }
+      ],
+      "image_count": 1,
+      "advertised_offers": [
+        {
+          "price": 99.0,
+          "priceCurrency": "GBP",
+          "availability": "http://schema.org/InStock",
+          "url": "https://nikkisseasidebabies.co.uk/products/christopher-pre-order-may-2025?variant=52365247250592"
+        },
+        {
+          "price": 115.0,
+          "priceCurrency": "GBP",
+          "availability": "http://schema.org/InStock",
+          "url": "https://nikkisseasidebabies.co.uk/products/christopher-pre-order-may-2025?variant=52365247283360"
+        },
+        {
+          "price": 16.0,
+          "priceCurrency": "GBP",
+          "availability": "http://schema.org/InStock",
+          "url": "https://nikkisseasidebabies.co.uk/products/christopher-pre-order-may-2025?variant=52761803686048"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    },
+    {
+      "name": "Delilah Belly Plate (Temporarily Out Of Stock)",
+      "source_url": "https://nikkisseasidebabies.co.uk/products/delilah-belly-plate-pre-order",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "Please note there may be a slight delay in shipping up until 9th December. Orders are still being shipped out twice a week, just not on a daily basis. Thank you for your patience and I apologies for any inconvenience. ♥️ ...................... You can pre-order Delilah's full BLANK vinyl kit HERE. Originally that of Delilah’s, this belly plate will fit reborns from size 17-19”. It is non-gendered, so has great versatility with working for either a boy or a girl. The beautiful neutral vinyl will make matching this bel ly plate to most kits super easy. It has the most beautiful shape to it, meaning it will fit perfectly over the body, as well as around the neck and limbs 💕 THIS LISTING IS FOR AN UNPAINTED BELLY PLATE ONLY. Please note this is an approximate timeline. The factory is currently experiencing a host of delay, so please bare in mind this socking date can be changed ❤️ BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM BRAZIL, ARGENTINA AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
+      "lifecycle_evidence": "preorder_advertised",
+      "images": [
+        {
+          "url": "https://nikkisseasidebabies.co.uk/cdn/shop/products/127_5326x.jpg?v=1605220397"
+        }
+      ],
+      "image_count": 1,
+      "advertised_offers": [
+        {
+          "price": 15.0,
+          "priceCurrency": "GBP",
+          "availability": "http://schema.org/OutOfStock",
+          "url": "https://nikkisseasidebabies.co.uk/products/delilah-belly-plate-pre-order?variant=37095827243168"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    },
+    {
+      "name": "Evie (Sold Out)",
+      "source_url": "https://nikkisseasidebabies.co.uk/products/evie",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "You are buying the BLANK doll kit only.Photos of prototypes are examples only. Details of the kit are as Follow: Size: Head Circumference: Arms: Full Legs: Full Eye Size: N/A Body: FREE Cloth Body Included Tummy Plate: Non Gender Belly Plate Optional £15 Edition Size: 180 Strictly Limited Edition",
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://nikkisseasidebabies.co.uk/cdn/shop/products/13995489_1447291805297322_4161053977821354512_o_960x.jpg?v=1573949425"
+        }
+      ],
+      "image_count": 1,
+      "advertised_offers": [
+        {
+          "price": 84.0,
+          "priceCurrency": "GBP",
+          "availability": "http://schema.org/OutOfStock",
+          "url": "https://nikkisseasidebabies.co.uk/products/evie?variant=31238554452020"
+        },
+        {
+          "price": 69.0,
+          "priceCurrency": "GBP",
+          "availability": "http://schema.org/OutOfStock",
+          "url": "https://nikkisseasidebabies.co.uk/products/evie?variant=31238554484788"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    },
+    {
+      "name": "Gift Card - All Values",
+      "source_url": "https://nikkisseasidebabies.co.uk/products/gift-card-all-values",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "Shopping for someone else but not sure what to give them? Give them the gift of choice with a Nikki's Seaside Babies gift card. The perfect gift for someone, this card is redeemable through the entire Nikki's Seaside Babies store!! Gift cards are delivered by email and contain instructions to redeem them at checkout.",
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://nikkisseasidebabies.co.uk/cdn/shop/products/Screenshot2020-12-07at19.00.03_1514x.png?v=1607367654"
+        }
+      ],
+      "image_count": 1,
+      "advertised_offers": [
+        {
+          "price": 10.0,
+          "priceCurrency": "GBP",
+          "availability": "http://schema.org/InStock",
+          "url": "https://nikkisseasidebabies.co.uk/products/gift-card-all-values?variant=37391382773920"
+        },
+        {
+          "price": 25.0,
+          "priceCurrency": "GBP",
+          "availability": "http://schema.org/InStock",
+          "url": "https://nikkisseasidebabies.co.uk/products/gift-card-all-values?variant=37391382806688"
+        },
+        {
+          "price": 50.0,
+          "priceCurrency": "GBP",
+          "availability": "http://schema.org/InStock",
+          "url": "https://nikkisseasidebabies.co.uk/products/gift-card-all-values?variant=37391382839456"
+        },
+        {
+          "price": 75.0,
+          "priceCurrency": "GBP",
+          "availability": "http://schema.org/InStock",
+          "url": "https://nikkisseasidebabies.co.uk/products/gift-card-all-values?variant=37391382872224"
+        },
+        {
+          "price": 100.0,
+          "priceCurrency": "GBP",
+          "availability": "http://schema.org/InStock",
+          "url": "https://nikkisseasidebabies.co.uk/products/gift-card-all-values?variant=37391382904992"
+        },
+        {
+          "price": 150.0,
+          "priceCurrency": "GBP",
+          "availability": "http://schema.org/InStock",
+          "url": "https://nikkisseasidebabies.co.uk/products/gift-card-all-values?variant=37391382937760"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    },
+    {
+      "name": "Intermediate Rooting (Level 2 - Coming Soon)",
+      "source_url": "https://nikkisseasidebabies.co.uk/products/intermediate-rooting-level-2-coming-soon",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "Ready to take your rooting up a notch? I've spent years refining my process, and this course will teach you a ton of things which took me years to learn through trial and error, saving you time and helping you improve the quality of your rooting from beginner to intermediate! Let's perfect that technique! (Level 1 → Level 2) In this course you'll have access to 14 exclusive video tutorials created by me for you, spread over 7 weeks for you to study at your own pace. The course is a combination of full-length video tutorials and quizzes. These tutorials will include all the information you need to take your rooting from Beginner (Level 1) to Intermediate! (Level 2). If you are new to reborning, I would suggest you take the Level 1 before the Level 2 to make sure you have the basics in place, as basics aren't covered in this course! I've already purchased, let me in!",
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://nikkisseasidebabies.co.uk/cdn/shop/products/119AA1C7-F067-430E-9B4C-F0B70E33539F_1440x.jpg?v=1587432128"
+        }
+      ],
+      "image_count": 1,
+      "advertised_offers": [
+        {
+          "price": 75.0,
+          "priceCurrency": "GBP",
+          "availability": "http://schema.org/OutOfStock",
+          "url": "https://nikkisseasidebabies.co.uk/products/intermediate-rooting-level-2-coming-soon?variant=31819438391348"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    }
+  ],
+  "warnings": [
+    "A crawl can be complete for visible HTML links without covering JavaScript galleries or historical kits.",
+    "Product data are seller claims pending validation; no automatic publication.",
+    "Images are references, not licensed replicas; no download occurs."
+  ]
+}
