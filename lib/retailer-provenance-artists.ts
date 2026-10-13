@@ -9,28 +9,32 @@ export const retailerProvenanceArtists:VerifiedArtist[]=[
     "name": "Elly Knoops",
     "website": "https://macphersoncrafts.com/sculptors/manufacturers/elly-knoops?tmpl=component",
     "bio": "The specialist retailer's sculptor interview traces Elly Knoops's original kits to Eefje in 2004, with designs including Luca and Bibi. This source is a manufacturer interview, not an independently verified current personal shop.",
-    "source": "https://macphersoncrafts.com/sculptors/manufacturers/elly-knoops?tmpl=component"
+    "source": "https://macphersoncrafts.com/sculptors/manufacturers/elly-knoops?tmpl=component",
+    "websiteRole": "retailer_reference"
   },
   {
     "slug": "iveta-eckertova",
     "name": "Iveta Eckertová",
     "website": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/iveta-eckertova/",
     "bio": "Specialist dealers document Iveta Eckertová's original unpainted vinyl kits, including designs produced through Puppen-Traumland in Germany. Her independent studio website has not been confirmed.",
-    "source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/iveta-eckertova/"
+    "source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/iveta-eckertova/",
+    "websiteRole": "retailer_reference"
   },
   {
     "slug": "olga-auer",
     "name": "Olga Auer",
     "website": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
     "bio": "Authentic original vinyl kits sculpted by Olga Auer are documented at established specialist dealers. These historical kit references are not a statement of present stock, permission to reproduce gallery photographs or endorsement.",
-    "source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/"
+    "source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+    "websiteRole": "retailer_reference"
   },
   {
     "slug": "sabrina-hergarten",
     "name": "Sabrina Hergarten",
     "website": "https://www.irresistables.com/maria-first-cry-reborn-vinyl-doll-kit-by-sabrina-hergarten-19/",
     "bio": "Sabrina Hergarten is a German reborn sculptor whose original unpainted vinyl designs are documented through specialist retailers, including Maria, Mayla and Alisha. Her official studio website is not yet confirmed.",
-    "source": "https://www.irresistables.com/maria-first-cry-reborn-vinyl-doll-kit-by-sabrina-hergarten-19/"
+    "source": "https://www.irresistables.com/maria-first-cry-reborn-vinyl-doll-kit-by-sabrina-hergarten-19/",
+    "websiteRole": "retailer_reference"
   },
   {
     "slug": "ping-lau",
