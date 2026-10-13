@@ -12,7 +12,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright
 
-ADAPTER_VERSION = "wix-gallery-iframe-v4"
+ADAPTER_VERSION = "wix-gallery-iframe-v5-original-source-images"
 GALLERY_PATHS = ("/galleries", "/sculpting", "/reborns", "/silicone", "/vinyl")
 IMAGE_PATTERN = re.compile(r"/media/([^/?]+)")
 SIZE_PATTERN = re.compile(r'(\d+(?:\s*[-–]\s*\d+)?)\s*(?:"|”|inches?\b)', re.I)
@@ -37,6 +37,7 @@ def normalize_card(raw, source_page, frame_kind):
         "edition_type": edition,
         "approx_size_inches": size.group(1).replace(" ", "") if size else None,
         "photo_url": image,
+        "original_asset_url": image.split("/v1/")[0],  # Explicit Wix asset, not gallery thumbnail transformation
         "image_role": ("artist_kit_catalogue_example_unclassified" if frame_kind == "Masonry" else ("original_clay_sculpture" if "/sculpting" in urlparse(source_page).path else "finished_reborn_gallery")),
         "wix_asset_id": match.group(1),
         "source_page": source_page,
