@@ -14,6 +14,6 @@ export default function KitPhotoGallery({kitName,photos,sourceUrl}:{kitName:stri
     <figcaption>PHOTO · {active.credit.split(" — ")[0]} · {selected+1}/{photos.length}</figcaption>
    </figure>
    {photos.length>1&&<div className="kit-photo-thumbnails" aria-label={`Browse photographs of ${kitName}`}>{photos.map((p,i)=><button type="button" key={p.url} className={i===selected?"kit-photo-thumb selected":"kit-photo-thumb"} aria-label={`Show image ${i+1} of ${kitName}`} aria-pressed={i===selected} onClick={()=>setSelected(i)}><img src={p.url} alt="" loading="lazy" decoding="async"/></button>)}</div>}
-   <p className="kit-photo-provenance">Source: <a href={active.source} target="_blank" rel="noopener noreferrer">{active.credit} ↗</a>. Images may show finished prototype interpretations; the listing concerns the original blank sculpt kit.</p>
+   <p className="kit-photo-provenance">Source: <a href={active.source} target="_blank" rel="noopener noreferrer">{active.credit} ↗</a>.</p>
  </div>;
 }
