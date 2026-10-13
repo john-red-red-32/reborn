@@ -3,7 +3,7 @@
   "host": "www.cassielove.co.uk",
   "parser_version": "url-discovery-v2-platform-sitemaps",
   "started_from": "https://www.cassielove.co.uk/",
-  "completed_at": "2026-10-12T22:35:26.587130+00:00",
+  "completed_at": "2026-10-13T09:34:30.280668+00:00",
   "page_limit": 30,
   "sitemap_discovered_urls": 15,
   "platforms": {
@@ -18,8 +18,8 @@
     {
       "url": "https://www.cassielove.co.uk/",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:34:59.567418+00:00",
-      "sha256_html": "54e98691375a6f92156b972438050c12d53d2a6f0220544081d875af211df3de",
+      "observed_at": "2026-10-13T09:34:04.632748+00:00",
+      "sha256_html": "08ef115e3c0a14bb2f2dc79863ca4069687184d2e35db6f57a538b9d4694c0aa",
       "title": "Cassie Brace | Cassie Ann Love Reborn Doll Kits",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -192,8 +192,8 @@
     {
       "url": "https://www.cassielove.co.uk",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:35:01.317863+00:00",
-      "sha256_html": "54e98691375a6f92156b972438050c12d53d2a6f0220544081d875af211df3de",
+      "observed_at": "2026-10-13T09:34:06.252813+00:00",
+      "sha256_html": "08ef115e3c0a14bb2f2dc79863ca4069687184d2e35db6f57a538b9d4694c0aa",
       "title": "Cassie Brace | Cassie Ann Love Reborn Doll Kits",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -366,8 +366,8 @@
     {
       "url": "https://www.cassielove.co.uk/about-me",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:35:03.045246+00:00",
-      "sha256_html": "61964951107c4d64b477d6e3c5ee38cf05be81a1a281b320eb45dcfcbb72a9fd",
+      "observed_at": "2026-10-13T09:34:07.847473+00:00",
+      "sha256_html": "47b10868d95cd23ec84c1628a00b84b36d62a141c684f2db52ae4dd0e81de13a",
       "title": "About | Cassie Brace Reborn Doll kits",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -440,8 +440,8 @@
     {
       "url": "https://www.cassielove.co.uk/checkout-1",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:35:04.723137+00:00",
-      "sha256_html": "91a1d2d1c2d27d5802417038b8a7aa826f16b74223bdc2b820863428f4016398",
+      "observed_at": "2026-10-13T09:34:09.450677+00:00",
+      "sha256_html": "51812a4f8c92732823263f5f1677083bae69facad040dd8edd104856aa2b60d3",
       "title": "Checkout  | Cassie Brace Reborn Doll kits",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -508,8 +508,8 @@
     {
       "url": "https://www.cassielove.co.uk/contact",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:35:06.409834+00:00",
-      "sha256_html": "703e5e118bf3549f3b73bc2ddf5dff8b3e548962914511fd4798bf33be0eaf86",
+      "observed_at": "2026-10-13T09:34:11.061970+00:00",
+      "sha256_html": "3575c0a6f47209908b5aab47e66785ef655e365a3ac8c636a71ce1887048ac05",
       "title": "Contact | Cassie Brace Reborn Doll kits",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -576,8 +576,8 @@
     {
       "url": "https://www.cassielove.co.uk/dealer-list",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:35:08.100722+00:00",
-      "sha256_html": "c9e36a877e07181d695d1e8cce471373b461ef0d595003b2448d57bb479cf92f",
+      "observed_at": "2026-10-13T09:34:12.638782+00:00",
+      "sha256_html": "5ce5724128fd2234952ca2f5439eec2f6a83a42f8416c8099d0a38f6fc0803b4",
       "title": "International Dealers  | Cassie Brace Reborn Doll kits",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -649,8 +649,8 @@
     {
       "url": "https://www.cassielove.co.uk/galleries",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:35:09.790113+00:00",
-      "sha256_html": "3243deb9b7bea060e16b1c5b2db07c9a21e3d8a769a6379e287032379f15bd47",
+      "observed_at": "2026-10-13T09:34:14.246048+00:00",
+      "sha256_html": "1d80433adb7f657825d63908f7d1b12fa425452fe79b853b58cf90326aae7a0c",
       "title": "Galleries | Cassie Brace Reborn Doll kits",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -727,8 +727,8 @@
     {
       "url": "https://www.cassielove.co.uk/product-page/preorder-lennox-by-cassie-love-pay-in-full",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:35:11.518882+00:00",
-      "sha256_html": "01b5db9383942cf0f72fd2e506d87274b128ee7e06f3bfbfcdb2585dd12cd53c",
+      "observed_at": "2026-10-13T09:34:15.853598+00:00",
+      "sha256_html": "64d5592939fe551057aa4ca316c2a2e8bdd6af5f7a1d9039c3c2cf51df28ef79",
       "title": "Lennox by Cassie Love | Cassie Love Original",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -1020,8 +1020,8 @@
     {
       "url": "https://www.cassielove.co.uk/product-page/preorder-lovan-by-cassie-love",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:35:13.221612+00:00",
-      "sha256_html": "dfc17ebe982ef65b57f32c6a2756fe9fc0789f61c68acbc4c7a9616381819dd8",
+      "observed_at": "2026-10-13T09:34:17.468347+00:00",
+      "sha256_html": "9628b2a966e93e35810cf2dadc18da22f03bc2c2fd63fa6b77b0cf1fd23498f6",
       "title": "Lovan by Cassie Love | Cassie Love Original",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -1313,8 +1313,8 @@
     {
       "url": "https://www.cassielove.co.uk/reborns",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:35:14.919425+00:00",
-      "sha256_html": "364bb6f3cf83eddbb89d2f7ac89ba0d31b54309a6a3333a8039da9e2178411a7",
+      "observed_at": "2026-10-13T09:34:19.173133+00:00",
+      "sha256_html": "1efe3b7a193fe2ce3b19dbf74cbecf393d00d1859cd87b88af86feacdde85e7d",
       "title": "Reborn Baby Dolls by Cassie Brace",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -1382,8 +1382,8 @@
     {
       "url": "https://www.cassielove.co.uk/sculpting",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:35:16.633091+00:00",
-      "sha256_html": "24b2f4576387dc6612b7624c5fdbe58c05af1621d39411d5a46bba79fe9eaf4b",
+      "observed_at": "2026-10-13T09:34:20.767434+00:00",
+      "sha256_html": "08aac277bd9bb79b43faf6536dc169ceefa086402a8b97e856480aa6613a98c7",
       "title": "Sculpting | Cassie Brace Reborn Doll kits",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -1450,8 +1450,8 @@
     {
       "url": "https://www.cassielove.co.uk/shop",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:35:18.340752+00:00",
-      "sha256_html": "1d44a4c1a56f2c5c41c074b7596c134638623d7a52a1df0d06dfeae55cbe7227",
+      "observed_at": "2026-10-13T09:34:22.401594+00:00",
+      "sha256_html": "7dee63fe1e4253f805d28151d1c4f218da0a8407b3df905fe5122826f36295fc",
       "title": "Online Store | Cassie Brace Reborn Doll kits",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -1540,8 +1540,8 @@
     {
       "url": "https://www.cassielove.co.uk/silicone",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:35:20.029458+00:00",
-      "sha256_html": "c933065848828b3bae932ea36ee19696d25ab291ec1e15d2361f0c11e97ed619",
+      "observed_at": "2026-10-13T09:34:23.986271+00:00",
+      "sha256_html": "872d8694703be65dd266032a77b43c032835c8cc4ffcb875c42aa3dcc135826b",
       "title": "Silicone | Cassie Brace Reborn Doll kits",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -1608,8 +1608,8 @@
     {
       "url": "https://www.cassielove.co.uk/team-4",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:35:21.686384+00:00",
-      "sha256_html": "f180e9a6a4c0d8ac1805b90c19570e3663f0e853e136994c579ac697004b17fb",
+      "observed_at": "2026-10-13T09:34:25.587551+00:00",
+      "sha256_html": "3c29552e0cf750c429d5925861adc20b0d7e8da30e35c191a239b2207b124047",
       "title": "Dealerpage | Cassie Brace Reborn Doll kits",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -1676,8 +1676,8 @@
     {
       "url": "https://www.cassielove.co.uk/thank-you-page",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:35:23.411353+00:00",
-      "sha256_html": "9fbe7f0ece13f448a9c28aca7f561e04732707989dbd47a60a5004e6e53b18ab",
+      "observed_at": "2026-10-13T09:34:27.194437+00:00",
+      "sha256_html": "78d7147686ee475b29ab92ffefa69bb892c92362efbbe215bfd94152c481dac6",
       "title": "Thank You page | Cassie Brace Reborn Doll kits",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -1744,8 +1744,8 @@
     {
       "url": "https://www.cassielove.co.uk/vinyl-doll-kits",
       "platform": "wix",
-      "observed_at": "2026-10-12T22:35:25.086644+00:00",
-      "sha256_html": "e4087c69606b614019472590fd3598fbc7b3b7160c808d4c7120fb9fe84d5c57",
+      "observed_at": "2026-10-13T09:34:28.780194+00:00",
+      "sha256_html": "a33cdb128d0f198181c4b949edda46321658e556b6fd16ba7a39e8b129685de3",
       "title": "Reborn Doll kits by Cassie Brace",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
