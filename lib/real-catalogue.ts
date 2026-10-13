@@ -11,6 +11,7 @@ import {publishedGalleryEvidence} from "./artist-gallery-data";
 import {findArtistGalleryEvidence,editionTypeLabel} from "./artist-catalogue";
 import {nikkiKits} from "./nikki-shopify-catalogue";
 import {nikkiProfile} from "./nikki-profile";
+import {shopifyCohortArtists,shopifyCohortKits} from "./shopify-cohort-catalogue";
 export type ArtistImage={url:string;source:string;credit:string;role:"portrait"|"square"|"banner";reviewStatus:"source_identified"|"artist_approved";};
 export type VerifiedArtist = {slug:string;name:string;website:string;bio:string;source:string;images?:ArtistImage[]};
 export type KitVariant = {id:string;label:string;options:Record<string,string>;includedParts?:string[];photos?:{url:string;credit:string;source:string}[];sourceUrl?:string;verifiedAt?:string};
@@ -20,6 +21,7 @@ export const artists:VerifiedArtist[]=[
 {slug:"cassie-ann-love",name:"Cassie Ann Love",website:"https://www.cassielove.co.uk/",bio:"Independent reborn sculptor, previously known as Cassie Brace. Her official portfolio includes a range of original reborn doll sculpts.",source:"https://www.cassielove.co.uk/",images:[{url:cassieProfile.portrait.url,source:cassieProfile.portrait.source,credit:"Cassie Ann Love official website",role:"portrait",reviewStatus:"source_identified"}]},
 {slug:"joanna-kazmierczak",name:"Joanna Kazmierczak",website:"https://macphersoncrafts.com/",bio:"Sculptor whose Willow release is featured by specialist retailer MacPherson Arts & Crafts.",source:"https://macphersoncrafts.com/"},
 {slug:"dawn-mcleod",name:"Dawn McLeod",website:"https://macphersoncrafts.com/",bio:"Sculptor of Cypress, featured among specialist retailer MacPherson's pre-order releases.",source:"https://macphersoncrafts.com/"}
+,...shopifyCohortArtists
 ];
 const manuallyCuratedKits:VerifiedKit[]=[
 ...nikkiKits,
@@ -77,5 +79,5 @@ const cassieCuratedWithImages=manuallyCuratedKits.map(kit=>{
    ]:kit.sources
  };
 });
-export const verifiedKits:VerifiedKit[]=[...cassieCuratedWithImages,...cassieExpandedHistoricalKits];
+export const verifiedKits:VerifiedKit[]=[...cassieCuratedWithImages,...cassieExpandedHistoricalKits,...shopifyCohortKits];
 export const kitArtist=(slug:string)=>artists.find(a=>a.slug===slug);
