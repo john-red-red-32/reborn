@@ -12,21 +12,48 @@ export const shopifyCohortArtists:VerifiedArtist[]=[
     "name": "Melody Hess",
     "website": "https://www.melodyhessdolls.com/",
     "source": "https://www.melodyhessdolls.com/",
-    "bio": "Melody Hess creates original reborn sculpts in vinyl and silicone. Her official catalogue documents limited-edition vinyl designs including Amara, Vivia and Jupiter, and distinguishes blank sculpt kits from finished reborn dolls."
+    "bio": "Melody Hess creates original reborn sculpts in vinyl and silicone. Her official catalogue documents limited-edition vinyl designs including Amara, Vivia and Jupiter, and distinguishes blank sculpt kits from finished reborn dolls.",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/amara1.jpg?v=1662747874",
+        "source": "https://www.melodyhessdolls.com/products/amara-vinyl-reborn-doll-kit",
+        "credit": "Melody Hess — artist-hosted featured sculpt photograph; photographer unverified, not an artist portrait",
+        "role": "banner",
+        "reviewStatus": "source_identified"
+      }
+    ]
   },
   {
     "slug": "kristin-englert",
     "name": "Kristin Englert",
     "website": "https://siliconeartdolls.com/",
     "source": "https://siliconeartdolls.com/products/ripley-by-kristin-englert",
-    "bio": "Kristin Englert is the sculptor and owner of Silicone Art Dolls. Her own original silicone sculpts are offered as blank, unpainted kits with configurations such as armatures. The studio also carries other sculptors' work, which is credited separately."
+    "bio": "Kristin Englert is the sculptor and owner of Silicone Art Dolls. Her own original silicone sculpts are offered as blank, unpainted kits with configurations such as armatures. The studio also carries other sculptors' work, which is credited separately.",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0787/8495/4679/files/3123ACD4-4DDA-4A6B-996E-4E831F49474B.jpg?v=1782408972",
+        "source": "https://siliconeartdolls.com/products/cedar",
+        "credit": "Kristin Englert — artist-hosted featured sculpt photograph; photographer unverified, not an artist portrait",
+        "role": "banner",
+        "reviewStatus": "source_identified"
+      }
+    ]
   },
   {
     "slug": "maissa-said",
     "name": "Maissa Said",
     "website": "https://msartdolls.com/",
     "source": "https://msartdolls.com/pages/about-the-artist",
-    "bio": "Toronto-based sculptor Maissa Said began working with one-of-a-kind baby dolls in 2010. Her hand-sculpted polymer-clay originals are reproduced in materials including silicone, vinyl and resin; her current site documents original blank full-body silicone kits."
+    "bio": "Toronto-based sculptor Maissa Said began working with one-of-a-kind baby dolls in 2010. Her hand-sculpted polymer-clay originals are reproduced in materials including silicone, vinyl and resin; her current site documents original blank full-body silicone kits.",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSCN1043_17.jpg?v=1768861317",
+        "source": "https://msartdolls.com/products/brielle-bobby-asleep",
+        "credit": "Maissa Said — artist-hosted featured sculpt photograph; photographer unverified, not an artist portrait",
+        "role": "banner",
+        "reviewStatus": "source_identified"
+      }
+    ]
   }
 ];
 export const shopifyCohortKits:VerifiedKit[]=[
