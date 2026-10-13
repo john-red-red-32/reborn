@@ -467,3 +467,17 @@ html{scroll-behavior:smooth}
 .kit-main-photo>img{max-width:100%;min-width:0}
 .kit-photo-thumb{min-width:0}
 .kit-photo-provenance,.detail-copy .facts,.detail-copy .source-list{overflow-wrap:anywhere}
+
+
+/* Source-first, photo-pending artwork: never substitute unrelated doll imagery. */
+.kit-awaiting-artwork{min-width:0;width:100%;min-height:420px;aspect-ratio:4/4.7;max-height:680px;display:grid;place-items:center;border:1px solid #e8ded5;border-radius:4px;background:radial-gradient(ellipse at 25% 20%,#f8f3ed 0%,#e9dfd3 62%,#ddd0c1 100%);text-align:center;color:#716052}
+.kit-awaiting-artwork-inner{max-width:340px;padding:28px 24px;display:flex;flex-direction:column;align-items:center;gap:13px}
+.kit-awaiting-kicker{font-size:10px;letter-spacing:.14em;font-weight:700;color:#8b796c}
+.kit-awaiting-initial{width:100px;height:100px;display:grid;place-items:center;border:1px solid #c2b09f;border-radius:50%;font:italic 65px "Playfair Display",serif;color:#88705d;background:#f9f5ef70}
+.kit-awaiting-artwork-inner strong{font-family:"Playfair Display",serif;font-size:29px;line-height:1.15;font-weight:400;overflow-wrap:anywhere}
+.kit-awaiting-artwork-inner p{font-size:12px;line-height:1.6;color:#827469;margin:0}
+.kit-awaiting-artwork-inner a{font-size:12px;font-weight:600;border-bottom:1px solid currentColor;padding-bottom:4px;text-decoration:none;color:#71594a}
+.kit-awaiting-artwork-inner a:focus-visible{outline:2px solid #926e56;outline-offset:5px}
+.artist-image-pending{position:absolute;bottom:12px;left:12px;right:12px;padding:7px 5px;font:700 9px "DM Sans",sans-serif;letter-spacing:.08em;text-align:center;color:#685546;background:#f7f1eabf}
+.artist-monogram:has(.artist-image-pending){position:relative}
+@media(max-width:600px){.kit-awaiting-artwork{min-height:310px;aspect-ratio:1/1.1}.kit-awaiting-initial{width:76px;height:76px;font-size:49px}.kit-awaiting-artwork-inner strong{font-size:24px}.artist-image-pending{font-size:8px}}
