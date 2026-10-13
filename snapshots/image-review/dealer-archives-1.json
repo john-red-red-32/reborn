@@ -1,0 +1,424 @@
+{
+  "adapter": "original-source-image-review-v1",
+  "scan_at": "2026-10-13T23:37:57.186873+00:00",
+  "artists": [
+    "elly-knoops",
+    "iveta-eckertova",
+    "olga-auer",
+    "sabrina-hergarten"
+  ],
+  "total": 24,
+  "records": [
+    {
+      "slug": "eefje-elly-knoops",
+      "name": "Eefje",
+      "artist_slug": "elly-knoops",
+      "primary_source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+      "matched": [],
+      "reason": "page_not_exact_named_product"
+    },
+    {
+      "slug": "luca-elly-knoops",
+      "name": "Luca",
+      "artist_slug": "elly-knoops",
+      "primary_source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/15-Inch-Vinyl-3-4-Limb-Set-by-Elly-Knoops-001-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+          "basis": "name_matched_retailer_card",
+          "credit": "Elly Knoops — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/15-Inch-Vinyl-3-4-Limb-Set-by-Elly-Knoops-001-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+          "basis": "name_matched_retailer_card",
+          "credit": "Elly Knoops — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/20-Inch-Vinyl-3-4-Limb-Set-by-Elly-Knoops-001-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+          "basis": "name_matched_retailer_card",
+          "credit": "Elly Knoops — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "bibi-elly-knoops",
+      "name": "Bibi",
+      "artist_slug": "elly-knoops",
+      "primary_source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/22-Inch-Vinyl-3-4-Limb-Set-by-Elly-Knoops-001-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+          "basis": "name_matched_retailer_card",
+          "credit": "Elly Knoops — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/22-Inch-Vinyl-3-4-Limb-Set-by-Elly-Knoops-001-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+          "basis": "name_matched_retailer_card",
+          "credit": "Elly Knoops — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Bibi-by-Elly-Knoops-~-HEAD-ONLY-001-K-.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+          "basis": "name_matched_retailer_card",
+          "credit": "Elly Knoops — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "amy-elly-knoops",
+      "name": "Amy",
+      "artist_slug": "elly-knoops",
+      "primary_source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/22-Inch-Vinyl-3-4-Limb-Set-by-Elly-Knoops-001-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+          "basis": "name_matched_retailer_card",
+          "credit": "Elly Knoops — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/22-Inch-Vinyl-3-4-Limb-Set-by-Elly-Knoops-001-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+          "basis": "name_matched_retailer_card",
+          "credit": "Elly Knoops — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Amy-by-Elly-Knoops-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+          "basis": "name_matched_retailer_card",
+          "credit": "Elly Knoops — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "fleur-elly-knoops",
+      "name": "Fleur",
+      "artist_slug": "elly-knoops",
+      "primary_source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/20-Inch-Vinyl-3-4-Limb-Set-by-Elly-Knoops-001-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+          "basis": "name_matched_retailer_card",
+          "credit": "Elly Knoops — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/20-Inch-Vinyl-3-4-Limb-Set-by-Elly-Knoops-001-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+          "basis": "name_matched_retailer_card",
+          "credit": "Elly Knoops — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Fleur-by-Elly-Knoops-001-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+          "basis": "name_matched_retailer_card",
+          "credit": "Elly Knoops — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "lucas-elly-knoops",
+      "name": "Lucas",
+      "artist_slug": "elly-knoops",
+      "primary_source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Lucas-by-Elly-Knoops-1002.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+          "basis": "name_matched_retailer_card",
+          "credit": "Elly Knoops — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Lucas-by-Elly-Knoops-1002.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+          "basis": "name_matched_retailer_card",
+          "credit": "Elly Knoops — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Lucas-by-Elly-Knoops-1002.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/elly-knoops",
+          "basis": "name_matched_retailer_card",
+          "credit": "Elly Knoops — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "simon-iveta-eckertova",
+      "name": "Simon",
+      "artist_slug": "iveta-eckertova",
+      "primary_source": "https://www.irresistables.com/simon-reborn-vinyl-doll-kit-by-iveta-eckertova-18-19/",
+      "matched": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/5346/images/67568/DSC_0412__63098.1724439445.500.750.jpg?c=2",
+          "source": "https://www.irresistables.com/simon-reborn-vinyl-doll-kit-by-iveta-eckertova-18-19/",
+          "basis": "exact_product_og_image",
+          "credit": "Iveta Eckertová — original product-page photograph"
+        }
+      ],
+      "reason": "source_matched_photo_candidates"
+    },
+    {
+      "slug": "marty-iveta-eckertova",
+      "name": "Marty",
+      "artist_slug": "iveta-eckertova",
+      "primary_source": "https://www.dollli.uk/product-page/marty-doll-kit-by-iveta-eckertov%C3%A1-20",
+      "matched": [
+        {
+          "url": "https://static.wixstatic.com/media/dcc6dd_78ab719644304ddb883efe64c8f75ee3~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "source": "https://www.dollli.uk/product-page/marty-doll-kit-by-iveta-eckertov%C3%A1-20",
+          "basis": "exact_product_og_image",
+          "credit": "Iveta Eckertová — original product-page photograph"
+        }
+      ],
+      "reason": "source_matched_photo_candidates"
+    },
+    {
+      "slug": "zoe-iveta-eckertova",
+      "name": "Zoe",
+      "artist_slug": "iveta-eckertova",
+      "primary_source": "https://www.bebaby.it/tshop/index.php?controller=category&id_category=837&id_lang=4",
+      "matched": [
+        {
+          "url": "https://www.bebaby.it/tshop/img/p/2/5/6/7/4/25674-home_default.jpg",
+          "source": "https://www.bebaby.it/tshop/index.php?controller=category&id_category=837&id_lang=4",
+          "basis": "name_matched_retailer_card",
+          "credit": "Iveta Eckertová — named retailer product photograph"
+        },
+        {
+          "url": "https://www.bebaby.it/tshop/img/p/2/5/6/7/4/25674-home_default.jpg",
+          "source": "https://www.bebaby.it/tshop/index.php?controller=category&id_category=837&id_lang=4",
+          "basis": "name_matched_retailer_card",
+          "credit": "Iveta Eckertová — named retailer product photograph"
+        },
+        {
+          "url": "https://www.bebaby.it/tshop/img/p/2/5/6/7/4/25674-medium_default.jpg",
+          "source": "https://www.bebaby.it/tshop/index.php?controller=category&id_category=837&id_lang=4",
+          "basis": "name_matched_retailer_card",
+          "credit": "Iveta Eckertová — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "dany-iveta-eckertova",
+      "name": "Dany",
+      "artist_slug": "iveta-eckertova",
+      "primary_source": "https://www.bebaby.it/tshop/index.php?controller=category&id_category=837&id_lang=4",
+      "matched": [],
+      "reason": "page_not_exact_named_product"
+    },
+    {
+      "slug": "flower-the-elf-olga-auer",
+      "name": "Flower the Elf",
+      "artist_slug": "olga-auer",
+      "primary_source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+      "matched": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/160w/products/5880/81804/821311463_10243261665254741_4110011727113917575_n__97905.1790276769.jpg?c=2",
+          "source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+          "basis": "name_matched_retailer_card",
+          "credit": "Olga Auer — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "ilea-olga-auer",
+      "name": "Ilea",
+      "artist_slug": "olga-auer",
+      "primary_source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+      "matched": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/160w/products/5739/76781/6__42807.1773164339.jpg?c=2",
+          "source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+          "basis": "name_matched_retailer_card",
+          "credit": "Olga Auer — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "yuna-olga-auer",
+      "name": "Yuna",
+      "artist_slug": "olga-auer",
+      "primary_source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+      "matched": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/160w/products/5691/75124/593301354_26002661609337553_634207060602836749_n__77340.1784755473.jpg?c=2",
+          "source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+          "basis": "name_matched_retailer_card",
+          "credit": "Olga Auer — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "vian-olga-auer",
+      "name": "Vian",
+      "artist_slug": "olga-auer",
+      "primary_source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+      "matched": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/160w/products/5597/73379/528570765_10214269129877628_7639472557233550693_n__90406.1754666406.jpg?c=2",
+          "source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+          "basis": "name_matched_retailer_card",
+          "credit": "Olga Auer — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "alica-olga-auer",
+      "name": "Alica",
+      "artist_slug": "olga-auer",
+      "primary_source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+      "matched": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/160w/products/5533/71463/495537971_10213718030780495_2014197799411602526_n__07856.1746480385.jpg?c=2",
+          "source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+          "basis": "name_matched_retailer_card",
+          "credit": "Olga Auer — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "milan-olga-auer",
+      "name": "Milan",
+      "artist_slug": "olga-auer",
+      "primary_source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+      "matched": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/160w/products/5417/69295/99__97521.1736304906.jpg?c=2",
+          "source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+          "basis": "name_matched_retailer_card",
+          "credit": "Olga Auer — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "leano-olga-auer",
+      "name": "Leano",
+      "artist_slug": "olga-auer",
+      "primary_source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+      "matched": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/160w/products/5378/68196/459776502_1714005516068503_8100710196024366449_n__63674.1726602999.jpg?c=2",
+          "source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+          "basis": "name_matched_retailer_card",
+          "credit": "Olga Auer — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "levi-olga-auer",
+      "name": "Levi",
+      "artist_slug": "olga-auer",
+      "primary_source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+      "matched": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/160w/products/5301/66560/441966563_8212892405407747_1759911828223029777_n__22275.1717532177.jpg?c=2",
+          "source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+          "basis": "name_matched_retailer_card",
+          "credit": "Olga Auer — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "sebastian-olga-auer",
+      "name": "Sebastian",
+      "artist_slug": "olga-auer",
+      "primary_source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+      "matched": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/160w/products/5018/59115/334528634_5934520399917656_4549645001769120434_n__28022.1678896471.jpg?c=2",
+          "source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+          "basis": "name_matched_retailer_card",
+          "credit": "Olga Auer — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "oskar-olga-auer",
+      "name": "Oskar",
+      "artist_slug": "olga-auer",
+      "primary_source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+      "matched": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/160w/products/4496/50357/273746952_5417264754970540_1365738071040395852_n__57570.1644787895.jpg?c=2",
+          "source": "https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/olga-auer-reborn-doll-kits/",
+          "basis": "name_matched_retailer_card",
+          "credit": "Olga Auer — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "maria-sabrina-hergarten",
+      "name": "Maria",
+      "artist_slug": "sabrina-hergarten",
+      "primary_source": "https://www.irresistables.com/maria-first-cry-reborn-vinyl-doll-kit-by-sabrina-hergarten-19/",
+      "matched": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/4314/images/45650/maria25__12815.1627073410.500.750.jpg?c=2",
+          "source": "https://www.irresistables.com/maria-first-cry-reborn-vinyl-doll-kit-by-sabrina-hergarten-19/",
+          "basis": "exact_product_og_image",
+          "credit": "Sabrina Hergarten — original product-page photograph"
+        }
+      ],
+      "reason": "source_matched_photo_candidates"
+    },
+    {
+      "slug": "mayla-sabrina-hergarten",
+      "name": "Mayla",
+      "artist_slug": "sabrina-hergarten",
+      "primary_source": "https://www.irresistables.com/mayla-reborn-vinyl-doll-kit-by-sabrina-hergarten-18-19/",
+      "matched": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/3754/images/47082/241234191_10226835764984156_8626546225664315042_n__39205.1634784374.500.750.jpg?c=2",
+          "source": "https://www.irresistables.com/mayla-reborn-vinyl-doll-kit-by-sabrina-hergarten-18-19/",
+          "basis": "exact_product_og_image",
+          "credit": "Sabrina Hergarten — original product-page photograph"
+        }
+      ],
+      "reason": "source_matched_photo_candidates"
+    },
+    {
+      "slug": "alisha-sabrina-hergarten",
+      "name": "Alisha",
+      "artist_slug": "sabrina-hergarten",
+      "primary_source": "https://www.irresistables.com/alisha-reborn-vinyl-doll-kit-by-sabrina-hergarten-21/",
+      "matched": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/3588/images/40117/136708425_10224924749609966_8766967972956326200_o__36696.1610329042.500.750.jpg?c=2",
+          "source": "https://www.irresistables.com/alisha-reborn-vinyl-doll-kit-by-sabrina-hergarten-21/",
+          "basis": "exact_product_og_image",
+          "credit": "Sabrina Hergarten — original product-page photograph"
+        }
+      ],
+      "reason": "source_matched_photo_candidates"
+    },
+    {
+      "slug": "timothy-sabrina-hergarten",
+      "name": "Timothy",
+      "artist_slug": "sabrina-hergarten",
+      "primary_source": "https://www.mottandgido.com/category/sabrina-hergarten-reborn-doll-kits",
+      "matched": [],
+      "reason": "page_not_exact_named_product"
+    }
+  ]
+}
