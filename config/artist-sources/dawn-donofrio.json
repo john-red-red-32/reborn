@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "artist_id": "dawn-donofrio",
+  "display_name": "Dawn Donofrio",
+  "source_name": "Dawn Donofrio official sculptor website",
+  "allowed_hosts": [
+    "www.ddartdolls.com",
+    "ddartdolls.com"
+  ],
+  "platform": "wordpress_or_woocommerce",
+  "accepted_names": [],
+  "approved_aliases": {},
+  "notes": "Research only. Original kit product names and photographs require exact artist-scoped attribution. No stock, editions, deposits or prices published without verification."
+}
