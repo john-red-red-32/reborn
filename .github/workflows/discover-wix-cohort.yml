@@ -21,9 +21,9 @@ jobs:
       matrix:
         include:
           - artist: bonnie-brown
-            url: https://www.bonniebrowndolls.com/
+            url: https://www.bonniebrowndolls.com/doll-kits
           - artist: doris-moyers-hornbogen
-            url: https://www.dmhsculptures.com/
+            url: https://www.dmhsculptures.com/vinyl-kits
     steps:
       - uses: actions/checkout@v4
       - name: Validate discovery scripts
