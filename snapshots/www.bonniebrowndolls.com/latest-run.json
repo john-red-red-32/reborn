@@ -1,11 +1,11 @@
 {
-  "github_run_id": "38430698562",
-  "source": "https://www.bonniebrowndolls.com/",
+  "github_run_id": "38430814723",
+  "source": "https://www.bonniebrowndolls.com/doll-kits",
   "paths": [
-    "runs/38430698562/source-discovery.json",
-    "runs/38430698562/extraction-candidates.json",
-    "runs/38430698562/wix-gallery-evidence.json",
-    "runs/38430698562/artist-identity-matches.json",
-    "runs/38430698562/wix-named-image-evidence.json"
+    "runs/38430814723/source-discovery.json",
+    "runs/38430814723/extraction-candidates.json",
+    "runs/38430814723/wix-gallery-evidence.json",
+    "runs/38430814723/artist-identity-matches.json",
+    "runs/38430814723/wix-named-image-evidence.json"
   ]
 }

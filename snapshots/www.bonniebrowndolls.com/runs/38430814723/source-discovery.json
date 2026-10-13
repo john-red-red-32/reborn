@@ -1,0 +1,898 @@
+{
+  "source": "https://www.bonniebrowndolls.com/doll-kits",
+  "host": "www.bonniebrowndolls.com",
+  "parser_version": "url-discovery-v2-platform-sitemaps",
+  "started_from": "https://www.bonniebrowndolls.com/doll-kits",
+  "completed_at": "2026-10-13T16:30:47.495085+00:00",
+  "page_limit": 18,
+  "sitemap_discovered_urls": 17,
+  "platforms": {
+    "wix": 17
+  },
+  "pages_checked": 17,
+  "pages_succeeded": 17,
+  "queue_remaining": 0,
+  "complete": true,
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://www.bonniebrowndolls.com/doll-kits",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:17.569677+00:00",
+      "sha256_html": "36b74607fb2b46f26fe2d11a383bc3e44ebe1e86e2e916fe06ca0c15e15e4540",
+      "title": "Vinyl Doll Canvas | bonnie-brown-dolls",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Vinyl Doll Canvas | bonnie-brown-dolls",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/doll-kits",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Vinyl Doll Canvas | bonnie-brown-dolls",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_f5edf3ae805c4d6db4abeae127c778a6~mv2_d_1365_2048_s_2.jpg/v1/fill/w_192,h_288,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_f5edf3ae805c4d6db4abeae127c778a6~mv2_d_1365_2048_s_2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_2f709f921c85492c97805cdb17c5f49a.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_2f709f921c85492c97805cdb17c5f49a.jpg",
+          "alt": "Twin B - Available Now",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_21eb106fe5a44361965c4a058195f6fb.jpg/v1/fill/w_144,h_217,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_21eb106fe5a44361965c4a058195f6fb.jpg",
+          "alt": "Twin A - Available Now",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_9f968a5ad57e4b4bb6890faee5756dfc~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_9f968a5ad57e4b4bb6890faee5756dfc~mv2.jpg",
+          "alt": "Laura - Available Now",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_b1d11fec1d3a4433860fba51f6bb46cc~mv2.jpg/v1/fill/w_99,h_75,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_b1d11fec1d3a4433860fba51f6bb46cc~mv2.jpg",
+          "alt": "Milla and Ronnie - Sold Out",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_bf111109316e494c9a6bdd3617561c31~mv2.jpg/v1/fill/w_100,h_89,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_bf111109316e494c9a6bdd3617561c31~mv2.jpg",
+          "alt": "Buggy - Sold Out",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_08f285a5251c470da60b7d33d75d2981.jpg/v1/fill/w_147,h_247,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_08f285a5251c470da60b7d33d75d2981.jpg",
+          "alt": "Grayson - Sold Out",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:19.574699+00:00",
+      "sha256_html": "02a324b7024073b5df6238b1b1937a236d4fbf0813cd9bcce11a4feeef3064fc",
+      "title": "The Bonnie Brown Collection",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "Hyper realistic baby doll sculptures made by Bonnie Brown",
+        "og:title": "The Bonnie Brown Collection",
+        "og:description": "Hyper realistic baby doll sculptures made by Bonnie Brown",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "The Bonnie Brown Collection",
+        "twitter:description": "Hyper realistic baby doll sculptures made by Bonnie Brown",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "bonnie-brown-dolls",
+          "url": "https://www.bonniebrowndolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_8abf1afdb056463a849641c929ccaa9d~mv2_d_6720_4480_s_4_2.jpg/v1/fill/w_288,h_192,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_8abf1afdb056463a849641c929ccaa9d~mv2_d_6720_4480_s_4_2.jpg",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com/aboutme",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:22.700566+00:00",
+      "sha256_html": "cde04b10f47297761ca510c2cf0318f8e7dab8c2a5952b4663875f22466be0ef",
+      "title": "Portfolio | bonnie-brown-dolls",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Portfolio | bonnie-brown-dolls",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/aboutme",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Portfolio | bonnie-brown-dolls",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_298df409438a472eb32ca85586fd1ed9.jpg/v1/fill/w_288,h_192,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_298df409438a472eb32ca85586fd1ed9.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_298df409438a472eb32ca85586fd1ed9.jpg/v1/fill/w_664,h_308,fp_0.55_0.54,q_90,enc_avif,quality_auto/2a652c_298df409438a472eb32ca85586fd1ed9.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_a6b8858ba5ce45c4ab78c8183c2db2f6~mv2.jpg/v1/fill/w_664,h_308,q_90,enc_avif,quality_auto/2a652c_a6b8858ba5ce45c4ab78c8183c2db2f6~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com/ellie-sue-gallery",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:24.427341+00:00",
+      "sha256_html": "bd80ecab72a37df80c503301a6995cc1091b30f10c7ff489f73cb39f3869c364",
+      "title": "Ellie Sue Gallery | bonnie-brown-dolls",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Ellie Sue Gallery | bonnie-brown-dolls",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/ellie-sue-gallery",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Ellie Sue Gallery | bonnie-brown-dolls",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com/gallery",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:26.153789+00:00",
+      "sha256_html": "7ff3e5a6f906dac16627000ef2b7c0e18073b60c2830b295ad162bbb94e8d429",
+      "title": "Gallery | bonnie-brown-dolls",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Gallery | bonnie-brown-dolls",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/gallery",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Gallery | bonnie-brown-dolls",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_e8f699fa8a624db899c009d7ea07985f.jpg/v1/fill/w_192,h_288,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_e8f699fa8a624db899c009d7ea07985f.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_850494cda69745c9a51d1ce6ee5241fa.jpg/v1/fill/w_238,h_266,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_850494cda69745c9a51d1ce6ee5241fa.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_850494cda69745c9a51d1ce6ee5241fa.jpg/v1/fill/w_238,h_266,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_850494cda69745c9a51d1ce6ee5241fa.jpg 1x, https://static.wixstatic.com/media/2a652c_850494cda69745c9a51d1ce6ee5241fa.jpg/v1/fill/w_476,h_532,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_850494cda69745c9a51d1ce6ee5241fa.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_21eb106fe5a44361965c4a058195f6fb.jpg/v1/fill/w_171,h_257,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_21eb106fe5a44361965c4a058195f6fb.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_21eb106fe5a44361965c4a058195f6fb.jpg/v1/fill/w_171,h_257,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_21eb106fe5a44361965c4a058195f6fb.jpg 1x, https://static.wixstatic.com/media/2a652c_21eb106fe5a44361965c4a058195f6fb.jpg/v1/fill/w_342,h_514,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_21eb106fe5a44361965c4a058195f6fb.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_ef01736a1b64447faf0525b75b2aaf24.jpg/v1/fill/w_285,h_190,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_ef01736a1b64447faf0525b75b2aaf24.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_ef01736a1b64447faf0525b75b2aaf24.jpg/v1/fill/w_285,h_190,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_ef01736a1b64447faf0525b75b2aaf24.jpg 1x, https://static.wixstatic.com/media/2a652c_ef01736a1b64447faf0525b75b2aaf24.jpg/v1/fill/w_570,h_380,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_ef01736a1b64447faf0525b75b2aaf24.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_94e273cefddb47c8a8b1384e57f9cb50.jpg/v1/fill/w_343,h_229,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_94e273cefddb47c8a8b1384e57f9cb50.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_94e273cefddb47c8a8b1384e57f9cb50.jpg/v1/fill/w_343,h_229,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_94e273cefddb47c8a8b1384e57f9cb50.jpg 1x, https://static.wixstatic.com/media/2a652c_94e273cefddb47c8a8b1384e57f9cb50.jpg/v1/fill/w_686,h_458,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_94e273cefddb47c8a8b1384e57f9cb50.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_de214a3f3e7b48eb8844697ba981a953.jpg/v1/fill/w_384,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_de214a3f3e7b48eb8844697ba981a953.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_de214a3f3e7b48eb8844697ba981a953.jpg/v1/fill/w_384,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_de214a3f3e7b48eb8844697ba981a953.jpg 1x, https://static.wixstatic.com/media/2a652c_de214a3f3e7b48eb8844697ba981a953.jpg/v1/fill/w_768,h_422,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_de214a3f3e7b48eb8844697ba981a953.jpg 2x"
+        }
+      ],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/ellie-sue-gallery",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/grayson-gallery",
+        "https://www.bonniebrowndolls.com/levi-gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/twin-a-gallery",
+        "https://www.bonniebrowndolls.com/twin-b-gallery",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com/grayson",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:27.867536+00:00",
+      "sha256_html": "0e72d1e0b2abd57fe09f8de52c37d4b000485a3da44caa7e2c7d5d87f5b6efb8",
+      "title": "GRAYSON | bonnie-brown-dolls",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "GRAYSON | bonnie-brown-dolls",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/grayson",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "GRAYSON | bonnie-brown-dolls",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_30d821cbe5f6414592c55ffac1ba3764.jpg/v1/fill/w_879,h_480,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_30d821cbe5f6414592c55ffac1ba3764.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_30d821cbe5f6414592c55ffac1ba3764.jpg/v1/fill/w_879,h_480,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_30d821cbe5f6414592c55ffac1ba3764.jpg 1x, https://static.wixstatic.com/media/2a652c_30d821cbe5f6414592c55ffac1ba3764.jpg/v1/fill/w_1200,h_655,al_c,q_85,enc_avif,quality_auto/2a652c_30d821cbe5f6414592c55ffac1ba3764.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_109c276a577843ceb829f7dc644c5bd1.jpg/v1/fill/w_361,h_346,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_109c276a577843ceb829f7dc644c5bd1.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_109c276a577843ceb829f7dc644c5bd1.jpg/v1/fill/w_361,h_346,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_109c276a577843ceb829f7dc644c5bd1.jpg 1x, https://static.wixstatic.com/media/2a652c_109c276a577843ceb829f7dc644c5bd1.jpg/v1/fill/w_722,h_692,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_109c276a577843ceb829f7dc644c5bd1.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_ff69bac8c7e94330acc651d939a0ece9.jpg/v1/fill/w_380,h_307,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_ff69bac8c7e94330acc651d939a0ece9.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_ff69bac8c7e94330acc651d939a0ece9.jpg/v1/fill/w_380,h_307,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_ff69bac8c7e94330acc651d939a0ece9.jpg 1x, https://static.wixstatic.com/media/2a652c_ff69bac8c7e94330acc651d939a0ece9.jpg/v1/fill/w_720,h_582,al_c,q_85,enc_avif,quality_auto/2a652c_ff69bac8c7e94330acc651d939a0ece9.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_8862bfc278ca439b83f24ca05867c1a5.jpg/v1/fill/w_147,h_220,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_8862bfc278ca439b83f24ca05867c1a5.jpg",
+          "alt": "All rights reserved.",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_84b9ce8452474e15b70d165c1f33d654.jpg/v1/fill/w_147,h_220,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_84b9ce8452474e15b70d165c1f33d654.jpg",
+          "alt": "All rights reserved.",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_4c81c7037875478ab6f685930bbb553c.jpg/v1/fill/w_147,h_220,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_4c81c7037875478ab6f685930bbb553c.jpg",
+          "alt": "All rights reserved.",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_039cd21d315e4c7398490a33e9098ec0.jpg/v1/fill/w_350,h_528,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_039cd21d315e4c7398490a33e9098ec0.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_039cd21d315e4c7398490a33e9098ec0.jpg/v1/fill/w_350,h_528,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_039cd21d315e4c7398490a33e9098ec0.jpg 1x, https://static.wixstatic.com/media/2a652c_039cd21d315e4c7398490a33e9098ec0.jpg/v1/fill/w_636,h_960,al_c,q_85,enc_avif,quality_auto/2a652c_039cd21d315e4c7398490a33e9098ec0.jpg 2x"
+        }
+      ],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com/grayson-gallery",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:29.726771+00:00",
+      "sha256_html": "09100793a78a1262fcca8e53e27c2e1e00e1f441c36d66f2b4bfae7e32ad8cf2",
+      "title": "Grayson Gallery | bonnie-brown-dolls",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Grayson Gallery | bonnie-brown-dolls",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/grayson-gallery",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Grayson Gallery | bonnie-brown-dolls",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com/kits-coming-soon",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:31.407142+00:00",
+      "sha256_html": "48f7a2c864e8e5a284717f70b230331af3bd1a05d2f4ddb37b6c887a67eff77e",
+      "title": "Coming Soon | bonnie-brown-dolls",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Coming Soon | bonnie-brown-dolls",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/kits-coming-soon",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Coming Soon | bonnie-brown-dolls",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_8abf1afdb056463a849641c929ccaa9d~mv2_d_6720_4480_s_4_2.jpg/v1/fill/w_288,h_192,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_8abf1afdb056463a849641c929ccaa9d~mv2_d_6720_4480_s_4_2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_12ccadc43bcc459d93b75e863563b67e~mv2.jpg/v1/fill/w_408,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_12ccadc43bcc459d93b75e863563b67e~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_12ccadc43bcc459d93b75e863563b67e~mv2.jpg/v1/fill/w_408,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_12ccadc43bcc459d93b75e863563b67e~mv2.jpg 1x, https://static.wixstatic.com/media/2a652c_12ccadc43bcc459d93b75e863563b67e~mv2.jpg/v1/fill/w_816,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_12ccadc43bcc459d93b75e863563b67e~mv2.jpg 2x"
+        }
+      ],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com/levi-gallery",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:33.428395+00:00",
+      "sha256_html": "37daefdae04131ce8121bb7f3ec6465f68b0431e4b7510691769599b9995044d",
+      "title": "Levi Gallery | bonnie-brown-dolls",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Levi Gallery | bonnie-brown-dolls",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/levi-gallery",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Levi Gallery | bonnie-brown-dolls",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com/mailing-list",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:35.446438+00:00",
+      "sha256_html": "8a0ffee4b6db4548d76a7e1e4f82ae7b80e70ebaedc131cf789c0412ec88a97e",
+      "title": "Mailing list | bonnie-brown-dolls",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Mailing list | bonnie-brown-dolls",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/mailing-list",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Mailing list | bonnie-brown-dolls",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com/past-work",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:37.130757+00:00",
+      "sha256_html": "cce43f836127798fd1a7736686787cc5995f99bdd59d176fa824b2dbd14d8462",
+      "title": "Past Work | bonnie-brown-dolls",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Past Work | bonnie-brown-dolls",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/past-work",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Past Work | bonnie-brown-dolls",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_92dad34a55534400813d8c225b6792f2.jpg/v1/fill/w_192,h_288,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_92dad34a55534400813d8c225b6792f2.jpg",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com/shops-international",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:38.261600+00:00",
+      "sha256_html": "b5d50ec47f89813579650103e4048690e8c521caf7de72c4f67b70427c544379",
+      "title": "Shops - International | bonnie-brown-dolls",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Shops - International | bonnie-brown-dolls",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/shops-international",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Shops - International | bonnie-brown-dolls",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_0ecf274f469e4c08b2cfd749979ec03d~mv2_d_4480_6720_s_4_2.jpg/v1/fill/w_192,h_288,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_0ecf274f469e4c08b2cfd749979ec03d~mv2_d_4480_6720_s_4_2.jpg",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com/silicone-dolls",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:39.842748+00:00",
+      "sha256_html": "77d36aaa2c90947e129d38464274e8a76b94923ac4a0cc9cd843b5066f66b115",
+      "title": "Silicone Dolls | bonnie-brown-dolls",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Silicone Dolls | bonnie-brown-dolls",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/silicone-dolls",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Silicone Dolls | bonnie-brown-dolls",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018~mv2_d_6720_4480_s_4_2.jpg/v1/fill/w_288,h_192,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_4f479a79e5d242a1a6dd898b4c9ca018~mv2_d_6720_4480_s_4_2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_df8534d10b2a4f6ba918bb8db8dbb8bb.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_df8534d10b2a4f6ba918bb8db8dbb8bb.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_ada0986234db41acb21dff72e564b201.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_ada0986234db41acb21dff72e564b201.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_f7ebcf829d5940bc8f2a2f60241e9f10.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_f7ebcf829d5940bc8f2a2f60241e9f10.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_673cd0c0dfbf9cf229a5b3d094df75b4.jpg/v1/fill/w_465,h_265,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_673cd0c0dfbf9cf229a5b3d094df75b4.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_673cd0c0dfbf9cf229a5b3d094df75b4.jpg/v1/fill/w_465,h_265,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_673cd0c0dfbf9cf229a5b3d094df75b4.jpg 1x, https://static.wixstatic.com/media/2a652c_673cd0c0dfbf9cf229a5b3d094df75b4.jpg/v1/fill/w_800,h_456,al_c,q_85,enc_avif,quality_auto/2a652c_673cd0c0dfbf9cf229a5b3d094df75b4.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_e3e3f0052b0444614d39dbf2c95cb6cb.jpg/v1/fill/w_419,h_294,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_e3e3f0052b0444614d39dbf2c95cb6cb.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_e3e3f0052b0444614d39dbf2c95cb6cb.jpg/v1/fill/w_419,h_294,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_e3e3f0052b0444614d39dbf2c95cb6cb.jpg 1x, https://static.wixstatic.com/media/2a652c_e3e3f0052b0444614d39dbf2c95cb6cb.jpg/v1/fill/w_838,h_588,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_e3e3f0052b0444614d39dbf2c95cb6cb.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_e3b92689910646c4dacaa51f62a1429f.jpg/v1/fill/w_465,h_289,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_e3b92689910646c4dacaa51f62a1429f.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_e3b92689910646c4dacaa51f62a1429f.jpg/v1/fill/w_465,h_289,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_e3b92689910646c4dacaa51f62a1429f.jpg 1x, https://static.wixstatic.com/media/2a652c_e3b92689910646c4dacaa51f62a1429f.jpg/v1/fill/w_930,h_578,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_e3b92689910646c4dacaa51f62a1429f.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_8a7374005ea2dcf6a39fcbe49c910818.jpg/v1/fill/w_419,h_289,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_8a7374005ea2dcf6a39fcbe49c910818.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_8a7374005ea2dcf6a39fcbe49c910818.jpg/v1/fill/w_419,h_289,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_8a7374005ea2dcf6a39fcbe49c910818.jpg 1x, https://static.wixstatic.com/media/2a652c_8a7374005ea2dcf6a39fcbe49c910818.jpg/v1/fill/w_576,h_397,al_c,lg_1,q_80,enc_avif,quality_auto/2a652c_8a7374005ea2dcf6a39fcbe49c910818.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_39f5ca90cf51ff980e8d1e4b52e8faa1.jpg/v1/fill/w_465,h_265,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_39f5ca90cf51ff980e8d1e4b52e8faa1.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_39f5ca90cf51ff980e8d1e4b52e8faa1.jpg/v1/fill/w_465,h_265,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_39f5ca90cf51ff980e8d1e4b52e8faa1.jpg 1x, https://static.wixstatic.com/media/2a652c_39f5ca90cf51ff980e8d1e4b52e8faa1.jpg/v1/fill/w_600,h_342,al_c,q_80,enc_avif,quality_auto/2a652c_39f5ca90cf51ff980e8d1e4b52e8faa1.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_0908663673a01098a0189fc8093e5df6.jpg/v1/fill/w_419,h_559,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_0908663673a01098a0189fc8093e5df6.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_0908663673a01098a0189fc8093e5df6.jpg/v1/fill/w_419,h_559,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_0908663673a01098a0189fc8093e5df6.jpg 1x, https://static.wixstatic.com/media/2a652c_0908663673a01098a0189fc8093e5df6.jpg/v1/fill/w_586,h_781,al_c,lg_1,q_85,enc_avif,quality_auto/2a652c_0908663673a01098a0189fc8093e5df6.jpg 2x"
+        }
+      ],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com/silicone-kits",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:41.645057+00:00",
+      "sha256_html": "2bc422bdfc9229479c561bb41dd705dd59b7141f9f4cbff50a2185aaf808ae3f",
+      "title": "Silicone kits",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "Silicone doll kits by Bonnie Brown",
+        "og:title": "Silicone kits",
+        "og:description": "Silicone doll kits by Bonnie Brown",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/silicone-kits",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Silicone kits",
+        "twitter:description": "Silicone doll kits by Bonnie Brown",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_be49567deae8e2b7a7c0615762e60d45.jpg/v1/fill/w_144,h_89,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_be49567deae8e2b7a7c0615762e60d45.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_4c43a24330506de39d7cdb86dd215d9e.jpg/v1/fill/w_144,h_144,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_4c43a24330506de39d7cdb86dd215d9e.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_0637eddcc4b2f4db4c1983325589a761.jpg/v1/fill/w_129,h_119,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_0637eddcc4b2f4db4c1983325589a761.jpg",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com/twin-a-gallery",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:43.304113+00:00",
+      "sha256_html": "180bfb802096519dcdc859cb67023d623d2c6d54bd4dcdcbc1a4122ee4fb3264",
+      "title": "Twin A Gallery | bonnie-brown-dolls",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Twin A Gallery | bonnie-brown-dolls",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/twin-a-gallery",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Twin A Gallery | bonnie-brown-dolls",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com/twin-b-gallery",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:44.496509+00:00",
+      "sha256_html": "c1d86d79bcf21d2b068eb93075238ea9787e2b4f290e505d245817c5c7acda1d",
+      "title": "Twin B Gallery | bonnie-brown-dolls",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Twin B Gallery | bonnie-brown-dolls",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/twin-b-gallery",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Twin B Gallery | bonnie-brown-dolls",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.bonniebrowndolls.com/wip",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:30:46.494628+00:00",
+      "sha256_html": "bdd40a9186ecae3cd74882dfed59a787e22b1cefa589346f8263e46542443fa2",
+      "title": "W.I.P | bonnie-brown-dolls",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "W.I.P | bonnie-brown-dolls",
+        "og:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://www.bonniebrowndolls.com/wip",
+        "og:site_name": "bonnie-brown-dolls",
+        "og:type": "website",
+        "fb_admins_meta_tag": "TheBonnieBrownCollection",
+        "keywords": "Fake, Realistic, amazing, babies, baby, bonnie, brown, cute, dolls, ooak, real, reborn, sculpture, silicone",
+        "fb:admins": "TheBonnieBrownCollection",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "W.I.P | bonnie-brown-dolls",
+        "twitter:image": "https://static.wixstatic.com/media/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg/v1/fit/w_2500,h_1330,al_c/2a652c_4f479a79e5d242a1a6dd898b4c9ca018%7Emv2_d_6720_4480_s_4_2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_298df409438a472eb32ca85586fd1ed9.jpg/v1/fill/w_288,h_192,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2a652c_298df409438a472eb32ca85586fd1ed9.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_9e4f3b6103154c4a8c5cb846c69db32f~mv2.jpg/v1/fill/w_600,h_450,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_9e4f3b6103154c4a8c5cb846c69db32f~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_9e4f3b6103154c4a8c5cb846c69db32f~mv2.jpg/v1/fill/w_600,h_450,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_9e4f3b6103154c4a8c5cb846c69db32f~mv2.jpg 1x, https://static.wixstatic.com/media/2a652c_9e4f3b6103154c4a8c5cb846c69db32f~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_9e4f3b6103154c4a8c5cb846c69db32f~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/2a652c_5aac9060cfe14d1ab600691967349074~mv2.jpg/v1/fill/w_600,h_450,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_5aac9060cfe14d1ab600691967349074~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/2a652c_5aac9060cfe14d1ab600691967349074~mv2.jpg/v1/fill/w_600,h_450,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_5aac9060cfe14d1ab600691967349074~mv2.jpg 1x, https://static.wixstatic.com/media/2a652c_5aac9060cfe14d1ab600691967349074~mv2.jpg/v1/fill/w_1200,h_900,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a652c_5aac9060cfe14d1ab600691967349074~mv2.jpg 2x"
+        }
+      ],
+      "links": [
+        "https://www.bonniebrowndolls.com",
+        "https://www.bonniebrowndolls.com/aboutme",
+        "https://www.bonniebrowndolls.com/doll-kits",
+        "https://www.bonniebrowndolls.com/gallery",
+        "https://www.bonniebrowndolls.com/shops-international",
+        "https://www.bonniebrowndolls.com/wip"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    }
+  ],
+  "notice": "Discovery evidence only. No images copied; no status or release-date inference."
+}
