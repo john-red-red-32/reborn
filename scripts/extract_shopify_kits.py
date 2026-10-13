@@ -17,7 +17,7 @@ from urllib.parse import urlsplit, urljoin
 from urllib.request import Request, urlopen
 from urllib.robotparser import RobotFileParser
 
-VERSION="shopify-original-kit-v1"
+VERSION="shopify-original-kit-v2-artist-scoped"
 AGENT="RebornaDiscovery/0.1 (+https://reborna.co; editorial source research)"
 LIMIT_BYTES=4_000_000
 MAX_PAGES=3
@@ -46,7 +46,7 @@ def permitted_json(url, host, robots):
         if len(raw)>LIMIT_BYTES: raise ValueError("JSON too large")
         return json.loads(raw),hashlib.sha256(raw).hexdigest()
 
-def classification(product):
+def classification(product, artist_name="Nikki Johnston"):
     title=str(product.get("title") or "")
     body=plaintext(product.get("body_html") or product.get("description") or "")
     tags=product.get("tags") or []
@@ -59,9 +59,10 @@ def classification(product):
         return "non_kit_excluded", "title_non_kit"
     if re.search(r"\b(belly plate|body only|vinyl head only)\b",head):
         return "component_excluded", "standalone_component"
-    if re.search(r"\b(sculpted by|sculptor:)\s+(?!nikki\s+johnston)",words):
+    artist_token = re.escape(artist_name).replace(r"\ ",r"\s+")
+    if re.search(rf"\b(sculpted by|sculptor:)\s+(?!{artist_token}\b)",words):
         return "needs_review", "third_party_sculptor_mentioned"
-    if re.search(r"\b(blank\s+(vinyl\s+)?(doll\s+)?kit|buying the\s+blank|vinyl doll kit|reborn doll kit|sculptor:\s*nikki\s+johnston)\b",words):
+    if re.search(rf"\b(blank\s+(?:(?:vinyl|silicone|full.body silicone)\s+)?(doll\s+)?kit|buying the\s+blank|(?:vinyl|silicone) doll kit|reborn doll kit|blank unpainted (?:silicone|vinyl)|sculptor:\s*{artist_token})\b",words):
         return "original_kit_candidate", "seller_explicit_blank_kit"
     return "needs_review", "insufficient_explicit_kit_evidence"
 
@@ -115,7 +116,7 @@ def option_map(product,variant):
         values["Configuration"]=str(variant["title"])
     return values
 
-def sculpt_name_candidate(title,body):
+def sculpt_name_candidate(title,body,artist_name="Nikki Johnston"):
     # The artist's explicit 'Kit Spec Name' is stronger than an SEO listing title.
     match=re.search(r"\bName\s*:\s*(.*?)\s*(?=(?:Sculptor|Kit length|Kit size|Limb length|Head circumference|Cloth Body|COA|Vinyl|Edition size)\s*:|$)",body,re.I)
     if match and len(match.group(1).strip())<95:
@@ -125,13 +126,14 @@ def sculpt_name_candidate(title,body):
         return raw,"artist_kit_spec"
     cleaned=re.sub(r"(?i)^\s*new\s*[-–:]\s*","",title)
     cleaned=re.sub(r"(?i)\s*(?:[-–( ]+)?(?:pre[ -]?order|in stock|sold out)\s*\)?\s*$","",cleaned).strip(" -–()")
+    cleaned=re.sub(r"(?i)\s+by\s+"+re.escape(artist_name)+r"\b","",cleaned).strip(" -–")
     return cleaned,"retailer_title_review"
 
-def parse_product(product,origin,sha,observed):
+def parse_product(product,origin,sha,observed,artist_name="Nikki Johnston",currency="GBP"):
     title=str(product.get("title") or "").strip()
     body=plaintext(product.get("body_html") or "")
-    kind,reason=classification(product)
-    sculpt_name,name_method=sculpt_name_candidate(title,body)
+    kind,reason=classification(product,artist_name=artist_name)
+    sculpt_name,name_method=sculpt_name_candidate(title,body,artist_name=artist_name)
     handle=product.get("handle") or ""
     url=urljoin(origin,f"/products/{handle}")
     variants=[]
@@ -174,6 +176,8 @@ def parse_product(product,origin,sha,observed):
         for src in product.get("images") or []:
             if isinstance(src,str): images.append({"url":src,"role":"unreviewed_kit_or_prototype","rights":"not_granted"})
     statement=(title+" "+body).lower()
+    explicit_materials=[name for name in ("vinyl","silicone") if re.search(r"\b"+name+r"\b",statement)]
+    material=explicit_materials[0] if len(explicit_materials)==1 else None
     lifecycle="preorder_advertised" if re.search(r"\bpre[ -]?orders?\b",title.lower()) else (
         "sold_out_advertised" if re.search(r"\bsold\s*out\b",title.lower()) else "not_confirmed")
     return {
@@ -181,7 +185,8 @@ def parse_product(product,origin,sha,observed):
         "source_sha256":sha,"name":title,"sculpt_name_candidate":sculpt_name,"sculpt_name_basis":name_method,"source_product_type":product.get("product_type") or "",
         "classification":kind,"classification_basis":reason,
         "description":body[:9000],"published_kit_facts":kit_facts(body),
-        "currency":"GBP", # pilot store in GBP; confirm against storefront before live price publication
+        "sculpt_material_candidate":material,"material_review_required":len(explicit_materials)!=1,
+        "currency":currency, # Source/store currency supplied via reviewed artist manifest; never infer from country.
         "variants":variants,"variant_total":len(variants),
         "distinct_full_prices":full_prices,
         "from_price_native":full_prices[0] if len(full_prices)>1 else None,
@@ -200,6 +205,8 @@ def main():
     ap.add_argument("--input",required=True)
     ap.add_argument("--out",default="artifacts/shopify-kit-candidates.json")
     ap.add_argument("--max-products",type=int,default=85)
+    ap.add_argument("--artist-name",default="Nikki Johnston")
+    ap.add_argument("--currency",default="GBP",choices=["GBP","USD","EUR","CAD","AUD"])
     ap.add_argument("--delay",type=float,default=1.0)
     args=ap.parse_args()
     if not 1<=args.max_products<=150 or args.delay<1:ap.error("Out of bounds")
@@ -209,7 +216,7 @@ def main():
     observed=datetime.now(timezone.utc).isoformat()
     counts=source.get("platforms") or {}
     result={"adapter":VERSION,"source":origin,"observed_at":observed,"platform_detected":counts,
-        "products":[],"errors":[],"coverage":"partial","source_kind":"public_shopify_product_json"}
+        "products":[],"errors":[],"coverage":"partial","source_kind":"public_shopify_product_json","artist_name":args.artist_name,"currency":args.currency}
     if counts.get("shopify",0)<1:
         result["status"]="not_applicable"
     else:
@@ -250,7 +257,7 @@ def main():
                     result["errors"].append({"url":endpoint,"error":type(exc).__name__,"detail":str(exc)[:150]})
                 time.sleep(args.delay)
         for product,sha in list(products.values())[:args.max_products]:
-            result["products"].append(parse_product(product,origin,sha,observed))
+            result["products"].append(parse_product(product,origin,sha,observed,artist_name=args.artist_name,currency=args.currency))
         result["status"]="scanned"
         result["products_seen"]=len(products)
         result["original_kit_candidates"]=sum(x["classification"]=="original_kit_candidate" for x in result["products"])
