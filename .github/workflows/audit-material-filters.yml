@@ -1,0 +1,66 @@
+name: Audit live sculpt material filters
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-material-filters.yml'
+      - 'components/MaterialFilter.tsx'
+      - 'components/DiscoverFeed.tsx'
+      - 'components/RealCatalogue.tsx'
+      - 'components/UnifiedSculptCollection.tsx'
+      - 'lib/sculpt-material.ts'
+      - 'lib/real-catalogue.ts'
+      - 'lib/nikki-shopify-catalogue.ts'
+      - 'app/kits/[slug]/page.tsx'
+      - 'app/globals.css'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Verify deployed Discover, catalogue and artist material controls
+        run: |
+          python3 - <<'PY'
+          import time, urllib.request
+          root='https://reborna.co'
+          routes=['/','/real-kits/','/artists/cassie-ann-love/','/artists/nikki-johnston/']
+          headers={'User-Agent':'Mozilla/5.0 (compatible; RebornaProductionAudit/1.0)','Accept':'text/html'}
+          for attempt in range(16):
+              failed=[]
+              for route in routes:
+                  try:
+                      req=urllib.request.Request(root+route,headers=headers)
+                      with urllib.request.urlopen(req,timeout=20) as res:
+                          assert res.status==200,(route,res.status)
+                          html=res.read().decode('utf-8','replace')
+                      assert 'Filter by sculpt material' in html, (route,'missing material control')
+                      for label in ['All materials','Vinyl','Silicone']:
+                          assert label in html,(route,'missing '+label)
+                  except Exception as exc:
+                      failed.append((route,str(exc)[:140]))
+              if not failed:
+                  print('PASS live filters on Discover, complete catalogue, Cassie and Nikki artist collections',flush=True)
+                  break
+              print('Production awaiting latest Cloudflare publish:',attempt+1,failed,flush=True)
+              time.sleep(6)
+          else:
+              raise SystemExit('Live material controls never appeared on all requested routes')
+          for attempt in range(8):
+              try:
+                  req=urllib.request.Request(root+'/kits/mabel-nikki-johnston/',headers=headers)
+                  with urllib.request.urlopen(req,timeout=20) as res:
+                      assert res.status==200
+                      html=res.read().decode('utf-8','replace')
+                  assert '>Material</span>' in html or '>Material<' in html
+                  assert '>Vinyl</strong>' in html
+                  print('PASS vinyl shown as source-backed material on actual kit detail page')
+                  break
+              except Exception as exc:
+                  print('Waiting for published kit-detail material label',attempt+1,str(exc),flush=True)
+                  time.sleep(6)
+          else:
+              raise SystemExit('Live material label not present on a documented vinyl kit')
+          PY
