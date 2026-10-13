@@ -31,8 +31,14 @@ export default function DiscoverFeed(){
    const state=sculptStatus(k);
    return matchesSculptMaterial(k.material,material)&&(filter==="all"||filter==="available"&&state==="available"||filter==="preorder"&&state==="preorder_open")
      &&(k.name+" "+(kitArtist(k.artistSlug)?.name||"")).toLocaleLowerCase("en").includes(term.trim().toLocaleLowerCase("en"));
- }).sort((a,b)=>sortRank[sculptStatus(a)]-sortRank[sculptStatus(b)]||
-   (b.statusChecked||"").localeCompare(a.statusChecked||"")||a.name.localeCompare(b.name)),[filter,material,term]);
+ }).sort((a,b)=>{
+   // Keep the opening Discover experience photographic and editorial.
+   // Fully source-backed text-only historical kits remain searchable here
+   // and available on their artist pages without receiving guessed imagery.
+   const aPhoto=!!(a.photos?.length||cassieOfficialImages[a.name]?.length);
+   const bPhoto=!!(b.photos?.length||cassieOfficialImages[b.name]?.length);
+   return Number(bPhoto)-Number(aPhoto)||sortRank[sculptStatus(a)]-sortRank[sculptStatus(b)]||
+   (b.statusChecked||"").localeCompare(a.statusChecked||"")||a.name.localeCompare(b.name)}),[filter,material,term]);
  useEffect(()=>{setLimit(BATCH_SIZE)},[filter,material,term]);
  useEffect(()=>{
    const node=sentinel.current;
