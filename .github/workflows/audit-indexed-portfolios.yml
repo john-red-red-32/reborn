@@ -43,7 +43,7 @@ jobs:
           assert all(len(k.get('photos',[]))==0 for k in allkits)
           assert all(k['sources'][0]['kind']=='artist' for k in allkits)
           elena=[k for k in allkits if k['name']=='Elena'][0]
-          assert 'material' not in elena,'Elena material must remain unknown'
+          assert elena['material']=='vinyl','Authorised original-kit dealer confirms standard Elena is vinyl'
           print('PASS 39 official-source kit identities; no fake photo or stock claims',flush=True)
           root='https://reborna.co'
           header={'User-Agent':'Mozilla/5.0 (compatible; RebornaPreviewAudit/1.0)','Accept':'text/html'}
