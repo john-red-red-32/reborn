@@ -20,6 +20,7 @@ import {indexedOriginalArtists} from "./indexed-original-artists";
 import {indexedOriginalKits} from "./indexed-original-kits";
 import {retailerProvenanceArtists} from "./retailer-provenance-artists";
 import {retailerProvenanceKits} from "./retailer-provenance-kits";
+import {recoveredKitPhotos,recoveredArtistCovers} from "./recovered-source-photos";
 export type ArtistImage={url:string;source:string;credit:string;role:"portrait"|"square"|"banner";reviewStatus:"source_identified"|"artist_approved";};
 export type VerifiedArtist = {slug:string;name:string;website:string;bio:string;source:string;websiteRole?:"artist"|"retailer_reference";images?:ArtistImage[]};
 export type KitVariant = {id:string;label:string;options:Record<string,string>;includedParts?:string[];photos?:{url:string;credit:string;source:string}[];sourceUrl?:string;verifiedAt?:string};
@@ -30,7 +31,8 @@ export const artists:VerifiedArtist[]=[
 {slug:"joanna-kazmierczak",name:"Joanna Kazmierczak",website:"https://macphersoncrafts.com/",websiteRole:"retailer_reference",bio:"Sculptor whose Willow release is featured by specialist retailer MacPherson Arts & Crafts.",source:"https://macphersoncrafts.com/"},
 {slug:"dawn-mcleod",name:"Dawn McLeod",website:"https://macphersoncrafts.com/",websiteRole:"retailer_reference",bio:"Sculptor of Cypress, featured among specialist retailer MacPherson's pre-order releases.",source:"https://macphersoncrafts.com/"}
 ,...shopifyCohortArtists,...wixCohortArtists,mayraOriginalArtist,sandyOriginalArtist,adrieOriginalArtist,...indexedOriginalArtists,...retailerProvenanceArtists
-];
+].map(artist=>artist.images?.length||!recoveredArtistCovers[artist.slug]?artist:
+  {...artist,images:recoveredArtistCovers[artist.slug]});
 const manuallyCuratedKits:VerifiedKit[]=[
 ...nikkiKits,
 {slug:"winnie-cassie-ann-love",name:"Winnie",artistSlug:"cassie-ann-love",edition:"19-inch vinyl sculpt",statusLabel:"Historical sculpt — availability not established",statusChecked:"2026-10-12",photos:[{url:"https://www.createalittlemagic.co.za/cdn/shop/products/pre-order-deposit-only-winnie-by-cassie-brace-843063.jpg?v=1696056018",credit:"Source retailer",source:"https://www.createalittlemagic.co.za/products/winnie-by-cassie-brace"}],sources:[{label:"View original listing",url:"https://www.createalittlemagic.co.za/products/winnie-by-cassie-brace",kind:"retailer"}]},
@@ -87,5 +89,7 @@ const cassieCuratedWithImages=manuallyCuratedKits.map(kit=>{
    ]:kit.sources
  };
 });
-export const verifiedKits:VerifiedKit[]=[...cassieCuratedWithImages,...cassieExpandedHistoricalKits,...shopifyCohortKits,...wixCohortKits,...mayraOriginalKits,...sandyOriginalKits,...adrieOriginalKits,...indexedOriginalKits,...retailerProvenanceKits];
+export const verifiedKits:VerifiedKit[]=[...cassieCuratedWithImages,...cassieExpandedHistoricalKits,...shopifyCohortKits,...wixCohortKits,...mayraOriginalKits,...sandyOriginalKits,...adrieOriginalKits,...indexedOriginalKits,...retailerProvenanceKits]
+ .map(kit=>kit.photos?.length||!recoveredKitPhotos[kit.slug]?kit:
+  {...kit,photos:recoveredKitPhotos[kit.slug]});
 export const kitArtist=(slug:string)=>artists.find(a=>a.slug===slug);
