@@ -3,7 +3,7 @@
   "host": "siliconeartdolls.com",
   "parser_version": "url-discovery-v2-platform-sitemaps",
   "started_from": "https://siliconeartdolls.com/",
-  "completed_at": "2026-10-13T16:08:52.429446+00:00",
+  "completed_at": "2026-10-13T16:10:08.843276+00:00",
   "page_limit": 8,
   "sitemap_discovered_urls": 64,
   "platforms": {
@@ -18,8 +18,8 @@
     {
       "url": "https://siliconeartdolls.com/",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:41.440890+00:00",
-      "sha256_html": "c5222d31c3521ddade727208820850f3743f7f03c98c2f1e9ac42327308c534c",
+      "observed_at": "2026-10-13T16:09:58.211028+00:00",
+      "sha256_html": "1b3e8f99875722965fdc4515879a725261e3dac4bb2cf0bed7cc2a934734f551",
       "title": "Silicone Art Dolls\n – Silicone Art Dolls  American Express Apple Pay Bancontact Bizum Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Venmo Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -37,8 +37,8 @@
         "twitter:title": "Silicone Art Dolls",
         "twitter:description": "Silicone Art Dolls makes a wide range of blank silicone doll kits. We work with sculpting artist to turn their One of a Kind clay sculptures into soft squishy silicone creations.",
         "shopify-digital-wallet": "/78784954679/digital_wallets/dialog",
-        "shopify-y": "6c6e718c-f4bf-4a6d-ba9f-1e3a75aec0a0",
-        "shopify-s": "459097ae-cea3-4581-9165-b7db08cc0fc9"
+        "shopify-y": "ade306b3-d6f5-42c6-930c-c7df9794d8e5",
+        "shopify-s": "0cff4386-1131-40dd-9cd7-a99479c8d6f8"
       },
       "structured_data": [
         {
@@ -132,8 +132,8 @@
     {
       "url": "https://siliconeartdolls.com/cart",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:42.724430+00:00",
-      "sha256_html": "91ba05d48577d4b220fcc3d732968695a892230e8f32a7d926b075e52a226e45",
+      "observed_at": "2026-10-13T16:09:59.539265+00:00",
+      "sha256_html": "56c3fda1a18ab04126cabb7b71ad3098e26b7adc8b4c44b06031b787405d1601",
       "title": "Your Shopping Cart\n – Silicone Art Dolls  American Express Apple Pay Bancontact Bizum Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Venmo Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -150,8 +150,8 @@
         "twitter:title": "Your Shopping Cart",
         "twitter:description": "Silicone Art Dolls makes a wide range of blank silicone doll kits. We work with sculpting artist to turn their One of a Kind clay sculptures into soft squishy silicone creations. ",
         "shopify-digital-wallet": "/78784954679/digital_wallets/dialog",
-        "shopify-y": "d5d21304-ef79-46b1-a283-688fa663a357",
-        "shopify-s": "0ac23cc9-ccd6-428c-85fc-4a6f781ed40a"
+        "shopify-y": "7cb33c9a-5a06-4276-b234-c7dce4da5885",
+        "shopify-s": "d3223b0e-37a4-4124-bcb8-9eca0b9aeccc"
       },
       "structured_data": [
         {
@@ -190,8 +190,8 @@
     {
       "url": "https://siliconeartdolls.com/collections/all",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:44.262965+00:00",
-      "sha256_html": "60f0c8fc2bb602c8ab2379bc4190ac4830769d765ed3f618c2357bce1998b16b",
+      "observed_at": "2026-10-13T16:10:01.054567+00:00",
+      "sha256_html": "e389100616bddd35fc648b1f23eb7c9f925b3045b5159b0301b70bcba6268476",
       "title": "Products\n – Silicone Art Dolls  American Express Apple Pay Bancontact Bizum Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Venmo Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -208,8 +208,8 @@
         "twitter:title": "Products",
         "twitter:description": "Silicone Art Dolls makes a wide range of blank silicone doll kits. We work with sculpting artist to turn their One of a Kind clay sculptures into soft squishy silicone creations. ",
         "shopify-digital-wallet": "/78784954679/digital_wallets/dialog",
-        "shopify-y": "ea6a21ad-0d93-4bc9-b078-c9ec2fa10724",
-        "shopify-s": "5bfd865d-135e-4685-80f7-2d465d911f6e"
+        "shopify-y": "848ccc0e-d938-439c-bdfc-bbbde2950562",
+        "shopify-s": "74d7d1a5-bf79-44fb-ba6c-8d6d4f1b2e13"
       },
       "structured_data": [
         {
@@ -378,8 +378,8 @@
     {
       "url": "https://siliconeartdolls.com/collections/all?page=2",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:45.809843+00:00",
-      "sha256_html": "e0e73fbee11c618dd5016eaf91664aac4a58889f2f5394bd5daaea51a3ea25d6",
+      "observed_at": "2026-10-13T16:10:02.515826+00:00",
+      "sha256_html": "71da9f27d86d4f34eaca1e40cbec32112ac02555c12aed4af0da19d846cabb79",
       "title": "Products\n – Page 2 – Silicone Art Dolls  American Express Apple Pay Bancontact Bizum Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Venmo Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -396,8 +396,8 @@
         "twitter:title": "Products",
         "twitter:description": "Silicone Art Dolls makes a wide range of blank silicone doll kits. We work with sculpting artist to turn their One of a Kind clay sculptures into soft squishy silicone creations. ",
         "shopify-digital-wallet": "/78784954679/digital_wallets/dialog",
-        "shopify-y": "86582e66-199b-4b51-95c7-99579968c1b1",
-        "shopify-s": "943225e1-c163-4037-bdfb-9604b4b190c8"
+        "shopify-y": "65f201ce-109e-4d08-848e-97510a12183e",
+        "shopify-s": "bd1ecbcb-89e4-4a1c-93ea-38cf42a22337"
       },
       "structured_data": [
         {
@@ -574,8 +574,8 @@
     {
       "url": "https://siliconeartdolls.com/collections/all?page=1",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:47.111461+00:00",
-      "sha256_html": "c35e6fe24943ae1645594602ced1e49083dd2db103f22f73073dfb6b3dedb869",
+      "observed_at": "2026-10-13T16:10:03.869595+00:00",
+      "sha256_html": "6c5bdfdde5ae699578d27736c2c03295ea97a949b4905ea2f8aa95718cf10ce1",
       "title": "Products\n – Silicone Art Dolls  American Express Apple Pay Bancontact Bizum Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Venmo Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -592,8 +592,8 @@
         "twitter:title": "Products",
         "twitter:description": "Silicone Art Dolls makes a wide range of blank silicone doll kits. We work with sculpting artist to turn their One of a Kind clay sculptures into soft squishy silicone creations. ",
         "shopify-digital-wallet": "/78784954679/digital_wallets/dialog",
-        "shopify-y": "ae32fe3b-26e2-4dbe-bd7c-0fe861b847fa",
-        "shopify-s": "99f78964-efdb-4b10-8237-073eb2785e9f"
+        "shopify-y": "dbfd4842-5b51-40ba-978d-296f7789f10f",
+        "shopify-s": "4a32817f-29ac-4152-8181-7d21f22de233"
       },
       "structured_data": [
         {
@@ -763,8 +763,8 @@
     {
       "url": "https://siliconeartdolls.com/collections/all?page=4",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:48.670536+00:00",
-      "sha256_html": "de14a5fcf25e0091c477e0decc020cb6a17af8f128aae1b2f1452a2e434e745c",
+      "observed_at": "2026-10-13T16:10:05.238422+00:00",
+      "sha256_html": "0fbb5322f6e33f449d10e615fae95c74251efd63c7621d208cf9dcf488165af1",
       "title": "Products\n – Page 4 – Silicone Art Dolls  American Express Apple Pay Bancontact Bizum Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Venmo Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -781,8 +781,8 @@
         "twitter:title": "Products",
         "twitter:description": "Silicone Art Dolls makes a wide range of blank silicone doll kits. We work with sculpting artist to turn their One of a Kind clay sculptures into soft squishy silicone creations. ",
         "shopify-digital-wallet": "/78784954679/digital_wallets/dialog",
-        "shopify-y": "94ea42cc-f5b6-4ff9-bf49-477089034a66",
-        "shopify-s": "ba85fc75-9f57-4821-8a8e-b7fba42762c3"
+        "shopify-y": "5719e3eb-77ae-4faa-96f7-deeb66459e0c",
+        "shopify-s": "0db6a094-8ab8-4230-9251-68049425313f"
       },
       "structured_data": [
         {
@@ -959,8 +959,8 @@
     {
       "url": "https://siliconeartdolls.com/collections/all?page=3",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:50.037893+00:00",
-      "sha256_html": "3e9a43b767c5d5aabffdc7e91312fbb864e0c40dce3e1d91faf8be2b91c6d154",
+      "observed_at": "2026-10-13T16:10:06.535951+00:00",
+      "sha256_html": "fd3b5c2ef375bc8a22247e04ad1e18a1ca8ace15024c811aa7975834dc54618a",
       "title": "Products\n – Page 3 – Silicone Art Dolls  American Express Apple Pay Bancontact Bizum Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Venmo Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -977,8 +977,8 @@
         "twitter:title": "Products",
         "twitter:description": "Silicone Art Dolls makes a wide range of blank silicone doll kits. We work with sculpting artist to turn their One of a Kind clay sculptures into soft squishy silicone creations. ",
         "shopify-digital-wallet": "/78784954679/digital_wallets/dialog",
-        "shopify-y": "22e14752-5708-4e65-aa24-35048994c678",
-        "shopify-s": "018b2dae-e746-48cf-8a55-e5a666d2ec28"
+        "shopify-y": "73689845-b808-4ead-afc3-138e13e03ecf",
+        "shopify-s": "862986cc-62b0-476f-b1fd-481c55bb99db"
       },
       "structured_data": [
         {
@@ -1155,8 +1155,8 @@
     {
       "url": "https://siliconeartdolls.com/collections/all?page=5",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:51.429197+00:00",
-      "sha256_html": "b336c63c405ccb513a14a808a7bf82d382d6d3f0001f08dd0dc62c70da743c10",
+      "observed_at": "2026-10-13T16:10:07.842921+00:00",
+      "sha256_html": "e8c16369c63113b62d24125d4586f531146149134cc703a75c29ae1af349de47",
       "title": "Products\n – Page 5 – Silicone Art Dolls  American Express Apple Pay Bancontact Bizum Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Venmo Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -1173,8 +1173,8 @@
         "twitter:title": "Products",
         "twitter:description": "Silicone Art Dolls makes a wide range of blank silicone doll kits. We work with sculpting artist to turn their One of a Kind clay sculptures into soft squishy silicone creations. ",
         "shopify-digital-wallet": "/78784954679/digital_wallets/dialog",
-        "shopify-y": "c5e28a95-e708-4524-aaf4-2948b0192d48",
-        "shopify-s": "46abab7d-9583-4e89-a4f8-242f91aeada1"
+        "shopify-y": "cf9b1b4b-d2bf-4c69-9a70-c12011b3c2b8",
+        "shopify-s": "78f11b38-5355-4907-ba02-29b0bfc44400"
       },
       "structured_data": [
         {

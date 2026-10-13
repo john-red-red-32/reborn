@@ -1,0 +1,97 @@
+{
+  "artist_id": "kristin-englert",
+  "exact_and_approved_matches": [],
+  "requires_review": [
+    {
+      "source_name": "Cedar",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Awake Olive",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Sydney",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Olive",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Ava",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Sisley",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Pennie",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Izabel",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Clementine",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Mellon and Clementine",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Mellon",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Junie",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Rue",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Ripley",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Pippi",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Rya",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Mylah",
+      "suggestions": [],
+      "state": "manual_review_required"
+    }
+  ],
+  "not_seen_in_source": [],
+  "duplicate_source_names": [],
+  "note": "Never assume an unobserved accepted sculpt has been removed or sold out.",
+  "manifest_version": 1,
+  "source": "https://siliconeartdolls.com/",
+  "source_scan_at": "2026-10-13T16:10:08.986423+00:00"
+}
