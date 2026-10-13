@@ -1,4 +1,11 @@
-/**\n * Original image assets linked to individual, named kit cards on the sculptor's\n * official Wix vinyl-gallery, observed 2026-10-13T09:34:30.280668+00:00.\n * These are artist-published PHOTO LINKS (not mirrored media or a licence to redistribute).\n * 48 exact archive matches; Romily and Sienna Rae are unapproved aliases and remain held.\n * Clay-filename guesses and finished reborn doll galleries are excluded.\n */\nexport const cassieNamedVinylImages:Record<string,{url:string;source:string;credit:string}[]> = {
+/**
+ * Original image assets linked to individual, named kit cards on the sculptor's
+ * official Wix vinyl-gallery, observed 2026-10-13T09:34:30.280668+00:00.
+ * These are artist-published PHOTO LINKS (not mirrored media or a licence to redistribute).
+ * 48 exact archive matches; Romily and Sienna Rae are unapproved aliases and remain held.
+ * Clay-filename guesses and finished reborn doll galleries are excluded.
+ */
+export const cassieNamedVinylImages:Record<string,{url:string;source:string;credit:string}[]> = {
   "Leo": [
     {
       "url": "https://static.wixstatic.com/media/684b25_55d1228a21cf4c719d93ec3e89892be2~mv2.jpg",
@@ -335,4 +342,4 @@
       "credit": "Cassie Ann Love — original sculpt gallery"
     }
   ]
-};\n
+};
