@@ -122,7 +122,20 @@ jobs:
           git add snapshots
           if ! git diff --cached --quiet; then
             git commit -m "Archive Wix sculptor scan ${{ matrix.artist }} ${{ github.run_id }} [skip ci]"
-            git push origin HEAD:scrape-results
+            # Other scanners also write independent host snapshots here.
+            # Retry safely with rebase rather than force-pushing their work.
+            for attempt in 1 2 3 4 5 6; do
+              if git push origin HEAD:scrape-results; then
+                echo "PASS evidence archived without overwriting concurrent writers"
+                exit 0
+              fi
+              echo "Concurrent scrape-results update; rebasing attempt $attempt"
+              git fetch origin scrape-results
+              git rebase origin/scrape-results || { git rebase --abort; exit 1; }
+              sleep 2
+            done
+            echo "Could not safely persist after retries" >&2
+            exit 1
           fi
       - name: Preserve downloadable source diagnostics
         if: always()
