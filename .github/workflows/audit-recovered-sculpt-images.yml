@@ -31,8 +31,8 @@ jobs:
           assert all(p['url'].startswith('https://') and p['source'].startswith('https://') and p['credit'] for ps in photos.values() for p in ps)
           assert not any(slug.endswith('-ping-lau') for slug in photos)
           assert 'ping-lau' not in covers
-          assert len({p['url'] for ps in photos.values() for p in ps})==len(photos)
-          print('PASS 45 unique exact source kit photo sets and nine featured sculpt artworks; no Ping Lau images',flush=True)
+          assert len({p['url'] for ps in photos.values() for p in ps})==sum(len(ps) for ps in photos.values()),'A photograph was assigned to more than one kit'
+          print('PASS 45 unique exact source kit photo sets and eleven featured sculpt artworks; no Ping Lau images',flush=True)
           headers={'User-Agent':'Mozilla/5.0 (compatible; RebornaImageVerification/1.0)','Accept':'image/avif,image/webp,image/jpeg,image/png,image/*'}
           checked=set()
           for slug,pictures in photos.items():
