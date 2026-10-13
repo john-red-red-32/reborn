@@ -67,14 +67,17 @@ jobs:
               assert r.status==200,(path,r.status)
               return r.read().decode('utf-8','replace')
           for attempt in range(25):
-            artist=page('/artists/cassie-ann-love/')
-            historic=page('/kits/ava-cassie-ann-love/')
-            named=page('/kits/leo-cassie-ann-love/')
-            prior=page('/kits/lennox-cassie-ann-love/')
-            if all('static.wixstatic.com/media/' in s for s in (artist,historic,named,prior)) and 'Ava' in historic:
-              print('PASS Cassie artist grid and historical/current kit pages serve named source photographs')
-              break
-            print('Waiting for Cloudflare release',attempt+1,flush=True)
+            try:
+              artist=page('/artists/cassie-ann-love/')
+              historic=page('/kits/ava-cassie-ann-love/')
+              named=page('/kits/leo-cassie-ann-love/')
+              prior=page('/kits/lennox-cassie-ann-love/')
+              if all('static.wixstatic.com/media/' in s for s in (artist,historic,named,prior)) and 'Ava' in historic:
+                print('PASS Cassie artist grid and historical/current kit pages serve named source photographs')
+                break
+              print('Still awaiting new source photos on Cloudflare',attempt+1,flush=True)
+            except Exception as exc:
+              print('Waiting for Cloudflare to publish historical kit routes',attempt+1,str(exc),flush=True)
             time.sleep(8)
           else:raise SystemExit('Cassie image manifest not yet visible on live Cloudflare')
           assert 'kit-photo-gallery' in historic,'Historical kit image gallery missing'
