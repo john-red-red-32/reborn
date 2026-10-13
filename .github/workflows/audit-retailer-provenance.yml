@@ -42,12 +42,15 @@ jobs:
           assert {a['slug'] for a in artists}=={k['artistSlug'] for k in kits}
           assert len({k['slug'] for k in kits})==48
           assert all(k['material']=='vinyl' for k in kits)
-          assert all(not k.get('photos') for k in kits)
+          for k in kits:
+              for photo in k.get('photos',[]):
+                  assert photo['source'].startswith('https://') and photo['url'].startswith('https://')
+                  assert photo['credit'],k['slug']
           assert all(k['sources'][0]['kind']=='retailer' for k in kits)
           assert all(k['statusChecked']=='2026-10-13' for k in kits)
           ping=[k for k in kits if k['artistSlug']=='ping-lau']
           assert len(ping)==12 and all(not k.get('photos') for k in ping)
-          print('PASS 6 sculptors, 48 seller-attributed originals; no presumed rights or live inventory',flush=True)
+          print('PASS 6 sculptors, 48 seller-attributed originals; only source-attributed photos, no live inventory',flush=True)
           hdr={'User-Agent':'Mozilla/5.0 (compatible; RebornaResearchAudit/1.0)','Accept':'text/html'}
           routes=[('/artists/'+a['slug']+'/',a['name']) for a in artists]
           routes += [('/kits/'+k['slug']+'/',k['name']) for k in kits]
