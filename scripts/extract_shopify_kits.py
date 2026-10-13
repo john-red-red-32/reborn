@@ -47,23 +47,42 @@ def permitted_json(url, host, robots):
         return json.loads(raw),hashlib.sha256(raw).hexdigest()
 
 def classification(product, artist_name="Nikki Johnston"):
+    """Conservative source candidacy: artist claims and kit sale must be distinct.
+
+    A retailer stocking an original third-party sculpt must not silently become
+    the credited sculptor on Reborna.
+    """
     title=str(product.get("title") or "")
     body=plaintext(product.get("body_html") or product.get("description") or "")
     tags=product.get("tags") or []
     if isinstance(tags,str):tags=[x.strip() for x in tags.split(",")]
-    words=" ".join([title,body,str(product.get("product_type") or "")," ".join(str(x) for x in tags)]).lower()
-    head=title.lower()
-    if re.search(r"\b(prototype|completed reborn|complete(d)? baby|reborn baby|ready[- ]to[- ]adopt|one.of.a.kind)\b",head):
+    words=" ".join([title,body,str(product.get("product_type") or "")," ".join(str(x) for x in tags)]).casefold()
+    head=title.casefold()
+    artist_token=re.escape(artist_name.casefold()).replace(r"\ ",r"\s+")
+    if re.search(r"\b(prototype|completed reborn|complete(d)? baby|reborn baby|ready[- ]to[- ]adopt|one.of.a.kind|painted and rooted)\b",head):
         return "finished_doll_excluded", "title_explicit_finished_doll"
-    if re.search(r"\b(gift card|tutorials?|online course|training|painting class|rooting class|(?:advanced|intermediate|beginners?)\s+rooting)\b",head):
+    if re.search(r"\b(gift card|tutorials?|online course|training|painting class|rooting class|(?:advanced|intermediate|beginners?)\s+rooting|drool drops|drink and wet system)\b",head):
         return "non_kit_excluded", "title_non_kit"
-    if re.search(r"\b(belly plate|body only|vinyl head only)\b",head):
+    if re.search(r"\b(belly plate|body only|vinyl head only|tongue|hands? only|feet only|limbs? only|cuddle head|silicone head)\b",head):
         return "component_excluded", "standalone_component"
-    artist_token = re.escape(artist_name.casefold()).replace(r"\ ",r"\s+")
-    if re.search(rf"\b(sculpted by|sculptor:)\s+(?!{artist_token}\b)",words):
+    by_name=re.search(r"\bby\s+([a-z][a-z.'-]+(?:\s+[a-z][a-z.'-]+){1,3})\s*$",head)
+    if by_name and not re.fullmatch(artist_token,by_name.group(1)):
+        return "needs_review", "other_sculptor_named_in_product_title"
+    # 'sculpted by me, Kristin Englert' is first-party evidence, not a third-party credit.
+    claimed_self=bool(re.search(rf"\bsculpted by me[,\s]+{artist_token}\b",words)
+                      or re.search(rf"\bsculptor:\s*{artist_token}\b",words)
+                      or (by_name and re.fullmatch(artist_token,by_name.group(1))))
+    if re.search(rf"\b(?:sculpted by|sculptor:)\s+(?!me\b|{artist_token}\b)",words):
         return "needs_review", "third_party_sculptor_mentioned"
-    if re.search(rf"\b(blank\s+(?:(?:vinyl|silicone|full.body silicone)\s+)?(doll\s+)?kit|buying the\s+blank|(?:vinyl|silicone) doll kit|reborn doll kit|blank unpainted (?:silicone|vinyl)|sculptor:\s*{artist_token})\b",words):
-        return "original_kit_candidate", "seller_explicit_blank_kit"
+    kit_evidence=bool(re.search(
+        r"\b(blank\s+(?:(?:vinyl|silicone|full.body silicone)\s+)?(?:doll\s+)?kit"
+        r"|buying the\s+blank|(?:vinyl|silicone) doll kit|reborn doll kit"
+        r"|blank[,\s-]+unpainted\s+kit|doll kit comes as a blank|blank doll kit only"
+        r"|blank unpainted (?:silicone|vinyl))\b",words))
+    if kit_evidence:
+        return "original_kit_candidate", "named_sculptor_and_blank_kit" if claimed_self else "seller_explicit_blank_kit_owner_needs_review"
+    if claimed_self:
+        return "needs_review", "sculptor_claim_without_explicit_blank_kit"
     return "needs_review", "insufficient_explicit_kit_evidence"
 
 def kit_facts(body):
