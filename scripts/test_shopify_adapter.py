@@ -11,6 +11,25 @@ class ShopifyKitTests(unittest.TestCase):
                 {"id":1,"title":"Without Belly Plate","option1":"Without","price":9900,"available":True},
                 {"id":2,"title":"With Belly Plate","option1":"With","price":11900,"available":True}],
             "images":["https://cdn.shopify.com/example.jpg"]}
+    def test_kristin_shop_third_party_artist_does_not_become_kristin_sculpt(self):
+        product=self.product("Jazz by Leticia Moreno",
+                             "This comes as a blank silicone doll kit sculpted by Leticia Moreno.")
+        row=parse_product(product,"https://siliconeartdolls.com/","hash","now",
+                          artist_name="Kristin Englert",currency="USD")
+        self.assertEqual(row["classification"],"needs_review")
+        self.assertEqual(row["classification_basis"],"other_sculptor_named_in_product_title")
+
+    def test_first_party_sculpted_by_me_attribution(self):
+        product=self.product("Ripley by Kristin Englert",
+                    "Ripley was sculpted by me, Kristin Englert. *Note this doll kit comes as a blank, unpainted kit.")
+        row=parse_product(product,"https://siliconeartdolls.com/","hash","now",
+                          artist_name="Kristin Englert",currency="USD")
+        self.assertEqual(row["classification"],"original_kit_candidate")
+
+    def test_silicone_parts_not_full_sculpt_kits(self):
+        product=self.product("Blank silicone pink tongue", "Silicone add on for baby dolls")
+        self.assertEqual(classification(product,"Kristin Englert")[0],"component_excluded")
+
     def test_other_artist_silicone_kit_is_candidate(self):
         product=self.product("Ripley - Blank Silicone Doll Kit",
             "Unpainted silicone doll kit. Sculptor: Kristin Englert.")
