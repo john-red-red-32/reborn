@@ -10,7 +10,7 @@ on:
       - 'scripts/build_cassie_image_evidence.py'
       - 'scripts/match_artist_catalogue.py'
       - 'scripts/test_match_artist_catalogue.py'
-      - 'config/artist-sources/**'
+      - 'config/artist-sources/cassie-ann-love.json'
       - 'scripts/site_platforms.py'
       - 'scripts/save_discovery_snapshot.py'
       - '.github/workflows/discover-artist.yml'
