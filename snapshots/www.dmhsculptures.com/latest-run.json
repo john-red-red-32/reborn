@@ -1,12 +1,12 @@
 {
-  "github_run_id": "38435179795",
+  "github_run_id": "38435551551",
   "source": "https://www.dmhsculptures.com/vinyl-kits",
   "paths": [
-    "runs/38435179795/source-discovery.json",
-    "runs/38435179795/extraction-candidates.json",
-    "runs/38435179795/wix-gallery-evidence.json",
-    "runs/38435179795/artist-identity-matches.json",
-    "runs/38435179795/wix-named-image-evidence.json",
-    "runs/38435179795/wix-store-products.json"
+    "runs/38435551551/source-discovery.json",
+    "runs/38435551551/extraction-candidates.json",
+    "runs/38435551551/wix-gallery-evidence.json",
+    "runs/38435551551/artist-identity-matches.json",
+    "runs/38435551551/wix-named-image-evidence.json",
+    "runs/38435551551/wix-store-products.json"
   ]
 }
