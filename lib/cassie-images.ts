@@ -1,5 +1,7 @@
 /** Editorial source-image manifest. Exact sculpt identities derived from the adjacent labels on the sculptor's own published catalogue, checked 2026-10-12. All images remain hosted by the original source; do not imply licensing or ownership. */
-export const cassieOfficialImages:Record<string,{url:string;source:string;credit:string}[]> = {
+import {cassieNamedVinylImages} from "./cassie-wix-images";
+type ArtistSculptPhoto={url:string;source:string;credit:string};
+const cassieEarlierSourcePhotos:Record<string,ArtistSculptPhoto[]> = {
   "Lennox": [
     {
       "url": "https://static.wixstatic.com/media/684b25_6f7248d4864d4544b4c7580f25974049~mv2.jpg",
@@ -202,3 +204,21 @@ export const cassieOfficialImages:Record<string,{url:string;source:string;credit
     }
   ]
 };
+
+/**
+ * Prefer the named original gallery card as the primary photograph. Retain
+ * previously sourced photos as additional angles and deduplicate Wix asset IDs,
+ * even if URLs use different resize transformations.
+ */
+export const cassieOfficialImages:Record<string,ArtistSculptPhoto[]> = Object.fromEntries(
+  [...new Set([...Object.keys(cassieNamedVinylImages),...Object.keys(cassieEarlierSourcePhotos)])].map(name=>{
+    const photos=[...(cassieNamedVinylImages[name]??[]),...(cassieEarlierSourcePhotos[name]??[])];
+    const ids=new Set<string>();
+    return [name,photos.filter(photo=>{
+      const identity=photo.url.match(/\/media\/([^/?]+)/)?.[1]??photo.url;
+      if(ids.has(identity))return false;
+      ids.add(identity);
+      return true;
+    })];
+  })
+);
