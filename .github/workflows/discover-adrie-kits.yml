@@ -1,0 +1,66 @@
+name: Discover Adrie Stoete official kits
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/discover-adrie-kits.yml'
+      - 'config/artist-sources/adrie-stoete.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 13
+    steps:
+      - uses: actions/checkout@v4
+      - name: Crawl Adrie official shop under robots policy
+        run: |
+          python3 scripts/discover_artist_site.py \
+            --url https://www.adriesdolls.com/xavi --max-pages 28 --delay 1.0 \
+            --out artifacts/source-discovery.json
+      - name: Extract any explicit structured records without attributing stock to Adrie
+        run: |
+          python3 scripts/extract_sculpt_candidates.py --input artifacts/source-discovery.json --out artifacts/extraction-candidates.json
+      - name: Print source evidence and guard against retailer-owned designs
+        run: |
+          python3 - <<'PY'
+          import json
+          a=json.load(open('artifacts/source-discovery.json'))
+          b=json.load(open('artifacts/extraction-candidates.json'))
+          print('Pages scanned:',a['pages_succeeded'],'platforms:',a['platforms'])
+          print('Errors:',a['errors'][:5])
+          print('Structured candidates:',b['candidate_count'])
+          print('First titles:',[(x['name'],x['source_url']) for x in b['candidates'][:15]])
+          print('Other sculptors represented in store; owner attribution requires per-product validation.')
+          PY
+      - name: Save research-only original-source evidence
+        env:
+          SOURCE_URL: https://www.adriesdolls.com/xavi
+          SOURCE_RUN_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          python3 scripts/save_discovery_snapshot.py --input-dir artifacts --output-dir /tmp/reborna-adrie --url "$SOURCE_URL" --run-id "$SOURCE_RUN_ID"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin scrape-results
+          git checkout -B scrape-results origin/scrape-results
+          cp -R /tmp/reborna-adrie/. snapshots/
+          git add snapshots
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive Adrie official shop discovery ${{ github.run_id }} [skip ci]"
+            for attempt in 1 2 3 4 5; do
+              if git push origin HEAD:scrape-results; then exit 0; fi
+              git fetch origin scrape-results
+              git rebase origin/scrape-results || { git rebase --abort; exit 1; }
+              sleep 2
+            done
+            exit 1
+          fi
+      - name: Keep result artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: adrie-source-research-${{ github.run_id }}
+          path: artifacts/*.json
+          retention-days: 30
