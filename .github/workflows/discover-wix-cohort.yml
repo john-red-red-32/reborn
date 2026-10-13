@@ -28,6 +28,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate discovery scripts
         run: |
+          python3 -m unittest discover -s scripts -p 'test_wix_named_images.py' -v
           python3 -m unittest discover -s scripts -p 'test_match_artist_catalogue.py' -v
           python3 -m compileall -q scripts
       - name: Explore robots-permitted original artist site pages
@@ -39,6 +40,19 @@ jobs:
         run: |
           python3 scripts/extract_sculpt_candidates.py \
             --input artifacts/source-discovery.json --out artifacts/extraction-candidates.json
+      - name: Extract original images from explicitly named Wix kit pages
+        run: |
+          if [ "${{ matrix.artist }}" = "bonnie-brown" ]; then
+            python3 scripts/extract_wix_named_images.py \
+              --input artifacts/source-discovery.json \
+              --collection /doll-kits:vinyl \
+              --out artifacts/wix-named-image-evidence.json
+          else
+            python3 scripts/extract_wix_named_images.py \
+              --input artifacts/source-discovery.json \
+              --collection /vinyl-kits:vinyl \
+              --out artifacts/wix-named-image-evidence.json
+          fi
       - name: Prepare browser for artist-owned Wix galleries
         run: |
           python3 -m pip install playwright==1.55.0
@@ -60,11 +74,13 @@ jobs:
           a=json.load(open('artifacts/source-discovery.json'))
           b=json.load(open('artifacts/extraction-candidates.json'))
           c=json.load(open('artifacts/wix-gallery-evidence.json'))
+          n=json.load(open('artifacts/wix-named-image-evidence.json'))
           print('Wix source:',a['source'])
           print('Pages scanned:',a['pages_succeeded'],'errors:',a['errors'][:5])
           print('Detected platforms:',a['platforms'])
           print('Structured product candidates:',b['candidate_count'])
           print('Named Wix cards:',c['kit_cards_found'])
+          print('Named artist-page source images:',n['kit_cards_found'])
           print('Other photos held for review:',c['unverified_gallery_photos_found'])
           print('Research only. No catalogue or images published.')
           PY
