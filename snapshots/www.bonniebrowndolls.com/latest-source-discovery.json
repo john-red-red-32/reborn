@@ -3,7 +3,7 @@
   "host": "www.bonniebrowndolls.com",
   "parser_version": "url-discovery-v2-platform-sitemaps",
   "started_from": "https://www.bonniebrowndolls.com/doll-kits",
-  "completed_at": "2026-10-13T16:30:47.495085+00:00",
+  "completed_at": "2026-10-13T16:34:41.673443+00:00",
   "page_limit": 18,
   "sitemap_discovered_urls": 17,
   "platforms": {
@@ -18,8 +18,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/doll-kits",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:17.569677+00:00",
-      "sha256_html": "36b74607fb2b46f26fe2d11a383bc3e44ebe1e86e2e916fe06ca0c15e15e4540",
+      "observed_at": "2026-10-13T16:34:22.849899+00:00",
+      "sha256_html": "99660fac0b6ade5831ba15a7a6c36775eab32d229cbabb74025ab0d175f32d8a",
       "title": "Vinyl Doll Canvas | bonnie-brown-dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -91,8 +91,8 @@
     {
       "url": "https://www.bonniebrowndolls.com",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:19.574699+00:00",
-      "sha256_html": "02a324b7024073b5df6238b1b1937a236d4fbf0813cd9bcce11a4feeef3064fc",
+      "observed_at": "2026-10-13T16:34:23.982522+00:00",
+      "sha256_html": "0ae4f6361bb1ff3c6a5e2713ffbf867ac4ea310e7f8c6faa99e07fdf83ab5672",
       "title": "The Bonnie Brown Collection",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -144,8 +144,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/aboutme",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:22.700566+00:00",
-      "sha256_html": "cde04b10f47297761ca510c2cf0318f8e7dab8c2a5952b4663875f22466be0ef",
+      "observed_at": "2026-10-13T16:34:25.139253+00:00",
+      "sha256_html": "9b89b48f071d3c26e362f96445dd2a5002ab74d3b5357bccb7759338e8136373",
       "title": "Portfolio | bonnie-brown-dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -197,8 +197,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/ellie-sue-gallery",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:24.427341+00:00",
-      "sha256_html": "bd80ecab72a37df80c503301a6995cc1091b30f10c7ff489f73cb39f3869c364",
+      "observed_at": "2026-10-13T16:34:26.270693+00:00",
+      "sha256_html": "c73026290e64e203201ca0b9669a14d280163565022bcea666070633eb6992f3",
       "title": "Ellie Sue Gallery | bonnie-brown-dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -234,8 +234,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/gallery",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:26.153789+00:00",
-      "sha256_html": "7ff3e5a6f906dac16627000ef2b7c0e18073b60c2830b295ad162bbb94e8d429",
+      "observed_at": "2026-10-13T16:34:27.391452+00:00",
+      "sha256_html": "b23842098cddbd2d217cfd19c403959ac32041c5f4f3be673a3ea95b571951d0",
       "title": "Gallery | bonnie-brown-dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -307,8 +307,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/grayson",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:27.867536+00:00",
-      "sha256_html": "0e72d1e0b2abd57fe09f8de52c37d4b000485a3da44caa7e2c7d5d87f5b6efb8",
+      "observed_at": "2026-10-13T16:34:28.538585+00:00",
+      "sha256_html": "80064f8c6d48dda9c896ac734046aa61852429ea0ec17b5a05de4801e32ac40f",
       "title": "GRAYSON | bonnie-brown-dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -380,8 +380,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/grayson-gallery",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:29.726771+00:00",
-      "sha256_html": "09100793a78a1262fcca8e53e27c2e1e00e1f441c36d66f2b4bfae7e32ad8cf2",
+      "observed_at": "2026-10-13T16:34:29.655877+00:00",
+      "sha256_html": "f1b0fce12d367fa4f0fcdd971e6f4eb29ca50f76e674e8111c16d15179e1e453",
       "title": "Grayson Gallery | bonnie-brown-dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -417,8 +417,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/kits-coming-soon",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:31.407142+00:00",
-      "sha256_html": "48f7a2c864e8e5a284717f70b230331af3bd1a05d2f4ddb37b6c887a67eff77e",
+      "observed_at": "2026-10-13T16:34:30.745752+00:00",
+      "sha256_html": "2e6f36fa290fe9be069653e1a996b7f29a460c00db38dd5e1ded9ee9c1f1204b",
       "title": "Coming Soon | bonnie-brown-dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -465,8 +465,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/levi-gallery",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:33.428395+00:00",
-      "sha256_html": "37daefdae04131ce8121bb7f3ec6465f68b0431e4b7510691769599b9995044d",
+      "observed_at": "2026-10-13T16:34:31.831192+00:00",
+      "sha256_html": "958e634b3825d9b01f307311b3d468b007d719a18e568273eccd181ce16ca7ee",
       "title": "Levi Gallery | bonnie-brown-dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -502,8 +502,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/mailing-list",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:35.446438+00:00",
-      "sha256_html": "8a0ffee4b6db4548d76a7e1e4f82ae7b80e70ebaedc131cf789c0412ec88a97e",
+      "observed_at": "2026-10-13T16:34:32.927324+00:00",
+      "sha256_html": "8d61dd169ea834d31ba4475da05ffe88e2bc51aa9bfebeb2e907ed828838c3b1",
       "title": "Mailing list | bonnie-brown-dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -539,8 +539,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/past-work",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:37.130757+00:00",
-      "sha256_html": "cce43f836127798fd1a7736686787cc5995f99bdd59d176fa824b2dbd14d8462",
+      "observed_at": "2026-10-13T16:34:34.031607+00:00",
+      "sha256_html": "c6c2f012616f1c56dec605cf81c2236fb6a188232212b46b62a4065a17103e92",
       "title": "Past Work | bonnie-brown-dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -582,8 +582,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/shops-international",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:38.261600+00:00",
-      "sha256_html": "b5d50ec47f89813579650103e4048690e8c521caf7de72c4f67b70427c544379",
+      "observed_at": "2026-10-13T16:34:35.157046+00:00",
+      "sha256_html": "77203edc1364a9a8fa0e08cf9028ea34ea2ad9ad8305de050bea6153d1404bb6",
       "title": "Shops - International | bonnie-brown-dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -625,8 +625,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/silicone-dolls",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:39.842748+00:00",
-      "sha256_html": "77d36aaa2c90947e129d38464274e8a76b94923ac4a0cc9cd843b5066f66b115",
+      "observed_at": "2026-10-13T16:34:36.263876+00:00",
+      "sha256_html": "7f0f3e824a2d3db80d8b6fadb03687201762c60e676514e99cd1c9c80997758b",
       "title": "Silicone Dolls | bonnie-brown-dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -713,8 +713,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/silicone-kits",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:41.645057+00:00",
-      "sha256_html": "2bc422bdfc9229479c561bb41dd705dd59b7141f9f4cbff50a2185aaf808ae3f",
+      "observed_at": "2026-10-13T16:34:37.383734+00:00",
+      "sha256_html": "20a049104886e0253090a7562688e5253e11f6001475bd78afd5d57c526029d1",
       "title": "Silicone kits",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -769,8 +769,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/twin-a-gallery",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:43.304113+00:00",
-      "sha256_html": "180bfb802096519dcdc859cb67023d623d2c6d54bd4dcdcbc1a4122ee4fb3264",
+      "observed_at": "2026-10-13T16:34:38.476889+00:00",
+      "sha256_html": "1f44ae23c363520920fa2a083bad79612bd4df1cf250b8d14ad25bf82a3710eb",
       "title": "Twin A Gallery | bonnie-brown-dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -806,8 +806,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/twin-b-gallery",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:44.496509+00:00",
-      "sha256_html": "c1d86d79bcf21d2b068eb93075238ea9787e2b4f290e505d245817c5c7acda1d",
+      "observed_at": "2026-10-13T16:34:39.572512+00:00",
+      "sha256_html": "4afb986c26369c67f9c61350822d3080ce5168467a85d019aa1efc2e80088ae8",
       "title": "Twin B Gallery | bonnie-brown-dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -843,8 +843,8 @@
     {
       "url": "https://www.bonniebrowndolls.com/wip",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:30:46.494628+00:00",
-      "sha256_html": "bdd40a9186ecae3cd74882dfed59a787e22b1cefa589346f8263e46542443fa2",
+      "observed_at": "2026-10-13T16:34:40.672937+00:00",
+      "sha256_html": "79b11664658cf2e27baabbdc26537f7ef63888b699ea1c5c571be09ec09d85d5",
       "title": "W.I.P | bonnie-brown-dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
