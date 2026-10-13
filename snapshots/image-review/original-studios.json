@@ -1,0 +1,172 @@
+{
+  "adapter": "original-source-image-review-v1",
+  "scan_at": "2026-10-13T23:37:56.085805+00:00",
+  "artists": [
+    "dawn-donofrio",
+    "laura-tuzio-ross",
+    "philomena-donnelly"
+  ],
+  "total": 20,
+  "records": [
+    {
+      "slug": "danica-dawn-donofrio",
+      "name": "Danica",
+      "artist_slug": "dawn-donofrio",
+      "primary_source": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/danica-blank-partial-silicone-5-piece-doll-kit/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "emerson-dawn-donofrio",
+      "name": "Emerson",
+      "artist_slug": "dawn-donofrio",
+      "primary_source": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/emerson-full-body-silicone-blank-doll-kit/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "emma-dawn-donofrio",
+      "name": "Emma",
+      "artist_slug": "dawn-donofrio",
+      "primary_source": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/emma-full-body-silicone-blank-doll-kit/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "journey-dawn-donofrio",
+      "name": "Journey",
+      "artist_slug": "dawn-donofrio",
+      "primary_source": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/journey-blank-full-body-silicone-doll-kit/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "remi-dawn-donofrio",
+      "name": "Remi",
+      "artist_slug": "dawn-donofrio",
+      "primary_source": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/remi-blank-full-body-silicone-doll-kit/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "river-awake-dawn-donofrio",
+      "name": "River Awake",
+      "artist_slug": "dawn-donofrio",
+      "primary_source": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/river-awake-blank-full-body-silicone-doll-kit/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "river-sleeping-dawn-donofrio",
+      "name": "River Sleeping",
+      "artist_slug": "dawn-donofrio",
+      "primary_source": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/limited-time-offer-river-sleeping-blank-full-body-silicone-doll-kit/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "tatum-dawn-donofrio",
+      "name": "Tatum",
+      "artist_slug": "dawn-donofrio",
+      "primary_source": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/tatum-blank-full-body-silicone-doll-kit/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "aspen-dawn-donofrio",
+      "name": "Aspen",
+      "artist_slug": "dawn-donofrio",
+      "primary_source": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/aspen-blank-full-body-silicone-doll-kit-copy/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "zahli-laura-tuzio-ross",
+      "name": "Zahli",
+      "artist_slug": "laura-tuzio-ross",
+      "primary_source": "https://www.myworldofbabies.com/shop/vinyl-reborn-doll-kits/zahli-blank-vinyl-kit/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "cameron-laura-tuzio-ross",
+      "name": "Cameron",
+      "artist_slug": "laura-tuzio-ross",
+      "primary_source": "https://www.myworldofbabies.com/shop/vinyl-reborn-doll-kits/cameron/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "lil-jude-laura-tuzio-ross",
+      "name": "Lil Jude",
+      "artist_slug": "laura-tuzio-ross",
+      "primary_source": "https://www.myworldofbabies.com/shop/vinyl-reborn-doll-kits/lil-jude-blank-vinyl-kit/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "kodi-bear-laura-tuzio-ross",
+      "name": "Kodi Bear",
+      "artist_slug": "laura-tuzio-ross",
+      "primary_source": "https://www.myworldofbabies.com/shop/vinyl-reborn-doll-kits/kodi-bear/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "lyssi-laura-tuzio-ross",
+      "name": "Lyssi",
+      "artist_slug": "laura-tuzio-ross",
+      "primary_source": "https://www.myworldofbabies.com/shop/vinyl-reborn-doll-kits/lyssi-vinyl-reborn-kit/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "winter-laura-tuzio-ross",
+      "name": "Winter",
+      "artist_slug": "laura-tuzio-ross",
+      "primary_source": "https://www.myworldofbabies.com/shop/vinyl-reborn-doll-kits/winter-vinyl-reborn-kit/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "teddy-philomena-donnelly",
+      "name": "Teddy",
+      "artist_slug": "philomena-donnelly",
+      "primary_source": "https://www.phildonnellybabies.co.uk/product-page/teddy-donnelly",
+      "matched": [],
+      "reason": "robots_fetch_error_URLError"
+    },
+    {
+      "slug": "ellis-philomena-donnelly",
+      "name": "Ellis",
+      "artist_slug": "philomena-donnelly",
+      "primary_source": "https://www.phildonnellybabies.co.uk/reborndollkits",
+      "matched": [],
+      "reason": "robots_fetch_error_URLError"
+    },
+    {
+      "slug": "quinn-philomena-donnelly",
+      "name": "Quinn",
+      "artist_slug": "philomena-donnelly",
+      "primary_source": "https://www.phildonnellybabies.co.uk/reborndollkits",
+      "matched": [],
+      "reason": "robots_fetch_error_URLError"
+    },
+    {
+      "slug": "kitty-philomena-donnelly",
+      "name": "Kitty",
+      "artist_slug": "philomena-donnelly",
+      "primary_source": "https://www.phildonnellybabies.co.uk/reborndollkits",
+      "matched": [],
+      "reason": "robots_fetch_error_URLError"
+    },
+    {
+      "slug": "lil-cry-philomena-donnelly",
+      "name": "Lil' Cry",
+      "artist_slug": "philomena-donnelly",
+      "primary_source": "https://www.phildonnellybabies.co.uk/reborndollkits",
+      "matched": [],
+      "reason": "robots_fetch_error_URLError"
+    }
+  ]
+}
