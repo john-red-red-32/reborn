@@ -1,0 +1,14 @@
+{
+  "extractor_version": "candidate-extractor-v3-preorder-evidence",
+  "source": "https://www.adriesdolls.com/xavi",
+  "scan_completed_at": "2026-10-13T19:50:47.599432+00:00",
+  "scan_complete": false,
+  "pages_succeeded": 28,
+  "candidate_count": 0,
+  "candidates": [],
+  "warnings": [
+    "A crawl can be complete for visible HTML links without covering JavaScript galleries or historical kits.",
+    "Product data are seller claims pending validation; no automatic publication.",
+    "Images are references, not licensed replicas; no download occurs."
+  ]
+}
