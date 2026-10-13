@@ -1,0 +1,165 @@
+{
+  "adapter": "original-source-image-review-v1",
+  "scan_at": "2026-10-13T23:37:57.573904+00:00",
+  "artists": [
+    "alejandra-de-zuniga",
+    "gudrun-legler",
+    "sabine-altenkirch-junkes",
+    "severine-piret"
+  ],
+  "total": 19,
+  "records": [
+    {
+      "slug": "neikie-sabine-altenkirch-junkes",
+      "name": "Neikie",
+      "artist_slug": "sabine-altenkirch-junkes",
+      "primary_source": "https://www.sabine-altenkirch.com/startseite-home/shop/neikie/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "leo-sabine-altenkirch-junkes",
+      "name": "Leo",
+      "artist_slug": "sabine-altenkirch-junkes",
+      "primary_source": "https://www.sabine-altenkirch.com/startseite-home/shop/leo-ausverkauft/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "lillegroda-sabine-altenkirch-junkes",
+      "name": "Lillegroda",
+      "artist_slug": "sabine-altenkirch-junkes",
+      "primary_source": "https://www.sabine-altenkirch.com/startseite-home/shop/lillegroda/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "sam-gudrun-legler",
+      "name": "Sam",
+      "artist_slug": "gudrun-legler",
+      "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/sam-bundleset/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "mila-gudrun-legler",
+      "name": "Mila",
+      "artist_slug": "gudrun-legler",
+      "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-bundleset-mila/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "kai-gudrun-legler",
+      "name": "Kai",
+      "artist_slug": "gudrun-legler",
+      "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-kai/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "ana-gudrun-legler",
+      "name": "Ana",
+      "artist_slug": "gudrun-legler",
+      "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-ana/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "romy-gudrun-legler",
+      "name": "Romy",
+      "artist_slug": "gudrun-legler",
+      "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/romy-bundleset/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "mattia-gudrun-legler",
+      "name": "Mattia",
+      "artist_slug": "gudrun-legler",
+      "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-mattia/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "felicia-gudrun-legler",
+      "name": "Felicia",
+      "artist_slug": "gudrun-legler",
+      "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-felicia/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "tony-gudrun-legler",
+      "name": "Tony",
+      "artist_slug": "gudrun-legler",
+      "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-tony/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "tayra-gudrun-legler",
+      "name": "Tayra",
+      "artist_slug": "gudrun-legler",
+      "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-tayra/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "aleyna-gudrun-legler",
+      "name": "Aleyna",
+      "artist_slug": "gudrun-legler",
+      "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-aleyna/",
+      "matched": [],
+      "reason": "robots_disallow_all"
+    },
+    {
+      "slug": "elena-alejandra-de-zuniga",
+      "name": "Elena",
+      "artist_slug": "alejandra-de-zuniga",
+      "primary_source": "https://alejandradezuniga.com/preorder/",
+      "matched": [],
+      "reason": "page_not_exact_named_product"
+    },
+    {
+      "slug": "talula-severine-piret",
+      "name": "Talula",
+      "artist_slug": "severine-piret",
+      "primary_source": "https://www.severinepiret.com/product/16955321/vinyl-kits",
+      "matched": [],
+      "reason": "robots_unknown_or_unavailable"
+    },
+    {
+      "slug": "rafael-severine-piret",
+      "name": "Rafael",
+      "artist_slug": "severine-piret",
+      "primary_source": "https://www.severinepiret.com/product/16955321/vinyl-kits",
+      "matched": [],
+      "reason": "robots_unknown_or_unavailable"
+    },
+    {
+      "slug": "lou-severine-piret",
+      "name": "Lou",
+      "artist_slug": "severine-piret",
+      "primary_source": "https://www.severinepiret.com/product/16955321/vinyl-kits",
+      "matched": [],
+      "reason": "robots_unknown_or_unavailable"
+    },
+    {
+      "slug": "kiki-severine-piret",
+      "name": "Kiki",
+      "artist_slug": "severine-piret",
+      "primary_source": "https://www.severinepiret.com/product/16955321/vinyl-kits",
+      "matched": [],
+      "reason": "robots_unknown_or_unavailable"
+    },
+    {
+      "slug": "pebbles-severine-piret",
+      "name": "Pebbles",
+      "artist_slug": "severine-piret",
+      "primary_source": "https://www.severinepiret.com/product/16955321/vinyl-kits",
+      "matched": [],
+      "reason": "robots_unknown_or_unavailable"
+    }
+  ]
+}
