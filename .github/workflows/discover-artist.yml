@@ -7,6 +7,7 @@ on:
       - 'scripts/extract_sculpt_candidates.py'
       - 'scripts/extract_wix_galleries.py'
       - 'scripts/reconcile_wix_archive.py'
+      - 'scripts/build_cassie_image_evidence.py'
       - 'scripts/match_artist_catalogue.py'
       - 'scripts/test_match_artist_catalogue.py'
       - 'config/artist-sources/**'
@@ -73,6 +74,12 @@ jobs:
             --gallery artifacts/wix-gallery-evidence.json \
             --archive lib/cassie-profile.ts \
             --out artifacts/wix-archive-reconciliation.json
+      - name: Safely link source-named Wix kit photo evidence
+        run: |
+          python3 scripts/build_cassie_image_evidence.py \
+            --gallery artifacts/wix-gallery-evidence.json \
+            --archive lib/cassie-profile.ts \
+            --out artifacts/cassie-source-images.json
       - name: Reconcile artist-scoped kit identities
         run: |
           python3 scripts/match_artist_catalogue.py \
@@ -116,6 +123,7 @@ jobs:
             artifacts/extraction-candidates.json
             artifacts/wix-gallery-evidence.json
             artifacts/wix-archive-reconciliation.json
+            artifacts/cassie-source-images.json
             artifacts/artist-identity-matches.json
           retention-days: 30
           if-no-files-found: warn
