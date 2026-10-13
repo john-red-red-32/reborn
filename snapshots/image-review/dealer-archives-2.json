@@ -1,0 +1,611 @@
+{
+  "adapter": "original-source-image-review-v1",
+  "scan_at": "2026-10-13T23:38:28.511695+00:00",
+  "artists": [
+    "laura-lee-eagles",
+    "ping-lau"
+  ],
+  "total": 23,
+  "records": [
+    {
+      "slug": "baby-george-ping-lau",
+      "name": "Baby George",
+      "artist_slug": "ping-lau",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Baby-George-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Baby-George-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Baby-George-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "candy-ping-lau",
+      "name": "Candy",
+      "artist_slug": "ping-lau",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Candy-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Candy-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Candy-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "josie-awake-ping-lau",
+      "name": "Josie Awake",
+      "artist_slug": "ping-lau",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Josie-Awake-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Josie-Awake-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Josie-Awake-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "josie-ping-lau",
+      "name": "Josie",
+      "artist_slug": "ping-lau",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Josie-Awake-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Josie-Awake-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Josie-Awake-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "lovelyn-asleep-ping-lau",
+      "name": "Lovelyn Asleep",
+      "artist_slug": "ping-lau",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Lovelyn-Asleep-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Lovelyn-Asleep-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Lovelyn-Asleep-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "lovelyn-awake-ping-lau",
+      "name": "Lovelyn Awake",
+      "artist_slug": "ping-lau",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Lovelyn-Awake-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Lovelyn-Awake-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Lovelyn-Awake-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "luca-ping-lau",
+      "name": "Luca",
+      "artist_slug": "ping-lau",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Luca-by-Ping-Lau-1002.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Luca-by-Ping-Lau-1002.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Luca-by-Ping-Lau-1002.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "minnie-ping-lau",
+      "name": "Minnie",
+      "artist_slug": "ping-lau",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Minnie-by-Ping-Lau-002-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Minnie-by-Ping-Lau-002-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Minnie-by-Ping-Lau-002-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "raven-ping-lau",
+      "name": "Raven",
+      "artist_slug": "ping-lau",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Raven-by-Ping-Lau-10026.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Raven-by-Ping-Lau-10026.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Raven-by-Ping-Lau-10026.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "soledad-ping-lau",
+      "name": "Soledad",
+      "artist_slug": "ping-lau",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Soledad-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Soledad-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Soledad-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "sugar-ping-lau",
+      "name": "Sugar",
+      "artist_slug": "ping-lau",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Sugar-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Sugar-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Sugar-by-Ping-Lau-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "tori-ping-lau",
+      "name": "Tori",
+      "artist_slug": "ping-lau",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Tori-by-Ping-Lau-10013.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Tori-by-Ping-Lau-10013.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Tori-by-Ping-Lau-10013.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+          "basis": "name_matched_retailer_card",
+          "credit": "Ping Lau — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "amelia-laura-lee-eagles",
+      "name": "Amelia",
+      "artist_slug": "laura-lee-eagles",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Amelia-by-Laura-Lee-Eagles-LE-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Amelia-by-Laura-Lee-Eagles-LE-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Amelia-by-Laura-Lee-Eagles-LE-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "americus-laura-lee-eagles",
+      "name": "Americus",
+      "artist_slug": "laura-lee-eagles",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Americus-by-Laura-Lee-Eagles-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Americus-by-Laura-Lee-Eagles-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Americus-by-Laura-Lee-Eagles-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "ashia-laura-lee-eagles",
+      "name": "Ashia",
+      "artist_slug": "laura-lee-eagles",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Ashia-by-Laura-Lee-Eagles-004-k.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Ashia-by-Laura-Lee-Eagles-004-k.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Ashia-by-Laura-Lee-Eagles-004-k.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "atticus-laura-lee-eagles",
+      "name": "Atticus",
+      "artist_slug": "laura-lee-eagles",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Atticus-by-Laura-Lee-Eagles-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Atticus-by-Laura-Lee-Eagles-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Atticus-by-Laura-Lee-Eagles-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "aurora-sky-laura-lee-eagles",
+      "name": "Aurora-Sky",
+      "artist_slug": "laura-lee-eagles",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Aurora-Sky-by-Laura-Lee-Eagles-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Aurora-Sky-by-Laura-Lee-Eagles-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Aurora-Sky-by-Laura-Lee-Eagles-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "baby-birdie-laura-lee-eagles",
+      "name": "Baby Birdie",
+      "artist_slug": "laura-lee-eagles",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Baby-Birdie-by-Laura-Lee-Eagles-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Baby-Birdie-by-Laura-Lee-Eagles-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Baby-Birdie-by-Laura-Lee-Eagles-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "charlotte-laura-lee-eagles",
+      "name": "Charlotte",
+      "artist_slug": "laura-lee-eagles",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Charlotte-by-Laura-Lee-Eagles-001b.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Charlotte-by-Laura-Lee-Eagles-001b.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Charlotte-by-Laura-Lee-Eagles-001b.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "gertie-laura-lee-eagles",
+      "name": "Gertie",
+      "artist_slug": "laura-lee-eagles",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Gertie-by-Laura-Lee-Eagles--1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Gertie-by-Laura-Lee-Eagles--1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Gertie-by-Laura-Lee-Eagles--1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "harmony-laura-lee-eagles",
+      "name": "Harmony",
+      "artist_slug": "laura-lee-eagles",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Harmony-by-Laura-Lee-Eagles-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Harmony-by-Laura-Lee-Eagles-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Harmony-by-Laura-Lee-Eagles-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    },
+    {
+      "slug": "max-laura-lee-eagles",
+      "artist_slug": "laura-lee-eagles",
+      "matched": [],
+      "reason": "AttributeError"
+    },
+    {
+      "slug": "knox-laura-lee-eagles",
+      "name": "Knox",
+      "artist_slug": "laura-lee-eagles",
+      "primary_source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Knox-by-Laura-Lee-Eagles-LE-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Knox-by-Laura-Lee-Eagles-LE-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Knox-by-Laura-Lee-Eagles-LE-1001.jpg",
+          "source": "https://macphersoncrafts.com/online-store/manufacturer/laura-lee-eagles",
+          "basis": "name_matched_retailer_card",
+          "credit": "Laura Lee Eagles — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
+    }
+  ]
+}
