@@ -4,9 +4,9 @@ import type {VerifiedKit} from "../lib/real-catalogue";
 
 type Photo=NonNullable<VerifiedKit["photos"]>[number];
 /** Photos are Shopify/artist-source examples; they do not imply a finished doll is sold. */
-export default function KitPhotoGallery({kitName,photos}:{kitName:string;photos:Photo[]}){
+export default function KitPhotoGallery({kitName,photos,sourceUrl}:{kitName:string;photos:Photo[];sourceUrl?:string}){
  const [selected,setSelected]=useState(0);
- if(!photos.length)return <div className="detail-visual"><div className="detail-monogram">{kitName.charAt(0)}</div><small>PHOTOGRAPH NOT YET SOURCED</small></div>;
+ if(!photos.length)return <div className="kit-awaiting-artwork"><div className="kit-awaiting-artwork-inner"><span className="kit-awaiting-kicker">ORIGINAL SCULPT · SOURCE DOCUMENTED</span><div className="kit-awaiting-initial" aria-hidden="true">{kitName.charAt(0)}</div><strong>{kitName}</strong><p>Photograph awaiting identity and usage-rights review.</p>{sourceUrl&&<a href={sourceUrl} target="_blank" rel="noopener noreferrer">View original sculpt source ↗</a>}</div></div>;
  const active=photos[Math.min(selected,photos.length-1)];
  return <div className="kit-photo-gallery">
    <figure className="kit-main-photo">
