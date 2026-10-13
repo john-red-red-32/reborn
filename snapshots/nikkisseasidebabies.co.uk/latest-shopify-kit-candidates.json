@@ -1,7 +1,7 @@
 {
-  "adapter": "shopify-original-kit-v1",
+  "adapter": "shopify-original-kit-v2-artist-scoped",
   "source": "https://nikkisseasidebabies.co.uk/",
-  "observed_at": "2026-10-13T09:35:51.123380+00:00",
+  "observed_at": "2026-10-13T16:03:56.553155+00:00",
   "platform_detected": {
     "shopify": 12
   },
@@ -10,10 +10,10 @@
       "shopify_product_id": "15808873726112",
       "handle": "prototype-lola-complete-baby-reborn-by-nikki-johnston-sculpted-by-beatriz-clemente",
       "source_url": "https://nikkisseasidebabies.co.uk/products/prototype-lola-complete-baby-reborn-by-nikki-johnston-sculpted-by-beatriz-clemente",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "PROTOTYPE Lola - Reborn by Nikki Johnston, Sculpted by Beatriz Clemente",
-      "sculpt_name_candidate": "PROTOTYPE Lola - Reborn by Nikki Johnston, Sculpted by Beatriz Clemente",
+      "sculpt_name_candidate": "PROTOTYPE Lola - Reborn, Sculpted by Beatriz Clemente",
       "sculpt_name_basis": "retailer_title_review",
       "source_product_type": "",
       "classification": "finished_doll_excluded",
@@ -30,6 +30,8 @@
         "belly_plate_offered": false,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -409,14 +411,14 @@
       "shopify_product_id": "15668445085856",
       "handle": "christopher-in-stock-copy",
       "source_url": "https://nikkisseasidebabies.co.uk/products/christopher-in-stock-copy",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "NEW - Mabel - Pre Order",
       "sculpt_name_candidate": "Mabel",
       "sculpt_name_basis": "artist_kit_spec",
       "source_product_type": "",
-      "classification": "original_kit_candidate",
-      "classification_basis": "seller_explicit_blank_kit",
+      "classification": "needs_review",
+      "classification_basis": "third_party_sculptor_mentioned",
       "description": "................................................................................................... ♥️ PRE ORDER BLANK VINYL MABEL KIT - DUE IN STOCK NOVEMBER 2026 ♥️ ................................................................................................... I do ship worldwide, however you can find a dealer near you HERE .................................................. ✨If you order directly from me, you will receive a special box opening experience, including a signed body and a personalised blanket lovey ✨ .................................................. I'm so excited to introduce you to little Mabel. She has been almost 2 years in the making... but oh so worth the wait ❤️ With her soft pouty lip, and relaxed arms, she captures the quiet stillness of a peacefully sleeping newborn, or even the serenity of a milk-drunk moment. 🥰 Mabel will measure approx 18/19\" with full limbs. I have designed her with a special custom body that gives her the sweetest little rounded belly, as if she has just had a full feed. There will also be the option to add a belly plate at the pre-order. We should start seeing the prototype photos in mid June, with the pre-orders opening not long after. She will be a limited edition, so be sure to mark your calendars so you don't miss out!! ......................... You are buying the BLANK doll kit only. Photos of prototypes are examples only. ......................... Kit Spec Name : Mabel Sculptor: Nikki Johnston Kit length: Approx 19/20” (bent legs) Limb length: Full arms & legs Head circumference: TBD Custom Cloth Body: Included & signed Belly Plate: Optional extra (GBP £15) COA: Included Vinyl: JoyDolls Edition size: 2500 Kit price: £99 *Strictly Limited Edition * ......................... PLEASE NOTE I DO NOT ACCEPT RETURNS OR CANCELLATIONS FOR CHANGE OF MIND OR OTHER SIMILAR REASONS. RETURNS ARE ONLY ACCEPTED AND REFUNDS GIVEN IF THE IS AN EXTREME FAULT WHEN YOU RECEIVE THE KIT. THANK YOU FOR YOUR UNDERSTANDING. BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MAY CARRY. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM COLUMBIA, BRAZIL, ARGENTINA, MIDDLE EAST AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
       "published_kit_facts": {
         "published_kit_length": "Approx 19/20” (bent legs)",
@@ -429,6 +431,8 @@
         "belly_plate_offered": true,
         "belly_plate_addon_price_gbp": 15.0
       },
+      "sculpt_material_candidate": "vinyl",
+      "material_review_required": false,
       "currency": "GBP",
       "variants": [
         {
@@ -826,10 +830,10 @@
       "shopify_product_id": "15193550913696",
       "handle": "prototype-wes-sculpted-by-mitre-kooi",
       "source_url": "https://nikkisseasidebabies.co.uk/products/prototype-wes-sculpted-by-mitre-kooi",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "PROTOTYPE Wes Reborn by Nikki Johnston - Sculpted by Mitre Kooi",
-      "sculpt_name_candidate": "PROTOTYPE Wes Reborn by Nikki Johnston - Sculpted by Mitre Kooi",
+      "sculpt_name_candidate": "PROTOTYPE Wes Reborn - Sculpted by Mitre Kooi",
       "sculpt_name_basis": "retailer_title_review",
       "source_product_type": "",
       "classification": "finished_doll_excluded",
@@ -846,6 +850,8 @@
         "belly_plate_offered": false,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -1230,10 +1236,10 @@
       "shopify_product_id": "15193549701280",
       "handle": "prototype-elsie-sculpted-by-mirte-kooi",
       "source_url": "https://nikkisseasidebabies.co.uk/products/prototype-elsie-sculpted-by-mirte-kooi",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "PROTOTYPE Elsie Reborn by Nikki Johnston - Sculpted by Mirte Kooi",
-      "sculpt_name_candidate": "PROTOTYPE Elsie Reborn by Nikki Johnston - Sculpted by Mirte Kooi",
+      "sculpt_name_candidate": "PROTOTYPE Elsie Reborn - Sculpted by Mirte Kooi",
       "sculpt_name_basis": "retailer_title_review",
       "source_product_type": "",
       "classification": "finished_doll_excluded",
@@ -1250,6 +1256,8 @@
         "belly_plate_offered": false,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -1634,10 +1642,10 @@
       "shopify_product_id": "15049931915424",
       "handle": "prototype-farrah-reborn-by-nikki-johnston",
       "source_url": "https://nikkisseasidebabies.co.uk/products/prototype-farrah-reborn-by-nikki-johnston",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "PROTOTYPE Farrah - Complete Baby Reborn by Nikki Johnston, Sculpted by Ebtehal Abul",
-      "sculpt_name_candidate": "PROTOTYPE Farrah - Complete Baby Reborn by Nikki Johnston, Sculpted by Ebtehal Abul",
+      "sculpt_name_candidate": "PROTOTYPE Farrah - Complete Baby Reborn, Sculpted by Ebtehal Abul",
       "sculpt_name_basis": "retailer_title_review",
       "source_product_type": "",
       "classification": "finished_doll_excluded",
@@ -1654,6 +1662,8 @@
         "belly_plate_offered": false,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -1969,14 +1979,14 @@
       "shopify_product_id": "15049904357536",
       "handle": "christopher-pre-order-may-2025",
       "source_url": "https://nikkisseasidebabies.co.uk/products/christopher-pre-order-may-2025",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Christopher - IN STOCK",
       "sculpt_name_candidate": "Christopher",
       "sculpt_name_basis": "artist_kit_spec",
       "source_product_type": "",
-      "classification": "original_kit_candidate",
-      "classification_basis": "seller_explicit_blank_kit",
+      "classification": "needs_review",
+      "classification_basis": "third_party_sculptor_mentioned",
       "description": "♥️ IN STOCK ♥️ I do ship worldwide, however you can find a dealer near you HERE If you order directly from me, you will receive a special box opening experience, including a signed body and a personalised blanket lovey ♥️ \" I’m am so excited to introduce you to little Christopher !! Little Christopher has been almost 6 years in the making!! But oh so worth the wait ❤️ His little pouty lips, and scrunchy little legs make him seem like he's just settling from a big stretch. He also has the perfect newborn scrunch when lifted. Completely melts my heart! 🥰 He has full limbs, and will be approx 19/20\". I have created him a special custom body that gives him that perfect little belly that looks like it's full of milk. He will also have an optional belly plate that you can add to your pre-order We should start seeing the prototype pictures late May, with the pre order not long after. Mark your calendar's so you don't miss out on this little cutie!! I have fallen completely head over heels in love with him, and I hope you will too! 🥰 You are buying the BLANK doll kit only. Photos of prototypes are examples only. Kit Spec Name : Christopher Sculptor: Nikki Johnston Kit length: Approx 19/20” (bent legs) Limb length: Full arms & legs Head circumference: 12.5” Custom Cloth Body: Included & signed Belly Plate: Optional extra COA: Included Vinyl: JoyDolls Edition size: 3500 BLANK VINYL KIT ONLY *Strictly Limited Edition * PLEASE NOTE I DO NOT ACCEPT RETURNS OR CANCELLATIONS FOR CHANGE OF MIND OR OTHER SIMILAR REASONS. RETURNS ARE ONLY ACCEPTED AND REFUNDS GIVEN IF THE IS AN EXTREME FAULT WHEN YOU RECEIVE THE KIT. THANK YOU FOR YOUR UNDERSTANDING. BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MAY CARRY. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM COLUMBIA, BRAZIL, ARGENTINA, MIDDLE EAST AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
       "published_kit_facts": {
         "published_kit_length": "Approx 19/20” (bent legs)",
@@ -1989,6 +1999,8 @@
         "belly_plate_offered": true,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": "vinyl",
+      "material_review_required": false,
       "currency": "GBP",
       "variants": [
         {
@@ -2384,8 +2396,8 @@
       "shopify_product_id": "13600336380064",
       "handle": "reborn-kovu",
       "source_url": "https://nikkisseasidebabies.co.uk/products/reborn-kovu",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Reborn Baby Kovu",
       "sculpt_name_candidate": "Reborn Baby Kovu",
       "sculpt_name_basis": "retailer_title_review",
@@ -2404,6 +2416,8 @@
         "belly_plate_offered": false,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -2454,8 +2468,8 @@
       "shopify_product_id": "13600332382368",
       "handle": "reborn-baby-luciano",
       "source_url": "https://nikkisseasidebabies.co.uk/products/reborn-baby-luciano",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Reborn Baby Luciano",
       "sculpt_name_candidate": "Reborn Baby Luciano",
       "sculpt_name_basis": "retailer_title_review",
@@ -2474,6 +2488,8 @@
         "belly_plate_offered": false,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -2524,10 +2540,10 @@
       "shopify_product_id": "12529735598240",
       "handle": "prototype-winnie-complete-baby-reborn-by-nikki-johnston-sculpted-by-cassie-brace",
       "source_url": "https://nikkisseasidebabies.co.uk/products/prototype-winnie-complete-baby-reborn-by-nikki-johnston-sculpted-by-cassie-brace",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Prototype Winnie  - Complete Baby Reborn by Nikki Johnston, Sculpted by Cassie Brace",
-      "sculpt_name_candidate": "Prototype Winnie  - Complete Baby Reborn by Nikki Johnston, Sculpted by Cassie Brace",
+      "sculpt_name_candidate": "Prototype Winnie  - Complete Baby Reborn, Sculpted by Cassie Brace",
       "sculpt_name_basis": "retailer_title_review",
       "source_product_type": "",
       "classification": "finished_doll_excluded",
@@ -2544,6 +2560,8 @@
         "belly_plate_offered": false,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -2819,14 +2837,14 @@
       "shopify_product_id": "9569592705184",
       "handle": "pickle-pre-order-1st-11th-july",
       "source_url": "https://nikkisseasidebabies.co.uk/products/pickle-pre-order-1st-11th-july",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "PICKLE - (Sold Out)",
       "sculpt_name_candidate": "Pickle",
       "sculpt_name_basis": "artist_kit_spec",
       "source_product_type": "",
-      "classification": "original_kit_candidate",
-      "classification_basis": "seller_explicit_blank_kit",
+      "classification": "needs_review",
+      "classification_basis": "third_party_sculptor_mentioned",
       "description": "I do ship worldwide, however you can find a dealer near you HERE \" I’m am so excited to introduce you to little Pickle !! 4 years in the making, little Pickle is a super chunky, 4 month size baby, at about 25” in length. His kit will come with a very special body that I have custom made, to give him his scrumptious ‘pot belly’. 🥰 Just like his little brother Trouble, and as their names suggest, sculpting Pickle hasn’t been without its challenges. 🤣🤦🏻‍♀️ At the beginning, I was having a lot of problems with his head shape and we joked around that he looked like a ‘pickle’, and he was ‘getting me in a pickle’ 🤣 and from there on out, his name was solidified I have fallen completely head over heels in love with him, and I hope you will too! 🥰 You are buying the BLANK doll kit only. Photos of prototypes are examples only. Kit Spec Name : Pickle Sculptor: Nikki Johnston Kit length: Approx 24/25” (bent legs) Limb length: Full arms & legs Head circumference: 16” Custom Cloth Body: Included & signed COA: Included Vinyl: JoyDolls Edition size: 3700 *Strictly Limited Edition * BY CHOOSING DEPOSIT ONLY, YOU WILL RECEIVE AN INVOICE FOR THE REMAINING BALANCE WHEN HE COMES INTO STOCK. THIS WILL BE SENT TO THE EMAIL ADDRESS USED TO PRE ORDER. BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MY CARRY. DEPOSIT PAYMENTS ARE NON-REFUNDABLE. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM BRAZIL, ARGENTINA, MIDDLE EAST AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
       "published_kit_facts": {
         "published_kit_length": "Approx 24/25” (bent legs)",
@@ -2839,6 +2857,8 @@
         "belly_plate_offered": false,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": "vinyl",
+      "material_review_required": false,
       "currency": "GBP",
       "variants": [
         {
@@ -3203,8 +3223,8 @@
       "shopify_product_id": "5912079597728",
       "handle": "gift-card-all-values",
       "source_url": "https://nikkisseasidebabies.co.uk/products/gift-card-all-values",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Gift Card - All Values",
       "sculpt_name_candidate": "Gift Card - All Values",
       "sculpt_name_basis": "retailer_title_review",
@@ -3223,6 +3243,8 @@
         "belly_plate_offered": false,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -3354,8 +3376,8 @@
       "shopify_product_id": "5694458495136",
       "handle": "new-delilah-pre-order-in-november",
       "source_url": "https://nikkisseasidebabies.co.uk/products/new-delilah-pre-order-in-november",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Delilah - (Sold Out)",
       "sculpt_name_candidate": "Delilah",
       "sculpt_name_basis": "artist_kit_spec",
@@ -3374,6 +3396,8 @@
         "belly_plate_offered": true,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": "vinyl",
+      "material_review_required": false,
       "currency": "GBP",
       "variants": [
         {
@@ -3738,8 +3762,8 @@
       "shopify_product_id": "5845209612448",
       "handle": "delilah-belly-plate-pre-order",
       "source_url": "https://nikkisseasidebabies.co.uk/products/delilah-belly-plate-pre-order",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Delilah Belly Plate (Temporarily Out Of Stock)",
       "sculpt_name_candidate": "Delilah Belly Plate (Temporarily Out Of Stock",
       "sculpt_name_basis": "retailer_title_review",
@@ -3758,6 +3782,8 @@
         "belly_plate_offered": false,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": "vinyl",
+      "material_review_required": false,
       "currency": "GBP",
       "variants": [
         {
@@ -3880,8 +3906,8 @@
       "shopify_product_id": "5627976122528",
       "handle": "19-21-belly-plate",
       "source_url": "https://nikkisseasidebabies.co.uk/products/19-21-belly-plate",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "18-21” Belly Plate - (Temporarily Out Of Stock)",
       "sculpt_name_candidate": "18-21” Belly Plate - (Temporarily Out Of Stock",
       "sculpt_name_basis": "retailer_title_review",
@@ -3900,6 +3926,8 @@
         "belly_plate_offered": false,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": "vinyl",
+      "material_review_required": false,
       "currency": "GBP",
       "variants": [
         {
@@ -4014,8 +4042,8 @@
       "shopify_product_id": "4506891059252",
       "handle": "advanced-rooting-level-3-coming-soon",
       "source_url": "https://nikkisseasidebabies.co.uk/products/advanced-rooting-level-3-coming-soon",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Advanced Rooting (Level 3 - Coming Soon)",
       "sculpt_name_candidate": "Advanced Rooting (Level 3 - Coming Soon",
       "sculpt_name_basis": "retailer_title_review",
@@ -4034,6 +4062,8 @@
         "belly_plate_offered": false,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -4084,8 +4114,8 @@
       "shopify_product_id": "4506880213044",
       "handle": "intermediate-rooting-level-2-coming-soon",
       "source_url": "https://nikkisseasidebabies.co.uk/products/intermediate-rooting-level-2-coming-soon",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Intermediate Rooting (Level 2 - Coming Soon)",
       "sculpt_name_candidate": "Intermediate Rooting (Level 2 - Coming Soon",
       "sculpt_name_basis": "retailer_title_review",
@@ -4104,6 +4134,8 @@
         "belly_plate_offered": false,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -4162,8 +4194,8 @@
       "shopify_product_id": "4506847281204",
       "handle": "rooting-for-beginners",
       "source_url": "https://nikkisseasidebabies.co.uk/products/rooting-for-beginners",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Beginners Rooting (Level 1 - Coming Soon)",
       "sculpt_name_candidate": "Beginners Rooting (Level 1 - Coming Soon",
       "sculpt_name_basis": "retailer_title_review",
@@ -4182,6 +4214,8 @@
         "belly_plate_offered": false,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -4248,14 +4282,14 @@
       "shopify_product_id": "4466633605172",
       "handle": "vincent-1",
       "source_url": "https://nikkisseasidebabies.co.uk/products/vincent-1",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Vincent - (Sold Out)",
       "sculpt_name_candidate": "Vincent",
       "sculpt_name_basis": "artist_kit_spec",
       "source_product_type": "",
-      "classification": "original_kit_candidate",
-      "classification_basis": "seller_explicit_blank_kit",
+      "classification": "needs_review",
+      "classification_basis": "third_party_sculptor_mentioned",
       "description": "You are buying the BLANK doll kit only. Photos of prototypes are examples only. \" I’m am so excited to introduce you to Vincent !! Named after Vincent Van Gough , this little one gave me a bit of bother. Through out his sculpting process, I have had to chop his ear of several times, in order to have it in the correct position. Henceforth earning his name 💕 \" Kit Spec Name : Vincent Sculptor: Nikki Johnston Kit length: Approx 17.5” Limb length: Full arms & legs Head circumference: 12” Cloth Body: Included Belly Plate: Optional COA: Included Edition size: 400 (Strictly a limited edition) BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MY CARRY. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM BRAZIL, ARGENTINA, MIDDLE EAST AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
       "published_kit_facts": {
         "published_kit_length": "Approx 17.5”",
@@ -4268,6 +4302,8 @@
         "belly_plate_offered": true,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -4496,8 +4532,8 @@
       "shopify_product_id": "4449640087604",
       "handle": "online-tutorials",
       "source_url": "https://nikkisseasidebabies.co.uk/products/online-tutorials",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Online Tutorials",
       "sculpt_name_candidate": "Online Tutorials",
       "sculpt_name_basis": "retailer_title_review",
@@ -4516,6 +4552,8 @@
         "belly_plate_offered": false,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -4813,8 +4851,8 @@
       "shopify_product_id": "4355643998260",
       "handle": "trouble",
       "source_url": "https://nikkisseasidebabies.co.uk/products/trouble",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Trouble (Sold Out)",
       "sculpt_name_candidate": "Trouble",
       "sculpt_name_basis": "artist_kit_spec",
@@ -4833,6 +4871,8 @@
         "belly_plate_offered": true,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -5076,8 +5116,8 @@
       "shopify_product_id": "4355636690996",
       "handle": "lexi",
       "source_url": "https://nikkisseasidebabies.co.uk/products/lexi",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Lexi (Sold Out)",
       "sculpt_name_candidate": "Lexi",
       "sculpt_name_basis": "retailer_title_review",
@@ -5096,6 +5136,8 @@
         "belly_plate_offered": true,
         "belly_plate_addon_price_gbp": 15.0
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -5284,8 +5326,8 @@
       "shopify_product_id": "4355629187124",
       "handle": "isabella",
       "source_url": "https://nikkisseasidebabies.co.uk/products/isabella",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Isabella (Sold Out)",
       "sculpt_name_candidate": "Isabella",
       "sculpt_name_basis": "retailer_title_review",
@@ -5304,6 +5346,8 @@
         "belly_plate_offered": true,
         "belly_plate_addon_price_gbp": 15.0
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -5516,8 +5560,8 @@
       "shopify_product_id": "4355623190580",
       "handle": "evie",
       "source_url": "https://nikkisseasidebabies.co.uk/products/evie",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Evie (Sold Out)",
       "sculpt_name_candidate": "Evie",
       "sculpt_name_basis": "retailer_title_review",
@@ -5536,6 +5580,8 @@
         "belly_plate_offered": true,
         "belly_plate_addon_price_gbp": 15.0
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -5716,8 +5762,8 @@
       "shopify_product_id": "4355615227956",
       "handle": "princess-charlotte",
       "source_url": "https://nikkisseasidebabies.co.uk/products/princess-charlotte",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Princess Charlotte (Sold Out)",
       "sculpt_name_candidate": "Princess Charlotte",
       "sculpt_name_basis": "retailer_title_review",
@@ -5736,6 +5782,8 @@
         "belly_plate_offered": true,
         "belly_plate_addon_price_gbp": 15.0
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -5932,8 +5980,8 @@
       "shopify_product_id": "4355603529780",
       "handle": "robin-awake",
       "source_url": "https://nikkisseasidebabies.co.uk/products/robin-awake",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Robin, Awake (Sold Out)",
       "sculpt_name_candidate": "Robin, Awake",
       "sculpt_name_basis": "retailer_title_review",
@@ -5952,6 +6000,8 @@
         "belly_plate_offered": true,
         "belly_plate_addon_price_gbp": 15.0
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -6172,8 +6222,8 @@
       "shopify_product_id": "4355591372852",
       "handle": "robin-asleep",
       "source_url": "https://nikkisseasidebabies.co.uk/products/robin-asleep",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Robin Asleep (Sold Out)",
       "sculpt_name_candidate": "Robin Asleep",
       "sculpt_name_basis": "retailer_title_review",
@@ -6192,6 +6242,8 @@
         "belly_plate_offered": true,
         "belly_plate_addon_price_gbp": 15.0
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -6490,14 +6542,14 @@
       "shopify_product_id": "4355567157300",
       "handle": "kiara",
       "source_url": "https://nikkisseasidebabies.co.uk/products/kiara",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Kiara - (Sold Out)",
       "sculpt_name_candidate": "Kiara",
       "sculpt_name_basis": "artist_kit_spec",
       "source_product_type": "",
-      "classification": "original_kit_candidate",
-      "classification_basis": "seller_explicit_blank_kit",
+      "classification": "needs_review",
+      "classification_basis": "third_party_sculptor_mentioned",
       "description": "PLEASE NOTE, ANY ITEM ORDERED FRO THE 17TH TO THE 23RD WILL BE SHIPPED OUT ON THE 24TH MAY. THANK YOU SO MUCH FOR YOUR PATIENCE. ♥️ FOR A LIMITED TIME ONLY, KIARA'S KIT IS 20% OFF. SO IF SHE PULLS ON YOUR HEART STRINGS, DON'T HESITATE! ...................... You are buying the BLANK doll kit only. Photos of prototypes are examples only. I started sculpting her 4 years ago today! June 1st 2014! She was one of the first babies I ever started. Over the years I have improved her, and she has changed as I learned new techniques. I must admit, I am 100% unequivocally, totally, in love with her! The way she lays and curls up so naturally, just like a real squishy newborn baby! I really hope you guys like her as much as I do!! Details of the kit are as follows: Name: Kiara Sculptor: Nikki Johnston Size: 19\" Head Circumference: 13\" Arms: Full Legs: Full Body: FREE Cloth Body Included Tummy Plate: Optional Non Gender Belly Plate Edition: 800 ( Strictly Limited Edition) Vinyl: Soft Neutral Vinyl ...................... BUYER IS RESPONSIBLE FOR ANY IMPORT DUTIES OR CUSTOM FEES FOR YOUR COUNTRY. IT IS UP TO YOU TO RESEARCH BEFORE YOU PURCHASE. BY PURCHASING AN ITEM FROM ME, YOU ARE AGREEING TO COVER THE COST OF ANY IMPORT DUTIES OR CUSTOM FEES YOUR COUNTRY MY CARRY. BY CLICKING THE PURCHASE BUTTON, ALL CUSTOMERS FROM BRAZIL, ARGENTINA, MIDDLE EAST AND RUSSIA MUST TAKE FULL RESPONSIBILITY FOR THE SHIPMENT. I CANT BE HELD LIABLE FOR ANY LOST OR STOLEN PACKAGES.",
       "published_kit_facts": {
         "published_kit_length": null,
@@ -6510,6 +6562,8 @@
         "belly_plate_offered": true,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": "vinyl",
+      "material_review_required": false,
       "currency": "GBP",
       "variants": [
         {
@@ -6754,8 +6808,8 @@
       "shopify_product_id": "4355553689652",
       "handle": "posy",
       "source_url": "https://nikkisseasidebabies.co.uk/products/posy",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Posy (Sold Out)",
       "sculpt_name_candidate": "Posy",
       "sculpt_name_basis": "artist_kit_spec",
@@ -6774,6 +6828,8 @@
         "belly_plate_offered": true,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -6954,8 +7010,8 @@
       "shopify_product_id": "4355543466036",
       "handle": "jack",
       "source_url": "https://nikkisseasidebabies.co.uk/products/jack",
-      "source_scan_at": "2026-10-13T09:35:51.123380+00:00",
-      "source_sha256": "af6d535949d2aee27ce8864bb4f8513ce89f8411b5eeecb62b03d9bb64457a5e",
+      "source_scan_at": "2026-10-13T16:03:56.553155+00:00",
+      "source_sha256": "1304eda576abac1ce537e0cd792c8bb054328d92c310fb21d6bce48f687d3591",
       "name": "Jack (Sold Out)",
       "sculpt_name_candidate": "Jack",
       "sculpt_name_basis": "artist_kit_spec",
@@ -6974,6 +7030,8 @@
         "belly_plate_offered": true,
         "belly_plate_addon_price_gbp": null
       },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
       "currency": "GBP",
       "variants": [
         {
@@ -7154,10 +7212,12 @@
   "errors": [],
   "coverage": "index_enumerated",
   "source_kind": "public_shopify_product_json",
+  "artist_name": "Nikki Johnston",
+  "currency": "GBP",
   "status": "scanned",
   "products_seen": 29,
-  "original_kit_candidates": 15,
+  "original_kit_candidates": 10,
   "finished_dolls_excluded": 7,
   "component_or_non_kit_excluded": 7,
-  "uncertain_products": 0
+  "uncertain_products": 5
 }

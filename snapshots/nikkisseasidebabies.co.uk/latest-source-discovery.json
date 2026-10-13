@@ -3,7 +3,7 @@
   "host": "nikkisseasidebabies.co.uk",
   "parser_version": "url-discovery-v2-platform-sitemaps",
   "started_from": "https://nikkisseasidebabies.co.uk/",
-  "completed_at": "2026-10-13T09:35:50.964290+00:00",
+  "completed_at": "2026-10-13T16:03:56.406001+00:00",
   "page_limit": 12,
   "sitemap_discovered_urls": 58,
   "platforms": {
@@ -18,8 +18,8 @@
     {
       "url": "https://nikkisseasidebabies.co.uk/",
       "platform": "shopify",
-      "observed_at": "2026-10-13T09:35:28.132194+00:00",
-      "sha256_html": "bef3aa67308ef4093f384782fa8bd42cc669286d2ffdb497f1ee475c3c622416",
+      "observed_at": "2026-10-13T16:03:31.942776+00:00",
+      "sha256_html": "b9cc857fff8fe6a448987255317da45a7463a94db90cc1cc5ea07cbb9363233b",
       "title": "Nikki's Seaside Babies",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -38,8 +38,8 @@
         "og:image:secure_url": "https://cdn.shopify.com/s/files/1/0276/0851/4612/files/Logo.png?height=628&pad_color=fff&v=1613560574&width=1200",
         "og:image:width": "1200",
         "og:image:height": "628",
-        "shopify-y": "cacfc27e-6c45-4344-bd93-c71135518674",
-        "shopify-s": "6b4fcf06-845e-4d2c-8e21-48d75704f59a"
+        "shopify-y": "fc412d3d-87a0-41a2-8392-fe561c8a55f6",
+        "shopify-s": "7cb2de5f-0033-41db-aca9-ad78b087ab5f"
       },
       "structured_data": [
         {
@@ -232,8 +232,8 @@
     {
       "url": "https://nikkisseasidebabies.co.uk/account/login",
       "platform": "shopify",
-      "observed_at": "2026-10-13T09:35:31.191866+00:00",
-      "sha256_html": "447888bc676ac20630aef6c8ebe070f9cb58cbdddb70750e926f46e27a7699ff",
+      "observed_at": "2026-10-13T16:03:33.396003+00:00",
+      "sha256_html": "93acafc19ade029156089ab2d27c29883210396d34cb440d62425af17240bdfc",
       "title": "Account\n– Nikki's Seaside Babies",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -252,8 +252,8 @@
         "og:image:secure_url": "https://cdn.shopify.com/s/files/1/0276/0851/4612/files/Logo.png?height=628&pad_color=fff&v=1613560574&width=1200",
         "og:image:width": "1200",
         "og:image:height": "628",
-        "shopify-y": "6a2c34df-bfd3-4413-ac17-830ac5b38376",
-        "shopify-s": "b5e1a74b-e4bb-403c-ab13-0630d1b3101a"
+        "shopify-y": "ea7e600e-cbec-4e91-9dd9-146f13376f18",
+        "shopify-s": "fe23f28f-802c-4c72-9e9a-d3dba3ab951c"
       },
       "structured_data": [
         {
@@ -304,8 +304,8 @@
     {
       "url": "https://nikkisseasidebabies.co.uk/account/register",
       "platform": "shopify",
-      "observed_at": "2026-10-13T09:35:32.476661+00:00",
-      "sha256_html": "e4acf42d4513150ac8fe2d13ec169878044a12b378b9f409fdf6418ab3e1694a",
+      "observed_at": "2026-10-13T16:03:35.129411+00:00",
+      "sha256_html": "63518729219523bb6fd45695b3b53e6ac4cfc56cd897ae9efc5ab1f9b2fbe574",
       "title": "Create Account\n– Nikki's Seaside Babies",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -324,8 +324,8 @@
         "og:image:secure_url": "https://cdn.shopify.com/s/files/1/0276/0851/4612/files/Logo.png?height=628&pad_color=fff&v=1613560574&width=1200",
         "og:image:width": "1200",
         "og:image:height": "628",
-        "shopify-y": "ee5a7ce5-b844-4e74-b0fd-6b9da3068667",
-        "shopify-s": "214ec075-92e4-4dfc-aebb-946837741ccf"
+        "shopify-y": "ec382836-df6a-4a23-b751-8d2b6f759bc7",
+        "shopify-s": "1fd3a772-1afe-48a9-932d-c595ea8af8ad"
       },
       "structured_data": [
         {
@@ -376,8 +376,8 @@
     {
       "url": "https://nikkisseasidebabies.co.uk/cart",
       "platform": "shopify",
-      "observed_at": "2026-10-13T09:35:33.693482+00:00",
-      "sha256_html": "256043daa34186a5855f54c6e90343d476e36a96a36ab70b02a181b4359e217c",
+      "observed_at": "2026-10-13T16:03:36.584525+00:00",
+      "sha256_html": "e1a4b18d9fef24ae700aea115cd10bcec92eefc9d93c2dc9cb3f8c3125afd92e",
       "title": "Your Shopping Cart\n– Nikki's Seaside Babies",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -396,8 +396,8 @@
         "og:image:secure_url": "https://cdn.shopify.com/s/files/1/0276/0851/4612/files/Logo.png?height=628&pad_color=fff&v=1613560574&width=1200",
         "og:image:width": "1200",
         "og:image:height": "628",
-        "shopify-y": "141c4c40-39b7-44b6-ad73-09b3f14e64c2",
-        "shopify-s": "8179a873-8b22-44e8-bff9-b44082671f5f"
+        "shopify-y": "1950fc16-76bd-47d7-adb2-d5f801017376",
+        "shopify-s": "a26ab685-e591-4203-9565-39ebf40d9083"
       },
       "structured_data": [
         {
@@ -448,8 +448,8 @@
     {
       "url": "https://nikkisseasidebabies.co.uk/collections/all",
       "platform": "shopify",
-      "observed_at": "2026-10-13T09:35:35.092776+00:00",
-      "sha256_html": "70f91982092a5d308833f7f21780c715e5db2e0fe571b88cba56e63ba391e90d",
+      "observed_at": "2026-10-13T16:03:37.915321+00:00",
+      "sha256_html": "74a71bd387e9bcacaeb6f111fde6afa5a09147b4faaae728f47b6d557df87b61",
       "title": "Products\n– Nikki's Seaside Babies",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -468,8 +468,8 @@
         "og:image:secure_url": "https://cdn.shopify.com/s/files/1/0276/0851/4612/files/Logo.png?height=628&pad_color=fff&v=1613560574&width=1200",
         "og:image:width": "1200",
         "og:image:height": "628",
-        "shopify-y": "e5b018f6-067a-41f4-94f1-0684bbaa38a0",
-        "shopify-s": "4782692e-40ba-4b4a-82c0-fbb834fd7f10"
+        "shopify-y": "54b9ae6e-b66f-4de2-988e-b55cb0eb943b",
+        "shopify-s": "de8ddb6e-8c27-4a3f-96be-129c39714714"
       },
       "structured_data": [
         {
@@ -631,8 +631,8 @@
     {
       "url": "https://nikkisseasidebabies.co.uk/products/19-21-belly-plate",
       "platform": "shopify",
-      "observed_at": "2026-10-13T09:35:36.648785+00:00",
-      "sha256_html": "3d341ed7745b9e724ca2870a750a25171945a45a7fa185d252411fa201e54c7f",
+      "observed_at": "2026-10-13T16:03:39.555802+00:00",
+      "sha256_html": "ef7f63325486d143f0bc1b4b07c3f506e7313b8a203a1948a90007445039d27f",
       "title": "18-21” Belly Plate - (Temporarily Out Of Stock)\n– Nikki's Seaside Babies",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -652,8 +652,8 @@
         "twitter:description": "Originally that of Kiara’s, this belly plate will fit reborns from size 18-21”. It is non-gendered, so has great versatility with working for either a boy or a girl.  The beautiful neutral vinyl will make matching this belly plate to most kits super easy. It has the most beautiful shape to it, meaning it will fit perfe",
         "facebook-domain-verification": "5jflw3kzmemojp0ckf89ydm85osfj1",
         "shopify-digital-wallet": "/27608514612/digital_wallets/dialog",
-        "shopify-y": "bad504b4-6729-425a-b88d-cd6189a22d3f",
-        "shopify-s": "502ec7e7-4184-4c46-98fe-02c1d841bf7a"
+        "shopify-y": "71f81fc2-ca5b-409a-b206-6a508b8408ab",
+        "shopify-s": "5ccb915d-de9c-4be3-b172-23f87399585a"
       },
       "structured_data": [
         {
@@ -831,8 +831,8 @@
     {
       "url": "https://nikkisseasidebabies.co.uk/products/advanced-rooting-level-3-coming-soon",
       "platform": "shopify",
-      "observed_at": "2026-10-13T09:35:39.091069+00:00",
-      "sha256_html": "00a27b9042addfe915202e7ef4c61c1a3f7aef7308561374bc7bfcc24e6544eb",
+      "observed_at": "2026-10-13T16:03:42.293614+00:00",
+      "sha256_html": "f9e8439c0825b1553fa31393ab78b855344fe2df77f8af4b65c29f7f7b58a8e4",
       "title": "Advanced Rooting (Level 3 - Coming Soon)\n– Nikki's Seaside Babies",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -852,8 +852,8 @@
         "twitter:description": "Ready for hyper-realistic hair? I've spent years refining my process, and this course will teach you a ton of secrets which took me years to learn through trial and error, saving you time and helping you take your rooting to the next level! Let's begin my Advanced Rooting Course! (Level 2 → Level 3) In this course you'",
         "facebook-domain-verification": "5jflw3kzmemojp0ckf89ydm85osfj1",
         "shopify-digital-wallet": "/27608514612/digital_wallets/dialog",
-        "shopify-y": "a7e603b6-82ae-4db6-94ed-098327ad8b43",
-        "shopify-s": "e324ddfe-d10e-481d-9355-1248664da4b1"
+        "shopify-y": "9f02990c-e3ca-4ddf-a8ad-a33cd6e5f535",
+        "shopify-s": "aceda502-d38d-437f-93f7-8ca664a5e921"
       },
       "structured_data": [
         {
@@ -939,8 +939,8 @@
     {
       "url": "https://nikkisseasidebabies.co.uk/products/christopher-pre-order-may-2025",
       "platform": "shopify",
-      "observed_at": "2026-10-13T09:35:41.031184+00:00",
-      "sha256_html": "76b65a2b1c49ae6a1daa1902470ea0682743bc7bb805edb76fbc679a1d7c4168",
+      "observed_at": "2026-10-13T16:03:43.753951+00:00",
+      "sha256_html": "4504dcca487a520f649f4c01674b586d9cf35e6ca25ae4983932fd5a769629e3",
       "title": "Christopher - IN STOCK\n– Nikki's Seaside Babies",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -960,8 +960,8 @@
         "twitter:description": "♥️ IN STOCK ♥️ I do ship worldwide, however you can find a dealer near you HERE If you order directly from me, you will receive a special box opening experience, including a signed body and a personalised blanket lovey ♥️ \"I’m am so excited to introduce you to little Christopher!! Little Christopher has been almost 6 y",
         "facebook-domain-verification": "5jflw3kzmemojp0ckf89ydm85osfj1",
         "shopify-digital-wallet": "/27608514612/digital_wallets/dialog",
-        "shopify-y": "ed6db18e-c730-45ce-906f-8f3e38422250",
-        "shopify-s": "999cab39-abe2-4577-aa0f-9746c5faf667"
+        "shopify-y": "9ce432b6-73ef-4031-9736-bc8b007ed42f",
+        "shopify-s": "e441333e-79fc-4953-a7ca-a65b6bb4d472"
       },
       "structured_data": [
         {
@@ -1598,8 +1598,8 @@
     {
       "url": "https://nikkisseasidebabies.co.uk/products/delilah-belly-plate-pre-order",
       "platform": "shopify",
-      "observed_at": "2026-10-13T09:35:44.939285+00:00",
-      "sha256_html": "33882079e4271e0d71f6fdf47c3cc7739480cd25807a0290f4c7e4285dd4510b",
+      "observed_at": "2026-10-13T16:03:49.746239+00:00",
+      "sha256_html": "30b0e5d3097324506ef8ca18476679bd259bae0f138e08f5a6bc2174d184bbd5",
       "title": "Delilah Belly Plate (Temporarily Out Of Stock)\n– Nikki's Seaside Babies",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -1619,8 +1619,8 @@
         "twitter:description": "Please note there may be a slight delay in shipping up until 9th December. Orders are still being shipped out twice a week, just not on a daily basis.   Thank you for your patience and I apologies for any inconvenience. ♥️ ...................... You can pre-order Delilah's full BLANK vinyl kit HERE. Originally that of ",
         "facebook-domain-verification": "5jflw3kzmemojp0ckf89ydm85osfj1",
         "shopify-digital-wallet": "/27608514612/digital_wallets/dialog",
-        "shopify-y": "a04ee22e-509d-45ee-9bbf-4919c20ca462",
-        "shopify-s": "9516fb08-dd5b-4388-b93a-88762e55ae18"
+        "shopify-y": "713e246d-fddf-4e3e-8a13-e1d9cecca9cb",
+        "shopify-s": "44a1277d-7f90-4d75-8a9f-b113a8396420"
       },
       "structured_data": [
         {
@@ -1810,8 +1810,8 @@
     {
       "url": "https://nikkisseasidebabies.co.uk/products/evie",
       "platform": "shopify",
-      "observed_at": "2026-10-13T09:35:46.672484+00:00",
-      "sha256_html": "8505d5999e01748e561b9edca17a4c38b16ae61a7a0fd8ce0e52be8ceca4f2b0",
+      "observed_at": "2026-10-13T16:03:51.786297+00:00",
+      "sha256_html": "0b3142c9a7adc14e22770b41eac3c9b981b5c077d8d2de809483438399c79d34",
       "title": "Evie - Nikki's Seaside Babies",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -1831,8 +1831,8 @@
         "twitter:description": "Learn more about Evie...",
         "facebook-domain-verification": "5jflw3kzmemojp0ckf89ydm85osfj1",
         "shopify-digital-wallet": "/27608514612/digital_wallets/dialog",
-        "shopify-y": "4971999c-0984-4ad4-bbd9-523e098fae18",
-        "shopify-s": "c7fce397-7c24-4873-aaf3-eed90d6812cc"
+        "shopify-y": "5d2729b8-4a4c-4e69-a316-1e1a63f8fd80",
+        "shopify-s": "debdf8ab-b786-42e5-9bca-d6f10198df63"
       },
       "structured_data": [
         {
@@ -2086,8 +2086,8 @@
     {
       "url": "https://nikkisseasidebabies.co.uk/products/gift-card-all-values",
       "platform": "shopify",
-      "observed_at": "2026-10-13T09:35:48.490105+00:00",
-      "sha256_html": "b8dae7dcae048d1bd02bc086c8a0ea541059acf5768fb2d4589af3627c043830",
+      "observed_at": "2026-10-13T16:03:53.978048+00:00",
+      "sha256_html": "d795910e32532c5a57c7b1dbc0e834bac822cf4f16ced9a7d7461a0cb4773e5b",
       "title": "Gift Card - All Values\n– Nikki's Seaside Babies",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -2107,8 +2107,8 @@
         "twitter:description": "Shopping for someone else but not sure what to give them? Give them the gift of choice with a Nikki's Seaside Babies gift card. The perfect gift for someone, this card is redeemable through the entire Nikki's Seaside Babies store!!  Gift cards are delivered by email and contain instructions to redeem them at checkout. ",
         "facebook-domain-verification": "5jflw3kzmemojp0ckf89ydm85osfj1",
         "shopify-digital-wallet": "/27608514612/digital_wallets/dialog",
-        "shopify-y": "ed90ab6c-2561-4b21-879d-69e97fbb0a58",
-        "shopify-s": "67a46e93-e107-4a88-8758-afdb4398ebf6"
+        "shopify-y": "00d8ddb5-58d6-4fd3-9273-f6fed32ceff4",
+        "shopify-s": "79f097e6-8186-43d8-b134-9387b8286271"
       },
       "structured_data": [
         {
@@ -2227,8 +2227,8 @@
     {
       "url": "https://nikkisseasidebabies.co.uk/products/intermediate-rooting-level-2-coming-soon",
       "platform": "shopify",
-      "observed_at": "2026-10-13T09:35:49.964010+00:00",
-      "sha256_html": "40f4ce3b6a23adb7f1f8baba8d416e1d726ef5638ba66c0a626fa7dfe7b5c120",
+      "observed_at": "2026-10-13T16:03:55.405754+00:00",
+      "sha256_html": "37c9a4f815b25780a80f2103db21c308c88fee1dfc808a7f7c2b556367220a72",
       "title": "Intermediate Rooting (Level 2 - Coming Soon)\n– Nikki's Seaside Babies",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -2248,8 +2248,8 @@
         "twitter:description": "Ready to take your rooting up a notch? I've spent years refining my process, and this course will teach you a ton of things which took me years to learn through trial and error, saving you time and helping you improve the quality of your rooting from beginner to intermediate!  Let's perfect that technique! (Level 1 → L",
         "facebook-domain-verification": "5jflw3kzmemojp0ckf89ydm85osfj1",
         "shopify-digital-wallet": "/27608514612/digital_wallets/dialog",
-        "shopify-y": "ab96b34b-2945-49e7-a08d-bf353486184e",
-        "shopify-s": "d20a844b-b537-40bb-a169-cc518f225bb8"
+        "shopify-y": "522e8587-b21e-49a9-84c3-6692f90d5685",
+        "shopify-s": "0e0992ae-0a4c-4ea2-adb0-97f28bccfe15"
       },
       "structured_data": [
         {
