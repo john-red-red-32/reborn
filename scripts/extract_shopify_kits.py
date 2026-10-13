@@ -59,7 +59,7 @@ def classification(product, artist_name="Nikki Johnston"):
         return "non_kit_excluded", "title_non_kit"
     if re.search(r"\b(belly plate|body only|vinyl head only)\b",head):
         return "component_excluded", "standalone_component"
-    artist_token = re.escape(artist_name).replace(r"\ ",r"\s+")
+    artist_token = re.escape(artist_name.casefold()).replace(r"\ ",r"\s+")
     if re.search(rf"\b(sculpted by|sculptor:)\s+(?!{artist_token}\b)",words):
         return "needs_review", "third_party_sculptor_mentioned"
     if re.search(rf"\b(blank\s+(?:(?:vinyl|silicone|full.body silicone)\s+)?(doll\s+)?kit|buying the\s+blank|(?:vinyl|silicone) doll kit|reborn doll kit|blank unpainted (?:silicone|vinyl)|sculptor:\s*{artist_token})\b",words):
