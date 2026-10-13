@@ -1,0 +1,87 @@
+{
+  "artist_id": "nikki-johnston",
+  "exact_and_approved_matches": [],
+  "requires_review": [
+    {
+      "source_name": "Mabel",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Christopher",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Pickle",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Delilah",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Vincent",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Trouble",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Lexi",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Isabella",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Evie",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Princess Charlotte",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Robin, Awake",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Robin Asleep",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Kiara",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Posy",
+      "suggestions": [],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Jack",
+      "suggestions": [],
+      "state": "manual_review_required"
+    }
+  ],
+  "not_seen_in_source": [],
+  "duplicate_source_names": [],
+  "note": "Never assume an unobserved accepted sculpt has been removed or sold out.",
+  "manifest_version": 1,
+  "source": "https://nikkisseasidebabies.co.uk/",
+  "source_scan_at": "2026-10-13T16:28:01.392443+00:00"
+}
