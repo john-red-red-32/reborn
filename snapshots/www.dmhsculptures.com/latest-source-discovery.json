@@ -1,9 +1,9 @@
 {
-  "source": "https://www.dmhsculptures.com/",
+  "source": "https://www.dmhsculptures.com/vinyl-kits",
   "host": "www.dmhsculptures.com",
   "parser_version": "url-discovery-v2-platform-sitemaps",
-  "started_from": "https://www.dmhsculptures.com/",
-  "completed_at": "2026-10-13T16:29:32.311576+00:00",
+  "started_from": "https://www.dmhsculptures.com/vinyl-kits",
+  "completed_at": "2026-10-13T16:31:51.811816+00:00",
   "page_limit": 18,
   "sitemap_discovered_urls": 80,
   "platforms": {
@@ -11,59 +11,39 @@
   },
   "pages_checked": 18,
   "pages_succeeded": 18,
-  "queue_remaining": 64,
+  "queue_remaining": 66,
   "complete": false,
   "errors": [],
   "pages": [
     {
-      "url": "https://www.dmhsculptures.com/",
+      "url": "https://www.dmhsculptures.com/vinyl-kits",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:10.772740+00:00",
-      "sha256_html": "6723aa52bc4e6d876bd6b9d5a6b93f0cfab22c8e7345b1769e931e217a66b91c",
-      "title": "DMH Sculpted Portrait Reborn Baby Dolls dba dmhstudio dmhsculptures",
+      "observed_at": "2026-10-13T16:31:30.879411+00:00",
+      "sha256_html": "0733e703be069e3fa3fb56e493bbbf9a3af81a641e61f8d070416412d44ae9ab",
+      "title": "DMH Studio Sculpted Portrait Reborn Baby Dolls Vinyl Kits",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
         "generator": "Wix.com Website Builder",
         "format-detection": "telephone=no",
         "skype_toolbar": "skype_toolbar_parser_compatible",
-        "description": "Doris Moyers Hornbogen sculpts portraits of babies and creates hyper-realistic baby dolls in their image in vinyl and silicone. DMH sells vinyl kits and silicone kits to artists and completed babies to doll collectors. \nFrom the Studio of dmhstudio dmhsculptures ",
-        "og:title": "DMH Sculpted Portrait Reborn Baby Dolls dba dmhstudio dmhsculptures",
-        "og:description": "Doris Moyers Hornbogen sculpts portraits of babies and creates hyper-realistic baby dolls in their image in vinyl and silicone. DMH sells vinyl kits and silicone kits to artists and completed babies to doll collectors. \nFrom the Studio of dmhstudio dmhsculptures ",
-        "og:image": "https://static.wixstatic.com/media/a32355_3e25e128eed2476cbf118c66fae3c435~mv2.jpg/v1/fill/w_2500,h_2500,al_c/a32355_3e25e128eed2476cbf118c66fae3c435~mv2.jpg",
-        "og:image:width": "2500",
-        "og:image:height": "2500",
-        "og:url": "https://www.dmhsculptures.com",
+        "description": "lycan cub, werewolf, alternative doll, reborns, DMH studio, dmh sculptures",
+        "og:title": "DMH Studio Sculpted Portrait Reborn Baby Dolls Vinyl Kits",
+        "og:description": "Vinyl Doll Kits for sale",
+        "og:image": "https://static.wixstatic.com/media/a32355_8cb1c0a19b20451f82e340debb299bcc~mv2.jpg/v1/fill/w_543,h_405,al_c/a32355_8cb1c0a19b20451f82e340debb299bcc~mv2.jpg",
+        "og:image:width": "543",
+        "og:image:height": "405",
+        "og:url": "https://www.dmhsculptures.com/vinyl-kits",
         "og:site_name": "dmh sculptures",
         "og:type": "website",
         "fb_admins_meta_tag": "doris.moyers.7",
         "google-site-verification": "xs9rK0vNNKghdzb1l2YF6b8gFBxd34GYmE6bgMF-P6g",
         "fb:admins": "doris.moyers.7",
         "twitter:card": "summary_large_image",
-        "twitter:title": "DMH Sculpted Portrait Reborn Baby Dolls dba dmhstudio dmhsculptures",
-        "twitter:description": "Doris Moyers Hornbogen sculpts portraits of babies and creates hyper-realistic baby dolls in their image in vinyl and silicone. DMH sells vinyl kits and silicone kits to artists and completed babies to doll collectors. \nFrom the Studio of dmhstudio dmhsculptures ",
-        "twitter:image": "https://static.wixstatic.com/media/a32355_3e25e128eed2476cbf118c66fae3c435~mv2.jpg/v1/fill/w_2500,h_2500,al_c/a32355_3e25e128eed2476cbf118c66fae3c435~mv2.jpg"
+        "twitter:title": "DMH Studio Sculpted Portrait Reborn Baby Dolls Vinyl Kits",
+        "twitter:description": "Vinyl Doll Kits for sale",
+        "twitter:image": "https://static.wixstatic.com/media/a32355_8cb1c0a19b20451f82e340debb299bcc~mv2.jpg/v1/fill/w_543,h_405,al_c/a32355_8cb1c0a19b20451f82e340debb299bcc~mv2.jpg"
       },
-      "structured_data": [
-        {
-          "@context": "https://schema.org/",
-          "@type": "LocalBusiness",
-          "name": "DMH Sculptures",
-          "url": "https://www.dmhsculptures.com",
-          "image": "https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png",
-          "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "US",
-            "addressRegion": "IN"
-          },
-          "telephone": "260-307-1737"
-        },
-        {
-          "@context": "https://schema.org/",
-          "@type": "WebSite",
-          "name": "dmh sculptures",
-          "url": "https://www.dmhsculptures.com"
-        }
-      ],
+      "structured_data": [],
       "image_candidates": [
         {
           "url": "https://static.wixstatic.com/media/a32355_5bf54835f9994170a2f6bd96040b44b8~mv2.jpg/v1/crop/x_0,y_6,w_2560,h_2547/fill/w_208,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20251204_153218801.jpg",
@@ -81,59 +61,204 @@
           "srcset": "https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/crop/x_0,y_61,w_952,h_637/fill/w_119,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png 1x, https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/crop/x_0,y_61,w_952,h_637/fill/w_238,h_160,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png 2x"
         },
         {
-          "url": "https://static.wixstatic.com/media/a32355_2e00068f9893496f940914d2c0feba14~mv2.jpg/v1/crop/x_0,y_0,w_3047,h_2774/fill/w_350,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20230309_203247081.jpg",
-          "alt": "Angelique Joy ",
-          "srcset": "https://static.wixstatic.com/media/a32355_2e00068f9893496f940914d2c0feba14~mv2.jpg/v1/crop/x_0,y_0,w_3047,h_2774/fill/w_350,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20230309_203247081.jpg 1x, https://static.wixstatic.com/media/a32355_2e00068f9893496f940914d2c0feba14~mv2.jpg/v1/crop/x_0,y_0,w_3047,h_2774/fill/w_700,h_638,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20230309_203247081.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_c6eee05471374b0d87f2cd3da318054b~mv2.jpg/v1/fill/w_253,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20260318_142321602.jpg",
-          "alt": "Patching class DMH ",
-          "srcset": "https://static.wixstatic.com/media/a32355_c6eee05471374b0d87f2cd3da318054b~mv2.jpg/v1/fill/w_253,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20260318_142321602.jpg 1x, https://static.wixstatic.com/media/a32355_c6eee05471374b0d87f2cd3da318054b~mv2.jpg/v1/fill/w_506,h_638,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20260318_142321602.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_a37f2c6873104b1b9167022b4cb0dfe5~mv2.jpg/v1/fill/w_239,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20260826_222707.jpg",
-          "alt": "20260826_222707.jpg",
-          "srcset": "https://static.wixstatic.com/media/a32355_a37f2c6873104b1b9167022b4cb0dfe5~mv2.jpg/v1/fill/w_239,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20260826_222707.jpg 1x, https://static.wixstatic.com/media/a32355_a37f2c6873104b1b9167022b4cb0dfe5~mv2.jpg/v1/fill/w_478,h_638,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20260826_222707.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_67dc8d6f1f54484bb7bebfde2dd5e325~mv2.jpg/v1/fill/w_47,h_63,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_67dc8d6f1f54484bb7bebfde2dd5e325~mv2.jpg",
-          "alt": "20230801_104438.jpg",
+          "url": "https://static.wixstatic.com/media/a32355_4333020fa57a4c5694bb52f5889c8488~mv2.jpg/v1/fill/w_121,h_160,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_4333020fa57a4c5694bb52f5889c8488~mv2.jpg",
+          "alt": "",
           "srcset": ""
         },
         {
-          "url": "https://static.wixstatic.com/media/a32355_c3b1ce4769bf4e5f94e439d11ba713e8~mv2.jpg/v1/crop/x_385,y_0,w_3230,h_3000/fill/w_292,h_248,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20240427_140847.jpg",
-          "alt": "MAD Gallery",
-          "srcset": "https://static.wixstatic.com/media/a32355_c3b1ce4769bf4e5f94e439d11ba713e8~mv2.jpg/v1/crop/x_385,y_0,w_3230,h_3000/fill/w_292,h_248,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20240427_140847.jpg 1x, https://static.wixstatic.com/media/a32355_c3b1ce4769bf4e5f94e439d11ba713e8~mv2.jpg/v1/crop/x_385,y_0,w_3230,h_3000/fill/w_584,h_496,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20240427_140847.jpg 2x"
+          "url": "https://static.wixstatic.com/media/a32355_a44a7f8de8064ba6a7f3c0bc83b1e58a~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_a44a7f8de8064ba6a7f3c0bc83b1e58a~mv2.jpg",
+          "alt": "",
+          "srcset": ""
         },
         {
-          "url": "https://static.wixstatic.com/media/a32355_92886b1c79de4f6abca7beb22c6249d4~mv2.jpg/v1/fill/w_328,h_246,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20230720_174033.jpg",
-          "alt": "MAD Gallery",
-          "srcset": "https://static.wixstatic.com/media/a32355_92886b1c79de4f6abca7beb22c6249d4~mv2.jpg/v1/fill/w_328,h_246,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20230720_174033.jpg 1x, https://static.wixstatic.com/media/a32355_92886b1c79de4f6abca7beb22c6249d4~mv2.jpg/v1/fill/w_656,h_492,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20230720_174033.jpg 2x"
+          "url": "https://static.wixstatic.com/media/a32355_36b99188615049b5bb987bce0acb27ee~mv2.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_36b99188615049b5bb987bce0acb27ee~mv2.jpg",
+          "alt": "",
+          "srcset": ""
         },
         {
-          "url": "https://static.wixstatic.com/media/a32355_7d150eb54040489485e88de3aac3f211~mv2.jpg/v1/fill/w_328,h_246,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20240427_140822.jpg",
-          "alt": "MAD Gallery",
-          "srcset": "https://static.wixstatic.com/media/a32355_7d150eb54040489485e88de3aac3f211~mv2.jpg/v1/fill/w_328,h_246,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20240427_140822.jpg 1x, https://static.wixstatic.com/media/a32355_7d150eb54040489485e88de3aac3f211~mv2.jpg/v1/fill/w_656,h_492,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20240427_140822.jpg 2x"
+          "url": "https://static.wixstatic.com/media/a32355_439bf7c962b34ee589573fc7f79e308a~mv2.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_439bf7c962b34ee589573fc7f79e308a~mv2.jpg",
+          "alt": "",
+          "srcset": ""
         },
         {
-          "url": "https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/fill/w_122,h_98,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png",
-          "alt": "MAD gallery",
-          "srcset": "https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/fill/w_122,h_98,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png 1x, https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/fill/w_244,h_196,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png 2x"
+          "url": "https://static.wixstatic.com/media/a32355_c98f3a407f1149f6ab951466418cea1f~mv2.jpg/v1/fill/w_147,h_193,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_c98f3a407f1149f6ab951466418cea1f~mv2.jpg",
+          "alt": "",
+          "srcset": ""
         },
         {
-          "url": "https://static.wixstatic.com/media/a32355_4a92822b598d422a8710a68c1289f550~mv2.png/v1/fill/w_120,h_190,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1578_PNG.png",
-          "alt": "Emma Roberts Doris Moyers-Hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_4a92822b598d422a8710a68c1289f550~mv2.png/v1/fill/w_120,h_190,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1578_PNG.png 1x, https://static.wixstatic.com/media/a32355_4a92822b598d422a8710a68c1289f550~mv2.png/v1/fill/w_240,h_380,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1578_PNG.png 2x"
+          "url": "https://static.wixstatic.com/media/a32355_15b851755a0e4e9c8a4ede2470a33832~mv2.jpg/v1/fill/w_147,h_188,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_15b851755a0e4e9c8a4ede2470a33832~mv2.jpg",
+          "alt": "",
+          "srcset": ""
         },
         {
-          "url": "https://static.wixstatic.com/media/a32355_6ce710884b6047208f7268d19ec41176~mv2.jpg/v1/fill/w_152,h_190,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0409_JPG.jpg",
-          "alt": "silicone doll dmhstudio",
-          "srcset": "https://static.wixstatic.com/media/a32355_6ce710884b6047208f7268d19ec41176~mv2.jpg/v1/fill/w_152,h_190,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0409_JPG.jpg 1x, https://static.wixstatic.com/media/a32355_6ce710884b6047208f7268d19ec41176~mv2.jpg/v1/fill/w_304,h_380,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0409_JPG.jpg 2x"
+          "url": "https://static.wixstatic.com/media/a32355_13e455c4b04d438fb067e21836bfc380~mv2.jpg/v1/fill/w_147,h_221,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_13e455c4b04d438fb067e21836bfc380~mv2.jpg",
+          "alt": "",
+          "srcset": ""
         },
         {
-          "url": "https://static.wixstatic.com/media/a32355_4b0213e360f347babd667dc173ca6ea9~mv2.jpg/v1/fill/w_190,h_190,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/p22123081_v_h9_ab.jpg",
-          "alt": "Doris Moyers-Hornbogen Abandoned",
-          "srcset": "https://static.wixstatic.com/media/a32355_4b0213e360f347babd667dc173ca6ea9~mv2.jpg/v1/fill/w_190,h_190,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/p22123081_v_h9_ab.jpg 1x, https://static.wixstatic.com/media/a32355_4b0213e360f347babd667dc173ca6ea9~mv2.jpg/v1/fill/w_380,h_380,al_c,lg_1,q_80,enc_avif,quality_auto/p22123081_v_h9_ab.jpg 2x"
+          "url": "https://static.wixstatic.com/media/a32355_aa00bdc960604aa58403d8ef15456b3a~mv2.jpg/v1/fill/w_147,h_147,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_aa00bdc960604aa58403d8ef15456b3a~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_63b2e62807ba4abf91ca10a539af38e2~mv2.jpg/v1/fill/w_147,h_125,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_63b2e62807ba4abf91ca10a539af38e2~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_7710bdd49a054cf8ab3286fe6e6ad7be~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_7710bdd49a054cf8ab3286fe6e6ad7be~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_23478a0bd3264cbbb97a2d3b9c67c61f~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_23478a0bd3264cbbb97a2d3b9c67c61f~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_f9939a7a0786438f81ec5dc91dfdee2a~mv2.jpg/v1/fill/w_147,h_184,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_f9939a7a0786438f81ec5dc91dfdee2a~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_d3a2b41434554f85829335e386c56cc8~mv2.jpeg/v1/fill/w_147,h_206,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_d3a2b41434554f85829335e386c56cc8~mv2.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_12a8a4127a9147b39007870d4fb72c68~mv2.jpeg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_12a8a4127a9147b39007870d4fb72c68~mv2.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_4300728498674a718b21c45d0d647112~mv2.jpeg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_4300728498674a718b21c45d0d647112~mv2.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_20ce6a1e43dd4c918eb21615ae4624f2~mv2.jpeg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_20ce6a1e43dd4c918eb21615ae4624f2~mv2.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_f5aa3100646b43c7a6bb9faef86d21f0~mv2.jpeg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_f5aa3100646b43c7a6bb9faef86d21f0~mv2.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_6ca8655e0a8845179c5a26ab67a423fe~mv2.jpg/v1/fill/w_147,h_185,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_6ca8655e0a8845179c5a26ab67a423fe~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_3d04d226b0cf459a8e6c39f54649ea21~mv2.jpeg/v1/fill/w_123,h_184,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_3d04d226b0cf459a8e6c39f54649ea21~mv2.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_b83e3dba88b4415ba8f66c123e71500a~mv2.jpg/v1/fill/w_147,h_220,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_b83e3dba88b4415ba8f66c123e71500a~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_a9eb1bf067714c8a949cbc75bb300cef~mv2.png/v1/fill/w_64,h_80,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_a9eb1bf067714c8a949cbc75bb300cef~mv2.png",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_2ceb8162f66e43889c236d6e3d163b55~mv2.jpeg/v1/fill/w_147,h_220,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_2ceb8162f66e43889c236d6e3d163b55~mv2.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_51bbf92fdfb24981bae537a84de112bf~mv2.jpg/v1/fill/w_144,h_217,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_51bbf92fdfb24981bae537a84de112bf~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_faa0c4a50bb54bda9718d689c3c4bf48~mv2.jpeg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_faa0c4a50bb54bda9718d689c3c4bf48~mv2.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_6e692519ae48403f801bfaab93c61a91~mv2.jpeg/v1/fill/w_147,h_147,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_6e692519ae48403f801bfaab93c61a91~mv2.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_8e84041b2fe94e1495134b7d5cf3a05f~mv2.jpeg/v1/fill/w_147,h_190,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_8e84041b2fe94e1495134b7d5cf3a05f~mv2.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_abdc4484ca694caba97a417d55afd031~mv2.jpeg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_abdc4484ca694caba97a417d55afd031~mv2.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_fe5ba197fe2844ffac2302d3b71146aa~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_fe5ba197fe2844ffac2302d3b71146aa~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_184f082f46fc41c8b346a1197878aaf0~mv2.jpg/v1/fill/w_147,h_221,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_184f082f46fc41c8b346a1197878aaf0~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_655cfdd1866d41658f1dac082a065454~mv2.jpg/v1/fill/w_150,h_130,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_655cfdd1866d41658f1dac082a065454~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_e457699ae961474c9d9d44d7efea39ea~mv2.jpeg/v1/fill/w_147,h_184,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_e457699ae961474c9d9d44d7efea39ea~mv2.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_b10b09ffe1c348ea8eea6cccb9b1de77~mv2.jpg/v1/fill/w_89,h_94,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_b10b09ffe1c348ea8eea6cccb9b1de77~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_27efe2a07b95499f9c41cf9fe6ef1f05~mv2.jpg/v1/fill/w_147,h_221,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_27efe2a07b95499f9c41cf9fe6ef1f05~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_949fb35e22da42d48c67ed25e201a2dc~mv2.jpg/v1/fill/w_147,h_147,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_949fb35e22da42d48c67ed25e201a2dc~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_2c72976ff34e480bafd1fa12327253c3~mv2.jpg/v1/fill/w_147,h_221,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_2c72976ff34e480bafd1fa12327253c3~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_c826eac27bf24501846ec56ceb84926f~mv2.jpg/v1/fill/w_144,h_217,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_c826eac27bf24501846ec56ceb84926f~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_666ac1d405ea4092b1373e277755c573~mv2.jpg/v1/fill/w_147,h_220,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_666ac1d405ea4092b1373e277755c573~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_2a855108d43b4778a2a4fdb7981fa77c~mv2.jpg/v1/fill/w_147,h_147,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_2a855108d43b4778a2a4fdb7981fa77c~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_097000922d4e49d3ab95fa4d0b2bd531~mv2.jpg/v1/fill/w_147,h_182,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_097000922d4e49d3ab95fa4d0b2bd531~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_071056b253414c96a05b67f381ede1c8~mv2.jpg/v1/fill/w_110,h_95,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_071056b253414c96a05b67f381ede1c8~mv2.jpg",
+          "alt": "",
+          "srcset": ""
         },
         {
           "url": "https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png/v1/crop/x_184,y_0,w_2491,h_1684/fill/w_321,h_217,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784_edited.png",
@@ -153,6 +278,126 @@
         "https://www.dmhsculptures.com/groups",
         "https://www.dmhsculptures.com/lycancub",
         "https://www.dmhsculptures.com/pre-orders",
+        "https://www.dmhsculptures.com/product-page/angelique-joy",
+        "https://www.dmhsculptures.com/product-page/bianka-vinyl-doll-kit-l-e-50",
+        "https://www.dmhsculptures.com/product-page/coming-soon-blue-sparrow-vinyl-doll-kit",
+        "https://www.dmhsculptures.com/product-page/coming-soon-everlee-vinyl-kit-newborn",
+        "https://www.dmhsculptures.com/product-page/coming-soon-maryjo-toddler-with-downsyndrome",
+        "https://www.dmhsculptures.com/product-page/elsie-anne-vinyl-reborn-doll-kit-click-the-link-below-to-buy",
+        "https://www.dmhsculptures.com/product-page/jinx-lycancub-alternative-vinyl-kit",
+        "https://www.dmhsculptures.com/product-page/kobi-vinyl-reborn-doll-kit-click-the-link-below-to-buy",
+        "https://www.dmhsculptures.com/product-page/kori-vinyl-reborn-doll-kit-unpainted",
+        "https://www.dmhsculptures.com/product-page/lennon-portrait-vinyl-doll-kit",
+        "https://www.dmhsculptures.com/product-page/lilith-lycancub-alternative-vinyl-kit",
+        "https://www.dmhsculptures.com/product-page/maxan",
+        "https://www.dmhsculptures.com/product-page/pre-order-nyx-lycancub-alternative-vinyl-kit-1",
+        "https://www.dmhsculptures.com/product-page/pre-order-selene-lycancub-alternative-vin",
+        "https://www.dmhsculptures.com/product-page/raerae-vinyl-doll-kit-blank-unpainted",
+        "https://www.dmhsculptures.com/product-page/sneak-peek-leandre-newborn-size",
+        "https://www.dmhsculptures.com/product-page/sneak-peek-nikolas-newborn-lifeborn",
+        "https://www.dmhsculptures.com/product-page/sneak-peek-november-rayn",
+        "https://www.dmhsculptures.com/product-page/theo-vinyl-reborn-doll-kit-click-the-link-to-buy",
+        "https://www.dmhsculptures.com/product-page/william-6-month-size-full-body-silicone-toddler",
+        "https://www.dmhsculptures.com/purchasing-agreement",
+        "https://www.dmhsculptures.com/services",
+        "https://www.dmhsculptures.com/silicone-painting-trouble-shooting-guide",
+        "https://www.dmhsculptures.com/silicones",
+        "https://www.dmhsculptures.com/videos",
+        "https://www.dmhsculptures.com/vinyl-kits",
+        "https://www.dmhsculptures.com/vinyl-kits?page=2",
+        "https://www.dmhsculptures.com/what-s-new"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.dmhsculptures.com/vinyl-kits?page=2",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:31:32.066174+00:00",
+      "sha256_html": "019084235f56641b62ebd6070ace23d5a9c601460394017e12a098e19919b56d",
+      "title": "DMH Studio Sculpted Portrait Reborn Baby Dolls Vinyl Kits  2/2",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "DMH Studio Sculpted Portrait Reborn Baby Dolls Vinyl Kits  2/2",
+        "og:description": "Vinyl Doll Kits for sale",
+        "og:image": "https://static.wixstatic.com/media/a32355_8cb1c0a19b20451f82e340debb299bcc~mv2.jpg/v1/fill/w_543,h_405,al_c/a32355_8cb1c0a19b20451f82e340debb299bcc~mv2.jpg",
+        "og:image:width": "543",
+        "og:image:height": "405",
+        "og:url": "https://www.dmhsculptures.com/vinyl-kits?page=2",
+        "og:site_name": "dmh sculptures",
+        "og:type": "website",
+        "fb_admins_meta_tag": "doris.moyers.7",
+        "google-site-verification": "xs9rK0vNNKghdzb1l2YF6b8gFBxd34GYmE6bgMF-P6g",
+        "fb:admins": "doris.moyers.7",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "DMH Studio Sculpted Portrait Reborn Baby Dolls Vinyl Kits  2/2",
+        "twitter:description": "Vinyl Doll Kits for sale",
+        "twitter:image": "https://static.wixstatic.com/media/a32355_8cb1c0a19b20451f82e340debb299bcc~mv2.jpg/v1/fill/w_543,h_405,al_c/a32355_8cb1c0a19b20451f82e340debb299bcc~mv2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/a32355_5bf54835f9994170a2f6bd96040b44b8~mv2.jpg/v1/crop/x_0,y_6,w_2560,h_2547/fill/w_208,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20251204_153218801.jpg",
+          "alt": "Doris Moyers-Hornbogen DMH",
+          "srcset": "https://static.wixstatic.com/media/a32355_5bf54835f9994170a2f6bd96040b44b8~mv2.jpg/v1/crop/x_0,y_6,w_2560,h_2547/fill/w_208,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20251204_153218801.jpg 1x, https://static.wixstatic.com/media/a32355_5bf54835f9994170a2f6bd96040b44b8~mv2.jpg/v1/crop/x_0,y_6,w_2560,h_2547/fill/w_416,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20251204_153218801.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_aa354f11730c4250a44105d317b76d78~mv2.png/v1/fill/w_188,h_105,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784.png",
+          "alt": "DMH Sculptures",
+          "srcset": "https://static.wixstatic.com/media/a32355_aa354f11730c4250a44105d317b76d78~mv2.png/v1/fill/w_188,h_105,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784.png 1x, https://static.wixstatic.com/media/a32355_aa354f11730c4250a44105d317b76d78~mv2.png/v1/fill/w_376,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/crop/x_0,y_61,w_952,h_637/fill/w_119,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png",
+          "alt": "MAD gallery",
+          "srcset": "https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/crop/x_0,y_61,w_952,h_637/fill/w_119,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png 1x, https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/crop/x_0,y_61,w_952,h_637/fill/w_238,h_160,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_331601ad1e07418aab2a2af3a48e04fc~mv2.jpg/v1/fill/w_147,h_147,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_331601ad1e07418aab2a2af3a48e04fc~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_c8f55ddfd74a4411aee8c5f687073d83~mv2.jpg/v1/fill/w_144,h_96,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_c8f55ddfd74a4411aee8c5f687073d83~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_b0b925b110544ce6a8c0e949c5804193~mv2.jpg/v1/fill/w_144,h_217,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_b0b925b110544ce6a8c0e949c5804193~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_f396747f066f445e97977cae8a41783d~mv2.jpg/v1/fill/w_147,h_184,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_f396747f066f445e97977cae8a41783d~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_071056b253414c96a05b67f381ede1c8~mv2.jpg/v1/fill/w_110,h_95,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_071056b253414c96a05b67f381ede1c8~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png/v1/crop/x_184,y_0,w_2491,h_1684/fill/w_321,h_217,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784_edited.png",
+          "alt": "DMH Doris Moyers Hornbogen",
+          "srcset": "https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png/v1/crop/x_184,y_0,w_2491,h_1684/fill/w_321,h_217,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784_edited.png 1x, https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png/v1/crop/x_184,y_0,w_2491,h_1684/fill/w_642,h_434,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784_edited.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.dmhsculptures.com",
+        "https://www.dmhsculptures.com/babies-for-adoption",
+        "https://www.dmhsculptures.com/baby-care",
+        "https://www.dmhsculptures.com/blog",
+        "https://www.dmhsculptures.com/book-online",
+        "https://www.dmhsculptures.com/commission",
+        "https://www.dmhsculptures.com/contact",
+        "https://www.dmhsculptures.com/custom-job",
+        "https://www.dmhsculptures.com/groups",
+        "https://www.dmhsculptures.com/lycancub",
+        "https://www.dmhsculptures.com/pre-orders",
+        "https://www.dmhsculptures.com/product-page/limerence-elf-hobgoblin-avatar-fantasy-doll-kit",
+        "https://www.dmhsculptures.com/product-page/sneak-peek-luan-vinyl-reborn-doll-kit",
         "https://www.dmhsculptures.com/purchasing-agreement",
         "https://www.dmhsculptures.com/services",
         "https://www.dmhsculptures.com/silicone-painting-trouble-shooting-guide",
@@ -166,7 +411,7 @@
     {
       "url": "https://www.dmhsculptures.com",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:11.947844+00:00",
+      "observed_at": "2026-10-13T16:31:33.450651+00:00",
       "sha256_html": "6723aa52bc4e6d876bd6b9d5a6b93f0cfab22c8e7345b1769e931e217a66b91c",
       "title": "DMH Sculpted Portrait Reborn Baby Dolls dba dmhstudio dmhsculptures",
       "metadata": {
@@ -314,7 +559,7 @@
     {
       "url": "https://www.dmhsculptures.com/babies-for-adoption",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:13.139368+00:00",
+      "observed_at": "2026-10-13T16:31:34.639813+00:00",
       "sha256_html": "f53534787791418abc52e362c70f22ccedf61948b03d32654dbd2ae565632b5f",
       "title": "DMH lifelike realistic Portrait Reborn Baby Dolls to buy",
       "metadata": {
@@ -404,7 +649,7 @@
     {
       "url": "https://www.dmhsculptures.com/baby-care",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:14.345704+00:00",
+      "observed_at": "2026-10-13T16:31:35.806603+00:00",
       "sha256_html": "1c63f3a0f5654053426021dd73b0294fd4feb9e83c17863f94f5b89ca131fbc8",
       "title": "DM-H Studio Sculpted Portrait Reborn Baby Doll Care",
       "metadata": {
@@ -477,7 +722,7 @@
     {
       "url": "https://www.dmhsculptures.com/blog",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:15.551974+00:00",
+      "observed_at": "2026-10-13T16:31:36.998656+00:00",
       "sha256_html": "acedabb335e3a2aed3586a3abd73592b3396bc4ec0ac1bff2bbf059b173d5c68",
       "title": "Blog | dmh sculptures",
       "metadata": {
@@ -584,7 +829,7 @@
     {
       "url": "https://www.dmhsculptures.com/profile/admin/profile",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:16.736324+00:00",
+      "observed_at": "2026-10-13T16:31:38.157617+00:00",
       "sha256_html": "ba27500e19ba4cbf186fe619af0ff4e4be50927a9a3e41364adeb74ce82f39fe",
       "title": "Admin | Profile Following icon",
       "metadata": {
@@ -659,7 +904,7 @@
     {
       "url": "https://www.dmhsculptures.com/book-online",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:17.897066+00:00",
+      "observed_at": "2026-10-13T16:31:39.276125+00:00",
       "sha256_html": "81838f0c11c49cf6b4857518bddba2d31cc637e54b3bfe3f6aa5c248e962daac",
       "title": "COURSE at West Coast Doll Show | dmh sculptures",
       "metadata": {
@@ -735,7 +980,7 @@
     {
       "url": "https://www.dmhsculptures.com/buy",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:19.107593+00:00",
+      "observed_at": "2026-10-13T16:31:40.531978+00:00",
       "sha256_html": "269589db0d03e25b18e668a05ab09b97349f3153b4b6b720211fe42a518800b2",
       "title": "DMH Studio Sculpted Portrait Reborn Baby Dolls",
       "metadata": {
@@ -808,7 +1053,7 @@
     {
       "url": "https://www.dmhsculptures.com/coming-soon",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:20.287592+00:00",
+      "observed_at": "2026-10-13T16:31:41.663585+00:00",
       "sha256_html": "fb4d236278fe419a372c343024784b1c11d6c24e0103558750c1438a9742bded",
       "title": "Coming Soon  | dmh sculptures",
       "metadata": {
@@ -1049,7 +1294,7 @@
     {
       "url": "https://www.dmhsculptures.com/commission",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:21.516893+00:00",
+      "observed_at": "2026-10-13T16:31:42.791473+00:00",
       "sha256_html": "113e187b48cdb9851a22aad5e9b8dc6e210e9aa53fcae47fe16c747af4c4b64d",
       "title": "DMH Sculpted Portrait Reborn Baby Doll Commission",
       "metadata": {
@@ -1301,7 +1546,7 @@
     {
       "url": "https://www.dmhsculptures.com/contact",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:22.818003+00:00",
+      "observed_at": "2026-10-13T16:31:43.964485+00:00",
       "sha256_html": "5228625dfb8ded8b9f2ae73877b4305749ef4a8dd668b60d3ff48bff558322aa",
       "title": "DMH Sculpt Portrait Reborn Contact Doris",
       "metadata": {
@@ -1374,7 +1619,7 @@
     {
       "url": "https://www.dmhsculptures.com/courses",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:24.042547+00:00",
+      "observed_at": "2026-10-13T16:31:45.100045+00:00",
       "sha256_html": "c8573400a9a03045c8e4ba979330a59a47a1ca6786a5b3787aa52d809fa3da53",
       "title": "how to avoid online scams | dmh sculptures",
       "metadata": {
@@ -1448,9 +1693,157 @@
       "extraction_status": "candidate_unreviewed"
     },
     {
+      "url": "https://www.dmhsculptures.com/",
+      "platform": "wix",
+      "observed_at": "2026-10-13T16:31:46.306790+00:00",
+      "sha256_html": "6723aa52bc4e6d876bd6b9d5a6b93f0cfab22c8e7345b1769e931e217a66b91c",
+      "title": "DMH Sculpted Portrait Reborn Baby Dolls dba dmhstudio dmhsculptures",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "Doris Moyers Hornbogen sculpts portraits of babies and creates hyper-realistic baby dolls in their image in vinyl and silicone. DMH sells vinyl kits and silicone kits to artists and completed babies to doll collectors. \nFrom the Studio of dmhstudio dmhsculptures ",
+        "og:title": "DMH Sculpted Portrait Reborn Baby Dolls dba dmhstudio dmhsculptures",
+        "og:description": "Doris Moyers Hornbogen sculpts portraits of babies and creates hyper-realistic baby dolls in their image in vinyl and silicone. DMH sells vinyl kits and silicone kits to artists and completed babies to doll collectors. \nFrom the Studio of dmhstudio dmhsculptures ",
+        "og:image": "https://static.wixstatic.com/media/a32355_3e25e128eed2476cbf118c66fae3c435~mv2.jpg/v1/fill/w_2500,h_2500,al_c/a32355_3e25e128eed2476cbf118c66fae3c435~mv2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "2500",
+        "og:url": "https://www.dmhsculptures.com",
+        "og:site_name": "dmh sculptures",
+        "og:type": "website",
+        "fb_admins_meta_tag": "doris.moyers.7",
+        "google-site-verification": "xs9rK0vNNKghdzb1l2YF6b8gFBxd34GYmE6bgMF-P6g",
+        "fb:admins": "doris.moyers.7",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "DMH Sculpted Portrait Reborn Baby Dolls dba dmhstudio dmhsculptures",
+        "twitter:description": "Doris Moyers Hornbogen sculpts portraits of babies and creates hyper-realistic baby dolls in their image in vinyl and silicone. DMH sells vinyl kits and silicone kits to artists and completed babies to doll collectors. \nFrom the Studio of dmhstudio dmhsculptures ",
+        "twitter:image": "https://static.wixstatic.com/media/a32355_3e25e128eed2476cbf118c66fae3c435~mv2.jpg/v1/fill/w_2500,h_2500,al_c/a32355_3e25e128eed2476cbf118c66fae3c435~mv2.jpg"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "LocalBusiness",
+          "name": "DMH Sculptures",
+          "url": "https://www.dmhsculptures.com",
+          "image": "https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "US",
+            "addressRegion": "IN"
+          },
+          "telephone": "260-307-1737"
+        },
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "dmh sculptures",
+          "url": "https://www.dmhsculptures.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/a32355_5bf54835f9994170a2f6bd96040b44b8~mv2.jpg/v1/crop/x_0,y_6,w_2560,h_2547/fill/w_208,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20251204_153218801.jpg",
+          "alt": "Doris Moyers-Hornbogen DMH",
+          "srcset": "https://static.wixstatic.com/media/a32355_5bf54835f9994170a2f6bd96040b44b8~mv2.jpg/v1/crop/x_0,y_6,w_2560,h_2547/fill/w_208,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20251204_153218801.jpg 1x, https://static.wixstatic.com/media/a32355_5bf54835f9994170a2f6bd96040b44b8~mv2.jpg/v1/crop/x_0,y_6,w_2560,h_2547/fill/w_416,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20251204_153218801.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_aa354f11730c4250a44105d317b76d78~mv2.png/v1/fill/w_188,h_105,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784.png",
+          "alt": "DMH Sculptures",
+          "srcset": "https://static.wixstatic.com/media/a32355_aa354f11730c4250a44105d317b76d78~mv2.png/v1/fill/w_188,h_105,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784.png 1x, https://static.wixstatic.com/media/a32355_aa354f11730c4250a44105d317b76d78~mv2.png/v1/fill/w_376,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/crop/x_0,y_61,w_952,h_637/fill/w_119,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png",
+          "alt": "MAD gallery",
+          "srcset": "https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/crop/x_0,y_61,w_952,h_637/fill/w_119,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png 1x, https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/crop/x_0,y_61,w_952,h_637/fill/w_238,h_160,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_2e00068f9893496f940914d2c0feba14~mv2.jpg/v1/crop/x_0,y_0,w_3047,h_2774/fill/w_350,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20230309_203247081.jpg",
+          "alt": "Angelique Joy ",
+          "srcset": "https://static.wixstatic.com/media/a32355_2e00068f9893496f940914d2c0feba14~mv2.jpg/v1/crop/x_0,y_0,w_3047,h_2774/fill/w_350,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20230309_203247081.jpg 1x, https://static.wixstatic.com/media/a32355_2e00068f9893496f940914d2c0feba14~mv2.jpg/v1/crop/x_0,y_0,w_3047,h_2774/fill/w_700,h_638,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20230309_203247081.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_c6eee05471374b0d87f2cd3da318054b~mv2.jpg/v1/fill/w_253,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20260318_142321602.jpg",
+          "alt": "Patching class DMH ",
+          "srcset": "https://static.wixstatic.com/media/a32355_c6eee05471374b0d87f2cd3da318054b~mv2.jpg/v1/fill/w_253,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20260318_142321602.jpg 1x, https://static.wixstatic.com/media/a32355_c6eee05471374b0d87f2cd3da318054b~mv2.jpg/v1/fill/w_506,h_638,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20260318_142321602.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_a37f2c6873104b1b9167022b4cb0dfe5~mv2.jpg/v1/fill/w_239,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20260826_222707.jpg",
+          "alt": "20260826_222707.jpg",
+          "srcset": "https://static.wixstatic.com/media/a32355_a37f2c6873104b1b9167022b4cb0dfe5~mv2.jpg/v1/fill/w_239,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20260826_222707.jpg 1x, https://static.wixstatic.com/media/a32355_a37f2c6873104b1b9167022b4cb0dfe5~mv2.jpg/v1/fill/w_478,h_638,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20260826_222707.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_67dc8d6f1f54484bb7bebfde2dd5e325~mv2.jpg/v1/fill/w_47,h_63,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_67dc8d6f1f54484bb7bebfde2dd5e325~mv2.jpg",
+          "alt": "20230801_104438.jpg",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_c3b1ce4769bf4e5f94e439d11ba713e8~mv2.jpg/v1/crop/x_385,y_0,w_3230,h_3000/fill/w_292,h_248,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20240427_140847.jpg",
+          "alt": "MAD Gallery",
+          "srcset": "https://static.wixstatic.com/media/a32355_c3b1ce4769bf4e5f94e439d11ba713e8~mv2.jpg/v1/crop/x_385,y_0,w_3230,h_3000/fill/w_292,h_248,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20240427_140847.jpg 1x, https://static.wixstatic.com/media/a32355_c3b1ce4769bf4e5f94e439d11ba713e8~mv2.jpg/v1/crop/x_385,y_0,w_3230,h_3000/fill/w_584,h_496,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20240427_140847.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_92886b1c79de4f6abca7beb22c6249d4~mv2.jpg/v1/fill/w_328,h_246,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20230720_174033.jpg",
+          "alt": "MAD Gallery",
+          "srcset": "https://static.wixstatic.com/media/a32355_92886b1c79de4f6abca7beb22c6249d4~mv2.jpg/v1/fill/w_328,h_246,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20230720_174033.jpg 1x, https://static.wixstatic.com/media/a32355_92886b1c79de4f6abca7beb22c6249d4~mv2.jpg/v1/fill/w_656,h_492,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20230720_174033.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_7d150eb54040489485e88de3aac3f211~mv2.jpg/v1/fill/w_328,h_246,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20240427_140822.jpg",
+          "alt": "MAD Gallery",
+          "srcset": "https://static.wixstatic.com/media/a32355_7d150eb54040489485e88de3aac3f211~mv2.jpg/v1/fill/w_328,h_246,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20240427_140822.jpg 1x, https://static.wixstatic.com/media/a32355_7d150eb54040489485e88de3aac3f211~mv2.jpg/v1/fill/w_656,h_492,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20240427_140822.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/fill/w_122,h_98,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png",
+          "alt": "MAD gallery",
+          "srcset": "https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/fill/w_122,h_98,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png 1x, https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/fill/w_244,h_196,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_4a92822b598d422a8710a68c1289f550~mv2.png/v1/fill/w_120,h_190,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1578_PNG.png",
+          "alt": "Emma Roberts Doris Moyers-Hornbogen",
+          "srcset": "https://static.wixstatic.com/media/a32355_4a92822b598d422a8710a68c1289f550~mv2.png/v1/fill/w_120,h_190,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1578_PNG.png 1x, https://static.wixstatic.com/media/a32355_4a92822b598d422a8710a68c1289f550~mv2.png/v1/fill/w_240,h_380,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1578_PNG.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_6ce710884b6047208f7268d19ec41176~mv2.jpg/v1/fill/w_152,h_190,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0409_JPG.jpg",
+          "alt": "silicone doll dmhstudio",
+          "srcset": "https://static.wixstatic.com/media/a32355_6ce710884b6047208f7268d19ec41176~mv2.jpg/v1/fill/w_152,h_190,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0409_JPG.jpg 1x, https://static.wixstatic.com/media/a32355_6ce710884b6047208f7268d19ec41176~mv2.jpg/v1/fill/w_304,h_380,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0409_JPG.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_4b0213e360f347babd667dc173ca6ea9~mv2.jpg/v1/fill/w_190,h_190,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/p22123081_v_h9_ab.jpg",
+          "alt": "Doris Moyers-Hornbogen Abandoned",
+          "srcset": "https://static.wixstatic.com/media/a32355_4b0213e360f347babd667dc173ca6ea9~mv2.jpg/v1/fill/w_190,h_190,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/p22123081_v_h9_ab.jpg 1x, https://static.wixstatic.com/media/a32355_4b0213e360f347babd667dc173ca6ea9~mv2.jpg/v1/fill/w_380,h_380,al_c,lg_1,q_80,enc_avif,quality_auto/p22123081_v_h9_ab.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png/v1/crop/x_184,y_0,w_2491,h_1684/fill/w_321,h_217,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784_edited.png",
+          "alt": "DMH Doris Moyers Hornbogen",
+          "srcset": "https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png/v1/crop/x_184,y_0,w_2491,h_1684/fill/w_321,h_217,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784_edited.png 1x, https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png/v1/crop/x_184,y_0,w_2491,h_1684/fill/w_642,h_434,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784_edited.png 2x"
+        }
+      ],
+      "links": [
+        "https://www.dmhsculptures.com",
+        "https://www.dmhsculptures.com/babies-for-adoption",
+        "https://www.dmhsculptures.com/baby-care",
+        "https://www.dmhsculptures.com/blog",
+        "https://www.dmhsculptures.com/book-online",
+        "https://www.dmhsculptures.com/commission",
+        "https://www.dmhsculptures.com/contact",
+        "https://www.dmhsculptures.com/custom-job",
+        "https://www.dmhsculptures.com/groups",
+        "https://www.dmhsculptures.com/lycancub",
+        "https://www.dmhsculptures.com/pre-orders",
+        "https://www.dmhsculptures.com/purchasing-agreement",
+        "https://www.dmhsculptures.com/services",
+        "https://www.dmhsculptures.com/silicone-painting-trouble-shooting-guide",
+        "https://www.dmhsculptures.com/silicones",
+        "https://www.dmhsculptures.com/videos",
+        "https://www.dmhsculptures.com/vinyl-kits",
+        "https://www.dmhsculptures.com/what-s-new"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
       "url": "https://www.dmhsculptures.com/custom-job",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:25.223178+00:00",
+      "observed_at": "2026-10-13T16:31:47.435620+00:00",
       "sha256_html": "2af205b38dedec104f7bc654d90069bca00e73922b4e6ebaa161e5f3f94f5277",
       "title": "How to buy a doll | dmh sculptures",
       "metadata": {
@@ -1523,7 +1916,7 @@
     {
       "url": "https://www.dmhsculptures.com/doll-eyes-and-accessories",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:26.422294+00:00",
+      "observed_at": "2026-10-13T16:31:48.561930+00:00",
       "sha256_html": "7030177349f8d40d61a6f83c5953dd7228944c02e036de9d392a2a3f50c9ce0c",
       "title": "DM-H Studio | Reborn Baby Dolls",
       "metadata": {
@@ -1671,7 +2064,7 @@
     {
       "url": "https://www.dmhsculptures.com/group/dmh-art-doll-club/discussion",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:27.590590+00:00",
+      "observed_at": "2026-10-13T16:31:49.697386+00:00",
       "sha256_html": "12756a53020d9b53ed631338f7dba57b39a0a4bcbc8f03ea9284d4218c37b4dc",
       "title": "Discussion - DMH Art Doll Club | dmh sculptures",
       "metadata": {
@@ -1751,7 +2144,7 @@
     {
       "url": "https://www.dmhsculptures.com/groups",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:29:28.980822+00:00",
+      "observed_at": "2026-10-13T16:31:50.810559+00:00",
       "sha256_html": "c72a22cee67f6c18b3765cd34d6996b3c950e433e29b9e0fae99555397843d52",
       "title": "DMH Art Doll Club  | dmh sculptures",
       "metadata": {
@@ -1794,419 +2187,6 @@
           "url": "https://static.wixstatic.com/media/a32355_cfb9ad6bce5c4ab1a7318bfd45642e5d~mv2.jpg/v1/fill/w_40,h_40,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a32355_cfb9ad6bce5c4ab1a7318bfd45642e5d~mv2.jpg",
           "alt": "",
           "srcset": "https://static.wixstatic.com/media/a32355_cfb9ad6bce5c4ab1a7318bfd45642e5d~mv2.jpg/v1/fill/w_40,h_40,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a32355_cfb9ad6bce5c4ab1a7318bfd45642e5d~mv2.jpg 1x, https://static.wixstatic.com/media/a32355_cfb9ad6bce5c4ab1a7318bfd45642e5d~mv2.jpg/v1/fill/w_80,h_80,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a32355_cfb9ad6bce5c4ab1a7318bfd45642e5d~mv2.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png/v1/crop/x_184,y_0,w_2491,h_1684/fill/w_321,h_217,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784_edited.png",
-          "alt": "DMH Doris Moyers Hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png/v1/crop/x_184,y_0,w_2491,h_1684/fill/w_321,h_217,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784_edited.png 1x, https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png/v1/crop/x_184,y_0,w_2491,h_1684/fill/w_642,h_434,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784_edited.png 2x"
-        }
-      ],
-      "links": [
-        "https://www.dmhsculptures.com",
-        "https://www.dmhsculptures.com/babies-for-adoption",
-        "https://www.dmhsculptures.com/baby-care",
-        "https://www.dmhsculptures.com/blog",
-        "https://www.dmhsculptures.com/book-online",
-        "https://www.dmhsculptures.com/commission",
-        "https://www.dmhsculptures.com/contact",
-        "https://www.dmhsculptures.com/custom-job",
-        "https://www.dmhsculptures.com/groups",
-        "https://www.dmhsculptures.com/lycancub",
-        "https://www.dmhsculptures.com/pre-orders",
-        "https://www.dmhsculptures.com/purchasing-agreement",
-        "https://www.dmhsculptures.com/services",
-        "https://www.dmhsculptures.com/silicone-painting-trouble-shooting-guide",
-        "https://www.dmhsculptures.com/silicones",
-        "https://www.dmhsculptures.com/videos",
-        "https://www.dmhsculptures.com/vinyl-kits",
-        "https://www.dmhsculptures.com/what-s-new"
-      ],
-      "extraction_status": "candidate_unreviewed"
-    },
-    {
-      "url": "https://www.dmhsculptures.com/lycancub",
-      "platform": "wix",
-      "observed_at": "2026-10-13T16:29:30.150283+00:00",
-      "sha256_html": "ba489bcaaa7d3d406468f2e9efae15890dddb8d2eaad264c8b81cc7e51150b1c",
-      "title": "LycanCubs | dmh sculptures",
-      "metadata": {
-        "viewport": "width=device-width, initial-scale=1",
-        "generator": "Wix.com Website Builder",
-        "format-detection": "telephone=no",
-        "skype_toolbar": "skype_toolbar_parser_compatible",
-        "description": "Lycan Cubs werewolf babies by Doris Moyers-Hornbogen",
-        "og:title": "LycanCub | dmhstudio",
-        "og:description": "hybrid alternative werewolf lycan dolls",
-        "og:image": "https://static.wixstatic.com/media/a32355_b4969e9c9b7e456cafc958365b704154~mv2.jpg/v1/fill/w_1290,h_986,al_c/a32355_b4969e9c9b7e456cafc958365b704154~mv2.jpg",
-        "og:image:width": "1290",
-        "og:image:height": "986",
-        "og:url": "https://www.dmhsculptures.com/lycancub",
-        "og:site_name": "dmh sculptures",
-        "og:type": "website",
-        "fb_admins_meta_tag": "doris.moyers.7",
-        "google-site-verification": "xs9rK0vNNKghdzb1l2YF6b8gFBxd34GYmE6bgMF-P6g",
-        "fb:admins": "doris.moyers.7",
-        "twitter:card": "summary_large_image",
-        "twitter:title": "LycanCub | dmhstudio",
-        "twitter:description": "hybrid alternative werewolf lycan dolls",
-        "twitter:image": "https://static.wixstatic.com/media/a32355_b4969e9c9b7e456cafc958365b704154~mv2.jpg/v1/fill/w_1290,h_986,al_c/a32355_b4969e9c9b7e456cafc958365b704154~mv2.jpg"
-      },
-      "structured_data": [],
-      "image_candidates": [
-        {
-          "url": "https://static.wixstatic.com/media/a32355_5bf54835f9994170a2f6bd96040b44b8~mv2.jpg/v1/crop/x_0,y_6,w_2560,h_2547/fill/w_208,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20251204_153218801.jpg",
-          "alt": "Doris Moyers-Hornbogen DMH",
-          "srcset": "https://static.wixstatic.com/media/a32355_5bf54835f9994170a2f6bd96040b44b8~mv2.jpg/v1/crop/x_0,y_6,w_2560,h_2547/fill/w_208,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20251204_153218801.jpg 1x, https://static.wixstatic.com/media/a32355_5bf54835f9994170a2f6bd96040b44b8~mv2.jpg/v1/crop/x_0,y_6,w_2560,h_2547/fill/w_416,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20251204_153218801.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_aa354f11730c4250a44105d317b76d78~mv2.png/v1/fill/w_188,h_105,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784.png",
-          "alt": "DMH Sculptures",
-          "srcset": "https://static.wixstatic.com/media/a32355_aa354f11730c4250a44105d317b76d78~mv2.png/v1/fill/w_188,h_105,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784.png 1x, https://static.wixstatic.com/media/a32355_aa354f11730c4250a44105d317b76d78~mv2.png/v1/fill/w_376,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784.png 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/crop/x_0,y_61,w_952,h_637/fill/w_119,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png",
-          "alt": "MAD gallery",
-          "srcset": "https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/crop/x_0,y_61,w_952,h_637/fill/w_119,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png 1x, https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/crop/x_0,y_61,w_952,h_637/fill/w_238,h_160,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_9e16eaa53e2548238c19f10c3cb07d5c~mv2.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/PngItem_323125.png",
-          "alt": "reborn silicone doll",
-          "srcset": "https://static.wixstatic.com/media/a32355_9e16eaa53e2548238c19f10c3cb07d5c~mv2.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/PngItem_323125.png 1x, https://static.wixstatic.com/media/a32355_9e16eaa53e2548238c19f10c3cb07d5c~mv2.png/v1/fill/w_88,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/PngItem_323125.png 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_ed338b9eccb346f289a15ec8fe8a5e78~mv2.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_ed338b9eccb346f289a15ec8fe8a5e78~mv2.png",
-          "alt": "dm_h_Studio_baby_with_wolf_ears_and_wolf_snout_colorful_paint_s_25e5af71-8342-4014-b7ae-57",
-          "srcset": ""
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_9214427998c14adf8aa3bce89e3add34~mv2.jpg/v1/fill/w_239,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/FB_IMG_1717760812648.jpg",
-          "alt": "dmh sculptures",
-          "srcset": "https://static.wixstatic.com/media/a32355_9214427998c14adf8aa3bce89e3add34~mv2.jpg/v1/fill/w_239,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/FB_IMG_1717760812648.jpg 1x, https://static.wixstatic.com/media/a32355_9214427998c14adf8aa3bce89e3add34~mv2.jpg/v1/fill/w_478,h_638,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/FB_IMG_1717760812648.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_0c95881f97b94adaba15c2c17c2d7daf~mv2.jpg/v1/fill/w_255,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20240607_080711723.jpg",
-          "alt": "InShot_20240607_080711723.jpg",
-          "srcset": "https://static.wixstatic.com/media/a32355_0c95881f97b94adaba15c2c17c2d7daf~mv2.jpg/v1/fill/w_255,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20240607_080711723.jpg 1x, https://static.wixstatic.com/media/a32355_0c95881f97b94adaba15c2c17c2d7daf~mv2.jpg/v1/fill/w_510,h_638,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20240607_080711723.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_8d652b501e4d4da89f4b86a7ecdb0996~mv2.jpg/v1/fill/w_102,h_102,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_8d652b501e4d4da89f4b86a7ecdb0996~mv2.jpg",
-          "alt": "InShot_20240607_072542254.jpg",
-          "srcset": ""
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_8d652b501e4d4da89f4b86a7ecdb0996~mv2.jpg/v1/fill/w_122,h_122,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_8d652b501e4d4da89f4b86a7ecdb0996~mv2.jpg",
-          "alt": "InShot_20240607_072542254.jpg",
-          "srcset": ""
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_b793491fc54b4beabb73172268922b40~mv2.jpg/v1/fill/w_123,h_110,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_b793491fc54b4beabb73172268922b40~mv2.jpg",
-          "alt": "dm-H studio\n",
-          "srcset": ""
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_77f269df87ab49af99b2bb8537f20c5c~mv2.jpeg/v1/fill/w_480,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_238977192112134.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_77f269df87ab49af99b2bb8537f20c5c~mv2.jpeg/v1/fill/w_480,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_238977192112134.jpeg 1x, https://static.wixstatic.com/media/a32355_77f269df87ab49af99b2bb8537f20c5c~mv2.jpeg/v1/fill/w_960,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_238977192112134.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_c2fea5daddf4497bbca3b20b43f59291~mv2.jpeg/v1/fill/w_106,h_141,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_c2fea5daddf4497bbca3b20b43f59291~mv2.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": ""
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_d7bcdbca9d124e6e8356324d063ddcbb~mv2.jpg/v1/fill/w_105,h_116,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_d7bcdbca9d124e6e8356324d063ddcbb~mv2.jpg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": ""
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_f55c61132cf343f1a8ead0d91e6b819b~mv2.jpg/v1/fill/w_123,h_123,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_f55c61132cf343f1a8ead0d91e6b819b~mv2.jpg",
-          "alt": "353060073_1000441054307876_7585409878575119936_n.jpg",
-          "srcset": ""
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_fc2da350d15f4acb916188217c773281~mv2.jpeg/v1/fill/w_123,h_92,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_fc2da350d15f4acb916188217c773281~mv2.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen\n",
-          "srcset": ""
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_5b76e5447e3646e0a60b9aef1fc70637~mv2.jpg/v1/fill/w_112,h_151,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/a32355_5b76e5447e3646e0a60b9aef1fc70637~mv2.jpg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": ""
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_9dcbc2f4c39f44dc9f1845db10941327~mv2.jpg/v1/crop/x_297,y_0,w_2660,h_4096/fill/w_367,h_565,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20230527_134840910.jpg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_9dcbc2f4c39f44dc9f1845db10941327~mv2.jpg/v1/crop/x_297,y_0,w_2660,h_4096/fill/w_367,h_565,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20230527_134840910.jpg 1x, https://static.wixstatic.com/media/a32355_9dcbc2f4c39f44dc9f1845db10941327~mv2.jpg/v1/crop/x_297,y_0,w_2660,h_4096/fill/w_734,h_1130,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20230527_134840910.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_bd1ccdbaadc54b75889c85717314b697~mv2.jpg/v1/fill/w_210,h_227,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_bd1ccdbaadc54b75889c85717314b697~mv2.jpg",
-          "alt": "Lycan cub doris moyers-hornbogen ",
-          "srcset": "https://static.wixstatic.com/media/a32355_bd1ccdbaadc54b75889c85717314b697~mv2.jpg/v1/fill/w_210,h_227,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_bd1ccdbaadc54b75889c85717314b697~mv2.jpg 1x, https://static.wixstatic.com/media/a32355_bd1ccdbaadc54b75889c85717314b697~mv2.jpg/v1/fill/w_420,h_454,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_bd1ccdbaadc54b75889c85717314b697~mv2.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_6d96974039c64c9c9207ae896f865930~mv2.jpg/v1/fill/w_195,h_259,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20230422_110022.jpg",
-          "alt": "Lycan cub doris moyers-hornbogen\n",
-          "srcset": "https://static.wixstatic.com/media/a32355_6d96974039c64c9c9207ae896f865930~mv2.jpg/v1/fill/w_195,h_259,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20230422_110022.jpg 1x, https://static.wixstatic.com/media/a32355_6d96974039c64c9c9207ae896f865930~mv2.jpg/v1/fill/w_390,h_518,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20230422_110022.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_5b99f9e034084d818f47ddbc081cd107~mv2.jpeg/v1/fill/w_414,h_554,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1810611089334513.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_5b99f9e034084d818f47ddbc081cd107~mv2.jpeg/v1/fill/w_414,h_554,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1810611089334513.jpeg 1x, https://static.wixstatic.com/media/a32355_5b99f9e034084d818f47ddbc081cd107~mv2.jpeg/v1/fill/w_828,h_1108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1810611089334513.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_6d5b4de966744d14a67da91fb1f80cb9~mv2.jpeg/v1/fill/w_412,h_536,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1596161014213837.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_6d5b4de966744d14a67da91fb1f80cb9~mv2.jpeg/v1/fill/w_412,h_536,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1596161014213837.jpeg 1x, https://static.wixstatic.com/media/a32355_6d5b4de966744d14a67da91fb1f80cb9~mv2.jpeg/v1/fill/w_824,h_1072,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1596161014213837.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_a87d3675d6704fe583502bb5e0c33427~mv2.jpeg/v1/fill/w_930,h_620,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_a87d3675d6704fe583502bb5e0c33427~mv2.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_a87d3675d6704fe583502bb5e0c33427~mv2.jpeg/v1/fill/w_930,h_620,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_a87d3675d6704fe583502bb5e0c33427~mv2.jpeg 1x, https://static.wixstatic.com/media/a32355_a87d3675d6704fe583502bb5e0c33427~mv2.jpeg/v1/fill/w_1860,h_1240,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_a87d3675d6704fe583502bb5e0c33427~mv2.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_43da993c13b141d9af45f7c5c4fc27e9~mv2.jpeg/v1/crop/x_0,y_0,w_3024,h_3518/fill/w_479,h_558,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_43da993c13b141d9af45f7c5c4fc27e9~mv2.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_43da993c13b141d9af45f7c5c4fc27e9~mv2.jpeg/v1/crop/x_0,y_0,w_3024,h_3518/fill/w_479,h_558,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_43da993c13b141d9af45f7c5c4fc27e9~mv2.jpeg 1x, https://static.wixstatic.com/media/a32355_43da993c13b141d9af45f7c5c4fc27e9~mv2.jpeg/v1/crop/x_0,y_0,w_3024,h_3518/fill/w_958,h_1116,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_43da993c13b141d9af45f7c5c4fc27e9~mv2.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_d25b38b8091f4b32bb75b4e0f75264e0~mv2.jpeg/v1/fill/w_600,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_d25b38b8091f4b32bb75b4e0f75264e0~mv2.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_d25b38b8091f4b32bb75b4e0f75264e0~mv2.jpeg/v1/fill/w_600,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_d25b38b8091f4b32bb75b4e0f75264e0~mv2.jpeg 1x, https://static.wixstatic.com/media/a32355_d25b38b8091f4b32bb75b4e0f75264e0~mv2.jpeg/v1/fill/w_1200,h_800,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_d25b38b8091f4b32bb75b4e0f75264e0~mv2.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_c6a6310df2ce43e4b83b90ef301e9ff3~mv2.jpeg/v1/fill/w_924,h_618,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_c6a6310df2ce43e4b83b90ef301e9ff3~mv2.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_c6a6310df2ce43e4b83b90ef301e9ff3~mv2.jpeg/v1/fill/w_924,h_618,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_c6a6310df2ce43e4b83b90ef301e9ff3~mv2.jpeg 1x, https://static.wixstatic.com/media/a32355_c6a6310df2ce43e4b83b90ef301e9ff3~mv2.jpeg/v1/fill/w_1848,h_1236,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_c6a6310df2ce43e4b83b90ef301e9ff3~mv2.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_127d7723b01349339816cd6cd17efa2a~mv2.jpeg/v1/fill/w_406,h_541,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_127d7723b01349339816cd6cd17efa2a~mv2.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_127d7723b01349339816cd6cd17efa2a~mv2.jpeg/v1/fill/w_406,h_541,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_127d7723b01349339816cd6cd17efa2a~mv2.jpeg 1x, https://static.wixstatic.com/media/a32355_127d7723b01349339816cd6cd17efa2a~mv2.jpeg/v1/fill/w_812,h_1082,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_127d7723b01349339816cd6cd17efa2a~mv2.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_ea47bfe41aef400db248bcefe1cd33d6~mv2.jpg/v1/fill/w_264,h_351,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_ea47bfe41aef400db248bcefe1cd33d6~mv2.jpg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_ea47bfe41aef400db248bcefe1cd33d6~mv2.jpg/v1/fill/w_264,h_351,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_ea47bfe41aef400db248bcefe1cd33d6~mv2.jpg 1x, https://static.wixstatic.com/media/a32355_ea47bfe41aef400db248bcefe1cd33d6~mv2.jpg/v1/fill/w_528,h_702,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_ea47bfe41aef400db248bcefe1cd33d6~mv2.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_88111e81821a41178afbd25e963c7c15~mv2.jpg/v1/fill/w_276,h_359,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_88111e81821a41178afbd25e963c7c15~mv2.jpg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_88111e81821a41178afbd25e963c7c15~mv2.jpg/v1/fill/w_276,h_359,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_88111e81821a41178afbd25e963c7c15~mv2.jpg 1x, https://static.wixstatic.com/media/a32355_88111e81821a41178afbd25e963c7c15~mv2.jpg/v1/fill/w_552,h_718,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_88111e81821a41178afbd25e963c7c15~mv2.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_cebdcd17dd834374bf326348f412ef42~mv2.jpeg/v1/fill/w_320,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_cebdcd17dd834374bf326348f412ef42~mv2.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_cebdcd17dd834374bf326348f412ef42~mv2.jpeg/v1/fill/w_320,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_cebdcd17dd834374bf326348f412ef42~mv2.jpeg 1x, https://static.wixstatic.com/media/a32355_cebdcd17dd834374bf326348f412ef42~mv2.jpeg/v1/fill/w_640,h_960,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_cebdcd17dd834374bf326348f412ef42~mv2.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_8ab097789c9d487db9ff274a2cfcafd4~mv2.jpeg/v1/fill/w_450,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_8ab097789c9d487db9ff274a2cfcafd4~mv2.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_8ab097789c9d487db9ff274a2cfcafd4~mv2.jpeg/v1/fill/w_450,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_8ab097789c9d487db9ff274a2cfcafd4~mv2.jpeg 1x, https://static.wixstatic.com/media/a32355_8ab097789c9d487db9ff274a2cfcafd4~mv2.jpeg/v1/fill/w_900,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_8ab097789c9d487db9ff274a2cfcafd4~mv2.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_0fc964eb5cac4a52a330745766dc8d36~mv2.jpeg/v1/fill/w_450,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_0fc964eb5cac4a52a330745766dc8d36~mv2.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_0fc964eb5cac4a52a330745766dc8d36~mv2.jpeg/v1/fill/w_450,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_0fc964eb5cac4a52a330745766dc8d36~mv2.jpeg 1x, https://static.wixstatic.com/media/a32355_0fc964eb5cac4a52a330745766dc8d36~mv2.jpeg/v1/fill/w_900,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_0fc964eb5cac4a52a330745766dc8d36~mv2.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_8a2650167c634cdeaffe0e06549c009c~mv2.jpeg/v1/fill/w_396,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_8a2650167c634cdeaffe0e06549c009c~mv2.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_8a2650167c634cdeaffe0e06549c009c~mv2.jpeg/v1/fill/w_396,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_8a2650167c634cdeaffe0e06549c009c~mv2.jpeg 1x, https://static.wixstatic.com/media/a32355_8a2650167c634cdeaffe0e06549c009c~mv2.jpeg/v1/fill/w_792,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_8a2650167c634cdeaffe0e06549c009c~mv2.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_885d6ca976d6405a94e8fcc5fcd249fc~mv2.jpeg/v1/fill/w_450,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_885d6ca976d6405a94e8fcc5fcd249fc~mv2.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_885d6ca976d6405a94e8fcc5fcd249fc~mv2.jpeg/v1/fill/w_450,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_885d6ca976d6405a94e8fcc5fcd249fc~mv2.jpeg 1x, https://static.wixstatic.com/media/a32355_885d6ca976d6405a94e8fcc5fcd249fc~mv2.jpeg/v1/fill/w_900,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_885d6ca976d6405a94e8fcc5fcd249fc~mv2.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_37af6cdc9a8f4c5688a286470f8cf1a0~mv2.jpeg/v1/fill/w_478,h_422,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_37af6cdc9a8f4c5688a286470f8cf1a0~mv2.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_37af6cdc9a8f4c5688a286470f8cf1a0~mv2.jpeg/v1/fill/w_478,h_422,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_37af6cdc9a8f4c5688a286470f8cf1a0~mv2.jpeg 1x, https://static.wixstatic.com/media/a32355_37af6cdc9a8f4c5688a286470f8cf1a0~mv2.jpeg/v1/fill/w_956,h_844,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_37af6cdc9a8f4c5688a286470f8cf1a0~mv2.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_dc23aba9c12540f6b3ddea8ee7f99c99~mv2.jpeg/v1/fill/w_449,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_dc23aba9c12540f6b3ddea8ee7f99c99~mv2.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_dc23aba9c12540f6b3ddea8ee7f99c99~mv2.jpeg/v1/fill/w_449,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_dc23aba9c12540f6b3ddea8ee7f99c99~mv2.jpeg 1x, https://static.wixstatic.com/media/a32355_dc23aba9c12540f6b3ddea8ee7f99c99~mv2.jpeg/v1/fill/w_898,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_dc23aba9c12540f6b3ddea8ee7f99c99~mv2.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_94b0d1b836f5477e863963c9330a4922~mv2.jpeg/v1/fill/w_451,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_94b0d1b836f5477e863963c9330a4922~mv2.jpeg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_94b0d1b836f5477e863963c9330a4922~mv2.jpeg/v1/fill/w_451,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_94b0d1b836f5477e863963c9330a4922~mv2.jpeg 1x, https://static.wixstatic.com/media/a32355_94b0d1b836f5477e863963c9330a4922~mv2.jpeg/v1/fill/w_902,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_94b0d1b836f5477e863963c9330a4922~mv2.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_837fdfc14e7247e492f3f9bc707cc7dc~mv2.jpg/v1/fill/w_486,h_515,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_837fdfc14e7247e492f3f9bc707cc7dc~mv2.jpg",
-          "alt": "Lycan cub doris moyers-hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_837fdfc14e7247e492f3f9bc707cc7dc~mv2.jpg/v1/fill/w_486,h_515,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_837fdfc14e7247e492f3f9bc707cc7dc~mv2.jpg 1x, https://static.wixstatic.com/media/a32355_837fdfc14e7247e492f3f9bc707cc7dc~mv2.jpg/v1/fill/w_972,h_1030,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_837fdfc14e7247e492f3f9bc707cc7dc~mv2.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_0e9eab75d14144d395a52e7561ae9423~mv2.jpg/v1/fill/w_450,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_0e9eab75d14144d395a52e7561ae9423~mv2.jpg",
-          "alt": "alternative reborns",
-          "srcset": "https://static.wixstatic.com/media/a32355_0e9eab75d14144d395a52e7561ae9423~mv2.jpg/v1/fill/w_450,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_0e9eab75d14144d395a52e7561ae9423~mv2.jpg 1x, https://static.wixstatic.com/media/a32355_0e9eab75d14144d395a52e7561ae9423~mv2.jpg/v1/fill/w_900,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a32355_0e9eab75d14144d395a52e7561ae9423~mv2.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_eae82c6e982841b5a54ff725f5c66148~mv2.jpg/v1/fill/w_425,h_499,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/352818680_269877135536720_5500676750472634431_n.jpg",
-          "alt": "reborns",
-          "srcset": "https://static.wixstatic.com/media/a32355_eae82c6e982841b5a54ff725f5c66148~mv2.jpg/v1/fill/w_425,h_499,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/352818680_269877135536720_5500676750472634431_n.jpg 1x, https://static.wixstatic.com/media/a32355_eae82c6e982841b5a54ff725f5c66148~mv2.jpg/v1/fill/w_850,h_998,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/352818680_269877135536720_5500676750472634431_n.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_b5002c631b344af09df7c8a7a3371062~mv2.jpeg/v1/fill/w_220,h_333,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_816186750643366.jpeg",
-          "alt": "received_816186750643366.jpeg",
-          "srcset": "https://static.wixstatic.com/media/a32355_b5002c631b344af09df7c8a7a3371062~mv2.jpeg/v1/fill/w_220,h_333,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_816186750643366.jpeg 1x, https://static.wixstatic.com/media/a32355_b5002c631b344af09df7c8a7a3371062~mv2.jpeg/v1/fill/w_440,h_666,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_816186750643366.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_d3775ef908584e3e8a0874f948b0869c~mv2.jpeg/v1/fill/w_188,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_841556774571441.jpeg",
-          "alt": "received_841556774571441.jpeg",
-          "srcset": "https://static.wixstatic.com/media/a32355_d3775ef908584e3e8a0874f948b0869c~mv2.jpeg/v1/fill/w_188,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_841556774571441.jpeg 1x, https://static.wixstatic.com/media/a32355_d3775ef908584e3e8a0874f948b0869c~mv2.jpeg/v1/fill/w_376,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_841556774571441.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_83d10c971e21496dac54b9b40dca6ef1~mv2.jpeg/v1/fill/w_175,h_233,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_841511474554921.jpeg",
-          "alt": "received_841511474554921.jpeg",
-          "srcset": "https://static.wixstatic.com/media/a32355_83d10c971e21496dac54b9b40dca6ef1~mv2.jpeg/v1/fill/w_175,h_233,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_841511474554921.jpeg 1x, https://static.wixstatic.com/media/a32355_83d10c971e21496dac54b9b40dca6ef1~mv2.jpeg/v1/fill/w_350,h_466,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_841511474554921.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_89eb8d3d8c7f47589f8cb4592535e197~mv2.jpeg/v1/fill/w_202,h_270,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Messenger_creation_37ab42ca-cba4-4853-b70c-bda3dbced831.jpeg",
-          "alt": "vinyl kit dmh studio",
-          "srcset": "https://static.wixstatic.com/media/a32355_89eb8d3d8c7f47589f8cb4592535e197~mv2.jpeg/v1/fill/w_202,h_270,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Messenger_creation_37ab42ca-cba4-4853-b70c-bda3dbced831.jpeg 1x, https://static.wixstatic.com/media/a32355_89eb8d3d8c7f47589f8cb4592535e197~mv2.jpeg/v1/fill/w_404,h_540,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Messenger_creation_37ab42ca-cba4-4853-b70c-bda3dbced831.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_4f30f97510f94f088d0ced24c20b81fd~mv2.jpeg/v1/fill/w_315,h_420,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1677839213038248.jpeg",
-          "alt": "received_1677839213038248.jpeg",
-          "srcset": "https://static.wixstatic.com/media/a32355_4f30f97510f94f088d0ced24c20b81fd~mv2.jpeg/v1/fill/w_315,h_420,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1677839213038248.jpeg 1x, https://static.wixstatic.com/media/a32355_4f30f97510f94f088d0ced24c20b81fd~mv2.jpeg/v1/fill/w_630,h_840,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1677839213038248.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_6dd9b6c6e1d349ab83b5544a7b9473e9~mv2.jpeg/v1/fill/w_188,h_257,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_26278889491759051.jpeg",
-          "alt": "received_26278889491759051.jpeg",
-          "srcset": "https://static.wixstatic.com/media/a32355_6dd9b6c6e1d349ab83b5544a7b9473e9~mv2.jpeg/v1/fill/w_188,h_257,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_26278889491759051.jpeg 1x, https://static.wixstatic.com/media/a32355_6dd9b6c6e1d349ab83b5544a7b9473e9~mv2.jpeg/v1/fill/w_376,h_514,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_26278889491759051.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_12a8a4127a9147b39007870d4fb72c68~mv2.jpeg/v1/fill/w_304,h_404,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1356156705341541.jpeg",
-          "alt": "received_1356156705341541.jpeg",
-          "srcset": "https://static.wixstatic.com/media/a32355_12a8a4127a9147b39007870d4fb72c68~mv2.jpeg/v1/fill/w_304,h_404,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1356156705341541.jpeg 1x, https://static.wixstatic.com/media/a32355_12a8a4127a9147b39007870d4fb72c68~mv2.jpeg/v1/fill/w_608,h_808,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1356156705341541.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_0d128e916893482a89dc2de9d5037b6b~mv2.jpeg/v1/fill/w_180,h_257,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1176116626977630.jpeg",
-          "alt": "received_1176116626977630.jpeg",
-          "srcset": "https://static.wixstatic.com/media/a32355_0d128e916893482a89dc2de9d5037b6b~mv2.jpeg/v1/fill/w_180,h_257,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1176116626977630.jpeg 1x, https://static.wixstatic.com/media/a32355_0d128e916893482a89dc2de9d5037b6b~mv2.jpeg/v1/fill/w_360,h_514,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1176116626977630.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_c540ee6836a34a0c884eb6fce6668e8f~mv2.jpeg/v1/fill/w_202,h_270,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_412845904423455.jpeg",
-          "alt": "received_412845904423455.jpeg",
-          "srcset": "https://static.wixstatic.com/media/a32355_c540ee6836a34a0c884eb6fce6668e8f~mv2.jpeg/v1/fill/w_202,h_270,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_412845904423455.jpeg 1x, https://static.wixstatic.com/media/a32355_c540ee6836a34a0c884eb6fce6668e8f~mv2.jpeg/v1/fill/w_404,h_540,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_412845904423455.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_04b5fd6111c542f1a91bbd8221f8ad1f~mv2.jpeg/v1/fill/w_265,h_354,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1702250280601588.jpeg",
-          "alt": "received_1702250280601588.jpeg",
-          "srcset": "https://static.wixstatic.com/media/a32355_04b5fd6111c542f1a91bbd8221f8ad1f~mv2.jpeg/v1/fill/w_265,h_354,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1702250280601588.jpeg 1x, https://static.wixstatic.com/media/a32355_04b5fd6111c542f1a91bbd8221f8ad1f~mv2.jpeg/v1/fill/w_530,h_708,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1702250280601588.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_f5aa3100646b43c7a6bb9faef86d21f0~mv2.jpeg/v1/fill/w_246,h_327,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1536544040269250.jpeg",
-          "alt": "received_1536544040269250.jpeg",
-          "srcset": "https://static.wixstatic.com/media/a32355_f5aa3100646b43c7a6bb9faef86d21f0~mv2.jpeg/v1/fill/w_246,h_327,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1536544040269250.jpeg 1x, https://static.wixstatic.com/media/a32355_f5aa3100646b43c7a6bb9faef86d21f0~mv2.jpeg/v1/fill/w_492,h_654,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1536544040269250.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_246e62b3e08f4391849c70254b905d29~mv2.jpeg/v1/fill/w_235,h_314,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_804906575125103.jpeg",
-          "alt": "received_804906575125103.jpeg",
-          "srcset": "https://static.wixstatic.com/media/a32355_246e62b3e08f4391849c70254b905d29~mv2.jpeg/v1/fill/w_235,h_314,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_804906575125103.jpeg 1x, https://static.wixstatic.com/media/a32355_246e62b3e08f4391849c70254b905d29~mv2.jpeg/v1/fill/w_470,h_628,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_804906575125103.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_1bca9395f9ca41699254a0b0c0af65eb~mv2.jpeg/v1/fill/w_246,h_327,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1551780945753254.jpeg",
-          "alt": "received_1551780945753254.jpeg",
-          "srcset": "https://static.wixstatic.com/media/a32355_1bca9395f9ca41699254a0b0c0af65eb~mv2.jpeg/v1/fill/w_246,h_327,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1551780945753254.jpeg 1x, https://static.wixstatic.com/media/a32355_1bca9395f9ca41699254a0b0c0af65eb~mv2.jpeg/v1/fill/w_492,h_654,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_1551780945753254.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_31676b90e6aa493e8da98b1ac43c1c2e~mv2.jpeg/v1/fill/w_236,h_315,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_3908128162846255.jpeg",
-          "alt": "received_3908128162846255.jpeg",
-          "srcset": "https://static.wixstatic.com/media/a32355_31676b90e6aa493e8da98b1ac43c1c2e~mv2.jpeg/v1/fill/w_236,h_315,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_3908128162846255.jpeg 1x, https://static.wixstatic.com/media/a32355_31676b90e6aa493e8da98b1ac43c1c2e~mv2.jpeg/v1/fill/w_472,h_630,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_3908128162846255.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_8e668fa667bc42a9bed5cfb0f1e228bf~mv2.jpeg/v1/fill/w_271,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_474530315273594.jpeg",
-          "alt": "received_474530315273594.jpeg",
-          "srcset": "https://static.wixstatic.com/media/a32355_8e668fa667bc42a9bed5cfb0f1e228bf~mv2.jpeg/v1/fill/w_271,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_474530315273594.jpeg 1x, https://static.wixstatic.com/media/a32355_8e668fa667bc42a9bed5cfb0f1e228bf~mv2.jpeg/v1/fill/w_542,h_720,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_474530315273594.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_7485a12fcefc40b6b75d4b70523c7fc8~mv2.jpg/v1/fill/w_192,h_255,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/FB_IMG_1725455035325.jpg",
-          "alt": "FB_IMG_1725455035325.jpg",
-          "srcset": "https://static.wixstatic.com/media/a32355_7485a12fcefc40b6b75d4b70523c7fc8~mv2.jpg/v1/fill/w_192,h_255,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/FB_IMG_1725455035325.jpg 1x, https://static.wixstatic.com/media/a32355_7485a12fcefc40b6b75d4b70523c7fc8~mv2.jpg/v1/fill/w_384,h_510,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/FB_IMG_1725455035325.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_5cfd600bb45f4ae0a55558a107b5d236~mv2.jpeg/v1/fill/w_271,h_236,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_801688122160553.jpeg",
-          "alt": "received_801688122160553.jpeg",
-          "srcset": "https://static.wixstatic.com/media/a32355_5cfd600bb45f4ae0a55558a107b5d236~mv2.jpeg/v1/fill/w_271,h_236,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_801688122160553.jpeg 1x, https://static.wixstatic.com/media/a32355_5cfd600bb45f4ae0a55558a107b5d236~mv2.jpeg/v1/fill/w_542,h_472,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/received_801688122160553.jpeg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_64135b3bdbcc486394364357de7eb01f~mv2.jpg/v1/fill/w_657,h_427,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/FB_IMG_1722518637403.jpg",
-          "alt": "FB_IMG_1722518637403.jpg",
-          "srcset": "https://static.wixstatic.com/media/a32355_64135b3bdbcc486394364357de7eb01f~mv2.jpg/v1/fill/w_657,h_427,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/FB_IMG_1722518637403.jpg 1x, https://static.wixstatic.com/media/a32355_64135b3bdbcc486394364357de7eb01f~mv2.jpg/v1/fill/w_1077,h_700,al_c,q_85,enc_avif,quality_auto/FB_IMG_1722518637403.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png/v1/crop/x_184,y_0,w_2491,h_1684/fill/w_321,h_217,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784_edited.png",
-          "alt": "DMH Doris Moyers Hornbogen",
-          "srcset": "https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png/v1/crop/x_184,y_0,w_2491,h_1684/fill/w_321,h_217,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784_edited.png 1x, https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png/v1/crop/x_184,y_0,w_2491,h_1684/fill/w_642,h_434,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784_edited.png 2x"
-        }
-      ],
-      "links": [
-        "https://www.dmhsculptures.com",
-        "https://www.dmhsculptures.com/babies-for-adoption",
-        "https://www.dmhsculptures.com/baby-care",
-        "https://www.dmhsculptures.com/blog",
-        "https://www.dmhsculptures.com/book-online",
-        "https://www.dmhsculptures.com/commission",
-        "https://www.dmhsculptures.com/contact",
-        "https://www.dmhsculptures.com/custom-job",
-        "https://www.dmhsculptures.com/groups",
-        "https://www.dmhsculptures.com/lycancub",
-        "https://www.dmhsculptures.com/pre-orders",
-        "https://www.dmhsculptures.com/purchasing-agreement",
-        "https://www.dmhsculptures.com/services",
-        "https://www.dmhsculptures.com/silicone-painting-trouble-shooting-guide",
-        "https://www.dmhsculptures.com/silicones",
-        "https://www.dmhsculptures.com/videos",
-        "https://www.dmhsculptures.com/vinyl-kits",
-        "https://www.dmhsculptures.com/what-s-new"
-      ],
-      "extraction_status": "candidate_unreviewed"
-    },
-    {
-      "url": "https://www.dmhsculptures.com/members",
-      "platform": "wix",
-      "observed_at": "2026-10-13T16:29:31.310815+00:00",
-      "sha256_html": "57539730316bbeac3271474be10f7cca65d72865bc98c20f4f98fa5e960403e8",
-      "title": "Members | dmh sculptures",
-      "metadata": {
-        "viewport": "width=device-width, initial-scale=1",
-        "generator": "Wix.com Website Builder",
-        "format-detection": "telephone=no",
-        "skype_toolbar": "skype_toolbar_parser_compatible",
-        "og:title": "Members | dmh sculptures",
-        "og:image": "https://static.wixstatic.com/media/a32355_1aea10b1e34c4f759eb63c85412a5efb%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/a32355_1aea10b1e34c4f759eb63c85412a5efb%7Emv2.jpg",
-        "og:image:width": "2500",
-        "og:image:height": "1330",
-        "og:url": "https://www.dmhsculptures.com/members",
-        "og:site_name": "dmh sculptures",
-        "og:type": "website",
-        "fb_admins_meta_tag": "doris.moyers.7",
-        "google-site-verification": "xs9rK0vNNKghdzb1l2YF6b8gFBxd34GYmE6bgMF-P6g",
-        "fb:admins": "doris.moyers.7",
-        "twitter:card": "summary_large_image",
-        "twitter:title": "Members | dmh sculptures",
-        "twitter:image": "https://static.wixstatic.com/media/a32355_1aea10b1e34c4f759eb63c85412a5efb%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/a32355_1aea10b1e34c4f759eb63c85412a5efb%7Emv2.jpg"
-      },
-      "structured_data": [],
-      "image_candidates": [
-        {
-          "url": "https://static.wixstatic.com/media/a32355_5bf54835f9994170a2f6bd96040b44b8~mv2.jpg/v1/crop/x_0,y_6,w_2560,h_2547/fill/w_208,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20251204_153218801.jpg",
-          "alt": "Doris Moyers-Hornbogen DMH",
-          "srcset": "https://static.wixstatic.com/media/a32355_5bf54835f9994170a2f6bd96040b44b8~mv2.jpg/v1/crop/x_0,y_6,w_2560,h_2547/fill/w_208,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20251204_153218801.jpg 1x, https://static.wixstatic.com/media/a32355_5bf54835f9994170a2f6bd96040b44b8~mv2.jpg/v1/crop/x_0,y_6,w_2560,h_2547/fill/w_416,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20251204_153218801.jpg 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_aa354f11730c4250a44105d317b76d78~mv2.png/v1/fill/w_188,h_105,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784.png",
-          "alt": "DMH Sculptures",
-          "srcset": "https://static.wixstatic.com/media/a32355_aa354f11730c4250a44105d317b76d78~mv2.png/v1/fill/w_188,h_105,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784.png 1x, https://static.wixstatic.com/media/a32355_aa354f11730c4250a44105d317b76d78~mv2.png/v1/fill/w_376,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784.png 2x"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/crop/x_0,y_61,w_952,h_637/fill/w_119,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png",
-          "alt": "MAD gallery",
-          "srcset": "https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/crop/x_0,y_61,w_952,h_637/fill/w_119,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png 1x, https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png/v1/crop/x_0,y_61,w_952,h_637/fill/w_238,h_160,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MAD%20gallery.png 2x"
         },
         {
           "url": "https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png/v1/crop/x_184,y_0,w_2491,h_1684/fill/w_321,h_217,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/InShot_20250630_144553784_edited.png",

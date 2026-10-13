@@ -1,9 +1,117 @@
 {
   "adapter": "wix-named-image-alt-v1",
-  "source": "https://www.dmhsculptures.com/",
-  "source_scan_at": "2026-10-13T16:29:32.311576+00:00",
-  "pages_checked": [],
-  "kit_candidates": [],
-  "kit_cards_found": 0,
+  "source": "https://www.dmhsculptures.com/vinyl-kits",
+  "source_scan_at": "2026-10-13T16:31:51.811816+00:00",
+  "pages_checked": [
+    "https://www.dmhsculptures.com/vinyl-kits",
+    "https://www.dmhsculptures.com/vinyl-kits?page=2"
+  ],
+  "kit_candidates": [
+    {
+      "title": "Doris Moyers-Hornbogen DMH",
+      "material": "vinyl",
+      "source_page": "https://www.dmhsculptures.com/vinyl-kits",
+      "original_asset_url": "https://static.wixstatic.com/media/a32355_5bf54835f9994170a2f6bd96040b44b8~mv2.jpg",
+      "image_alt": "Doris Moyers-Hornbogen DMH",
+      "source_status_claim": null,
+      "sculpt_identity": "source_named_requires_review",
+      "multiple_designs_possible": false,
+      "image_rights": "artist_hosted_reference_only",
+      "evidence": "Named image alt on the artist's dedicated kit collection page",
+      "review_status": "unreviewed"
+    },
+    {
+      "title": "DMH Sculptures",
+      "material": "vinyl",
+      "source_page": "https://www.dmhsculptures.com/vinyl-kits",
+      "original_asset_url": "https://static.wixstatic.com/media/a32355_aa354f11730c4250a44105d317b76d78~mv2.png",
+      "image_alt": "DMH Sculptures",
+      "source_status_claim": null,
+      "sculpt_identity": "source_named_requires_review",
+      "multiple_designs_possible": false,
+      "image_rights": "artist_hosted_reference_only",
+      "evidence": "Named image alt on the artist's dedicated kit collection page",
+      "review_status": "unreviewed"
+    },
+    {
+      "title": "MAD gallery",
+      "material": "vinyl",
+      "source_page": "https://www.dmhsculptures.com/vinyl-kits",
+      "original_asset_url": "https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png",
+      "image_alt": "MAD gallery",
+      "source_status_claim": null,
+      "sculpt_identity": "source_named_requires_review",
+      "multiple_designs_possible": false,
+      "image_rights": "artist_hosted_reference_only",
+      "evidence": "Named image alt on the artist's dedicated kit collection page",
+      "review_status": "unreviewed"
+    },
+    {
+      "title": "DMH Doris Moyers Hornbogen",
+      "material": "vinyl",
+      "source_page": "https://www.dmhsculptures.com/vinyl-kits",
+      "original_asset_url": "https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png",
+      "image_alt": "DMH Doris Moyers Hornbogen",
+      "source_status_claim": null,
+      "sculpt_identity": "source_named_requires_review",
+      "multiple_designs_possible": false,
+      "image_rights": "artist_hosted_reference_only",
+      "evidence": "Named image alt on the artist's dedicated kit collection page",
+      "review_status": "unreviewed"
+    },
+    {
+      "title": "Doris Moyers-Hornbogen DMH",
+      "material": "vinyl",
+      "source_page": "https://www.dmhsculptures.com/vinyl-kits?page=2",
+      "original_asset_url": "https://static.wixstatic.com/media/a32355_5bf54835f9994170a2f6bd96040b44b8~mv2.jpg",
+      "image_alt": "Doris Moyers-Hornbogen DMH",
+      "source_status_claim": null,
+      "sculpt_identity": "source_named_requires_review",
+      "multiple_designs_possible": false,
+      "image_rights": "artist_hosted_reference_only",
+      "evidence": "Named image alt on the artist's dedicated kit collection page",
+      "review_status": "unreviewed"
+    },
+    {
+      "title": "DMH Sculptures",
+      "material": "vinyl",
+      "source_page": "https://www.dmhsculptures.com/vinyl-kits?page=2",
+      "original_asset_url": "https://static.wixstatic.com/media/a32355_aa354f11730c4250a44105d317b76d78~mv2.png",
+      "image_alt": "DMH Sculptures",
+      "source_status_claim": null,
+      "sculpt_identity": "source_named_requires_review",
+      "multiple_designs_possible": false,
+      "image_rights": "artist_hosted_reference_only",
+      "evidence": "Named image alt on the artist's dedicated kit collection page",
+      "review_status": "unreviewed"
+    },
+    {
+      "title": "MAD gallery",
+      "material": "vinyl",
+      "source_page": "https://www.dmhsculptures.com/vinyl-kits?page=2",
+      "original_asset_url": "https://static.wixstatic.com/media/a32355_e04cffe38be94b1697d2b874231252df~mv2.png",
+      "image_alt": "MAD gallery",
+      "source_status_claim": null,
+      "sculpt_identity": "source_named_requires_review",
+      "multiple_designs_possible": false,
+      "image_rights": "artist_hosted_reference_only",
+      "evidence": "Named image alt on the artist's dedicated kit collection page",
+      "review_status": "unreviewed"
+    },
+    {
+      "title": "DMH Doris Moyers Hornbogen",
+      "material": "vinyl",
+      "source_page": "https://www.dmhsculptures.com/vinyl-kits?page=2",
+      "original_asset_url": "https://static.wixstatic.com/media/a32355_4ff2617b68f643baa52c3577e409b34e~mv2.png",
+      "image_alt": "DMH Doris Moyers Hornbogen",
+      "source_status_claim": null,
+      "sculpt_identity": "source_named_requires_review",
+      "multiple_designs_possible": false,
+      "image_rights": "artist_hosted_reference_only",
+      "evidence": "Named image alt on the artist's dedicated kit collection page",
+      "review_status": "unreviewed"
+    }
+  ],
+  "kit_cards_found": 8,
   "notice": "Only artist-page named image evidence. Source stock labels are historical claims; no product identity, stock or usage rights automatically confirmed."
 }

@@ -1,0 +1,28 @@
+{
+  "adapter": "wix-gallery-iframe-v5-original-source-images",
+  "source": "https://www.dmhsculptures.com/vinyl-kits",
+  "source_scan_at": "2026-10-13T16:31:51.811816+00:00",
+  "pages_examined": 2,
+  "kit_cards_found": 0,
+  "unverified_gallery_photos_found": 0,
+  "pages": [
+    {
+      "url": "https://www.dmhsculptures.com/vinyl-kits",
+      "state": "rendered",
+      "gallery_frames": [],
+      "kit_cards": [],
+      "unverified_gallery_photos": [],
+      "errors": []
+    },
+    {
+      "url": "https://www.dmhsculptures.com/vinyl-kits?page=2",
+      "state": "rendered",
+      "gallery_frames": [],
+      "kit_cards": [],
+      "unverified_gallery_photos": [],
+      "errors": []
+    }
+  ],
+  "kit_candidates": [],
+  "notice": "Candidate source evidence only; no images mirrored, identities inferred for clay photographs, or catalogue modified."
+}
