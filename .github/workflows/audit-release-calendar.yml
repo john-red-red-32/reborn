@@ -51,7 +51,7 @@ jobs:
               assert 'Original art deserves to be protected.' in nikki,"Artist authenticity statement missing"
               assert 'href="/verify"' in nikki,"Artist verification link missing"
               assert 'How to verify a kit' in verify,"Verification guide missing"
-              assert 'Verification service not yet active' in verify,"Verification status must be disclosed"
+              assert 'future certificate-verification service' in verify,"Future verification service must be disclosed"
               assert 'Historical Shopify source observation' not in kit,"Hosting platform language visible"
               assert 'official Shopify listing' not in kit,"Hosting platform photo credit visible"
               assert 'Official sculptor website' in kit,"Artist site language absent"
