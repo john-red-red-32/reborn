@@ -1,0 +1,1276 @@
+{
+  "source": "https://www.sandysbabies.com/vinyl-kits/",
+  "host": "www.sandysbabies.com",
+  "parser_version": "url-discovery-v2-platform-sitemaps",
+  "started_from": "https://www.sandysbabies.com/vinyl-kits/",
+  "completed_at": "2026-10-13T19:46:15.542278+00:00",
+  "page_limit": 14,
+  "sitemap_discovered_urls": 0,
+  "platforms": {
+    "unknown": 9
+  },
+  "pages_checked": 174,
+  "pages_succeeded": 9,
+  "queue_remaining": 0,
+  "complete": true,
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://www.sandysbabies.com/vinyl-kits/",
+      "platform": "unknown",
+      "observed_at": "2026-10-13T19:44:49.545188+00:00",
+      "sha256_html": "45041b30658e79537bbd0d1d96f5af0eedd0a5e39fbb8307e112614da5203e73",
+      "title": "Vinyl Kits | Sandy Faber | Original Doll Artist",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+        "og:title": "Vinyl Kits",
+        "og:type": "website",
+        "og:url": "https://www.sandysbabies.com/vinyl-kits",
+        "og:image": "https://www.sandysbabies.com/assets/"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/Logo/Sandy-Faber-logo2b.png",
+          "alt": "logoSandy Faber | Original Doll Artist",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-3968.JPG",
+          "alt": "IMG 3968",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-3977.JPG",
+          "alt": "IMG 3977",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-3986.JPG",
+          "alt": "IMG 3986",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-4001.JPG",
+          "alt": "IMG 4001",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-4006.JPG",
+          "alt": "IMG 4006",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-4012.JPG",
+          "alt": "IMG 4012",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-5383.JPG",
+          "alt": "IMG 5383",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-5385.JPG",
+          "alt": "IMG 5385",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-5386.JPG",
+          "alt": "IMG 5386",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-5397.JPG",
+          "alt": "IMG 5397",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-5398.JPG",
+          "alt": "IMG 5398",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-5399.JPG",
+          "alt": "IMG 5399",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-5400.JPG",
+          "alt": "IMG 5400",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-5401.JPG",
+          "alt": "IMG 5401",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-5402.JPG",
+          "alt": "IMG 5402",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/11IMG-5868-X3.jpg",
+          "alt": "11IMG 5868 X3",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/13IMG-8484-X3.jpg",
+          "alt": "13IMG 8484 X3",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/17IMG-8275-X3.jpg",
+          "alt": "17IMG 8275 X3",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/1IMG-8149-X3.jpg",
+          "alt": "1IMG 8149 X3",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/25IMG-8111-X3.jpg",
+          "alt": "25IMG 8111 X3",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/5IMG-8106-X3.jpg",
+          "alt": "5IMG 8106 X3",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/8IMG-8156-X3.jpg",
+          "alt": "8IMG 8156 X3",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/DSC09364.jpg",
+          "alt": "DSC09364",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/DSC09367.jpg",
+          "alt": "DSC09367",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/Vivienne12.jpg",
+          "alt": "Vivienne12",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/Vivienne13kFJukMT1LIcNs.jpg",
+          "alt": "Vivienne13kFJukMT1LIcNs",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/Vivienne15.jpg",
+          "alt": "Vivienne15",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/Vivienne21.jpg",
+          "alt": "Vivienne21",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/Vivienne8.jpg",
+          "alt": "Vivienne8",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/353682283-6602504886481542-1083840597716369806-n.jpg",
+          "alt": "353682283 6602504886481542 1083840597716369806 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/353833109-6602504936481537-972189158370091510-n.jpg",
+          "alt": "353833109 6602504936481537 972189158370091510 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/353846993-6602504193148278-642807591061840364-n.jpg",
+          "alt": "353846993 6602504193148278 642807591061840364 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/353855012-6602505049814859-8460823326042719768-n.jpg",
+          "alt": "353855012 6602505049814859 8460823326042719768 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/354045839-6602505209814843-1849363714213667851-n.jpg",
+          "alt": "354045839 6602505209814843 1849363714213667851 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/354046460-6602503753148322-5865505584411782419-n.jpg",
+          "alt": "354046460 6602503753148322 5865505584411782419 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/354048826-6602504859814878-6905815734164371627-n.jpg",
+          "alt": "354048826 6602504859814878 6905815734164371627 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/354053635-6602504029814961-6574421207322337802-n.jpg",
+          "alt": "354053635 6602504029814961 6574421207322337802 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/354059610-6602504723148225-8571743333834794753-n.jpg",
+          "alt": "354059610 6602504723148225 8571743333834794753 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/354060006-6602504006481630-4465424475711251463-n.jpg",
+          "alt": "354060006 6602504006481630 4465424475711251463 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/354065063-6602503786481652-1769725800229764165-n.jpg",
+          "alt": "354065063 6602503786481652 1769725800229764165 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/354216735-6602505239814840-4919241754715100780-n.jpg",
+          "alt": "354216735 6602505239814840 4919241754715100780 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/354236199-6602505329814831-7964796116750144601-n.jpg",
+          "alt": "354236199 6602505329814831 7964796116750144601 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/354237640-6602503789814985-7326868091509880913-n.jpg",
+          "alt": "354237640 6602503789814985 7326868091509880913 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/354449068-6602503793148318-8994482743463147167-n.jpg",
+          "alt": "354449068 6602503793148318 8994482743463147167 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/240795447-1513127155708861-8188672526636529678-n.jpeg",
+          "alt": "240795447 1513127155708861 8188672526636529678 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241088393-1513126109042299-7274432832826421749-n.jpeg",
+          "alt": "241088393 1513126109042299 7274432832826421749 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241119547-1513126002375643-9065064118286078339-n.jpeg",
+          "alt": "241119547 1513126002375643 9065064118286078339 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241133212-1513125979042312-6711032136363613161-n.jpeg",
+          "alt": "241133212 1513125979042312 6711032136363613161 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241133240-1513126459042264-8415342620690451458-n.jpeg",
+          "alt": "241133240 1513126459042264 8415342620690451458 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241142123-1513126145708962-9141365942707829160-n.jpeg",
+          "alt": "241142123 1513126145708962 9141365942707829160 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241145682-1513126705708906-6573840602417374823-n.jpeg",
+          "alt": "241145682 1513126705708906 6573840602417374823 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241145875-1513126782375565-3831018034481279105-n.jpeg",
+          "alt": "241145875 1513126782375565 3831018034481279105 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241652336-4264798330263191-1871770115666931363-n.jpg",
+          "alt": "241652336 4264798330263191 1871770115666931363 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241660806-4264797786929912-5235290677240855455-n.jpg",
+          "alt": "241660806 4264797786929912 5235290677240855455 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241669258-4265132760229748-3757252482798219147-n.jpg",
+          "alt": "241669258 4265132760229748 3757252482798219147 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241670528-4264798566929834-2927772900740294732-n.jpg",
+          "alt": "241670528 4264798566929834 2927772900740294732 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241671402-4264799636929727-4314855256937359503-n.jpg",
+          "alt": "241671402 4264799636929727 4314855256937359503 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241675396-4264799436929747-4300507608691917512-n.jpg",
+          "alt": "241675396 4264799436929747 4300507608691917512 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241679625-4264797536929937-3388388356590510869-n.jpg",
+          "alt": "241679625 4264797536929937 3388388356590510869 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241681125-4264797976929893-7900384866645741269-n.jpg",
+          "alt": "241681125 4264797976929893 7900384866645741269 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/241683914-4264799226929768-6805810556178852090-n.jpg",
+          "alt": "241683914 4264799226929768 6805810556178852090 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/311597182-5814017568610409-195914985642984409-n.jpg",
+          "alt": "311597182 5814017568610409 195914985642984409 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/311739763-5827565867255579-4172642172108356730-n.jpg",
+          "alt": "311739763 5827565867255579 4172642172108356730 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/311786698-5806815952663904-8027662839642439462-n.jpg",
+          "alt": "311786698 5806815952663904 8027662839642439462 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/311854797-5806815979330568-6239454511349000374-n.jpg",
+          "alt": "311854797 5806815979330568 6239454511349000374 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/312206904-5827565863922246-3621012535136597368-n.jpg",
+          "alt": "312206904 5827565863922246 3621012535136597368 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/316419150-5914432118568953-98124653712871899-n4.jpg",
+          "alt": "316419150 5914432118568953 98124653712871899 n4",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/1.jpg",
+          "alt": "1",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/2.jpg",
+          "alt": "2",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/4.jpg",
+          "alt": "4",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/68895451-2588430394502492-6435403027221315584-o.jpg",
+          "alt": "68895451 2588430394502492 6435403027221315584 o",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/69490392-2541806315883210-4008172929278803968-o.jpg",
+          "alt": "69490392 2541806315883210 4008172929278803968 o",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/69510997-2541808905882951-8336348830807097344-o.jpg",
+          "alt": "69510997 2541808905882951 8336348830807097344 o",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/69578581-2607004359311762-1485721954685026304-o.jpg",
+          "alt": "69578581 2607004359311762 1485721954685026304 o",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/69772840-2541989779198197-2400385654694346752-o.jpg",
+          "alt": "69772840 2541989779198197 2400385654694346752 o",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/69872721-2541798305884011-9114295758915371008-o.jpg",
+          "alt": "69872721 2541798305884011 9114295758915371008 o",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/21317475-1555701961160322-5253962581210375511-n.jpg",
+          "alt": "21317475 1555701961160322 5253962581210375511 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/21368798-1449630891817774-8170103360843008847-o.jpg",
+          "alt": "21368798 1449630891817774 8170103360843008847 o",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/21457747-1451717541609109-5919922210480246542-o.jpg",
+          "alt": "21457747 1451717541609109 5919922210480246542 o",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/21463268-393509064397107-1527146980787477942-n.jpg",
+          "alt": "21463268 393509064397107 1527146980787477942 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/22104478-1577986442265207-3761980206289104865-o.jpg",
+          "alt": "22104478 1577986442265207 3761980206289104865 o",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/37601755-1906090832788098-4736970038358048768-n.jpg",
+          "alt": "37601755 1906090832788098 4736970038358048768 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/James-09.jpg",
+          "alt": "James 09",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/48123037-2034884446572154-6908721376861880320-n.jpg",
+          "alt": "48123037 2034884446572154 6908721376861880320 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/48155236-2178543238824545-3379277343620071424-n.jpg",
+          "alt": "48155236 2178543238824545 3379277343620071424 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/48247002-2036534533073812-5127558727943061504-n.jpg",
+          "alt": "48247002 2036534533073812 5127558727943061504 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/21319145-1450612228386307-7503247907237190587-o.jpg",
+          "alt": "21319145 1450612228386307 7503247907237190587 o",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/21366999-391959247885422-1083244055146658103-o.jpg",
+          "alt": "21366999 391959247885422 1083244055146658103 o",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/29066368-10211376795479478-5692230439264059392-n.jpg",
+          "alt": "29066368 10211376795479478 5692230439264059392 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/3-XL.jpg",
+          "alt": "3 XL",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/48319103-2115157151881464-2590337296393830400-o.jpg",
+          "alt": "48319103 2115157151881464 2590337296393830400 o",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/48375759-2124867197577126-8508892630753476608-o.jpg",
+          "alt": "48375759 2124867197577126 8508892630753476608 o",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/48412327-2124866324243880-2660752215764893696-o.jpg",
+          "alt": "48412327 2124866324243880 2660752215764893696 o",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/60346095-1212196388955151-5072232234841276416-n.jpg",
+          "alt": "60346095 1212196388955151 5072232234841276416 n",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/61302092-1225597937614996-7497642512190799872-o.jpg",
+          "alt": "61302092 1225597937614996 7497642512190799872 o",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-5822-X2.jpg",
+          "alt": "IMG 5822 X2",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/Vivienne-picture-03.jpg",
+          "alt": "Vivienne picture 03",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/Vivienne-picture-09.jpg",
+          "alt": "Vivienne picture 09",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/13-X2.jpg",
+          "alt": "13 X2",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.sandysbabies.com/",
+        "https://www.sandysbabies.com/about-me/",
+        "https://www.sandysbabies.com/assets/Uploads/1.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/11IMG-5868-X3.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/13-X2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/13IMG-8484-X3.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/17IMG-8275-X3.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/1IMG-8149-X3.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/21317475-1555701961160322-5253962581210375511-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/21319145-1450612228386307-7503247907237190587-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/21366999-391959247885422-1083244055146658103-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/21368798-1449630891817774-8170103360843008847-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/21457747-1451717541609109-5919922210480246542-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/21463268-393509064397107-1527146980787477942-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/22104478-1577986442265207-3761980206289104865-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/240795447-1513127155708861-8188672526636529678-n.jpeg",
+        "https://www.sandysbabies.com/assets/Uploads/241088393-1513126109042299-7274432832826421749-n.jpeg",
+        "https://www.sandysbabies.com/assets/Uploads/241119547-1513126002375643-9065064118286078339-n.jpeg",
+        "https://www.sandysbabies.com/assets/Uploads/241133212-1513125979042312-6711032136363613161-n.jpeg",
+        "https://www.sandysbabies.com/assets/Uploads/241133240-1513126459042264-8415342620690451458-n.jpeg",
+        "https://www.sandysbabies.com/assets/Uploads/241142123-1513126145708962-9141365942707829160-n.jpeg",
+        "https://www.sandysbabies.com/assets/Uploads/241145682-1513126705708906-6573840602417374823-n.jpeg",
+        "https://www.sandysbabies.com/assets/Uploads/241145875-1513126782375565-3831018034481279105-n.jpeg",
+        "https://www.sandysbabies.com/assets/Uploads/241652336-4264798330263191-1871770115666931363-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/241660806-4264797786929912-5235290677240855455-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/241669258-4265132760229748-3757252482798219147-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/241670528-4264798566929834-2927772900740294732-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/241671402-4264799636929727-4314855256937359503-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/241675396-4264799436929747-4300507608691917512-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/241679625-4264797536929937-3388388356590510869-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/241681125-4264797976929893-7900384866645741269-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/241683914-4264799226929768-6805810556178852090-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/25IMG-8111-X3.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/29066368-10211376795479478-5692230439264059392-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/3-XL.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/311597182-5814017568610409-195914985642984409-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/311739763-5827565867255579-4172642172108356730-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/311786698-5806815952663904-8027662839642439462-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/311854797-5806815979330568-6239454511349000374-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/312206904-5827565863922246-3621012535136597368-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/316419150-5914432118568953-98124653712871899-n4.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/353682283-6602504886481542-1083840597716369806-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/353833109-6602504936481537-972189158370091510-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/353846993-6602504193148278-642807591061840364-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/353855012-6602505049814859-8460823326042719768-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/354045839-6602505209814843-1849363714213667851-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/354046460-6602503753148322-5865505584411782419-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/354048826-6602504859814878-6905815734164371627-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/354053635-6602504029814961-6574421207322337802-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/354059610-6602504723148225-8571743333834794753-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/354060006-6602504006481630-4465424475711251463-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/354065063-6602503786481652-1769725800229764165-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/354216735-6602505239814840-4919241754715100780-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/354236199-6602505329814831-7964796116750144601-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/354237640-6602503789814985-7326868091509880913-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/354449068-6602503793148318-8994482743463147167-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/37601755-1906090832788098-4736970038358048768-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/39-X2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/4.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/48123037-2034884446572154-6908721376861880320-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/48155236-2178543238824545-3379277343620071424-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/48247002-2036534533073812-5127558727943061504-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/48319103-2115157151881464-2590337296393830400-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/48375759-2124867197577126-8508892630753476608-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/48412327-2124866324243880-2660752215764893696-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/5.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/58441103-2379785255367008-5041163351955079168-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/58442793-2209889889099098-6030073485890420736-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/5IMG-8106-X3.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/6.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/60346095-1212196388955151-5072232234841276416-n.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/61302092-1225597937614996-7497642512190799872-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/68895451-2588430394502492-6435403027221315584-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/69490392-2541806315883210-4008172929278803968-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/69510997-2541808905882951-8336348830807097344-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/69578581-2607004359311762-1485721954685026304-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/69772840-2541989779198197-2400385654694346752-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/69872721-2541798305884011-9114295758915371008-o.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/7.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/8.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/8IMG-8156-X3.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/DSC09364.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/DSC09367.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-3968.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-3977.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-3986.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-4001.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-4006.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-4012.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-5383.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-5385.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-5386.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-5397.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-5398.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-5399.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-5400.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-5401.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-5402.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-5822-X2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/James-09.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/Vivienne-picture-03.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/Vivienne-picture-09.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/Vivienne12.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/Vivienne13kFJukMT1LIcNs.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/Vivienne15.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/Vivienne21.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/Vivienne8.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/a5a7b6da872660c3d7b3e2b517w3.jpg",
+        "https://www.sandysbabies.com/blank-silicone-kits/",
+        "https://www.sandysbabies.com/contact/",
+        "https://www.sandysbabies.com/dealers/",
+        "https://www.sandysbabies.com/knits/",
+        "https://www.sandysbabies.com/news/",
+        "https://www.sandysbabies.com/silicone-dolls/",
+        "https://www.sandysbabies.com/vinyl-kits/"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.sandysbabies.com/",
+      "platform": "unknown",
+      "observed_at": "2026-10-13T19:44:51.076177+00:00",
+      "sha256_html": "091354bf1fbdcb993669cd2eba8165a4ff48c6ef7a3a1a869b9ba849ed120cc8",
+      "title": "Home | Sandy Faber | Original Doll Artist",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+        "og:title": "Home",
+        "og:type": "website",
+        "og:url": "https://www.sandysbabies.com/home",
+        "og:image": "https://www.sandysbabies.com/assets/"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/Logo/Sandy-Faber-logo2b.png",
+          "alt": "logoSandy Faber | Original Doll Artist",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.sandysbabies.com/",
+        "https://www.sandysbabies.com/about-me/",
+        "https://www.sandysbabies.com/blank-silicone-kits/",
+        "https://www.sandysbabies.com/contact/",
+        "https://www.sandysbabies.com/dealers/",
+        "https://www.sandysbabies.com/knits/",
+        "https://www.sandysbabies.com/news/",
+        "https://www.sandysbabies.com/silicone-dolls/",
+        "https://www.sandysbabies.com/vinyl-kits/"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.sandysbabies.com/about-me/",
+      "platform": "unknown",
+      "observed_at": "2026-10-13T19:44:52.942432+00:00",
+      "sha256_html": "afa5db34b4e62810a66a0e8bd859b06341e5339093d7fb6eb0ce2f4919e09e29",
+      "title": "About me | Sandy Faber | Original Doll Artist",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+        "og:title": "About me",
+        "og:type": "website",
+        "og:url": "https://www.sandysbabies.com/about-me",
+        "og:image": "https://www.sandysbabies.com/assets/"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/Logo/Sandy-Faber-logo2b.png",
+          "alt": "logoSandy Faber | Original Doll Artist",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.sandysbabies.com/",
+        "https://www.sandysbabies.com/about-me/",
+        "https://www.sandysbabies.com/blank-silicone-kits/",
+        "https://www.sandysbabies.com/contact/",
+        "https://www.sandysbabies.com/dealers/",
+        "https://www.sandysbabies.com/knits/",
+        "https://www.sandysbabies.com/news/",
+        "https://www.sandysbabies.com/silicone-dolls/",
+        "https://www.sandysbabies.com/vinyl-kits/"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.sandysbabies.com/blank-silicone-kits/",
+      "platform": "unknown",
+      "observed_at": "2026-10-13T19:45:42.763291+00:00",
+      "sha256_html": "08395db14bc7fb81dfd43f510dd0c9ae05cd3ee4868e1f07a67bfcd34ed6b161",
+      "title": "Blank Silicone kits | Sandy Faber | Original Doll Artist",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+        "og:title": "Blank Silicone kits",
+        "og:type": "website",
+        "og:url": "https://www.sandysbabies.com/blank-silicone-kits",
+        "og:image": "https://www.sandysbabies.com/assets/"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/Logo/Sandy-Faber-logo2b.png",
+          "alt": "logoSandy Faber | Original Doll Artist",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/collageBobby1website1.jpg",
+          "alt": "collageBobby1website1",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/collageBodhinew4.jpg",
+          "alt": "collageBodhinew4",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.sandysbabies.com/",
+        "https://www.sandysbabies.com/about-me/",
+        "https://www.sandysbabies.com/assets/Uploads/collageBobby1website1.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/collageBodhinew4.jpg",
+        "https://www.sandysbabies.com/blank-silicone-kits/",
+        "https://www.sandysbabies.com/contact/",
+        "https://www.sandysbabies.com/dealers/",
+        "https://www.sandysbabies.com/knits/",
+        "https://www.sandysbabies.com/news/",
+        "https://www.sandysbabies.com/silicone-dolls/",
+        "https://www.sandysbabies.com/vinyl-kits/"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.sandysbabies.com/contact/",
+      "platform": "unknown",
+      "observed_at": "2026-10-13T19:45:45.159597+00:00",
+      "sha256_html": "f50b304ec788240cc55e00954130b543f719feff894c5d5d6c004d1b0795d010",
+      "title": "Contact | Sandy Faber | Original Doll Artist",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+        "og:title": "Contact",
+        "og:type": "website",
+        "og:url": "https://www.sandysbabies.com/contact",
+        "og:image": "https://www.sandysbabies.com/assets/"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/Logo/Sandy-Faber-logo2b.png",
+          "alt": "logoSandy Faber | Original Doll Artist",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.sandysbabies.com/",
+        "https://www.sandysbabies.com/about-me/",
+        "https://www.sandysbabies.com/blank-silicone-kits/",
+        "https://www.sandysbabies.com/contact/",
+        "https://www.sandysbabies.com/dealers/",
+        "https://www.sandysbabies.com/knits/",
+        "https://www.sandysbabies.com/news/",
+        "https://www.sandysbabies.com/silicone-dolls/",
+        "https://www.sandysbabies.com/vinyl-kits/"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.sandysbabies.com/dealers/",
+      "platform": "unknown",
+      "observed_at": "2026-10-13T19:45:46.686755+00:00",
+      "sha256_html": "8dbf3b83fc4317ec95d498f659230ff9894030cb7a00cbd74712e1469e135521",
+      "title": "Dealers | Sandy Faber | Original Doll Artist",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+        "og:title": "Dealers",
+        "og:type": "website",
+        "og:url": "https://www.sandysbabies.com/dealers",
+        "og:image": "https://www.sandysbabies.com/assets/"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/Logo/Sandy-Faber-logo2b.png",
+          "alt": "logoSandy Faber | Original Doll Artist",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.sandysbabies.com/",
+        "https://www.sandysbabies.com/about-me/",
+        "https://www.sandysbabies.com/blank-silicone-kits/",
+        "https://www.sandysbabies.com/contact/",
+        "https://www.sandysbabies.com/dealers/",
+        "https://www.sandysbabies.com/knits/",
+        "https://www.sandysbabies.com/news/",
+        "https://www.sandysbabies.com/silicone-dolls/",
+        "https://www.sandysbabies.com/vinyl-kits/"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.sandysbabies.com/knits/",
+      "platform": "unknown",
+      "observed_at": "2026-10-13T19:45:48.208090+00:00",
+      "sha256_html": "a0796542f74300cd6c6b5b4dc3739041187696133d35f68619b04ac703636175",
+      "title": "Knits | Sandy Faber | Original Doll Artist",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+        "og:title": "Knits",
+        "og:type": "website",
+        "og:url": "https://www.sandysbabies.com/knits",
+        "og:image": "https://www.sandysbabies.com/assets/"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/Logo/Sandy-Faber-logo2b.png",
+          "alt": "logoSandy Faber | Original Doll Artist",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.sandysbabies.com/",
+        "https://www.sandysbabies.com/about-me/",
+        "https://www.sandysbabies.com/blank-silicone-kits/",
+        "https://www.sandysbabies.com/contact/",
+        "https://www.sandysbabies.com/dealers/",
+        "https://www.sandysbabies.com/knits/",
+        "https://www.sandysbabies.com/news/",
+        "https://www.sandysbabies.com/silicone-dolls/",
+        "https://www.sandysbabies.com/vinyl-kits/"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.sandysbabies.com/news/",
+      "platform": "unknown",
+      "observed_at": "2026-10-13T19:45:49.754088+00:00",
+      "sha256_html": "f559db83684275ddc2bcda4ac37fc750260d8b39490d55e7d59b82051bf4b79f",
+      "title": "News | Sandy Faber | Original Doll Artist",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+        "og:title": "News",
+        "og:type": "website",
+        "og:url": "https://www.sandysbabies.com/news",
+        "og:image": "https://www.sandysbabies.com/assets/"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/Logo/Sandy-Faber-logo2b.png",
+          "alt": "logoSandy Faber | Original Doll Artist",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.sandysbabies.com/",
+        "https://www.sandysbabies.com/about-me/",
+        "https://www.sandysbabies.com/blank-silicone-kits/",
+        "https://www.sandysbabies.com/contact/",
+        "https://www.sandysbabies.com/dealers/",
+        "https://www.sandysbabies.com/knits/",
+        "https://www.sandysbabies.com/news/",
+        "https://www.sandysbabies.com/silicone-dolls/",
+        "https://www.sandysbabies.com/vinyl-kits/"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.sandysbabies.com/silicone-dolls/",
+      "platform": "unknown",
+      "observed_at": "2026-10-13T19:45:51.479340+00:00",
+      "sha256_html": "a243b02d3c17ceeb553d1a8004c8a0533532c44c7e2daa9a77149090051738ea",
+      "title": "Silicone Dolls | Sandy Faber | Original Doll Artist",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+        "og:title": "Silicone Dolls",
+        "og:type": "website",
+        "og:url": "https://www.sandysbabies.com/silicone-dolls",
+        "og:image": "https://www.sandysbabies.com/assets/"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/Logo/Sandy-Faber-logo2b.png",
+          "alt": "logoSandy Faber | Original Doll Artist",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-0801new.jpg",
+          "alt": "IMG 0801new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-0802new.jpg",
+          "alt": "IMG 0802new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-0803new.jpg",
+          "alt": "IMG 0803new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-0804new2.jpg",
+          "alt": "IMG 0804new2",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-0805new2.jpg",
+          "alt": "IMG 0805new2",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-0806new.jpg",
+          "alt": "IMG 0806new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-0807new.jpg",
+          "alt": "IMG 0807new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-0808new.jpg",
+          "alt": "IMG 0808new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-0809new.jpg",
+          "alt": "IMG 0809new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-0810new.jpg",
+          "alt": "IMG 0810new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-0811new.jpg",
+          "alt": "IMG 0811new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-0812new.jpg",
+          "alt": "IMG 0812new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-0813new.jpg",
+          "alt": "IMG 0813new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-0814new.jpg",
+          "alt": "IMG 0814new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8002newwebsite-kopie.jpg",
+          "alt": "IMG 8002newwebsite kopie",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8003newwebsite-kopie.jpg",
+          "alt": "IMG 8003newwebsite kopie",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8005newwebsite.jpg",
+          "alt": "IMG 8005newwebsite",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8006collageRemiwebsite-kopie.jpg",
+          "alt": "IMG 8006collageRemiwebsite kopie",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8009newwebsite-kopie.jpg",
+          "alt": "IMG 8009newwebsite kopie",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8754newwebsite2.jpg",
+          "alt": "IMG 8754newwebsite2",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8758newweb2.jpg",
+          "alt": "IMG 8758newweb2",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8774newwebsite2.jpg",
+          "alt": "IMG 8774newwebsite2",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-7020newwebsite2.jpg",
+          "alt": "IMG 7020newwebsite2",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-7058newwebsite2.jpg",
+          "alt": "IMG 7058newwebsite2",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-7065newwebsite2.jpg",
+          "alt": "IMG 7065newwebsite2",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-7073newwebsite2.jpg",
+          "alt": "IMG 7073newwebsite2",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-7083newwebsite2.jpg",
+          "alt": "IMG 7083newwebsite2",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-7085newwebsite2.jpg",
+          "alt": "IMG 7085newwebsite2",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-7085newwebsite3.jpg",
+          "alt": "IMG 7085newwebsite3",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-7163newwebsite4.jpg",
+          "alt": "IMG 7163newwebsite4",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-7205newwebsite3.jpg",
+          "alt": "IMG 7205newwebsite3",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-7225website2.jpg",
+          "alt": "IMG 7225website2",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8867website.jpg",
+          "alt": "IMG 8867website",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8885website.jpg",
+          "alt": "IMG 8885website",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8937website.jpg",
+          "alt": "IMG 8937website",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8966website.jpg",
+          "alt": "IMG 8966website",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-9065website.jpg",
+          "alt": "IMG 9065website",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-9084website.jpg",
+          "alt": "IMG 9084website",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-9105website1.jpg",
+          "alt": "IMG 9105website1",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-9111website.jpg",
+          "alt": "IMG 9111website",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-9125website.jpg",
+          "alt": "IMG 9125website",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-7207new.jpg",
+          "alt": "IMG 7207new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-7221newwebsite.jpg",
+          "alt": "IMG 7221newwebsite",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-7673new3.jpg",
+          "alt": "IMG 7673new3",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-7684new.jpg",
+          "alt": "IMG 7684new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/Unknown-8new2.jpg",
+          "alt": "Unknown 8new2",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-0206new.jpg",
+          "alt": "IMG 0206new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8392.JPG",
+          "alt": "IMG 8392",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8770new.jpg",
+          "alt": "IMG 8770new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8924new.jpg",
+          "alt": "IMG 8924new",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8387.JPG",
+          "alt": "IMG 8387",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8393.JPG",
+          "alt": "IMG 8393",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8395.JPG",
+          "alt": "IMG 8395",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8396.JPG",
+          "alt": "IMG 8396",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8402.JPG",
+          "alt": "IMG 8402",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.sandysbabies.com/assets/Uploads/_resampled/FillWyI2NTAiLCI0NTAiXQ/IMG-8770new2.jpg",
+          "alt": "IMG 8770new2",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.sandysbabies.com/",
+        "https://www.sandysbabies.com/about-me/",
+        "https://www.sandysbabies.com/assets/IMG-8867website.jpg",
+        "https://www.sandysbabies.com/assets/IMG-8885website.jpg",
+        "https://www.sandysbabies.com/assets/IMG-8937website.jpg",
+        "https://www.sandysbabies.com/assets/IMG-8966website.jpg",
+        "https://www.sandysbabies.com/assets/IMG-9065website.jpg",
+        "https://www.sandysbabies.com/assets/IMG-9084website.jpg",
+        "https://www.sandysbabies.com/assets/IMG-9105website1.jpg",
+        "https://www.sandysbabies.com/assets/IMG-9111website.jpg",
+        "https://www.sandysbabies.com/assets/IMG-9125website.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-0206new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-0801new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-0802new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-0803new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-0804new2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-0805new2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-0806new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-0807new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-0808new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-0809new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-0810new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-0811new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-0812new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-0813new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-0814new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-7020newwebsite2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-7058newwebsite2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-7065newwebsite2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-7073newwebsite2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-7083newwebsite2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-7085newwebsite2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-7085newwebsite3.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-7163newwebsite4.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-7205newwebsite3.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-7207new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-7221newwebsite.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-7225website2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-7673new3.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-7684new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8002newwebsite-kopie.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8003newwebsite-kopie.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8005newwebsite.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8006collageRemiwebsite-kopie.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8009newwebsite-kopie.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8387.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8392.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8393.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8395.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8396.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8402.JPG",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8754newwebsite2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8758newweb2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8770new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8770new2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8774newwebsite2.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/IMG-8924new.jpg",
+        "https://www.sandysbabies.com/assets/Uploads/Unknown-8new2.jpg",
+        "https://www.sandysbabies.com/blank-silicone-kits/",
+        "https://www.sandysbabies.com/contact/",
+        "https://www.sandysbabies.com/dealers/",
+        "https://www.sandysbabies.com/knits/",
+        "https://www.sandysbabies.com/news/",
+        "https://www.sandysbabies.com/silicone-dolls/",
+        "https://www.sandysbabies.com/vinyl-kits/"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    }
+  ],
+  "notice": "Discovery evidence only. No images copied; no status or release-date inference."
+}
