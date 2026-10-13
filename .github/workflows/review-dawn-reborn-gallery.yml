@@ -1,0 +1,53 @@
+name: Inspect Dawn originals in reborn painter gallery
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/review-dawn-reborn-gallery.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - name: Install browser
+        run: |
+          python3 -m pip install playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Inspect permission-respecting exact-sculpt galleries
+        run: |
+          python3 - <<'PY'
+          from playwright.sync_api import sync_playwright
+          from urllib.robotparser import RobotFileParser
+          root='https://mybabyflowers.com'
+          path_list=['/en/baby/emma/','/baby/emerson/','/en/baby/river/?lang=en','/en/baby/tatum/?lang=en']
+          ua='RebornaDiscovery/0.1 (+https://reborna.co; editorial source research)'
+          rp=RobotFileParser()
+          rp.set_url(root+'/robots.txt')
+          try:rp.read()
+          except Exception as exc:
+            print('Unable to check robots, stop:',str(exc),flush=True)
+            raise SystemExit(0)
+          with sync_playwright() as p:
+            browser=p.chromium.launch(headless=True)
+            for path in path_list:
+              url=root+path
+              if not rp.can_fetch(ua,url):
+                print('SKIP robots disallow',url,flush=True)
+                continue
+              page=browser.new_page(user_agent=ua,viewport={'width':1366,'height':900})
+              try:
+                response=page.goto(url,wait_until='domcontentloaded',timeout=28000)
+                page.wait_for_timeout(2000)
+                title=page.title()
+                text=page.locator('body').inner_text(timeout=12000)
+                print('PAGE',url,'HTTP',response.status if response else None,'TITLE',title,'Dawn credit',('Dawn Donofrio' in text),flush=True)
+                images=page.locator('img').evaluate_all('(els)=>els.slice(0,40).map(e=>({alt:e.alt,src:e.currentSrc||e.src,origin:e.getAttribute("src")}))')
+                print('NAMED PICTURES',images[:22],flush=True)
+              except Exception as exc:
+                print('REVIEW FAILED',url,type(exc).__name__,str(exc)[:160],flush=True)
+              page.close()
+            browser.close()
+          PY
