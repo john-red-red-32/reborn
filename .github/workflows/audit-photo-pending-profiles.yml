@@ -33,8 +33,15 @@ jobs:
             'sabrina-hergarten':True,'ping-lau':False,
             'laura-lee-eagles':False
           }
-          kits=['emerson-dawn-donofrio','teddy-philomena-donnelly',
-                'sam-gudrun-legler','josie-ping-lau','elena-alejandra-de-zuniga']
+          photographed_artists={
+            'dawn-donofrio','laura-tuzio-ross','philomena-donnelly',
+            'sabine-altenkirch-junkes','gudrun-legler',
+            'elly-knoops','iveta-eckertova','olga-auer',
+            'sabrina-hergarten','laura-lee-eagles'
+          }
+          photo_pending_kits={'emerson-dawn-donofrio','josie-ping-lau','elena-alejandra-de-zuniga'}
+          source_photographed_kits={'teddy-philomena-donnelly','sam-gudrun-legler'}
+          kits=sorted(photo_pending_kits|source_photographed_kits)
           h={'User-Agent':'Mozilla/5.0 (compatible; RebornaSourceAudit/1.0)','Accept':'text/html'}
           for attempt in range(28):
             failed=[]
@@ -43,7 +50,7 @@ jobs:
               try:
                 with urllib.request.urlopen(urllib.request.Request(root+path,headers=h),timeout=17) as r:
                   html=r.read(1_600_000).decode('utf-8','replace')
-                assert 'ORIGINAL ARTWORK PENDING' in html,path
+                assert ('ORIGINAL ARTWORK PENDING' not in html) if slug in photographed_artists else ('ORIGINAL ARTWORK PENDING' in html),path
                 assert 'Specialist retailer reference' in html if retailer else 'Official sculptor website' in html
                 if slug=='dawn-donofrio':
                   assert 'Original silicone sculpture, made for artists to finish' in html
@@ -53,11 +60,14 @@ jobs:
               try:
                 with urllib.request.urlopen(urllib.request.Request(root+path,headers=h),timeout=17) as r:
                   html=r.read(1_500_000).decode('utf-8','replace')
-                assert 'Photograph awaiting identity and usage-rights review' in html,path
-                assert 'View original sculpt source' in html,path
+                if slug in photo_pending_kits:
+                  assert 'Photograph awaiting identity and usage-rights review' in html,path
+                  assert 'View original sculpt source' in html,path
+                else:
+                  assert 'kit-main-photo' in html and 'kit-photo-provenance' in html,path
               except Exception as e:failed.append((path,str(e)[:95]))
             if not failed:
-              print('PASS 13 artist covers + five transparent, source-linked kit photo placeholders',flush=True)
+              print('PASS all 13 original artist portfolios, their recovered covers and remaining transparent fallbacks',flush=True)
               break
             print('Waiting Cloudflare',attempt+1,len(failed),'failures',failed[:3],flush=True)
             time.sleep(8)
