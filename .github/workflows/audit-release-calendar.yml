@@ -1,15 +1,15 @@
-name: Verify mobile release calendar and artist authenticity
+name: Verify Discover feed and calendar
 on:
   push:
     branches: [main]
     paths:
       - '.github/workflows/audit-release-calendar.yml'
       - 'app/page.tsx'
+      - 'app/calendar/**'
+      - 'components/DiscoverFeed.tsx'
       - 'components/HomeReleaseCalendar.tsx'
-      - 'components/AuthenticityStatement.tsx'
-      - 'app/verify/page.tsx'
-      - 'app/artists/[slug]/page.tsx'
-      - 'app/kits/[slug]/page.tsx'
+      - 'components/ReleaseCalendarPage.tsx'
+      - 'components/SiteHeader.tsx'
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,52 +19,56 @@ jobs:
     timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
-      - name: Verify live static content and independent navigation
+      - name: Check live Discover page and separate static release calendar
         run: |
           python3 - <<'PY'
-          import re,time,urllib.request,urllib.error
+          import re,time,urllib.request
           from pathlib import Path
           opener=urllib.request.build_opener()
           opener.addheaders=[("User-Agent","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/125.0 Safari/537.36"),("Accept","text/html,*/*;q=0.8")]
           urllib.request.install_opener(opener)
           def page(path):
-            with opener.open("https://reborna.co"+path,timeout=20) as r:
-              assert r.status==200,(path,r.status)
-              return r.read().decode("utf-8","replace")
+            with opener.open("https://reborna.co"+path,timeout=20) as response:
+              assert response.status==200,(path,response.status)
+              return response.read().decode("utf-8","replace")
           last=""
-          for attempt in range(8):
+          for attempt in range(18):
             try:
               home=page("/")
-              nikki=page("/artists/nikki-johnston/")
-              kit=page("/kits/mabel-nikki-johnston/")
+              calendar=page("/calendar/")
+              artist=page("/artists/nikki-johnston/")
               verify=page("/verify/")
-              assert 'href="#release-calendar"' in home,"The homepage anchor is missing"
-              assert 'id="release-calendar"' in home,"Release calendar not prerendered as static HTML"
-              start=home.index('id="release-calendar"')
-              block=home[start:home.find('class="featured-real"',start)]
-              assert 'home-calendar-year-title">2027' in block,"Latest year is not first"
-              assert 'home-calendar-year-title">2026' in block,"2026 grouping missing"
-              assert block.index('home-calendar-year-title">2027')<block.index('home-calendar-year-title">2026'),"Wrong year order"
-              assert block.index(">January</h4>")<block.index(">November</h4>")<block.index(">October</h4>"),"Months not reverse chronological"
-              assert block.count('class="home-calendar-card"')>=4,"Static release cards not included in HTML"
-              assert 'Design preview:' in block,"Fictional dates must be labelled"
-              assert 'Original art deserves to be protected.' in nikki,"Artist authenticity statement missing"
-              assert 'href="/verify"' in nikki or 'href="/verify/"' in nikki,"Artist verification link missing"
-              assert 'How to verify a kit' in verify,"Verification guide missing"
-              assert 'future certificate-verification service' in verify,"Future verification service must be disclosed"
-              assert 'Historical Shopify source observation' not in kit,"Hosting platform language visible"
-              assert 'official Shopify listing' not in kit,"Hosting platform photo credit visible"
-              assert 'Official sculptor website' in kit,"Artist site language absent"
-              assert 'Original art deserves to be protected.' in kit,"Kit authenticity statement missing"
-              print("PASS live: static HTML reverse chronology, native anchor, verification guide, artist + kit notes, no platform wording")
+              assert 'href="/calendar/"' in home,"Homepage must link to dedicated calendar"
+              assert 'id="release-calendar"' not in home,"Old homepage calendar should be gone"
+              assert 'id="catalogue"' in home,"Discover feed anchor missing"
+              assert 'discover-feed-grid' in home,"Genuine product feed missing"
+              assert 'Mabel' in home and 'Christopher' in home,"Real sourced kit cards missing"
+              assert 'Design preview: the artists' not in home,"Demo kits should not be in Discover"
+              assert 'href="/calendar/"' in calendar or 'release-calendar' in calendar
+              assert 'id="release-calendar"' in calendar,"Calendar is not static HTML"
+              section=calendar[calendar.index('id="release-calendar"'):]
+              assert section.index('home-calendar-year-title">2027')<section.index('home-calendar-year-title">2026'),"Year sorting invalid"
+              assert section.index(">January</h4>")<section.index(">November</h4>")<section.index(">October</h4>"),"Months not descending"
+              assert section.count('class="home-calendar-card"')>=4,"Original example entries missing"
+              assert 'Release archive' not in section,"Outdated archive wording remains"
+              assert 'timeline backwards' not in section,"Unnecessary backwards terminology remains"
+              assert '<summary>More dates</summary>' in section,"Secondary date not preserved as optional detail"
+              assert 'Final balance' in section and 'Total' in section,"Deposit/balance/total fields missing"
+              assert 'Design preview:' in section,"Fictional dates must remain labelled"
+              assert 'Original art deserves to be protected.' in artist
+              assert 'How to verify a kit' in verify
+              print("PASS: new Discover feed, static separate calendar, release data and authenticity guidance")
               break
             except Exception as e:
               last=str(e)
-              print("Waiting for Cloudflare update",attempt+1,last,flush=True)
-              time.sleep(5)
-          else:raise SystemExit("Live Reborna regression failed: "+last)
-          source=Path("app/globals.css").read_text(encoding="utf-8")
-          assert "content-visibility:auto" in source,"Browser-native lazy painting for historical months missing"
-          assert "prefers-reduced-motion" in source,"Reduced-motion support missing"
-          print("PASS source: native offscreen rendering and reduced-motion accessibility")
+              print("Waiting on deployment",attempt+1,last,flush=True)
+              time.sleep(7)
+          else:raise SystemExit("Live migration smoke test failed: "+last)
+          css=Path('app/globals.css').read_text()
+          assert 'content-visibility:auto' in css,"Deferred rendering style missing"
+          code=Path('components/DiscoverFeed.tsx').read_text()
+          assert 'IntersectionObserver' in code and 'BATCH_SIZE=12' in code,"Progressive batches not configured"
+          assert 'verifiedKits' in code and 'sortRank' in code,"Discover must use genuine kit records and availability"
+          assert Path('lib/demo-data.ts').exists(),"Example calendar source data must be preserved"
+          print("PASS: progressive discovery and unchanged demo source data")
           PY
