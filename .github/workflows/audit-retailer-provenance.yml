@@ -1,0 +1,70 @@
+name: Audit remaining sculptor provenance profiles
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-retailer-provenance.yml'
+      - 'lib/retailer-provenance-*.ts'
+      - 'lib/retailer-kits-*.ts'
+      - 'lib/real-catalogue.ts'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate six artists, forty-eight authenticated originals, and all live routes
+        run: |
+          python3 - <<'PY'
+          import json,re,urllib.request,time
+          def parse(path,variable):
+              s=open(path,encoding='utf8').read()
+              m=re.search(r'export const '+variable+r':[^=]+=([\s\S]*?);\s*$',s)
+              assert m,('missing export',path,variable)
+              return json.loads(m.group(1))
+          artists=parse('lib/retailer-provenance-artists.ts','retailerProvenanceArtists')
+          files=[
+            ('lib/retailer-kits-elly-iveta.ts','retailerKitsEllyIveta',10),
+            ('lib/retailer-kits-olga.ts','retailerKitsOlga',10),
+            ('lib/retailer-kits-sabrina.ts','retailerKitsSabrina',4),
+            ('lib/retailer-kits-ping.ts','retailerKitsPing',12),
+            ('lib/retailer-kits-lauralee.ts','retailerKitsLauraLee',12)]
+          kits=[]
+          for path,var,n in files:
+              sub=parse(path,var)
+              assert len(sub)==n,(path,len(sub),n)
+              kits+=sub
+          assert len(artists)==6
+          assert len(kits)==48
+          assert {a['slug'] for a in artists}=={k['artistSlug'] for k in kits}
+          assert len({k['slug'] for k in kits})==48
+          assert all(k['material']=='vinyl' for k in kits)
+          assert all(not k.get('photos') for k in kits)
+          assert all(k['sources'][0]['kind']=='retailer' for k in kits)
+          assert all(k['statusChecked']=='2026-10-13' for k in kits)
+          ping=[k for k in kits if k['artistSlug']=='ping-lau']
+          assert len(ping)==12 and all(not k.get('photos') for k in ping)
+          print('PASS 6 sculptors, 48 seller-attributed originals; no presumed rights or live inventory',flush=True)
+          hdr={'User-Agent':'Mozilla/5.0 (compatible; RebornaResearchAudit/1.0)','Accept':'text/html'}
+          routes=[('/artists/'+a['slug']+'/',a['name']) for a in artists]
+          routes += [('/kits/'+k['slug']+'/',k['name']) for k in kits]
+          for attempt in range(37):
+              failures=[]
+              for path,name in routes:
+                  try:
+                      with urllib.request.urlopen(urllib.request.Request('https://reborna.co'+path,headers=hdr),timeout=15) as r:
+                          html=r.read(1_200_000).decode('utf8','replace')
+                          assert r.status==200 and name in html,('missing',name)
+                          if '/kits/' in path:assert 'ORIGINAL SCULPT KIT' in html
+                  except Exception as ex:failures.append((path,str(ex)[:90]))
+              if not failures:
+                  print('PASS all',len(routes),'live dealer-evidenced artist and kit routes',flush=True)
+                  break
+              print('Deployment not fully ready:',attempt+1,failures[:3],flush=True)
+              time.sleep(8)
+          else:raise SystemExit('Remaining artist production routes failed')
+          print('No dealer or artist photograph downloaded or mirrored.')
+          PY
