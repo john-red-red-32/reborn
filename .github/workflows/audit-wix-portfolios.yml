@@ -1,0 +1,68 @@
+name: Audit Wix artist portfolio cohort
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-wix-portfolios.yml'
+      - 'lib/wix-cohort-catalogue.ts'
+      - 'lib/wix-artist-stories.ts'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check sculpt attribution, kit materials and all live artist pages
+        run: |
+          python3 - <<'PY'
+          import json,re,time,urllib.request
+          txt=open('lib/wix-cohort-catalogue.ts',encoding='utf8').read()
+          def parse(key):
+              m=re.search('export const '+key+r':[^=]+=([\s\S]*?);(?:\n|$)',txt)
+              assert m,'Missing '+key
+              return json.loads(m.group(1))
+          artists=parse('wixCohortArtists')
+          kits=parse('wixCohortKits')
+          assert {a['slug'] for a in artists}=={'bonnie-brown','doris-moyers-hornbogen'}
+          assert len(kits)==27,(len(kits),[x['slug'] for x in kits])
+          assert len({x['slug'] for x in kits})==len(kits)
+          assert sum(k['artistSlug']=='bonnie-brown' for k in kits)==5
+          doris=[k for k in kits if k['artistSlug']=='doris-moyers-hornbogen']
+          assert len(doris)==22
+          assert len([x for x in doris if x['material']=='silicone'])==1
+          assert all(k['material'] in ('vinyl','silicone') for k in kits)
+          assert all(k['photos'][0]['url'].startswith('https://static.wixstatic.com/media/') for k in kits)
+          assert all(k['sources'][0]['kind']=='artist' for k in kits)
+          assert all(k['statusLabel'].lower().find('current availability')>=0 for k in kits)
+          reqhead={'User-Agent':'Mozilla/5.0 (compatible; RebornaAudit/1.0)'}
+          checks=[('/artists/'+a['slug']+'/',a['name']) for a in artists]
+          checks += [('/kits/'+k['slug']+'/',k['name']) for k in kits]
+          for attempt in range(50):
+              failures=[]
+              for path,name in checks:
+                  try:
+                      request=urllib.request.Request('https://reborna.co'+path,headers=reqhead)
+                      with urllib.request.urlopen(request,timeout=17) as res:
+                          text=res.read(1_800_000).decode('utf-8','replace')
+                          if res.status!=200 or name not in text:raise ValueError('missing title/status')
+                          if path.startswith('/kits/') and 'Material' not in text:raise ValueError('no material fact')
+                  except Exception as exc:failures.append((path,str(exc)[:85]))
+              if not failures:
+                  print('PASS',len(checks),'live Wix cohort routes')
+                  break
+              print('Cloudflare pending:',attempt+1,'failed',len(failures),'examples',failures[:3],flush=True)
+              time.sleep(7)
+          else:raise SystemExit('Live Wix cohort routes did not finish deploying')
+          for i,k in enumerate(kits):
+              url=k['photos'][0]['url']
+              req=urllib.request.Request(url,headers=reqhead)
+              with urllib.request.urlopen(req,timeout=18) as res:
+                  assert res.status==200,(k['name'],res.status)
+                  assert res.headers.get('Content-Type','').lower().startswith('image/'),(k['name'],res.headers.get('Content-Type'))
+                  assert res.read(16),k['name']
+          print('PASS 27 artist-hosted source photo URLs')
+          print('Publication states are source-documented historical kit identities, NOT live inventory.')
+          PY
