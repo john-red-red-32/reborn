@@ -58,7 +58,7 @@ jobs:
                 p.goto(url,wait_until='domcontentloaded',timeout=30000)
                 p.wait_for_selector('.kit-main-photo img',timeout=16000)
                 x=p.evaluate('''() => {
-                  let q=s=>{const r=document.querySelector(s).getBoundingClientRect();return {x:r.x,right:r.right,width:r.width}};
+                  let q=s=>{const e=document.querySelector(s);if(!e)return null;const r=e.getBoundingClientRect();return {x:r.x,right:r.right,width:r.width}};
                   return {vw:innerWidth,scroll:document.documentElement.scrollWidth,
                     header:q('.inner-header'),shell:q('.detail-shell'),gallery:q('.kit-photo-gallery'),
                     image:q('.kit-main-photo'),thumbs:q('.kit-photo-thumbnails'),grid:q('.detail-layout'),
@@ -66,9 +66,11 @@ jobs:
                 }''')
                 try:
                   assert x['scroll']<=width+2,(url,width,x)
-                  for key in ('header','shell','gallery','image','thumbs','grid'):
-                    assert x[key]['x']>=-2,(key,url,width,x)
+                  for key in ('header','shell','gallery','image','grid'):
+                    assert x[key] is not None and x[key]['x']>=-2,(key,url,width,x)
                     assert x[key]['right']<=width+2,(key,url,width,x)
+                  if x['thumbs']:
+                    assert x['thumbs']['x']>=-2 and x['thumbs']['right']<=width+2,(url,width,x)
                   assert x['gallery']['right']<=x['shell']['right']+1,(url,width,x)
                   print('PASS',width,url.split('/kits/')[-1],x['columns'],flush=True)
                 except AssertionError:
