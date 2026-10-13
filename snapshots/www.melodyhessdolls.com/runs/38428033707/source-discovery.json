@@ -1,0 +1,960 @@
+{
+  "source": "https://www.melodyhessdolls.com/",
+  "host": "www.melodyhessdolls.com",
+  "parser_version": "url-discovery-v2-platform-sitemaps",
+  "started_from": "https://www.melodyhessdolls.com/",
+  "completed_at": "2026-10-13T16:09:45.110363+00:00",
+  "page_limit": 8,
+  "sitemap_discovered_urls": 24,
+  "platforms": {
+    "shopify": 8
+  },
+  "pages_checked": 10,
+  "pages_succeeded": 8,
+  "queue_remaining": 22,
+  "complete": false,
+  "errors": [
+    {
+      "url": "https://www.melodyhessdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+      "reason": "UnicodeEncodeError",
+      "detail": "'ascii' codec can't encode character '\\xae' in position 47: ordinal not in range(128)"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://www.melodyhessdolls.com/",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:09:34.386123+00:00",
+      "sha256_html": "4ff7f9b55be7b955be8d634640a10974f93390862066ebe359db88363c8e536b",
+      "title": "Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "theme-color": "#843b3e",
+        "description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "og:site_name": "Melody Hess Dolls",
+        "og:url": "https://www.melodyhessdolls.com/",
+        "og:title": "Melody Hess Dolls",
+        "og:type": "website",
+        "og:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "og:image": "http://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:secure_url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:width": "1200",
+        "og:image:height": "628",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Melody Hess Dolls",
+        "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
+        "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
+        "shopify-y": "cb28b81c-b2b9-4870-8b2b-96edcdb05b47",
+        "shopify-s": "d52c76c1-1dc9-4a3c-81bd-d7861b5d0a9f"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Melody Hess Dolls",
+          "logo": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_2000x.png?v=1662665764",
+          "sameAs": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "url": "https://www.melodyhessdolls.com"
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "Melody Hess Dolls",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.melodyhessdolls.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          },
+          "url": "https://www.melodyhessdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_{width}x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": "//www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764 1x, //www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x@2x.png?v=1662665764 2x"
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/babyimageborder5_{width}x.png?v=1662667371",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/trypic2_{width}x.jpg?v=1662755953",
+          "alt": "Vivia by Melody Hess Reborn Doll kits",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/trypic2_480x480@2x.jpg?v=1662755953",
+          "alt": "Vivia by Melody Hess Reborn Doll kits",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/trypic3_{width}x.jpg?v=1662755889",
+          "alt": "Jupiter by Melody Hess Reborn doll kits",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/trypic3_480x480@2x.jpg?v=1662755889",
+          "alt": "Jupiter by Melody Hess Reborn doll kits",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/trypic1_877e5cde-0c49-4097-8616-fade54563777_{width}x.jpg?v=1662756385",
+          "alt": "Amara by Melody Hess Reborn doll kits",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/trypic1_877e5cde-0c49-4097-8616-fade54563777_480x480@2x.jpg?v=1662756385",
+          "alt": "Amara by Melody Hess Reborn doll kits",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.melodyhessdolls.com/",
+        "https://www.melodyhessdolls.com/cart",
+        "https://www.melodyhessdolls.com/collections/all",
+        "https://www.melodyhessdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+        "https://www.melodyhessdolls.com/pages/contact",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-feet-only",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-hands-only",
+        "https://www.melodyhessdolls.com/products/1-4-silicone-newborn-limbs",
+        "https://www.melodyhessdolls.com/products/18-full-body-blank-silicone-leela",
+        "https://www.melodyhessdolls.com/products/amara-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/chandler-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/jupiter-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/maelee-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/paxton-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/rani-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/reagan-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/vivia-vinyl-reborn-doll-kit"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.melodyhessdolls.com/cart",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:09:35.601849+00:00",
+      "sha256_html": "31640df0d5c4daa55838ca0287eeed9b94264adac564200c4e3242505ac57741",
+      "title": "Your Shopping Cart\n– Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "theme-color": "#843b3e",
+        "og:site_name": "Melody Hess Dolls",
+        "og:url": "https://www.melodyhessdolls.com/cart",
+        "og:title": "Your Shopping Cart",
+        "og:type": "website",
+        "og:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "og:image": "http://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:secure_url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:width": "1200",
+        "og:image:height": "628",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Your Shopping Cart",
+        "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
+        "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
+        "shopify-y": "5c0e9787-569e-4f99-9561-895e90017252",
+        "shopify-s": "23c6a9f8-947a-4da5-aba2-b95924a1e1df"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Melody Hess Dolls",
+          "logo": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_2000x.png?v=1662665764",
+          "sameAs": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "url": "https://www.melodyhessdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_{width}x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": "//www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764 1x, //www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x@2x.png?v=1662665764 2x"
+        }
+      ],
+      "links": [
+        "https://www.melodyhessdolls.com/",
+        "https://www.melodyhessdolls.com/cart",
+        "https://www.melodyhessdolls.com/collections/all",
+        "https://www.melodyhessdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+        "https://www.melodyhessdolls.com/pages/contact",
+        "https://www.melodyhessdolls.com/policies/shipping-policy",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-feet-only",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-hands-only",
+        "https://www.melodyhessdolls.com/products/1-4-silicone-newborn-limbs",
+        "https://www.melodyhessdolls.com/products/18-full-body-blank-silicone-leela",
+        "https://www.melodyhessdolls.com/products/amara-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/chandler-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/jupiter-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/maelee-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/paxton-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/rani-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/reagan-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/vivia-vinyl-reborn-doll-kit"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.melodyhessdolls.com/policies/shipping-policy",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:09:36.830331+00:00",
+      "sha256_html": "6bd693a49cf8a50738a877fce344c3e4c86f9ec070785e61fba8f2ed9adbd88d",
+      "title": "Shipping policy\n– Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "theme-color": "#843b3e",
+        "og:site_name": "Melody Hess Dolls",
+        "og:url": "https://www.melodyhessdolls.com/policies/shipping-policy",
+        "og:title": "Shipping policy",
+        "og:type": "website",
+        "og:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "og:image": "http://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:secure_url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:width": "1200",
+        "og:image:height": "628",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Shipping policy",
+        "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
+        "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
+        "shopify-y": "2c0ba5e8-04b0-4bdf-a9a6-3f05e7218096",
+        "shopify-s": "a1007e0f-4229-4120-8a0c-d16771193344"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Melody Hess Dolls",
+          "logo": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_2000x.png?v=1662665764",
+          "sameAs": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "url": "https://www.melodyhessdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_{width}x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": "//www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764 1x, //www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x@2x.png?v=1662665764 2x"
+        }
+      ],
+      "links": [
+        "https://www.melodyhessdolls.com/",
+        "https://www.melodyhessdolls.com/cart",
+        "https://www.melodyhessdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+        "https://www.melodyhessdolls.com/pages/contact",
+        "https://www.melodyhessdolls.com/policies/shipping-policy",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-feet-only",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-hands-only",
+        "https://www.melodyhessdolls.com/products/1-4-silicone-newborn-limbs",
+        "https://www.melodyhessdolls.com/products/18-full-body-blank-silicone-leela",
+        "https://www.melodyhessdolls.com/products/amara-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/chandler-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/jupiter-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/maelee-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/paxton-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/rani-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/reagan-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/vivia-vinyl-reborn-doll-kit"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.melodyhessdolls.com/collections/all",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:09:38.103319+00:00",
+      "sha256_html": "55e251edf99e866b861fd8e6e27efa2a3f680ef723c4ee11eab8f2a0c41ec9ac",
+      "title": "Products\n– Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "theme-color": "#843b3e",
+        "og:site_name": "Melody Hess Dolls",
+        "og:url": "https://www.melodyhessdolls.com/collections/all",
+        "og:title": "Products",
+        "og:type": "product.group",
+        "og:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "og:image": "http://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:secure_url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:width": "1200",
+        "og:image:height": "628",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Products",
+        "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
+        "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
+        "shopify-y": "c92493a3-7a76-4e55-9020-5bb139ee4587",
+        "shopify-s": "02673b67-d21d-464e-947a-e8e82a773b30"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Melody Hess Dolls",
+          "logo": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_2000x.png?v=1662665764",
+          "sameAs": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "url": "https://www.melodyhessdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_{width}x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": "//www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764 1x, //www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x@2x.png?v=1662665764 2x"
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/quarterlimbs3_cca09058-10b6-4c6a-8336-18e77e98b63c_{width}x.jpg?v=1676670658",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/quarterlimbs3_cca09058-10b6-4c6a-8336-18e77e98b63c_250x250@2x.jpg?v=1676670658",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/quarterlimbs1_3806cc44-8c9a-4c07-ab49-9d7f387fce90_{width}x.jpg?v=1676670435",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/quarterlimbs1_3806cc44-8c9a-4c07-ab49-9d7f387fce90_250x250@2x.jpg?v=1676670435",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/quarterlimbs1_{width}x.jpg?v=1676419721",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/quarterlimbs1_250x250@2x.jpg?v=1676419721",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/423313069_404028042133198_8328293001045171696_n_{width}x.jpg?v=1707521023",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/423313069_404028042133198_8328293001045171696_n_250x250@2x.jpg?v=1707521023",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/Leelo1_{width}x.png?v=1728009088",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/Leelo1_250x250@2x.png?v=1728009088",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/amara1_{width}x.jpg?v=1662747874",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/amara1_250x250@2x.jpg?v=1662747874",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/Chandler11_{width}x.jpg?v=1676419246",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/Chandler11_250x250@2x.jpg?v=1676419246",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/Jupiterfbcover_{width}x.jpg?v=1662697103",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/Jupiterfbcover_250x250@2x.jpg?v=1662697103",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.melodyhessdolls.com/",
+        "https://www.melodyhessdolls.com/cart",
+        "https://www.melodyhessdolls.com/collections/all",
+        "https://www.melodyhessdolls.com/collections/all?page=2",
+        "https://www.melodyhessdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+        "https://www.melodyhessdolls.com/pages/contact",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-feet-only",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-hands-only",
+        "https://www.melodyhessdolls.com/products/1-4-silicone-newborn-limbs",
+        "https://www.melodyhessdolls.com/products/18-full-body-blank-silicone-leela",
+        "https://www.melodyhessdolls.com/products/18-full-body-silicone-blank-baby-boy-leelo",
+        "https://www.melodyhessdolls.com/products/amara-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/chandler-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/jupiter-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/maelee-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/paxton-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/rani-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/reagan-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/vivia-vinyl-reborn-doll-kit"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.melodyhessdolls.com/collections/all?page=2",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:09:39.346482+00:00",
+      "sha256_html": "28186860c11523444639fef4ff2aec6a328095b724475a03b3ce971becfac5e4",
+      "title": "Products\n– Page 2\n– Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "theme-color": "#843b3e",
+        "og:site_name": "Melody Hess Dolls",
+        "og:url": "https://www.melodyhessdolls.com/collections/all?page=2",
+        "og:title": "Products",
+        "og:type": "product.group",
+        "og:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "og:image": "http://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:secure_url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:width": "1200",
+        "og:image:height": "628",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Products",
+        "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
+        "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
+        "shopify-y": "5f7cf7ed-4025-4c1f-958e-fe42ac79811f",
+        "shopify-s": "3a459b08-b4b6-41fd-bc38-b988f12e54d2"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Melody Hess Dolls",
+          "logo": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_2000x.png?v=1662665764",
+          "sameAs": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "url": "https://www.melodyhessdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_{width}x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": "//www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764 1x, //www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x@2x.png?v=1662665764 2x"
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/Untitleddesign_4_{width}x.jpg?v=1675303364",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/Untitleddesign_4_250x250@2x.jpg?v=1675303364",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/siliconepaxtonhead2_{width}x.jpg?v=1662922801",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/siliconepaxtonhead2_250x250@2x.jpg?v=1662922801",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/rani3_{width}x.png?v=1662757181",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/rani3_250x250@2x.png?v=1662757181",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/reagan2_{width}x.jpg?v=1662930666",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/reagan2_250x250@2x.jpg?v=1662930666",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/remi1_{width}x.jpg?v=1669231386",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/remi1_250x250@2x.jpg?v=1669231386",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/finishedkit1_{width}x.jpg?v=1671156356",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/finishedkit1_250x250@2x.jpg?v=1671156356",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/finishedsiliconepaxton21_{width}x.jpg?v=1671155708",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/finishedsiliconepaxton21_250x250@2x.jpg?v=1671155708",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/finishedranisilicone1_{width}x.jpg?v=1671155910",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/finishedranisilicone1_250x250@2x.jpg?v=1671155910",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.melodyhessdolls.com/",
+        "https://www.melodyhessdolls.com/cart",
+        "https://www.melodyhessdolls.com/collections/all?page=1",
+        "https://www.melodyhessdolls.com/collections/all?page=2",
+        "https://www.melodyhessdolls.com/collections/all?page=3",
+        "https://www.melodyhessdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+        "https://www.melodyhessdolls.com/pages/contact",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-feet-only",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-hands-only",
+        "https://www.melodyhessdolls.com/products/1-4-silicone-newborn-limbs",
+        "https://www.melodyhessdolls.com/products/18-full-body-blank-silicone-leela",
+        "https://www.melodyhessdolls.com/products/amara-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/chandler-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/jupiter-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/maelee-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/paxton-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/rani-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/reagan-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/remi-ashton-bi-racial-reborn-baby",
+        "https://www.melodyhessdolls.com/products/silicone-cuddle-baby-kit",
+        "https://www.melodyhessdolls.com/products/silicone-cuddle-baby-paxton",
+        "https://www.melodyhessdolls.com/products/silicone-cuddle-baby-rani",
+        "https://www.melodyhessdolls.com/products/vivia-vinyl-reborn-doll-kit"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.melodyhessdolls.com/collections/all?page=1",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:09:40.570733+00:00",
+      "sha256_html": "a25dc29461b0a5ff5f1f040d58c11b3adb4e9e847805a1e0a37aec29567f5b08",
+      "title": "Products\n– Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "theme-color": "#843b3e",
+        "og:site_name": "Melody Hess Dolls",
+        "og:url": "https://www.melodyhessdolls.com/collections/all",
+        "og:title": "Products",
+        "og:type": "product.group",
+        "og:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "og:image": "http://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:secure_url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:width": "1200",
+        "og:image:height": "628",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Products",
+        "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
+        "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
+        "shopify-y": "c32d055f-0dce-4762-80f0-b27e253bdbc6",
+        "shopify-s": "ece0e9de-09e9-4074-a630-40f0900fb4e4"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Melody Hess Dolls",
+          "logo": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_2000x.png?v=1662665764",
+          "sameAs": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "url": "https://www.melodyhessdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_{width}x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": "//www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764 1x, //www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x@2x.png?v=1662665764 2x"
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/quarterlimbs3_cca09058-10b6-4c6a-8336-18e77e98b63c_{width}x.jpg?v=1676670658",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/quarterlimbs3_cca09058-10b6-4c6a-8336-18e77e98b63c_250x250@2x.jpg?v=1676670658",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/quarterlimbs1_3806cc44-8c9a-4c07-ab49-9d7f387fce90_{width}x.jpg?v=1676670435",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/quarterlimbs1_3806cc44-8c9a-4c07-ab49-9d7f387fce90_250x250@2x.jpg?v=1676670435",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/quarterlimbs1_{width}x.jpg?v=1676419721",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/quarterlimbs1_250x250@2x.jpg?v=1676419721",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/423313069_404028042133198_8328293001045171696_n_{width}x.jpg?v=1707521023",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/423313069_404028042133198_8328293001045171696_n_250x250@2x.jpg?v=1707521023",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/Leelo1_{width}x.png?v=1728009088",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/Leelo1_250x250@2x.png?v=1728009088",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/amara1_{width}x.jpg?v=1662747874",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/amara1_250x250@2x.jpg?v=1662747874",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/Chandler11_{width}x.jpg?v=1676419246",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/Chandler11_250x250@2x.jpg?v=1676419246",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/Jupiterfbcover_{width}x.jpg?v=1662697103",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/Jupiterfbcover_250x250@2x.jpg?v=1662697103",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.melodyhessdolls.com/",
+        "https://www.melodyhessdolls.com/cart",
+        "https://www.melodyhessdolls.com/collections/all?page=1",
+        "https://www.melodyhessdolls.com/collections/all?page=2",
+        "https://www.melodyhessdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+        "https://www.melodyhessdolls.com/pages/contact",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-feet-only",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-hands-only",
+        "https://www.melodyhessdolls.com/products/1-4-silicone-newborn-limbs",
+        "https://www.melodyhessdolls.com/products/18-full-body-blank-silicone-leela",
+        "https://www.melodyhessdolls.com/products/18-full-body-silicone-blank-baby-boy-leelo",
+        "https://www.melodyhessdolls.com/products/amara-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/chandler-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/jupiter-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/maelee-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/paxton-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/rani-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/reagan-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/vivia-vinyl-reborn-doll-kit"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.melodyhessdolls.com/collections/all?page=3",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:09:41.748212+00:00",
+      "sha256_html": "a9ca58d2baef4f6182b0bda89fc4f50617067e390586dc0be5c70e602c9427b2",
+      "title": "Products\n– Page 3\n– Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "theme-color": "#843b3e",
+        "og:site_name": "Melody Hess Dolls",
+        "og:url": "https://www.melodyhessdolls.com/collections/all?page=3",
+        "og:title": "Products",
+        "og:type": "product.group",
+        "og:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "og:image": "http://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:secure_url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:width": "1200",
+        "og:image:height": "628",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Products",
+        "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
+        "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
+        "shopify-y": "fd4429fd-b6b8-4c9b-aeaf-b9110cac57e6",
+        "shopify-s": "c1a9cac3-a14a-4b67-9ca3-45f8962212f2"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Melody Hess Dolls",
+          "logo": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_2000x.png?v=1662665764",
+          "sameAs": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "url": "https://www.melodyhessdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_{width}x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": "//www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764 1x, //www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x@2x.png?v=1662665764 2x"
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/vivia1_{width}x.jpg?v=1662746735",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/products/vivia1_250x250@2x.jpg?v=1662746735",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.melodyhessdolls.com/",
+        "https://www.melodyhessdolls.com/cart",
+        "https://www.melodyhessdolls.com/collections/all?page=2",
+        "https://www.melodyhessdolls.com/collections/all?page=3",
+        "https://www.melodyhessdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+        "https://www.melodyhessdolls.com/pages/contact",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-feet-only",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-hands-only",
+        "https://www.melodyhessdolls.com/products/1-4-silicone-newborn-limbs",
+        "https://www.melodyhessdolls.com/products/18-full-body-blank-silicone-leela",
+        "https://www.melodyhessdolls.com/products/amara-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/chandler-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/jupiter-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/maelee-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/paxton-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/rani-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/reagan-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/vivia-vinyl-reborn-doll-kit"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.melodyhessdolls.com/blogs/news",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:09:44.110096+00:00",
+      "sha256_html": "317e9e1db336f985187961bfc14cd9120ab69be61473f55367823843212593ec",
+      "title": "News\n– Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "theme-color": "#843b3e",
+        "og:site_name": "Melody Hess Dolls",
+        "og:url": "https://www.melodyhessdolls.com/blogs/news",
+        "og:title": "News",
+        "og:type": "website",
+        "og:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "og:image": "http://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:secure_url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc.png?v=1662665764",
+        "og:image:width": "1200",
+        "og:image:height": "628",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "News",
+        "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
+        "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
+        "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
+        "shopify-y": "f0557866-65e3-44d4-93f1-b049b10192fb",
+        "shopify-s": "7c8e2f03-ad47-4553-a243-e3129441a4af"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Melody Hess Dolls",
+          "logo": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_2000x.png?v=1662665764",
+          "sameAs": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "url": "https://www.melodyhessdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_{width}x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": ""
+        },
+        {
+          "url": "https://www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764",
+          "alt": "Melody Hess Dolls",
+          "srcset": "//www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x.png?v=1662665764 1x, //www.melodyhessdolls.com/cdn/shop/files/transparent_94ddd011-999d-4ebd-9312-3736eb6b85fc_250x@2x.png?v=1662665764 2x"
+        }
+      ],
+      "links": [
+        "https://www.melodyhessdolls.com/",
+        "https://www.melodyhessdolls.com/blogs/news",
+        "https://www.melodyhessdolls.com/blogs/news.atom",
+        "https://www.melodyhessdolls.com/cart",
+        "https://www.melodyhessdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+        "https://www.melodyhessdolls.com/pages/contact",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-feet-only",
+        "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-hands-only",
+        "https://www.melodyhessdolls.com/products/1-4-silicone-newborn-limbs",
+        "https://www.melodyhessdolls.com/products/18-full-body-blank-silicone-leela",
+        "https://www.melodyhessdolls.com/products/amara-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/chandler-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/jupiter-vinyl-reborn-doll-kit",
+        "https://www.melodyhessdolls.com/products/maelee-blank-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/paxton-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/rani-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/reagan-silicone-cuddle-head",
+        "https://www.melodyhessdolls.com/products/vivia-vinyl-reborn-doll-kit"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    }
+  ],
+  "notice": "Discovery evidence only. No images copied; no status or release-date inference."
+}

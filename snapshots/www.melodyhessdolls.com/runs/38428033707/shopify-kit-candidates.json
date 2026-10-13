@@ -1,0 +1,1911 @@
+{
+  "adapter": "shopify-original-kit-v2-artist-scoped",
+  "source": "https://www.melodyhessdolls.com/",
+  "observed_at": "2026-10-13T16:09:45.246856+00:00",
+  "platform_detected": {
+    "shopify": 8
+  },
+  "products": [
+    {
+      "shopify_product_id": "7819019714594",
+      "handle": "18-full-body-silicone-blank-baby-boy-leelo",
+      "source_url": "https://www.melodyhessdolls.com/products/18-full-body-silicone-blank-baby-boy-leelo",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "18\" Full Body Silicone Blank Baby Boy Leelo",
+      "sculpt_name_candidate": "18\" Full Body Silicone Blank Baby Boy Leelo",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "needs_review",
+      "classification_basis": "insufficient_explicit_kit_evidence",
+      "description": "Baby Leelo is a full-body silicone (boy version of Leela) poured in a soft blend of Ecoflex 20 and slacker mix. He is 18\" long and weighs 6 pounds 3 ounces. He is poured in one piece. His mouth is closed, but his lips are parted making it easier to cut open. He is an open edition until I close it. He will come with a COA, and a small silicone repair kit to smooth the inside of his mouth if you wish to open it. Please allow 3-4 weeks for shipping.",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "43160698585122",
+          "seller_sku": null,
+          "label": "No Armatures",
+          "option_values": {
+            "Add On Options": "No Armatures"
+          },
+          "price_native": 1100.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/18-full-body-silicone-blank-baby-boy-leelo"
+        },
+        {
+          "shopify_variant_id": "43160701206562",
+          "seller_sku": null,
+          "label": "Arm Armatures ONLY",
+          "option_values": {
+            "Add On Options": "Arm Armatures ONLY"
+          },
+          "price_native": 1225.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/18-full-body-silicone-blank-baby-boy-leelo"
+        },
+        {
+          "shopify_variant_id": "43160701239330",
+          "seller_sku": null,
+          "label": "Leg Armatures ONLY",
+          "option_values": {
+            "Add On Options": "Leg Armatures ONLY"
+          },
+          "price_native": 1225.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/18-full-body-silicone-blank-baby-boy-leelo"
+        },
+        {
+          "shopify_variant_id": "43160701272098",
+          "seller_sku": null,
+          "label": "Arm & Leg Armatures",
+          "option_values": {
+            "Add On Options": "Arm & Leg Armatures"
+          },
+          "price_native": 1350.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/18-full-body-silicone-blank-baby-boy-leelo"
+        }
+      ],
+      "variant_total": 4,
+      "distinct_full_prices": [
+        1100.0,
+        1225.0,
+        1350.0
+      ],
+      "from_price_native": 1100.0,
+      "has_genuine_full_price_range": true,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/Leelo1.png?v=1728009088",
+          "id": "34111783010338",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/Leelo2.png?v=1728009087",
+          "id": "34111783043106",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/Leelo3.png?v=1728009087",
+          "id": "34111783075874",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/Leelo4.png?v=1728009087",
+          "id": "34111783108642",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/Leelo5.png?v=1728009087",
+          "id": "34111783141410",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2024-10-03T22:46:22-04:00",
+      "created_at": "2024-10-03T22:46:22-04:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7270116950050",
+      "handle": "18-full-body-blank-silicone-leela",
+      "source_url": "https://www.melodyhessdolls.com/products/18-full-body-blank-silicone-leela",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "18\" Full Body Blank Silicone Leela",
+      "sculpt_name_candidate": "18\" Full Body Blank Silicone Leela",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "needs_review",
+      "classification_basis": "insufficient_explicit_kit_evidence",
+      "description": "Baby Leela is a full-body silicone poured in a soft blend of Ecoflex 20 and slacker mix. She is 18\" long and weighs 6 pounds 3 ounces. She is poured in one piece. Her mouth is closed, but her lips are parted making it easier to cut open. She is an open edition until I close it. She will come with a COA, and a small silicone repair kit to smooth the inside of her mouth. Please allow 3-4 weeks for shipping.",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "41446318637090",
+          "seller_sku": null,
+          "label": "NO Armatures",
+          "option_values": {
+            "ADD ON OPTIONS": "NO Armatures"
+          },
+          "price_native": 1100.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/18-full-body-blank-silicone-leela"
+        },
+        {
+          "shopify_variant_id": "41446318669858",
+          "seller_sku": null,
+          "label": "Arm Armatures ONLY",
+          "option_values": {
+            "ADD ON OPTIONS": "Arm Armatures ONLY"
+          },
+          "price_native": 1225.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/18-full-body-blank-silicone-leela"
+        },
+        {
+          "shopify_variant_id": "41446318768162",
+          "seller_sku": null,
+          "label": "Leg Armatures ONLY",
+          "option_values": {
+            "ADD ON OPTIONS": "Leg Armatures ONLY"
+          },
+          "price_native": 1225.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/18-full-body-blank-silicone-leela"
+        },
+        {
+          "shopify_variant_id": "41446318932002",
+          "seller_sku": null,
+          "label": "BOTH Arm and Leg Armatures",
+          "option_values": {
+            "ADD ON OPTIONS": "BOTH Arm and Leg Armatures"
+          },
+          "price_native": 1350.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/18-full-body-blank-silicone-leela"
+        }
+      ],
+      "variant_total": 4,
+      "distinct_full_prices": [
+        1100.0,
+        1225.0,
+        1350.0
+      ],
+      "from_price_native": 1100.0,
+      "has_genuine_full_price_range": true,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/423313069_404028042133198_8328293001045171696_n.jpg?v=1707521023",
+          "id": "31781682970658",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/BabyLeela_9.jpg?v=1707521023",
+          "id": "31377098965026",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/422898272_404028068799862_1102029480727630560_n.jpg?v=1707521023",
+          "id": "31781682380834",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/BabyLeela_5.jpg?v=1707521023",
+          "id": "31377098440738",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/BabyLeela_2.jpg?v=1707521023",
+          "id": "31377099325474",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/BabyLeela_3.jpg?v=1707521023",
+          "id": "31377097949218",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/BabyLeela_4.jpg?v=1707521023",
+          "id": "31377099489314",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/BabyLeela_6.jpg?v=1707521023",
+          "id": "31377097916450",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/BabyLeela_7.jpg?v=1707521023",
+          "id": "31377097883682",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/BabyLeela_8.jpg?v=1707521023",
+          "id": "31377098080290",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/BabyLeela_10.jpg?v=1707521023",
+          "id": "31377097785378",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/BabyLeela_1.jpg?v=1707521023",
+          "id": "31377098211362",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/412994501_10161026556028236_1455558802357157504_n.jpg?v=1707521023",
+          "id": "31781682413602",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/421561813_404027958799873_1618175261717309121_n.jpg?v=1707521023",
+          "id": "31781682249762",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/422837714_404027998799869_6659201203143611867_n.jpg?v=1707521023",
+          "id": "31781683036194",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/422886150_404027992133203_8151752748740694239_n.jpg?v=1707521023",
+          "id": "31781682282530",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/422907052_404027972133205_3669312574634830937_n.jpg?v=1707520997",
+          "id": "31781682905122",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/files/422961741_404028175466518_7624131751420560456_n.jpg?v=1707520997",
+          "id": "31781682315298",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2023-11-16T20:15:28-05:00",
+      "created_at": "2023-11-16T20:15:28-05:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7179766628386",
+      "handle": "1-4-newborn-silicone-feet-only",
+      "source_url": "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-feet-only",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "1/4 Newborn Silicone Feet Only (Poured on Demand)",
+      "sculpt_name_candidate": "1/4 Newborn Silicone Feet Only (Poured on Demand",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "component_excluded",
+      "classification_basis": "standalone_component",
+      "description": "Hand sculpted by me. 1/4 size newborn feet. Cast in super soft Ecoflex 20 silicone. These feet will fit newborn-size babies 18\"-19\". These will fit Chandler, Paxton, and Rani silicone cuddle heads. These feet measure 3\" long. Please allow 4-7 days for your limbs to be poured and shipped.",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "41015526719522",
+          "seller_sku": "SILIFEETNEWBORN2023",
+          "label": "Default Title",
+          "option_values": {},
+          "price_native": 55.0,
+          "compare_at_price_native": 54.99,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-feet-only"
+        }
+      ],
+      "variant_total": 1,
+      "distinct_full_prices": [
+        55.0
+      ],
+      "from_price_native": null,
+      "has_genuine_full_price_range": false,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        false
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/quarterlimbs3_cca09058-10b6-4c6a-8336-18e77e98b63c.jpg?v=1676670658",
+          "id": "30855166885922",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/quarterlimbs4_9d263265-5272-45c8-b3bd-5141faff4c74.jpg?v=1676670658",
+          "id": "30855166853154",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2023-02-17T16:50:55-05:00",
+      "created_at": "2023-02-17T16:50:55-05:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7179763482658",
+      "handle": "1-4-newborn-silicone-hands-only",
+      "source_url": "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-hands-only",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "1/4 Newborn Silicone Hands Only (Poured on Demand)",
+      "sculpt_name_candidate": "1/4 Newborn Silicone Hands Only (Poured on Demand",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "component_excluded",
+      "classification_basis": "standalone_component",
+      "description": "Hand sculpted by me. 1/4 size newborn hands. Cast in super soft Ecoflex 20 silicone. These hands will fit newborn-size babies 18\"-19\". These will fit Chandler, Paxton, and Rani silicone cuddle heads. The open hand from the middle finger to the bottom of the wrist is 2 1/2\" long. Please allow 4-7 days for your limbs to be poured and shipped.",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "41015523475490",
+          "seller_sku": "SILIHANDSNEWBORN2023",
+          "label": "Default Title",
+          "option_values": {},
+          "price_native": 55.0,
+          "compare_at_price_native": 54.99,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/1-4-newborn-silicone-hands-only"
+        }
+      ],
+      "variant_total": 1,
+      "distinct_full_prices": [
+        55.0
+      ],
+      "from_price_native": null,
+      "has_genuine_full_price_range": false,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        false
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/quarterlimbs1_3806cc44-8c9a-4c07-ab49-9d7f387fce90.jpg?v=1676670435",
+          "id": "30855164919842",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/quarterlimbs2_a76df926-ece3-4924-8114-90c1aa1e5d4e.jpg?v=1676670436",
+          "id": "30855164952610",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2023-02-17T16:47:13-05:00",
+      "created_at": "2023-02-17T16:47:13-05:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7178143006754",
+      "handle": "1-4-silicone-newborn-limbs",
+      "source_url": "https://www.melodyhessdolls.com/products/1-4-silicone-newborn-limbs",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "1/4 Silicone Newborn Limbs Hands and Feet (Poured on Demand)",
+      "sculpt_name_candidate": "1/4 Silicone Newborn Limbs Hands and Feet (Poured on Demand",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "needs_review",
+      "classification_basis": "insufficient_explicit_kit_evidence",
+      "description": "Hand sculpted by me. 1/4 size newborn hands and feet bundle. Cast in super soft Ecoflex 20 silicone. These limbs will fit newborn-size babies 18\"-19\". These will fit Chandler, Paxton, and Rani silicone cuddle heads. Feet measure 3\" long and the open hand from the middle finger to the bottom of the wrist is 2 1/2\" long. Please allow 4-7 days for your limbs to be poured and shipped.",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "41013404041250",
+          "seller_sku": "SILLIMBS2023",
+          "label": "Default Title",
+          "option_values": {},
+          "price_native": 110.0,
+          "compare_at_price_native": 99.99,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/1-4-silicone-newborn-limbs"
+        }
+      ],
+      "variant_total": 1,
+      "distinct_full_prices": [
+        110.0
+      ],
+      "from_price_native": null,
+      "has_genuine_full_price_range": false,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        true
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/quarterlimbs1.jpg?v=1676419721",
+          "id": "30845999906850",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/quarterlimbs2.jpg?v=1676419720",
+          "id": "30845999611938",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/quarterlimbs3.jpg?v=1676419720",
+          "id": "30845999874082",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/quarterlimbs4.jpg?v=1676419720",
+          "id": "30845999644706",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2023-02-14T19:08:38-05:00",
+      "created_at": "2023-02-14T19:08:38-05:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7178140844066",
+      "handle": "chandler-blank-silicone-cuddle-head",
+      "source_url": "https://www.melodyhessdolls.com/products/chandler-blank-silicone-cuddle-head",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "Chandler Blank Silicone Cuddle Head (Poured on Demand)",
+      "sculpt_name_candidate": "Chandler Blank Silicone Cuddle Head (Poured on Demand",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "component_excluded",
+      "classification_basis": "standalone_component",
+      "description": "Blank silicone cuddle head Chandler will be 18\" once complete. His head circumference is 13 1/4\". He is the perfect just-born newborn size. He has an open mouth, but it will need to be cut deeper if you want to use a pacifier. I do include some extra silicone that matches his color for you to smooth the inside of the mouth if you wish to open it. He will also be included with a COA. Body NOT included! You may also purchase separately 1/4 silicone newborn limbs that fit his size. Please allow 7-10 days for pouring and shipping of your head! Cast on demand.",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "41013399683106",
+          "seller_sku": "CHAN2023",
+          "label": "Default Title",
+          "option_values": {},
+          "price_native": 210.0,
+          "compare_at_price_native": 210.0,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/chandler-blank-silicone-cuddle-head"
+        }
+      ],
+      "variant_total": 1,
+      "distinct_full_prices": [
+        210.0
+      ],
+      "from_price_native": null,
+      "has_genuine_full_price_range": false,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        true
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/Chandler11.jpg?v=1676419246",
+          "id": "30845964812322",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/Chandler12.jpg?v=1676419246",
+          "id": "30845964845090",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2023-02-14T19:00:44-05:00",
+      "created_at": "2023-02-14T19:00:44-05:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7175766245410",
+      "handle": "maelee-blank-silicone-cuddle-head",
+      "source_url": "https://www.melodyhessdolls.com/products/maelee-blank-silicone-cuddle-head",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "Maelee Blank Silicone Cuddle Head (Poured on Demand)",
+      "sculpt_name_candidate": "Maelee Blank Silicone Cuddle Head (Poured on Demand",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "component_excluded",
+      "classification_basis": "standalone_component",
+      "description": "You are purchasing a blank silicone head only! Body NOT included! Maelee will be 16\" when complete. Her head is sculpted by me. Molded by Jennifer Price of Silicone Studio and poured in Eco 20 soft silicone blend by me. Her mouth is not open and we do not include that service. She will be included with a COA and a small silicone repair kit in the same color as she is poured in. Please allow 7-10 days for shipping. Cast on demand . Please allow 7-10 days for your head to be poured and shipped. Free USA shipping!",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "41008339386402",
+          "seller_sku": "MAELEE100",
+          "label": "Default Title",
+          "option_values": {},
+          "price_native": 190.0,
+          "compare_at_price_native": 185.0,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/maelee-blank-silicone-cuddle-head"
+        }
+      ],
+      "variant_total": 1,
+      "distinct_full_prices": [
+        190.0
+      ],
+      "from_price_native": null,
+      "has_genuine_full_price_range": false,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        true
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/Untitleddesign_4.jpg?v=1675303364",
+          "id": "30813583769634",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/Untitleddesign_1.jpg?v=1675303364",
+          "id": "30813583736866",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/Untitleddesign_2.jpg?v=1675303363",
+          "id": "30813583704098",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/Untitleddesign_3.jpg?v=1675303365",
+          "id": "30813583802402",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2023-02-01T21:02:41-05:00",
+      "created_at": "2023-02-01T21:02:41-05:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7168114360354",
+      "handle": "silicone-cuddle-baby-kit",
+      "source_url": "https://www.melodyhessdolls.com/products/silicone-cuddle-baby-kit",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "Silicone Cuddle Baby Kit",
+      "sculpt_name_candidate": "Silicone Cuddle Baby Kit",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "needs_review",
+      "classification_basis": "insufficient_explicit_kit_evidence",
+      "description": "Silicone cuddle baby Kit, sculpted and cast by Jennifer Price of Silicone Studio. Kit has an open mouth so she can take a pacifier, but the inside is not painted. She has rooted eyelashes. Kit is on a Claire June Cope cuddle body and is weighted with glass beads and super soft polyfill. She also has armatures in her cloth arms and legs, so she poses really nice. She is 17\" long and weighs 5 lbs. 5ozs. She will go home with the outfit she has on, a pacifier and her coa. Free shipping within the USA is included!",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "40988839378978",
+          "seller_sku": "SILICUDKIT1",
+          "label": "Default Title",
+          "option_values": {},
+          "price_native": 600.0,
+          "compare_at_price_native": 600.0,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/silicone-cuddle-baby-kit"
+        }
+      ],
+      "variant_total": 1,
+      "distinct_full_prices": [
+        600.0
+      ],
+      "from_price_native": null,
+      "has_genuine_full_price_range": false,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        false
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedkit1.jpg?v=1671156356",
+          "id": "30616078254114",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedkit2.jpg?v=1671156354",
+          "id": "30616077828130",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedkit3.jpg?v=1671156356",
+          "id": "30616078090274",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedkit4.jpg?v=1671156355",
+          "id": "30616078057506",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedkit5.jpg?v=1671156354",
+          "id": "30616077926434",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedkit6.jpg?v=1671156353",
+          "id": "30616077795362",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedkit7.jpg?v=1671156354",
+          "id": "30616077893666",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedkit8.jpg?v=1671156355",
+          "id": "30616078024738",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedkit9.jpg?v=1671156353",
+          "id": "30616077729826",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedkit10.jpg?v=1671156353",
+          "id": "30616077697058",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedkit11.jpg?v=1671156355",
+          "id": "30616077991970",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2022-12-15T21:05:52-05:00",
+      "created_at": "2022-12-15T21:05:50-05:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7168112525346",
+      "handle": "silicone-cuddle-baby-rani",
+      "source_url": "https://www.melodyhessdolls.com/products/silicone-cuddle-baby-rani",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "Silicone Cuddle Baby Rani",
+      "sculpt_name_candidate": "Silicone Cuddle Baby Rani",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "needs_review",
+      "classification_basis": "insufficient_explicit_kit_evidence",
+      "description": "Silicone baby Rani is sculpted, cast and reborned by me. He has a few flaws, so he is listed at a discount. He has a lighter spot on his bottom lip. His mouth is open so he can take a pacifier, but the inside of his mouth is not painted. He has rooted eyelashes. He is on a Claire June Cope cuddle body filled with glass beads and super soft polyfill. He weighs 6 lbs. 5ozs. and is 18\" long. He will go home with his outfit that he is wearing, a pacifier and a coa. Free shipping is included within the USA.",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "40988826599458",
+          "seller_sku": "SILICUDRANI1",
+          "label": "Default Title",
+          "option_values": {},
+          "price_native": 600.0,
+          "compare_at_price_native": 600.0,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/silicone-cuddle-baby-rani"
+        }
+      ],
+      "variant_total": 1,
+      "distinct_full_prices": [
+        600.0
+      ],
+      "from_price_native": null,
+      "has_genuine_full_price_range": false,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        false
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedranisilicone1.jpg?v=1671155910",
+          "id": "30616041160738",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedranisilicone2.jpg?v=1671155912",
+          "id": "30616041357346",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedranisilicone3.jpg?v=1671155910",
+          "id": "30616041193506",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedranisilicone4.jpg?v=1671155911",
+          "id": "30616041259042",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedranisilicone5.jpg?v=1671155912",
+          "id": "30616041390114",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedranisilicone6.jpg?v=1671155911",
+          "id": "30616041291810",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedranisilicone7.jpg?v=1671155911",
+          "id": "30616041226274",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedranisilicone8.jpg?v=1671155912",
+          "id": "30616041488418",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedranisilicone9.jpg?v=1671155910",
+          "id": "30616041127970",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedranisilicone10.jpg?v=1671155911",
+          "id": "30616041324578",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2022-12-15T20:58:29-05:00",
+      "created_at": "2022-12-15T20:58:27-05:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7168112132130",
+      "handle": "silicone-cuddle-baby-paxton",
+      "source_url": "https://www.melodyhessdolls.com/products/silicone-cuddle-baby-paxton",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "Silicone Cuddle Baby Paxton",
+      "sculpt_name_candidate": "Silicone Cuddle Baby Paxton",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "needs_review",
+      "classification_basis": "insufficient_explicit_kit_evidence",
+      "description": "Silicone baby Paxton is sculpted, cast and reborned by me. He has a few flaws, so he is listed at a discount. He has some texture on his head and a small divet on the back of his head. I have taken a picture to show it. His mouth is open so he can take a pacifier, but the inside of his mouth is not painted. He has rooted eyelashes. He is on a Claire June Cope cuddle body filled with glass beads and super soft polyfill. He weighs 6 lbs. 2ozs. and is 18\" long. He will go home with his outfit that he is wearing, a pacifier and a coa. Free shipping is included within the USA.",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "40988820308002",
+          "seller_sku": "SILICUDPAXTON2",
+          "label": "Default Title",
+          "option_values": {},
+          "price_native": 600.0,
+          "compare_at_price_native": 600.0,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/silicone-cuddle-baby-paxton"
+        }
+      ],
+      "variant_total": 1,
+      "distinct_full_prices": [
+        600.0
+      ],
+      "from_price_native": null,
+      "has_genuine_full_price_range": false,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        false
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedsiliconepaxton21.jpg?v=1671155708",
+          "id": "30616027562018",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedsiliconepaxton22.jpg?v=1671155709",
+          "id": "30616027725858",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedsiliconepaxton23.jpg?v=1671155709",
+          "id": "30616027758626",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedsiliconepaxton24.jpg?v=1671155707",
+          "id": "30616027463714",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedsiliconepaxton25.jpg?v=1671155708",
+          "id": "30616027693090",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedsiliconepaxton26.jpg?v=1671155708",
+          "id": "30616027660322",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedsiliconepaxton27.jpg?v=1671155710",
+          "id": "30616027791394",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedsiliconepaxton28.jpg?v=1671155707",
+          "id": "30616027430946",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedsiliconepaxton29.jpg?v=1671155707",
+          "id": "30616027496482",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/finishedsiliconepaxton30.jpg?v=1671155708",
+          "id": "30616027529250",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2022-12-15T20:55:06-05:00",
+      "created_at": "2022-12-15T20:55:04-05:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7160804933666",
+      "handle": "remi-ashton-bi-racial-reborn-baby",
+      "source_url": "https://www.melodyhessdolls.com/products/remi-ashton-bi-racial-reborn-baby",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "Remi-Ashton Bi-Racial Reborn Baby",
+      "sculpt_name_candidate": "Remi-Ashton Bi-Racial Reborn Baby",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "finished_doll_excluded",
+      "classification_basis": "title_explicit_finished_doll",
+      "description": "Remi-Ashton is sculpted by Cassie Brace and reborned by me, Melody Hess. She is #568 out of 1000. She has a lovely bi-racial skin tone that has been painted by me using Genesis paints. Her hair is a very dark brown, super soft yearling mohair that has been rooted 1-2 hairs. She has rooted eyelashes as well. She is 19\" long and weighs 5lbs. 9ozs. She will go home with the outfit and headband she has on, an extra outfit, a sleeper, a soft blanket, a magnetic pacifier, birth certificate and coa.",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": null,
+      "material_review_required": true,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "40973539639330",
+          "seller_sku": null,
+          "label": "Default Title",
+          "option_values": {},
+          "price_native": 850.0,
+          "compare_at_price_native": 850.0,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/remi-ashton-bi-racial-reborn-baby"
+        }
+      ],
+      "variant_total": 1,
+      "distinct_full_prices": [
+        850.0
+      ],
+      "from_price_native": null,
+      "has_genuine_full_price_range": false,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        false
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/remi1.jpg?v=1669231386",
+          "id": "30509482672162",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/remi2.jpg?v=1669231385",
+          "id": "30509482541090",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/remi3.jpg?v=1669231385",
+          "id": "30509482639394",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/remi4.jpg?v=1669231386",
+          "id": "30509482704930",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/remi5.jpg?v=1669231385",
+          "id": "30509482573858",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/remi6.jpg?v=1669231385",
+          "id": "30509482606626",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2022-11-23T14:23:04-05:00",
+      "created_at": "2022-11-23T14:23:03-05:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7112101494818",
+      "handle": "reagan-silicone-cuddle-head",
+      "source_url": "https://www.melodyhessdolls.com/products/reagan-silicone-cuddle-head",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "Reagan Silicone Cuddle Head",
+      "sculpt_name_candidate": "Reagan Silicone Cuddle Head",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "component_excluded",
+      "classification_basis": "standalone_component",
+      "description": "﻿Reagan Silicone Cuddle Head ﻿ Blank Silicone Head ONLY. You will need a cuddle body (NOT INCLUDED)! Reagan will be 21-22\" when complete! She was molded by Jennifer Sussmann-Price and cast by me in a soft eco 20 blend. She will be included with a COA and a small silicone repair kit in the same color as she is poured in. Please allow 7-10 days for shipping. Poured as ordered﻿ ﻿",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "40784248766498",
+          "seller_sku": "REAG4",
+          "label": "Default Title",
+          "option_values": {},
+          "price_native": 240.0,
+          "compare_at_price_native": 240.0,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/reagan-silicone-cuddle-head"
+        }
+      ],
+      "variant_total": 1,
+      "distinct_full_prices": [
+        240.0
+      ],
+      "from_price_native": null,
+      "has_genuine_full_price_range": false,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        false
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/reagan2.jpg?v=1662930666",
+          "id": "30147536977954",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2022-09-11T17:09:56-04:00",
+      "created_at": "2022-09-11T17:09:55-04:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7112076787746",
+      "handle": "paxton-silicone-cuddle-head",
+      "source_url": "https://www.melodyhessdolls.com/products/paxton-silicone-cuddle-head",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "Paxton Silicone Cuddle Head (Poured on Demand)",
+      "sculpt_name_candidate": "Paxton Silicone Cuddle Head (Poured on Demand",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "component_excluded",
+      "classification_basis": "standalone_component",
+      "description": "Paxton Silicone Cuddle Head Blank Silicone Head ONLY. You will need a cuddle body (NOT INCLUDED)! Paxton will be 18-19\" when complete! He was molded by Jennifer Sussmann-Price and cast by me in a soft eco-20 blend. H e will be included with a COA and a small silicone repair kit in the same color as he is poured in. Please allow 7-10 days for shipping. Cast on demand",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "40783956115490",
+          "seller_sku": "PAXOO1",
+          "label": "Default Title",
+          "option_values": {},
+          "price_native": 210.0,
+          "compare_at_price_native": 210.0,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/paxton-silicone-cuddle-head"
+        }
+      ],
+      "variant_total": 1,
+      "distinct_full_prices": [
+        210.0
+      ],
+      "from_price_native": null,
+      "has_genuine_full_price_range": false,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        true
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/siliconepaxtonhead2.jpg?v=1662922801",
+          "id": "30147307634722",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2022-09-11T14:55:42-04:00",
+      "created_at": "2022-09-11T14:55:41-04:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7111368179746",
+      "handle": "rani-silicone-cuddle-head",
+      "source_url": "https://www.melodyhessdolls.com/products/rani-silicone-cuddle-head",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "Rani Silicone Cuddle Head (Poured on Demand)",
+      "sculpt_name_candidate": "Rani Silicone Cuddle Head (Poured on Demand",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "component_excluded",
+      "classification_basis": "standalone_component",
+      "description": "Rani Silicone Head Blank Silicone Head ONLY. You will need a cuddle body (NOT INCLUDED)! Rani will be 18-19\" when complete! She was molded by Jennifer Sussmann-Price and cast by me in a soft eco 20 blend. She will be included with a COA and a small silicone repair kit in the same color as she is poured in. Please allow 7-10 days for shipping. Cast on demand",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "40780369559586",
+          "seller_sku": "RANI000",
+          "label": "Default Title",
+          "option_values": {},
+          "price_native": 210.0,
+          "compare_at_price_native": 210.0,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/rani-silicone-cuddle-head"
+        }
+      ],
+      "variant_total": 1,
+      "distinct_full_prices": [
+        210.0
+      ],
+      "from_price_native": null,
+      "has_genuine_full_price_range": false,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        true
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/rani3.png?v=1662757181",
+          "id": "30142583668770",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2022-09-09T16:58:11-04:00",
+      "created_at": "2022-09-09T16:58:10-04:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7111282491426",
+      "handle": "amara-vinyl-reborn-doll-kit",
+      "source_url": "https://www.melodyhessdolls.com/products/amara-vinyl-reborn-doll-kit",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "Amara Vinyl Reborn Doll Kit",
+      "sculpt_name_candidate": "Amara Vinyl Reborn Doll Kit",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "original_kit_candidate",
+      "classification_basis": "seller_explicit_blank_kit_owner_needs_review",
+      "description": "In Stock and Shipping! Limited Edition of ONLY 800 Worldwide! Amara Kit Details Blank, soft, neutral vinyl 20″ when complete Full arms and full legs Cloth body included Specially designed hand signed and numbered COA Signed body (ONLY if ordered directly from me) *﻿Please Note* This is NOT a finished doll! This is a BLANK, UNASSEMBLED vinyl doll kit!",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "vinyl",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "40780103548962",
+          "seller_sku": "AMA800",
+          "label": "Default Title",
+          "option_values": {},
+          "price_native": 104.99,
+          "compare_at_price_native": 104.99,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/amara-vinyl-reborn-doll-kit"
+        }
+      ],
+      "variant_total": 1,
+      "distinct_full_prices": [
+        104.99
+      ],
+      "from_price_native": null,
+      "has_genuine_full_price_range": false,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        false
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/amara1.jpg?v=1662747874",
+          "id": "30142117380130",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/amara2.jpg?v=1662747874",
+          "id": "30142117314594",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/amara3.jpg?v=1662747874",
+          "id": "30142117347362",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2022-09-09T14:24:33-04:00",
+      "created_at": "2022-09-09T14:24:32-04:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7111274922018",
+      "handle": "vivia-vinyl-reborn-doll-kit",
+      "source_url": "https://www.melodyhessdolls.com/products/vivia-vinyl-reborn-doll-kit",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "Vivia Vinyl Reborn Doll Kit",
+      "sculpt_name_candidate": "Vivia Vinyl Reborn Doll Kit",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "original_kit_candidate",
+      "classification_basis": "seller_explicit_blank_kit_owner_needs_review",
+      "description": "In Stock and Shipping! Limited Edition of ONLY 800 Worldwide! Vivia Kit Details Blank, soft, neutral vinyl 19″ when complete Full arms and full legs Cloth body included Specially designed hand signed and numbered COA Signed body (ONLY if ordered directly from me) *﻿Please Note* This is NOT a finished doll! This is a BLANK, UNASSEMBLED vinyl doll kit!",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "vinyl",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "40780069240866",
+          "seller_sku": "VIV800",
+          "label": "Default Title",
+          "option_values": {},
+          "price_native": 104.99,
+          "compare_at_price_native": 104.99,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/vivia-vinyl-reborn-doll-kit"
+        }
+      ],
+      "variant_total": 1,
+      "distinct_full_prices": [
+        104.99
+      ],
+      "from_price_native": null,
+      "has_genuine_full_price_range": false,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        false
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/vivia1.jpg?v=1662746735",
+          "id": "30142075699234",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/vivia2.jpg?v=1662746735",
+          "id": "30142075633698",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/vivia3.jpg?v=1662746735",
+          "id": "30142075666466",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2022-09-09T14:05:34-04:00",
+      "created_at": "2022-09-09T14:05:33-04:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "7110990528546",
+      "handle": "jupiter-vinyl-reborn-doll-kit",
+      "source_url": "https://www.melodyhessdolls.com/products/jupiter-vinyl-reborn-doll-kit",
+      "source_scan_at": "2026-10-13T16:09:45.246856+00:00",
+      "source_sha256": "df51d2381365c9536298603211308cc71611a6b3e529fb17677ab1ef84972ae3",
+      "name": "Jupiter Vinyl Reborn Doll Kit IN STOCK",
+      "sculpt_name_candidate": "Jupiter Vinyl Reborn Doll Kit",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "original_kit_candidate",
+      "classification_basis": "seller_explicit_blank_kit_owner_needs_review",
+      "description": "Not many left in her edition! Limited Edition of ONLY 1500 Worldwide! Jupiter Kit Details Blank, soft, neutral vinyl 23″ when complete Full arms and full legs Cloth body included 18 or 20mm eyes (NOT INCLUDED) Specially designed hand signed and numbered COA Signed body (ONLY if ordered directly from me) *Please Note* This is NOT a finished doll! This is a BLANK, UNASSEMBLED vinyl doll kit!",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "vinyl",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "40778415177762",
+          "seller_sku": "JUP1500",
+          "label": "Default Title",
+          "option_values": {},
+          "price_native": 109.99,
+          "compare_at_price_native": 109.99,
+          "price_kind": "full_purchase",
+          "availability_flag": false,
+          "image_id": null,
+          "source_product_url": "https://www.melodyhessdolls.com/products/jupiter-vinyl-reborn-doll-kit"
+        }
+      ],
+      "variant_total": 1,
+      "distinct_full_prices": [
+        109.99
+      ],
+      "from_price_native": null,
+      "has_genuine_full_price_range": false,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        false
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/Jupiterfbcover.jpg?v=1662697103",
+          "id": "30139571503138",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/Jupiter_19.jpg?v=1662740303",
+          "id": "30141838524450",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/Jupiter_23.jpg?v=1662740349",
+          "id": "30141839474722",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/Jupiter_21.jpg?v=1662740368",
+          "id": "30141840064546",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0587/0531/3826/products/Jupiter_22.jpg?v=1662740383",
+          "id": "30141840392226",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2022-09-09T00:18:21-04:00",
+      "created_at": "2022-09-09T00:18:20-04:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    }
+  ],
+  "errors": [],
+  "coverage": "index_enumerated",
+  "source_kind": "public_shopify_product_json",
+  "artist_name": "Melody Hess",
+  "currency": "USD",
+  "status": "scanned",
+  "products_seen": 17,
+  "original_kit_candidates": 3,
+  "finished_dolls_excluded": 1,
+  "component_or_non_kit_excluded": 7,
+  "uncertain_products": 6
+}

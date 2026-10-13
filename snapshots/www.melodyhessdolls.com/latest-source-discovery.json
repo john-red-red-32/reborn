@@ -3,7 +3,7 @@
   "host": "www.melodyhessdolls.com",
   "parser_version": "url-discovery-v2-platform-sitemaps",
   "started_from": "https://www.melodyhessdolls.com/",
-  "completed_at": "2026-10-13T16:08:29.804502+00:00",
+  "completed_at": "2026-10-13T16:09:45.110363+00:00",
   "page_limit": 8,
   "sitemap_discovered_urls": 24,
   "platforms": {
@@ -24,8 +24,8 @@
     {
       "url": "https://www.melodyhessdolls.com/",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:18.862576+00:00",
-      "sha256_html": "5167942fca2f86acbad1feb762584b729b981cd49285a34cd06ff1454d78e372",
+      "observed_at": "2026-10-13T16:09:34.386123+00:00",
+      "sha256_html": "4ff7f9b55be7b955be8d634640a10974f93390862066ebe359db88363c8e536b",
       "title": "Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -45,8 +45,8 @@
         "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
         "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
         "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
-        "shopify-y": "60dee924-4888-4937-ba4b-715c6fed1c92",
-        "shopify-s": "91cfcc1a-5e33-4825-8adf-d747bcf0affe"
+        "shopify-y": "cb28b81c-b2b9-4870-8b2b-96edcdb05b47",
+        "shopify-s": "d52c76c1-1dc9-4a3c-81bd-d7861b5d0a9f"
       },
       "structured_data": [
         {
@@ -149,8 +149,8 @@
     {
       "url": "https://www.melodyhessdolls.com/cart",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:20.076391+00:00",
-      "sha256_html": "0acaf9567781ba77a2a4d302fde320936bc63a0f93c9167bed3040110ebfb9bb",
+      "observed_at": "2026-10-13T16:09:35.601849+00:00",
+      "sha256_html": "31640df0d5c4daa55838ca0287eeed9b94264adac564200c4e3242505ac57741",
       "title": "Your Shopping Cart\n– Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -169,8 +169,8 @@
         "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
         "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
         "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
-        "shopify-y": "2ed2d4f2-df5b-4603-8472-04684aab405c",
-        "shopify-s": "462fe1ee-94ad-4a3d-8567-c7a56748e42c"
+        "shopify-y": "5c0e9787-569e-4f99-9561-895e90017252",
+        "shopify-s": "23c6a9f8-947a-4da5-aba2-b95924a1e1df"
       },
       "structured_data": [
         {
@@ -228,8 +228,8 @@
     {
       "url": "https://www.melodyhessdolls.com/policies/shipping-policy",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:21.320422+00:00",
-      "sha256_html": "7208a9c3f0227ab61c60674a424f47fb18bfccbf2e4b1d6ca98c1fd39f9c15cd",
+      "observed_at": "2026-10-13T16:09:36.830331+00:00",
+      "sha256_html": "6bd693a49cf8a50738a877fce344c3e4c86f9ec070785e61fba8f2ed9adbd88d",
       "title": "Shipping policy\n– Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -248,8 +248,8 @@
         "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
         "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
         "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
-        "shopify-y": "de09c514-0065-47e3-b6d4-845227662b5a",
-        "shopify-s": "80f68d8f-3f5d-4497-ab05-101889bd8746"
+        "shopify-y": "2c0ba5e8-04b0-4bdf-a9a6-3f05e7218096",
+        "shopify-s": "a1007e0f-4229-4120-8a0c-d16771193344"
       },
       "structured_data": [
         {
@@ -306,8 +306,8 @@
     {
       "url": "https://www.melodyhessdolls.com/collections/all",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:22.572085+00:00",
-      "sha256_html": "d228b3c96e138a4c95db0b26d37dac70677531a0b5a80e95ec74dca1774267b7",
+      "observed_at": "2026-10-13T16:09:38.103319+00:00",
+      "sha256_html": "55e251edf99e866b861fd8e6e27efa2a3f680ef723c4ee11eab8f2a0c41ec9ac",
       "title": "Products\n– Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -326,8 +326,8 @@
         "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
         "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
         "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
-        "shopify-y": "f819ae1f-fe43-4989-891f-09f628d28b4b",
-        "shopify-s": "25e67e6f-3e6e-403e-8bf0-dd8caccce531"
+        "shopify-y": "c92493a3-7a76-4e55-9020-5bb139ee4587",
+        "shopify-s": "02673b67-d21d-464e-947a-e8e82a773b30"
       },
       "structured_data": [
         {
@@ -466,8 +466,8 @@
     {
       "url": "https://www.melodyhessdolls.com/collections/all?page=2",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:23.839044+00:00",
-      "sha256_html": "4d6b54ee2dfe881891c558eded558422db5426df83f20d245fde1f90280027d4",
+      "observed_at": "2026-10-13T16:09:39.346482+00:00",
+      "sha256_html": "28186860c11523444639fef4ff2aec6a328095b724475a03b3ce971becfac5e4",
       "title": "Products\n– Page 2\n– Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -486,8 +486,8 @@
         "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
         "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
         "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
-        "shopify-y": "c6a7e9c7-567e-488d-8fb9-fe0888750fee",
-        "shopify-s": "97f4356e-dffc-41ce-9ae4-0d2c37fae1fe"
+        "shopify-y": "5f7cf7ed-4025-4c1f-958e-fe42ac79811f",
+        "shopify-s": "3a459b08-b4b6-41fd-bc38-b988f12e54d2"
       },
       "structured_data": [
         {
@@ -630,8 +630,8 @@
     {
       "url": "https://www.melodyhessdolls.com/collections/all?page=1",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:25.165455+00:00",
-      "sha256_html": "a1164e23d577b0421b6af7b34b0a3971ba248082978ba325a0ab99e751d3f672",
+      "observed_at": "2026-10-13T16:09:40.570733+00:00",
+      "sha256_html": "a25dc29461b0a5ff5f1f040d58c11b3adb4e9e847805a1e0a37aec29567f5b08",
       "title": "Products\n– Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -650,8 +650,8 @@
         "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
         "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
         "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
-        "shopify-y": "9da69037-a5ea-4093-88f8-5cc037b2867a",
-        "shopify-s": "ddb856b0-e04b-4d10-914e-2a6c62d9239d"
+        "shopify-y": "c32d055f-0dce-4762-80f0-b27e253bdbc6",
+        "shopify-s": "ece0e9de-09e9-4074-a630-40f0900fb4e4"
       },
       "structured_data": [
         {
@@ -790,8 +790,8 @@
     {
       "url": "https://www.melodyhessdolls.com/collections/all?page=3",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:26.419785+00:00",
-      "sha256_html": "af1fc74fa614e8dd756899d8cccde8f44df58b428fe5e73523251c557f4ac09f",
+      "observed_at": "2026-10-13T16:09:41.748212+00:00",
+      "sha256_html": "a9ca58d2baef4f6182b0bda89fc4f50617067e390586dc0be5c70e602c9427b2",
       "title": "Products\n– Page 3\n– Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -810,8 +810,8 @@
         "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
         "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
         "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
-        "shopify-y": "64a398fa-28a5-416d-8b55-7b9bc1892e7d",
-        "shopify-s": "3324ac10-bc33-4e9f-8ab1-55226f890f36"
+        "shopify-y": "fd4429fd-b6b8-4c9b-aeaf-b9110cac57e6",
+        "shopify-s": "c1a9cac3-a14a-4b67-9ca3-45f8962212f2"
       },
       "structured_data": [
         {
@@ -879,8 +879,8 @@
     {
       "url": "https://www.melodyhessdolls.com/blogs/news",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:08:28.804228+00:00",
-      "sha256_html": "041844dfbd2cc9f3caa72e1c5570499eb75c042bf6fd6ad636bbfa6945870540",
+      "observed_at": "2026-10-13T16:09:44.110096+00:00",
+      "sha256_html": "317e9e1db336f985187961bfc14cd9120ab69be61473f55367823843212593ec",
       "title": "News\n– Melody Hess Dolls American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa American Express Apple Pay Bancontact Diners Club Discover Google Pay iDEAL Wero Mastercard PayPal Shop Pay Visa",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -899,8 +899,8 @@
         "twitter:description": "Reborn doll kits, silicone dolls. authorized dealers, MacPherson Arts & Crafts, Once So Real, Create A Little Magic, Creatubebe, IArtReborn, Creandobebes, Fairytalesrebornnursery, Dollli Creations.",
         "google-site-verification": "--_fiEtvQGjlShNQXkDnDNtxHDwSsCr7lVeG-5Qu1uw",
         "shopify-digital-wallet": "/58705313826/digital_wallets/dialog",
-        "shopify-y": "c9d4e2df-ca65-49c5-acbf-b3b5dfac3db1",
-        "shopify-s": "e641b222-4538-4564-80d7-f1c167414e98"
+        "shopify-y": "f0557866-65e3-44d4-93f1-b049b10192fb",
+        "shopify-s": "7c8e2f03-ad47-4553-a243-e3129441a4af"
       },
       "structured_data": [
         {
