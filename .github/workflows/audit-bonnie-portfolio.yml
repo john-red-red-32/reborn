@@ -1,0 +1,57 @@
+name: Audit Bonnie Brown published portfolio
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-bonnie-portfolio.yml'
+      - 'lib/wix-cohort-catalogue.ts'
+      - 'lib/wix-artist-stories.ts'
+      - 'lib/real-catalogue.ts'
+      - 'app/artists/[slug]/page.tsx'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify all five official-source vinyl image and kit pages
+        run: |
+          python3 - <<'PY'
+          import json,re,time,urllib.request
+          txt=open('lib/wix-cohort-catalogue.ts').read()
+          def read(field):
+              m=re.search('export const '+field+r':[^=]+=([\s\S]*?);(?:\n|$)',txt)
+              assert m,'Cannot find '+field
+              return json.loads(m.group(1))
+          artists=read('wixCohortArtists')
+          kits=read('wixCohortKits')
+          bonnie=[k for k in kits if k['artistSlug']=='bonnie-brown']
+          assert len(bonnie)==5,len(bonnie)
+          assert len({k['slug'] for k in bonnie})==5
+          assert all(k['material']=='vinyl' and k['photos'][0]['url'].startswith('https://static.wixstatic.com/media/') and 'bonniebrowndolls.com' in k['sources'][0]['url'] for k in bonnie)
+          urls=[('/artists/bonnie-brown/','Bonnie Brown')]+[('/kits/'+k['slug']+'/',k['name']) for k in bonnie]
+          headers={'User-Agent':'Mozilla/5.0 (compatible; RebornaAudit/1.0)'}
+          for attempt in range(12):
+              errors=[]
+              for path,name in urls:
+                  try:
+                      with urllib.request.urlopen(urllib.request.Request('https://reborna.co'+path,headers=headers),timeout=14) as r:
+                          html=r.read().decode('utf-8','replace')
+                          assert r.status==200 and name in html
+                          assert 'Vinyl' in html and 'Material' in html
+                  except Exception as exc: errors.append((path,str(exc)[:90]))
+              if not errors:
+                  print('PASS six live Bonnie routes (artist + five original vinyl kit pages)')
+                  break
+              print('Retry waiting Cloudflare:',attempt+1,errors[:3],flush=True)
+              time.sleep(6)
+          else: raise SystemExit('Published Bonnie portfolio incomplete')
+          for kit in bonnie:
+              img=kit['photos'][0]['url']
+              with urllib.request.urlopen(urllib.request.Request(img,headers=headers),timeout=15) as resp:
+                  assert resp.status==200 and resp.headers.get('Content-Type','').startswith('image/'),img
+          print('PASS five Bonnie named original source images')
+          PY
