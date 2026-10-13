@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "artist_id": "sandy-faber",
+  "display_name": "Sandy Faber",
+  "source_name": "Sandy's Babies — official sculptor website",
+  "allowed_hosts": [
+    "www.sandysbabies.com",
+    "sandysbabies.com"
+  ],
+  "platform": "unconfirmed",
+  "accepted_names": [],
+  "approved_aliases": {},
+  "notes": "Gallery name and photo source evidence only; preserve original sculpt versus completed silicone baby and blank kit distinctions."
+}
