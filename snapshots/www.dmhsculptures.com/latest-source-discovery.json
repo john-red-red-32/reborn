@@ -3,7 +3,7 @@
   "host": "www.dmhsculptures.com",
   "parser_version": "url-discovery-v2-platform-sitemaps",
   "started_from": "https://www.dmhsculptures.com/vinyl-kits",
-  "completed_at": "2026-10-13T16:36:24.796025+00:00",
+  "completed_at": "2026-10-13T17:02:27.963370+00:00",
   "page_limit": 18,
   "sitemap_discovered_urls": 80,
   "platforms": {
@@ -18,8 +18,8 @@
     {
       "url": "https://www.dmhsculptures.com/vinyl-kits",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:35:48.331987+00:00",
-      "sha256_html": "b6e660d0beb7b0173cdca5d09008f75fd9d8466069b760b47f674200ac66f6f4",
+      "observed_at": "2026-10-13T17:02:07.561641+00:00",
+      "sha256_html": "0733e703be069e3fa3fb56e493bbbf9a3af81a641e61f8d070416412d44ae9ab",
       "title": "DMH Studio Sculpted Portrait Reborn Baby Dolls Vinyl Kits",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -312,8 +312,8 @@
     {
       "url": "https://www.dmhsculptures.com/vinyl-kits?page=2",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:35:50.780733+00:00",
-      "sha256_html": "41257d46431d07111b5e104fe9c09cb08fd8b8eb55efe00f58c244e4ba489b9e",
+      "observed_at": "2026-10-13T17:02:08.759567+00:00",
+      "sha256_html": "019084235f56641b62ebd6070ace23d5a9c601460394017e12a098e19919b56d",
       "title": "DMH Studio Sculpted Portrait Reborn Baby Dolls Vinyl Kits  2/2",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -411,8 +411,8 @@
     {
       "url": "https://www.dmhsculptures.com",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:35:51.917836+00:00",
-      "sha256_html": "6d3b722188db93922572cff1a395d7ae1690bfe6ec790a6fb90f992834a66ffb",
+      "observed_at": "2026-10-13T17:02:09.866684+00:00",
+      "sha256_html": "6723aa52bc4e6d876bd6b9d5a6b93f0cfab22c8e7345b1769e931e217a66b91c",
       "title": "DMH Sculpted Portrait Reborn Baby Dolls dba dmhstudio dmhsculptures",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -559,8 +559,8 @@
     {
       "url": "https://www.dmhsculptures.com/babies-for-adoption",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:35:53.081028+00:00",
-      "sha256_html": "0dc8711bad423ff5f581fe239aa912e15ca7b4017cd3373eb087d065a2d38d86",
+      "observed_at": "2026-10-13T17:02:11.002579+00:00",
+      "sha256_html": "f53534787791418abc52e362c70f22ccedf61948b03d32654dbd2ae565632b5f",
       "title": "DMH lifelike realistic Portrait Reborn Baby Dolls to buy",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -649,8 +649,8 @@
     {
       "url": "https://www.dmhsculptures.com/baby-care",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:35:54.206021+00:00",
-      "sha256_html": "bbeead9eee90313fefa3ceb58bd38bccc8cbcb60b6f629dd02bbac3bb5b4b5cd",
+      "observed_at": "2026-10-13T17:02:12.131555+00:00",
+      "sha256_html": "1c63f3a0f5654053426021dd73b0294fd4feb9e83c17863f94f5b89ca131fbc8",
       "title": "DM-H Studio Sculpted Portrait Reborn Baby Doll Care",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -722,8 +722,8 @@
     {
       "url": "https://www.dmhsculptures.com/blog",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:35:56.715990+00:00",
-      "sha256_html": "f5307ae1123b0f37e736e26341c26ad15c3836959059be0063f19c2bd556e0c0",
+      "observed_at": "2026-10-13T17:02:13.292683+00:00",
+      "sha256_html": "acedabb335e3a2aed3586a3abd73592b3396bc4ec0ac1bff2bbf059b173d5c68",
       "title": "Blog | dmh sculptures",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -829,8 +829,8 @@
     {
       "url": "https://www.dmhsculptures.com/profile/admin/profile",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:35:59.321318+00:00",
-      "sha256_html": "ee9d3cd4ec306ce4eeb447f96dc8e337c500af2e6b96c9969404bc22819d8518",
+      "observed_at": "2026-10-13T17:02:14.472101+00:00",
+      "sha256_html": "ba27500e19ba4cbf186fe619af0ff4e4be50927a9a3e41364adeb74ce82f39fe",
       "title": "Admin | Profile Following icon",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -904,8 +904,8 @@
     {
       "url": "https://www.dmhsculptures.com/book-online",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:36:00.452003+00:00",
-      "sha256_html": "0541de03dd14be315f7b139cdb084b9a4af03e89862942dcd2ee4dd953b87e52",
+      "observed_at": "2026-10-13T17:02:15.583564+00:00",
+      "sha256_html": "81838f0c11c49cf6b4857518bddba2d31cc637e54b3bfe3f6aa5c248e962daac",
       "title": "COURSE at West Coast Doll Show | dmh sculptures",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -980,8 +980,8 @@
     {
       "url": "https://www.dmhsculptures.com/buy",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:36:02.739010+00:00",
-      "sha256_html": "3737a8f027fba18d490d8576a515d3a1f0a74149d114d67c551e3afc7da42dca",
+      "observed_at": "2026-10-13T17:02:16.666437+00:00",
+      "sha256_html": "269589db0d03e25b18e668a05ab09b97349f3153b4b6b720211fe42a518800b2",
       "title": "DMH Studio Sculpted Portrait Reborn Baby Dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -1053,8 +1053,8 @@
     {
       "url": "https://www.dmhsculptures.com/coming-soon",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:36:05.527056+00:00",
-      "sha256_html": "6d9af12d676bf7d353df56f7690530e74983cde2c4e26d55b5f05a4e892de886",
+      "observed_at": "2026-10-13T17:02:17.800278+00:00",
+      "sha256_html": "fb4d236278fe419a372c343024784b1c11d6c24e0103558750c1438a9742bded",
       "title": "Coming Soon  | dmh sculptures",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -1294,8 +1294,8 @@
     {
       "url": "https://www.dmhsculptures.com/commission",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:36:08.353268+00:00",
-      "sha256_html": "30328c1a2dd5447c877c926f0778159d15a9c8c3afe4027052fadd5bf4ea442f",
+      "observed_at": "2026-10-13T17:02:18.986498+00:00",
+      "sha256_html": "113e187b48cdb9851a22aad5e9b8dc6e210e9aa53fcae47fe16c747af4c4b64d",
       "title": "DMH Sculpted Portrait Reborn Baby Doll Commission",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -1546,8 +1546,8 @@
     {
       "url": "https://www.dmhsculptures.com/contact",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:36:10.289798+00:00",
-      "sha256_html": "e52b3f05b0980bdaa63f8fddccba8d2f20ccb154c262921ff72b2a23faac4258",
+      "observed_at": "2026-10-13T17:02:20.215631+00:00",
+      "sha256_html": "5228625dfb8ded8b9f2ae73877b4305749ef4a8dd668b60d3ff48bff558322aa",
       "title": "DMH Sculpt Portrait Reborn Contact Doris",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -1619,8 +1619,8 @@
     {
       "url": "https://www.dmhsculptures.com/courses",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:36:12.681133+00:00",
-      "sha256_html": "23b81c45056c392244814fce518a410bc5d1d7da22d467f9ebc1582c202d702e",
+      "observed_at": "2026-10-13T17:02:21.328675+00:00",
+      "sha256_html": "c8573400a9a03045c8e4ba979330a59a47a1ca6786a5b3787aa52d809fa3da53",
       "title": "how to avoid online scams | dmh sculptures",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -1695,8 +1695,8 @@
     {
       "url": "https://www.dmhsculptures.com/",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:36:13.882224+00:00",
-      "sha256_html": "6d3b722188db93922572cff1a395d7ae1690bfe6ec790a6fb90f992834a66ffb",
+      "observed_at": "2026-10-13T17:02:22.476538+00:00",
+      "sha256_html": "6723aa52bc4e6d876bd6b9d5a6b93f0cfab22c8e7345b1769e931e217a66b91c",
       "title": "DMH Sculpted Portrait Reborn Baby Dolls dba dmhstudio dmhsculptures",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -1843,8 +1843,8 @@
     {
       "url": "https://www.dmhsculptures.com/custom-job",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:36:16.004378+00:00",
-      "sha256_html": "ffac135338c30f59ce4796cb59a3d8a53a784f727b8725c8774ffc5702241d70",
+      "observed_at": "2026-10-13T17:02:23.567045+00:00",
+      "sha256_html": "2af205b38dedec104f7bc654d90069bca00e73922b4e6ebaa161e5f3f94f5277",
       "title": "How to buy a doll | dmh sculptures",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -1916,8 +1916,8 @@
     {
       "url": "https://www.dmhsculptures.com/doll-eyes-and-accessories",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:36:18.207332+00:00",
-      "sha256_html": "d5bed06009329b478da7d549875919e1196aee2398728ced3d3fe5f11f040f50",
+      "observed_at": "2026-10-13T17:02:24.664580+00:00",
+      "sha256_html": "7030177349f8d40d61a6f83c5953dd7228944c02e036de9d392a2a3f50c9ce0c",
       "title": "DM-H Studio | Reborn Baby Dolls",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -2064,8 +2064,8 @@
     {
       "url": "https://www.dmhsculptures.com/group/dmh-art-doll-club/discussion",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:36:20.804584+00:00",
-      "sha256_html": "cd9e46e3751db28847b2507b4413a52fa6d78e55310f33abe3b4372dd0d2f4f5",
+      "observed_at": "2026-10-13T17:02:25.786297+00:00",
+      "sha256_html": "12756a53020d9b53ed631338f7dba57b39a0a4bcbc8f03ea9284d4218c37b4dc",
       "title": "Discussion - DMH Art Doll Club | dmh sculptures",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
@@ -2144,8 +2144,8 @@
     {
       "url": "https://www.dmhsculptures.com/groups",
       "platform": "wix",
-      "observed_at": "2026-10-13T16:36:23.794784+00:00",
-      "sha256_html": "bef25df42c95015d74f77f21916125c15f42823b1d845d8b05cfc420e66cd288",
+      "observed_at": "2026-10-13T17:02:26.962135+00:00",
+      "sha256_html": "c72a22cee67f6c18b3765cd34d6996b3c950e433e29b9e0fae99555397843d52",
       "title": "DMH Art Doll Club  | dmh sculptures",
       "metadata": {
         "viewport": "width=device-width, initial-scale=1",
