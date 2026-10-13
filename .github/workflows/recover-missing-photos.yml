@@ -1,0 +1,48 @@
+name: Recover missing original sculpt photos
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/recover-missing-photos.yml'
+      - 'scripts/recover_original_source_images.py'
+      - 'scripts/test_recover_original_source_images.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  investigate:
+    name: Image review ${{ matrix.cohort }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        include:
+          - cohort: original-studios
+            artists: dawn-donofrio,laura-tuzio-ross,philomena-donnelly
+          - cohort: european-studios
+            artists: sabine-altenkirch-junkes,gudrun-legler,alejandra-de-zuniga,severine-piret
+          - cohort: dealer-archives-1
+            artists: elly-knoops,iveta-eckertova,olga-auer,sabrina-hergarten
+          - cohort: dealer-archives-2
+            artists: ping-lau,laura-lee-eagles
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up BeautifulSoup
+        run: python3 -m pip install beautifulsoup4
+      - name: Validate strict exact-name image matching
+        run: python3 -m unittest discover -s scripts -p test_recover_original_source_images.py -v
+      - name: Inspect source metadata and name-labelled product images
+        run: |
+          python3 scripts/recover_original_source_images.py \
+            --artists "${{ matrix.artists }}" \
+            --out "artifacts/image-review-${{ matrix.cohort }}.json"
+      - name: Preserve evidence for editorial image review, not automatic publication
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: missing-photo-research-${{ matrix.cohort }}-${{ github.run_id }}
+          path: artifacts/*.json
+          retention-days: 30
+          if-no-files-found: warn
