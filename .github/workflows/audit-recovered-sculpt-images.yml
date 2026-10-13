@@ -1,0 +1,75 @@
+name: Audit recovered original sculpt photographs
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-recovered-sculpt-images.yml'
+      - 'lib/recovered-source-photos.ts'
+      - 'lib/retailer-kits-lauralee.ts'
+      - 'lib/retailer-provenance-artists.ts'
+      - 'lib/real-catalogue.ts'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 13
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify exact photo attribution, actual source images and live kit pages
+        run: |
+          python3 - <<'PY'
+          import json,re,time,urllib.request,html
+          src=open('lib/recovered-source-photos.ts',encoding='utf8').read()
+          a=re.search(r'export const recoveredKitPhotos:[^=]+=([\s\S]*?);\s*export const recoveredArtistCovers:',src)
+          b=re.search(r'export const recoveredArtistCovers:[^=]+=([\s\S]*?);\s*$',src)
+          assert a and b,'Missing exact photo references'
+          photos=json.loads(a.group(1));covers=json.loads(b.group(1))
+          assert len(photos)==31,len(photos)
+          assert len(covers)==9,len(covers)
+          assert all(p['url'].startswith('https://') and p['source'].startswith('https://') and p['credit'] for ps in photos.values() for p in ps)
+          assert not any(slug.endswith('-ping-lau') for slug in photos)
+          assert 'ping-lau' not in covers
+          assert len({p['url'] for ps in photos.values() for p in ps})==len(photos)
+          print('PASS 31 unique exact source photographs and nine featured sculpt artworks; no Ping Lau images',flush=True)
+          headers={'User-Agent':'Mozilla/5.0 (compatible; RebornaImageVerification/1.0)','Accept':'image/avif,image/webp,image/jpeg,image/png,image/*'}
+          checked=set()
+          for slug,pictures in photos.items():
+              for pic in pictures:
+                  url=pic['url']
+                  if url in checked:continue
+                  checked.add(url)
+                  with urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=20) as res:
+                      status=res.status
+                      ctype=res.headers.get('Content-Type','').lower()
+                      assert status==200,(slug,status)
+                      assert ctype.startswith('image/'),(slug,ctype)
+                      assert res.read(32),(slug,'no bytes')
+              print('VALID',slug,flush=True)
+          for ps in covers.values():
+              for pic in ps:
+                  if pic['url'] in checked:continue
+                  checked.add(pic['url'])
+                  with urllib.request.urlopen(urllib.request.Request(pic['url'],headers=headers),timeout=20) as res:
+                      assert res.status==200 and res.headers.get('Content-Type','').lower().startswith('image/'),pic['url']
+                      assert res.read(32)
+          print('PASS',len(checked),'artist/reborn photo resources are actual images',flush=True)
+          check_slugs=['ilea-olga-auer','maria-sabrina-hergarten','marty-iveta-eckertova','lyssi-laura-tuzio-ross','sam-gudrun-legler','teddy-philomena-donnelly','amelia-laura-lee-eagles']
+          for attempt in range(35):
+              failed=[]
+              for slug in check_slugs:
+                  try:
+                      req=urllib.request.Request('https://reborna.co/kits/'+slug+'/',headers={'User-Agent':'Mozilla/5.0 RebornaLiveAudit/1.0'})
+                      with urllib.request.urlopen(req,timeout=14) as res:
+                          body=html.unescape(res.read(1_500_000).decode('utf8','replace'))
+                      assert 'kit-main-photo' in body and 'kit-photo-provenance' in body,slug
+                      assert photos[slug][0]['url'] in body,slug
+                  except Exception as exc:failed.append((slug,str(exc)[:90]))
+              if not failed:
+                  print('PASS recovered art on representative live sculpt pages',flush=True)
+                  break
+              print('Cloudflare publish pending:',attempt+1,failed[:3],flush=True)
+              time.sleep(8)
+          else:raise SystemExit('The new photo URLs are not live on all sampled kit pages')
+          PY
