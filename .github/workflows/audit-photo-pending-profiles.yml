@@ -1,0 +1,66 @@
+name: Audit photo-pending sculptor profiles
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-photo-pending-profiles.yml'
+      - 'components/KitPhotoGallery.tsx'
+      - 'app/artists/[slug]/page.tsx'
+      - 'app/kits/[slug]/page.tsx'
+      - 'app/globals.css'
+      - 'lib/indexed-original-stories.ts'
+      - 'lib/retailer-provenance-artists.ts'
+      - 'lib/real-catalogue.ts'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 11
+    steps:
+      - name: Confirm artist and kit source links remain useful without photo rights
+        run: |
+          python3 - <<'PY'
+          import time,urllib.request
+          root='https://reborna.co'
+          groups={
+            'dawn-donofrio':False,'laura-tuzio-ross':False,
+            'philomena-donnelly':False,'sabine-altenkirch-junkes':False,
+            'gudrun-legler':False,'alejandra-de-zuniga':False,
+            'severine-piret':False,'elly-knoops':True,
+            'iveta-eckertova':True,'olga-auer':True,
+            'sabrina-hergarten':True,'ping-lau':False,
+            'laura-lee-eagles':False
+          }
+          kits=['emerson-dawn-donofrio','teddy-philomena-donnelly',
+                'sam-gudrun-legler','josie-ping-lau','elena-alejandra-de-zuniga']
+          h={'User-Agent':'Mozilla/5.0 (compatible; RebornaSourceAudit/1.0)','Accept':'text/html'}
+          for attempt in range(28):
+            failed=[]
+            for slug,retailer in groups.items():
+              path='/artists/'+slug+'/'
+              try:
+                with urllib.request.urlopen(urllib.request.Request(root+path,headers=h),timeout=17) as r:
+                  html=r.read(1_600_000).decode('utf-8','replace')
+                assert 'ORIGINAL ARTWORK PENDING' in html,path
+                assert 'Specialist retailer reference' in html if retailer else 'Official sculptor website' in html
+                if slug=='dawn-donofrio':
+                  assert 'Original silicone sculpture, made for artists to finish' in html
+              except Exception as e:failed.append((path,str(e)[:95]))
+            for slug in kits:
+              path='/kits/'+slug+'/'
+              try:
+                with urllib.request.urlopen(urllib.request.Request(root+path,headers=h),timeout=17) as r:
+                  html=r.read(1_500_000).decode('utf-8','replace')
+                assert 'Photograph awaiting identity and usage-rights review' in html,path
+                assert 'View original sculpt source' in html,path
+              except Exception as e:failed.append((path,str(e)[:95]))
+            if not failed:
+              print('PASS 13 artist covers + five transparent, source-linked kit photo placeholders',flush=True)
+              break
+            print('Waiting Cloudflare',attempt+1,len(failed),'failures',failed[:3],flush=True)
+            time.sleep(8)
+          else:raise SystemExit('Live photo-pending experience has not deployed')
+          print('Rights-restricted or uncertain photos remain unpublished. No image source was invented.')
+          PY
