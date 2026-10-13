@@ -21,14 +21,14 @@ import {indexedOriginalKits} from "./indexed-original-kits";
 import {retailerProvenanceArtists} from "./retailer-provenance-artists";
 import {retailerProvenanceKits} from "./retailer-provenance-kits";
 export type ArtistImage={url:string;source:string;credit:string;role:"portrait"|"square"|"banner";reviewStatus:"source_identified"|"artist_approved";};
-export type VerifiedArtist = {slug:string;name:string;website:string;bio:string;source:string;images?:ArtistImage[]};
+export type VerifiedArtist = {slug:string;name:string;website:string;bio:string;source:string;websiteRole?:"artist"|"retailer_reference";images?:ArtistImage[]};
 export type KitVariant = {id:string;label:string;options:Record<string,string>;includedParts?:string[];photos?:{url:string;credit:string;source:string}[];sourceUrl?:string;verifiedAt?:string};
 export type VerifiedKit = {material?:SculptMaterial;variants?:KitVariant[];variantSource?:"shopify"|"wix"|"manual";sourceProductId?:string;editionSize?:number;sizeDescription?:string;headCircumference?:string;slug:string;name:string;artistSlug:string;edition?:string;releaseInfo?:string;releaseDate?:string;preorderOpensAt?:string;preorderClosesAt?:string;lifecycle?:SculptLifecycle;lifecycleCheckedAt?:string;lifecycleSource?:string;productionRun?:number;statusLabel:string;statusChecked:string;photos?:{url:string;credit:string;source:string}[];sources:{label:string;url:string;kind:"artist"|"retailer"}[]};
 export const artists:VerifiedArtist[]=[
 {slug:"nikki-johnston",name:"Nikki Johnston",website:"https://nikkisseasidebabies.co.uk/",bio:nikkiProfile.lead,source:"https://nikkisseasidebabies.co.uk/",images:[{url:nikkiKits[0].photos![0].url,source:nikkiKits[0].sources[0].url,credit:"Nikki’s Seaside Babies — featured sculpt artwork, not a portrait",role:"banner",reviewStatus:"source_identified"}]},
 {slug:"cassie-ann-love",name:"Cassie Ann Love",website:"https://www.cassielove.co.uk/",bio:"Independent reborn sculptor, previously known as Cassie Brace. Her official portfolio includes a range of original reborn doll sculpts.",source:"https://www.cassielove.co.uk/",images:[{url:cassieProfile.portrait.url,source:cassieProfile.portrait.source,credit:"Cassie Ann Love official website",role:"portrait",reviewStatus:"source_identified"}]},
-{slug:"joanna-kazmierczak",name:"Joanna Kazmierczak",website:"https://macphersoncrafts.com/",bio:"Sculptor whose Willow release is featured by specialist retailer MacPherson Arts & Crafts.",source:"https://macphersoncrafts.com/"},
-{slug:"dawn-mcleod",name:"Dawn McLeod",website:"https://macphersoncrafts.com/",bio:"Sculptor of Cypress, featured among specialist retailer MacPherson's pre-order releases.",source:"https://macphersoncrafts.com/"}
+{slug:"joanna-kazmierczak",name:"Joanna Kazmierczak",website:"https://macphersoncrafts.com/",websiteRole:"retailer_reference",bio:"Sculptor whose Willow release is featured by specialist retailer MacPherson Arts & Crafts.",source:"https://macphersoncrafts.com/"},
+{slug:"dawn-mcleod",name:"Dawn McLeod",website:"https://macphersoncrafts.com/",websiteRole:"retailer_reference",bio:"Sculptor of Cypress, featured among specialist retailer MacPherson's pre-order releases.",source:"https://macphersoncrafts.com/"}
 ,...shopifyCohortArtists,...wixCohortArtists,mayraOriginalArtist,sandyOriginalArtist,adrieOriginalArtist,...indexedOriginalArtists,...retailerProvenanceArtists
 ];
 const manuallyCuratedKits:VerifiedKit[]=[
