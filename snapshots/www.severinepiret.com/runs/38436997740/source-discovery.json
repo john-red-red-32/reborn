@@ -1,0 +1,1678 @@
+{
+  "source": "https://www.severinepiret.com/vinyl-kit",
+  "host": "www.severinepiret.com",
+  "parser_version": "url-discovery-v2-platform-sitemaps",
+  "started_from": "https://www.severinepiret.com/vinyl-kit",
+  "completed_at": "2026-10-13T17:14:56.396030+00:00",
+  "page_limit": 24,
+  "sitemap_discovered_urls": 17,
+  "platforms": {
+    "webador": 23
+  },
+  "pages_checked": 23,
+  "pages_succeeded": 23,
+  "queue_remaining": 0,
+  "complete": true,
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://www.severinepiret.com/vinyl-kit",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:19.679931+00:00",
+      "sha256_html": "c6a3b39219bd6b85bd5b260544c248d7a9bae6bc0535b7051d4bf86548514ba9",
+      "title": "Vinyl kit | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Vinyl kit | Severine Piret",
+        "og:url": "https://www.severinepiret.com/vinyl-kit",
+        "og:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1390-high.webp",
+        "twitter:card": "summary_large_image",
+        "twitter:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1390-high.webp"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1390-high.webp?enable-io=true&enable=upscale&fit=bounds&width=414",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1390-high.webp?enable-io=true&enable=upscale&fit=bounds&width=414 1x, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1390-high.webp?enable-io=true&enable=upscale&fit=bounds&width=828 2x"
+        }
+      ],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/product/22050431/vinyl-kit",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/account/login",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:21.619887+00:00",
+      "sha256_html": "ac15862b0ccd5154bcbedb2a1cebaa1852ab100fb9bf637d906ce80dc2ab5dd9",
+      "title": "Log in",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Log in",
+        "og:url": "https://www.severinepiret.com/account/login",
+        "twitter:card": "summary"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/account/login",
+        "https://www.severinepiret.com/account/password-recovery",
+        "https://www.severinepiret.com/account/register",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/account/login",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:23.232095+00:00",
+      "sha256_html": "0816255f9d60435736001b2b55d243d6020c26f9fc4421da27cba404a3494d52",
+      "title": "Log in",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Log in",
+        "og:url": "https://www.severinepiret.com/account/login",
+        "twitter:card": "summary"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/account/login",
+        "https://www.severinepiret.com/account/password-recovery",
+        "https://www.severinepiret.com/account/register",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/account/password-recovery",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:24.732413+00:00",
+      "sha256_html": "d226fbe23584f33295f51792b7fcdb0a9cb4d7c51b03064d2089f73577a6fcac",
+      "title": "Forgot password",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Forgot password",
+        "og:url": "https://www.severinepiret.com/account/password-recovery",
+        "twitter:card": "summary"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/account/password-recovery",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/account/register",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:26.238009+00:00",
+      "sha256_html": "abb26b9d623530d4b27f4602bbe25da7bb35925a6abb6cfb0bfde62779399b8d",
+      "title": "Create account",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Create account",
+        "og:url": "https://www.severinepiret.com/account/register",
+        "twitter:card": "summary"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/account/register",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/cart",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:27.774972+00:00",
+      "sha256_html": "51c40f3b0f6cba7ed7176c50ca8375436606f67cf0979bc5175ae66846fbe226",
+      "title": "Cart",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Cart",
+        "og:url": "https://www.severinepiret.com/cart",
+        "robots": "noindex,nofollow",
+        "twitter:card": "summary"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/wishlist",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:29.339616+00:00",
+      "sha256_html": "934f363e908c09d3286013c0c4077d263a4b5f923ffdc82429c9197b7e8faa91",
+      "title": "Wishlist",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Wishlist",
+        "og:url": "https://www.severinepiret.com/wishlist",
+        "robots": "noindex,nofollow",
+        "twitter:card": "summary"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:31.024514+00:00",
+      "sha256_html": "cc31a21272f262b2fd0a25f15211a2c9235bc6c1643c45373b0e37f4ec61ecc5",
+      "title": "Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Severine Piret",
+        "og:url": "https://www.severinepiret.com/",
+        "og:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_8757-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200",
+        "twitter:card": "summary_large_image",
+        "twitter:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0001-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0001-high.jpg?enable-io=true&enable=upscale&crop=1.1929%3A1&width=800",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0001-high.jpg?enable-io=true&crop=1.1929%3A1&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0001-high.jpg?enable-io=true&crop=1.1929%3A1&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0001-high.jpg?enable-io=true&crop=1.1929%3A1&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0001-high.jpg?enable-io=true&crop=1.1929%3A1&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0001-high.jpg?enable-io=true&crop=1.1929%3A1&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0001-high.jpg?enable-io=true&crop=1.1929%3A1&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0001-high.jpg?enable-io=true&crop=1.1929%3A1&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0001-high.jpg?enable-io=true&crop=1.1929%3A1&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/raa-member-badge-178-severine-piret-mercier-standard.png",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/raa-member-badge-178-severine-piret-mercier-high.png?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/raa-member-badge-178-severine-piret-mercier-high.png?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/raa-member-badge-178-severine-piret-mercier-high.png?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/raa-member-badge-178-severine-piret-mercier-high.png?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/raa-member-badge-178-severine-piret-mercier-high.png?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/raa-member-badge-178-severine-piret-mercier-high.png?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/raa-member-badge-178-severine-piret-mercier-high.png?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/raa-member-badge-178-severine-piret-mercier-high.png?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_8757-high.jpg?enable-io=true&enable=upscale&crop=1%3A1&width=800",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_8757-high.jpg?enable-io=true&crop=1%3A1&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_8757-high.jpg?enable-io=true&crop=1%3A1&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_8757-high.jpg?enable-io=true&crop=1%3A1&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_8757-high.jpg?enable-io=true&crop=1%3A1&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_8757-high.jpg?enable-io=true&crop=1%3A1&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_8757-high.jpg?enable-io=true&crop=1%3A1&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_8757-high.jpg?enable-io=true&crop=1%3A1&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_8757-high.jpg?enable-io=true&crop=1%3A1&width=1920 1920w"
+        }
+      ],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/available-babies",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:32.667495+00:00",
+      "sha256_html": "3ee81d76db36fc11a54b428ad78645daf32b194d84277732405d61fdeae50b3b",
+      "title": "Available babies | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Available babies | Severine Piret",
+        "og:url": "https://www.severinepiret.com/available-babies",
+        "og:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1407-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200",
+        "twitter:card": "summary_large_image",
+        "twitter:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1990-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1990-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=414",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1990-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=414 1x, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1990-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=828 2x"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1868-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=414",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1868-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=414 1x, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1868-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=828 2x"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1708-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=414",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1708-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=414 1x, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1708-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=828 2x"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1678-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=414",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1678-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=414 1x, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1678-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=828 2x"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798473x-high.webp?enable-io=true&enable=upscale&fit=bounds&width=414",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798473x-high.webp?enable-io=true&enable=upscale&fit=bounds&width=414 1x, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798473x-high.webp?enable-io=true&enable=upscale&fit=bounds&width=828 2x"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1477-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=414",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1477-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=414 1x, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1477-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=828 2x"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1407-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=414",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1407-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=414 1x, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1407-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=828 2x"
+        }
+      ],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/product/22057234/ruby",
+        "https://www.severinepiret.com/product/22565637/ruby-2",
+        "https://www.severinepiret.com/product/22931624/milo",
+        "https://www.severinepiret.com/product/23211400/ruby-3",
+        "https://www.severinepiret.com/product/23409348/malou-cuddle",
+        "https://www.severinepiret.com/product/24263443/oliver",
+        "https://www.severinepiret.com/product/24391901/lenny",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/available-on-order",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:34.164158+00:00",
+      "sha256_html": "6bcc51274ed76c75dad87d119a11365b673248f5d4e1218555970ca831a3becc",
+      "title": "Available on order | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Available on order | Severine Piret",
+        "og:url": "https://www.severinepiret.com/available-on-order",
+        "twitter:card": "summary"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/contact",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:35.835730+00:00",
+      "sha256_html": "2a3e33c64bc349fd29f90b58c829f069ac29cc47e43ee4c67d0c223e24f22f68",
+      "title": "Contact | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Contact | Severine Piret",
+        "og:url": "https://www.severinepiret.com/contact",
+        "twitter:card": "summary"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [
+        {
+          "url": "https://assets.jwwb.nl/assets/img/loader.gif?bust=b519b4f1f8b019f2d84b",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/product/16955321/vinyl-kits",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:37.475684+00:00",
+      "sha256_html": "9938091747d21f61cfe2ff95b02e51359e1bddf994b3c06f1cb3d58f3bcd95f2",
+      "title": "Vinyl kits | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Vinyl kits | Severine Piret",
+        "og:url": "https://www.severinepiret.com/product/16955321/vinyl-kits",
+        "og:description": "Some vinyl kits are availables:\nTalula, Rafael, Lou, Kiki, Pebbles\nWith body and COA\nPlease write the name of the kit you want in the comments when ordering 🎀\n&nbsp;",
+        "og:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241122_203720-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200",
+        "twitter:card": "summary_large_image",
+        "twitter:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241122_203309-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241122_203309-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "Vinyl kits",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241122_203309-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241122_205111-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241122_205111-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241122_204653-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241122_204653-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241122_205740-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241122_205740-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241122_203720-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241122_203720-high.jpg?enable-io=true&width=600 600w"
+        }
+      ],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/product/16955321/vinyl-kits",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/product/22050431/vinyl-kit",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:39.095992+00:00",
+      "sha256_html": "ec4fdc8624afae57f8793dfe96ae3b0cff59c979da966d11a549065359a9dbc1",
+      "title": "Vinyl kit | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Vinyl kit | Severine Piret",
+        "og:url": "https://www.severinepiret.com/product/22050431/vinyl-kit",
+        "og:description": "Some vinyl kits are availables:\nThe price is for one kit.\nTalula, Lou, Kiki, Pebbles\nThe photos are an example of the finished kits; you will receive an unpainted kit (head and limbs) without hair or clothes.\n⭐️ Body and Certificate of Authenticity included\nPlease write the name of the kit you want in the comments when ordering 🎀\n&nbsp;",
+        "og:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1393-high.webp",
+        "twitter:card": "summary_large_image",
+        "twitter:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1390-high.webp"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1390-standard.webp?enable-io=true&enable=upscale&width=600",
+          "alt": "Vinyl kit",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1390-high.webp?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1391-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1391-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1392-standard.webp?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1392-high.webp?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1393-standard.webp?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1393-high.webp?enable-io=true&width=600 600w"
+        }
+      ],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/product/22050431/vinyl-kit",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/product/22057234/ruby",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:40.729510+00:00",
+      "sha256_html": "684cf1efcabc411a2561d544642c523f63c3d38c80661020c180bc6481a72311",
+      "title": "Ruby | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Ruby | Severine Piret",
+        "og:url": "https://www.severinepiret.com/product/22057234/ruby",
+        "og:description": "Full body silicone baby girl, Ruby ⭐️Prototype 1/1Limited editionWeight: 2,4 kgSize: 45 cm with bent legs49 cm with straight legsThe mouth is open, she can take regular small pacifierRuby will be sent with: unmodified pacifier, diaper, bodysuit, romper, COA and blanket. Layaway available in 4 monthsRuby is ready to ship 🌹 ",
+        "og:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1405-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200",
+        "twitter:card": "summary_large_image",
+        "twitter:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1407-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1407-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "Ruby",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1407-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1396-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1396-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1398-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1398-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1400-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1400-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1402-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1402-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1403-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1403-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1412-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1412-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1411-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1411-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1405-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1405-high.jpg?enable-io=true&width=600 600w"
+        }
+      ],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/product/22057234/ruby",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/product/22565637/ruby-2",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:42.378225+00:00",
+      "sha256_html": "f5c82ccdd2f143374472cc977d8ee8d0b6b5d9e102d69cdeca9f40c9f3d56db2",
+      "title": "Ruby 2 | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Ruby 2 | Severine Piret",
+        "og:url": "https://www.severinepiret.com/product/22565637/ruby-2",
+        "og:description": "Full body silicone baby girl, Ruby ⭐️\nLimited editionThis baby is the number 2\n🌼 Weight: 2,4 kgSize: 45 cm with bent legs49 cm with straight legs\n🌼 The mouth is open, she can take regular pacifier🌼 Ruby have armatures in arms and legs\nRuby will be sent with: unmodified pacifier, diaper, bodysuit, floral panties, shirt, COA and blanket in beautiful box.\nLayaway available in 4 months\nRuby is ready to ship ⭐️&nbsp;",
+        "og:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1486-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200",
+        "twitter:card": "summary_large_image",
+        "twitter:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1477-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1477-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "Ruby 2",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1477-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1476-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1476-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1472-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1472-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1473-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1473-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1495-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1495-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1491-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1491-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1497-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1497-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1485-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1485-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1487-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1487-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1486-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1486-high.jpg?enable-io=true&width=600 600w"
+        }
+      ],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/product/22565637/ruby-2",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/product/22931624/milo",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:44.002915+00:00",
+      "sha256_html": "f4dd19236464944a22a3911aeab238772aed947c1b4b26d950866d92a1064f6f",
+      "title": "Milo | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Milo | Severine Piret",
+        "og:url": "https://www.severinepiret.com/product/22931624/milo",
+        "og:description": "⭐️ Full body silicone baby boy, Milo ⭐️Sculpted, casted, poured and painted by meArmatures in arms and legsLimited editionNumber #10The mouth is open, he can take regular small pacifierWeight: 1,423kgSize: 38 cm with bent legs42 cm with straight legsMilo will be sent with: unmodified pacifier, diaper,bodysuit, pant, hat, COA and blanket in beautiful box.Milo is ready to ship 🌹",
+        "og:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798476x-high.webp",
+        "twitter:card": "summary_large_image",
+        "twitter:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798473x-high.webp"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798473x-standard.webp?enable-io=true&enable=upscale&width=600",
+          "alt": "Milo",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798473x-high.webp?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798477x-standard.webp?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798477x-high.webp?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798478x-standard.webp?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798478x-high.webp?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/177757984710x-standard.webp?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/177757984710x-high.webp?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/177757984712x-standard.webp?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/177757984712x-high.webp?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798471x-standard.webp?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798471x-high.webp?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798472x-standard.webp?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798472x-high.webp?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798474x-standard.webp?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798474x-high.webp?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798476x-standard.webp?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17775798476x-high.webp?enable-io=true&width=600 600w"
+        }
+      ],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/product/22931624/milo",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/product/23211400/ruby-3",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:45.632221+00:00",
+      "sha256_html": "44171d0ed5e13714707238f434107bc036a857a8f02d4463a329bc1a6204fc3f",
+      "title": "Ruby 3 | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Ruby 3 | Severine Piret",
+        "og:url": "https://www.severinepiret.com/product/23211400/ruby-3",
+        "og:description": "Ruby 3, custom order, not available 🌼",
+        "og:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1674-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200",
+        "twitter:card": "summary_large_image",
+        "twitter:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1678-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1678-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "Ruby 3",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1678-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1668-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1668-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1669-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1669-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1670-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1670-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1671-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1671-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1672-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1672-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1673-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1673-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1677-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1677-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1676-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1676-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1675-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1675-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1674-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1674-high.jpg?enable-io=true&width=600 600w"
+        }
+      ],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/product/23211400/ruby-3",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/product/23409348/malou-cuddle",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:47.262198+00:00",
+      "sha256_html": "d4c9f430c19d998dbc682304fd3b92accebf63e913d9472101e955c82f5d76a4",
+      "title": "Malou cuddle | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Malou cuddle | Severine Piret",
+        "og:url": "https://www.severinepiret.com/product/23409348/malou-cuddle",
+        "og:description": "⭐️Introducing a new partial silicone baby, MalouCuddle baby, silicone head, cloth cuddle bodyI have opened the mouth, she can take unmodified pacifierLimited edition, this baby is the number 7Malou was sculpted, molded, cast and painted by myself.She measures 52cm and weighs 2,6kg.Your baby will be sent with her blanket, pyjamas, socks, mittens, pacifier, diaper and COA.Malou is ready to ship 🌹\n",
+        "og:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1704-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200",
+        "twitter:card": "summary_large_image",
+        "twitter:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1708-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1708-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "Malou cuddle",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1708-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1709-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1709-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1717-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1717-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1721-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1721-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1716-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1716-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1714-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1714-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1715-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1715-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1710-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1710-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1703-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1703-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1722-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1722-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1720-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1720-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1704-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1704-high.jpg?enable-io=true&width=600 600w"
+        }
+      ],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/product/23409348/malou-cuddle",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/product/24263443/oliver",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:48.902194+00:00",
+      "sha256_html": "530c2a22f0c4487820c050af7a57ae49afe56b225791e6b95b0afab3277f9440",
+      "title": "Oliver | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Oliver | Severine Piret",
+        "og:url": "https://www.severinepiret.com/product/24263443/oliver",
+        "og:description": "Oliver, cuddle baby ⭐️Prototype 1 🦋\nThe head was sculpted, casted and painted by myself.\nLimited edition\nSilicone baby head, cuddle body\nWearing preemie 00 clothes\nHe can take regular pacifier\nWeight: 1kg Size : 14 inch\nOliver will be sent with: pacifier, diaper, pyjamas, COA and blanket in beautiful box",
+        "og:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1891-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200",
+        "twitter:card": "summary_large_image",
+        "twitter:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1868-high.jpg"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1868-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "Oliver",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1868-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1869-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1869-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1871-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1871-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1872-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1872-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1915-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1915-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1887-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1887-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1878-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1878-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1880-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1880-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1882-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1882-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1883-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1883-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1885-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1885-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1891-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1891-high.jpg?enable-io=true&width=600 600w"
+        }
+      ],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/product/24263443/oliver",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/product/24391901/lenny",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:50.518159+00:00",
+      "sha256_html": "67983d0f41b180fc2c62c91e1785f9eb116ef34f25e1cb8b6053de7718255096",
+      "title": "Lenny | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Lenny | Severine Piret",
+        "og:url": "https://www.severinepiret.com/product/24391901/lenny",
+        "og:description": "🦋 Introducing a new partial silicone baby, Lenny 🦋Silicone head, silicone limbs, cloth bodyI have opened the mouth, he can take unmodified pacifier⭐️ Limited edition, this baby is the prototype 1/1Lenny was sculpted, molded, cast and painted by myself.He measures 51 cm and weighs 3,4 kg.Your baby will be sent with clothes in the pictures, pacifier, diaper, blanket and COA.⭐️ Layaway available in 6 months⭐️ Lenny is ready to shipDue to the nature of silicone, defects are possible.Please look at the pictures carefullyIf you have any questions, please email me 🌹\n&nbsp;",
+        "og:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1970-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200",
+        "twitter:card": "summary_large_image",
+        "twitter:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1990-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1990-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "Lenny",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1990-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1945-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1945-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1951-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1951-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1993-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1993-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1985-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1985-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1983-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1983-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1902-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1902-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1992-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1992-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1960-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1960-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1957-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1957-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1927-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1927-high.jpg?enable-io=true&width=600 600w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1970-standard.jpg?enable-io=true&enable=upscale&width=600",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1970-high.jpg?enable-io=true&width=600 600w"
+        }
+      ],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/product/24391901/lenny",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/sculptures",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:52.168912+00:00",
+      "sha256_html": "1241a9a7ad708c40398f66152efd609533e7422f62b0b0a3d1abe0857ce2ee09",
+      "title": "Sculptures | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Sculptures | Severine Piret",
+        "og:url": "https://www.severinepiret.com/sculptures",
+        "og:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/rcbr1w/img_7287jpg.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200",
+        "twitter:card": "summary_large_image",
+        "twitter:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233137-high.jpg?enable-io=true&enable=upscale&fit=bounds&width=1200"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233137-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233137-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233137-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233137-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233137-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233137-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233137-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233137-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233137-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233014-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233014-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233014-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233014-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233014-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233014-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233014-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233014-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260624_233014-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123058-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123058-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123058-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123058-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123058-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123058-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123058-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123058-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123058-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123120-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123120-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123120-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123120-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123120-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123120-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123120-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123120-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123120-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123332-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123332-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123332-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123332-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123332-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123332-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123332-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123332-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20260404_123332-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251120_120019-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251120_120019-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251120_120019-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251120_120019-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251120_120019-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251120_120019-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251120_120019-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251120_120019-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251120_120019-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251119_104158-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251119_104158-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251119_104158-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251119_104158-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251119_104158-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251119_104158-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251119_104158-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251119_104158-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20251119_104158-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20220914_020550-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20220914_020550-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20220914_020550-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20220914_020550-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20220914_020550-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20220914_020550-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20220914_020550-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20220914_020550-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20220914_020550-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241205_231414-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241205_231414-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241205_231414-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241205_231414-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241205_231414-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241205_231414-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241205_231414-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241205_231414-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20241205_231414-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20231011_000644-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20231011_000644-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20231011_000644-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20231011_000644-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20231011_000644-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20231011_000644-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20231011_000644-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20231011_000644-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20231011_000644-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0035-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0035-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0035-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0035-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0035-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0035-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0035-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0035-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0035-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-8.png",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/qq3dge/image-8.png?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/qq3dge/image-8.png?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/qq3dge/image-8.png?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/qq3dge/image-8.png?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/qq3dge/image-8.png?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/qq3dge/image-8.png?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/qq3dge/image-8.png?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/qq3dge/image-8.png?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0040-standard-ig6sjd.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0040-high-wurzz7.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0040-high-wurzz7.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0040-high-wurzz7.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0040-high-wurzz7.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0040-high-wurzz7.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0040-high-wurzz7.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0040-high-wurzz7.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0040-high-wurzz7.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_7356jpg-1.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/yut1j1/img_7356jpg-1.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/yut1j1/img_7356jpg-1.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/yut1j1/img_7356jpg-1.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/yut1j1/img_7356jpg-1.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/yut1j1/img_7356jpg-1.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/yut1j1/img_7356jpg-1.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/yut1j1/img_7356jpg-1.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/yut1j1/img_7356jpg-1.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0038-standard-8ec1j5.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0038-high-jtuuu8.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0038-high-jtuuu8.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0038-high-jtuuu8.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0038-high-jtuuu8.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0038-high-jtuuu8.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0038-high-jtuuu8.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0038-high-jtuuu8.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0038-high-jtuuu8.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/pfve6p/362503750_145371661918178_3740215176652290563_n-1.jpg?enable-io=true&enable=upscale&crop=0.7663%3A1&width=800",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/pfve6p/362503750_145371661918178_3740215176652290563_n-1.jpg?enable-io=true&crop=0.7663%3A1&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/pfve6p/362503750_145371661918178_3740215176652290563_n-1.jpg?enable-io=true&crop=0.7663%3A1&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/pfve6p/362503750_145371661918178_3740215176652290563_n-1.jpg?enable-io=true&crop=0.7663%3A1&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/pfve6p/362503750_145371661918178_3740215176652290563_n-1.jpg?enable-io=true&crop=0.7663%3A1&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/pfve6p/362503750_145371661918178_3740215176652290563_n-1.jpg?enable-io=true&crop=0.7663%3A1&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/pfve6p/362503750_145371661918178_3740215176652290563_n-1.jpg?enable-io=true&crop=0.7663%3A1&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/pfve6p/362503750_145371661918178_3740215176652290563_n-1.jpg?enable-io=true&crop=0.7663%3A1&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/pfve6p/362503750_145371661918178_3740215176652290563_n-1.jpg?enable-io=true&crop=0.7663%3A1&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_7761jpg.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/fe3ot9/img_7761jpg.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/fe3ot9/img_7761jpg.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/fe3ot9/img_7761jpg.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/fe3ot9/img_7761jpg.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/fe3ot9/img_7761jpg.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/fe3ot9/img_7761jpg.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/fe3ot9/img_7761jpg.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/fe3ot9/img_7761jpg.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0039-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0039-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0039-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0039-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0039-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0039-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0039-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0039-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0039-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/a9hfuh/img_7814jpg.jpg?enable-io=true&enable=upscale&crop=0.6667%3A1&width=800",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/a9hfuh/img_7814jpg.jpg?enable-io=true&crop=0.6667%3A1&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/a9hfuh/img_7814jpg.jpg?enable-io=true&crop=0.6667%3A1&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/a9hfuh/img_7814jpg.jpg?enable-io=true&crop=0.6667%3A1&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/a9hfuh/img_7814jpg.jpg?enable-io=true&crop=0.6667%3A1&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/a9hfuh/img_7814jpg.jpg?enable-io=true&crop=0.6667%3A1&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/a9hfuh/img_7814jpg.jpg?enable-io=true&crop=0.6667%3A1&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/a9hfuh/img_7814jpg.jpg?enable-io=true&crop=0.6667%3A1&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/a9hfuh/img_7814jpg.jpg?enable-io=true&crop=0.6667%3A1&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/279915746_1387674198366421_5862183651672188143_n.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/23aq80/279915746_1387674198366421_5862183651672188143_n.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/23aq80/279915746_1387674198366421_5862183651672188143_n.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/23aq80/279915746_1387674198366421_5862183651672188143_n.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/23aq80/279915746_1387674198366421_5862183651672188143_n.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/23aq80/279915746_1387674198366421_5862183651672188143_n.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/23aq80/279915746_1387674198366421_5862183651672188143_n.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/23aq80/279915746_1387674198366421_5862183651672188143_n.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/23aq80/279915746_1387674198366421_5862183651672188143_n.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_8012jpg.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/v85rz5/img_8012jpg.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/v85rz5/img_8012jpg.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/v85rz5/img_8012jpg.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/v85rz5/img_8012jpg.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/v85rz5/img_8012jpg.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/v85rz5/img_8012jpg.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/v85rz5/img_8012jpg.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/v85rz5/img_8012jpg.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_7287jpg.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/rcbr1w/img_7287jpg.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/rcbr1w/img_7287jpg.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/rcbr1w/img_7287jpg.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/rcbr1w/img_7287jpg.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/rcbr1w/img_7287jpg.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/rcbr1w/img_7287jpg.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/rcbr1w/img_7287jpg.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/rcbr1w/img_7287jpg.jpg?enable-io=true&width=1920 1920w"
+        }
+      ],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/sold-out-babies",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:53.878417+00:00",
+      "sha256_html": "8a21835bf746bcd3863e9511dbe3a3b332ecef511400055e8ae51b6de545b2b9",
+      "title": "Sold out babies | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Sold out babies | Severine Piret",
+        "og:url": "https://www.severinepiret.com/sold-out-babies",
+        "og:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0160-high-ilz91l.jpg",
+        "twitter:card": "summary_large_image",
+        "twitter:image": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-wmd7zv.png?enable-io=true&enable=upscale&fit=bounds&width=1200"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-wmd7zv.png?enable-io=true&enable=upscale&crop=1.5009%3A1&width=800",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-wmd7zv.png?enable-io=true&crop=1.5009%3A1&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-wmd7zv.png?enable-io=true&crop=1.5009%3A1&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-wmd7zv.png?enable-io=true&crop=1.5009%3A1&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-wmd7zv.png?enable-io=true&crop=1.5009%3A1&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-wmd7zv.png?enable-io=true&crop=1.5009%3A1&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-wmd7zv.png?enable-io=true&crop=1.5009%3A1&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-wmd7zv.png?enable-io=true&crop=1.5009%3A1&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-wmd7zv.png?enable-io=true&crop=1.5009%3A1&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-ofcnup.png?enable-io=true&enable=upscale&crop=0.6667%3A1&width=800",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-ofcnup.png?enable-io=true&crop=0.6667%3A1&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-ofcnup.png?enable-io=true&crop=0.6667%3A1&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-ofcnup.png?enable-io=true&crop=0.6667%3A1&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-ofcnup.png?enable-io=true&crop=0.6667%3A1&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-ofcnup.png?enable-io=true&crop=0.6667%3A1&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-ofcnup.png?enable-io=true&crop=0.6667%3A1&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-ofcnup.png?enable-io=true&crop=0.6667%3A1&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-ofcnup.png?enable-io=true&crop=0.6667%3A1&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-zlfb68.png?enable-io=true&enable=upscale&crop=0.6667%3A1&width=800",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-zlfb68.png?enable-io=true&crop=0.6667%3A1&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-zlfb68.png?enable-io=true&crop=0.6667%3A1&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-zlfb68.png?enable-io=true&crop=0.6667%3A1&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-zlfb68.png?enable-io=true&crop=0.6667%3A1&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-zlfb68.png?enable-io=true&crop=0.6667%3A1&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-zlfb68.png?enable-io=true&crop=0.6667%3A1&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-zlfb68.png?enable-io=true&crop=0.6667%3A1&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-zlfb68.png?enable-io=true&crop=0.6667%3A1&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1869-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1869-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1869-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1869-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1869-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1869-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1869-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1869-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1869-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-f3t8ls.png?enable-io=true&enable=upscale&crop=0.8071%3A1&width=800",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-f3t8ls.png?enable-io=true&crop=0.8071%3A1&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-f3t8ls.png?enable-io=true&crop=0.8071%3A1&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-f3t8ls.png?enable-io=true&crop=0.8071%3A1&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-f3t8ls.png?enable-io=true&crop=0.8071%3A1&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-f3t8ls.png?enable-io=true&crop=0.8071%3A1&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-f3t8ls.png?enable-io=true&crop=0.8071%3A1&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-f3t8ls.png?enable-io=true&crop=0.8071%3A1&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/image-high-f3t8ls.png?enable-io=true&crop=0.8071%3A1&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1343-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1343-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1343-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1343-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1343-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1343-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1343-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1343-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1343-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1066-standard-cdgesx.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1066-high-vd7sgr.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1066-high-vd7sgr.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1066-high-vd7sgr.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1066-high-vd7sgr.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1066-high-vd7sgr.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1066-high-vd7sgr.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1066-high-vd7sgr.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1066-high-vd7sgr.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1240-standard-ep095j.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1240-high-re65ny.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1240-high-re65ny.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1240-high-re65ny.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1240-high-re65ny.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1240-high-re65ny.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1240-high-re65ny.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1240-high-re65ny.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1240-high-re65ny.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1174-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1174-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1174-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1174-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1174-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1174-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1174-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1174-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1174-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1148-standard-1mm6pd.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1148-high-1cpgn2.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1148-high-1cpgn2.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1148-high-1cpgn2.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1148-high-1cpgn2.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1148-high-1cpgn2.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1148-high-1cpgn2.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1148-high-1cpgn2.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_1148-high-1cpgn2.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0153-standard.webp",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0153-high.webp?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0153-high.webp?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0153-high.webp?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0153-high.webp?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0153-high.webp?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0153-high.webp?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0153-high.webp?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0153-high.webp?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0513-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0513-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0513-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0513-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0513-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0513-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0513-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0513-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0513-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0389-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0389-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0389-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0389-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0389-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0389-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0389-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0389-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0389-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17334906581x-1-standard.webp",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17334906581x-1-high.webp?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17334906581x-1-high.webp?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17334906581x-1-high.webp?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17334906581x-1-high.webp?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17334906581x-1-high.webp?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17334906581x-1-high.webp?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17334906581x-1-high.webp?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17334906581x-1-high.webp?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17419618981x-standard.webp",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17419618981x-high.webp?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17419618981x-high.webp?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17419618981x-high.webp?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17419618981x-high.webp?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17419618981x-high.webp?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17419618981x-high.webp?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17419618981x-high.webp?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/17419618981x-high.webp?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0188-standard-l9kv8k.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0188-high-x0rxca.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0188-high-x0rxca.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0188-high-x0rxca.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0188-high-x0rxca.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0188-high-x0rxca.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0188-high-x0rxca.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0188-high-x0rxca.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0188-high-x0rxca.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0025-standard-rk5ww5.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0025-high-3mfl79.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0025-high-3mfl79.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0025-high-3mfl79.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0025-high-3mfl79.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0025-high-3mfl79.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0025-high-3mfl79.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0025-high-3mfl79.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0025-high-3mfl79.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9270-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9270-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9270-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9270-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9270-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9270-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9270-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9270-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9270-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9797-standard-j4jmet.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9797-high-gpb7be.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9797-high-gpb7be.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9797-high-gpb7be.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9797-high-gpb7be.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9797-high-gpb7be.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9797-high-gpb7be.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9797-high-gpb7be.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9797-high-gpb7be.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9915-standard-fcbil5.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9915-high-2sv1g0.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9915-high-2sv1g0.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9915-high-2sv1g0.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9915-high-2sv1g0.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9915-high-2sv1g0.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9915-high-2sv1g0.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9915-high-2sv1g0.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9915-high-2sv1g0.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9275-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9275-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9275-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9275-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9275-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9275-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9275-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9275-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_9275-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20240108_113831-standard.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20240108_113831-high.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20240108_113831-high.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20240108_113831-high.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20240108_113831-high.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20240108_113831-high.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20240108_113831-high.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20240108_113831-high.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/20240108_113831-high.jpg?enable-io=true&width=1920 1920w"
+        },
+        {
+          "url": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0160-standard-a25vre.jpg",
+          "alt": "",
+          "srcset": "https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0160-high-ilz91l.jpg?enable-io=true&width=96 96w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0160-high-ilz91l.jpg?enable-io=true&width=147 147w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0160-high-ilz91l.jpg?enable-io=true&width=226 226w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0160-high-ilz91l.jpg?enable-io=true&width=347 347w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0160-high-ilz91l.jpg?enable-io=true&width=532 532w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0160-high-ilz91l.jpg?enable-io=true&width=816 816w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0160-high-ilz91l.jpg?enable-io=true&width=1252 1252w, https://primary.jwwb.nl/public/l/m/d/temp-scsgoqdnakpylmxnxaie/img_0160-high-ilz91l.jpg?enable-io=true&width=1920 1920w"
+        }
+      ],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://www.severinepiret.com/terms-and-conditions",
+      "platform": "webador",
+      "observed_at": "2026-10-13T17:14:55.395853+00:00",
+      "sha256_html": "4e52a04c482cf18c934a2cd48fde67839f4643c4478fca0976f6827e798c2bb2",
+      "title": "Terms and conditions | Severine Piret",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1.0, maximum-scale=5.0",
+        "og:title": "Terms and conditions | Severine Piret",
+        "og:url": "https://www.severinepiret.com/terms-and-conditions",
+        "twitter:card": "summary"
+      },
+      "structured_data": [
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.severinepiret.com/",
+            "name": "Severine Piret"
+          }
+        ]
+      ],
+      "image_candidates": [],
+      "links": [
+        "https://www.severinepiret.com/",
+        "https://www.severinepiret.com/account",
+        "https://www.severinepiret.com/available-babies",
+        "https://www.severinepiret.com/available-on-order",
+        "https://www.severinepiret.com/cart",
+        "https://www.severinepiret.com/contact",
+        "https://www.severinepiret.com/sculptures",
+        "https://www.severinepiret.com/sold-out-babies",
+        "https://www.severinepiret.com/terms-and-conditions",
+        "https://www.severinepiret.com/vinyl-kit",
+        "https://www.severinepiret.com/wishlist"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    }
+  ],
+  "notice": "Discovery evidence only. No images copied; no status or release-date inference."
+}
