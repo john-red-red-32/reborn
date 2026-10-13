@@ -366,3 +366,80 @@ html{scroll-behavior:smooth}
 .kit-main-photo figcaption{font-size:8px;letter-spacing:.04em;line-height:1.2;padding:5px 8px;bottom:8px;left:8px;background:#fffdfbc9;border-radius:2px}
 @media(max-width:800px){.home-calendar-cards{grid-template-columns:1fr}.authenticity-guide-grid{grid-template-columns:1fr}}
 @media(max-width:700px){#catalogue,#release-calendar{scroll-margin-top:75px}.home-calendar-section{padding:60px 15px 55px}.home-calendar-head{align-items:flex-start}.home-calendar-head .outline-btn{padding:12px 15px}.home-calendar-year-title{margin-top:28px}.home-calendar-month{margin-bottom:26px;contain-intrinsic-size:auto 330px}.home-calendar-card{padding:18px 17px}.home-calendar-card-main h5{font-size:34px}.home-calendar-event-line{align-items:flex-start}.authenticity-statement{padding:15px;gap:9px}.authenticity-guide{padding:0 14px}}
+
+/* Dedicated calendar: compact monthly cards with the same source details. */
+.calendar-standalone{min-height:65vh}
+.calendar-page-top{max-width:1350px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:30px 4% 0;font-size:11px;letter-spacing:.09em;color:#917969}
+.calendar-page-top>a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:#655146}
+.calendar-page-top>span{display:inline-flex;align-items:center;gap:7px}
+.calendar-standalone .home-calendar-section{padding-top:45px}
+.home-calendar-section .section-kicker{font-size:10px}
+.home-calendar-section .section-head h2{font-size:clamp(35px,4.4vw,58px)}
+.home-calendar-section .section-head p{max-width:550px;font-size:13px}
+.home-calendar-year-title{font-size:clamp(36px,4.2vw,53px);gap:12px;margin:0 0 20px;padding-bottom:11px}
+.home-calendar-year-title span{font-size:9px;letter-spacing:.13em}
+.home-calendar-year+.home-calendar-year{margin-top:38px}
+.home-calendar-year{margin-top:24px}
+.home-calendar-month{margin-bottom:21px;contain-intrinsic-size:auto 320px}
+.home-calendar-month-head{margin-bottom:12px}
+.home-calendar-month-head h4{font-size:clamp(26px,2.7vw,33px)}
+.home-calendar-cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.home-calendar-card{padding:16px 17px}
+.home-calendar-card-main h5{font-size:clamp(26px,3vw,35px);margin:4px 0 8px}
+.home-calendar-card-main .timeline-sculptor{font-size:9px}
+.home-calendar-card-main .heart{padding:4px}
+.home-calendar-event-line{margin:0 0 11px;padding:8px 0;gap:5px;font-size:11px}
+.home-calendar-event-line .calendar-event-type{font-size:10px}
+.home-calendar-card-bottom{gap:10px 6px}
+.home-calendar-card-bottom .status{font-size:10px}
+.home-calendar-financials{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;width:100%;border-top:1px solid #ece3db;padding-top:11px}
+.home-calendar-financials span{font-size:10px;gap:4px}
+.home-calendar-financials b{font-size:13px}
+.home-calendar-more{margin:9px 0 0;font-size:10px;color:#8b7767}
+.home-calendar-more summary{cursor:pointer;display:list-item;width:max-content;max-width:100%;text-decoration:underline;text-underline-offset:2px}
+.home-calendar-more p{margin:6px 0 0;line-height:1.5}
+.calendar-standalone .archive-foot{margin:20px 0 0;font-size:11px;line-height:1.7;color:#927e6d}
+
+/* Discover is a continuous image-first feed of true artist records.
+   IntersectionObserver reveals more products; images load lazily. */
+.discover-feed-section{padding-top:75px}
+.discover-feed-intro{align-items:center}
+.discover-feed-intro p{line-height:1.75;max-width:700px}
+.discover-calendar-link{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;text-decoration:underline;text-underline-offset:4px;font-size:12px;font-weight:700;color:#765e4c}
+.discover-feed-tools{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin:5px 0 18px}
+.discover-feed-search{display:flex;align-items:center;gap:10px;min-width:210px;flex:1;border:1px solid #d9c9bc;background:#fffdfa;padding:0 15px;min-height:45px;color:#927b6a}
+.discover-feed-search input{width:100%;min-width:0;border:0;background:transparent;outline:0;font-size:12px;color:#594b40}
+.discover-feed-search button{border:0;background:transparent;cursor:pointer;color:#856e5b}
+.discover-feed-filters{display:flex;gap:5px;flex-wrap:wrap}
+.discover-feed-filters button{background:transparent;border:1px solid #d8cabc;padding:11px 13px;color:#7a685b;font-size:11px;cursor:pointer}
+.discover-feed-filters button.active{background:#6d5d51;color:white;border-color:#6d5d51}
+.discover-feed-count{font-size:11px;color:#9d897a;margin-bottom:16px}
+.discover-feed-count>span{color:#745947}
+.discover-feed-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px 16px}
+.discover-feed-card{position:relative;min-width:0;content-visibility:auto;contain-intrinsic-size:auto 380px}
+.discover-feed-art{display:block;position:relative;background:#e7d8c9;aspect-ratio:4/4.5;overflow:hidden}
+.discover-feed-art>img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.discover-feed-art:hover>img{transform:scale(1.035)}
+.discover-feed-initial{display:grid;place-items:center;height:100%;font:normal 64px Georgia,serif;color:#806c5b}
+.discover-feed-status{position:absolute;left:9px;bottom:9px;max-width:calc(100% - 18px);font-size:10px;line-height:1.25}
+.discover-save{position:absolute;z-index:2;top:10px;right:10px;width:35px;height:35px;border:1px solid #e9dfd6d9;background:#fffdfbe8;color:#705c4e;display:grid;place-items:center;border-radius:50%;cursor:pointer}
+.discover-save.saved{color:#ad746f;background:#fff4f2}
+.discover-feed-copy{padding:13px 1px 4px}
+.discover-feed-sculptor{display:block;margin-bottom:5px;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#9c8371}
+.discover-feed-name{display:flex;align-items:baseline;justify-content:space-between;gap:6px;color:#3e342f;text-decoration:none;font:normal clamp(21px,2.6vw,29px) "Playfair Display",Georgia,serif}
+.discover-feed-name svg{width:14px;flex-shrink:0}
+.discover-feed-copy small{display:block;margin-top:6px;line-height:1.6;color:#928072;font-size:10px}
+.discover-feed-load,.discover-feed-end{text-align:center;margin:36px auto 10px;max-width:490px}
+.discover-feed-load p,.discover-feed-end p{color:#917c6c;font-size:12px;line-height:1.8}
+.discover-feed-load button,.discover-feed-empty button{padding:12px 23px;margin:7px auto;border:1px solid #aa9483;background:transparent;color:#675345;font-size:12px;cursor:pointer}
+.discover-feed-end>span{display:block;font-size:31px;color:#b39a88}
+.discover-feed-end a{font-size:12px;display:inline-flex;align-items:center;gap:5px;color:#765a47}
+.discover-feed-note{margin:32px 0 0;font-size:10px;line-height:1.8;color:#a08b7e}
+.discover-feed-empty{padding:35px 15px;text-align:center;border:1px solid #dfd1c4;color:#817064}
+.discover-feed-empty h3{font:normal 28px Georgia,serif;color:#493b30}
+.bottom-cta>a{background:#705e50;color:#fff;padding:17px 22px;display:inline-flex;gap:15px;align-items:center;justify-content:center;white-space:nowrap;font-size:12px;text-decoration:none}
+.inner-nav{gap:20px}.inner-nav a{white-space:nowrap}
+@media(max-width:1100px){.discover-feed-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.home-calendar-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.inner-nav{gap:11px}.inner-nav a{font-size:11px}}
+@media(max-width:900px){.discover-feed-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}}
+@media(max-width:700px){.calendar-standalone .home-calendar-section{padding:36px 15px 55px}.calendar-page-top{padding:22px 15px 0}.home-calendar-year-title{font-size:39px;margin-top:0}.home-calendar-year-title span{font-size:8px}.home-calendar-year+.home-calendar-year{margin-top:35px}.home-calendar-month-head h4{font-size:28px}.home-calendar-cards{grid-template-columns:1fr;gap:10px}.home-calendar-card{padding:15px 15px}.home-calendar-card-main h5{font-size:32px}.home-calendar-event-line{margin-bottom:7px;padding:6px 0}.home-calendar-financials{padding-top:9px}.home-calendar-financials b{font-size:13px}.discover-feed-section{padding:48px 15px 70px}.discover-feed-intro{align-items:flex-start}.discover-feed-intro h2{font-size:38px}.discover-calendar-link{font-size:11px}.discover-feed-tools{display:grid}.discover-feed-filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.discover-feed-filters button{padding:9px 4px;font-size:10px}.discover-feed-grid{gap:20px 10px}.discover-feed-name{font-size:23px}.discover-feed-status{font-size:9px}.discover-save{width:31px;height:31px;top:7px;right:7px}.discover-feed-copy{padding-top:10px}.discover-feed-sculptor{font-size:9px}.discover-feed-art{aspect-ratio:4/5}.bottom-cta{flex-wrap:wrap}.bottom-cta>a{width:max-content}}
+@media(max-width:380px){.discover-feed-grid{gap:17px 8px}.discover-feed-name{font-size:20px}.discover-feed-filters button{font-size:9px}.calendar-page-top>span{font-size:9px}}
