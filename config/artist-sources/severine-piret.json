@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "artist_id": "severine-piret",
+  "display_name": "Séverine Piret",
+  "source_name": "Séverine Piret official sculptor website",
+  "allowed_hosts": [
+    "www.severinepiret.com",
+    "severinepiret.com"
+  ],
+  "platform": "webador",
+  "accepted_names": [],
+  "approved_aliases": {},
+  "notes": "Official blank doll kits and sculpt identities to be confirmed by source page. No use of third-party photos or current availability inference."
+}
