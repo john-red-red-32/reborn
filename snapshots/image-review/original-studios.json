@@ -1,6 +1,6 @@
 {
   "adapter": "original-source-image-review-v1",
-  "scan_at": "2026-10-13T23:37:56.085805+00:00",
+  "scan_at": "2026-10-13T23:40:58.831986+00:00",
   "artists": [
     "dawn-donofrio",
     "laura-tuzio-ross",
@@ -85,32 +85,108 @@
       "name": "Zahli",
       "artist_slug": "laura-tuzio-ross",
       "primary_source": "https://www.myworldofbabies.com/shop/vinyl-reborn-doll-kits/zahli-blank-vinyl-kit/",
-      "matched": [],
-      "reason": "robots_disallow_all"
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Zahli%20by%20Laura%20Tuzio%20Ross%20003%20K.png",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Zahli%20by%20Laura%20Tuzio%20Ross%20003%20K.png",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Zahli%20by%20Laura%20Tuzio%20Ross%20003%20K.png",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
     },
     {
       "slug": "cameron-laura-tuzio-ross",
       "name": "Cameron",
       "artist_slug": "laura-tuzio-ross",
       "primary_source": "https://www.myworldofbabies.com/shop/vinyl-reborn-doll-kits/cameron/",
-      "matched": [],
-      "reason": "robots_disallow_all"
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Cameron-Asleep-by-Laura-Tuzio-Ross-003-K-.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Cameron-Asleep-by-Laura-Tuzio-Ross-003-K-.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Cameron-Asleep-by-Laura-Tuzio-Ross-003-K-.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
     },
     {
       "slug": "lil-jude-laura-tuzio-ross",
       "name": "Lil Jude",
       "artist_slug": "laura-tuzio-ross",
       "primary_source": "https://www.myworldofbabies.com/shop/vinyl-reborn-doll-kits/lil-jude-blank-vinyl-kit/",
-      "matched": [],
-      "reason": "robots_disallow_all"
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/lil-jude-by-laura-tuzio-ross-001sdp.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/lil-jude-by-laura-tuzio-ross-001sdp.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/lil-jude-by-laura-tuzio-ross-001sdp.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
     },
     {
       "slug": "kodi-bear-laura-tuzio-ross",
       "name": "Kodi Bear",
       "artist_slug": "laura-tuzio-ross",
       "primary_source": "https://www.myworldofbabies.com/shop/vinyl-reborn-doll-kits/kodi-bear/",
-      "matched": [],
-      "reason": "robots_disallow_all"
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Kodi-Bear-by-Laura-Tuzio-Ross-001sdp.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Kodi-Bear-by-Laura-Tuzio-Ross-001sdp.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Kodi-Bear-by-Laura-Tuzio-Ross-001sdp.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
     },
     {
       "slug": "lyssi-laura-tuzio-ross",
@@ -118,15 +194,34 @@
       "artist_slug": "laura-tuzio-ross",
       "primary_source": "https://www.myworldofbabies.com/shop/vinyl-reborn-doll-kits/lyssi-vinyl-reborn-kit/",
       "matched": [],
-      "reason": "robots_disallow_all"
+      "reason": "page_not_exact_named_product"
     },
     {
       "slug": "winter-laura-tuzio-ross",
       "name": "Winter",
       "artist_slug": "laura-tuzio-ross",
       "primary_source": "https://www.myworldofbabies.com/shop/vinyl-reborn-doll-kits/winter-vinyl-reborn-kit/",
-      "matched": [],
-      "reason": "robots_disallow_all"
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Winter-by-Laura-Tuzio-Ross-001-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Winter-by-Laura-Tuzio-Ross-001-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Winter-by-Laura-Tuzio-Ross-001-K.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
     },
     {
       "slug": "teddy-philomena-donnelly",
