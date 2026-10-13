@@ -1,6 +1,6 @@
 {
   "adapter": "original-source-image-review-v1",
-  "scan_at": "2026-10-13T23:37:57.573904+00:00",
+  "scan_at": "2026-10-13T23:40:58.597593+00:00",
   "artists": [
     "alejandra-de-zuniga",
     "gudrun-legler",
@@ -14,8 +14,15 @@
       "name": "Neikie",
       "artist_slug": "sabine-altenkirch-junkes",
       "primary_source": "https://www.sabine-altenkirch.com/startseite-home/shop/neikie/",
-      "matched": [],
-      "reason": "robots_disallow_all"
+      "matched": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/5051/images/59647/344781797_770589437847143_1567414164211969721_n__57141.1684021817.500.750.jpg?c=2",
+          "source": "https://www.irresistables.com/neikie-reborn-vinyl-doll-kit-by-sabine-altenkirch-limited-edition/",
+          "basis": "exact_product_og_image",
+          "credit": "Irresistables — original product-page photograph"
+        }
+      ],
+      "reason": "source_matched_photo_candidates"
     },
     {
       "slug": "leo-sabine-altenkirch-junkes",
@@ -38,8 +45,27 @@
       "name": "Sam",
       "artist_slug": "gudrun-legler",
       "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/sam-bundleset/",
-      "matched": [],
-      "reason": "robots_disallow_all"
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Sam-by-Gudrun-Legler-002-k.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Sam-by-Gudrun-Legler-002-k.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Sam-by-Gudrun-Legler-002-k.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
     },
     {
       "slug": "mila-gudrun-legler",
@@ -47,31 +73,88 @@
       "artist_slug": "gudrun-legler",
       "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-bundleset-mila/",
       "matched": [],
-      "reason": "robots_disallow_all"
+      "reason": "page_not_exact_named_product"
     },
     {
       "slug": "kai-gudrun-legler",
       "name": "Kai",
       "artist_slug": "gudrun-legler",
       "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-kai/",
-      "matched": [],
-      "reason": "robots_disallow_all"
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Kai-by-Gudrun-Legler-002-k.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Kai-by-Gudrun-Legler-002-k.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Kai-by-Gudrun-Legler-002-k.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
     },
     {
       "slug": "ana-gudrun-legler",
       "name": "Ana",
       "artist_slug": "gudrun-legler",
       "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-ana/",
-      "matched": [],
-      "reason": "robots_disallow_all"
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Ana-by-Gudrun-Legler-002-k.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Ana-by-Gudrun-Legler-002-k.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Ana-by-Gudrun-Legler-002-k.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
     },
     {
       "slug": "romy-gudrun-legler",
       "name": "Romy",
       "artist_slug": "gudrun-legler",
       "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/romy-bundleset/",
-      "matched": [],
-      "reason": "robots_disallow_all"
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Romy-by-Gudrun-Legler-002-k3.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Romy-by-Gudrun-Legler-002-k3.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Romy-by-Gudrun-Legler-002-k3.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
     },
     {
       "slug": "mattia-gudrun-legler",
@@ -79,15 +162,34 @@
       "artist_slug": "gudrun-legler",
       "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-mattia/",
       "matched": [],
-      "reason": "robots_disallow_all"
+      "reason": "page_not_exact_named_product"
     },
     {
       "slug": "felicia-gudrun-legler",
       "name": "Felicia",
       "artist_slug": "gudrun-legler",
       "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-felicia/",
-      "matched": [],
-      "reason": "robots_disallow_all"
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Felicia-by-Gudrun-Legler-003-k.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Felicia-by-Gudrun-Legler-003-k.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Felicia-by-Gudrun-Legler-003-k.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
     },
     {
       "slug": "tony-gudrun-legler",
@@ -95,23 +197,61 @@
       "artist_slug": "gudrun-legler",
       "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-tony/",
       "matched": [],
-      "reason": "robots_disallow_all"
+      "reason": "page_not_exact_named_product"
     },
     {
       "slug": "tayra-gudrun-legler",
       "name": "Tayra",
       "artist_slug": "gudrun-legler",
       "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-tayra/",
-      "matched": [],
-      "reason": "robots_disallow_all"
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Tayra-by-Gudrun-Legler-0.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Tayra-by-Gudrun-Legler-0.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Tayra-by-Gudrun-Legler-0.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
     },
     {
       "slug": "aleyna-gudrun-legler",
       "name": "Aleyna",
       "artist_slug": "gudrun-legler",
       "primary_source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-aleyna/",
-      "matched": [],
-      "reason": "robots_disallow_all"
+      "matched": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Alenya-by-Gudrun-Legler-201.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Alenya-by-Gudrun-Legler-201.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Alenya-by-Gudrun-Legler-201.jpg",
+          "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+          "basis": "name_matched_retailer_card",
+          "credit": "MacPherson Arts & Crafts — named retailer product photograph"
+        }
+      ],
+      "reason": "source_matched_card_candidates"
     },
     {
       "slug": "elena-alejandra-de-zuniga",
