@@ -293,6 +293,27 @@ export const recoveredKitPhotos:Record<string,NonNullable<VerifiedKit["photos"]>
       "credit": "MacPherson Arts & Crafts — named retailer product photograph",
       "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40"
     }
+  ],
+  "elena-alejandra-de-zuniga": [
+    {
+      "url": "https://creatubebe.com/20388-thickbox_default/elena-alexandra-de-zuniga.jpg",
+      "source": "https://creatubebe.com/en/limited-editions/3591-elena-alexandra-de-zuniga.html",
+      "credit": "Crea Tu Bebé — Elena, original sculpt by Alejandra de Zuñiga; finished reborn example"
+    }
+  ],
+  "kiki-severine-piret": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5122/61680/370214816_10231294285284377_3754750764682753257_n__70691.1693251401.jpg?c=2",
+      "source": "https://www.irresistables.com/kiki-reborn-vinyl-doll-kit-by-severine-piret/",
+      "credit": "Irresistables — Kiki prototype by Silver Lining Art Dolls, original sculpt by Séverine Piret"
+    }
+  ],
+  "rafael-severine-piret": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/4553/59169/337664487_1564670007398256_7967881658826902126_n__29148.1679787744.jpg?c=2",
+      "source": "https://www.irresistables.com/rafael-reborn-vinyl-doll-kit-19-20-by-severine-piret/",
+      "credit": "Irresistables — Rafael prototype by Silver Lining Art Dolls, original sculpt by Séverine Piret"
+    }
   ]
 };
 export const recoveredArtistCovers:Record<string,ArtistImage[]>={
@@ -373,6 +394,24 @@ export const recoveredArtistCovers:Record<string,ArtistImage[]>={
       "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5115/61436/361388984_749943356931978_4764181511077937181_n__61208.1692028072.jpg?c=2",
       "source": "https://www.irresistables.com/elowyn-reborn-vinyl-doll-kit-by-dawn-donofrio/",
       "credit": "Irresistables — Elowyn, original vinyl sculpt by Dawn Donofrio; featured artwork rather than artist portrait",
+      "role": "banner",
+      "reviewStatus": "source_identified"
+    }
+  ],
+  "alejandra-de-zuniga": [
+    {
+      "url": "https://creatubebe.com/20388-thickbox_default/elena-alexandra-de-zuniga.jpg",
+      "source": "https://creatubebe.com/en/limited-editions/3591-elena-alexandra-de-zuniga.html",
+      "credit": "Crea Tu Bebé — Elena, original sculpt by Alejandra de Zuñiga; finished reborn example — featured sculpt artwork, not the sculptor's portrait",
+      "role": "banner",
+      "reviewStatus": "source_identified"
+    }
+  ],
+  "severine-piret": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5122/61680/370214816_10231294285284377_3754750764682753257_n__70691.1693251401.jpg?c=2",
+      "source": "https://www.irresistables.com/kiki-reborn-vinyl-doll-kit-by-severine-piret/",
+      "credit": "Irresistables — Kiki prototype by Silver Lining Art Dolls, original sculpt by Séverine Piret — featured sculpt artwork, not the sculptor's portrait",
       "role": "banner",
       "reviewStatus": "source_identified"
     }
