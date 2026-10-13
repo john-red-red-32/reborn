@@ -1,0 +1,99 @@
+name: Discover WordPress sculptor cohort
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/discover-wordpress-cohort.yml'
+      - 'scripts/discover_artist_site.py'
+      - 'scripts/extract_sculpt_candidates.py'
+      - 'config/artist-sources/mayra-garza.json'
+      - 'config/artist-sources/alejandra-de-zuniga.json'
+      - 'config/artist-sources/dawn-donofrio.json'
+      - 'config/artist-sources/laura-tuzio-ross.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: discover-wordpress-cohort
+  cancel-in-progress: false
+jobs:
+  discover:
+    name: Research ${{ matrix.artist }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 13
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        include:
+          - artist: mayra-garza
+            url: https://mayragarza.com/en/dolls-gallery/reborn-doll-kits/
+          - artist: alejandra-de-zuniga
+            url: https://alejandradezuniga.com/
+          - artist: dawn-donofrio
+            url: https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/
+          - artist: laura-tuzio-ross
+            url: https://www.myworldofbabies.com/product-category/vinyl-reborn-doll-kits/
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check source discovery syntax
+        run: |
+          python3 -m compileall -q scripts
+      - name: Crawl official artist site with robots and sitemap boundaries
+        run: |
+          python3 scripts/discover_artist_site.py \
+            --url "${{ matrix.url }}" --max-pages 28 --delay 1.0 \
+            --out artifacts/source-discovery.json
+      - name: Capture structured original-kit candidates
+        run: |
+          python3 scripts/extract_sculpt_candidates.py \
+            --input artifacts/source-discovery.json \
+            --out artifacts/extraction-candidates.json
+      - name: Print research summary and possible boundaries
+        run: |
+          python3 - <<'PY'
+          import json
+          a=json.load(open('artifacts/source-discovery.json'))
+          b=json.load(open('artifacts/extraction-candidates.json'))
+          print('Artist source:',a['source'])
+          print('Pages:',a['pages_succeeded'],'of',a['pages_checked'])
+          print('Platform evidence:',a['platforms'])
+          print('Product schema candidates:',b['candidate_count'])
+          print('Errors:',a['errors'][:5])
+          print('First candidate names:',[x['name'] for x in b['candidates'][:14]])
+          print('No automatic artist or kit publication')
+          PY
+      - name: Archive separate source evidence with collision-safe retries
+        if: success()
+        env:
+          SOURCE_URL: ${{ matrix.url }}
+          SOURCE_RUN_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          python3 scripts/save_discovery_snapshot.py \
+            --input-dir artifacts --output-dir /tmp/reborna-wp-snapshots \
+            --url "$SOURCE_URL" --run-id "$SOURCE_RUN_ID"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin scrape-results
+          git checkout -B scrape-results origin/scrape-results
+          mkdir -p snapshots
+          cp -R /tmp/reborna-wp-snapshots/. snapshots/
+          git add snapshots
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive WP sculptor source ${{ matrix.artist }} ${{ github.run_id }} [skip ci]"
+            for attempt in 1 2 3 4 5 6; do
+              if git push origin HEAD:scrape-results; then exit 0; fi
+              git fetch origin scrape-results
+              git rebase origin/scrape-results || { git rebase --abort; exit 1; }
+              sleep 2
+            done
+            exit 1
+          fi
+      - name: Store review-only JSON evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wordpress-${{ matrix.artist }}-${{ github.run_id }}
+          path: artifacts/*.json
+          retention-days: 30
