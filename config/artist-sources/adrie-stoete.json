@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "artist_id": "adrie-stoete",
+  "display_name": "Adrie Stoete",
+  "source_name": "Adriesdolls official sculptor shop",
+  "allowed_hosts": [
+    "www.adriesdolls.com",
+    "adriesdolls.com"
+  ],
+  "platform": "unknown_shop_cms",
+  "accepted_names": [],
+  "approved_aliases": {},
+  "notes": "Original Adrie Stoete kits only. The same shop sells Bonnie Brown kits and other sculptors' work; third-party designs must not be attributed to Adrie. Distinguish full blank vinyl kit, head-only, torso, finished silicone doll and optional parts."
+}
