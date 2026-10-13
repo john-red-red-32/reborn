@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "artist_id": "alejandra-de-zuniga",
+  "display_name": "Alejandra de Zuñiga",
+  "source_name": "Alejandra de Zuñiga official sculptor website",
+  "allowed_hosts": [
+    "alejandradezuniga.com",
+    "alejandradezuniga.com"
+  ],
+  "platform": "wordpress_or_woocommerce",
+  "accepted_names": [],
+  "approved_aliases": {},
+  "notes": "Research only. Original kit product names and photographs require exact artist-scoped attribution. No stock, editions, deposits or prices published without verification."
+}
