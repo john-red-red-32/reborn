@@ -1,0 +1,76 @@
+name: Audit published Shopify artist portfolios
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-shopify-portfolios.yml'
+      - 'lib/shopify-cohort-catalogue.ts'
+      - 'lib/shopify-artist-stories.ts'
+      - 'lib/real-catalogue.ts'
+      - 'app/artists/[slug]/page.tsx'
+      - 'app/kits/[slug]/page.tsx'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check evidence selection and public routes
+        run: |
+          python3 - <<'PY'
+          import json,re,time,urllib.request
+          from urllib.error import HTTPError,URLError
+          s=open('lib/shopify-cohort-catalogue.ts').read()
+          def read(key):
+              m=re.search('export const '+key+r':[^=]+=([\s\S]*?);(?:\n|$)',s)
+              if not m: raise AssertionError('Cannot parse '+key)
+              return json.loads(m.group(1))
+          artists=read('shopifyCohortArtists')
+          kits=read('shopifyCohortKits')
+          assert len(artists)==3,artists
+          assert len(kits)==21,len(kits)
+          assert len({k['slug'] for k in kits})==len(kits)
+          assert set(k['artistSlug'] for k in kits)==set(a['slug'] for a in artists)
+          assert all(k['material'] in ('vinyl','silicone') and k['sources'][0]['url'].startswith('https://') for k in kits)
+          assert all(k['sources'][0]['kind']=='artist' and len(k.get('photos',[]))>=1 for k in kits)
+          assert all(k['statusLabel'].lower().find('check official source')>=0 for k in kits)
+          root='https://reborna.co'
+          headers={'User-Agent':'Mozilla/5.0 (compatible; RebornaAudit/1.0)','Accept':'text/html'}
+          routes=[('/artists/'+a['slug']+'/',a['name']) for a in artists]
+          routes.extend(('/kits/'+k['slug']+'/',k['name']) for k in kits)
+          # Cloudflare deployments are asynchronous; wait for all 24 routes.
+          for attempt in range(15):
+              failures=[]
+              for route,title in routes:
+                  try:
+                      with urllib.request.urlopen(urllib.request.Request(root+route,headers=headers),timeout=16) as res:
+                          html=res.read(1_600_000).decode('utf-8','replace')
+                          if res.status!=200 or title not in html:
+                              raise ValueError('missing title or HTTP 200')
+                          if route.startswith('/kits/') and 'ORIGINAL SCULPT KIT' not in html:
+                              raise ValueError('kit page incomplete')
+                  except Exception as exc:
+                      failures.append((route,str(exc)[:110]))
+              if not failures:
+                  print('PASS',len(routes),'live artist + kit routes')
+                  break
+              print('Attempt',attempt+1,'failed routes',len(failures),'examples',failures[:3],flush=True)
+              time.sleep(5)
+          else:
+              raise SystemExit('Live Shopify route audit failed')
+          checked=set()
+          for kit in kits:
+              url=kit['photos'][0]['url']
+              if url in checked: continue
+              checked.add(url)
+              req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 RebornaSourceCheck/1.0'})
+              with urllib.request.urlopen(req,timeout=15) as response:
+                  assert response.status==200,(kit['slug'],response.status)
+                  assert response.headers.get('Content-Type','').lower().startswith('image/'),(kit['slug'],response.headers.get('Content-Type'))
+                  assert response.read(24)
+          print('PASS',len(checked),'source-hosted hero kit images (not downloaded or mirrored)')
+          print('No active inventory or pricing claims inferred.')
+          PY
