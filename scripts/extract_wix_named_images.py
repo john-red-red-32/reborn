@@ -36,12 +36,16 @@ def extract(discovery, collection_paths):
             if not alt or not found:
                 continue
             match=STATUS.search(alt)
+            # Named alt alone is insufficient: common Wix header logos appear
+            # on every page. Demand a kit-related label or explicit kit status.
+            if not match and not re.search(r"\b(?:vinyl|silicone|reborn)\s+(?:doll\s+)?kits?\b|\bblank\s+(?:doll\s+)?kits?\b", alt, re.I):
+                continue
             status=match.group(1).lower() if match else None
             name=STATUS.sub("",alt).strip() if match else alt
             if not NAME.fullmatch(name):
                 continue
             photo=found.group(0)
-            key=(url,name.casefold(),photo)
+            key=(parsed.path,name.casefold(),photo)
             if key in seen:
                 continue
             seen.add(key)
