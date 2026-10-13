@@ -1,0 +1,49 @@
+name: Audit published Adrie original kits
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-adrie-production.yml'
+      - 'lib/adrie-gallery-catalogue.ts'
+      - 'lib/adrie-artist-stories.ts'
+      - 'lib/real-catalogue.ts'
+      - 'app/artists/[slug]/page.tsx'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify official artist, kit identity and deployed page links
+        run: |
+          python3 - <<'PY'
+          import json,re,time,urllib.request
+          s=open('lib/adrie-gallery-catalogue.ts').read()
+          m=re.search(r'export const adrieOriginalKits:VerifiedKit\[\]=([\s\S]*?);\s*$',s)
+          assert m
+          kits=json.loads(m.group(1))
+          assert len(kits)==3
+          assert {k['name'] for k in kits}=={'Xavi','Cecily','Dottie'}
+          assert all(k['material']=='vinyl' and k['artistSlug']=='adrie-stoete' for k in kits)
+          routes=[('/artists/adrie-stoete/','Adrie Stoete')]+[('/kits/'+k['slug']+'/',k['name']) for k in kits]
+          headers={'User-Agent':'Mozilla/5.0 (compatible; RebornaAudit/1.0)'}
+          for attempt in range(42):
+            errors=[]
+            for path,name in routes:
+              try:
+                with urllib.request.urlopen(urllib.request.Request('https://reborna.co'+path,headers=headers),timeout=15) as res:
+                  html=res.read(1_800_000).decode('utf8','replace')
+                  assert res.status==200 and name in html
+                  if '/kits/' in path:assert 'Material' in html and 'Vinyl' in html
+              except Exception as exc: errors.append((path,str(exc)[:100]))
+            if not errors:
+              print('PASS',len(routes),'live Adrie artist and original kit pages',flush=True)
+              break
+            print('Waiting for Cloudflare:',attempt+1,errors[:3],flush=True)
+            time.sleep(8)
+          else:raise SystemExit('Original Adrie kit pages not ready on production')
+          print('PASS original signed-kit sculpt attribution, vinyl material and artist biography.')
+          PY
