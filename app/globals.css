@@ -311,3 +311,58 @@
 .artist-bio-sources>span{width:100%;font-size:9px;letter-spacing:.08em;color:#907864}
 .artist-bio-sources a{display:inline-flex;align-items:center;gap:4px;font-size:11px;color:#745c4a;text-decoration:underline;text-underline-offset:2px}
 @media(max-width:600px){.kit-photo-thumbnails{grid-template-columns:repeat(4,minmax(0,1fr))}.kit-main-photo>img{aspect-ratio:1}}
+
+/* Accessible homepage anchor navigation (also works before JS hydration). */
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+#catalogue,#release-calendar{scroll-margin-top:100px}
+.hero-actions a.primary,.hero-actions a.secondary{min-height:49px;text-decoration:none}
+.bottom-cta>a{display:inline-flex;align-items:center;gap:13px;justify-content:center}
+
+/* Reverse-chronological, fully static HTML release archive. Offscreen months
+   use native browser content-visibility to defer rendering without hiding
+   older entries from HTML crawlers or requiring infinite-scroll JavaScript. */
+.home-calendar-section{padding-top:75px;padding-bottom:90px}
+.home-calendar-head{align-items:center}
+.home-calendar-head>div{max-width:700px}
+.home-calendar-head p{line-height:1.8}
+.calendar-preview-warning{max-width:780px;color:#886f60;font-size:11px;line-height:1.75;border-left:2px solid #b9a08b;padding:9px 15px;background:#f7f1e9;margin:10px 0 32px}
+.home-calendar-year{margin-top:36px}
+.home-calendar-year+.home-calendar-year{margin-top:58px}
+.home-calendar-year-title{display:flex;align-items:baseline;gap:20px;margin:0 0 28px;padding-bottom:15px;border-bottom:1px solid #d3c5b8;font:normal clamp(45px,6vw,74px)/1.05 "Playfair Display",Georgia,serif;color:#473b34}
+.home-calendar-year-title span{font:600 10px/1.2 Arial,sans-serif;letter-spacing:.16em;color:#a18571;text-transform:uppercase}
+.home-calendar-month{margin:0 0 34px;content-visibility:auto;contain-intrinsic-size:auto 380px}
+.home-calendar-month-head{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:0 0 16px}
+.home-calendar-month-head h4{font:normal clamp(26px,3vw,37px)/1.15 "Playfair Display",Georgia,serif;color:#625046;margin:0}
+.home-calendar-month-head>span{font-size:11px;color:#937d6d;white-space:nowrap}
+.home-calendar-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.home-calendar-card{background:#fffdfb;border:1px solid #ddcfc3;padding:23px 25px;min-width:0}
+.home-calendar-card-main{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.home-calendar-card-main .timeline-sculptor{display:block;font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#a08473}
+.home-calendar-card-main h5{font:normal clamp(28px,3vw,40px)/1.2 "Playfair Display",Georgia,serif;color:#392f29;margin:7px 0 12px}
+.home-calendar-card-main .heart{position:static;flex-shrink:0;display:grid;place-items:center}
+.home-calendar-event-line{display:flex;align-items:center;flex-wrap:wrap;justify-content:space-between;gap:8px;margin:3px 0 18px;padding:10px 0;border-bottom:1px solid #e4dcd3;color:#655447;font-size:12px}
+.home-calendar-event-line .calendar-event-type{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:#957963}
+.home-calendar-event-line time{font-weight:700;color:#4d4038}
+.home-calendar-card-bottom{display:flex;align-items:center;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.home-calendar-financials{display:flex;align-items:center;gap:18px}
+.home-calendar-financials span{display:flex;flex-direction:column;gap:5px;font-size:10px;color:#937f70}
+.home-calendar-financials b{font-size:14px;color:#514238}
+.home-calendar-secondary-date{margin:18px 0 0;font-size:11px;line-height:1.6;color:#827166}
+.home-calendar-section .archive-foot{margin-top:35px}
+.authenticity-statement{margin:35px 0 12px;padding:20px 22px;border:1px solid #ddd1c6;background:#faf6f1;display:flex;gap:14px;color:#927760}
+.authenticity-statement>svg{flex-shrink:0;margin-top:3px}
+.authenticity-statement strong{display:block;color:#4f4038;font-size:13px;margin-bottom:6px}
+.authenticity-statement p{font-size:11px;line-height:1.85;color:#79695d;margin:0 0 9px;max-width:850px}
+.authenticity-statement a{display:inline-flex;align-items:center;gap:5px;text-decoration:underline;text-underline-offset:3px;color:#735542;font-size:11px;font-weight:700}
+.authenticity-guide{max-width:1160px;margin:20px auto 45px;padding:0 20px}
+.authenticity-guide h2{font:normal clamp(33px,5vw,53px)/1.2 "Playfair Display",Georgia,serif;color:#493a31;margin:16px 0 27px}
+.authenticity-guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.authenticity-guide-grid article{padding:24px;border:1px solid #e0d2c5;background:#fffdfa}
+.authenticity-guide-grid article>span{font-size:10px;letter-spacing:.12em;color:#9d7f69}
+.authenticity-guide-grid h3{font:normal 24px "Playfair Display",Georgia,serif;color:#443730;margin:13px 0}
+.authenticity-guide-grid p,.authenticity-guide-note{color:#79695b;font-size:12px;line-height:1.85}
+.authenticity-guide-note{max-width:850px;margin:20px 0 0}
+.kit-main-photo figcaption{font-size:8px;letter-spacing:.04em;line-height:1.2;padding:5px 8px;bottom:8px;left:8px;background:#fffdfbc9;border-radius:2px}
+@media(max-width:800px){.home-calendar-cards{grid-template-columns:1fr}.authenticity-guide-grid{grid-template-columns:1fr}}
+@media(max-width:700px){#catalogue,#release-calendar{scroll-margin-top:75px}.home-calendar-section{padding:60px 15px 55px}.home-calendar-head{align-items:flex-start}.home-calendar-head .outline-btn{padding:12px 15px}.home-calendar-year-title{margin-top:28px}.home-calendar-month{margin-bottom:26px;contain-intrinsic-size:auto 330px}.home-calendar-card{padding:18px 17px}.home-calendar-card-main h5{font-size:34px}.home-calendar-event-line{align-items:flex-start}.authenticity-statement{padding:15px;gap:9px}.authenticity-guide{padding:0 14px}}
