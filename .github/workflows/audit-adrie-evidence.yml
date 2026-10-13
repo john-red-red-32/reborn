@@ -1,0 +1,39 @@
+name: Audit Adrie official kit photo sources
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-adrie-evidence.yml'
+      - 'lib/adrie-gallery-catalogue.ts'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify official artist-product image sources and attribution boundaries
+        run: |
+          python3 - <<'PY'
+          import json,re,urllib.request
+          text=open('lib/adrie-gallery-catalogue.ts').read()
+          m=re.search('export const adrieOriginalKits:VerifiedKit\[\]=([\s\S]*?);\s*$',text)
+          assert m
+          kits=json.loads(m.group(1))
+          assert {k['name'] for k in kits}=={'Xavi','Cecily','Dottie'}
+          for k in kits:
+            assert k['material']=='vinyl'
+            assert k['artistSlug']=='adrie-stoete'
+            assert 'adriesdolls.com' in k['sources'][0]['url']
+            for p in k['photos']:
+              assert p['url'].startswith('https://www.adriesdolls.com/var/images/product/')
+              request=urllib.request.Request(p['url'],headers={'User-Agent':'Mozilla/5.0','Accept':'image/*'})
+              with urllib.request.urlopen(request,timeout=22) as res:
+                assert res.status==200,(k['name'],res.status)
+                assert res.headers.get('Content-Type','').lower().startswith('image/'),(k['name'],res.headers.get('Content-Type'))
+                assert res.read(24),k['name']
+            print('PASS',k['name'],'artist-source photograph',flush=True)
+          print('PASS Adrie product image provenance; third-party shop products not ingested.')
+          PY
