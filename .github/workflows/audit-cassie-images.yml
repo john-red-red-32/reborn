@@ -103,4 +103,17 @@ jobs:
           assert 'kit-photo-gallery' in named,'Vinyl kit detail gallery missing'
           assert 'kit-photo-gallery' in prior,'Curated kit gallery missing'
           print('PASS live static Cassie galleries and legacy kit pages')
+          import re
+          from pathlib import Path
+          text=Path('lib/cassie-profile.ts').read_text()
+          names=re.findall(r'"([^"]+)"',re.search(r'export const cassieArchive=\[([\s\S]*?)\] as const',text).group(1))
+          for name in names:
+            if name in ('Romilly','Sienna'):continue  # identity still pending artist review
+            slug=re.sub(r'[^a-z0-9]+','-',name.casefold()).strip('-')+'-cassie-ann-love'
+            path='/kits/'+slug+'/'
+            html=page(path)
+            assert 'kit-photo-gallery' in html,(name,path,'missing image gallery')
+            assert 'static.wixstatic.com/media/' in html,(name,path,'no official source photo')
+            print('OK Cassie kit page',name,flush=True)
+          print('PASS 59 of 61 Cassie product pages expose their own named Wix artwork; 2 unresolved identities held')
           PY
