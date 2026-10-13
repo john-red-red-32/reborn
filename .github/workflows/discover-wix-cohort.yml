@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/discover-wix-cohort.yml'
+      - 'scripts/extract_wix_named_images.py'
+      - 'scripts/test_wix_named_images.py'
   workflow_dispatch:
 permissions:
   contents: write
