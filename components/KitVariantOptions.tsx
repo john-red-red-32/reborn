@@ -13,7 +13,7 @@ export default function KitVariantOptions({variants,offers,basePhotos=[]}:{varia
  const allUnavailable=offers.length>0&&offers.every(o=>o.status==="unavailable");
  const selectedOffers=offers.map(o=>({offer:o,option:o.variantPrices?.find(p=>p.variantId===selected)}));
  return <section className="kit-variants" aria-label="Kit variations">
- <h2>{allUnavailable?"Historical kit configurations":"Choose your kit"}</h2>
+ <h2>{allUnavailable?"Historical kit configurations":"Kit configurations"}</h2>
  <p>{allUnavailable?"This sculpt is listed as sold out. The options and amounts below are historical shop observations, not purchasable offers.":"Options and inclusions can differ. Prices are dated retailer observations, not checkout quotes."}</p>
  <label className="kit-variant-label" htmlFor="kit-variant-select">Kit configuration</label>
  <select id="kit-variant-select" className="kit-variant-select" value={selected} onChange={e=>setSelected(e.target.value)}>
@@ -24,7 +24,7 @@ export default function KitVariantOptions({variants,offers,basePhotos=[]}:{varia
  {!!variant.includedParts?.length&&<small>Includes: {variant.includedParts.join(", ")}</small>}
  </div>}
  {!!photos.length&&<div className="kit-variant-photos">{photos.slice(0,6).map((p,i)=><img key={p.url} src={p.url} alt={`${variant?.label??"Kit"} — view ${i+1}`} loading="lazy"/>)}</div>}
- <h3>{allUnavailable?"Historical prices":hasMultiPrice?"Prices from participating retailers":"Retailer prices"}</h3>
+ {offers.length>0?<><h3>{allUnavailable?"Historical prices":hasMultiPrice?"Prices from participating retailers":"Retailer prices"}</h3>
  <div className="offer-list">
  {selectedOffers.map(({offer,option})=>{
   const tracked=!!offer.variantPrices?.length;
@@ -44,7 +44,7 @@ export default function KitVariantOptions({variants,offers,basePhotos=[]}:{varia
    <a href={option?.url??offer.url} target="_blank" rel="noopener noreferrer">{status==="unavailable"?"View original listing ↗":"Check seller ↗"}</a></div>
   </div>;
  })}
- </div>
- <small className="kit-variant-footnote">“From” appears only where different full prices are documented for configurations from the same retailer. Two identical prices do not create a range. Deposits and optional layaway aren't kit prices.</small>
+ </div></>:<p className="kit-variant-footnote">Configurations are documented from the sculptor’s product listing, not Reborna purchase options. <a href={variant?.sourceUrl??variants[0]?.sourceUrl} target="_blank" rel="noopener noreferrer">Review options directly with the original seller ↗</a>. Check which options are currently offered.</p>}
+ {offers.length>0&&<small className="kit-variant-footnote">“From” appears only where different full prices are documented for configurations from the same retailer. Two identical prices do not create a range. Deposits and optional layaway aren't kit prices.</small>}
  </section>;
 }
