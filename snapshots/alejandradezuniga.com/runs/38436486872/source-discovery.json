@@ -1,0 +1,700 @@
+{
+  "source": "https://alejandradezuniga.com/",
+  "host": "alejandradezuniga.com",
+  "parser_version": "url-discovery-v2-platform-sitemaps",
+  "started_from": "https://alejandradezuniga.com/",
+  "completed_at": "2026-10-13T17:10:35.082774+00:00",
+  "page_limit": 28,
+  "sitemap_discovered_urls": 8,
+  "platforms": {
+    "wordpress": 8
+  },
+  "pages_checked": 11,
+  "pages_succeeded": 8,
+  "queue_remaining": 0,
+  "complete": true,
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://alejandradezuniga.com/",
+      "platform": "wordpress",
+      "observed_at": "2026-10-13T17:10:24.628081+00:00",
+      "sha256_html": "37df9c27d47788e3e94b20d3c08730229e86e76a95e63b4e187ba82d956ec5a8",
+      "title": "alejandradezuniga.com",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "robots": "max-image-preview:large",
+        "generator": "WordPress.com",
+        "og:type": "website",
+        "og:title": "alejandradezuniga.com",
+        "og:url": "https://alejandradezuniga.com/",
+        "og:site_name": "alejandradezuniga.com",
+        "og:image": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200",
+        "og:image:width": "200",
+        "og:image:height": "200",
+        "og:locale": "es_ES",
+        "msapplication-TileImage": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=270"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=1024",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=1024 1024w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg 2048w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=150 150w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=300 300w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=768 768w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=1440 1440w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png",
+          "alt": "alejandradezuniga.com",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=25&h=25 25w, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50&h=50 50w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=1024",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=1024 1024w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=2048 2048w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=150 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=300 300w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=768 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=1440 1440w"
+        },
+        {
+          "url": "https://s2.wp.com/wp-includes/images/w-logo-blue.png?m=1591722036i",
+          "alt": "Icono del sitio",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/copy_e5e40c89-a614-4e3c-935b-29b249a97f7d_mov_std.original.jpg?w=360",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/t8f/2/16/1f338.png",
+          "alt": "🌸",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg 1592w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=117&h=150 117w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=233&h=300 233w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=768&h=988 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=796&h=1024 796w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=1440&h=1852 1440w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg 1382w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=130&h=150 130w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=259&h=300 259w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=768&h=889 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=884&h=1024 884w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg 1200w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg?w=113&h=150 113w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg?w=225&h=300 225w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg?w=768&h=1024 768w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg 1280w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=150&h=108 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=300&h=216 300w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=768&h=552 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=1024&h=736 1024w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=819",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=819 819w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=120 120w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=240 240w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=768 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png 1080w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=1024",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=1024 1024w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg 2048w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=150 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=300 300w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=768 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=1440 1440w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/491293759_10234891025391768_8486387440062039211_n.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/e2d05c55-812f-47c7-9e93-bb3a97f15e25.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50 1x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=75 1.5x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=100 2x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=150 3x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200 4x"
+        },
+        {
+          "url": "https://pixel.wp.com/b.gif?v=noscript",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://alejandradezuniga.com",
+        "https://alejandradezuniga.com/",
+        "https://alejandradezuniga.com/?wp-story-load-in-fullscreen=true&wp-story-play-on-load=true",
+        "https://alejandradezuniga.com/acerca-de/",
+        "https://alejandradezuniga.com/contest/",
+        "https://alejandradezuniga.com/dealers/",
+        "https://alejandradezuniga.com/preorder/"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://alejandradezuniga.com/?wp-story-load-in-fullscreen=true&wp-story-play-on-load=true",
+      "platform": "wordpress",
+      "observed_at": "2026-10-13T17:10:26.023086+00:00",
+      "sha256_html": "68675f60f4047808976b17c93943cdb2cbca027d6150bd2fb01d0358b515e3d7",
+      "title": "alejandradezuniga.com",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "robots": "max-image-preview:large",
+        "generator": "WordPress.com",
+        "og:type": "website",
+        "og:title": "alejandradezuniga.com",
+        "og:url": "https://alejandradezuniga.com/",
+        "og:site_name": "alejandradezuniga.com",
+        "og:image": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200",
+        "og:image:width": "200",
+        "og:image:height": "200",
+        "og:locale": "es_ES",
+        "msapplication-TileImage": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=270"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=1024",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=1024 1024w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg 2048w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=150 150w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=300 300w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=768 768w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=1440 1440w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png",
+          "alt": "alejandradezuniga.com",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=25&h=25 25w, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50&h=50 50w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=1024",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=1024 1024w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=2048 2048w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=150 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=300 300w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=768 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=1440 1440w"
+        },
+        {
+          "url": "https://s2.wp.com/wp-includes/images/w-logo-blue.png?m=1591722036i",
+          "alt": "Icono del sitio",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/copy_e5e40c89-a614-4e3c-935b-29b249a97f7d_mov_std.original.jpg?w=360",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/t8f/2/16/1f338.png",
+          "alt": "🌸",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg 1592w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=117&h=150 117w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=233&h=300 233w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=768&h=988 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=796&h=1024 796w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=1440&h=1852 1440w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg 1382w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=130&h=150 130w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=259&h=300 259w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=768&h=889 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=884&h=1024 884w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg 1200w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg?w=113&h=150 113w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg?w=225&h=300 225w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg?w=768&h=1024 768w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg 1280w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=150&h=108 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=300&h=216 300w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=768&h=552 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=1024&h=736 1024w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=819",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=819 819w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=120 120w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=240 240w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=768 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png 1080w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=1024",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=1024 1024w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg 2048w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=150 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=300 300w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=768 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=1440 1440w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/491293759_10234891025391768_8486387440062039211_n.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/e2d05c55-812f-47c7-9e93-bb3a97f15e25.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50 1x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=75 1.5x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=100 2x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=150 3x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200 4x"
+        },
+        {
+          "url": "https://pixel.wp.com/b.gif?v=noscript",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://alejandradezuniga.com",
+        "https://alejandradezuniga.com/",
+        "https://alejandradezuniga.com/?wp-story-load-in-fullscreen=true&wp-story-play-on-load=true",
+        "https://alejandradezuniga.com/acerca-de/",
+        "https://alejandradezuniga.com/contest/",
+        "https://alejandradezuniga.com/dealers/",
+        "https://alejandradezuniga.com/preorder/"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://alejandradezuniga.com",
+      "platform": "wordpress",
+      "observed_at": "2026-10-13T17:10:27.091582+00:00",
+      "sha256_html": "3ac13030e1eda19958c389553f33e3ec4f487bf4ffb1f2a829d8af3191eafa6e",
+      "title": "alejandradezuniga.com",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "robots": "max-image-preview:large",
+        "generator": "WordPress.com",
+        "og:type": "website",
+        "og:title": "alejandradezuniga.com",
+        "og:url": "https://alejandradezuniga.com/",
+        "og:site_name": "alejandradezuniga.com",
+        "og:image": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200",
+        "og:image:width": "200",
+        "og:image:height": "200",
+        "og:locale": "es_ES",
+        "msapplication-TileImage": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=270"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=1024",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=1024 1024w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg 2048w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=150 150w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=300 300w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=768 768w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=1440 1440w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png",
+          "alt": "alejandradezuniga.com",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=25&h=25 25w, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50&h=50 50w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=1024",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=1024 1024w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=2048 2048w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=150 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=300 300w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=768 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=1440 1440w"
+        },
+        {
+          "url": "https://s2.wp.com/wp-includes/images/w-logo-blue.png?m=1591722036i",
+          "alt": "Icono del sitio",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/copy_e5e40c89-a614-4e3c-935b-29b249a97f7d_mov_std.original.jpg?w=360",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/t8f/2/16/1f338.png",
+          "alt": "🌸",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg 1592w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=117&h=150 117w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=233&h=300 233w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=768&h=988 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=796&h=1024 796w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=1440&h=1852 1440w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg 1382w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=130&h=150 130w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=259&h=300 259w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=768&h=889 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=884&h=1024 884w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg 1200w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg?w=113&h=150 113w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg?w=225&h=300 225w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg?w=768&h=1024 768w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg 1280w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=150&h=108 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=300&h=216 300w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=768&h=552 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=1024&h=736 1024w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=819",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=819 819w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=120 120w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=240 240w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=768 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png 1080w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=1024",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=1024 1024w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg 2048w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=150 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=300 300w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=768 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=1440 1440w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/491293759_10234891025391768_8486387440062039211_n.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/e2d05c55-812f-47c7-9e93-bb3a97f15e25.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50 1x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=75 1.5x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=100 2x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=150 3x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200 4x"
+        },
+        {
+          "url": "https://pixel.wp.com/b.gif?v=noscript",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://alejandradezuniga.com",
+        "https://alejandradezuniga.com/",
+        "https://alejandradezuniga.com/acerca-de/",
+        "https://alejandradezuniga.com/contest/",
+        "https://alejandradezuniga.com/dealers/",
+        "https://alejandradezuniga.com/preorder/",
+        "https://alejandradezuniga.com?wp-story-load-in-fullscreen=true&wp-story-play-on-load=true"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://alejandradezuniga.com?wp-story-load-in-fullscreen=true&wp-story-play-on-load=true",
+      "platform": "wordpress",
+      "observed_at": "2026-10-13T17:10:28.208271+00:00",
+      "sha256_html": "68675f60f4047808976b17c93943cdb2cbca027d6150bd2fb01d0358b515e3d7",
+      "title": "alejandradezuniga.com",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "robots": "max-image-preview:large",
+        "generator": "WordPress.com",
+        "og:type": "website",
+        "og:title": "alejandradezuniga.com",
+        "og:url": "https://alejandradezuniga.com/",
+        "og:site_name": "alejandradezuniga.com",
+        "og:image": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200",
+        "og:image:width": "200",
+        "og:image:height": "200",
+        "og:locale": "es_ES",
+        "msapplication-TileImage": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=270"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=1024",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=1024 1024w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg 2048w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=150 150w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=300 300w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=768 768w, https://alejandradezuniga.wordpress.com/wp-content/uploads/2025/05/adley.jpg?w=1440 1440w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png",
+          "alt": "alejandradezuniga.com",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=25&h=25 25w, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50&h=50 50w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=1024",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=1024 1024w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=2048 2048w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=150 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=300 300w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=768 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/campana-14-x-10-cm-2-1.png?w=1440 1440w"
+        },
+        {
+          "url": "https://s2.wp.com/wp-includes/images/w-logo-blue.png?m=1591722036i",
+          "alt": "Icono del sitio",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/copy_e5e40c89-a614-4e3c-935b-29b249a97f7d_mov_std.original.jpg?w=360",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/t8f/2/16/1f338.png",
+          "alt": "🌸",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg 1592w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=117&h=150 117w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=233&h=300 233w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=768&h=988 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=796&h=1024 796w, https://alejandradezuniga.com/wp-content/uploads/2025/05/babyhead.jpg?w=1440&h=1852 1440w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg 1382w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=130&h=150 130w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=259&h=300 259w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=768&h=889 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-12-at-14.13.57.jpeg?w=884&h=1024 884w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg 1200w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg?w=113&h=150 113w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg?w=225&h=300 225w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-04-26-at-14.16.39.jpeg?w=768&h=1024 768w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg 1280w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=150&h=108 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=300&h=216 300w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=768&h=552 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/whatsapp-image-2025-03-21-at-17.48.31.jpeg?w=1024&h=736 1024w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=819",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=819 819w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=120 120w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=240 240w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png?w=768 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/woensdag-weetje.png 1080w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=1024",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=1024 1024w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg 2048w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=150 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=300 300w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=768 768w, https://alejandradezuniga.com/wp-content/uploads/2025/05/img_0449.jpeg?w=1440 1440w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/491293759_10234891025391768_8486387440062039211_n.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/e2d05c55-812f-47c7-9e93-bb3a97f15e25.jpeg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50 1x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=75 1.5x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=100 2x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=150 3x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200 4x"
+        },
+        {
+          "url": "https://pixel.wp.com/b.gif?v=noscript",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://alejandradezuniga.com",
+        "https://alejandradezuniga.com/",
+        "https://alejandradezuniga.com/acerca-de/",
+        "https://alejandradezuniga.com/contest/",
+        "https://alejandradezuniga.com/dealers/",
+        "https://alejandradezuniga.com/preorder/",
+        "https://alejandradezuniga.com?wp-story-load-in-fullscreen=true&wp-story-play-on-load=true"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://alejandradezuniga.com/acerca-de/",
+      "platform": "wordpress",
+      "observed_at": "2026-10-13T17:10:29.628328+00:00",
+      "sha256_html": "aecf770a9409c10dcb837792ae985499cd55972ce50840e3bc59fa9d9913e6f2",
+      "title": "🎨 Upcoming Sculpting Workshops with Alejandra de Zúñiga in Europe & USA! 👶🏼🖌️ – alejandradezuniga.com",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "robots": "max-image-preview:large",
+        "generator": "WordPress.com",
+        "og:type": "article",
+        "og:title": "🎨 Upcoming Sculpting Workshops with Alejandra de Zúñiga in Europe & USA! 👶🏼🖌️",
+        "og:url": "https://alejandradezuniga.com/acerca-de/",
+        "og:description": "Visita la entrada para saber más.",
+        "article:published_time": "2024-06-03T21:15:37+00:00",
+        "article:modified_time": "2025-12-10T23:39:47+00:00",
+        "og:site_name": "alejandradezuniga.com",
+        "og:image": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200",
+        "og:image:width": "200",
+        "og:image:height": "200",
+        "og:locale": "es_ES",
+        "article:publisher": "https://www.facebook.com/WordPresscom",
+        "twitter:text:title": "🎨 Upcoming Sculpting Workshops with Alejandra de Zúñiga in Europe & USA! 👶🏼🖌️",
+        "twitter:image": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=240",
+        "twitter:card": "summary",
+        "twitter:description": "Visita la entrada para saber más.",
+        "msapplication-TileImage": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=270"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png",
+          "alt": "alejandradezuniga.com",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png 500w, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=150&h=150 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=300&h=300 300w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50 1x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=75 1.5x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=100 2x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=150 3x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200 4x"
+        },
+        {
+          "url": "https://pixel.wp.com/b.gif?v=noscript",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://alejandradezuniga.com",
+        "https://alejandradezuniga.com/",
+        "https://alejandradezuniga.com/acerca-de/",
+        "https://alejandradezuniga.com/contest/",
+        "https://alejandradezuniga.com/dealers/",
+        "https://alejandradezuniga.com/preorder/"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://alejandradezuniga.com/contest/",
+      "platform": "wordpress",
+      "observed_at": "2026-10-13T17:10:31.038200+00:00",
+      "sha256_html": "490d116920ea428d98b14a6870d936892b0dd132d13241f16b17715c2112d585",
+      "title": "CONTEST – alejandradezuniga.com",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "robots": "max-image-preview:large",
+        "generator": "WordPress.com",
+        "og:type": "article",
+        "og:title": "CONTEST",
+        "og:url": "https://alejandradezuniga.com/contest/",
+        "og:description": "  Join the Contest Through Authentic Reborn DOLLS Are you an artist who wants to participate in our official Reborn Art Contest? Authentic Reborn Dolls is our secure registration platform, where yo…",
+        "article:published_time": "2025-12-10T22:51:44+00:00",
+        "article:modified_time": "2025-12-10T22:51:44+00:00",
+        "og:site_name": "alejandradezuniga.com",
+        "og:image": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200",
+        "og:image:width": "200",
+        "og:image:height": "200",
+        "og:locale": "es_ES",
+        "article:publisher": "https://www.facebook.com/WordPresscom",
+        "twitter:text:title": "CONTEST",
+        "twitter:image": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=240",
+        "twitter:card": "summary",
+        "description": "  Join the Contest Through Authentic Reborn DOLLS Are you an artist who wants to participate in our official Reborn Art Contest? Authentic Reborn Dolls is our secure registration platform, where you can submit your entry, upload your photos, and confirm that you are using original kits. 👉 To register, simply click the button below: ✨ Register…",
+        "msapplication-TileImage": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=270"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png",
+          "alt": "alejandradezuniga.com",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png 500w, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=150&h=150 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=300&h=300 300w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50 1x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=75 1.5x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=100 2x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=150 3x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200 4x"
+        },
+        {
+          "url": "https://pixel.wp.com/b.gif?v=noscript",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://alejandradezuniga.com",
+        "https://alejandradezuniga.com/",
+        "https://alejandradezuniga.com/acerca-de/",
+        "https://alejandradezuniga.com/contest/",
+        "https://alejandradezuniga.com/dealers/",
+        "https://alejandradezuniga.com/preorder/"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://alejandradezuniga.com/dealers/",
+      "platform": "wordpress",
+      "observed_at": "2026-10-13T17:10:32.373283+00:00",
+      "sha256_html": "b3fd78fbdedcdf1f3cc5ca7b2a64edc720d521d31e16e4351c333a6ef92f34e5",
+      "title": "DEALERS – alejandradezuniga.com",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "robots": "max-image-preview:large",
+        "generator": "WordPress.com",
+        "og:type": "article",
+        "og:title": "DEALERS",
+        "og:url": "https://alejandradezuniga.com/dealers/",
+        "og:description": "Our collectors come from all over the world, and while we love offering direct service, we’re also proud to collaborate with a growing network of trusted dealers. 🌍 Thanks to them, many collectors …",
+        "article:published_time": "2025-06-07T11:48:46+00:00",
+        "article:modified_time": "2025-12-11T08:48:20+00:00",
+        "og:site_name": "alejandradezuniga.com",
+        "og:image": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200",
+        "og:image:width": "200",
+        "og:image:height": "200",
+        "og:locale": "es_ES",
+        "article:publisher": "https://www.facebook.com/WordPresscom",
+        "twitter:text:title": "DEALERS",
+        "twitter:image": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=240",
+        "twitter:card": "summary",
+        "description": "Our collectors come from all over the world, and while we love offering direct service, we’re also proud to collaborate with a growing network of trusted dealers. 🌍 Thanks to them, many collectors enjoy quicker shipping, regional support, and access to a curated selection of high-quality Reborn-related products. Each of our dealers shares our passion…",
+        "msapplication-TileImage": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=270"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png",
+          "alt": "alejandradezuniga.com",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png 500w, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=150&h=150 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=300&h=300 300w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50 1x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=75 1.5x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=100 2x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=150 3x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200 4x"
+        },
+        {
+          "url": "https://pixel.wp.com/b.gif?v=noscript",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://alejandradezuniga.com",
+        "https://alejandradezuniga.com/",
+        "https://alejandradezuniga.com/acerca-de/",
+        "https://alejandradezuniga.com/contest/",
+        "https://alejandradezuniga.com/dealers/",
+        "https://alejandradezuniga.com/preorder/"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://alejandradezuniga.com/preorder/",
+      "platform": "wordpress",
+      "observed_at": "2026-10-13T17:10:33.745374+00:00",
+      "sha256_html": "6022edcd50427c5f8122e5779b942a3a8c7fa265042380275d95aba9f2099b63",
+      "title": "🎉 PREORDER – alejandradezuniga.com",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "robots": "max-image-preview:large",
+        "generator": "WordPress.com",
+        "og:type": "article",
+        "og:title": "🎉 PREORDER",
+        "og:url": "https://alejandradezuniga.com/preorder/",
+        "og:description": "🌟 Official Preorder of the Elena Kit – Now Open! 🌟 We’re thrilled to announce the long-awaited preorder of the Elena kit begins on June 8 at 12:00 PM (EST) / 6:00 PM (Netherlands tim…",
+        "article:published_time": "2025-06-08T13:26:00+00:00",
+        "article:modified_time": "2025-06-08T16:10:52+00:00",
+        "og:site_name": "alejandradezuniga.com",
+        "og:image": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200",
+        "og:image:width": "200",
+        "og:image:height": "200",
+        "og:locale": "es_ES",
+        "article:publisher": "https://www.facebook.com/WordPresscom",
+        "twitter:text:title": "🎉 PREORDER",
+        "twitter:image": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=240",
+        "twitter:card": "summary",
+        "description": "🌟 Official Preorder of the Elena Kit – Now Open! 🌟 We’re thrilled to announce the long-awaited preorder of the Elena kit begins on June 8 at 12:00 PM (EST) / 6:00 PM (Netherlands time). 🍼 Who is Elena? Elena is a very special baby sculpted by the talented Alejandra de Zúñiga. She is the youngest daughter of Silvia Ezquerra,…",
+        "msapplication-TileImage": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=270"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png",
+          "alt": "alejandradezuniga.com",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png 500w, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=150&h=150 150w, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=300&h=300 300w"
+        },
+        {
+          "url": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50",
+          "alt": "",
+          "srcset": "https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=50 1x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=75 1.5x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=100 2x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=150 3x, https://alejandradezuniga.com/wp-content/uploads/2025/05/logochina.png?w=200 4x"
+        },
+        {
+          "url": "https://pixel.wp.com/b.gif?v=noscript",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://alejandradezuniga.com",
+        "https://alejandradezuniga.com/",
+        "https://alejandradezuniga.com/acerca-de/",
+        "https://alejandradezuniga.com/contest/",
+        "https://alejandradezuniga.com/dealers/",
+        "https://alejandradezuniga.com/preorder/"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    }
+  ],
+  "notice": "Discovery evidence only. No images copied; no status or release-date inference."
+}
