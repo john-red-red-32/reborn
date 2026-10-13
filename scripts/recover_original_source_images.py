@@ -24,6 +24,14 @@ MAX_DOC = 2_500_000
 IMG_SUFFIX = re.compile(r"\.(?:jpg|jpeg|png|webp)(?:\?|$)", re.I)
 PLACEHOLDER = re.compile(r"logo|placeholder|spinner|icon|sprite|favicon|avatar|payment|banner|badge|no.image", re.I)
 STOP_HOSTS = {"pingart.com", "www.pingart.com"}
+TRUSTED_DEALER_INDEX = {
+  "laura-tuzio-ross": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross",
+  "gudrun-legler": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40",
+}
+TRUSTED_NAMED_PRODUCT = {
+  "neikie-sabine-altenkirch-junkes":"https://www.irresistables.com/neikie-reborn-vinyl-doll-kit-by-sabine-altenkirch-limited-edition/",
+}
+
 LINK_PAT = re.compile(r"(^|\W)(?:shop|product|doll-kit|vinyl|silicone|reborn|sculpt)(?:\W|$)", re.I)
 
 def simplify(value):
@@ -100,7 +108,7 @@ def fetch_page(url,host,cache):
     except Exception as exc:
         return None,"fetch_"+type(exc).__name__
 
-def card_image_for(soup,name,page):
+def card_image_for(soup,name,page,material=None):
     # Retailer category/list: image MUST be inside a card containing the exact
     # sculpt name (no "nearest sibling", no entire category's first image).
     choices=[]
@@ -113,6 +121,12 @@ def card_image_for(soup,name,page):
         text=tag.get_text(" ",strip=True)
         alt=img.get("alt") or img.get("title") or ""
         if not (name_match(name,text) or name_match(name,alt)):continue
+        # Sam (vinyl) and Sam Silicone are different physical kit products.
+        # Never borrow a silicone photo for a vinyl edition.
+        if material=="vinyl" and re.search(r"\bSilicone\b",text,re.I):
+            continue
+        if material=="silicone" and re.search(r"\bVinyl\b",text,re.I):
+            continue
         if name_match(name,alt) or (name_match(name,text) and len(text)<250):
             u=valid_image(img.get("data-src") or img.get("src") or img.get("data-lazy-src"),page)
             if u:choices.append((u,"name_matched_retailer_card"))
@@ -149,6 +163,13 @@ def inspect(kit,cache,delay=1):
     sources=kit.get("sources",[])
     result={"slug":kit["slug"],"name":name,"artist_slug":kit["artistSlug"],
             "primary_source":sources[0]["url"],"matched":[],"reason":None}
+    sources=list(sources)
+    if kit["slug"] in TRUSTED_NAMED_PRODUCT:
+        sources.append({"url":TRUSTED_NAMED_PRODUCT[kit["slug"]],"kind":"retailer",
+                        "label":"Irresistables — exact original sculpt product"})
+    if kit["artistSlug"] in TRUSTED_DEALER_INDEX:
+        sources.append({"url":TRUSTED_DEALER_INDEX[kit["artistSlug"]],"kind":"retailer",
+                        "label":"MacPherson Arts & Crafts — artist-authenticated kit index"})
     for src in sources:
         page=src["url"]
         host=(urlsplit(page).hostname or "").lower()
@@ -168,7 +189,7 @@ def inspect(kit,cache,delay=1):
             return result
         # Multi-kit listings can be matched only by named card, no loose hero.
         if src["kind"]=="retailer" or "product-category" in page or "manufacturer" in page:
-            got=card_image_for(soup,name,page)
+            got=card_image_for(soup,name,page,kit.get("material"))
             if got:
                 result["matched"]=[{"url":url,"source":page,"basis":basis,
                      "credit":src["label"].split(" — ")[0]+" — named retailer product photograph"}
