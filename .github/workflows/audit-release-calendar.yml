@@ -32,7 +32,7 @@ jobs:
               assert r.status==200,(path,r.status)
               return r.read().decode("utf-8","replace")
           last=""
-          for attempt in range(30):
+          for attempt in range(8):
             try:
               home=page("/")
               nikki=page("/artists/nikki-johnston/")
@@ -61,7 +61,7 @@ jobs:
             except Exception as e:
               last=str(e)
               print("Waiting for Cloudflare update",attempt+1,last,flush=True)
-              time.sleep(8)
+              time.sleep(5)
           else:raise SystemExit("Live Reborna regression failed: "+last)
           source=Path("app/globals.css").read_text(encoding="utf-8")
           assert "content-visibility:auto" in source,"Browser-native lazy painting for historical months missing"
