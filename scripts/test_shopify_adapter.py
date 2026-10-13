@@ -11,6 +11,28 @@ class ShopifyKitTests(unittest.TestCase):
                 {"id":1,"title":"Without Belly Plate","option1":"Without","price":9900,"available":True},
                 {"id":2,"title":"With Belly Plate","option1":"With","price":11900,"available":True}],
             "images":["https://cdn.shopify.com/example.jpg"]}
+    def test_other_artist_silicone_kit_is_candidate(self):
+        product=self.product("Ripley - Blank Silicone Doll Kit",
+            "Unpainted silicone doll kit. Sculptor: Kristin Englert.")
+        row=parse_product(product,"https://siliconeartdolls.com/","sha","now",
+                          artist_name="Kristin Englert",currency="USD")
+        self.assertEqual(row["classification"],"original_kit_candidate")
+        self.assertEqual(row["sculpt_material_candidate"],"silicone")
+        self.assertEqual(row["currency"],"USD")
+
+    def test_explicit_other_artist_requires_review(self):
+        product=self.product("Blank vinyl doll kit",
+            "Sculptor: Different Sculptor. Original doll kit for reborn artists.")
+        self.assertEqual(classification(product,artist_name="Melody Hess")[0],"needs_review")
+
+    def test_mixed_material_wording_not_decided(self):
+        product=self.product("Blank vinyl doll kit",
+            "Sculptor: Melody Hess. Silicone option sold in a different product.")
+        row=parse_product(product,"https://www.melodyhessdolls.com/","sha","now",
+                          artist_name="Melody Hess",currency="USD")
+        self.assertIsNone(row["sculpt_material_candidate"])
+        self.assertTrue(row["material_review_required"])
+
     def test_original_blank_kit_and_belly_plate_prices(self):
         row=parse_product(self.product(),"https://nikkisseasidebabies.co.uk/","hash","time")
         self.assertEqual(row["classification"],"original_kit_candidate")
