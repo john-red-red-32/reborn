@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "artist_id": "maissa-said",
+  "display_name": "Maissa Said",
+  "source_name": "Maissa Said official sculptor website",
+  "allowed_hosts": [
+    "msartdolls.com"
+  ],
+  "platform": "shopify",
+  "currency": "USD",
+  "accepted_names": [],
+  "approved_aliases": {},
+  "notes": "Research source only. Product ownership, variants, edition counts, prices, media rights and live availability require evidence-led editorial review. Do not automatically publish."
+}
