@@ -481,3 +481,9 @@ html{scroll-behavior:smooth}
 .artist-image-pending{position:absolute;bottom:12px;left:12px;right:12px;padding:7px 5px;font:700 9px "DM Sans",sans-serif;letter-spacing:.08em;text-align:center;color:#685546;background:#f7f1eabf}
 .artist-monogram:has(.artist-image-pending){position:relative}
 @media(max-width:600px){.kit-awaiting-artwork{min-height:310px;aspect-ratio:1/1.1}.kit-awaiting-initial{width:76px;height:76px;font-size:49px}.kit-awaiting-artwork-inner strong{font-size:24px}.artist-image-pending{font-size:8px}}
+
+
+/* One quiet, kit-wide clarification; individual gallery captions remain credits. */
+.kit-finished-example-note{display:flex;align-items:flex-start;gap:9px;margin:10px 0 20px;padding:12px 15px;border-left:2px solid #c7b19e;background:#f7f2ec;color:#75675c;font-size:12px;line-height:1.65}
+.kit-finished-example-note svg{flex:0 0 auto;margin-top:2px;color:#8e7967}
+@media(max-width:600px){.kit-finished-example-note{font-size:11px;line-height:1.6;padding:10px 12px;margin:8px 0 18px}}
