@@ -1,0 +1,43 @@
+name: Audit Mayra official gallery source evidence
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-mayra-gallery.yml'
+      - 'lib/mayra-gallery-catalogue.ts'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify all eleven named groups, original URLs and prototype labels
+        run: |
+          python3 - <<'PY'
+          import json,re,time,urllib.request
+          path='lib/mayra-gallery-catalogue.ts'
+          s=open(path,encoding='utf8').read()
+          m=re.search(r'export const mayraOriginalKits:VerifiedKit\[\]=([\s\S]*?);\s*$',s)
+          assert m
+          kits=json.loads(m.group(1))
+          expected=['Mariana','Summer','Roberto','Renata','Reuben','Ruby','Lark','Alouette','Deryn','Sparrow','Teal']
+          assert [k['name'] for k in kits]==expected
+          assert len({k['slug'] for k in kits})==11
+          assert [len(k['photos']) for k in kits]==[1,4,5,7,5,7,6,7,5,5,5]
+          assert all(k['artistSlug']=='mayra-garza' and k['material']=='vinyl' for k in kits)
+          assert all('prototype' in p['credit'].lower() for k in kits for p in k['photos'])
+          assert all(p['url'].startswith('https://i0.wp.com/mayragarza.com/wp-content/uploads/') for k in kits for p in k['photos'])
+          for k in kits:
+            u=k['photos'][0]['url']
+            req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0 (compatible; RebornaArtistSourceAudit/1.0)','Accept':'image/*'})
+            with urllib.request.urlopen(req,timeout=20) as res:
+              assert res.status==200,(k['name'],res.status)
+              assert res.headers.get('Content-Type','').lower().startswith('image/'),(k['name'],res.headers.get('Content-Type'))
+              assert res.read(32),k['name']
+            print('PASS first original image for',k['name'],flush=True)
+            time.sleep(.25)
+          print('PASS 11 official-source sculpt identities and their source-hosted primary photographs. No kit published by this audit.')
+          PY
