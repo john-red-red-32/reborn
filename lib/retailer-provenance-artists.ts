@@ -48,6 +48,15 @@ export const retailerProvenanceArtists:VerifiedArtist[]=[
     "name": "Laura Lee Eagles",
     "website": "https://lauraleeoriginals.com/",
     "bio": "Laura Lee Eagles creates original reborn doll sculpts and historical vinyl kit editions. A published sculptor interview and specialist dealer catalogue document her original designs, including full-size babies and miniature kits.",
-    "source": "https://lauraleeoriginals.com/"
+    "source": "https://lauraleeoriginals.com/",
+    "images": [
+      {
+        "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Alfie-by-Laura-Lee-Eagles-10.jpg",
+        "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-lee-eagles/alfie-by-laura-lee-eagles.htm",
+        "credit": "MacPherson Arts & Crafts — Alfie reborn sculpt example by Laura Lee Eagles; sculpt artwork, not an artist portrait",
+        "role": "banner",
+        "reviewStatus": "source_identified"
+      }
+    ]
   }
 ];
