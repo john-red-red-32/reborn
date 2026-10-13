@@ -1,0 +1,98 @@
+name: Discover Bonnie and Doris Wix sources
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/discover-wix-cohort.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: discover-wix-sculptors
+  cancel-in-progress: false
+jobs:
+  discover:
+    name: Wix audit ${{ matrix.artist }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        include:
+          - artist: bonnie-brown
+            url: https://www.bonniebrowndolls.com/
+          - artist: doris-moyers-hornbogen
+            url: https://www.dmhsculptures.com/
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate discovery scripts
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_match_artist_catalogue.py' -v
+          python3 -m compileall -q scripts
+      - name: Explore robots-permitted original artist site pages
+        run: |
+          python3 scripts/discover_artist_site.py \
+            --url "${{ matrix.url }}" --max-pages 18 --delay 1.0 \
+            --out artifacts/source-discovery.json
+      - name: Extract explicit product schema as research evidence
+        run: |
+          python3 scripts/extract_sculpt_candidates.py \
+            --input artifacts/source-discovery.json --out artifacts/extraction-candidates.json
+      - name: Prepare browser for artist-owned Wix galleries
+        run: |
+          python3 -m pip install playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Inspect any documented named Wix galleries
+        run: |
+          python3 scripts/extract_wix_galleries.py \
+            --input artifacts/source-discovery.json --out artifacts/wix-gallery-evidence.json
+      - name: Reconcile named gallery designs only with matching artist
+        run: |
+          python3 scripts/match_artist_catalogue.py \
+            --gallery artifacts/wix-gallery-evidence.json \
+            --manifest config/artist-sources/${{ matrix.artist }}.json \
+            --out artifacts/artist-identity-matches.json
+      - name: Print coverage and uncertainty for editorial review
+        run: |
+          python3 - <<'PY'
+          import json
+          a=json.load(open('artifacts/source-discovery.json'))
+          b=json.load(open('artifacts/extraction-candidates.json'))
+          c=json.load(open('artifacts/wix-gallery-evidence.json'))
+          print('Wix source:',a['source'])
+          print('Pages scanned:',a['pages_succeeded'],'errors:',a['errors'][:5])
+          print('Detected platforms:',a['platforms'])
+          print('Structured product candidates:',b['candidate_count'])
+          print('Named Wix cards:',c['kit_cards_found'])
+          print('Other photos held for review:',c['unverified_gallery_photos_found'])
+          print('Research only. No catalogue or images published.')
+          PY
+      - name: Save public-source evidence to separate scrape-results branch
+        if: success()
+        env:
+          SOURCE_URL: ${{ matrix.url }}
+          SOURCE_RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 scripts/save_discovery_snapshot.py \
+            --input-dir artifacts --output-dir /tmp/reborna-wix-cohort \
+            --url "$SOURCE_URL" --run-id "$SOURCE_RUN_ID"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin scrape-results
+          git checkout -B scrape-results origin/scrape-results
+          mkdir -p snapshots
+          cp -R /tmp/reborna-wix-cohort/. snapshots/
+          git add snapshots
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive Wix sculptor scan ${{ matrix.artist }} ${{ github.run_id }} [skip ci]"
+            git push origin HEAD:scrape-results
+          fi
+      - name: Preserve downloadable source diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wix-${{ matrix.artist }}-${{ github.run_id }}
+          path: artifacts/*.json
+          retention-days: 30
+          if-no-files-found: warn
