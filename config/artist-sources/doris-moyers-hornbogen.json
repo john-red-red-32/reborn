@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "artist_id": "doris-moyers-hornbogen",
+  "display_name": "Doris Moyers-Hornbogen",
+  "source_name": "Doris Moyers-Hornbogen official sculptor website",
+  "allowed_hosts": [
+    "www.dmhsculptures.com",
+    "dmhsculptures.com"
+  ],
+  "platform": "wix",
+  "currency": "USD",
+  "accepted_names": [],
+  "approved_aliases": {},
+  "notes": "Evidence-only Wix cohort. Keep finished doll photos, clay originals, blank kits and dealer links distinct; no automatic publication or kit-image pairing."
+}
