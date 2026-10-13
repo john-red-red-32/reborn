@@ -223,6 +223,76 @@ export const recoveredKitPhotos:Record<string,NonNullable<VerifiedKit["photos"]>
       "credit": "Phil Donnelly Babies — original Teddy kit featured reborn photograph; individual painter credited on the source image",
       "source": "https://www.phildonnellybabies.co.uk/product-page/teddy-donnelly"
     }
+  ],
+  "zahli-laura-tuzio-ross": [
+    {
+      "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Zahli%20by%20Laura%20Tuzio%20Ross%20003%20K.png",
+      "credit": "MacPherson Arts & Crafts — named retailer product photograph",
+      "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross"
+    }
+  ],
+  "lil-jude-laura-tuzio-ross": [
+    {
+      "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/lil-jude-by-laura-tuzio-ross-001sdp.jpg",
+      "credit": "MacPherson Arts & Crafts — named retailer product photograph",
+      "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross"
+    }
+  ],
+  "kodi-bear-laura-tuzio-ross": [
+    {
+      "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Kodi-Bear-by-Laura-Tuzio-Ross-001sdp.jpg",
+      "credit": "MacPherson Arts & Crafts — named retailer product photograph",
+      "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross"
+    }
+  ],
+  "winter-laura-tuzio-ross": [
+    {
+      "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Winter-by-Laura-Tuzio-Ross-001-K.jpg",
+      "credit": "MacPherson Arts & Crafts — named retailer product photograph",
+      "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-tuzio-ross"
+    }
+  ],
+  "kai-gudrun-legler": [
+    {
+      "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Kai-by-Gudrun-Legler-002-k.jpg",
+      "credit": "MacPherson Arts & Crafts — named retailer product photograph",
+      "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40"
+    }
+  ],
+  "ana-gudrun-legler": [
+    {
+      "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Ana-by-Gudrun-Legler-002-k.jpg",
+      "credit": "MacPherson Arts & Crafts — named retailer product photograph",
+      "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40"
+    }
+  ],
+  "romy-gudrun-legler": [
+    {
+      "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Romy-by-Gudrun-Legler-002-k3.jpg",
+      "credit": "MacPherson Arts & Crafts — named retailer product photograph",
+      "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40"
+    }
+  ],
+  "felicia-gudrun-legler": [
+    {
+      "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Felicia-by-Gudrun-Legler-003-k.jpg",
+      "credit": "MacPherson Arts & Crafts — named retailer product photograph",
+      "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40"
+    }
+  ],
+  "tayra-gudrun-legler": [
+    {
+      "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Tayra-by-Gudrun-Legler-0.jpg",
+      "credit": "MacPherson Arts & Crafts — named retailer product photograph",
+      "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40"
+    }
+  ],
+  "aleyna-gudrun-legler": [
+    {
+      "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Alenya-by-Gudrun-Legler-201.jpg",
+      "credit": "MacPherson Arts & Crafts — named retailer product photograph",
+      "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/gudrun-legler/by%2Cordering/results%2C1-40"
+    }
   ]
 };
 export const recoveredArtistCovers:Record<string,ArtistImage[]>={
