@@ -3,7 +3,7 @@
   "host": "msartdolls.com",
   "parser_version": "url-discovery-v2-platform-sitemaps",
   "started_from": "https://msartdolls.com/",
-  "completed_at": "2026-10-13T16:06:34.780910+00:00",
+  "completed_at": "2026-10-13T16:09:20.923489+00:00",
   "page_limit": 8,
   "sitemap_discovered_urls": 26,
   "platforms": {
@@ -29,8 +29,8 @@
     {
       "url": "https://msartdolls.com/",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:06:22.941976+00:00",
-      "sha256_html": "bdfc36a0f0539bcbc75d538f7b2b9f9013ea230c188c71b7d27ef7a3b21d4013",
+      "observed_at": "2026-10-13T16:09:06.600171+00:00",
+      "sha256_html": "1d8d9dfa61145b372b9cee55dc8690d4c164326b121f1f8eddaa6bc9185f1173",
       "title": "Maissa Said Art Dolls",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -42,8 +42,8 @@
         "og:description": "Maissa Said Art Dolls",
         "twitter:title": "Maissa Said Art Dolls",
         "twitter:description": "Maissa Said Art Dolls",
-        "shopify-y": "cc13ba8d-6131-4bbf-a79e-60563cbae894",
-        "shopify-s": "86a916c4-2af6-4591-af61-070388d4eba2"
+        "shopify-y": "f61ca288-0b53-440a-b298-c44b43996ca8",
+        "shopify-s": "b0d86428-9756-4aff-85b1-875af622c53f"
       },
       "structured_data": [
         {
@@ -111,8 +111,8 @@
     {
       "url": "https://msartdolls.com/cart",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:06:24.145379+00:00",
-      "sha256_html": "e2fc9cacd873d0855a15281b4d0cd3181e51338ca7ca22f8e0d2f68200a0e83a",
+      "observed_at": "2026-10-13T16:09:07.763846+00:00",
+      "sha256_html": "1d7ae8f6ed5ef872fbc6a5694ce338fc2edba392c44bf4e88d6531417b5e648a",
       "title": "Your Shopping Cart– Maissa Said Art Dolls",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -124,8 +124,8 @@
         "og:description": "Maissa Said Art Dolls",
         "twitter:title": "Your Shopping Cart",
         "twitter:description": "Maissa Said Art Dolls",
-        "shopify-y": "17e4834f-caf1-44e3-b108-51a3b5438d2f",
-        "shopify-s": "19b848ae-9ec8-485e-aa55-13e716ba692f"
+        "shopify-y": "41b09139-3850-4430-ae94-431614a819f6",
+        "shopify-s": "b24da32a-cc28-4683-a83d-0951052994f8"
       },
       "structured_data": [
         {
@@ -182,8 +182,8 @@
     {
       "url": "https://msartdolls.com/collections/all",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:06:25.412144+00:00",
-      "sha256_html": "f94602c2d0a8c7ad7a1a4dfa03ae9314b2c70ccb400c177cdb69ae4a063756c6",
+      "observed_at": "2026-10-13T16:09:08.993922+00:00",
+      "sha256_html": "555f501a9cc45ce8aaadd68e6b5ec014b0521d543e7290c9f32cc75aac2b37e0",
       "title": "Products– Maissa Said Art Dolls",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -195,8 +195,8 @@
         "og:description": "Maissa Said Art Dolls",
         "twitter:title": "Products",
         "twitter:description": "Maissa Said Art Dolls",
-        "shopify-y": "5a42f04e-f9ad-45e8-a645-32a0d2bb2865",
-        "shopify-s": "9707a7c3-db79-45e4-8c0b-4732f62dd3d7"
+        "shopify-y": "1bf48f46-c7e1-455c-a004-f97f59d28eb1",
+        "shopify-s": "7ca8583a-ef04-496a-b4aa-03b90bffda03"
       },
       "structured_data": [
         {
@@ -261,8 +261,8 @@
     {
       "url": "https://msartdolls.com/collections",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:06:26.644494+00:00",
-      "sha256_html": "a003d8cf1e208b3d9d98cc2e56c7e6a5115341ec0f3587ed32c2693d23f7f9c9",
+      "observed_at": "2026-10-13T16:09:10.306034+00:00",
+      "sha256_html": "3def35b45600baad4fd62480d5593fb2b2c8a1dc40f61d85821d18c9284cbc52",
       "title": "Collections– Maissa Said Art Dolls",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -274,8 +274,8 @@
         "og:description": "Maissa Said Art Dolls",
         "twitter:title": "Collections",
         "twitter:description": "Maissa Said Art Dolls",
-        "shopify-y": "02a04f66-4835-4f3e-89e3-dab931601cca",
-        "shopify-s": "1c149cd8-5e02-4bd3-b30b-aa1ddc1efbf5"
+        "shopify-y": "5e3fea90-e401-4912-af5f-121558107517",
+        "shopify-s": "7f280554-7123-486e-b547-388074113650"
       },
       "structured_data": [
         {
@@ -346,8 +346,8 @@
     {
       "url": "https://msartdolls.com/search",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:06:30.039707+00:00",
-      "sha256_html": "7d2f3155736eb2335a5dbcdaf2df243d8013806f004751a0a281cb401be893ff",
+      "observed_at": "2026-10-13T16:09:15.398595+00:00",
+      "sha256_html": "86f4b80bab3411276e2337400eb1f316f67dae77483f468509c919e870b4d02d",
       "title": "Search– Maissa Said Art Dolls",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -359,8 +359,8 @@
         "og:description": "Maissa Said Art Dolls",
         "twitter:title": "Search",
         "twitter:description": "Maissa Said Art Dolls",
-        "shopify-y": "9f514918-62ea-4e32-b2a0-05740468e94e",
-        "shopify-s": "54a80a34-2ae9-4ab4-a017-41db6c62860e"
+        "shopify-y": "216db000-4833-47e0-bfa5-ea673424fad1",
+        "shopify-s": "9f03e1e8-6a3c-4d6b-9776-81a29cb7b9ae"
       },
       "structured_data": [
         {
@@ -416,8 +416,8 @@
     {
       "url": "https://msartdolls.com/blogs/news",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:06:31.393703+00:00",
-      "sha256_html": "89cabaaa8d59dbd493fddf6771daba45dcef6ca6d59d8af8cf063c22125ddf8f",
+      "observed_at": "2026-10-13T16:09:16.855372+00:00",
+      "sha256_html": "b3fcb1a97897a7b6e02542432aad659076f6cf16cddfb5c57067f7c4848ddb9b",
       "title": "News– Maissa Said Art Dolls",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -429,8 +429,8 @@
         "og:description": "Maissa Said Art Dolls",
         "twitter:title": "News",
         "twitter:description": "Maissa Said Art Dolls",
-        "shopify-y": "99f94a5a-73b2-4c11-914a-44332af109f8",
-        "shopify-s": "20ec4bff-f4da-4f27-9ae8-966efb0f435f"
+        "shopify-y": "d9975e1e-8e9c-45ab-b078-391281667e7c",
+        "shopify-s": "70e1da8f-1a3c-4110-b03a-a8a7f07deea9"
       },
       "structured_data": [
         {
@@ -487,8 +487,8 @@
     {
       "url": "https://msartdolls.com/collections/frontpage",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:06:32.596315+00:00",
-      "sha256_html": "9932c1eed638f17a96ff4782bd502d60851cc83aecc669784f482537bc2f5840",
+      "observed_at": "2026-10-13T16:09:18.725430+00:00",
+      "sha256_html": "92ff6a9ca0841c9772852db4eeb0b8fd65879b2c4db0e27343c6b6367f07db7e",
       "title": "Available Dolls– Maissa Said Art Dolls",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -500,8 +500,8 @@
         "og:description": "Maissa Said Art Dolls",
         "twitter:title": "Available Dolls",
         "twitter:description": "Maissa Said Art Dolls",
-        "shopify-y": "fb566099-7543-4f6a-822c-59988c13858b",
-        "shopify-s": "f900bdb4-bcad-4033-a807-2934e4f91314"
+        "shopify-y": "0d12b05b-4e3f-4ec6-829a-3831e99dcea8",
+        "shopify-s": "c3ec70be-f997-46d8-8859-d7c8bb18791c"
       },
       "structured_data": [
         {
@@ -566,8 +566,8 @@
     {
       "url": "https://msartdolls.com/es",
       "platform": "shopify",
-      "observed_at": "2026-10-13T16:06:33.780678+00:00",
-      "sha256_html": "6dff431b247787ebfc346e733e697d87588563154b72fdc891e12853832b1846",
+      "observed_at": "2026-10-13T16:09:19.923258+00:00",
+      "sha256_html": "2338b1656c2ef5cf0831136c8aa4abf5014e7cf37e9543ef2b5154ade5122ea8",
       "title": "Maissa Said Art Dolls",
       "metadata": {
         "viewport": "width=device-width,initial-scale=1",
@@ -579,8 +579,8 @@
         "og:description": "Maissa Said Art Dolls",
         "twitter:title": "Maissa Said Art Dolls",
         "twitter:description": "Maissa Said Art Dolls",
-        "shopify-y": "ed426914-e8f4-497e-87d1-971971eebf0e",
-        "shopify-s": "e123ea63-bb65-464e-9361-17730679146d"
+        "shopify-y": "92faa72a-9519-4dc0-bd92-2738b99de85c",
+        "shopify-s": "0b8ea820-cadc-414d-87c7-76f46bd22b73"
       },
       "structured_data": [
         {
