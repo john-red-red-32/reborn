@@ -1,0 +1,115 @@
+name: Discover Shopify sculptor cohort
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/discover-shopify-cohort.yml'
+      - 'scripts/extract_shopify_kits.py'
+      - 'scripts/test_shopify_adapter.py'
+      - 'config/artist-sources/melody-hess.json'
+      - 'config/artist-sources/kristin-englert.json'
+      - 'config/artist-sources/maissa-said.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shopify-sculptor-cohort
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    name: Audit ${{ matrix.artist }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 13
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        include:
+          - artist: melody-hess
+            url: https://www.melodyhessdolls.com/
+            name: Melody Hess
+            currency: USD
+          - artist: kristin-englert
+            url: https://siliconeartdolls.com/
+            name: Kristin Englert
+            currency: USD
+          - artist: maissa-said
+            url: https://msartdolls.com/
+            name: Maissa Said
+            currency: USD
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate adapter and artist safety tests
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_shopify_adapter.py' -v
+          python3 -m unittest discover -s scripts -p 'test_match_artist_catalogue.py' -v
+          python3 -m compileall -q scripts
+      - name: Crawl permitted public artist pages
+        run: |
+          python3 scripts/discover_artist_site.py \
+            --url "${{ matrix.url }}" \
+            --max-pages 8 --delay 1.0 --out artifacts/source-discovery.json
+      - name: Extract structured product evidence
+        run: |
+          python3 scripts/extract_sculpt_candidates.py \
+            --input artifacts/source-discovery.json --out artifacts/extraction-candidates.json
+      - name: Extract public Shopify source kits, no publication
+        run: |
+          python3 scripts/extract_shopify_kits.py \
+            --input artifacts/source-discovery.json \
+            --artist-name "${{ matrix.name }}" \
+            --currency "${{ matrix.currency }}" \
+            --max-products 90 --delay 1.25 --out artifacts/shopify-kit-candidates.json
+      - name: Reconcile against artist-scoped identity manifest
+        run: |
+          python3 scripts/match_artist_catalogue.py \
+            --gallery artifacts/shopify-kit-candidates.json \
+            --manifest config/artist-sources/${{ matrix.artist }}.json \
+            --out artifacts/artist-identity-matches.json
+      - name: Print research-only summary
+        run: |
+          python3 - <<'PY'
+          import json
+          x=json.load(open('artifacts/shopify-kit-candidates.json'))
+          print('Artist:',x.get('artist_name'))
+          print('Storefront status:',x.get('status'),'coverage:',x.get('coverage'))
+          print('Products seen:',x.get('products_seen',0))
+          print('Original kit candidates:',x.get('original_kit_candidates',0))
+          print('Review needed:',x.get('uncertain_products',0))
+          print('Excluded finished dolls:',x.get('finished_dolls_excluded',0))
+          print('Errors:',x.get('errors',[])[:3])
+          print('No kit listings or images have been published.')
+          PY
+      - name: Save evidence on scrape-results branch
+        if: success()
+        env:
+          SOURCE_URL: ${{ matrix.url }}
+          SOURCE_RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 scripts/save_discovery_snapshot.py \
+            --input-dir artifacts \
+            --output-dir /tmp/reborna-shopify-cohort \
+            --url "$SOURCE_URL" \
+            --run-id "$SOURCE_RUN_ID"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin scrape-results
+          git checkout -B scrape-results origin/scrape-results
+          mkdir -p snapshots
+          cp -R /tmp/reborna-shopify-cohort/. snapshots/
+          git add snapshots
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive Shopify cohort artist evidence ${{ matrix.artist }} ${{ github.run_id }} [skip ci]"
+            git push origin HEAD:scrape-results
+          fi
+      - name: Preserve diagnostic artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shopify-${{ matrix.artist }}-${{ github.run_id }}
+          path: artifacts/*.json
+          retention-days: 30
+          if-no-files-found: warn
