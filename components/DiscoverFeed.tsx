@@ -4,6 +4,8 @@ import Link from "next/link";
 import {ArrowUpRight,Heart,Search,X} from "lucide-react";
 import {verifiedKits,kitArtist} from "../lib/real-catalogue";
 import {cassieOfficialImages} from "../lib/cassie-images";
+import MaterialFilter from "./MaterialFilter";
+import {matchesSculptMaterial,type MaterialFilterValue} from "../lib/sculpt-material";
 import {sculptStatus,statusNames,statusTone,type DisplayStatus} from "../lib/sculpt-status";
 
 type FeedFilter="all"|"available"|"preorder";
@@ -20,17 +22,18 @@ const storedKey="reborna-saved-original-kits";
 export default function DiscoverFeed(){
  const[term,setTerm]=useState("");
  const[filter,setFilter]=useState<FeedFilter>("all");
+ const[material,setMaterial]=useState<MaterialFilterValue>("all");
  const[limit,setLimit]=useState(BATCH_SIZE);
  const[saved,setSaved]=useState<string[]>([]);
  const sentinel=useRef<HTMLDivElement|null>(null);
  useEffect(()=>{try{const result=JSON.parse(localStorage.getItem(storedKey)||"[]");if(Array.isArray(result))setSaved(result.filter(x=>typeof x==="string"));}catch{}},[]);
  const items=useMemo(()=>verifiedKits.filter(k=>{
    const state=sculptStatus(k);
-   return (filter==="all"||filter==="available"&&state==="available"||filter==="preorder"&&state==="preorder_open")
+   return matchesSculptMaterial(k.material,material)&&(filter==="all"||filter==="available"&&state==="available"||filter==="preorder"&&state==="preorder_open")
      &&(k.name+" "+(kitArtist(k.artistSlug)?.name||"")).toLocaleLowerCase("en").includes(term.trim().toLocaleLowerCase("en"));
  }).sort((a,b)=>sortRank[sculptStatus(a)]-sortRank[sculptStatus(b)]||
-   (b.statusChecked||"").localeCompare(a.statusChecked||"")||a.name.localeCompare(b.name)),[filter,term]);
- useEffect(()=>{setLimit(BATCH_SIZE)},[filter,term]);
+   (b.statusChecked||"").localeCompare(a.statusChecked||"")||a.name.localeCompare(b.name)),[filter,material,term]);
+ useEffect(()=>{setLimit(BATCH_SIZE)},[filter,material,term]);
  useEffect(()=>{
    const node=sentinel.current;
    if(!node||limit>=items.length||typeof IntersectionObserver==="undefined")return;
@@ -56,6 +59,7 @@ export default function DiscoverFeed(){
    <div className="discover-feed-tools">
      <label className="discover-feed-search"><Search size={18}/><input type="search" value={term} onChange={e=>setTerm(e.target.value)} placeholder="Find a sculpt or artist" aria-label="Search the sculpt collection"/>{term&&<button type="button" onClick={()=>setTerm("")} aria-label="Clear search"><X size={16}/></button>}</label>
      <div className="discover-feed-filters" role="group" aria-label="Filter original kits">{(["all","available","preorder"] as FeedFilter[]).map(key=><button key={key} className={filter===key?"active":""} type="button" onClick={()=>setFilter(key)} aria-pressed={filter===key}>{filterLabels[key]}</button>)}</div>
+     <MaterialFilter value={material} onChange={setMaterial}/>
    </div>
    <div className="discover-feed-count" aria-live="polite">Showing {Math.min(limit,items.length)} of {items.length} documented {items.length===1?"sculpt":"sculpts"}{saved.length>0&&<span> · {saved.length} saved</span>}</div>
    {items.length?<div className="discover-feed-grid">{items.slice(0,limit).map(kit=>{
@@ -69,7 +73,7 @@ export default function DiscoverFeed(){
        <button className={saved.includes(kit.slug)?"discover-save saved":"discover-save"} type="button" onClick={()=>toggleSave(kit.slug)} aria-label={saved.includes(kit.slug)?"Remove "+kit.name+" from saved sculpts":"Save "+kit.name} aria-pressed={saved.includes(kit.slug)}><Heart size={18} fill={saved.includes(kit.slug)?"currentColor":"none"}/></button>
        <div className="discover-feed-copy"><Link className="discover-feed-sculptor" href={`/artists/${kit.artistSlug}/`}>{kitArtist(kit.artistSlug)?.name||"Original sculptor"}</Link><Link className="discover-feed-name" href={`/kits/${kit.slug}/`}>{kit.name}<ArrowUpRight size={16}/></Link>{kit.sizeDescription&&<small>{kit.sizeDescription}</small>}{!kit.sizeDescription&&kit.edition&&<small>{kit.edition}</small>}</div>
      </article>
-   })}</div>:<div className="discover-feed-empty"><h3>Nothing matching just yet.</h3><p>Try another artist or browse the full sculpt collection.</p><button type="button" onClick={()=>{setFilter("all");setTerm("")}}>Show all sculpts</button></div>}
+   })}</div>:<div className="discover-feed-empty"><h3>Nothing matching just yet.</h3><p>Try another artist or material. Kits without confirmed materials appear under All materials.</p><button type="button" onClick={()=>{setFilter("all");setMaterial("all");setTerm("")}}>Show all sculpts</button></div>}
    {items.length>limit&&<div className="discover-feed-load" ref={sentinel}><p>More original sculpts ahead</p><button type="button" onClick={()=>setLimit(value=>Math.min(value+BATCH_SIZE,items.length))}>Show more kits</button></div>}
    {items.length>0&&limit>=items.length&&<div className="discover-feed-end"><span>✧</span><p>You've explored every documented sculpt in this view. New originals will join the collection as sources are verified.</p><Link href="/artists/">Meet the artists <ArrowUpRight size={14}/></Link></div>}
    <p className="discover-feed-note">Availability and prices are dated seller observations, not guaranteed live stock. Purchases take place on the original artist's or retailer's website. Saved sculpts are stored only in this browser.</p>
