@@ -1,10 +1,11 @@
 {
-  "github_run_id": "38430146893",
+  "github_run_id": "38430698562",
   "source": "https://www.bonniebrowndolls.com/",
   "paths": [
-    "runs/38430146893/source-discovery.json",
-    "runs/38430146893/extraction-candidates.json",
-    "runs/38430146893/wix-gallery-evidence.json",
-    "runs/38430146893/artist-identity-matches.json"
+    "runs/38430698562/source-discovery.json",
+    "runs/38430698562/extraction-candidates.json",
+    "runs/38430698562/wix-gallery-evidence.json",
+    "runs/38430698562/artist-identity-matches.json",
+    "runs/38430698562/wix-named-image-evidence.json"
   ]
 }

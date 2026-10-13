@@ -1,0 +1,90 @@
+{
+  "adapter": "wix-named-image-alt-v1",
+  "source": "https://www.bonniebrowndolls.com/",
+  "source_scan_at": "2026-10-13T16:28:16.224663+00:00",
+  "pages_checked": [
+    "https://www.bonniebrowndolls.com/doll-kits"
+  ],
+  "kit_candidates": [
+    {
+      "title": "Twin B",
+      "material": "vinyl",
+      "source_page": "https://www.bonniebrowndolls.com/doll-kits",
+      "original_asset_url": "https://static.wixstatic.com/media/2a652c_2f709f921c85492c97805cdb17c5f49a.jpg",
+      "image_alt": "Twin B - Available Now",
+      "source_status_claim": "available now",
+      "sculpt_identity": "source_named_requires_review",
+      "multiple_designs_possible": false,
+      "image_rights": "artist_hosted_reference_only",
+      "evidence": "Named image alt on the artist's dedicated kit collection page",
+      "review_status": "unreviewed"
+    },
+    {
+      "title": "Twin A",
+      "material": "vinyl",
+      "source_page": "https://www.bonniebrowndolls.com/doll-kits",
+      "original_asset_url": "https://static.wixstatic.com/media/2a652c_21eb106fe5a44361965c4a058195f6fb.jpg",
+      "image_alt": "Twin A - Available Now",
+      "source_status_claim": "available now",
+      "sculpt_identity": "source_named_requires_review",
+      "multiple_designs_possible": false,
+      "image_rights": "artist_hosted_reference_only",
+      "evidence": "Named image alt on the artist's dedicated kit collection page",
+      "review_status": "unreviewed"
+    },
+    {
+      "title": "Laura",
+      "material": "vinyl",
+      "source_page": "https://www.bonniebrowndolls.com/doll-kits",
+      "original_asset_url": "https://static.wixstatic.com/media/2a652c_9f968a5ad57e4b4bb6890faee5756dfc~mv2.jpg",
+      "image_alt": "Laura - Available Now",
+      "source_status_claim": "available now",
+      "sculpt_identity": "source_named_requires_review",
+      "multiple_designs_possible": false,
+      "image_rights": "artist_hosted_reference_only",
+      "evidence": "Named image alt on the artist's dedicated kit collection page",
+      "review_status": "unreviewed"
+    },
+    {
+      "title": "Milla and Ronnie",
+      "material": "vinyl",
+      "source_page": "https://www.bonniebrowndolls.com/doll-kits",
+      "original_asset_url": "https://static.wixstatic.com/media/2a652c_b1d11fec1d3a4433860fba51f6bb46cc~mv2.jpg",
+      "image_alt": "Milla and Ronnie - Sold Out",
+      "source_status_claim": "sold out",
+      "sculpt_identity": "source_named_requires_review",
+      "multiple_designs_possible": true,
+      "image_rights": "artist_hosted_reference_only",
+      "evidence": "Named image alt on the artist's dedicated kit collection page",
+      "review_status": "unreviewed"
+    },
+    {
+      "title": "Buggy",
+      "material": "vinyl",
+      "source_page": "https://www.bonniebrowndolls.com/doll-kits",
+      "original_asset_url": "https://static.wixstatic.com/media/2a652c_bf111109316e494c9a6bdd3617561c31~mv2.jpg",
+      "image_alt": "Buggy - Sold Out",
+      "source_status_claim": "sold out",
+      "sculpt_identity": "source_named_requires_review",
+      "multiple_designs_possible": false,
+      "image_rights": "artist_hosted_reference_only",
+      "evidence": "Named image alt on the artist's dedicated kit collection page",
+      "review_status": "unreviewed"
+    },
+    {
+      "title": "Grayson",
+      "material": "vinyl",
+      "source_page": "https://www.bonniebrowndolls.com/doll-kits",
+      "original_asset_url": "https://static.wixstatic.com/media/2a652c_08f285a5251c470da60b7d33d75d2981.jpg",
+      "image_alt": "Grayson - Sold Out",
+      "source_status_claim": "sold out",
+      "sculpt_identity": "source_named_requires_review",
+      "multiple_designs_possible": false,
+      "image_rights": "artist_hosted_reference_only",
+      "evidence": "Named image alt on the artist's dedicated kit collection page",
+      "review_status": "unreviewed"
+    }
+  ],
+  "kit_cards_found": 6,
+  "notice": "Only artist-page named image evidence. Source stock labels are historical claims; no product identity, stock or usage rights automatically confirmed."
+}
