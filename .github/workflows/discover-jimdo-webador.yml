@@ -1,0 +1,89 @@
+name: Discover Jimdo and Webador sculptors
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/discover-jimdo-webador.yml'
+      - 'config/artist-sources/sabine-altenkirch-junkes.json'
+      - 'config/artist-sources/gudrun-legler.json'
+      - 'config/artist-sources/severine-piret.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: sculptor-jimdo-webador
+  cancel-in-progress: false
+jobs:
+  discover:
+    name: Research ${{ matrix.artist }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        include:
+          - artist: sabine-altenkirch-junkes
+            url: https://www.sabine-altenkirch.com/startseite-home/shop/
+          - artist: gudrun-legler
+            url: https://www.gudrun-legler-onlineshop.de/online-shop/
+          - artist: severine-piret
+            url: https://www.severinepiret.com/vinyl-kit
+    steps:
+      - uses: actions/checkout@v4
+      - name: Crawl source pages within public robots policy
+        run: |
+          python3 scripts/discover_artist_site.py \
+            --url "${{ matrix.url }}" --max-pages 24 --delay 1.0 \
+            --out artifacts/source-discovery.json
+      - name: Extract source-linked structured product records
+        run: |
+          python3 scripts/extract_sculpt_candidates.py \
+            --input artifacts/source-discovery.json \
+            --out artifacts/extraction-candidates.json
+      - name: Print research coverage
+        run: |
+          python3 - <<'PY'
+          import json
+          a=json.load(open('artifacts/source-discovery.json'))
+          b=json.load(open('artifacts/extraction-candidates.json'))
+          print('Source:',a['source'])
+          print('Platform:',a['platforms'])
+          print('Pages:',a['pages_succeeded'],'candidate products:',b['candidate_count'])
+          print('Errors:',a['errors'][:5])
+          print('Names:',[x['name'] for x in b['candidates'][:15]])
+          print('Research evidence only; no public listing published.')
+          PY
+      - name: Safely archive researcher evidence outside the website branch
+        if: success()
+        env:
+          SOURCE_URL: ${{ matrix.url }}
+          SOURCE_RUN_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          python3 scripts/save_discovery_snapshot.py \
+            --input-dir artifacts --output-dir /tmp/reborna-jimdo \
+            --url "$SOURCE_URL" --run-id "$SOURCE_RUN_ID"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin scrape-results
+          git checkout -B scrape-results origin/scrape-results
+          cp -R /tmp/reborna-jimdo/. snapshots/
+          git add snapshots
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive Jimdo/Webador artist ${{ matrix.artist }} ${{ github.run_id }} [skip ci]"
+            for attempt in 1 2 3 4 5 6; do
+              if git push origin HEAD:scrape-results; then exit 0; fi
+              git fetch origin scrape-results
+              git rebase origin/scrape-results || { git rebase --abort; exit 1; }
+              sleep 2
+            done
+            exit 1
+          fi
+      - name: Preserve review artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jimdo-webador-${{ matrix.artist }}-${{ github.run_id }}
+          path: artifacts/*.json
+          retention-days: 30
