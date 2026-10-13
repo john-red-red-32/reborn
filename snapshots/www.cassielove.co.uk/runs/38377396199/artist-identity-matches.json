@@ -1,0 +1,281 @@
+{
+  "artist_id": "cassie-ann-love",
+  "exact_and_approved_matches": [
+    {
+      "source_name": "Leo",
+      "canonical_name": "Leo",
+      "method": "exact"
+    },
+    {
+      "source_name": "Lucas",
+      "canonical_name": "Lucas",
+      "method": "exact"
+    },
+    {
+      "source_name": "Winnie",
+      "canonical_name": "Winnie",
+      "method": "exact"
+    },
+    {
+      "source_name": "Immy",
+      "canonical_name": "Immy",
+      "method": "exact"
+    },
+    {
+      "source_name": "Susie",
+      "canonical_name": "Susie",
+      "method": "exact"
+    },
+    {
+      "source_name": "Maeve",
+      "canonical_name": "Maeve",
+      "method": "exact"
+    },
+    {
+      "source_name": "Otillie",
+      "canonical_name": "Otillie",
+      "method": "exact"
+    },
+    {
+      "source_name": "Estella",
+      "canonical_name": "Estella",
+      "method": "exact"
+    },
+    {
+      "source_name": "Elliot",
+      "canonical_name": "Elliot",
+      "method": "exact"
+    },
+    {
+      "source_name": "Sebby",
+      "canonical_name": "Sebby",
+      "method": "exact"
+    },
+    {
+      "source_name": "Peaches",
+      "canonical_name": "Peaches",
+      "method": "exact"
+    },
+    {
+      "source_name": "Samuel",
+      "canonical_name": "Samuel",
+      "method": "exact"
+    },
+    {
+      "source_name": "Miley",
+      "canonical_name": "Miley",
+      "method": "exact"
+    },
+    {
+      "source_name": "Willa",
+      "canonical_name": "Willa",
+      "method": "exact"
+    },
+    {
+      "source_name": "Macie",
+      "canonical_name": "Macie",
+      "method": "exact"
+    },
+    {
+      "source_name": "Remi-Ashton",
+      "canonical_name": "Remi-Ashton",
+      "method": "exact"
+    },
+    {
+      "source_name": "Ava",
+      "canonical_name": "Ava",
+      "method": "exact"
+    },
+    {
+      "source_name": "Nevaeh",
+      "canonical_name": "Nevaeh",
+      "method": "exact"
+    },
+    {
+      "source_name": "Pip",
+      "canonical_name": "Pip",
+      "method": "exact"
+    },
+    {
+      "source_name": "Alexis",
+      "canonical_name": "Alexis",
+      "method": "exact"
+    },
+    {
+      "source_name": "Ruby",
+      "canonical_name": "Ruby",
+      "method": "exact"
+    },
+    {
+      "source_name": "Ramsey",
+      "canonical_name": "Ramsey",
+      "method": "exact"
+    },
+    {
+      "source_name": "Luciano",
+      "canonical_name": "Luciano",
+      "method": "exact"
+    },
+    {
+      "source_name": "Margot",
+      "canonical_name": "Margot",
+      "method": "exact"
+    },
+    {
+      "source_name": "Asia",
+      "canonical_name": "Asia",
+      "method": "exact"
+    },
+    {
+      "source_name": "Ethon",
+      "canonical_name": "Ethon",
+      "method": "exact"
+    },
+    {
+      "source_name": "Luxe",
+      "canonical_name": "Luxe",
+      "method": "exact"
+    },
+    {
+      "source_name": "Genevieve",
+      "canonical_name": "Genevieve",
+      "method": "exact"
+    },
+    {
+      "source_name": "Josephine",
+      "canonical_name": "Josephine",
+      "method": "exact"
+    },
+    {
+      "source_name": "Roux",
+      "canonical_name": "Roux",
+      "method": "exact"
+    },
+    {
+      "source_name": "Bluebell",
+      "canonical_name": "Bluebell",
+      "method": "exact"
+    },
+    {
+      "source_name": "Evelyn",
+      "canonical_name": "Evelyn",
+      "method": "exact"
+    },
+    {
+      "source_name": "Sailor Rose",
+      "canonical_name": "Sailor Rose",
+      "method": "exact"
+    },
+    {
+      "source_name": "Tigerlily",
+      "canonical_name": "Tigerlily",
+      "method": "exact"
+    },
+    {
+      "source_name": "Esmae",
+      "canonical_name": "Esmae",
+      "method": "exact"
+    },
+    {
+      "source_name": "Zoey",
+      "canonical_name": "Zoey",
+      "method": "exact"
+    },
+    {
+      "source_name": "Nova",
+      "canonical_name": "Nova",
+      "method": "exact"
+    },
+    {
+      "source_name": "Xander",
+      "canonical_name": "Xander",
+      "method": "exact"
+    },
+    {
+      "source_name": "Elyse",
+      "canonical_name": "Elyse",
+      "method": "exact"
+    },
+    {
+      "source_name": "Toby",
+      "canonical_name": "Toby",
+      "method": "exact"
+    },
+    {
+      "source_name": "Leelou",
+      "canonical_name": "Leelou",
+      "method": "exact"
+    },
+    {
+      "source_name": "Nellie",
+      "canonical_name": "Nellie",
+      "method": "exact"
+    },
+    {
+      "source_name": "Phoenix",
+      "canonical_name": "Phoenix",
+      "method": "exact"
+    },
+    {
+      "source_name": "Zachary",
+      "canonical_name": "Zachary",
+      "method": "exact"
+    },
+    {
+      "source_name": "Stanley",
+      "canonical_name": "Stanley",
+      "method": "exact"
+    },
+    {
+      "source_name": "Junior",
+      "canonical_name": "Junior",
+      "method": "exact"
+    },
+    {
+      "source_name": "Ella",
+      "canonical_name": "Ella",
+      "method": "exact"
+    },
+    {
+      "source_name": "Hattie",
+      "canonical_name": "Hattie",
+      "method": "exact"
+    }
+  ],
+  "requires_review": [
+    {
+      "source_name": "Romily",
+      "suggestions": [
+        "Romilly"
+      ],
+      "state": "manual_review_required"
+    },
+    {
+      "source_name": "Sienna Rae",
+      "suggestions": [
+        "Sienna"
+      ],
+      "state": "manual_review_required"
+    }
+  ],
+  "not_seen_in_source": [
+    "Alessandro Awake",
+    "Harriet",
+    "Rosie",
+    "Noa",
+    "Lovan",
+    "Alessandro",
+    "Edith",
+    "Laurie",
+    "Elsie",
+    "Wilby",
+    "Marley",
+    "Romilly",
+    "Sienna"
+  ],
+  "duplicate_source_names": [],
+  "note": "Never assume an unobserved accepted sculpt has been removed or sold out.",
+  "manifest_version": 1,
+  "source": "https://www.cassielove.co.uk/",
+  "source_scan_at": "2026-10-13T09:36:11.287293+00:00"
+}
