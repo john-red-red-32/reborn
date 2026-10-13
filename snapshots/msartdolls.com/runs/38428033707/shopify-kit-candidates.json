@@ -1,0 +1,1379 @@
+{
+  "adapter": "shopify-original-kit-v2-artist-scoped",
+  "source": "https://msartdolls.com/",
+  "observed_at": "2026-10-13T16:10:34.590457+00:00",
+  "platform_detected": {
+    "shopify": 8
+  },
+  "products": [
+    {
+      "shopify_product_id": "9251077980404",
+      "handle": "brielle-bobby-asleep",
+      "source_url": "https://msartdolls.com/products/brielle-bobby-asleep",
+      "source_scan_at": "2026-10-13T16:10:34.590457+00:00",
+      "source_sha256": "8376a608ab7e36881e83ea4433ff19723922bc4fe945d1e6a825e34680b7199e",
+      "name": "Brielle/Bobby Asleep",
+      "sculpt_name_candidate": "Brielle/Bobby Asleep",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "original_kit_candidate",
+      "classification_basis": "seller_explicit_blank_kit_owner_needs_review",
+      "description": "Quick Details *** Please note: this listing is for a BLANK/unpainted doll *** Length: 20 inches or 51cm Weight: 7lb 14oz or 3.6 kilos Price: $1950 in Super Soft Blend or $1850 EcoFlex 20 Open mouth with tongue and visible upper gums Description Brielle is 20 inches from head to heel with straightened legs (19 inches with bent legs). She weighs 7lb 14oz, and is poured in one piece with platinum silicone by The Dainty Loft Molding. She is available in EcoFlex 20 or Super Soft Blend. Her mouth is open, has a tongue and visible upper gums, and can take a standard newborn pacifier. She is also available as “Bobby”, the boy version of this kit. Her price for a blank kit is: $1950 in Super Soft Blend or $1850 in EcoFlex 20. **** OPTIONAL FEATURES **** Armature can be added for $155 in the arms and $210 in the arms and legs. Drink and wet is not available for Brielle Asleep. **** LAYAWAY AVAILABLE **** The non-refundable deposit to reserve your kit is 15% of the price. I provide a flexible pay-as-you-can layaway plan, and can negotiate a timeline that suits you. If you would like the layaway plan, enter the discount code DEPOSIT-ONLY and you will pay 15% of the price. I will then send you an invoice for the balance plus shipping. If you have any questions or would prefer to receive a PayPal invoice, please message me and I would be happy to send you one. ***** SHIPPING ***** Shipping is $88 in the U.S.A. and Canada, $135 for international and $156 for Australia. Once I receive your payment, I will invoice you for the shipping. Please message me if you have questions about shipping fees or customs in your country.",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "47347161661684",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Girl ($1950) / No Armature (+0$)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Girl ($1950)",
+            "Armature": "No Armature (+0$)"
+          },
+          "price_native": 1950.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/brielle-bobby-asleep"
+        },
+        {
+          "shopify_variant_id": "47347188728052",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Girl ($1950) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Girl ($1950)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 2105.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/brielle-bobby-asleep"
+        },
+        {
+          "shopify_variant_id": "47347188760820",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Girl ($1950) / Arm and Leg Armature (+$210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Girl ($1950)",
+            "Armature": "Arm and Leg Armature (+$210)"
+          },
+          "price_native": 2160.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/brielle-bobby-asleep"
+        },
+        {
+          "shopify_variant_id": "47347161694452",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Boy ($1950) / No Armature (+0$)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Boy ($1950)",
+            "Armature": "No Armature (+0$)"
+          },
+          "price_native": 1950.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/brielle-bobby-asleep"
+        },
+        {
+          "shopify_variant_id": "47347188793588",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Boy ($1950) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Boy ($1950)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 2105.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/brielle-bobby-asleep"
+        },
+        {
+          "shopify_variant_id": "47347188826356",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Boy ($1950) / Arm and Leg Armature (+$210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Boy ($1950)",
+            "Armature": "Arm and Leg Armature (+$210)"
+          },
+          "price_native": 2160.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/brielle-bobby-asleep"
+        },
+        {
+          "shopify_variant_id": "47347161727220",
+          "seller_sku": null,
+          "label": "EcoFlex 20 - Girl ($1850) / No Armature (+0$)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 - Girl ($1850)",
+            "Armature": "No Armature (+0$)"
+          },
+          "price_native": 1850.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/brielle-bobby-asleep"
+        },
+        {
+          "shopify_variant_id": "47347188859124",
+          "seller_sku": null,
+          "label": "EcoFlex 20 - Girl ($1850) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 - Girl ($1850)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 2005.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/brielle-bobby-asleep"
+        },
+        {
+          "shopify_variant_id": "47347188891892",
+          "seller_sku": null,
+          "label": "EcoFlex 20 - Girl ($1850) / Arm and Leg Armature (+$210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 - Girl ($1850)",
+            "Armature": "Arm and Leg Armature (+$210)"
+          },
+          "price_native": 2060.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/brielle-bobby-asleep"
+        },
+        {
+          "shopify_variant_id": "47347161759988",
+          "seller_sku": null,
+          "label": "EcoFlec 20 - Boy ($1850) / No Armature (+0$)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlec 20 - Boy ($1850)",
+            "Armature": "No Armature (+0$)"
+          },
+          "price_native": 1850.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/brielle-bobby-asleep"
+        },
+        {
+          "shopify_variant_id": "47347188924660",
+          "seller_sku": null,
+          "label": "EcoFlec 20 - Boy ($1850) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlec 20 - Boy ($1850)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 2005.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/brielle-bobby-asleep"
+        },
+        {
+          "shopify_variant_id": "47347188957428",
+          "seller_sku": null,
+          "label": "EcoFlec 20 - Boy ($1850) / Arm and Leg Armature (+$210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlec 20 - Boy ($1850)",
+            "Armature": "Arm and Leg Armature (+$210)"
+          },
+          "price_native": 2060.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/brielle-bobby-asleep"
+        }
+      ],
+      "variant_total": 12,
+      "distinct_full_prices": [
+        1850.0,
+        1950.0,
+        2005.0,
+        2060.0,
+        2105.0,
+        2160.0
+      ],
+      "from_price_native": 1850.0,
+      "has_genuine_full_price_range": true,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSCN1043_17.jpg?v=1768861317",
+          "id": "50205783752948",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/face.jpg?v=1770929201",
+          "id": "50767966404852",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/6e7802ab-7cef-4d5d-b282-b15915d6b2ae.jpg?v=1783705272",
+          "id": "53310091428084",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/body.jpg?v=1770929201",
+          "id": "50767967781108",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/Full_Body_shot.jpg?v=1783705278",
+          "id": "53310092214516",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/Cover_134299c0-6ce6-4f5b-853e-c436ba406d29.jpg?v=1783706774",
+          "id": "53310164500724",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/635e9ff6-8ce5-48ea-9c0a-5a6214df5064.jpg?v=1783705262",
+          "id": "53310091100404",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/15f72148-6f20-47f3-a080-92d31528f441_146dbcd9-4eb7-4c1f-a45d-e5493ad8bede.jpg?v=1783705327",
+          "id": "53310095393012",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/65a.jpg?v=1783706141",
+          "id": "53310132781300",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/1_c849407c-f8ca-4696-a734-88db65101cc0.jpg?v=1783706789",
+          "id": "53310169776372",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/9a_fe6c9080-604e-4b55-8ff5-0626b625d065.jpg?v=1783706137",
+          "id": "53310132551924",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/92f24f10-9dae-4400-a2d6-7cb9fead8c2f.jpg?v=1770929201",
+          "id": "50600120025332",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC_3440.jpg?v=1770929201",
+          "id": "50600263778548",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSCN1051_1.jpg?v=1770929201",
+          "id": "50206119592180",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSCN1043_41.jpg?v=1770929201",
+          "id": "50206113595636",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSCN1043_25.jpg?v=1770929201",
+          "id": "50205681090804",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC_3404.jpg?v=1770929201",
+          "id": "50600121696500",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSCN1043_32.jpg?v=1770929201",
+          "id": "50206104748276",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSCN1043_24.jpg?v=1770929201",
+          "id": "50205680500980",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSCN1051_3.jpg?v=1770929201",
+          "id": "50206121296116",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC_3412.jpg?v=1770929201",
+          "id": "50600257880308",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/Untitled_Project.png?v=1770929201",
+          "id": "50600562098420",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/IMG_6794_2.jpg?v=1770929201",
+          "id": "50207866454260",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2026-01-23T00:09:39-05:00",
+      "created_at": "2025-12-25T16:18:32-05:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "8194526970100",
+      "handle": "annelene-andrew-asleep",
+      "source_url": "https://msartdolls.com/products/annelene-andrew-asleep",
+      "source_scan_at": "2026-10-13T16:10:34.590457+00:00",
+      "source_sha256": "8376a608ab7e36881e83ea4433ff19723922bc4fe945d1e6a825e34680b7199e",
+      "name": "Annelene/Andrew Asleep",
+      "sculpt_name_candidate": "Annelene/Andrew Asleep",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "original_kit_candidate",
+      "classification_basis": "seller_explicit_blank_kit_owner_needs_review",
+      "description": "Quick Details *** Please note: this listing is for a BLANK/unpainted doll *** Length: 17.5 inches or 44.5cm Weight: 5lb 6oz or 2.4 kilos Price: $1550 in EcoFlex 20/$1650 in Super Soft Blend Open mouth with visible upper gums. Tongue can be added for $75. Description Annelene Asleep is 17.5 inches long with bent knees, weighs 5lb 6oz, and is poured in one piece in platinum silicone by The Dainty Loft Molding. She is available in EcoFlex 20 or Super Soft Blend. She has an open mouth with visible upper gums sculpted inside. She is also available as “Andrew”, the boy version of this kit. Her price for a blank kit is: $1550 US plus shipping in EcoFlex 20 and $1650 in Super Soft Blend. **** OPTIONAL FEATURES **** Armature can be added in the arms for $155. Drink and wet is not available for Annelene Asleep. A tongue can be added and the inner mouth lengthened for $75. Please message me if you would like that feature. **** LAYAWAY AVAILABLE **** The non-refundable deposit to reserve your kit is 15% of the price. I provide a flexible pay-as-you-can layaway plan, and can negotiate a timeline that suits you. If you would like the layaway plan, enter the discount code DEPOSIT-ONLY and you will pay 15% of the price. I will then send you an invoice for the balance plus shipping. If you have any questions or would prefer to receive a PayPal invoice, please message me and I would be happy to send you one. ***** SHIPPING ***** Shipping is $88 in the U.S.A. and Canada, $135 for international and $156 for Australia. Once I receive your payment, I will invoice you for the shipping. Please message me if you have questions about shipping fees or customs in your country.",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "44139208868084",
+          "seller_sku": null,
+          "label": "EcoFlex 20 Blend - Girl ($1550) / No Armature (+$0)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 Blend - Girl ($1550)",
+            "Armature": "No Armature (+$0)"
+          },
+          "price_native": 1550.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/annelene-andrew-asleep"
+        },
+        {
+          "shopify_variant_id": "44145636475124",
+          "seller_sku": null,
+          "label": "EcoFlex 20 Blend - Girl ($1550) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 Blend - Girl ($1550)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 1705.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/annelene-andrew-asleep"
+        },
+        {
+          "shopify_variant_id": "48570448380148",
+          "seller_sku": null,
+          "label": "EcoFlex 20 Blend - Girl ($1550) / Arm and Leg Armature ($210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 Blend - Girl ($1550)",
+            "Armature": "Arm and Leg Armature ($210)"
+          },
+          "price_native": 1760.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/annelene-andrew-asleep"
+        },
+        {
+          "shopify_variant_id": "44139208900852",
+          "seller_sku": null,
+          "label": "EcoFlex 20 - Blend - Boy ($1550) / No Armature (+$0)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 - Blend - Boy ($1550)",
+            "Armature": "No Armature (+$0)"
+          },
+          "price_native": 1550.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/annelene-andrew-asleep"
+        },
+        {
+          "shopify_variant_id": "44145636737268",
+          "seller_sku": null,
+          "label": "EcoFlex 20 - Blend - Boy ($1550) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 - Blend - Boy ($1550)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 1705.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/annelene-andrew-asleep"
+        },
+        {
+          "shopify_variant_id": "48570448412916",
+          "seller_sku": null,
+          "label": "EcoFlex 20 - Blend - Boy ($1550) / Arm and Leg Armature ($210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 - Blend - Boy ($1550)",
+            "Armature": "Arm and Leg Armature ($210)"
+          },
+          "price_native": 1760.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/annelene-andrew-asleep"
+        },
+        {
+          "shopify_variant_id": "44145636933876",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Girl ($1650) / No Armature (+$0)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Girl ($1650)",
+            "Armature": "No Armature (+$0)"
+          },
+          "price_native": 1650.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/annelene-andrew-asleep"
+        },
+        {
+          "shopify_variant_id": "44145637032180",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Girl ($1650) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Girl ($1650)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 1805.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/annelene-andrew-asleep"
+        },
+        {
+          "shopify_variant_id": "48570448445684",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Girl ($1650) / Arm and Leg Armature ($210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Girl ($1650)",
+            "Armature": "Arm and Leg Armature ($210)"
+          },
+          "price_native": 1860.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/annelene-andrew-asleep"
+        },
+        {
+          "shopify_variant_id": "44145637228788",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Boy ($1650) / No Armature (+$0)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Boy ($1650)",
+            "Armature": "No Armature (+$0)"
+          },
+          "price_native": 1650.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/annelene-andrew-asleep"
+        },
+        {
+          "shopify_variant_id": "44145637327092",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Boy ($1650) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Boy ($1650)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 1805.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/annelene-andrew-asleep"
+        },
+        {
+          "shopify_variant_id": "48570448478452",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Boy ($1650) / Arm and Leg Armature ($210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Boy ($1650)",
+            "Armature": "Arm and Leg Armature ($210)"
+          },
+          "price_native": 1860.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/annelene-andrew-asleep"
+        }
+      ],
+      "variant_total": 12,
+      "distinct_full_prices": [
+        1550.0,
+        1650.0,
+        1705.0,
+        1760.0,
+        1805.0,
+        1860.0
+      ],
+      "from_price_native": 1550.0,
+      "has_genuine_full_price_range": true,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/117078949_10157716544103299_5999227912624693054_n_704x480_crop_center_65708175-a9e7-4786-911a-d5c049d15b8d.webp?v=1694557343",
+          "id": "40020436582644",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC_5785_1_672x448_crop_center_21ab8a21-4b20-4993-a467-fb61c6a84dc3.webp?v=1695593448",
+          "id": "40042411229428",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC_5786_1_672x448_crop_center_09df68da-0436-460e-86bf-765ae7267182.webp?v=1695704709",
+          "id": "40042409722100",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/48_1376x1824_crop_center_9e13f302-fb54-4360-a3b8-11c0be94a194.webp?v=1695704709",
+          "id": "40042410115316",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC_6004.jpg?v=1695704709",
+          "id": "40073809821940",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC_6000_672x448_crop_center_25a6e99d-c036-4566-b348-bd02497a0456.webp?v=1695704709",
+          "id": "40042409918708",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/22.jpg?v=1695708601",
+          "id": "40074002923764",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC_5773_1_672x448_crop_center_c7dbaab8-5d2e-4db7-b790-ec5ad4dd6711.webp?v=1695708601",
+          "id": "40042411131124",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC_5793_1_672x448_crop_center_cd4c9024-0fe0-4591-8a8f-51281d74e471.webp?v=1695708601",
+          "id": "40042411163892",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC_5810_1_672x448_crop_center_cfecac5a-38d5-4d68-bdee-bc06bc0df058.webp?v=1695708601",
+          "id": "40042409591028",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC_5974.jpg?v=1695708601",
+          "id": "40073809395956",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC_5805_1_672x448_crop_center_f7071b61-45ca-49f8-b2a2-4a747a5d1f05.webp?v=1695708601",
+          "id": "40042409427188",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/Bi-racial_1_672x448_crop_center_d5755332-b3e0-4ad0-8e6f-f75d9c4ccdfd.webp?v=1695708601",
+          "id": "40042409525492",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2025-02-23T13:28:26-05:00",
+      "created_at": "2023-09-12T18:22:22-04:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    },
+    {
+      "shopify_product_id": "8574626234612",
+      "handle": "kaillie-kellan-asleep-copy",
+      "source_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy",
+      "source_scan_at": "2026-10-13T16:10:34.590457+00:00",
+      "source_sha256": "8376a608ab7e36881e83ea4433ff19723922bc4fe945d1e6a825e34680b7199e",
+      "name": "Kaillie/Kellan Asleep",
+      "sculpt_name_candidate": "Kaillie/Kellan Asleep",
+      "sculpt_name_basis": "retailer_title_review",
+      "source_product_type": "",
+      "classification": "original_kit_candidate",
+      "classification_basis": "seller_explicit_blank_kit_owner_needs_review",
+      "description": "Quick Details *** Please note: this listing is for a BLANK/unpainted doll *** Length: 19 .5 inches or 49.5cm Weight: 7lb 6oz or 3. 3 kilos Price: $1850 in Super Soft Blend or $1750 EcoFlex 20 Open mouth with tongue Description Kaillie is 19.5 inches from head to heel with straightened legs (18-19 inches with bent legs). She weighs 7lb 6oz, and is poured in one piece in platinum silicone by The Dainty Loft Molding. She is available in EcoFlex 20 or Super Soft Blend. Her mouth opens, has a tongue inside, and can take a standard newborn pacifier. She is also available as “Kellan”, the boy version of this kit. Her price for a blank kit is: $1850 in Super Soft Blend or $1750 in EcoFlex 20. **** OPTIONAL FEATURES **** Kaillie has a very special feature - a custom made umbilical cord stump which I sculpted to attach magnetically to her belly button in a perfect fit. This option can be added for $75 and comes with a clamp. Armature can be added for $105 in the arms and $210 in the arms and legs. Drink and wet is not available for Kaillie Asleep. **** LAYAWAY AVAILABLE **** The non-refundable deposit to reserve your kit is 15% of the price. I provide a flexible pay-as-you-can layaway plan, and can negotiate a timeline that suits you. If you would like the layaway plan, enter the discount code DEPOSIT-ONLY and you will pay 15% of the price. I will then send you an invoice for the balance plus shipping. If you have any questions or would prefer to receive a PayPal invoice, please message me and I would be happy to send you one. ***** SHIPPING ***** Shipping is $88 in the U.S.A. and Canada, $135 for international and $156 for Australia. Once I receive your payment, I will invoice you for the shipping. Please message me if you have questions about shipping fees or customs in your country.",
+      "published_kit_facts": {
+        "published_kit_length": null,
+        "published_head_circumference": null,
+        "edition_size": null,
+        "cloth_body": null,
+        "coa": null,
+        "manufacturer": null,
+        "sculptor": null,
+        "belly_plate_offered": false,
+        "belly_plate_addon_price_gbp": null
+      },
+      "sculpt_material_candidate": "silicone",
+      "material_review_required": false,
+      "currency": "USD",
+      "variants": [
+        {
+          "shopify_variant_id": "45175663493364",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Girl ($1850) / No Umbilical Cord Stump (+0) / No Armature (+$0)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Girl ($1850)",
+            "Umbilical Cord Stump": "No Umbilical Cord Stump (+0)",
+            "Armature": "No Armature (+$0)"
+          },
+          "price_native": 1850.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "45175663526132",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Girl ($1850) / No Umbilical Cord Stump (+0) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Girl ($1850)",
+            "Umbilical Cord Stump": "No Umbilical Cord Stump (+0)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 2005.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "45175663558900",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Girl ($1850) / No Umbilical Cord Stump (+0) / Arm and Leg Armature (+$210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Girl ($1850)",
+            "Umbilical Cord Stump": "No Umbilical Cord Stump (+0)",
+            "Armature": "Arm and Leg Armature (+$210)"
+          },
+          "price_native": 2060.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "45175663591668",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Girl ($1850) / Umbilical Cord Stump (+$75) / No Armature (+$0)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Girl ($1850)",
+            "Umbilical Cord Stump": "Umbilical Cord Stump (+$75)",
+            "Armature": "No Armature (+$0)"
+          },
+          "price_native": 1925.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "45175663624436",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Girl ($1850) / Umbilical Cord Stump (+$75) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Girl ($1850)",
+            "Umbilical Cord Stump": "Umbilical Cord Stump (+$75)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 2080.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "45175663657204",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Girl ($1850) / Umbilical Cord Stump (+$75) / Arm and Leg Armature (+$210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Girl ($1850)",
+            "Umbilical Cord Stump": "Umbilical Cord Stump (+$75)",
+            "Armature": "Arm and Leg Armature (+$210)"
+          },
+          "price_native": 2135.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "45175663689972",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Boy ($1850) / No Umbilical Cord Stump (+0) / No Armature (+$0)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Boy ($1850)",
+            "Umbilical Cord Stump": "No Umbilical Cord Stump (+0)",
+            "Armature": "No Armature (+$0)"
+          },
+          "price_native": 1850.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "45175663722740",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Boy ($1850) / No Umbilical Cord Stump (+0) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Boy ($1850)",
+            "Umbilical Cord Stump": "No Umbilical Cord Stump (+0)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 2005.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "45175663755508",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Boy ($1850) / No Umbilical Cord Stump (+0) / Arm and Leg Armature (+$210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Boy ($1850)",
+            "Umbilical Cord Stump": "No Umbilical Cord Stump (+0)",
+            "Armature": "Arm and Leg Armature (+$210)"
+          },
+          "price_native": 2060.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "45175663788276",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Boy ($1850) / Umbilical Cord Stump (+$75) / No Armature (+$0)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Boy ($1850)",
+            "Umbilical Cord Stump": "Umbilical Cord Stump (+$75)",
+            "Armature": "No Armature (+$0)"
+          },
+          "price_native": 1925.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "45175663821044",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Boy ($1850) / Umbilical Cord Stump (+$75) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Boy ($1850)",
+            "Umbilical Cord Stump": "Umbilical Cord Stump (+$75)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 2080.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "45175663853812",
+          "seller_sku": null,
+          "label": "Super Soft Blend - Boy ($1850) / Umbilical Cord Stump (+$75) / Arm and Leg Armature (+$210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "Super Soft Blend - Boy ($1850)",
+            "Umbilical Cord Stump": "Umbilical Cord Stump (+$75)",
+            "Armature": "Arm and Leg Armature (+$210)"
+          },
+          "price_native": 2135.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "46007589175540",
+          "seller_sku": null,
+          "label": "EcoFlex 20 Blend - Girl ($1750) / No Umbilical Cord Stump (+0) / No Armature (+$0)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 Blend - Girl ($1750)",
+            "Umbilical Cord Stump": "No Umbilical Cord Stump (+0)",
+            "Armature": "No Armature (+$0)"
+          },
+          "price_native": 1750.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "46007589208308",
+          "seller_sku": null,
+          "label": "EcoFlex 20 Blend - Girl ($1750) / No Umbilical Cord Stump (+0) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 Blend - Girl ($1750)",
+            "Umbilical Cord Stump": "No Umbilical Cord Stump (+0)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 1905.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "46007589241076",
+          "seller_sku": null,
+          "label": "EcoFlex 20 Blend - Girl ($1750) / No Umbilical Cord Stump (+0) / Arm and Leg Armature (+$210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 Blend - Girl ($1750)",
+            "Umbilical Cord Stump": "No Umbilical Cord Stump (+0)",
+            "Armature": "Arm and Leg Armature (+$210)"
+          },
+          "price_native": 1960.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "46007589273844",
+          "seller_sku": null,
+          "label": "EcoFlex 20 Blend - Girl ($1750) / Umbilical Cord Stump (+$75) / No Armature (+$0)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 Blend - Girl ($1750)",
+            "Umbilical Cord Stump": "Umbilical Cord Stump (+$75)",
+            "Armature": "No Armature (+$0)"
+          },
+          "price_native": 1825.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "46007589306612",
+          "seller_sku": null,
+          "label": "EcoFlex 20 Blend - Girl ($1750) / Umbilical Cord Stump (+$75) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 Blend - Girl ($1750)",
+            "Umbilical Cord Stump": "Umbilical Cord Stump (+$75)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 1980.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "46007589339380",
+          "seller_sku": null,
+          "label": "EcoFlex 20 Blend - Girl ($1750) / Umbilical Cord Stump (+$75) / Arm and Leg Armature (+$210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 Blend - Girl ($1750)",
+            "Umbilical Cord Stump": "Umbilical Cord Stump (+$75)",
+            "Armature": "Arm and Leg Armature (+$210)"
+          },
+          "price_native": 2035.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "46007589372148",
+          "seller_sku": null,
+          "label": "EcoFlex 20 Blend - Boy ($1750) / No Umbilical Cord Stump (+0) / No Armature (+$0)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 Blend - Boy ($1750)",
+            "Umbilical Cord Stump": "No Umbilical Cord Stump (+0)",
+            "Armature": "No Armature (+$0)"
+          },
+          "price_native": 1750.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "46007589404916",
+          "seller_sku": null,
+          "label": "EcoFlex 20 Blend - Boy ($1750) / No Umbilical Cord Stump (+0) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 Blend - Boy ($1750)",
+            "Umbilical Cord Stump": "No Umbilical Cord Stump (+0)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 1905.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "46007589437684",
+          "seller_sku": null,
+          "label": "EcoFlex 20 Blend - Boy ($1750) / No Umbilical Cord Stump (+0) / Arm and Leg Armature (+$210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 Blend - Boy ($1750)",
+            "Umbilical Cord Stump": "No Umbilical Cord Stump (+0)",
+            "Armature": "Arm and Leg Armature (+$210)"
+          },
+          "price_native": 1960.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "46007589470452",
+          "seller_sku": null,
+          "label": "EcoFlex 20 Blend - Boy ($1750) / Umbilical Cord Stump (+$75) / No Armature (+$0)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 Blend - Boy ($1750)",
+            "Umbilical Cord Stump": "Umbilical Cord Stump (+$75)",
+            "Armature": "No Armature (+$0)"
+          },
+          "price_native": 1825.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "46007589503220",
+          "seller_sku": null,
+          "label": "EcoFlex 20 Blend - Boy ($1750) / Umbilical Cord Stump (+$75) / Arm Armature (+$155)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 Blend - Boy ($1750)",
+            "Umbilical Cord Stump": "Umbilical Cord Stump (+$75)",
+            "Armature": "Arm Armature (+$155)"
+          },
+          "price_native": 1980.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        },
+        {
+          "shopify_variant_id": "46007589535988",
+          "seller_sku": null,
+          "label": "EcoFlex 20 Blend - Boy ($1750) / Umbilical Cord Stump (+$75) / Arm and Leg Armature (+$210)",
+          "option_values": {
+            "Silicone Type and Gender of Doll": "EcoFlex 20 Blend - Boy ($1750)",
+            "Umbilical Cord Stump": "Umbilical Cord Stump (+$75)",
+            "Armature": "Arm and Leg Armature (+$210)"
+          },
+          "price_native": 2035.0,
+          "compare_at_price_native": null,
+          "price_kind": "full_purchase",
+          "availability_flag": true,
+          "image_id": null,
+          "source_product_url": "https://msartdolls.com/products/kaillie-kellan-asleep-copy"
+        }
+      ],
+      "variant_total": 24,
+      "distinct_full_prices": [
+        1750.0,
+        1825.0,
+        1850.0,
+        1905.0,
+        1925.0,
+        1960.0,
+        1980.0,
+        2005.0,
+        2035.0,
+        2060.0,
+        2080.0,
+        2135.0
+      ],
+      "from_price_native": 1750.0,
+      "has_genuine_full_price_range": true,
+      "pricing_review_required": false,
+      "pricing_review_reason": null,
+      "seller_availability_flags": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC6363_704x480_crop_center_c20729fe-f3f8-4e44-947f-1eb835236706.webp?v=1715368233",
+          "id": "41565998383348",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/329564734_746353420057648_5009509149846456777_n_4bdf6b83-d92e-4623-91e6-3a66ed1c0cc2.jpg?v=1737226896",
+          "id": "41565998416116",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/Blankkit_360fd93c-b5ee-4d10-8d3f-cd60e5c90f07.jpg?v=1737226896",
+          "id": "41565998448884",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC6475_f25df2f1-45fa-4301-9231-91cffebcfa0e.jpg?v=1737226896",
+          "id": "41565998481652",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/330174666_1854966804877405_6628162632455506469_n_edf60979-f97c-4f31-b457-5ba375a31413.jpg?v=1737226896",
+          "id": "41565998514420",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/prototypeKristieSohn-Carwithen_9175f0da-8aa3-4e72-aa6f-2c044741dd98.jpg?v=1737226896",
+          "id": "41565998547188",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC6763_881f6060-7a96-43e9-835a-ce462119dd9b.jpg?v=1737226896",
+          "id": "41565998579956",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/prototypeMariaLynnGrover_c78c49fd-d036-4151-8832-79e8ef1d2034.jpg?v=1737226896",
+          "id": "41565998612724",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/329990230_1347120382528209_7117421568388820729_n_bb672a18-380e-4fd5-bec4-a6ec90479216.jpg?v=1737226896",
+          "id": "41565998678260",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC6602_94f48154-418f-475d-94ad-2f5996cc1ec4.jpg?v=1737226896",
+          "id": "41565998711028",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC6583_fda6f024-a515-4bb5-9396-91bc057d9980.jpg?v=1737226896",
+          "id": "41565998743796",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC6595_4eb26900-cf67-46ec-bb92-6429c89be6f7.jpg?v=1737226896",
+          "id": "41565998776564",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0664/6743/0644/files/DSC6477_f1c4b89c-44a0-45dd-9168-5dd39a62a439.jpg?v=1737226896",
+          "id": "41565998842100",
+          "alt": "",
+          "variant_ids": [],
+          "role": "unreviewed_kit_or_prototype",
+          "rights": "not_granted"
+        }
+      ],
+      "published_at": "2025-02-23T12:56:53-05:00",
+      "created_at": "2024-05-10T15:10:04-04:00",
+      "review_status": "unreviewed",
+      "rights_status": "not_authorized_for_mirroring",
+      "notes": [
+        "Deposit is never a full item price.",
+        "Prototype photographs do not automatically represent blank kits."
+      ]
+    }
+  ],
+  "errors": [],
+  "coverage": "index_enumerated",
+  "source_kind": "public_shopify_product_json",
+  "artist_name": "Maissa Said",
+  "currency": "USD",
+  "status": "scanned",
+  "products_seen": 3,
+  "original_kit_candidates": 3,
+  "finished_dolls_excluded": 0,
+  "component_or_non_kit_excluded": 0,
+  "uncertain_products": 0
+}

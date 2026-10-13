@@ -1,0 +1,650 @@
+{
+  "source": "https://msartdolls.com/",
+  "host": "msartdolls.com",
+  "parser_version": "url-discovery-v2-platform-sitemaps",
+  "started_from": "https://msartdolls.com/",
+  "completed_at": "2026-10-13T16:10:34.490517+00:00",
+  "page_limit": 8,
+  "sitemap_discovered_urls": 26,
+  "platforms": {
+    "shopify": 8
+  },
+  "pages_checked": 11,
+  "pages_succeeded": 8,
+  "queue_remaining": 36,
+  "complete": false,
+  "errors": [
+    {
+      "url": "https://msartdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+      "reason": "UnicodeEncodeError",
+      "detail": "'ascii' codec can't encode character '\\xae' in position 47: ordinal not in range(128)"
+    },
+    {
+      "url": "https://msartdolls.com/products/kaillie-kellan",
+      "reason": "HTTPError",
+      "detail": "HTTP Error 404: Not Found"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://msartdolls.com/",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:10:21.304804+00:00",
+      "sha256_html": "1606f07324f497b001bc0781f8570683a398c268dab063cd993cd52923dc8410",
+      "title": "Maissa Said Art Dolls",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "shopify-digital-wallet": "/66467430644/digital_wallets/dialog",
+        "og:site_name": "Maissa Said Art Dolls",
+        "og:url": "https://msartdolls.com/",
+        "og:title": "Maissa Said Art Dolls",
+        "og:type": "website",
+        "og:description": "Maissa Said Art Dolls",
+        "twitter:title": "Maissa Said Art Dolls",
+        "twitter:description": "Maissa Said Art Dolls",
+        "shopify-y": "82f9c381-8591-442a-acca-6dd8c2825642",
+        "shopify-s": "49aea021-3284-4f20-b898-572a4b7adf72"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "Maissa Said Art Dolls",
+          "url": "https://msartdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901 1x, //msartdolls.com/cdn/shop/files/try_610x570.png?v=1665685901 2x, //msartdolls.com/cdn/shop/files/try_915x855.png?v=1665685901 3x, //msartdolls.com/cdn/shop/files/try_1220x1140.png?v=1665685901 4x"
+        },
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/face_1500x2000_crop_center.jpg?v=1770929201",
+          "alt": "Brielle/Bobby Asleep: Edition Now Open",
+          "srcset": "//msartdolls.com/cdn/shop/files/face_1500x2000_crop_center.jpg?v=1770929201 1x, //msartdolls.com/cdn/shop/files/face_1530x2040_crop_center.jpg?v=1770929201 1.02x"
+        },
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/330566949_1824992294544557_5172847966734097262_n_1500x2000_crop_center.jpg?v=1676245511",
+          "alt": "Baby Kellan Asleep Prototype",
+          "srcset": "//msartdolls.com/cdn/shop/files/330566949_1824992294544557_5172847966734097262_n_1500x2000_crop_center.jpg?v=1676245511 1x, //msartdolls.com/cdn/shop/files/330566949_1824992294544557_5172847966734097262_n_1530x2040_crop_center.jpg?v=1676245511 1.02x"
+        },
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/hKFiVJ_576x768_crop_center.jpg?v=1664694614",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/hKFiVJ_576x768_crop_center.jpg?v=1664694614 1x"
+        },
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/15966766_1879546708999180_436786018_o_copy_5_852x1136_crop_center.jpg?v=1664694859",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/15966766_1879546708999180_436786018_o_copy_5_852x1136_crop_center.jpg?v=1664694859 1x"
+        },
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/a431eca5-dc88-431e-be22-5cb02333190c_1000x667_crop_center.jpg?v=1664558658",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/a431eca5-dc88-431e-be22-5cb02333190c_1000x667_crop_center.jpg?v=1664558658 1x"
+        }
+      ],
+      "links": [
+        "https://msartdolls.com/",
+        "https://msartdolls.com/cart",
+        "https://msartdolls.com/collections",
+        "https://msartdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+        "https://msartdolls.com/pages/about-the-artist",
+        "https://msartdolls.com/pages/contact",
+        "https://msartdolls.com/pages/customer-showcase",
+        "https://msartdolls.com/pages/frequently-asked-questions",
+        "https://msartdolls.com/pages/gallery-of-past-works",
+        "https://msartdolls.com/pages/gallery-ooak",
+        "https://msartdolls.com/pages/gallery-resin",
+        "https://msartdolls.com/pages/gallery-silicone",
+        "https://msartdolls.com/pages/gallery-vinyl",
+        "https://msartdolls.com/pages/the-sculpting-process",
+        "https://msartdolls.com/products/annelene-andrew-asleep",
+        "https://msartdolls.com/products/brielle-bobby-asleep",
+        "https://msartdolls.com/products/kaillie-kellan",
+        "https://msartdolls.com/products/kaillie-kellan-asleep-copy",
+        "https://msartdolls.com/search"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://msartdolls.com/cart",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:10:22.527917+00:00",
+      "sha256_html": "5104eacd296f34499a63854c67bdccdcf20595c20de17b9a4c55695a131137d5",
+      "title": "Your Shopping Cart– Maissa Said Art Dolls",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "shopify-digital-wallet": "/66467430644/digital_wallets/dialog",
+        "og:site_name": "Maissa Said Art Dolls",
+        "og:url": "https://msartdolls.com/cart",
+        "og:title": "Your Shopping Cart",
+        "og:type": "website",
+        "og:description": "Maissa Said Art Dolls",
+        "twitter:title": "Your Shopping Cart",
+        "twitter:description": "Maissa Said Art Dolls",
+        "shopify-y": "1bbb5112-eeb8-45ce-83a2-0c0328c240cd",
+        "shopify-s": "47f187cc-723e-4350-a258-dd8b4015f800"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@id": "https://msartdolls.com/cart",
+                "name": "Cart"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "Maissa Said Art Dolls",
+          "url": "https://msartdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901 1x, //msartdolls.com/cdn/shop/files/try_610x570.png?v=1665685901 2x, //msartdolls.com/cdn/shop/files/try_915x855.png?v=1665685901 3x, //msartdolls.com/cdn/shop/files/try_1220x1140.png?v=1665685901 4x"
+        }
+      ],
+      "links": [
+        "https://msartdolls.com/",
+        "https://msartdolls.com/cart",
+        "https://msartdolls.com/collections",
+        "https://msartdolls.com/collections/all",
+        "https://msartdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+        "https://msartdolls.com/pages/about-the-artist",
+        "https://msartdolls.com/pages/contact",
+        "https://msartdolls.com/pages/customer-showcase",
+        "https://msartdolls.com/pages/frequently-asked-questions",
+        "https://msartdolls.com/pages/gallery-of-past-works",
+        "https://msartdolls.com/pages/gallery-ooak",
+        "https://msartdolls.com/pages/gallery-resin",
+        "https://msartdolls.com/pages/gallery-silicone",
+        "https://msartdolls.com/pages/gallery-vinyl",
+        "https://msartdolls.com/pages/the-sculpting-process",
+        "https://msartdolls.com/products/annelene-andrew-asleep",
+        "https://msartdolls.com/products/brielle-bobby-asleep",
+        "https://msartdolls.com/products/kaillie-kellan-asleep-copy",
+        "https://msartdolls.com/search"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://msartdolls.com/collections/all",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:10:24.510826+00:00",
+      "sha256_html": "a6817bb5943b7b7de03eb22e4ddaf56f097b718664731aee5492d6a90ef68f3e",
+      "title": "Products– Maissa Said Art Dolls",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "shopify-digital-wallet": "/66467430644/digital_wallets/dialog",
+        "og:site_name": "Maissa Said Art Dolls",
+        "og:url": "https://msartdolls.com/collections/all",
+        "og:title": "Products",
+        "og:type": "website",
+        "og:description": "Maissa Said Art Dolls",
+        "twitter:title": "Products",
+        "twitter:description": "Maissa Said Art Dolls",
+        "shopify-y": "a308cb89-873c-4482-a4c7-f79aa3f42af3",
+        "shopify-s": "83ef18a8-70cf-41b5-8c8b-95c54f9046d2"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@id": "https://msartdolls.com/collections",
+                "name": "Collections"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@id": "https://msartdolls.com/collections/all",
+                "name": "Products"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "Maissa Said Art Dolls",
+          "url": "https://msartdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901 1x, //msartdolls.com/cdn/shop/files/try_610x570.png?v=1665685901 2x, //msartdolls.com/cdn/shop/files/try_915x855.png?v=1665685901 3x, //msartdolls.com/cdn/shop/files/try_1220x1140.png?v=1665685901 4x"
+        }
+      ],
+      "links": [
+        "https://msartdolls.com/",
+        "https://msartdolls.com/cart",
+        "https://msartdolls.com/collections",
+        "https://msartdolls.com/collections/all",
+        "https://msartdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+        "https://msartdolls.com/pages/about-the-artist",
+        "https://msartdolls.com/pages/contact",
+        "https://msartdolls.com/pages/customer-showcase",
+        "https://msartdolls.com/pages/frequently-asked-questions",
+        "https://msartdolls.com/pages/gallery-of-past-works",
+        "https://msartdolls.com/pages/gallery-ooak",
+        "https://msartdolls.com/pages/gallery-resin",
+        "https://msartdolls.com/pages/gallery-silicone",
+        "https://msartdolls.com/pages/gallery-vinyl",
+        "https://msartdolls.com/pages/the-sculpting-process",
+        "https://msartdolls.com/products/annelene-andrew-asleep",
+        "https://msartdolls.com/products/brielle-bobby-asleep",
+        "https://msartdolls.com/products/kaillie-kellan-asleep-copy",
+        "https://msartdolls.com/search"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://msartdolls.com/collections",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:10:25.801875+00:00",
+      "sha256_html": "64b67d710e34c3cd8c8f98ad638f3c18addbf43dd8a0595ed4f2a58070775bbb",
+      "title": "Collections– Maissa Said Art Dolls",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "shopify-digital-wallet": "/66467430644/digital_wallets/dialog",
+        "og:site_name": "Maissa Said Art Dolls",
+        "og:url": "https://msartdolls.com/collections",
+        "og:title": "Collections",
+        "og:type": "website",
+        "og:description": "Maissa Said Art Dolls",
+        "twitter:title": "Collections",
+        "twitter:description": "Maissa Said Art Dolls",
+        "shopify-y": "11dc732d-c359-4abd-aaa7-8f099cbb50ac",
+        "shopify-s": "525ce5b9-78d6-47c7-b018-c1257101f6cf"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@id": "https://msartdolls.com/collections",
+                "name": "Collections"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "Maissa Said Art Dolls",
+          "url": "https://msartdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901 1x, //msartdolls.com/cdn/shop/files/try_610x570.png?v=1665685901 2x, //msartdolls.com/cdn/shop/files/try_915x855.png?v=1665685901 3x, //msartdolls.com/cdn/shop/files/try_1220x1140.png?v=1665685901 4x"
+        },
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/DSCN1043_17_450x600.jpg?v=1768861317",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/DSCN1043_17_450x600.jpg?v=1768861317 1x, //msartdolls.com/cdn/shop/files/DSCN1043_17_900x1200.jpg?v=1768861317 2x, //msartdolls.com/cdn/shop/files/DSCN1043_17_1350x1800.jpg?v=1768861317 3x, //msartdolls.com/cdn/shop/files/DSCN1043_17_1800x2400.jpg?v=1768861317 4x"
+        },
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/DSC6363_704x480_crop_center_c20729fe-f3f8-4e44-947f-1eb835236706_450x307.webp?v=1715368233",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/DSC6363_704x480_crop_center_c20729fe-f3f8-4e44-947f-1eb835236706_450x307.webp?v=1715368233 1x, //msartdolls.com/cdn/shop/files/DSC6363_704x480_crop_center_c20729fe-f3f8-4e44-947f-1eb835236706_702x479.webp?v=1715368233 1.56x"
+        },
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/117078949_10157716544103299_5999227912624693054_n_704x480_crop_center_65708175-a9e7-4786-911a-d5c049d15b8d_450x307.webp?v=1694557343",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/117078949_10157716544103299_5999227912624693054_n_704x480_crop_center_65708175-a9e7-4786-911a-d5c049d15b8d_450x307.webp?v=1694557343 1x, //msartdolls.com/cdn/shop/files/117078949_10157716544103299_5999227912624693054_n_704x480_crop_center_65708175-a9e7-4786-911a-d5c049d15b8d_702x479.webp?v=1694557343 1.56x"
+        }
+      ],
+      "links": [
+        "https://msartdolls.com/",
+        "https://msartdolls.com/cart",
+        "https://msartdolls.com/collections",
+        "https://msartdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+        "https://msartdolls.com/pages/about-the-artist",
+        "https://msartdolls.com/pages/contact",
+        "https://msartdolls.com/pages/customer-showcase",
+        "https://msartdolls.com/pages/frequently-asked-questions",
+        "https://msartdolls.com/pages/gallery-of-past-works",
+        "https://msartdolls.com/pages/gallery-ooak",
+        "https://msartdolls.com/pages/gallery-resin",
+        "https://msartdolls.com/pages/gallery-silicone",
+        "https://msartdolls.com/pages/gallery-vinyl",
+        "https://msartdolls.com/pages/the-sculpting-process",
+        "https://msartdolls.com/products/annelene-andrew-asleep",
+        "https://msartdolls.com/products/brielle-bobby-asleep",
+        "https://msartdolls.com/products/kaillie-kellan-asleep-copy",
+        "https://msartdolls.com/search"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://msartdolls.com/search",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:10:29.303478+00:00",
+      "sha256_html": "07f5e60204abb58fbb2942c2ecd7f51a5794b58956165f45facfad1e749d3194",
+      "title": "Search– Maissa Said Art Dolls",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "shopify-digital-wallet": "/66467430644/digital_wallets/dialog",
+        "og:site_name": "Maissa Said Art Dolls",
+        "og:url": "https://msartdolls.com/search",
+        "og:title": "Search",
+        "og:type": "website",
+        "og:description": "Maissa Said Art Dolls",
+        "twitter:title": "Search",
+        "twitter:description": "Maissa Said Art Dolls",
+        "shopify-y": "02553fde-44fe-490e-b11c-d3985b6a9880",
+        "shopify-s": "45d18f1a-6f68-4d4b-8512-bf6ed0d2ab03"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@id": "https://msartdolls.com/search",
+                "name": "Search"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "Maissa Said Art Dolls",
+          "url": "https://msartdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901 1x, //msartdolls.com/cdn/shop/files/try_610x570.png?v=1665685901 2x, //msartdolls.com/cdn/shop/files/try_915x855.png?v=1665685901 3x, //msartdolls.com/cdn/shop/files/try_1220x1140.png?v=1665685901 4x"
+        }
+      ],
+      "links": [
+        "https://msartdolls.com/",
+        "https://msartdolls.com/cart",
+        "https://msartdolls.com/collections",
+        "https://msartdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+        "https://msartdolls.com/pages/about-the-artist",
+        "https://msartdolls.com/pages/contact",
+        "https://msartdolls.com/pages/customer-showcase",
+        "https://msartdolls.com/pages/frequently-asked-questions",
+        "https://msartdolls.com/pages/gallery-of-past-works",
+        "https://msartdolls.com/pages/gallery-ooak",
+        "https://msartdolls.com/pages/gallery-resin",
+        "https://msartdolls.com/pages/gallery-silicone",
+        "https://msartdolls.com/pages/gallery-vinyl",
+        "https://msartdolls.com/pages/the-sculpting-process",
+        "https://msartdolls.com/products/annelene-andrew-asleep",
+        "https://msartdolls.com/products/brielle-bobby-asleep",
+        "https://msartdolls.com/products/kaillie-kellan-asleep-copy",
+        "https://msartdolls.com/search"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://msartdolls.com/blogs/news",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:10:30.809480+00:00",
+      "sha256_html": "6e681c467b169d9997fe55c0c6f5e11a897b56c0365e7f176f47301b98481c2e",
+      "title": "News– Maissa Said Art Dolls",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "shopify-digital-wallet": "/66467430644/digital_wallets/dialog",
+        "og:site_name": "Maissa Said Art Dolls",
+        "og:url": "https://msartdolls.com/blogs/news",
+        "og:title": "News",
+        "og:type": "website",
+        "og:description": "Maissa Said Art Dolls",
+        "twitter:title": "News",
+        "twitter:description": "Maissa Said Art Dolls",
+        "shopify-y": "4c773fa9-15c5-4cd4-b456-2fc997bada27",
+        "shopify-s": "60f81a4b-ca74-4a9c-b9c4-4d0d71be268b"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@id": "https://msartdolls.com/blogs/news",
+                "name": "News"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "Maissa Said Art Dolls",
+          "url": "https://msartdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901 1x, //msartdolls.com/cdn/shop/files/try_610x570.png?v=1665685901 2x, //msartdolls.com/cdn/shop/files/try_915x855.png?v=1665685901 3x, //msartdolls.com/cdn/shop/files/try_1220x1140.png?v=1665685901 4x"
+        }
+      ],
+      "links": [
+        "https://msartdolls.com/",
+        "https://msartdolls.com/blogs/news",
+        "https://msartdolls.com/cart",
+        "https://msartdolls.com/collections",
+        "https://msartdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+        "https://msartdolls.com/pages/about-the-artist",
+        "https://msartdolls.com/pages/contact",
+        "https://msartdolls.com/pages/customer-showcase",
+        "https://msartdolls.com/pages/frequently-asked-questions",
+        "https://msartdolls.com/pages/gallery-of-past-works",
+        "https://msartdolls.com/pages/gallery-ooak",
+        "https://msartdolls.com/pages/gallery-resin",
+        "https://msartdolls.com/pages/gallery-silicone",
+        "https://msartdolls.com/pages/gallery-vinyl",
+        "https://msartdolls.com/pages/the-sculpting-process",
+        "https://msartdolls.com/products/annelene-andrew-asleep",
+        "https://msartdolls.com/products/brielle-bobby-asleep",
+        "https://msartdolls.com/products/kaillie-kellan-asleep-copy",
+        "https://msartdolls.com/search"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://msartdolls.com/collections/frontpage",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:10:32.174743+00:00",
+      "sha256_html": "7d7da82f2467be18d2a55ef56b7ef5480aadef7126be490935fbcdbf600cc605",
+      "title": "Available Dolls– Maissa Said Art Dolls",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "shopify-digital-wallet": "/66467430644/digital_wallets/dialog",
+        "og:site_name": "Maissa Said Art Dolls",
+        "og:url": "https://msartdolls.com/collections/frontpage",
+        "og:title": "Available Dolls",
+        "og:type": "website",
+        "og:description": "Maissa Said Art Dolls",
+        "twitter:title": "Available Dolls",
+        "twitter:description": "Maissa Said Art Dolls",
+        "shopify-y": "0b1d53e6-ff7b-4e84-91f1-eda73196029f",
+        "shopify-s": "b54b7f4c-c3b7-4332-9051-a034e7351911"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@id": "https://msartdolls.com/collections",
+                "name": "Collections"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@id": "https://msartdolls.com/collections/frontpage",
+                "name": "Available Dolls"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "Maissa Said Art Dolls",
+          "url": "https://msartdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901 1x, //msartdolls.com/cdn/shop/files/try_610x570.png?v=1665685901 2x, //msartdolls.com/cdn/shop/files/try_915x855.png?v=1665685901 3x, //msartdolls.com/cdn/shop/files/try_1220x1140.png?v=1665685901 4x"
+        }
+      ],
+      "links": [
+        "https://msartdolls.com/",
+        "https://msartdolls.com/cart",
+        "https://msartdolls.com/collections",
+        "https://msartdolls.com/collections/frontpage",
+        "https://msartdolls.com/customer_authentication/redirect?locale=en®ion_country=US",
+        "https://msartdolls.com/pages/about-the-artist",
+        "https://msartdolls.com/pages/contact",
+        "https://msartdolls.com/pages/customer-showcase",
+        "https://msartdolls.com/pages/frequently-asked-questions",
+        "https://msartdolls.com/pages/gallery-of-past-works",
+        "https://msartdolls.com/pages/gallery-ooak",
+        "https://msartdolls.com/pages/gallery-resin",
+        "https://msartdolls.com/pages/gallery-silicone",
+        "https://msartdolls.com/pages/gallery-vinyl",
+        "https://msartdolls.com/pages/the-sculpting-process",
+        "https://msartdolls.com/products/annelene-andrew-asleep",
+        "https://msartdolls.com/products/brielle-bobby-asleep",
+        "https://msartdolls.com/products/kaillie-kellan-asleep-copy",
+        "https://msartdolls.com/search"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://msartdolls.com/es",
+      "platform": "shopify",
+      "observed_at": "2026-10-13T16:10:33.490220+00:00",
+      "sha256_html": "00e35b1c752ab552379f77356e0578f0d56e79f1c72b75789db3fd7855a4d69f",
+      "title": "Maissa Said Art Dolls",
+      "metadata": {
+        "viewport": "width=device-width,initial-scale=1",
+        "shopify-digital-wallet": "/66467430644/digital_wallets/dialog",
+        "og:site_name": "Maissa Said Art Dolls",
+        "og:url": "https://msartdolls.com/es",
+        "og:title": "Maissa Said Art Dolls",
+        "og:type": "website",
+        "og:description": "Maissa Said Art Dolls",
+        "twitter:title": "Maissa Said Art Dolls",
+        "twitter:description": "Maissa Said Art Dolls",
+        "shopify-y": "4acaf688-a403-4877-a84b-bd5d27f3bd95",
+        "shopify-s": "1f2057f3-5fd0-4c48-babe-73fe10e20bda"
+      },
+      "structured_data": [
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "Maissa Said Art Dolls",
+          "url": "https://msartdolls.com"
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/try_305x285.png?v=1665685901 1x, //msartdolls.com/cdn/shop/files/try_610x570.png?v=1665685901 2x, //msartdolls.com/cdn/shop/files/try_915x855.png?v=1665685901 3x, //msartdolls.com/cdn/shop/files/try_1220x1140.png?v=1665685901 4x"
+        },
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/face_1500x2000_crop_center.jpg?v=1770929201",
+          "alt": "Brielle/Bobby Asleep: Edition Now Open",
+          "srcset": "//msartdolls.com/cdn/shop/files/face_1500x2000_crop_center.jpg?v=1770929201 1x, //msartdolls.com/cdn/shop/files/face_1530x2040_crop_center.jpg?v=1770929201 1.02x"
+        },
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/330566949_1824992294544557_5172847966734097262_n_1500x2000_crop_center.jpg?v=1676245511",
+          "alt": "Baby Kellan Asleep Prototype",
+          "srcset": "//msartdolls.com/cdn/shop/files/330566949_1824992294544557_5172847966734097262_n_1500x2000_crop_center.jpg?v=1676245511 1x, //msartdolls.com/cdn/shop/files/330566949_1824992294544557_5172847966734097262_n_1530x2040_crop_center.jpg?v=1676245511 1.02x"
+        },
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/hKFiVJ_576x768_crop_center.jpg?v=1664694614",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/hKFiVJ_576x768_crop_center.jpg?v=1664694614 1x"
+        },
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/15966766_1879546708999180_436786018_o_copy_5_852x1136_crop_center.jpg?v=1664694859",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/15966766_1879546708999180_436786018_o_copy_5_852x1136_crop_center.jpg?v=1664694859 1x"
+        },
+        {
+          "url": "https://msartdolls.com/cdn/shop/files/a431eca5-dc88-431e-be22-5cb02333190c_1000x667_crop_center.jpg?v=1664558658",
+          "alt": "",
+          "srcset": "//msartdolls.com/cdn/shop/files/a431eca5-dc88-431e-be22-5cb02333190c_1000x667_crop_center.jpg?v=1664558658 1x"
+        }
+      ],
+      "links": [
+        "https://msartdolls.com/customer_authentication/redirect?locale=es®ion_country=US",
+        "https://msartdolls.com/es",
+        "https://msartdolls.com/es/cart",
+        "https://msartdolls.com/es/collections",
+        "https://msartdolls.com/es/pages/about-the-artist",
+        "https://msartdolls.com/es/pages/contact",
+        "https://msartdolls.com/es/pages/customer-showcase",
+        "https://msartdolls.com/es/pages/frequently-asked-questions",
+        "https://msartdolls.com/es/pages/gallery-of-past-works",
+        "https://msartdolls.com/es/pages/gallery-ooak",
+        "https://msartdolls.com/es/pages/gallery-resin",
+        "https://msartdolls.com/es/pages/gallery-silicone",
+        "https://msartdolls.com/es/pages/gallery-vinyl",
+        "https://msartdolls.com/es/pages/the-sculpting-process",
+        "https://msartdolls.com/es/products/annelene-andrew-asleep",
+        "https://msartdolls.com/es/products/brielle-bobby-asleep",
+        "https://msartdolls.com/es/products/kaillie-kellan",
+        "https://msartdolls.com/es/products/kaillie-kellan-asleep-copy",
+        "https://msartdolls.com/es/search"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    }
+  ],
+  "notice": "Discovery evidence only. No images copied; no status or release-date inference."
+}
