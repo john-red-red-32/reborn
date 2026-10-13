@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "artist_id": "laura-tuzio-ross",
+  "display_name": "Laura Tuzio Ross",
+  "source_name": "Laura Tuzio Ross official sculptor website",
+  "allowed_hosts": [
+    "www.myworldofbabies.com",
+    "myworldofbabies.com"
+  ],
+  "platform": "wordpress_or_woocommerce",
+  "accepted_names": [],
+  "approved_aliases": {},
+  "notes": "Research only. Original kit product names and photographs require exact artist-scoped attribution. No stock, editions, deposits or prices published without verification."
+}
