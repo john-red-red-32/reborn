@@ -1,0 +1,70 @@
+name: Verify mobile release calendar and artist authenticity
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-release-calendar.yml'
+      - 'app/page.tsx'
+      - 'components/HomeReleaseCalendar.tsx'
+      - 'components/AuthenticityStatement.tsx'
+      - 'app/verify/page.tsx'
+      - 'app/artists/[slug]/page.tsx'
+      - 'app/kits/[slug]/page.tsx'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify live static content and independent navigation
+        run: |
+          python3 - <<'PY'
+          import re,time,urllib.request,urllib.error
+          from pathlib import Path
+          opener=urllib.request.build_opener()
+          opener.addheaders=[("User-Agent","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/125.0 Safari/537.36"),("Accept","text/html,*/*;q=0.8")]
+          urllib.request.install_opener(opener)
+          def page(path):
+            with opener.open("https://reborna.co"+path,timeout=20) as r:
+              assert r.status==200,(path,r.status)
+              return r.read().decode("utf-8","replace")
+          last=""
+          for attempt in range(30):
+            try:
+              home=page("/")
+              nikki=page("/artists/nikki-johnston/")
+              kit=page("/kits/mabel-nikki-johnston/")
+              verify=page("/verify/")
+              assert 'href="#release-calendar"' in home,"The homepage anchor is missing"
+              assert 'id="release-calendar"' in home,"Release calendar not prerendered as static HTML"
+              start=home.index('id="release-calendar"')
+              block=home[start:home.find('class="featured-real"',start)]
+              assert 'home-calendar-year-title">2027' in block,"Latest year is not first"
+              assert 'home-calendar-year-title">2026' in block,"2026 grouping missing"
+              assert block.index('home-calendar-year-title">2027')<block.index('home-calendar-year-title">2026'),"Wrong year order"
+              assert block.index(">January</h4>")<block.index(">November</h4>")<block.index(">October</h4>"),"Months not reverse chronological"
+              assert block.count('class="home-calendar-card"')>=4,"Static release cards not included in HTML"
+              assert 'Design preview:' in block,"Fictional dates must be labelled"
+              assert 'Original art deserves to be protected.' in nikki,"Artist authenticity statement missing"
+              assert 'href="/verify"' in nikki,"Artist verification link missing"
+              assert 'How to verify a kit' in verify,"Verification guide missing"
+              assert 'Verification service not yet active' in verify,"Verification status must be disclosed"
+              assert 'Historical Shopify source observation' not in kit,"Hosting platform language visible"
+              assert 'official Shopify listing' not in kit,"Hosting platform photo credit visible"
+              assert 'Official sculptor website' in kit,"Artist site language absent"
+              assert 'Original art deserves to be protected.' in kit,"Kit authenticity statement missing"
+              print("PASS live: static HTML reverse chronology, native anchor, verification guide, artist + kit notes, no platform wording")
+              break
+            except Exception as e:
+              last=str(e)
+              print("Waiting for Cloudflare update",attempt+1,last,flush=True)
+              time.sleep(8)
+          else:raise SystemExit("Live Reborna regression failed: "+last)
+          source=Path("app/globals.css").read_text(encoding="utf-8")
+          assert "content-visibility:auto" in source,"Browser-native lazy painting for historical months missing"
+          assert "prefers-reduced-motion" in source,"Reduced-motion support missing"
+          print("PASS source: native offscreen rendering and reduced-motion accessibility")
+          PY
