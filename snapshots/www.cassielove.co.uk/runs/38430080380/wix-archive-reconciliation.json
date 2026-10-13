@@ -1,0 +1,337 @@
+{
+  "version": "wix-archive-reconciliation-v1",
+  "source": "https://www.cassielove.co.uk/",
+  "source_scan_at": "2026-10-13T16:23:51.175391+00:00",
+  "published_named_kit_cards": 50,
+  "prior_editorial_archive_names": 61,
+  "exact_name_matches": 48,
+  "unmatched_editorial_names": [
+    "Alessandro Awake",
+    "Harriet",
+    "Rosie",
+    "Noa",
+    "Lovan",
+    "Alessandro",
+    "Edith",
+    "Laurie",
+    "Elsie",
+    "Wilby",
+    "Marley",
+    "Romilly",
+    "Sienna"
+  ],
+  "gallery_names_requiring_alias_review": [
+    {
+      "published_gallery_name": "Romily",
+      "possible_editorial_names": [
+        "Romilly"
+      ],
+      "status": "manual_alias_review_required"
+    },
+    {
+      "published_gallery_name": "Sienna Rae",
+      "possible_editorial_names": [
+        "Sienna"
+      ],
+      "status": "manual_alias_review_required"
+    }
+  ],
+  "potential_clay_photo_filename_matches": [
+    {
+      "gallery_title": "Winnie",
+      "possible_sculpt": "Winnie",
+      "image_url": "https://static.wixstatic.com/media/684b25_af7584488e0247e08e3b089645df3359~mv2.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_af7584488e0247e08e3b089645df3359~mv2.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "elliot",
+      "possible_sculpt": "Elliot",
+      "image_url": "https://static.wixstatic.com/media/684b25_4420109a29ba4dd2ac6f56bf09dc14a7~mv2.jpg/v1/fill/w_245,h_366,al_c,q_80,usm_0.66_1.00_0.01/684b25_4420109a29ba4dd2ac6f56bf09dc14a7~mv2.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Otillie",
+      "possible_sculpt": "Otillie",
+      "image_url": "https://static.wixstatic.com/media/684b25_2ff775d16e5b44a5be1b2d09784f0ec9~mv2.jpg/v1/fill/w_245,h_366,al_c,q_80,usm_0.66_1.00_0.01/684b25_2ff775d16e5b44a5be1b2d09784f0ec9~mv2.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Lucas",
+      "possible_sculpt": "Lucas",
+      "image_url": "https://static.wixstatic.com/media/684b25_ee80319cf7a54e49af3cc0d55a5a405c~mv2.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_ee80319cf7a54e49af3cc0d55a5a405c~mv2.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Leo2",
+      "possible_sculpt": "Leo",
+      "image_url": "https://static.wixstatic.com/media/684b25_9fe017277c2f4864af6aeaf240ed16e3~mv2.jpg/v1/fill/w_245,h_732,al_c,q_80,usm_0.66_1.00_0.01/684b25_9fe017277c2f4864af6aeaf240ed16e3~mv2.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Estella1",
+      "possible_sculpt": "Estella",
+      "image_url": "https://static.wixstatic.com/media/684b25_36c8a2c733004df0b45df9d148de252f~mv2.jpg/v1/fill/w_245,h_549,al_c,q_80,usm_0.66_1.00_0.01/684b25_36c8a2c733004df0b45df9d148de252f~mv2.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "peaches",
+      "possible_sculpt": "Peaches",
+      "image_url": "https://static.wixstatic.com/media/684b25_173131efd4774d828247aac9024e8413~mv2.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_173131efd4774d828247aac9024e8413~mv2.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "samuel",
+      "possible_sculpt": "Samuel",
+      "image_url": "https://static.wixstatic.com/media/684b25_9156e00ebc3d41bea293dfdf429322d8~mv2.jpg/v1/fill/w_490,h_549,al_c,q_80,usm_0.66_1.00_0.01/684b25_9156e00ebc3d41bea293dfdf429322d8~mv2.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Ava1",
+      "possible_sculpt": "Ava",
+      "image_url": "https://static.wixstatic.com/media/684b25_8841cc3e1950467f8b0122f943cb2aca~mv2.jpg/v1/fill/w_245,h_366,al_c,q_80,usm_0.66_1.00_0.01/684b25_8841cc3e1950467f8b0122f943cb2aca~mv2.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Evelyn.jpg",
+      "possible_sculpt": "Evelyn",
+      "image_url": "https://static.wixstatic.com/media/684b25_f54712a4bb7948bbbb99f0ba03424375.jpg/v1/fill/w_245,h_366,al_c,q_80,usm_0.66_1.00_0.01/684b25_f54712a4bb7948bbbb99f0ba03424375.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "nova.jpg",
+      "possible_sculpt": "Nova",
+      "image_url": "https://static.wixstatic.com/media/684b25_ca7187882edc4e758e12b801518d3554.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_ca7187882edc4e758e12b801518d3554.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Bluebell",
+      "possible_sculpt": "Bluebell",
+      "image_url": "https://static.wixstatic.com/media/684b25_3eda4008f0c440fbb48dff3ef6c13e75.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_3eda4008f0c440fbb48dff3ef6c13e75.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Bluebell",
+      "possible_sculpt": "Bluebell",
+      "image_url": "https://static.wixstatic.com/media/684b25_db34a4d9d0f245c9a8c3ab28fdf272c9.jpg/v1/fill/w_245,h_366,al_c,q_80,usm_0.66_1.00_0.01/684b25_db34a4d9d0f245c9a8c3ab28fdf272c9.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Nova",
+      "possible_sculpt": "Nova",
+      "image_url": "https://static.wixstatic.com/media/684b25_6053066834554c3ab721af5b9f57fc81.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_6053066834554c3ab721af5b9f57fc81.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Toby",
+      "possible_sculpt": "Toby",
+      "image_url": "https://static.wixstatic.com/media/684b25_1ba3908ba4c34dbdade768e3bc2fe076.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_1ba3908ba4c34dbdade768e3bc2fe076.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Elyse",
+      "possible_sculpt": "Elyse",
+      "image_url": "https://static.wixstatic.com/media/684b25_f6a3f7d8dc614aa4aa5f03e153d90d62.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_f6a3f7d8dc614aa4aa5f03e153d90d62.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Elyse",
+      "possible_sculpt": "Elyse",
+      "image_url": "https://static.wixstatic.com/media/684b25_50fc16482db7441982edccb9f7bb46a5.jpg/v1/fill/w_490,h_549,al_c,q_80,usm_0.66_1.00_0.01/684b25_50fc16482db7441982edccb9f7bb46a5.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "evelyn2.jpg",
+      "possible_sculpt": "Evelyn",
+      "image_url": "https://static.wixstatic.com/media/684b25_5305ef9bd8474452b3806a0fba72378a.jpg/v1/fill/w_245,h_366,al_c,q_80,usm_0.66_1.00_0.01/684b25_5305ef9bd8474452b3806a0fba72378a.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Elyse",
+      "possible_sculpt": "Elyse",
+      "image_url": "https://static.wixstatic.com/media/684b25_31f4d33cb6c84bc4837efecf5e037a2e.jpg/v1/fill/w_490,h_366,al_c,q_80,usm_0.66_1.00_0.01/684b25_31f4d33cb6c84bc4837efecf5e037a2e.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Sailor Rose",
+      "possible_sculpt": "Sailor Rose",
+      "image_url": "https://static.wixstatic.com/media/684b25_a135d198a3594b33bfe1e90743677442.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_a135d198a3594b33bfe1e90743677442.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Sailor Rose",
+      "possible_sculpt": "Sailor Rose",
+      "image_url": "https://static.wixstatic.com/media/684b25_5f21ffa1c27945bdac5e8aa432455651.jpg/v1/fill/w_490,h_366,al_c,q_80,usm_0.66_1.00_0.01/684b25_5f21ffa1c27945bdac5e8aa432455651.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Sailor Rose",
+      "possible_sculpt": "Sailor Rose",
+      "image_url": "https://static.wixstatic.com/media/684b25_552a6a76e5ec42b8b8ce3130bda7238f.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_552a6a76e5ec42b8b8ce3130bda7238f.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Sailor Rose",
+      "possible_sculpt": "Sailor Rose",
+      "image_url": "https://static.wixstatic.com/media/684b25_f2743da898df49ed9aa20b3ba78a52a1.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_f2743da898df49ed9aa20b3ba78a52a1.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Elyse",
+      "possible_sculpt": "Elyse",
+      "image_url": "https://static.wixstatic.com/media/684b25_3f4d50ff80e64f14a3bb2e132906635d.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_3f4d50ff80e64f14a3bb2e132906635d.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Nellie",
+      "possible_sculpt": "Nellie",
+      "image_url": "https://static.wixstatic.com/media/684b25_1787b27e59ca490fb4fe0d6255fcee57.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_1787b27e59ca490fb4fe0d6255fcee57.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Phoenix",
+      "possible_sculpt": "Phoenix",
+      "image_url": "https://static.wixstatic.com/media/684b25_60343f621dd0403e8b37f54eae9db80f.jpg/v1/fill/w_490,h_549,al_c,q_80,usm_0.66_1.00_0.01/684b25_60343f621dd0403e8b37f54eae9db80f.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Stanley",
+      "possible_sculpt": "Stanley",
+      "image_url": "https://static.wixstatic.com/media/684b25_03fb0f410687469db395ed509334c591.jpg/v1/fill/w_490,h_366,al_c,q_80,usm_0.66_1.00_0.01/684b25_03fb0f410687469db395ed509334c591.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Zachary",
+      "possible_sculpt": "Zachary",
+      "image_url": "https://static.wixstatic.com/media/684b25_d4d16aafeb384568a23223b1657e0a03.jpg/v1/fill/w_490,h_366,al_c,q_80,usm_0.66_1.00_0.01/684b25_d4d16aafeb384568a23223b1657e0a03.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Ella",
+      "possible_sculpt": "Ella",
+      "image_url": "https://static.wixstatic.com/media/684b25_4133d10d34604e0dbd11ef5fdfa7fbb7.jpg/v1/fill/w_245,h_549,al_c,q_80,usm_0.66_1.00_0.01/684b25_4133d10d34604e0dbd11ef5fdfa7fbb7.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Phoenix",
+      "possible_sculpt": "Phoenix",
+      "image_url": "https://static.wixstatic.com/media/684b25_8f040b18f033407786373bbfbdbf321b.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_8f040b18f033407786373bbfbdbf321b.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Nellie",
+      "possible_sculpt": "Nellie",
+      "image_url": "https://static.wixstatic.com/media/684b25_5bc179b250bb43d28aecfe487810be0f.jpg/v1/fill/w_245,h_549,al_c,q_80,usm_0.66_1.00_0.01/684b25_5bc179b250bb43d28aecfe487810be0f.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Nellie",
+      "possible_sculpt": "Nellie",
+      "image_url": "https://static.wixstatic.com/media/684b25_1e1bb802ca8345129715008b75dac533.jpg/v1/fill/w_245,h_366,al_c,q_80,usm_0.66_1.00_0.01/684b25_1e1bb802ca8345129715008b75dac533.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Leelou",
+      "possible_sculpt": "Leelou",
+      "image_url": "https://static.wixstatic.com/media/684b25_b465d3679d1b42f3b8d8ec55e90c938f.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_b465d3679d1b42f3b8d8ec55e90c938f.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Leelou",
+      "possible_sculpt": "Leelou",
+      "image_url": "https://static.wixstatic.com/media/684b25_7732e187b8864cca82e8160d6d41d8d6.jpg/v1/fill/w_245,h_549,al_c,q_80,usm_0.66_1.00_0.01/684b25_7732e187b8864cca82e8160d6d41d8d6.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Zachary",
+      "possible_sculpt": "Zachary",
+      "image_url": "https://static.wixstatic.com/media/684b25_288e70af621547608dd27f5a42edff15.jpg/v1/fill/w_490,h_366,al_c,q_80,usm_0.66_1.00_0.01/684b25_288e70af621547608dd27f5a42edff15.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Hattie",
+      "possible_sculpt": "Hattie",
+      "image_url": "https://static.wixstatic.com/media/684b25_b06aabb604ac4d6697a451480de53434.jpg/v1/fill/w_490,h_366,al_c,q_80,usm_0.66_1.00_0.01/684b25_b06aabb604ac4d6697a451480de53434.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Nellie",
+      "possible_sculpt": "Nellie",
+      "image_url": "https://static.wixstatic.com/media/684b25_9e4742a42ed34c98b8cd9ccebd352e0c.jpg/v1/fill/w_980,h_732,al_c,q_85,usm_0.66_1.00_0.01/684b25_9e4742a42ed34c98b8cd9ccebd352e0c.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Phoenix",
+      "possible_sculpt": "Phoenix",
+      "image_url": "https://static.wixstatic.com/media/684b25_323f501c3b7747d8b37ad7c33d2f8cc0.jpg/v1/fill/w_245,h_366,al_c,q_80,usm_0.66_1.00_0.01/684b25_323f501c3b7747d8b37ad7c33d2f8cc0.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Nellie",
+      "possible_sculpt": "Nellie",
+      "image_url": "https://static.wixstatic.com/media/684b25_337c6116ac1f4737ac12ec7c0ad7d632.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_337c6116ac1f4737ac12ec7c0ad7d632.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Toby",
+      "possible_sculpt": "Toby",
+      "image_url": "https://static.wixstatic.com/media/684b25_58bb779247fd4ffd8df128846f0f10be.jpg/v1/fill/w_245,h_183,al_c,q_80,usm_0.66_1.00_0.01/684b25_58bb779247fd4ffd8df128846f0f10be.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    },
+    {
+      "gallery_title": "Stanley",
+      "possible_sculpt": "Stanley",
+      "image_url": "https://static.wixstatic.com/media/684b25_ef6f72fd82244a0298f040fdda10296e.jpg/v1/fill/w_490,h_366,al_c,q_80,usm_0.66_1.00_0.01/684b25_ef6f72fd82244a0298f040fdda10296e.jpg",
+      "source": "https://www.cassielove.co.uk/sculpting",
+      "confidence": "filename_hint_only_review_required"
+    }
+  ],
+  "clay_photo_matches_for_review": 41,
+  "finished_reborn_photos_excluded": 243,
+  "warnings": [
+    "Gallery naming and edition labels are dated artist assertions, not proof of current sale or re-release.",
+    "Fuzzy name candidates are NOT automatically merged.",
+    "Clay photo filename matches are not verified sculpt identities.",
+    "Finished reborn doll photos must never be misclassified as blank kit photos.",
+    "No images copied or catalogue records changed."
+  ]
+}
