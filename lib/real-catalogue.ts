@@ -4,7 +4,10 @@
  * No third-party images reproduced.
  */
 import type {SculptLifecycle} from "./sculpt-status";
-import {cassieProfile} from "./cassie-profile";
+import {cassieProfile,cassieArchive} from "./cassie-profile";
+import {cassieOfficialImages} from "./cassie-images";
+import {publishedGalleryEvidence} from "./artist-gallery-data";
+import {findArtistGalleryEvidence,editionTypeLabel} from "./artist-catalogue";
 import {nikkiKits} from "./nikki-shopify-catalogue";
 import {nikkiProfile} from "./nikki-profile";
 export type ArtistImage={url:string;source:string;credit:string;role:"portrait"|"square"|"banner";reviewStatus:"source_identified"|"artist_approved";};
@@ -17,7 +20,7 @@ export const artists:VerifiedArtist[]=[
 {slug:"joanna-kazmierczak",name:"Joanna Kazmierczak",website:"https://macphersoncrafts.com/",bio:"Sculptor whose Willow release is featured by specialist retailer MacPherson Arts & Crafts.",source:"https://macphersoncrafts.com/"},
 {slug:"dawn-mcleod",name:"Dawn McLeod",website:"https://macphersoncrafts.com/",bio:"Sculptor of Cypress, featured among specialist retailer MacPherson's pre-order releases.",source:"https://macphersoncrafts.com/"}
 ];
-export const verifiedKits:VerifiedKit[]=[
+const manuallyCuratedKits:VerifiedKit[]=[
 ...nikkiKits,
 {slug:"winnie-cassie-ann-love",name:"Winnie",artistSlug:"cassie-ann-love",edition:"19-inch vinyl sculpt",statusLabel:"Historical sculpt — availability not established",statusChecked:"2026-10-12",photos:[{url:"https://www.createalittlemagic.co.za/cdn/shop/products/pre-order-deposit-only-winnie-by-cassie-brace-843063.jpg?v=1696056018",credit:"Source retailer",source:"https://www.createalittlemagic.co.za/products/winnie-by-cassie-brace"}],sources:[{label:"View original listing",url:"https://www.createalittlemagic.co.za/products/winnie-by-cassie-brace",kind:"retailer"}]},
 {slug:"peaches-cassie-ann-love",name:"Peaches",artistSlug:"cassie-ann-love",statusLabel:"Retailer lists sold out",statusChecked:"2026-10-12",photos:[{url:"https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/4429/48391/ZHd8Ppv0__65484.1638300441.jpg?c=2",credit:"Source retailer",source:"https://www.irresistables.com/peaches-reborn-vinyl-doll-kit-by-cassie-brace-21-sold-out-edition/"}],sources:[{label:"View original listing",url:"https://www.irresistables.com/peaches-reborn-vinyl-doll-kit-by-cassie-brace-21-sold-out-edition/",kind:"retailer"}]},
@@ -31,4 +34,45 @@ export const verifiedKits:VerifiedKit[]=[
 {slug:"willow-joanna-kazmierczak",name:"Willow",artistSlug:"joanna-kazmierczak",statusLabel:"Pre-order status needs reconfirmation",statusChecked:"2026-10-12",sources:[{label:"MacPherson Arts & Crafts",url:"https://macphersoncrafts.com/",kind:"retailer"}]},
 {slug:"cypress-dawn-mcleod",name:"Cypress",artistSlug:"dawn-mcleod",statusLabel:"Pre-order status needs reconfirmation",statusChecked:"2026-10-12",sources:[{label:"MacPherson Arts & Crafts",url:"https://macphersoncrafts.com/",kind:"retailer"}]}
 ];
+/**
+ * Expand Cassie's accepted artist archive into individual, source-linked pages
+ * only where a named sculpt image was actually verified. Leave Romilly and
+ * Sienna as pending-identity archive entries rather than guessing from aliases.
+ * Existing manually researched availability and retailer facts take priority.
+ */
+const cassieExpandedHistoricalKits:VerifiedKit[]=cassieArchive
+ .filter(name=>!manuallyCuratedKits.some(kit=>kit.artistSlug==="cassie-ann-love"&&kit.name.toLocaleLowerCase("en")===name.toLocaleLowerCase("en")))
+ .filter(name=>(cassieOfficialImages[name]??[]).length>0)
+ .map(name=>{
+   const gallery=findArtistGalleryEvidence("cassie-ann-love",name,publishedGalleryEvidence);
+   const size=gallery?.approxSizeInches;
+   const edition=gallery?editionTypeLabel(gallery.editionType):undefined;
+   return {
+     slug:name.toLocaleLowerCase("en").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")+"-cassie-ann-love",
+     name,artistSlug:"cassie-ann-love",
+     edition,
+     sizeDescription:size?size+" inches (artist's gallery)":undefined,
+     releaseInfo:"Historical original sculpt. Release date and current availability have not been established.",
+     statusLabel:"Historical sculpt — current availability not established",
+     statusChecked:"2026-10-13",
+     photos:cassieOfficialImages[name],
+     sources:[{label:"Cassie Ann Love — original sculpt gallery",url:gallery?.sourceUrl??"https://www.cassielove.co.uk/galleries",kind:"artist" as const}]
+   };
+ });
+const cassieCuratedWithImages=manuallyCuratedKits.map(kit=>{
+ if(kit.artistSlug!=="cassie-ann-love")return kit;
+ const sourcePhotos=cassieOfficialImages[kit.name]??[];
+ const photos=[...sourcePhotos,...(kit.photos??[])].filter((photo,index,array)=>array.findIndex(other=>other.url===photo.url)===index);
+ const gallery=findArtistGalleryEvidence("cassie-ann-love",kit.name,publishedGalleryEvidence);
+ return {
+   ...kit,
+   photos:photos.length?photos:kit.photos,
+   sizeDescription:kit.sizeDescription??(gallery?.approxSizeInches?gallery.approxSizeInches+" inches (artist's gallery)":undefined),
+   sources:gallery&&!kit.sources.some(source=>source.url===gallery.sourceUrl)?[
+      {label:"Original sculptor's gallery",url:gallery.sourceUrl,kind:"artist" as const},
+      ...kit.sources
+   ]:kit.sources
+ };
+});
+export const verifiedKits:VerifiedKit[]=[...cassieCuratedWithImages,...cassieExpandedHistoricalKits];
 export const kitArtist=(slug:string)=>artists.find(a=>a.slug===slug);
