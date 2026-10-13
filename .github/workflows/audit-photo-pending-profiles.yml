@@ -37,10 +37,11 @@ jobs:
             'dawn-donofrio','laura-tuzio-ross','philomena-donnelly',
             'sabine-altenkirch-junkes','gudrun-legler',
             'elly-knoops','iveta-eckertova','olga-auer',
+            'alejandra-de-zuniga','severine-piret',
             'sabrina-hergarten','laura-lee-eagles'
           }
-          photo_pending_kits={'emerson-dawn-donofrio','josie-ping-lau','elena-alejandra-de-zuniga'}
-          source_photographed_kits={'teddy-philomena-donnelly','sam-gudrun-legler'}
+          photo_pending_kits={'emerson-dawn-donofrio','josie-ping-lau'}
+          source_photographed_kits={'teddy-philomena-donnelly','sam-gudrun-legler','elena-alejandra-de-zuniga'}
           kits=sorted(photo_pending_kits|source_photographed_kits)
           h={'User-Agent':'Mozilla/5.0 (compatible; RebornaSourceAudit/1.0)','Accept':'text/html'}
           for attempt in range(28):
