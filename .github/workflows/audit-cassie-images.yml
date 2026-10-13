@@ -54,6 +54,25 @@ jobs:
             except Exception as e:raise RuntimeError(f'Original image unreachable for {name}: {e}') from e
             time.sleep(0.2)
           print('PASS all 48 exact-source Wix images are live and respond as images')
+          old_match=re.search(r'const cassieEarlierSourcePhotos:Record<string,ArtistSculptPhoto\[\]> = (\{[\s\S]*?\});',old)
+          assert old_match,'Earlier Cassie source images missing'
+          earlier=json.loads(old_match.group(1))
+          additional=sorted(set(names)-set(images)-{'Romilly','Sienna'})
+          assert len(additional)==11,additional
+          for name in additional:
+            assert earlier.get(name),(name,'missing historical image source')
+            url=earlier[name][0]['url']
+            req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/125.0 Safari/537.36','Accept':'image/*,*/*;q=0.8','Range':'bytes=0-1023'})
+            try:
+              with urllib.request.urlopen(req,timeout=20) as response:
+                raw=response.read(1024)
+                assert response.status in (200,206),(name,response.status)
+                assert response.headers.get('Content-Type','').startswith('image/'),(name,'not an image')
+                assert len(raw)>20,(name,'empty image')
+                print('OK historical image',name,response.status,flush=True)
+            except Exception as exc:raise RuntimeError(f'Historical Cassie photo broken for {name}: {exc}') from exc
+            time.sleep(0.2)
+          print('PASS additional 11 pre-existing gallery sources remain reachable')
           PY
       - name: Verify published Cassie artist collection and kit detail pages
         run: |
