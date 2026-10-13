@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "artist_id": "melody-hess",
+  "display_name": "Melody Hess",
+  "source_name": "Melody Hess official sculptor website",
+  "allowed_hosts": [
+    "www.melodyhessdolls.com"
+  ],
+  "platform": "shopify",
+  "currency": "USD",
+  "accepted_names": [],
+  "approved_aliases": {},
+  "notes": "Research source only. Product ownership, variants, edition counts, prices, media rights and live availability require evidence-led editorial review. Do not automatically publish."
+}
