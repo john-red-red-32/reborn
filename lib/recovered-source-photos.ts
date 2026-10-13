@@ -314,6 +314,28 @@ export const recoveredKitPhotos:Record<string,NonNullable<VerifiedKit["photos"]>
       "source": "https://www.irresistables.com/rafael-reborn-vinyl-doll-kit-19-20-by-severine-piret/",
       "credit": "Irresistables — Rafael prototype by Silver Lining Art Dolls, original sculpt by Séverine Piret"
     }
+  ],
+  "aspen-dawn-donofrio": [
+    {
+      "url": "https://i0.wp.com/photos.smugmug.com/photos/i-svLN8mV/0/KJ69qpgvDHGqQxmq7KxfVsX6G2PzV69RQXx4B9qpm/L/i-svLN8mV-L.jpg?w=640&ssl=1",
+      "source": "https://ellamck.com/aspen/",
+      "credit": "Ella McK Creations — finished Aspen silicone reborn by Ella McK; original sculpt by Dawn Donofrio"
+    },
+    {
+      "url": "https://i0.wp.com/photos.smugmug.com/photos/i-B6nwBdN/0/M7hjchctm5xp7gKh8Tnm98dGxDVX8G46bjBf3PCp5/XL/i-B6nwBdN-XL.jpg?w=640&ssl=1",
+      "source": "https://ellamck.com/aspen/",
+      "credit": "Ella McK Creations — finished Aspen silicone reborn by Ella McK; original sculpt by Dawn Donofrio"
+    },
+    {
+      "url": "https://i0.wp.com/photos.smugmug.com/photos/i-5VHw97z/0/KwrtL2BNj4xDTfVWXHtgDzX5rcvNBC5ZS6cDgbm6D/L/i-5VHw97z-L.jpg?w=640&ssl=1",
+      "source": "https://ellamck.com/aspen/",
+      "credit": "Ella McK Creations — finished Aspen silicone reborn by Ella McK; original sculpt by Dawn Donofrio"
+    },
+    {
+      "url": "https://i0.wp.com/photos.smugmug.com/photos/i-3PHrj9j/0/MkgBcrMJwNNZfzsS8LzVB8c689QKCkG4RMkQMxH5w/M/i-3PHrj9j-M.jpg?w=640&ssl=1",
+      "source": "https://ellamck.com/aspen/",
+      "credit": "Ella McK Creations — finished Aspen silicone reborn by Ella McK; original sculpt by Dawn Donofrio"
+    }
   ]
 };
 export const recoveredArtistCovers:Record<string,ArtistImage[]>={
