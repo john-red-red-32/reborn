@@ -1,0 +1,51 @@
+name: Audit Dawn silicone source galleries
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-dawn-gallery-sources.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  dawn:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Beatriz Senra source robots and exact Dawn attribution
+        run: |
+          python3 - <<'PY'
+          import urllib.request,urllib.robotparser
+          base='https://mybabyflowers.com'
+          agent='RebornaDiscovery/0.1 (+https://reborna.co; editorial source research)'
+          rp=urllib.robotparser.RobotFileParser()
+          rp.set_url(base+'/robots.txt')
+          try:rp.read()
+          except Exception as exc:
+              print('Robots read failed:',type(exc).__name__,flush=True)
+              raise SystemExit(0)
+          for path in ['/en/baby/emma/','/baby/emerson/']:
+              url=base+path
+              permit=rp.can_fetch(agent,url)
+              print('SOURCE',url,'robots_allowed',permit,flush=True)
+              if not permit:continue
+              req=urllib.request.Request(url,headers={'User-Agent':agent,'Accept':'text/html'})
+              try:
+                  with urllib.request.urlopen(req,timeout=17) as res:
+                      raw=res.read(1_400_000)
+                  from html.parser import HTMLParser
+                  class Get(HTMLParser):
+                      def __init__(self):
+                          super().__init__()
+                          self.images=[];self.meta=[]
+                      def handle_starttag(self,tag,attributes):
+                          a=dict(attributes)
+                          if tag=='img':self.images.append({k:a.get(k) for k in ('src','data-src','srcset','alt','loading') if a.get(k)})
+                          if tag=='meta' and (a.get('property') in ('og:image','og:title') or a.get('name')=='twitter:image'):self.meta.append(a)
+                  p=Get()
+                  p.feed(raw.decode('utf8','replace'))
+                  print('SCULPTOR CREDIT MATCH',b'Dawn Donofrio' in raw,'META',p.meta[:12],'IMAGES',p.images[:15],flush=True)
+              except Exception as exc:
+                  print('FETCH FAILED',url,type(exc).__name__,str(exc)[:130],flush=True)
+          PY
