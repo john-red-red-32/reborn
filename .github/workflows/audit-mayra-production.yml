@@ -1,0 +1,52 @@
+name: Audit published Mayra Garza portfolio
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-mayra-production.yml'
+      - 'lib/mayra-gallery-catalogue.ts'
+      - 'lib/real-catalogue.ts'
+      - 'lib/wordpress-artist-stories.ts'
+      - 'app/artists/[slug]/page.tsx'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit all named Mayra pages and gallery attribution on reborna.co
+        run: |
+          python3 - <<'PY'
+          import json,re,time,urllib.request
+          t=open('lib/mayra-gallery-catalogue.ts',encoding='utf8').read()
+          m=re.search('export const mayraOriginalKits:VerifiedKit\[\]=([\s\S]*?);\s*$',t)
+          assert m
+          kits=json.loads(m.group(1))
+          urls=[('/artists/mayra-garza/','Mayra Garza')]+[('/kits/'+k['slug']+'/',k['name']) for k in kits]
+          header={'User-Agent':'Mozilla/5.0 (compatible; RebornaProductionAudit/1.0)','Accept':'text/html'}
+          for attempt in range(36):
+              errors=[]
+              for path,name in urls:
+                  try:
+                      with urllib.request.urlopen(urllib.request.Request('https://reborna.co'+path,headers=header),timeout=15) as res:
+                          html=res.read(1_500_000).decode('utf8','replace')
+                          assert res.status==200 and name in html,(res.status,name)
+                          assert 'ORIGINAL SCULPT KIT' in html or path.startswith('/artists/'),path
+                          assert 'Mayra Garza' in html,path
+                  except Exception as ex:
+                      errors.append((path,str(ex)[:130]))
+              if not errors:
+                  print('PASS',len(urls),'live Mayra sculptor + original kit pages',flush=True)
+                  break
+              print('Cloudflare production pending:',attempt+1,'failures:',errors[:3],flush=True)
+              time.sleep(8)
+          else:
+              raise SystemExit('Mayra kit routes not yet present in production')
+          for k in kits:
+              assert len(k['photos'])>=1 and k['material']=='vinyl'
+              assert all('prototype' in p['credit'].lower() for p in k['photos'])
+          print('PASS prototype-image attribution, artist ownership and per-kit vinyl material.')
+          PY
