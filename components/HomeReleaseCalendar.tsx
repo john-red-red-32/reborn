@@ -31,15 +31,15 @@ export function createReleaseTimeline(kits:readonly Kit[]):YearGroup[]{
 export default function HomeReleaseCalendar({kits,saved,onToggle}:{kits:readonly Kit[];saved:readonly string[];onToggle:(id:string)=>void}){
  const groups=createReleaseTimeline(kits);
  return <section className="content home-calendar-section" id="release-calendar" aria-labelledby="release-calendar-heading">
-   <div className="section-kicker">THE RELEASE RADAR · FROM FUTURE TO PAST</div>
+   <div className="section-kicker">THE RELEASE RADAR</div>
    <div className="section-head home-calendar-head"><div>
      <h2 id="release-calendar-heading">The release calendar<span className="period">.</span></h2>
-     <p>Explore the timeline backwards — future shipping and launches first, with earlier releases further down.</p>
-   </div><a className="outline-btn" href="#catalogue">Browse all kits <span aria-hidden="true">↗</span></a></div>
+     <p>Upcoming launches, pre-orders and shipping dates, organised by month.</p>
+   </div><a className="outline-btn" href="/#catalogue">Browse all kits <span aria-hidden="true">↗</span></a></div>
    <p className="calendar-preview-warning">Design preview: the artists, dates and amounts below are illustrative examples, not verified releases. Our live calendar will use sourced sculptor announcements.</p>
    <div className="home-calendar-archive">
      {groups.map(({year,months})=><section className="home-calendar-year" key={year} aria-label={`Releases in ${year}`}>
-       <h3 className="home-calendar-year-title">{year}<span>Release archive</span></h3>
+       <h3 className="home-calendar-year-title">{year}<span>Releases</span></h3>
        {months.map(({key,label,entries})=><section className="home-calendar-month" key={key} aria-label={`${label} ${year}`}>
          <div className="home-calendar-month-head"><h4>{label}</h4><span>{entries.length} {entries.length===1?"sculpt":"sculpts"}</span></div>
          <div className="home-calendar-cards">{entries.map(({kit,date,dateKind})=><article className="home-calendar-card" key={kit.id}>
@@ -48,13 +48,13 @@ export default function HomeReleaseCalendar({kits,saved,onToggle}:{kits:readonly
              <button type="button" className={saved.includes(kit.id)?"heart saved":"heart"} onClick={()=>onToggle(kit.id)} aria-label={saved.includes(kit.id)?`Remove ${kit.name} from watchlist`:`Save ${kit.name} to watchlist`} aria-pressed={saved.includes(kit.id)}><Heart size={19} fill={saved.includes(kit.id)?"currentColor":"none"}/></button>
            </div>
            <div className="home-calendar-event-line"><span className="calendar-event-type"><CalendarDays size={14}/>{dateKind==="shipping"?"Estimated shipping":"Release / pre-order"}</span><time dateTime={date}>{dateLabel(date)}</time></div>
-           <div className="home-calendar-card-bottom"><span className={"status "+kit.status.toLowerCase().replaceAll(" ","-")}>{kit.status}</span><div className="home-calendar-financials"><span>Deposit <b>{kit.deposit!==undefined?`£${kit.deposit}`:"TBA"}</b></span><span>Balance <b>{kit.balance!==undefined?`£${kit.balance}`:"TBA"}</b></span></div></div>
-           {kit.ship&&kit.launch&&dateKind==="shipping"&&<p className="home-calendar-secondary-date">Pre-order / launch date: {dateLabel(kit.launch)}</p>}
+           <div className="home-calendar-card-bottom"><span className={"status "+kit.status.toLowerCase().replaceAll(" ","-")}>{kit.status}</span><div className="home-calendar-financials"><span>Deposit <b>{kit.deposit!==undefined?`£${kit.deposit}`:"TBA"}</b></span><span>Final balance <b>{kit.balance!==undefined?`£${kit.balance}`:"TBA"}</b></span><span>Total <b>{kit.deposit!==undefined&&kit.balance!==undefined?`£${kit.deposit+kit.balance}`:"TBA"}</b></span></div></div>
+           {kit.ship&&kit.launch&&dateKind==="shipping"&&<details className="home-calendar-more"><summary>More dates</summary><p>Pre-order / launch: <time dateTime={kit.launch}>{dateLabel(kit.launch)}</time></p></details>}
          </article>)}</div>
        </section>)}
      </section>)}
    </div>
    {!groups.length&&<p className="archive-empty">No dated releases have been documented yet.</p>}
-   <p className="archive-foot">Months with no known events are omitted. The full timeline is present in static HTML; off-screen sections render efficiently as you scroll. Always confirm release dates with the original sculptor.</p>
+   <p className="archive-foot">Dates and prices can change. Confirm details with the sculptor before placing an order.</p>
  </section>;
 }
