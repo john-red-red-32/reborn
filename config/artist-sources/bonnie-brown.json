@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "artist_id": "bonnie-brown",
+  "display_name": "Bonnie Brown",
+  "source_name": "Bonnie Brown official sculptor website",
+  "allowed_hosts": [
+    "www.bonniebrowndolls.com",
+    "bonniebrowndolls.com"
+  ],
+  "platform": "wix",
+  "currency": "USD",
+  "accepted_names": [],
+  "approved_aliases": {},
+  "notes": "Evidence-only Wix cohort. Keep finished doll photos, clay originals, blank kits and dealer links distinct; no automatic publication or kit-image pairing."
+}
