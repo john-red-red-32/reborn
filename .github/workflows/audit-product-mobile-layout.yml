@@ -1,0 +1,88 @@
+name: Audit mobile product page geometry
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-product-mobile-layout.yml'
+      - 'app/globals.css'
+      - 'components/KitPhotoGallery.tsx'
+      - 'app/kits/[slug]/page.tsx'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  responsive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install browser for actual responsive layout checks
+        run: |
+          python3 -m pip install playwright==1.55.0
+          python3 -m playwright install --with-deps chromium
+      - name: Check widths and no horizontal scrolling on production
+        run: |
+          python3 - <<'PY'
+          from playwright.sync_api import sync_playwright
+          import time,os
+          urls=[
+            'https://reborna.co/kits/brielle-bobby-asleep-maissa-said/',
+            'https://reborna.co/kits/kori-doris-moyers-hornbogen/',
+            'https://reborna.co/kits/twin-a-bonnie-brown/'
+          ]
+          widths=[320,360,390,430,600,768,1024,1440]
+          os.makedirs('layout-failures',exist_ok=True)
+          with sync_playwright() as browser:
+            b=browser.chromium.launch(headless=True)
+            p=b.new_page(viewport={'width':390,'height':830},device_scale_factor=1)
+            for attempt in range(32):
+              p.goto(urls[0],wait_until='domcontentloaded',timeout=25000)
+              marker=p.locator('style').all_text_contents()
+              css=any('grid-template-columns:minmax(0,48fr)' in m for m in marker)
+              # Deployed global CSS lives in linked Next asset styles, so check
+              # computed grid track sizes rather than guessing deployment status.
+              rect=p.evaluate('''() => {
+                const el=document.querySelector('.detail-layout');
+                const root=document.documentElement;
+                return {vw:innerWidth,scroll:root.scrollWidth,grid:getComputedStyle(el).gridTemplateColumns}
+              }''')
+              if rect['scroll']<=rect['vw']+2:
+                break
+              print('Waiting Cloudflare production CSS:',attempt+1,rect,flush=True)
+              time.sleep(10)
+            else:
+              raise SystemExit('Live page still exceeds viewport after retry window')
+            for url in urls:
+              for width in widths:
+                p.set_viewport_size({'width':width,'height':900})
+                p.goto(url,wait_until='domcontentloaded',timeout=30000)
+                p.wait_for_selector('.kit-main-photo img',timeout=16000)
+                x=p.evaluate('''() => {
+                  let q=s=>{const r=document.querySelector(s).getBoundingClientRect();return {x:r.x,right:r.right,width:r.width}};
+                  return {vw:innerWidth,scroll:document.documentElement.scrollWidth,
+                    header:q('.inner-header'),shell:q('.detail-shell'),gallery:q('.kit-photo-gallery'),
+                    image:q('.kit-main-photo'),thumbs:q('.kit-photo-thumbnails'),grid:q('.detail-layout'),
+                    columns:getComputedStyle(document.querySelector('.detail-layout')).gridTemplateColumns}
+                }''')
+                try:
+                  assert x['scroll']<=width+2,(url,width,x)
+                  for key in ('header','shell','gallery','image','thumbs','grid'):
+                    assert x[key]['x']>=-2,(key,url,width,x)
+                    assert x[key]['right']<=width+2,(key,url,width,x)
+                  assert x['gallery']['right']<=x['shell']['right']+1,(url,width,x)
+                  print('PASS',width,url.split('/kits/')[-1],x['columns'],flush=True)
+                except AssertionError:
+                  dest='layout-failures/'+url.split('/kits/')[-1].strip('/')+'-'+str(width)+'.png'
+                  p.screenshot(path=dest,full_page=True)
+                  raise
+            b.close()
+          print('PASS all 24 viewport/kit combinations: no horizontal overflow')
+          PY
+      - name: Keep any regression screenshots
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mobile-layout-regression
+          path: layout-failures/*.png
+          retention-days: 5
+          if-no-files-found: ignore
