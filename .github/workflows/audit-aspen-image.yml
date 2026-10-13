@@ -42,4 +42,16 @@ jobs:
           print('Dawn credit in page:',bool(re.search('Dawn Donofrio',source,re.I)),flush=True)
           print('META',p.meta[:12],flush=True)
           print('IMAGE',p.img[:18],flush=True)
+          for item in p.img[1:7]:
+            img=item.get('src','')
+            if not img.startswith('https://i0.wp.com/photos.smugmug.com/'):continue
+            try:
+              req=urllib.request.Request(img,headers={'User-Agent':'Mozilla/5.0 (compatible; RebornaImageVerifier/1.0)','Accept':'image/*'})
+              with urllib.request.urlopen(req,timeout=17) as response:
+                ctype=response.headers.get('Content-Type','')
+                assert response.status==200 and ctype.startswith('image/'),(response.status,ctype)
+                assert response.read(64)
+              print('PASS ASPEN ORIGINAL PHOTO',img,flush=True)
+            except Exception as e:
+              print('FAIL ASPEN SOURCE',type(e).__name__,str(e)[:110],img,flush=True)
           PY
