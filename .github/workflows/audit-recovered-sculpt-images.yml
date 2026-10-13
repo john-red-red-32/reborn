@@ -26,13 +26,13 @@ jobs:
           b=re.search(r'export const recoveredArtistCovers:[^=]+=([\s\S]*?);\s*$',src)
           assert a and b,'Missing exact photo references'
           photos=json.loads(a.group(1));covers=json.loads(b.group(1))
-          assert len(photos)==41,len(photos)
-          assert len(covers)==9,len(covers)
+          assert len(photos)==44,len(photos)
+          assert len(covers)==11,len(covers)
           assert all(p['url'].startswith('https://') and p['source'].startswith('https://') and p['credit'] for ps in photos.values() for p in ps)
           assert not any(slug.endswith('-ping-lau') for slug in photos)
           assert 'ping-lau' not in covers
           assert len({p['url'] for ps in photos.values() for p in ps})==len(photos)
-          print('PASS 41 unique exact source photographs and nine featured sculpt artworks; no Ping Lau images',flush=True)
+          print('PASS 44 unique exact source photographs and nine featured sculpt artworks; no Ping Lau images',flush=True)
           headers={'User-Agent':'Mozilla/5.0 (compatible; RebornaImageVerification/1.0)','Accept':'image/avif,image/webp,image/jpeg,image/png,image/*'}
           checked=set()
           for slug,pictures in photos.items():
