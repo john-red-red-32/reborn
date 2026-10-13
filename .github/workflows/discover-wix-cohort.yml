@@ -55,6 +55,22 @@ jobs:
               --collection /vinyl-kits:vinyl \
               --out artifacts/wix-named-image-evidence.json
           fi
+      - name: Verify Wix Stores product pages and source-matched photographs
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_wix_store_products.py' -v
+          if [ "${{ matrix.artist }}" = "doris-moyers-hornbogen" ]; then
+            python3 scripts/extract_wix_store_products.py \
+              --input artifacts/source-discovery.json \
+              --collection /vinyl-kits:vinyl \
+              --max-products 40 --delay 1.0 \
+              --out artifacts/wix-store-products.json
+          else
+            python3 scripts/extract_wix_store_products.py \
+              --input artifacts/source-discovery.json \
+              --collection /doll-kits:vinyl \
+              --max-products 10 --delay 1.0 \
+              --out artifacts/wix-store-products.json
+          fi
       - name: Prepare browser for artist-owned Wix galleries
         run: |
           python3 -m pip install playwright==1.55.0
@@ -77,12 +93,14 @@ jobs:
           b=json.load(open('artifacts/extraction-candidates.json'))
           c=json.load(open('artifacts/wix-gallery-evidence.json'))
           n=json.load(open('artifacts/wix-named-image-evidence.json'))
+          s=json.load(open('artifacts/wix-store-products.json'))
           print('Wix source:',a['source'])
           print('Pages scanned:',a['pages_succeeded'],'errors:',a['errors'][:5])
           print('Detected platforms:',a['platforms'])
           print('Structured product candidates:',b['candidate_count'])
           print('Named Wix cards:',c['kit_cards_found'])
           print('Named artist-page source images:',n['kit_cards_found'])
+          print('Wix store products parsed:',s['products_parsed'],'photo-matched:',s['source_photo_matched'],'errors:',s['errors'][:4])
           print('Other photos held for review:',c['unverified_gallery_photos_found'])
           print('Research only. No catalogue or images published.')
           PY
