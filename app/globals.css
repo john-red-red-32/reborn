@@ -443,3 +443,17 @@ html{scroll-behavior:smooth}
 @media(max-width:900px){.discover-feed-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}}
 @media(max-width:700px){.calendar-standalone .home-calendar-section{padding:36px 15px 55px}.calendar-page-top{padding:22px 15px 0}.home-calendar-year-title{font-size:39px;margin-top:0}.home-calendar-year-title span{font-size:8px}.home-calendar-year+.home-calendar-year{margin-top:35px}.home-calendar-month-head h4{font-size:28px}.home-calendar-cards{grid-template-columns:1fr;gap:10px}.home-calendar-card{padding:15px 15px}.home-calendar-card-main h5{font-size:32px}.home-calendar-event-line{margin-bottom:7px;padding:6px 0}.home-calendar-financials{padding-top:9px}.home-calendar-financials b{font-size:13px}.discover-feed-section{padding:48px 15px 70px}.discover-feed-intro{align-items:flex-start}.discover-feed-intro h2{font-size:38px}.discover-calendar-link{font-size:11px}.discover-feed-tools{display:grid}.discover-feed-filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.discover-feed-filters button{padding:9px 4px;font-size:10px}.discover-feed-grid{gap:20px 10px}.discover-feed-name{font-size:23px}.discover-feed-status{font-size:9px}.discover-save{width:31px;height:31px;top:7px;right:7px}.discover-feed-copy{padding-top:10px}.discover-feed-sculptor{font-size:9px}.discover-feed-art{aspect-ratio:4/5}.bottom-cta{flex-wrap:wrap}.bottom-cta>a{width:max-content}}
 @media(max-width:380px){.discover-feed-grid{gap:17px 8px}.discover-feed-name{font-size:20px}.discover-feed-filters button{font-size:9px}.calendar-page-top>span{font-size:9px}}
+
+
+/* Reborna verified kit material switch — a shared, restrained control. */
+.material-filter{display:inline-flex;align-items:center;gap:3px;padding:3px;border:1px solid #ded1c5;background:#f7f1ea;border-radius:999px;width:max-content;max-width:100%}
+.material-filter button{border:0;background:transparent;color:#806e61;border-radius:999px;padding:9px 14px;font-family:inherit;font-size:11px;font-weight:650;white-space:nowrap;line-height:1.2;transition:background .16s ease,color .16s ease}
+.material-filter button.active{background:#705e50;color:#fff;box-shadow:0 1px 5px #533d3020}
+.material-filter button:focus-visible{outline:2px solid #9c7964;outline-offset:2px}
+.sculpt-material-row,.unified-material-row{display:flex;gap:13px;align-items:center;flex-wrap:wrap}
+.sculpt-material-row{margin:0 0 14px}
+.unified-material-row{margin-top:15px}
+.sculpt-material-row>span,.unified-material-row>span{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#947f71}
+.discover-feed-tools>.material-filter{margin-left:auto}
+@media(max-width:680px){.discover-feed-tools>.material-filter{margin-left:0}.sculpt-material-row,.unified-material-row{gap:9px}.material-filter button{font-size:10px;padding:9px 11px}}
+@media(max-width:380px){.material-filter{width:100%;justify-content:space-between}.material-filter button{flex:1;padding:9px 5px}}
