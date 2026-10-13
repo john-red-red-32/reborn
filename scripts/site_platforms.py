@@ -8,6 +8,8 @@ def detect_platform(html,meta=None):
     t=html.lower()
     if "wixstatic.com" in t or "wix.com" in t or "wixsite" in t: return "wix"
     if "cdn.shopify.com" in t or "shopify.theme" in t or "myshopify" in t: return "shopify"
+    if "jimcdn.com" in t or "jimdo.com" in t or "jimdofree" in t: return "jimdo"
+    if "jwwb.nl" in t or "webador" in t or "jouwweb" in t: return "webador"
     if "woocommerce" in t or "wc-block" in t: return "woocommerce"
     if "wp-content/" in t or "wordpress" in t or "wp-json" in t: return "wordpress"
     if "godaddy.com" in t or "secureserver.net" in t or "websitebuilder" in t: return "godaddy"
