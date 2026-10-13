@@ -21,6 +21,13 @@ export const retailerKitsLauraLee:VerifiedKit[]=[
         "url": "https://lauraleeoriginals.com/",
         "kind": "artist"
       }
+    ],
+    "photos": [
+      {
+        "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Alfie-by-Laura-Lee-Eagles-10.jpg",
+        "credit": "MacPherson Arts & Crafts — Alfie by Laura Lee Eagles (original kit listing; photographer not independently identified)",
+        "source": "https://macphersoncrafts.com/online-store/doll-kits-by-sculptor/laura-lee-eagles/alfie-by-laura-lee-eagles.htm"
+      }
     ]
   },
   {
