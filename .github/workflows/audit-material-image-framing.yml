@@ -1,0 +1,55 @@
+name: Review negative space in material product images
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'lib/material-product-families.ts'
+      - 'scripts/audit_material_image_framing.py'
+      - '.github/workflows/audit-material-image-framing.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  framing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - run: python3 -m pip install -q Pillow
+      - name: Analyse only new source-image URLs with conservative border/background detection
+        run: python3 scripts/audit_material_image_framing.py
+      - name: Validate safe framing ranges and source-only assets
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('lib/material-image-framing.json').read_text())
+          assert len(d)>230
+          good={u:c for u,c in d.items() if c is not None}
+          assert all(u.startswith('https://cdn.shopify.com/') or '.clvaw-cdnwnd.com/' in u for u in d)
+          for vals in good.values():
+            assert len(vals)==3
+            assert 1.24<=vals[0]<=2.1
+            assert all(-30<=v<=30 for v in vals[1:])
+          print('PASS',len(d),'source assets assessed;',len(good),'conservative smart-framed')
+          PY
+      - name: Commit metadata only when products/images change
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lib/material-image-framing.json
+          if git diff --cached --quiet; then
+            echo "No new image framing data."
+            exit 0
+          fi
+          git commit -m "Update lightweight source-image framing metadata [skip ci]"
+          for n in 1 2 3 4 5; do
+            if git push origin HEAD:main; then exit 0; fi
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            sleep 2
+          done
+          exit 1
