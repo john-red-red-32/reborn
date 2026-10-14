@@ -1,0 +1,59 @@
+name: Audit member profile safety live
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-member-profile-live.yml'
+      - 'functions/api/community/**'
+      - 'lib/community-name-safety.mjs'
+      - 'components/ProfilePhotoEditor.tsx'
+      - 'components/ProfileAvatar.tsx'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check deployed member avatar API and offensive-name rejection
+        run: |
+          python3 - <<'PY'
+          import json,time,urllib.request,urllib.error
+          base='https://reborna.co'
+          def query(path,method='GET',body=None):
+            payload=None if body is None else json.dumps(body).encode()
+            req=urllib.request.Request(base+path,method=method,data=payload,headers={
+              'User-Agent':'Mozilla/5.0 (Reborna member safety audit)',
+              'Accept':'application/json',
+              **({'Content-Type':'application/json'} if body is not None else {})
+            })
+            try:
+              with urllib.request.urlopen(req,timeout=18) as r:return r.status,json.loads(r.read())
+            except urllib.error.HTTPError as e:
+              return e.code,json.loads(e.read())
+          for attempt in range(32):
+            errors=[]
+            try:
+              status,statusData=query('/api/community/status')
+              if status!=200 or statusData.get('registrationOpen') is not True:errors.append(('registration endpoint',status))
+              # This unregistered ID exercises the avatar query without adding or reading personal photos.
+              status,photo=query('/api/community/avatar?id=00000000-0000-0000-0000-000000000000')
+              if status!=404 or photo.get('error')!='Profile photo not found.':errors.append(('avatar API not deployed',status))
+            except Exception as e:errors.append(('waiting for backend',str(e)[:110]))
+            if not errors:break
+            print('Waiting for Cloudflare profile release',attempt+1,errors,flush=True)
+            time.sleep(12)
+          else:raise SystemExit('Profile deployment not ready: '+repr(errors))
+          # Deliberately invalid public alias; must be rejected BEFORE attempting registration.
+          # The test supplies no Turnstile token, saves no account and sends no email.
+          status,result=query('/api/community/register','POST',{
+            'email':'never-created-profile-audit@example.invalid',
+            'handle':'f_u_c_k',
+            'displayName':'A test name',
+            'password':'ThisIsNotAnAccount123!'
+          })
+          assert status==400 and 'profanity' in result.get('error','').lower(),(status,result)
+          print('PASS: member API healthy, avatar serving route active, explicitly profane handle rejected before any signup')
+          PY
