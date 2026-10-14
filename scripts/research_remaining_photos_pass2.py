@@ -13,7 +13,7 @@ ROWS=[
 ("josie-ping-lau","Josie","Ping Lau","https://www.irresistables.com/josie-reborn-vinyl-doll-kit-by-ping-lau/"),
 ("baby-george-ping-lau","Baby George","Ping Lau","https://www.irresistables.com/newborn-george-reborn-vinyl-doll-kit-by-ping-lau-20/"),
 ("sugar-ping-lau","Sugar","Ping Lau","https://www.oncesoreal.com/sugar-von-ping-lau/p-7500.html"),
-("lillegroda-sabine-altenkirch-junkes","Lillegroda","Sabine Altenkirch","https://www.sabine-altenkirch.com/startseite-home/shop/lillegroda/"),
+("lillegroda-sabine-altenkirch-junkes","Lillegroda","Sabine Altenkirch","https://www.irresistables.com/lillegroda-reborn-vinyl-doll-kit-by-sabine-altenkirch-18/"),
 ("amy-elly-knoops","Amy","Elly Knoops","https://macphersoncrafts.com/reborn-doll-kits/amy-by-elly-knoops.htm"),
 ("river-sleeping-dawn-donofrio","River Sleeping","Dawn Donofrio","https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/limited-time-offer-river-sleeping-blank-full-body-silicone-doll-kit/"),
 ("danica-dawn-donofrio","Danica","Dawn Donofrio","https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/danica-blank-partial-silicone-5-piece-doll-kit/"),
