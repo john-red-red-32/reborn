@@ -1,7 +1,7 @@
 -- Private member collections. Canonical Reborna paths, not seller stock or purchases.
 CREATE TABLE IF NOT EXISTS member_saved_items (
  user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
- item_type TEXT NOT NULL CHECK(item_type IN ('kit','material','artist')),
+ item_type TEXT NOT NULL CHECK(item_type IN ('kit','material','artist','archive')),
  item_path TEXT NOT NULL,
  item_title TEXT NOT NULL,
  item_subtitle TEXT NOT NULL DEFAULT '',
