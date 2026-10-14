@@ -21,6 +21,8 @@ PAGES=[
  ("josie-awake-ping-lau","Josie Awake","ping-lau","https://www.irresistables.com/josie-awake-reborn-vinyl-doll-kit-by-ping-lau/"),
  ("josie-ping-lau","Josie","ping-lau","https://www.irresistables.com/josie-reborn-vinyl-doll-kit-by-ping-lau/"),
  ("baby-george-ping-lau","Baby George","ping-lau","https://www.irresistables.com/newborn-george-reborn-vinyl-doll-kit-by-ping-lau-20/"),
+ ("emma-dawn-donofrio","Emma","dawn-donofrio","https://rebornbabycreations.com/products/super-soft-silicone-baby-emma-by-dawn-64xg8mj82wno0xrd"),
+ ("emerson-dawn-donofrio","Emerson","dawn-donofrio","https://rebornbabycreations.com/products/super-soft-silicone-baby-emerson-by-dawn-38489"),
 ]
 def check_robot(url,cache):
  h=urlsplit(url).hostname
@@ -48,18 +50,18 @@ def inspect(item,cache):
   norm=lambda s:re.sub(r"[^a-z0-9]+"," ",s.lower()).strip()
   if norm(name) not in norm(title):
    result["status"]="name_title_not_matched";return result
-  if artist=="ping-lau" and not ("ping lau" in norm(title) or "ping lau" in norm(soup.get_text(" ",strip=True)[:5000])):
+  if artist in ("ping-lau","dawn-donofrio") and not (("ping lau" if artist=="ping-lau" else "dawn donofrio") in norm(title) or ("ping lau" if artist=="ping-lau" else "dawn donofrio") in norm(soup.get_text(" ",strip=True)[:5000])):
    result["status"]="artist_not_confirmed";return result
   candidates=[]
   if slug.startswith("willow-"):
    for image in soup.find_all("img"):
     src=image.get("data-src") or image.get("src") or ""
-    if "images.squarespace-cdn.com" in src and re.search(r"\.(jpg|jpeg|png|webp)",src,re.I):
+    if "images.squarespace-cdn.com" in src and re.search(r"\.(jpg|jpeg|png|webp)",src,re.I) and not re.search(r"logo|watermark|icon",src,re.I):
      candidates.append({"url":urljoin(url,src),"basis":"exact_product_squarespace_gallery","alt":image.get("alt","")})
    # Squarespace product details may store image variants in JSON.
    for match in re.finditer(r'https?://images\.squarespace-cdn\.com/content/v1/[^"\\\s<>]+',str(soup)):
     u=match.group(0).replace("&amp;","&")
-    if re.search(r"\.(jpg|jpeg|png|webp)",u,re.I):
+    if re.search(r"\.(jpg|jpeg|png|webp)",u,re.I) and not re.search(r"logo|watermark|icon",u,re.I):
      candidates.append({"url":u,"basis":"exact_product_squarespace_page","alt":""})
   else:
    meta=soup.find("meta",attrs={"property":"og:image"})
