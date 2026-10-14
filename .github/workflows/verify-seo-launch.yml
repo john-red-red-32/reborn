@@ -1,0 +1,105 @@
+name: Verify Reborna organic-search launch
+on:
+  push:
+    branches: [main, feature/seo-launch-original-artists-20261014]
+    paths:
+      - 'app/**'
+      - 'components/**'
+      - 'lib/**'
+      - '.github/workflows/verify-seo-launch.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Build public site as static HTML for Cloudflare
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+        run: |
+          printf "/** @type {import('next').NextConfig} */\nconst config = {output:'export',trailingSlash:true,images:{unoptimized:true}};\nexport default config;\n" > next.config.mjs
+          npm run build
+      - name: Verify real crawlable HTML, canonical metadata and crawler inventory
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          import xml.etree.ElementTree as ET
+          from collections import Counter
+          out=Path('out')
+          class Page(HTMLParser):
+            def __init__(self):
+              super().__init__()
+              self.in_title=False;self.in_h1=False
+              self.title='';self.h1='';self.h1s=0;self.links=[];self.canonical='';self.robots='';self.images=[]
+            def handle_starttag(self,tag,attrs):
+              d=dict(attrs)
+              if tag=='title':self.in_title=True
+              if tag=='h1':self.in_h1=True;self.h1s+=1
+              if tag=='a':self.links.append(d.get('href',''))
+              if tag=='img':self.images.append(d.get('alt'))
+              if tag=='link' and d.get('rel')=='canonical':self.canonical=d.get('href','')
+              if tag=='meta' and d.get('name')=='robots':self.robots=d.get('content','')
+            def handle_endtag(self,tag):
+              if tag=='title':self.in_title=False
+              if tag=='h1':self.in_h1=False
+            def handle_data(self,data):
+              if self.in_title:self.title+=data
+              if self.in_h1:self.h1+=data
+          def page(path):
+            file=out/path.strip('/')/'index.html' if path!='/' else out/'index.html'
+            assert file.is_file(),('missing static HTML',str(file))
+            p=Page();p.feed(file.read_text());return p
+          public=['/','/real-kits/','/artists/','/materials/','/events/','/community/','/privacy/','/terms/','/cookies/']
+          for path in public:
+            p=page(path)
+            assert p.title and p.h1s==1,(path,'title/H1',p.title,p.h1s)
+            assert 'noindex' not in p.robots.lower(),(path,'unexpected noindex',p.robots)
+          for kind in ['artists','kits']:
+            pages=list((out/kind).glob('*/index.html'))
+            assert len(pages)>=5,(kind,'too few static pages',len(pages))
+            sample=pages[:min(12,len(pages))]
+            for file in sample:
+              path='/'+str(file.relative_to(out).parent).replace('\\','/')+'/'
+              p=page(path)
+              assert p.h1s==1 and len(p.title)>20,(path,'title/H1',p.title,p.h1s)
+              assert p.canonical=='https://reborna.co'+path,(path,'canonical',p.canonical)
+              assert 'noindex' not in p.robots.lower(),(path,'noindex')
+              assert '/kits/' in ' '.join(p.links) or kind=='kits',(path,'no source-visible sculpt links')
+              assert all(x is not None for x in p.images),(path,'image missing alt')
+            print(kind,len(pages),'static indexed profiles checked')
+          material_dirs=list((out/'materials').glob('*/*/index.html'))
+          assert material_dirs, 'no individual pre-rendered material product pages'
+          for file in material_dirs[:10]:
+            rel='/'+str(file.relative_to(out).parent).replace('\\','/')+'/'
+            p=page(rel)
+            assert p.h1s==1 and p.canonical=='https://reborna.co'+rel,(rel,p.h1s,p.canonical)
+            assert 'noindex' not in p.robots.lower(),rel
+          for path in ['/account/','/dashboard/','/messages/','/community/moderation/','/community/discussion/','/community/member/','/calendar/']:
+            p=page(path)
+            assert 'noindex' in p.robots.lower(),(path,'missing privacy/index guard')
+          sitemap=out/'sitemap.xml';robots=out/'robots.txt';llms=out/'llms.txt'
+          for f in [sitemap,robots,llms]:assert f.is_file(),('missing crawler file',str(f))
+          root=ET.parse(sitemap).getroot()
+          ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
+          urls=[x.text for x in root.findall('s:url/s:loc',ns)]
+          assert len(urls)>100,('sitemap unexpectedly small',len(urls))
+          assert len(set(urls))==len(urls),'duplicate sitemap URLs'
+          assert all(x.startswith('https://reborna.co/') for x in urls)
+          assert not any(x.endswith(('/account/','/dashboard/','/messages/','/calendar/')) for x in urls)
+          rule=robots.read_text()
+          assert 'Sitemap: https://reborna.co/sitemap.xml' in rule
+          assert 'Disallow: /api/' in rule
+          assert not any(line.strip()=='Disallow: /' for line in rule.splitlines())
+          llm=llms.read_text()
+          assert 'Reborna' in llm and 'https://reborna.co/artists/' in llm
+          print('PASS',len(urls),'sitemap entries; static HTML and privacy-safe index boundaries')
+          PY
