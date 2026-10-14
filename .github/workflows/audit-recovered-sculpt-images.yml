@@ -33,7 +33,7 @@ jobs:
           assert covers['ping-lau'][0]['source'].startswith('https://www.irresistables.com/')
           assert len({p['url'] for ps in photos.values() for p in ps})==sum(len(ps) for ps in photos.values()),'A photograph was assigned to more than one kit'
           print('PASS 70 exact-source photographed kits and thirteen illustrated artist covers; Ping retailer-specific sharing terms enforced',flush=True)
-          headers={'User-Agent':'Mozilla/5.0 (compatible; RebornaImageVerification/1.0)','Accept':'image/avif,image/webp,image/jpeg,image/png,image/*'}
+          headers={'User-Agent':'Mozilla/5.0','Accept':'image/avif,image/webp,image/jpeg,image/png,image/*'}
           checked=set()
           for slug,pictures in photos.items():
               for pic in pictures:
