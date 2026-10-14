@@ -2,7 +2,7 @@ import Link from "next/link";
 import type {Metadata} from "next";
 import {ArrowRight} from "lucide-react";
 import MaterialSuppliesExplorer from "../../components/MaterialSuppliesExplorer";
-export const metadata:Metadata={title:"Reborn Doll Making Supplies | Reborna",description:"Explore original reborn doll painting supplies, heat-set and air-dry paints, rooting hair, glass eyes, needles, cloth bodies and expert suppliers.",robots:{index:false,follow:false}};
+export const metadata:Metadata={title:"Reborn Doll Making Supplies, Paints & Mohair | Reborna",description:"Explore original reborn doll painting supplies, heat-set and air-dry paints, rooting hair, glass eyes, needles, cloth bodies and expert suppliers.",alternates:{canonical:"/materials/"}};
 export default function Materials(){
  return <main className="detail-shell materials-page rbrn-materials-page">
   <section className="materials-heading"><span className="section-kicker">THE MAKER'S STUDIO</span><h1>The artist's <em>essentials.</em></h1><p>From the first translucent paint layers to the final little eyelashes. A carefully researched directory of materials, systems and specialist suppliers that bring original sculpts to life.</p></section>
