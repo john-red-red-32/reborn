@@ -1,0 +1,51 @@
+name: Audit live member collections
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-member-collection-live.yml'
+      - 'app/dashboard/**'
+      - 'components/WishlistProvider.tsx'
+      - 'components/WishlistHeart.tsx'
+      - 'components/MemberDashboard.tsx'
+      - 'functions/api/community/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 13
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify member dashboard and private Cloudflare endpoints on production
+        run: |
+          python3 - <<'PY'
+          import json,time,urllib.request,urllib.error
+          base='https://reborna.co'
+          def request(path):
+            req=urllib.request.Request(base+path,headers={'User-Agent':'Mozilla/5.0 (Reborna member collections audit)','Accept':'application/json,text/html'})
+            try:
+              with urllib.request.urlopen(req,timeout=20) as resp:return resp.status,resp.read().decode(errors='replace')
+            except urllib.error.HTTPError as e:return e.code,e.read().decode(errors='replace')
+          for attempt in range(35):
+            errors=[]
+            try:
+              code,page=request('/dashboard/')
+              if code!=200 or 'Your space' not in page:errors.append(('dashboard static page',code))
+              code,home=request('/')
+              if code!=200 or 'Add to wishlist' not in home:errors.append(('shared hearts on Discover',code))
+              for endpoint in ['/api/community/wishlist','/api/community/studio','/api/community/listing-drafts']:
+                code,payload=request(endpoint)
+                if code!=401:errors.append((endpoint+' privacy',code))
+                elif json.loads(payload).get('error')!='Please sign in to continue.':errors.append((endpoint+' response',code))
+              code,status=request('/api/community/status')
+              if code!=200 or not json.loads(status).get('registrationOpen'):errors.append(('membership',code))
+            except Exception as e:errors.append(('transient',str(e)[:160]))
+            if not errors:
+              print('PASS: member dashboard, real wishlist hearts, and all three authenticated owner-only APIs')
+              break
+            print('Waiting for new production deployment',attempt+1,errors,flush=True)
+            time.sleep(10)
+          else:raise SystemExit('Member workspace audit failed: '+repr(errors))
+          PY
