@@ -487,3 +487,109 @@ html{scroll-behavior:smooth}
 .kit-finished-example-note{display:flex;align-items:flex-start;gap:9px;margin:10px 0 20px;padding:12px 15px;border-left:2px solid #c7b19e;background:#f7f2ec;color:#75675c;font-size:12px;line-height:1.65}
 .kit-finished-example-note svg{flex:0 0 auto;margin-top:2px;color:#8e7967}
 @media(max-width:600px){.kit-finished-example-note{font-size:11px;line-height:1.6;padding:10px 12px;margin:8px 0 18px}}
+
+
+/* Reborna community event pages — curated, source-led, no copyrighted show artwork. */
+.inner-nav{gap:clamp(11px,1.7vw,25px)}
+.rbrn-events-page,.rbrn-event-detail{min-height:75vh}
+.rbrn-events-hero{max-width:1350px;margin:0 auto;padding:58px 4% 48px;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(240px,.8fr);gap:7%;align-items:center}
+.rbrn-events-hero h1,.rbrn-calendar-header h1,.rbrn-event-detail-hero h1{font:normal clamp(45px,6.3vw,90px)/1.08 "Playfair Display",Georgia,serif;letter-spacing:-.045em;color:#44372e;margin:18px 0 22px}
+.rbrn-events-hero h1 em{color:#977d6b;font-weight:400}
+.rbrn-events-hero p,.rbrn-calendar-header p{font-size:14px;line-height:1.85;color:#84786c;max-width:570px}
+.rbrn-events-hero-link{display:inline-flex;align-items:center;gap:12px;color:#765a47;font-size:12px;font-weight:700;margin-top:20px;border-bottom:1px solid #bda995;padding-bottom:10px}
+.rbrn-events-hero-art{display:flex;justify-content:center}
+.rbrn-events-arch{border:1px solid #d8c6b8;border-radius:48% 48% 0 0;min-height:340px;aspect-ratio:.83;background:linear-gradient(140deg,#dfd0c1,#f8f1e9 65%,#d6bcac);display:flex;align-items:center;justify-content:space-between;flex-direction:column;padding:31px 18px;text-align:center;box-shadow:19px 18px 0 #e9dfd5}
+.rbrn-events-arch>span,.rbrn-events-arch>small{font:700 9px/1.8 "DM Sans",sans-serif;letter-spacing:.24em;color:#846a58}
+.rbrn-events-arch strong{font:normal 135px/1 "Playfair Display",serif;color:#9e816d}
+.rbrn-events-explorer{max-width:1350px;margin:0 auto 90px;padding:0 4%}
+.rbrn-events-controls{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px;padding:22px 0;border-top:1px solid #dbccbf;border-bottom:1px solid #dbccbf;margin-bottom:27px}
+.rbrn-events-filter-title{display:flex;gap:10px;align-items:center;font-size:12px;font-weight:700;color:#594a40}
+.rbrn-events-filter-title>span{font-size:10px;color:#a08a79;font-weight:500}
+.rbrn-events-selects{display:flex;flex-wrap:wrap;gap:14px}
+.rbrn-events-selects label{display:flex;align-items:center;gap:10px;color:#7d6b5f;font-size:11px}
+.rbrn-events-selects label>span{display:flex;align-items:center;gap:7px}
+.rbrn-events-selects select{background:#fffdfb;border:1px solid #d7c7ba;color:#51463d;padding:11px 14px;min-width:180px}
+.rbrn-events-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.rbrn-event-card{display:grid;grid-template-columns:minmax(155px,.68fr) minmax(0,1fr);border:1px solid #e1d4c9;background:#fffdfb;min-height:322px}
+.rbrn-event-card-art{display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;background:linear-gradient(145deg,#e4d6c9 0%,#c4a995 68%,#ad8e7d 100%);padding:20px;min-height:285px;color:#fffdf8}
+.rbrn-event-card:nth-child(3n+2) .rbrn-event-card-art{background:linear-gradient(140deg,#baafa5,#e1d3c5 73%,#c5ab96)}
+.rbrn-event-card:nth-child(3n+3) .rbrn-event-card-art{background:linear-gradient(135deg,#d4c0ac,#9b8577)}
+.rbrn-event-card:nth-child(3n+4) .rbrn-event-card-art{background:linear-gradient(145deg,#e3d8cd,#b69780)}
+.rbrn-event-art-eyebrow,.rbrn-event-art-bottom{font:700 8px/1.5 "DM Sans",sans-serif;letter-spacing:.11em;position:relative;z-index:1}
+.rbrn-event-art-glyph{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);font:normal 130px/1 Georgia,serif;opacity:.47}
+.rbrn-event-art-location{position:relative;z-index:1;font:normal 31px/1.13 "Playfair Display",serif;letter-spacing:-.02em;margin-top:auto;max-width:100%;overflow-wrap:anywhere}
+.rbrn-event-art-location small{display:block;margin:10px 0 25px;font:700 8px/1.4 "DM Sans",sans-serif;letter-spacing:.14em}
+.rbrn-event-art-bottom{display:flex;justify-content:space-between;gap:7px;opacity:.85}
+.rbrn-event-card-copy{min-width:0;display:flex;flex-direction:column;padding:23px 22px 21px}
+.rbrn-event-card-label{display:flex;flex-wrap:wrap;justify-content:space-between;gap:5px;font-size:8px;font-weight:700;letter-spacing:.12em;color:#977c69}
+.rbrn-event-card h3{font:normal clamp(25px,2.8vw,39px)/1.13 "Playfair Display",Georgia,serif;letter-spacing:-.025em;margin:19px 0 15px;color:#46382f}
+.rbrn-event-card h3 a:hover{color:#97745d}
+.rbrn-event-meta{display:flex;flex-direction:column;gap:9px;font-size:11px;font-weight:600;color:#705e51}
+.rbrn-event-meta>span{display:flex;align-items:center;gap:9px}
+.rbrn-event-card-copy>p{font-size:11px;line-height:1.85;color:#85776c;margin:17px 0 20px}
+.rbrn-event-card-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:auto}
+.rbrn-event-card-actions a{display:inline-flex;align-items:center;gap:7px;font-size:10px;font-weight:700}
+.rbrn-event-details-link{color:#6e5240}
+.rbrn-event-external-link{color:#988171}
+.rbrn-events-empty{text-align:center;border:1px dashed #d7c7b9;padding:65px 20px}
+.rbrn-events-empty h3{font:normal 30px "Playfair Display",serif}
+.rbrn-events-empty p{font-size:12px;color:#8b796d}
+.rbrn-events-empty button{padding:10px 15px;border:1px solid #b6a392;color:#604c3e;background:white;margin-top:14px}
+.rbrn-events-fineprint{font-size:10px;line-height:1.75;color:#988779;margin-top:25px}
+.rbrn-calendar-header{max-width:1350px;margin:0 auto;padding:43px 4% 40px}
+.rbrn-calendar-header h1{font-size:clamp(41px,5.5vw,72px);margin:15px 0}
+.rbrn-calendar-tabs{display:flex;gap:8px;margin-top:29px;flex-wrap:wrap}
+.rbrn-calendar-tabs button{border:1px solid #d7c5b6;border-radius:30px;background:#fffdfb;color:#695748;padding:12px 24px;font-size:12px;font-weight:600;transition:background .2s,color .2s}
+.rbrn-calendar-tabs button.active,.rbrn-calendar-tabs button:hover{background:#695344;color:white;border-color:#695344}
+.rbrn-calendar-events{max-width:1350px;margin:0 auto;padding:0 4% 28px}
+.rbrn-calendar-events-top{display:flex;align-items:end;justify-content:space-between;gap:22px;margin-bottom:28px}
+.rbrn-calendar-events-top h2{font:normal clamp(30px,4vw,51px)/1.1 "Playfair Display",serif;margin:12px 0;color:#544337}
+.rbrn-calendar-events-top p{font-size:12px;color:#8c7b6c;line-height:1.8}
+.rbrn-calendar-events-top>a{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;color:#785e4b;white-space:nowrap}
+.rbrn-timeline-month{margin-bottom:30px}
+.rbrn-timeline-month h3{font:normal clamp(23px,3vw,33px) "Playfair Display",serif;color:#5b483a;border-bottom:1px solid #d9cabb;padding-bottom:13px;margin:0 0 7px}
+.rbrn-timeline-month h3 small{font:700 9px "DM Sans",sans-serif;letter-spacing:.13em;text-transform:uppercase;margin-left:16px;color:#ad9582}
+.rbrn-timeline-entry{display:grid;grid-template-columns:180px 1fr 112px 22px;gap:18px;align-items:center;min-height:84px;border-bottom:1px solid #e8ded4;padding:14px 10px}
+.rbrn-timeline-entry:hover{background:#f7f0e9}
+.rbrn-timeline-date{font-size:12px;color:#7b6656;display:flex;align-items:center;gap:10px}
+.rbrn-timeline-name{display:flex;flex-direction:column;gap:6px}
+.rbrn-timeline-name strong{font:normal 23px/1.2 "Playfair Display",serif;color:#483b32}
+.rbrn-timeline-name span{display:flex;gap:6px;align-items:center;font-size:10px;color:#8f7c6d}
+.rbrn-timeline-tag{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:#957866}
+.rbrn-timeline-arrow{color:#8b705d}
+.calendar-standalone .home-calendar-section{margin-top:30px;border-top:1px solid #ddd0c4}
+.rbrn-event-detail-hero{max-width:1350px;margin:0 auto;padding:65px 4% 30px}
+.rbrn-event-detail-hero h1{font-size:clamp(43px,5.8vw,79px);max-width:900px}
+.rbrn-event-detail-hero>p{font-size:14px;color:#8b7665}
+.rbrn-event-detail-layout{max-width:1350px;margin:0 auto;padding:25px 4% 70px;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(300px,.75fr);gap:8%}
+.rbrn-event-detail-signet{height:290px;background:linear-gradient(135deg,#e7dbcf,#c6ad9a 72%,#947866);display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:22px;color:#fffdf9}
+.rbrn-event-detail-signet span,.rbrn-event-detail-signet small{font:700 9px "DM Sans",sans-serif;letter-spacing:.19em}
+.rbrn-event-detail-signet strong{font:normal 110px/1 Georgia,serif}
+.rbrn-event-detail-story h2{font:normal 36px "Playfair Display",serif;color:#513f32;margin:43px 0 12px}
+.rbrn-event-detail-story h3{font:normal 26px "Playfair Display",serif;color:#594535;margin-top:32px}
+.rbrn-event-detail-story p,.rbrn-event-detail-story li{font-size:13px;line-height:1.9;color:#77675c}
+.rbrn-event-detail-story ul{padding-left:20px}
+.rbrn-event-detail-story li{padding:3px 0}
+.rbrn-event-detail-story .rbrn-event-source{margin-top:32px;padding-top:18px;border-top:1px solid #e3d6cb;font-size:11px}
+.rbrn-event-source a{border-bottom:1px solid #b9a697;display:inline-flex;align-items:center;gap:5px}
+.rbrn-event-artist-link a{color:#70543f;border-bottom:1px solid #ae9987}
+.rbrn-event-detail-aside{align-self:start;background:#f4ece4;border:1px solid #e3d3c4;padding:29px}
+.rbrn-event-aside-eyebrow{font-size:9px;letter-spacing:.15em;font-weight:700;color:#9c7e68}
+.rbrn-event-aside-row{border-top:1px solid #ded0c4;display:flex;gap:15px;padding:22px 0}
+.rbrn-event-aside-row:first-of-type{margin-top:18px}
+.rbrn-event-aside-row svg{flex-shrink:0;color:#9b7c64}
+.rbrn-event-aside-row div{display:flex;flex-direction:column;gap:8px}
+.rbrn-event-aside-row small{font-size:9px;letter-spacing:.14em;font-weight:700;color:#a48e7d}
+.rbrn-event-aside-row strong{font:normal 22px "Playfair Display",serif;color:#4c3c31}
+.rbrn-event-aside-row div>span{font-size:11px;line-height:1.8;color:#857264}
+.rbrn-event-aside-dot{font-size:23px;color:#977966}
+.rbrn-event-organiser-button{background:#705441;color:#fffdf9;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:9px;font-size:12px;font-weight:700}
+.rbrn-event-detail-aside>p{font-size:10px;line-height:1.65;color:#8a7769;margin-top:18px}
+.rbrn-event-detail-footer{display:flex;justify-content:space-between;gap:20px;max-width:1350px;margin:0 auto 65px;padding:0 4%;font-size:12px;font-weight:700;color:#785e4b}
+.rbrn-events-home-promo{max-width:1350px;margin:20px auto 70px;padding:45px 5%;background:#f2e8dd;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.rbrn-events-home-promo h2{font:normal clamp(27px,3vw,40px) "Playfair Display",serif;margin:13px 0;color:#513f32}
+.rbrn-events-home-promo p{font-size:12px;line-height:1.8;color:#877366;max-width:550px}
+.rbrn-events-home-promo>a{display:flex;align-items:center;gap:12px;font-weight:700;font-size:12px;border-bottom:1px solid #b59a85;padding-bottom:8px;white-space:nowrap;color:#685040}
+@media(max-width:1050px){.rbrn-events-grid{grid-template-columns:1fr}.rbrn-event-card{min-height:285px;grid-template-columns:230px 1fr}.inner-nav{gap:11px}.inner-nav a{font-size:11px}}
+@media(max-width:750px){.rbrn-events-hero{grid-template-columns:1fr;padding-top:35px}.rbrn-events-hero-art{display:none}.rbrn-event-detail-layout{grid-template-columns:1fr;gap:35px}.rbrn-timeline-entry{grid-template-columns:1fr 26px;gap:8px}.rbrn-timeline-date,.rbrn-timeline-name,.rbrn-timeline-tag{grid-column:1}.rbrn-timeline-arrow{grid-column:2;grid-row:1/4}.rbrn-calendar-events-top{align-items:start;flex-direction:column}.rbrn-events-home-promo{margin:20px 4% 60px;flex-direction:column;align-items:flex-start}.rbrn-calendar-header{padding-top:35px}}
+@media(max-width:520px){.rbrn-event-card{grid-template-columns:1fr}.rbrn-event-card-art{min-height:175px}.rbrn-event-art-glyph{font-size:90px}.rbrn-event-art-location{font-size:26px}.rbrn-event-card-copy{padding:22px}.rbrn-events-hero h1{font-size:47px}.rbrn-events-selects label{width:100%;justify-content:space-between}.rbrn-calendar-tabs button{padding:11px 17px}.rbrn-event-detail-hero{padding-top:40px}.rbrn-event-detail-signet{height:210px}.rbrn-event-detail-footer{flex-direction:column}.rbrn-timeline-month h3 small{display:block;margin:8px 0 0}.rbrn-event-card h3{font-size:30px}}
