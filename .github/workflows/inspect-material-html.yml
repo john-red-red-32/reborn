@@ -1,0 +1,23 @@
+name: Inspect live material page HTML surface
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/inspect-material-html.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - run: |
+          python3 - <<'PY'
+          import urllib.request,re
+          for path in ['/materials/kebelka-heat-paints/','/materials/gemini-heat-set/','/materials/hp-babylocks/']:
+            with urllib.request.urlopen(urllib.request.Request('https://reborna.co'+path,headers={'User-Agent':'Mozilla/5.0'}),timeout=20) as f:body=f.read(6000000).decode('utf8','replace')
+            print('PAGE',path,'html-length',len(body))
+            for target in ['rbrn-material-viewer','rbrn-material-family-choice','rbrn-material-family-top','rbrn-material-show-more','46 source-listed products','72 source-listed products','View selected product at supplier','Supplier price observed']:
+              print('MATCH',target,len(re.findall(re.escape(target),body)))
+            print('BODY START',body[:700])
+          PY
