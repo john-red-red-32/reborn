@@ -34,6 +34,5 @@ CREATE TABLE IF NOT EXISTS moderation_notifications(
  body TEXT NOT NULL,
  state TEXT NOT NULL DEFAULT 'queued' CHECK(state IN ('queued','sent','failed')),
  created_at TEXT NOT NULL DEFAULT (datetime('now')),
- sent_at TEXT,
- UNIQUE(content_type,content_id,state)
+ sent_at TEXT
 );
