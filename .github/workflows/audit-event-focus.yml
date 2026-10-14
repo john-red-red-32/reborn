@@ -1,0 +1,55 @@
+name: Verify Reborna event-focus classifications
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/audit-event-focus.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check editorial taxonomy before checking production
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          src=Path('lib/community-events.ts').read_text()
+          assert src.count('focus:"reborn-specific",focusEvidence')==4
+          assert 'slug:"muval-valencia-2026"' in src and 'focus:"includes-reborns"' in src
+          assert 'munecart' not in src.lower(),"Unconfirmed art-doll exhibition should not be implied as a reborn event"
+          assert 'eventFocusLabel' in src
+          header=Path('components/SiteHeader.tsx').read_text()
+          anchors=['>Shop kits</Link>','>Shop materials</Link>','>Reborn calendar</Link>','>Meet the artists</Link>','>Events</Link>','>Verify a kit</Link>']
+          assert [header.index(x) for x in anchors]==sorted(header.index(x) for x in anchors)
+          print('PASS source classifications and requested navigation order',flush=True)
+          PY
+      - name: Verify visible badges on live event directory, shared calendar and detail pages
+        run: |
+          python3 - <<'PY'
+          import urllib.request,html,time
+          routes={
+           '/events/':['Reborn-specific event','Event includes reborns','Reborn-specific only','Includes reborns','MUVAL','Spain'],
+           '/calendar/':['MUVAL','Reborn-specific event','Event includes reborns'],
+           '/events/muval-valencia-2026/':['Event includes reborns','What kind of show is this?','This is a mixed doll show','Hotel Primus Valencia'],
+           '/events/the-doll-show-basildon-2026/':['Reborn-specific event','What kind of show is this?'],
+           '/events/kansas-doll-show-2027/':['Reborn-specific event'],
+           '/':['Shop kits','Shop materials','Events','Verify a kit']
+          }
+          for attempt in range(42):
+            missing=[]
+            for route,expect in routes.items():
+              try:
+                with urllib.request.urlopen(urllib.request.Request('https://reborna.co'+route,headers={'User-Agent':'Mozilla/5.0'}),timeout=15) as f:body=html.unescape(f.read(2200000).decode('utf8','replace'))
+                for phrase in expect:
+                  if phrase not in body:missing.append((route,phrase))
+              except Exception as e:missing.append((route,str(e)[:110]))
+            if not missing:
+              print('PASS production classification labels, MUVAL event page, filters, shared calendar, navbar',flush=True)
+              break
+            print('Publication pending',attempt+1,missing[:5],flush=True)
+            time.sleep(8)
+          else:raise SystemExit('Event focus classifications have not appeared on all live pages')
+          PY
