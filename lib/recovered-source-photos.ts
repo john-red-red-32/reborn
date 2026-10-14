@@ -531,6 +531,48 @@ export const recoveredKitPhotos:Record<string,NonNullable<VerifiedKit["photos"]>
       "source": "https://www.oncesoreal.com/minnie-set-inklusive-torso-koerper-kopf-und-armverbinder/p-8129.html",
       "credit": "Once So Real — Minnie original vinyl sculpt by Ping Lau; German retailer's named product photograph"
     }
+  ],
+  "eefje-elly-knoops": [
+    {
+      "url": "https://www.oncesoreal.com/images/products/normal/Once-Reborn-Ellie-Knoops-Eefje-TOP.jpg",
+      "source": "https://www.oncesoreal.com/eefje-lange-vinylteile-set/p-140.html",
+      "credit": "Once So Real — original 2004 Eefje full-sized vinyl kit sculpt by Elly Knoops; distinct from Little Eefje"
+    }
+  ],
+  "mattia-gudrun-legler": [
+    {
+      "url": "https://www.oncesoreal.com/images/products/normal/Once-Reborn-Gudrun-Legler-Mattia_TOP.jpg",
+      "source": "https://www.oncesoreal.com/mattia-set/p-5682.html",
+      "credit": "Once So Real — original Mattia reborn vinyl sculpt by Gudrun Legler; named archive product photograph"
+    }
+  ],
+  "ellis-philomena-donnelly": [
+    {
+      "url": "https://www.oncesoreal.com/images/products/normal/Once-Reborn-Phil-Donnelly-Ellis_TOP.jpg",
+      "source": "https://www.oncesoreal.com/ellis-set/p-7465.html",
+      "credit": "Once So Real — Ellis original reborn sculpt by Philomena Donnelly; named retailer archive photograph"
+    }
+  ],
+  "quinn-philomena-donnelly": [
+    {
+      "url": "https://www.oncesoreal.com/images/products/normal/Once-Reborn-Phil-Donnelly-Quinn_TOP.jpg",
+      "source": "https://www.oncesoreal.com/quinn-set/p-7574.html",
+      "credit": "Once So Real — Quinn original reborn sculpt by Philomena Donnelly; named retailer archive photograph"
+    }
+  ],
+  "cameron-laura-tuzio-ross": [
+    {
+      "url": "https://maggiecrebornnursery.com/cdn/shop/products/IMG_5865.jpg?v=1680734515&width=416",
+      "source": "https://maggiecrebornnursery.com/products/copy-of-reborn-toddler-adelle-by-ping-lau-custom-made",
+      "credit": "Maggie C. Reborn Nursery — finished Cameron reborn by Maggie; original open-eyed sculpt by Laura Tuzio Ross (not Cameron Asleep)"
+    }
+  ],
+  "lillegroda-sabine-altenkirch-junkes": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5682/74637/1__74981.1762279027.jpg?c=2",
+      "source": "https://www.irresistables.com/lillegroda-reborn-vinyl-doll-kit-by-sabine-altenkirch-18/",
+      "credit": "Irresistables — Lillegroda original reborn sculpt by Sabine Altenkirch; finished prototype image from named original kit gallery"
+    }
   ]
 };
 export const recoveredArtistCovers:Record<string,ArtistImage[]>={
