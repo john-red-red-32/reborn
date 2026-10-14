@@ -725,3 +725,5 @@ html{scroll-behavior:smooth}
 .rbrn-material-related-tile svg{flex:0 0 auto;color:#917663}
 @media(max-width:1050px){.rbrn-material-viewer{grid-template-columns:1fr;gap:20px}.rbrn-material-main-image{height:500px}.rbrn-material-related-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.rbrn-material-main-image{height:350px}.rbrn-material-main-image img{padding:13px}.rbrn-material-related-grid{grid-template-columns:1fr}.rbrn-material-shipping-card{padding:16px}.rbrn-material-buy-detail>h2{font-size:42px}.rbrn-supply-photo-card .rbrn-supply-picture>img{min-height:170px}.rbrn-supply-photo-card .rbrn-supply-picture{min-height:170px}.rbrn-supply-photo-card .rbrn-supply-art{min-height:170px}}
+
+.rbrn-material-dated-price{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:13px}.rbrn-material-dated-price strong{font:normal 25px 'Playfair Display',Georgia,serif;color:#624c3a}.rbrn-material-dated-price span{font-size:9px;color:#938071;line-height:1.5}
