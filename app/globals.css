@@ -819,3 +819,27 @@ html{scroll-behavior:smooth}
 @media(max-width:1180px){.rbrn-range-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:840px){.rbrn-range-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.rbrn-range-heading{align-items:flex-start;flex-direction:column;gap:7px}.rbrn-range-navigation span{display:none}}
 @media(max-width:520px){.rbrn-range-grid{gap:10px}.rbrn-range-card-media{height:145px}.rbrn-range-card-content{padding:12px}.rbrn-range-card-content h3{font-size:17px}.rbrn-range-counter{font-size:10px}.rbrn-material-picker-list{grid-template-columns:1fr}.rbrn-material-picker-popover{padding:9px}}
+
+
+/* The sculpt calendar is kit-led by default. An optional reborn-only event
+   layer joins the same month groups instead of appearing as a second calendar. */
+.rbrn-calendar-display-options{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:28px;padding:14px 16px;background:#fbf7f2;border:1px solid #e0d2c5}
+.rbrn-calendar-display-default{display:flex;align-items:center;gap:9px;color:#674e3c;font-size:12px}
+.rbrn-calendar-display-default small{font-size:10px;color:#947d6b}
+.rbrn-calendar-event-toggle{display:flex;align-items:center;gap:11px;cursor:pointer;padding:6px 10px 6px 14px;border-left:1px solid #dfd0c1}
+.rbrn-calendar-event-toggle input{position:absolute;opacity:0;width:1px;height:1px}
+.rbrn-calendar-toggle-track{display:block;width:39px;height:23px;flex:0 0 39px;border-radius:20px;border:1px solid #c6b3a3;background:#e6ddd5;position:relative;transition:background .2s,border-color .2s}
+.rbrn-calendar-toggle-track:after{content:"";position:absolute;top:3px;left:3px;width:15px;height:15px;border-radius:50%;background:white;box-shadow:0 1px 3px #0002;transition:transform .2s}
+.rbrn-calendar-event-toggle input:checked+.rbrn-calendar-toggle-track{background:#725542;border-color:#725542}
+.rbrn-calendar-event-toggle input:checked+.rbrn-calendar-toggle-track:after{transform:translateX(16px)}
+.rbrn-calendar-event-toggle input:focus-visible+.rbrn-calendar-toggle-track{outline:2px solid #886f5b;outline-offset:3px}
+.rbrn-calendar-event-toggle>span:last-child{display:flex;flex-direction:column;gap:4px;font-size:12px;color:#634c3b}
+.rbrn-calendar-event-toggle small{font-size:10px;color:#948071}
+.rbrn-calendar-display-options>a{display:inline-flex;align-items:center;gap:6px;color:#7f6651;font-size:11px;font-weight:700;margin-left:auto}
+.rbrn-calendar-inline-show{border:1px solid #cdb6a0;background:linear-gradient(125deg,#f6eee6,#fffaf4)}
+.rbrn-calendar-inline-label{display:flex;align-items:center;gap:8px;color:#735744;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-bottom:12px}
+.rbrn-calendar-inline-label span{margin-left:auto;border:1px solid #bc9f85;border-radius:2px;padding:4px 8px;font-size:8px;letter-spacing:.13em}
+.rbrn-calendar-inline-show .timeline-sculptor{color:#886955}
+.rbrn-calendar-inline-show .home-calendar-card-main h5 a:hover{color:#917057}
+.rbrn-calendar-event-link{display:inline-flex;align-items:center;gap:7px;margin-top:17px;font-size:11px;font-weight:700;color:#73543e;border-bottom:1px solid #bca48f;padding-bottom:5px}
+@media(max-width:650px){.rbrn-calendar-display-options{flex-direction:column;align-items:stretch;gap:13px}.rbrn-calendar-event-toggle{padding:13px 0;border-left:0;border-top:1px solid #dfd0c1}.rbrn-calendar-display-options>a{margin-left:0}}
