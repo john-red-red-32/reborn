@@ -760,3 +760,62 @@ html{scroll-behavior:smooth}
 .rbrn-material-options-note svg{flex-shrink:0;margin-top:2px}
 .rbrn-material-unpriced-options{grid-template-columns:repeat(2,minmax(0,1fr));max-height:none}
 @media(max-width:490px){.rbrn-material-family-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.rbrn-material-option-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+
+/* Two-tier materials information architecture: range catalogue -> individual product -> compact options. */
+.rbrn-catalog-anchor{scroll-margin-top:24px;height:1px}
+.rbrn-range-navigation{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px;padding-bottom:19px;border-bottom:1px solid #dfd0c2}
+.rbrn-range-navigation button{border:0;background:transparent;display:inline-flex;align-items:center;gap:9px;color:#765944;font-size:12px;font-weight:700;cursor:pointer;padding:8px 0}
+.rbrn-range-navigation span{font-size:9px;font-weight:700;letter-spacing:.13em;color:#a18e7d}
+.rbrn-supply-photo-card .rbrn-supply-picture{border:0;width:100%;cursor:pointer;padding:0;text-align:left;appearance:none}
+.rbrn-supply-title-button{appearance:none;border:0;background:none;padding:0;color:inherit;font:inherit;letter-spacing:inherit;text-align:left;cursor:pointer}
+.rbrn-supply-title-button:hover{color:#8e715e}
+.rbrn-supply-actions button{border:0;background:transparent;display:inline-flex;gap:6px;align-items:center;color:#73543f;font-size:11px;font-weight:700;cursor:pointer;padding:0}
+.rbrn-range-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:25px}
+.rbrn-range-heading h2{font:normal clamp(35px,5vw,61px)/1.15 "Playfair Display",Georgia,serif;letter-spacing:-.038em;color:#4d3b30;margin:13px 0}
+.rbrn-range-heading p{font-size:12px;line-height:1.8;color:#857264;max-width:650px}
+.rbrn-range-counter{flex:0 0 auto;color:#907b69;font-size:11px;white-space:nowrap}
+.rbrn-range-search{display:flex;align-items:center;gap:12px;background:#fffcf8;border:1px solid #dfcfc1;padding:15px 17px;margin-bottom:27px;max-width:600px;color:#8b7160}
+.rbrn-range-search input{border:0;outline:0;min-width:0;flex:1;font-size:12px;color:#604b3c;background:transparent}
+.rbrn-range-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.rbrn-range-card{display:flex;flex-direction:column;min-width:0;border:1px solid #e1d3c6;background:#fffdfa;transition:border-color .18s,transform .18s}
+.rbrn-range-card:hover{border-color:#bba18e;transform:translateY(-2px)}
+.rbrn-range-card-media{width:100%;height:200px;background:#f8f3ed;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.rbrn-range-card-media img{width:100%;height:100%;object-fit:contain;padding:10px}
+.rbrn-range-card-content{padding:17px;flex:1;display:flex;flex-direction:column}
+.rbrn-range-card-content>span{font-size:8px;color:#aa927d;letter-spacing:.16em;font-weight:700}
+.rbrn-range-card-content h3{font:normal 19px/1.34 "Playfair Display",Georgia,serif;color:#534135;margin:12px 0 17px;overflow-wrap:anywhere;letter-spacing:-.02em}
+.rbrn-range-card-content>div{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px solid #eadfd4;padding-top:14px;color:#775c49}
+.rbrn-range-card-content strong{font-size:12px}
+.rbrn-range-show-all{margin:23px auto 0;padding:12px 16px;display:flex;align-items:center;gap:9px;border:1px solid #cfb9a5;background:#f8f2ec;color:#694f3c;font-size:12px;font-weight:700;cursor:pointer}
+.rbrn-range-empty{font-size:12px;color:#907869;line-height:1.6}
+.rbrn-range-fineprint{color:#998677;font-size:10px;line-height:1.7;margin:26px 0 42px}
+.rbrn-range-fineprint a{display:inline-flex;gap:4px;align-items:center;border-bottom:1px solid #b29c89}
+.rbrn-material-single-product .rbrn-material-buy-detail>h2{font-size:clamp(35px,3.6vw,51px);letter-spacing:-.035em}
+.rbrn-material-single-product .rbrn-material-selected-product{margin:17px 0 17px}
+.rbrn-material-single-product .rbrn-material-main-image{scroll-margin-top:22px}
+.rbrn-material-compact-picker{position:relative;margin:16px 0 26px;z-index:9}
+.rbrn-material-picker-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:9px;font-size:11px;color:#685243;font-weight:700}
+.rbrn-material-picker-heading span{color:#a28b78;font-size:10px;font-weight:500}
+.rbrn-material-picker-trigger{background:#fffdfb;border:1px solid #d7c3b2;min-height:62px;display:flex;align-items:center;gap:12px;width:100%;padding:11px 13px;cursor:pointer;text-align:left;color:#654c3b}
+.rbrn-material-picker-trigger:hover,.rbrn-material-picker-trigger[aria-expanded=true]{border-color:#896c56}
+.rbrn-material-picker-trigger img{height:43px;width:43px;object-fit:contain;background:#f6eee6;flex:0 0 43px}
+.rbrn-material-picker-trigger>span{display:flex;gap:5px;flex-direction:column;flex:1;min-width:0}
+.rbrn-material-picker-trigger small{font-size:9px;letter-spacing:.13em;color:#9a8372}
+.rbrn-material-picker-trigger strong{font-size:12px;line-height:1.45;color:#604a39;font-weight:700}
+.rbrn-material-picker-trigger>svg{flex:0 0 auto;transition:transform .18s}
+.rbrn-material-picker-trigger .rotated{transform:rotate(180deg)}
+.rbrn-material-picker-popover{position:absolute;top:calc(100% + 5px);left:0;right:0;padding:13px;background:#fffdfa;border:1px solid #d4bfad;box-shadow:0 15px 32px #2e231b2b;z-index:16}
+.rbrn-material-picker-search{display:flex;align-items:center;gap:7px;border:1px solid #e4d6c9;padding:10px;margin-bottom:11px;color:#977966}
+.rbrn-material-picker-search input{border:0;background:none;outline:0;width:100%;min-width:0;font-size:11px}
+.rbrn-material-picker-list{max-height:260px;overflow-y:auto;overscroll-behavior:contain;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding:2px}
+.rbrn-material-picker-list button{display:flex;align-items:center;gap:8px;min-width:0;text-align:left;background:#fbf8f5;border:1px solid #e3d5c9;color:#634d3d;padding:8px;font-size:10px;line-height:1.45;cursor:pointer}
+.rbrn-material-picker-list button:hover,.rbrn-material-picker-list button.active{background:#f2e6da;border-color:#8c705b}
+.rbrn-material-picker-list img{height:42px;width:42px;object-fit:contain;background:#fff;flex:0 0 42px}
+.rbrn-material-picker-list button span{flex:1;min-width:0;overflow-wrap:anywhere}
+.rbrn-material-picker-list button small{font-size:9px;color:#8b6e57;font-weight:700}
+.rbrn-material-picker-foot{margin:12px 3px 2px;font-size:9px;color:#9a8371}
+.rbrn-material-single-product .rbrn-material-options-note{margin:10px 0 0}
+@media(max-width:1180px){.rbrn-range-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:840px){.rbrn-range-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.rbrn-range-heading{align-items:flex-start;flex-direction:column;gap:7px}.rbrn-range-navigation span{display:none}}
+@media(max-width:520px){.rbrn-range-grid{gap:10px}.rbrn-range-card-media{height:145px}.rbrn-range-card-content{padding:12px}.rbrn-range-card-content h3{font-size:17px}.rbrn-range-counter{font-size:10px}.rbrn-material-picker-list{grid-template-columns:1fr}.rbrn-material-picker-popover{padding:9px}}
