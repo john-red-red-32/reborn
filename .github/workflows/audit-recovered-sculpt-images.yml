@@ -26,13 +26,13 @@ jobs:
           b=re.search(r'export const recoveredArtistCovers:[^=]+=([\s\S]*?);\s*$',src)
           assert a and b,'Missing exact photo references'
           photos=json.loads(a.group(1));covers=json.loads(b.group(1))
-          assert len(photos)==45,len(photos)
-          assert len(covers)==11,len(covers)
+          assert len(photos)==52,len(photos)
+          assert len(covers)==13,len(covers)
           assert all(p['url'].startswith('https://') and p['source'].startswith('https://') and p['credit'] for ps in photos.values() for p in ps)
-          assert not any(slug.endswith('-ping-lau') for slug in photos)
-          assert 'ping-lau' not in covers
+          assert {slug for slug in photos if slug.endswith('-ping-lau')}=={'luca-ping-lau','tori-ping-lau','raven-ping-lau','lovelyn-awake-ping-lau'}
+          assert covers['ping-lau'][0]['source'].startswith('https://www.irresistables.com/')
           assert len({p['url'] for ps in photos.values() for p in ps})==sum(len(ps) for ps in photos.values()),'A photograph was assigned to more than one kit'
-          print('PASS 45 unique exact source kit photo sets and eleven featured sculpt artworks; no Ping Lau images',flush=True)
+          print('PASS 52 exact-source photographed kits and thirteen illustrated artist covers; Ping retailer-specific sharing terms enforced',flush=True)
           headers={'User-Agent':'Mozilla/5.0 (compatible; RebornaImageVerification/1.0)','Accept':'image/avif,image/webp,image/jpeg,image/png,image/*'}
           checked=set()
           for slug,pictures in photos.items():
@@ -55,7 +55,7 @@ jobs:
                       assert res.status==200 and res.headers.get('Content-Type','').lower().startswith('image/'),pic['url']
                       assert res.read(32)
           print('PASS',len(checked),'artist/reborn photo resources are actual images',flush=True)
-          check_slugs=['aspen-dawn-donofrio','ilea-olga-auer','maria-sabrina-hergarten','marty-iveta-eckertova','lyssi-laura-tuzio-ross','sam-gudrun-legler','teddy-philomena-donnelly','amelia-laura-lee-eagles']
+          check_slugs=['emma-dawn-donofrio','emerson-dawn-donofrio','willow-joanna-kazmierczak','luca-ping-lau','aspen-dawn-donofrio','ilea-olga-auer','maria-sabrina-hergarten','marty-iveta-eckertova','lyssi-laura-tuzio-ross','sam-gudrun-legler','teddy-philomena-donnelly','amelia-laura-lee-eagles']
           for attempt in range(35):
               failed=[]
               for slug in check_slugs:
