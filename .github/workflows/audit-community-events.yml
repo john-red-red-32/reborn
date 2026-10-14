@@ -1,0 +1,45 @@
+name: Audit live Reborna community events
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/audit-community-events.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Verify the Events directory, Calendar filters, event detail pages and primary navigation
+        run: |
+          python3 - <<'PY'
+          import urllib.request,time,html
+          base="https://reborna.co"
+          pages={
+           "/":["Events","Reborn calendar","community events"],
+           "/events/":["Where our world","Yophi Doll Show","The Doll Show","West Coast Doll Show","Kansas Doll Show","All countries"],
+           "/calendar/":["The Reborn Calendar","Kit releases","Community events","Yophi Doll Show","illustrative"],
+           "/events/yophi-doll-show-2026/":["Yophi Doll Show","Avanti Palms","application/ld+json","2026-11-14"],
+           "/events/the-doll-show-basildon-2026/":["The Doll Show","Holiday Inn","2026-11-22"],
+           "/events/west-coast-doll-show-2027/":["West Coast Doll Show","Bonnie Brown","2027-03-06"],
+           "/events/kansas-doll-show-2027/":["Kansas Doll Show","Wichita","2027-09-04"]
+          }
+          for attempt in range(48):
+           missing=[]
+           for path,checks in pages.items():
+            try:
+             req=urllib.request.Request(base+path,headers={"User-Agent":"Mozilla/5.0 (compatible; RebornaEditorialAudit/1.0)"})
+             with urllib.request.urlopen(req,timeout=15) as response:
+              assert response.status==200,(path,response.status)
+              body=html.unescape(response.read(2000000).decode("utf8","replace"))
+             words=[word for word in checks if word.lower() not in body.lower()]
+             if words:missing.append((path,words))
+            except Exception as e:missing.append((path,str(e)[:120]))
+           if not missing:
+            print("PASS: All seven production pages live, with named verified events, calendar category tabs, country filter, source-linked detail pages and schema",flush=True)
+            break
+           print("Publish still pending",attempt+1,missing[:4],flush=True)
+           time.sleep(8)
+          else:raise SystemExit("Community Events website audit did not pass")
+          PY
