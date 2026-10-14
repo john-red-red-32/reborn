@@ -12,7 +12,7 @@ const areaNames:Record<Area,string>={overview:"Overview",collection:"My collecti
 const stages:{value:Studio["stage"];label:string}[]=[{value:"planning",label:"Planning"},{value:"painting",label:"Painting"},{value:"rooting",label:"Rooting & finishing"},{value:"completed",label:"Completed"}];
 const kinds:{value:Listing["kind"];label:string}[]=[{value:"finished_doll",label:"Finished reborn doll"},{value:"original_kit",label:"Original sculpt kit"},{value:"materials",label:"Materials & tools"},{value:"other",label:"Other"}];
 export default function MemberDashboard(){
- const {items,savedState,isSaved,remove,updateStatus}=(()=>{const w=useWishlist();return{items:w.items,savedState:w.state,isSaved:w.isSaved,remove:w.remove,updateStatus:w.updateStatus}})();
+ const {items,state:savedState,remove,updateStatus}=useWishlist();
  const[account,setAccount]=useState<CommunityUser|null>(null),[loaded,setLoaded]=useState(false),[area,setArea]=useState<Area>("overview"),[filter,setFilter]=useState("all"),[projects,setProjects]=useState<Studio[]>([]),[drafts,setDrafts]=useState<Listing[]>([]);
  const[projectForm,setProjectForm]=useState({id:"",title:"",notes:"",stage:"planning" as Studio["stage"],linkedKitPath:""});
  const[draftForm,setDraftForm]=useState({id:"",title:"",description:"",kind:"finished_doll" as Listing["kind"],currency:"GBP" as Listing["currency"],price:""});
