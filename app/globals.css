@@ -861,3 +861,20 @@ html{scroll-behavior:smooth}
 .rbrn-picker-option-thumbnail{flex-basis:42px!important;height:42px;width:42px}
 .rbrn-material-picker-list button span.rbrn-picker-option-thumbnail{flex:0 0 42px!important}
 .rbrn-material-picker-trigger>span.rbrn-picker-thumbnail{flex:0 0 43px!important}
+
+
+/* Mobile/tablet navigation: clear, thumb-sized rows instead of the 11px
+   desktop link style. Anchored directly beneath the real header, not a
+   fixed document top offset. */
+@media (max-width: 920px) {
+  .inner-header {position:relative;z-index:60}
+  .inner-menu {min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+  .inner-nav {top:100%;left:0;right:0;bottom:auto;max-height:calc(100dvh - 75px);overflow-y:auto;overscroll-behavior:contain;padding:9px 5% 17px;gap:0;z-index:65;background:#fffdfb;box-shadow:0 17px 27px #3c2b1917;align-items:stretch}
+  .inner-nav.open {display:flex}
+  .inner-header .inner-nav a {display:flex;align-items:center;box-sizing:border-box;width:100%;min-height:52px;padding:12px 8px;font-size:17px;line-height:1.45;font-weight:500;letter-spacing:.003em;color:#66574b;white-space:normal;border-bottom:1px solid #eee8e2}
+  .inner-header .inner-nav a:last-child {border-bottom:0}
+  .inner-header .inner-nav a:focus-visible {outline:2px solid #94775e;outline-offset:-2px;background:#f8f1eb}
+}
+@media(max-width:380px){
+  .inner-header .inner-nav a {font-size:16px;min-height:50px}
+}
