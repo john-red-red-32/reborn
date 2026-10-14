@@ -1,0 +1,55 @@
+name: Audit Reborna legal pages live
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-legal-live.yml'
+      - 'app/privacy/**'
+      - 'app/terms/**'
+      - 'app/cookies/**'
+      - 'components/LegalDocument.tsx'
+      - 'components/SiteFooter.tsx'
+      - 'components/CommunityAccount.tsx'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Confirm policies, footer links and registration remain available
+        run: |
+          python3 - <<'PY'
+          import json,time,urllib.request,urllib.error
+          base='https://reborna.co'
+          def read(route):
+            req=urllib.request.Request(base+route,headers={'User-Agent':'Mozilla/5.0 (Reborna website publication audit)','Accept':'text/html,application/json'})
+            with urllib.request.urlopen(req,timeout=18) as resp:
+              return resp.status,resp.read().decode('utf-8',errors='replace')
+          for attempt in range(30):
+            errors=[]
+            try:
+              for route,needle in [
+                ('/privacy/','Your privacy matters'),
+                ('/terms/','Terms of use'),
+                ('/cookies/','Cookies &amp; storage')]:
+                status,html=read(route)
+                if status!=200 or needle.lower() not in html.lower():errors.append((route,status,needle))
+              status,home=read('/')
+              if status!=200 or any('href="/'+name+'/"' not in home for name in ('terms','privacy','cookies')):
+                errors.append(('footer policy links',status))
+              status,account=read('/account/')
+              if status!=200 or 'Terms of Use' not in account or 'Privacy Policy' not in account:
+                errors.append(('signup legal links',status))
+              status,raw=read('/api/community/status')
+              if status!=200 or not json.loads(raw).get('registrationOpen'):
+                errors.append(('signup still enabled',status))
+            except Exception as e:errors.append(('request',str(e)[:120]))
+            if not errors:
+              print('PASS: policy pages, footer links, signup terms and live registration')
+              break
+            print('Waiting for Cloudflare legal pages deployment',attempt+1,errors,flush=True)
+            time.sleep(10)
+          else:raise SystemExit('Legal pages production audit failed: '+repr(errors))
+          PY
