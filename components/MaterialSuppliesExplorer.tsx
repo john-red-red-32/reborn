@@ -9,7 +9,7 @@ export default function MaterialSuppliesExplorer(){
  const[method,setMethod]=useState("all");
  const listings=supplierListings.filter(x=>(category==="all"||x.category===category)&&(region==="all"||x.region===region)&&(method==="all"||x.method===method));
  return <section className="rbrn-supplies-wrap" aria-label="Reborning materials and suppliers">
-  <div className="rbrn-supplies-tabs" role="group" aria-label="Material categories">{supplyCategories.map(c=><button type="button" key={c.slug} aria-pressed={category===c.slug} className={category===c.slug?"active":""} onClick={()=>setCategory(c.slug)}>{c.label}</button>)}</div>
+  <div className="rbrn-supplies-tabs" role="group" aria-label="Material categories">{supplyCategories.map(c=><button type="button" key={c.slug} aria-pressed={category===c.slug} className={category===c.slug?"active":""} onClick={()=>{setCategory(c.slug);setMethod("all");}}>{c.label}</button>)}</div>
   <div className="rbrn-supplies-filter"><span><SlidersHorizontal size={16}/> Curated supplies <small>{listings.length} supplier collections</small></span><div>
    <label>Region <select value={region} onChange={e=>setRegion(e.target.value)}><option value="all">All regions</option><option value="UK">UK</option><option value="US">USA</option><option value="Spain">Spain</option></select></label>
    {category==="paints"&&<label>Paint system <select value={method} onChange={e=>setMethod(e.target.value)}><option value="all">All systems</option><option value="Heat-set">Heat-set</option><option value="Air-dry">Air-dry</option><option value="Silicone">Silicone</option></select></label>}
