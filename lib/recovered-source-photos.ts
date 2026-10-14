@@ -405,6 +405,20 @@ export const recoveredKitPhotos:Record<string,NonNullable<VerifiedKit["photos"]>
       "source": "https://rebornbabycreations.com/products/super-soft-silicone-baby-emerson-by-dawn-38489",
       "credit": "RebornBabyCreations — finished silicone Emerson example; original sculpt by Dawn Donofrio (individual photographer not separately named)"
     }
+  ],
+  "lovelyn-asleep-ping-lau": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/1240/images/5202/index__92587.1698866357.500.750.jpg?c=2",
+      "source": "https://www.irresistables.com/lovelyn-asleep-reborn-vinyl-doll-kit-by-ping-lau-ultra-soft-vinyl/",
+      "credit": "Irresistables — Lovelyn Asleep, original Ping Lau vinyl kit; individual finished-example photographer not named"
+    }
+  ],
+  "soledad-ping-lau": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/3519/images/32494/dsc0296__29551.1580931490.500.750.jpg?c=2",
+      "source": "https://www.irresistables.com/copy-of-soledad-vinyl-doll-kit-by-ping-lau-ldc/",
+      "credit": "Irresistables — Soledad, original Ping Lau vinyl kit; individual finished-example photographer not named"
+    }
   ]
 };
 export const recoveredArtistCovers:Record<string,ArtistImage[]>={
