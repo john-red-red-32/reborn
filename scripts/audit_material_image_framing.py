@@ -21,7 +21,9 @@ from PIL import Image, ImageOps, UnidentifiedImageError
 ROOT=Path("lib")
 SOURCE=ROOT/"material-product-families.ts"
 OUTPUT=ROOT/"material-image-framing.json"
+EVIDENCE=ROOT/"material-product-evidence.ts"
 START="export const materialFamilies:Record<string,FamilyProduct[]>="
+EVIDENCE_START="export const materialProductEvidence:Record<string,MaterialProductEvidence>="
 AGENT="RebornaResearch/0.4 (+https://reborna.co; non-generative framing analysis)"
 ALLOWED={"cdn.shopify.com","bf8e9a3a4a.clvaw-cdnwnd.com"}
 ROBOT_LOCK=threading.Lock()
@@ -42,6 +44,16 @@ def original_urls():
                 if url and url not in seen:
                     seen.add(url)
                     yield url
+    # Also cover additional gallery images already curated from exact Shopify sources.
+    if EVIDENCE.exists():
+        evidence=json.loads(EVIDENCE.read_text().split(EVIDENCE_START)[1].strip().removesuffix(";"))
+        for record in evidence.values():
+            for product in record.get("products",[]):
+                for photo in product.get("photos",[]):
+                    url=photo.get("url")
+                    if url and url not in seen:
+                        seen.add(url)
+                        yield url
 
 def fetch_image(url):
     parsed=urllib.parse.urlsplit(url)
