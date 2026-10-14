@@ -1,14 +1,17 @@
 "use client";
 import Link from "next/link";
 import {useEffect,useRef,useState} from "react";
-import {ArrowRight,CheckCircle2,LockKeyhole,MessageCircle,ShieldCheck,UserRound,Mail,Save} from "lucide-react";
+import {ArrowRight,CheckCircle2,Heart,LockKeyhole,MessageCircle,ShieldCheck,UserRound,Mail,Save} from "lucide-react";
 import {communityApi,communityRoles,communityInterests,type CommunityUser} from "../lib/community";
 import TurnstileChallenge from "./TurnstileChallenge";
 import ProfileAvatar from "./ProfileAvatar";
 import ProfilePhotoEditor from "./ProfilePhotoEditor";
+import {useWishlist} from "./WishlistProvider";
 type Mode="login"|"join"|"forgot"|"reset"|"awaitVerification";
 export default function CommunityAccount(){
  const[user,setUser]=useState<CommunityUser|null>(null);
+ const{refresh:refreshWishlist}=useWishlist();
+ const[fromWishlist,setFromWishlist]=useState(false);
  const inlineError=useRef<HTMLParagraphElement>(null);
  const[submissions,setSubmissions]=useState<{id:string;title:string;created_at:string;moderation_state:string;reason_code:string|null}[]>([]);
  const[loading,setLoading]=useState(true),[registrationOpen,setRegistrationOpen]=useState(false);
@@ -20,19 +23,20 @@ export default function CommunityAccount(){
  const[resetToken,setResetToken]=useState(""),[busy,setBusy]=useState(false),[notice,setNotice]=useState(""),[error,setError]=useState("");
  useEffect(()=>{if(error&&inlineError.current){inlineError.current.scrollIntoView({behavior:"smooth",block:"center"});inlineError.current.focus({preventScroll:true})}},[error]);
  const update=()=>communityApi<{user:CommunityUser|null}>('me').then(r=>{setUser(r.user);if(r.user)communityApi<{submissions:typeof submissions}>('my-submissions').then(x=>setSubmissions(x.submissions)).catch(()=>{});if(r.user){setMode('login');setDisplayName(r.user.displayName);setBio(r.user.bio);setRoles(r.user.roles);setInterests(r.user.interests);setAllowMessages(r.user.allowMessages);setNotificationEmail(r.user.notificationEmail);setMarketingEmail(r.user.marketingEmail)}}).catch(e=>setError(e.message));
- useEffect(()=>{const q=new URLSearchParams(window.location.search),verify=q.get('verify'),reset=q.get('reset');Promise.all([communityApi<{registrationOpen:boolean;turnstileSiteKey:string|null}>('status').then(r=>{setRegistrationOpen(r.registrationOpen);setSiteKey(r.turnstileSiteKey||'')}),update()]).finally(()=>setLoading(false));if(reset){setResetToken(reset);setMode('reset')}if(verify){communityApi('verify',{token:verify}).then(()=>{setNotice('Email confirmed. Welcome to Reborna!');window.history.replaceState({},'','/account/');return update()}).catch(e=>setError(e.message))}},[]);
+ useEffect(()=>{const q=new URLSearchParams(window.location.search),verify=q.get('verify'),reset=q.get('reset');setFromWishlist(q.get('from')==='wishlist');Promise.all([communityApi<{registrationOpen:boolean;turnstileSiteKey:string|null}>('status').then(r=>{setRegistrationOpen(r.registrationOpen);setSiteKey(r.turnstileSiteKey||'')}),update()]).finally(()=>setLoading(false));if(reset){setResetToken(reset);setMode('reset')}if(verify){communityApi('verify',{token:verify}).then(()=>{setNotice('Email confirmed. Welcome to Reborna!');window.history.replaceState({},'','/account/');return update().then(()=>refreshWishlist())}).catch(e=>setError(e.message))}},[]);
  function toggle(value:string,arr:string[],set:(s:string[])=>void){set(arr.includes(value)?arr.filter(x=>x!==value):[...arr,value])}
  async function submit(event:React.FormEvent){event.preventDefault();setBusy(true);setError("");setNotice("");try{
   if(mode==='join'){if(!terms)throw Error('Please agree to the community guidelines.');if(!turnstileToken)throw Error('Please complete the security check.');const result=await communityApi<{message:string}>('register',{email,password,handle,displayName,roles,interests,marketingEmail,notificationEmail,turnstileToken});setNotice(result.message);setMode('awaitVerification');setPassword('')}
-  if(mode==='login'){await communityApi('login',{email,password});setPassword('');await update();setNotice('Welcome back.')}
+  if(mode==='login'){await communityApi('login',{email,password});setPassword('');await update();await refreshWishlist();setNotice('Welcome back. Your favourites are ready in My collection.')}
   if(mode==='forgot'){const r=await communityApi<{message:string}>('forgot',{email});setNotice(r.message);setMode('login')}
   if(mode==='reset'){const r=await communityApi<{message:string}>('reset',{token:resetToken,password});setNotice(r.message);setPassword('');setMode('login');window.history.replaceState({},'','/account/')}
  }catch(e){setError((e as Error).message)}finally{setBusy(false);if(mode==='join'){setTurnstileToken('');setTurnstileReset(x=>x+1)}}}
  async function save(event:React.FormEvent){event.preventDefault();setBusy(true);setError("");setNotice("");try{await communityApi('settings',{displayName,bio,roles,interests,allowMessages,notificationEmail,marketingEmail});await update();setNotice('Your account preferences have been saved.')}catch(e){setError((e as Error).message)}finally{setBusy(false)}}
- async function logout(){setBusy(true);try{await communityApi('logout',{});setUser(null);setNotice('Signed out.');setMode('login')}catch(e){setError((e as Error).message)}finally{setBusy(false)}}
+ async function logout(){setBusy(true);try{await communityApi('logout',{});setUser(null);await refreshWishlist();setNotice('Signed out.');setMode('login')}catch(e){setError((e as Error).message)}finally{setBusy(false)}}
  return <main className="rbrn-community-shell">
   <div className="rbrn-community-intro"><span className="section-kicker">YOUR REBORNA</span><h1>{user?'Your corner of Reborna':'A place to belong'}<span className="period">.</span></h1><p>One account for collecting, creating, discussing and—when our marketplace launches—selling. Choose as many interests and roles as suit you.</p></div>
   {user&&error&&<p className="rbrn-community-feedback error" role="alert">{error}</p>}{notice&&mode!=='awaitVerification'&&<p className="rbrn-community-feedback" role="status"><CheckCircle2 size={17}/>{notice}</p>}
+  {!user&&fromWishlist&&!loading&&<div className="rbrn-wishlist-entry" role="status"><Heart size={20} fill="currentColor" aria-hidden="true"/><div><strong>Your favourites are waiting.</strong><p>Create a free account to keep your saved sculpts, materials and artists across devices. Anything you hearted on this device will be added to your collection when you sign in.</p></div></div>}
   {loading?<p className="rbrn-community-muted">Loading your account…</p>:user?<div className="rbrn-account-grid">
    <aside className="rbrn-account-side"><ProfileAvatar src={user.avatarUrl} alt={user.displayName+" profile photo"} large/><h2>{user.displayName}</h2><p>@{user.handle}</p>{user.bio&&<p className="rbrn-account-bio">{user.bio}</p>}<span className="rbrn-account-verified"><ShieldCheck size={14}/> Email confirmed</span><nav className="rbrn-account-links"><Link href="/dashboard/">My collection & dashboard <ArrowRight size={15}/></Link><Link href="/community/">Community discussions <ArrowRight size={15}/></Link><Link href="/community/new/">Start a discussion <ArrowRight size={15}/></Link><Link href="/messages/">Your messages <MessageCircle size={15}/></Link><Link href={"/community/member/?handle="+encodeURIComponent(user.handle)}>Public profile <ArrowRight size={15}/></Link></nav><button className="rbrn-community-quiet-button" disabled={busy} onClick={logout}>Sign out</button>
    <div className="rbrn-account-submissions"><h3>Your discussions</h3>{submissions.length?submissions.slice(0,12).map(s=><div key={s.id}><strong>{s.title}</strong><span>{s.moderation_state==='approved'?'Published':s.moderation_state==='rejected'?'Not approved · '+(s.reason_code||'Guidelines'):s.moderation_state==='needs_review'?'Awaiting a moderator':'Being reviewed'}</span>{s.moderation_state==='approved'&&<Link href={"/community/discussion/?id="+encodeURIComponent(s.id)}>View discussion →</Link>}</div>):<p>No discussions submitted yet.</p>}</div></aside>
