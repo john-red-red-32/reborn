@@ -5,6 +5,9 @@ on:
     paths:
       - '.github/workflows/audit-community-live.yml'
       - 'functions/api/community/**'
+      - 'app/community/**'
+      - 'components/TurnstileChallenge.tsx'
+      - 'components/CommunityModeration.tsx'
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,7 +22,7 @@ jobs:
           python3 - <<'PY'
           import urllib.request,urllib.error,json,time
           base='https://reborna.co'
-          paths=['/community/','/community/new/','/community/discussion/','/community/member/','/community/guidelines/','/account/','/messages/','/community/catalogue.json','/api/community/status','/api/community/posts']
+          paths=['/community/','/community/new/','/community/discussion/','/community/member/','/community/guidelines/','/community/moderation/','/account/','/messages/','/community/catalogue.json','/api/community/status','/api/community/posts']
           for attempt in range(32):
             issues=[]
             for path in paths:
@@ -30,7 +33,11 @@ jobs:
                 if path.startswith('/api/community/'):
                   assert 'application/json' in content_type,(path,content_type)
                   obj=json.loads(data)
-                  if path.endswith('status'):assert obj.get('available') is True and obj.get('registrationOpen') is False,obj
+                  if path.endswith('status'):
+                    assert obj.get('available') is True and obj.get('registrationOpen') is False,obj
+                    assert obj.get('turnstileSiteKey','').startswith('0x4'),obj
+                    assert obj.get('aiModerationReady') is True,obj
+                    assert obj.get('moderation')=='review-before-publication',obj
                   else:assert len(obj['posts'])>=8,('posts',len(obj.get('posts',[])))
                 elif path.endswith('catalogue.json'):
                   obj=json.loads(data)
@@ -38,7 +45,7 @@ jobs:
                 else:assert b'reborna' in data.lower() and b'<html' in data.lower(),(path,len(data))
               except Exception as e:issues.append((path,str(e)[:190]))
             if not issues:
-              print('PASS: all 10 production routes, D1 seed posts, safe closed signup, static catalogue',flush=True)
+              print('PASS: public community routes and D1 content; Turnstile; private Workers AI binding; registration gated on verified email sender',flush=True)
               break
             print('Waiting on Cloudflare Pages deployment:',attempt+1,issues[:8],flush=True)
             time.sleep(9)
