@@ -17,7 +17,7 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           s=Path('lib/materials-catalogue.ts').read_text()
-          assert s.count('sourceRole:"manufacturer"')+s.count('sourceRole:"specialist retailer"')==14
+          assert s.count('sourceRole:"manufacturer"')+s.count('sourceRole:"specialist retailer"')-1==14 # exclude TS type declaration
           assert 'Gemini Heat Set Paints' in s and 'Alva & Go' in s and 'Kebelka Set Heat Paint' in s
           assert all(x in s for x in ['Air-dry','Heat-set','Silicone','Rooting Needles','Mohair','Eyes','Cloth Bodies'])
           assert 'stockPrice' not in s and 'affiliate' not in s
