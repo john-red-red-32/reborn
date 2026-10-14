@@ -114,17 +114,31 @@
       "slug": "lovelyn-asleep-ping-lau",
       "name": "Lovelyn Asleep",
       "artist": "ping-lau",
-      "source": "https://www.irresistables.com/lovelyn-asleep-reborn-vinyl-doll-kit-by-ping-lau-ultra-soft-vinyl-23/",
-      "candidate_urls": [],
-      "status": "fetch_HTTPError"
+      "source": "https://www.irresistables.com/lovelyn-asleep-reborn-vinyl-doll-kit-by-ping-lau-ultra-soft-vinyl/",
+      "candidate_urls": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/1240/images/5202/index__92587.1698866357.500.750.jpg?c=2",
+          "basis": "exact_product_og_image",
+          "alt": ""
+        }
+      ],
+      "status": "exact_product_image_candidates",
+      "page_title": "Lovelyn Asleep Reborn Vinyl Doll Kit by Ping Lau Ultra Soft Vinyl 23\""
     },
     {
       "slug": "soledad-ping-lau",
       "name": "Soledad",
       "artist": "ping-lau",
-      "source": "https://www.irresistables.com/soledad-vinyl-doll-kit-by-ping-lau/",
-      "candidate_urls": [],
-      "status": "fetch_HTTPError"
+      "source": "https://www.irresistables.com/copy-of-soledad-vinyl-doll-kit-by-ping-lau-ldc/",
+      "candidate_urls": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/3519/images/32494/dsc0296__29551.1580931490.500.750.jpg?c=2",
+          "basis": "exact_product_og_image",
+          "alt": ""
+        }
+      ],
+      "status": "exact_product_image_candidates",
+      "page_title": "Soledad Vinyl Doll Kit by Ping Lau"
     },
     {
       "slug": "josie-awake-ping-lau",
