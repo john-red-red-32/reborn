@@ -7,16 +7,6 @@
       "source": "https://www.cityofrebornangels.com.au/reborndoll-kits/p/willow-joanna-kazmierczak",
       "candidate_urls": [
         {
-          "url": "https://images.squarespace-cdn.com/content/v1/5eccb3d1357f2b58e13697ac/1625213348431-HISAK10RPEVWAEYYVL2C/CORA+Logo+Watermark.png?format=1500w",
-          "basis": "exact_product_squarespace_gallery",
-          "alt": "City of Reborn Angels"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/5eccb3d1357f2b58e13697ac/98e590e6-1a76-47f8-8db3-7cdb0239b491/CORA+Logo+Watermark.png?format=1500w",
-          "basis": "exact_product_squarespace_gallery",
-          "alt": "City of Reborn Angels"
-        },
-        {
           "url": "https://images.squarespace-cdn.com/content/v1/5eccb3d1357f2b58e13697ac/8a7a8d1a-f657-43d3-93f2-1987b601a390/willowa.jpg",
           "basis": "exact_product_squarespace_gallery",
           "alt": "willowa.jpg"
@@ -45,6 +35,16 @@
           "url": "https://images.squarespace-cdn.com/content/v1/5eccb3d1357f2b58e13697ac/f889e99d-0fe3-400f-9a34-6c69a020d350/IMG_1944.JPG",
           "basis": "exact_product_squarespace_gallery",
           "alt": "IMG_1944.JPG"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5eccb3d1357f2b58e13697ac/d118608e-3870-4d01-8754-8152e6236377/willow2.jpg",
+          "basis": "exact_product_squarespace_gallery",
+          "alt": "willow2.jpg"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5eccb3d1357f2b58e13697ac/5e90e324-08d4-4d10-b39e-f6e5559787ce/willow+j.jpg",
+          "basis": "exact_product_squarespace_gallery",
+          "alt": "willow j.jpg"
         }
       ],
       "status": "exact_product_image_candidates",
@@ -150,6 +150,24 @@
       "candidate_urls": [],
       "status": "name_title_not_matched",
       "page_title": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+    },
+    {
+      "slug": "emma-dawn-donofrio",
+      "name": "Emma",
+      "artist": "dawn-donofrio",
+      "source": "https://rebornbabycreations.com/products/super-soft-silicone-baby-emma-by-dawn-64xg8mj82wno0xrd",
+      "candidate_urls": [],
+      "status": "no_images_found",
+      "page_title": "Super Soft Silicone Baby: Emma by Dawn Donofrio, Opened Mouth. 21 Inches 8lbs 4 oz."
+    },
+    {
+      "slug": "emerson-dawn-donofrio",
+      "name": "Emerson",
+      "artist": "dawn-donofrio",
+      "source": "https://rebornbabycreations.com/products/super-soft-silicone-baby-emerson-by-dawn-38489",
+      "candidate_urls": [],
+      "status": "no_images_found",
+      "page_title": "Super Soft Silicone Baby: Emerson by Dawn Donofrio, Opened Mouth. 21 Inches 7lbs 14 oz."
     }
   ],
   "source": "named_product_source_only",
