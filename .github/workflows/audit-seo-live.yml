@@ -1,0 +1,74 @@
+name: Audit public Reborna SEO live
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-seo-live.yml'
+      - 'app/robots.ts'
+      - 'app/sitemap.ts'
+      - 'app/llms.txt/**'
+      - 'app/layout.tsx'
+      - 'app/artists/**'
+      - 'app/kits/**'
+      - 'app/materials/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Confirm crawlable static pages and private noindex on live Cloudflare deployment
+        run: |
+          python3 - <<'PY'
+          import time,urllib.request,urllib.error,xml.etree.ElementTree as ET
+          from html.parser import HTMLParser
+          root='https://reborna.co'
+          def request(path):
+            req=urllib.request.Request(root+path,headers={'User-Agent':'Mozilla/5.0 (Reborna live SEO audit)','Accept':'text/html,text/plain,application/xml'})
+            with urllib.request.urlopen(req,timeout=22) as response:return response.status,response.read().decode(errors='replace')
+          class Head(HTMLParser):
+            def __init__(self):super().__init__();self.title='';self.titleOn=False;self.h1s=0;self.canonical='';self.robots='';self.images=[]
+            def handle_starttag(self,tag,a):
+              d=dict(a)
+              if tag=='title':self.titleOn=True
+              if tag=='h1':self.h1s+=1
+              if tag=='link' and d.get('rel')=='canonical':self.canonical=d.get('href','')
+              if tag=='meta' and d.get('name')=='robots':self.robots=d.get('content','')
+              if tag=='img':self.images.append(d.get('alt'))
+            def handle_endtag(self,tag):
+              if tag=='title':self.titleOn=False
+            def handle_data(self,x):
+              if self.titleOn:self.title+=x
+          for attempt in range(34):
+            issues=[]
+            try:
+              s,robots=request('/robots.txt')
+              if s!=200 or 'Sitemap: https://reborna.co/sitemap.xml' not in robots or 'Disallow: /api/' not in robots:issues.append('robots')
+              s,xml=request('/sitemap.xml')
+              site=ET.fromstring(xml)
+              ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
+              loc=[x.text for x in site.findall('s:url/s:loc',ns)]
+              if len(loc)<500 or len(loc)!=len(set(loc)):issues.append(('sitemap entries',len(loc)))
+              for path in ('/artists/cassie-ann-love/','/artists/','/real-kits/','/materials/','/guides/original-reborn-kits/'):
+                code,html=request(path);head=Head();head.feed(html)
+                if code!=200 or head.h1s!=1 or 'noindex' in head.robots.lower():issues.append((path,code,head.h1s,head.robots))
+                if path.startswith('/artists/') and path!='/artists/' and head.canonical!=root+path:issues.append((path,'bad canonical'))
+              kit=next((x for x in loc if '/kits/' in x),None)
+              if not kit:issues.append('no kits in sitemap')
+              else:
+                path=kit.removeprefix(root);code,html=request(path);p=Head();p.feed(html)
+                if code!=200 or p.canonical!=kit or p.h1s!=1 or 'noindex' in p.robots.lower():issues.append((path,'kit SEO'))
+              code,html=request('/account/');p=Head();p.feed(html)
+              if code!=200 or 'noindex' not in p.robots.lower():issues.append('account index guard')
+              code,llm=request('/llms.txt')
+              if code!=200 or not llm.startswith('# Reborna'):issues.append('llms.txt')
+            except Exception as e:issues.append(('HTTP not ready',str(e)[:125]))
+            if not issues:
+              print('PASS: production search crawling, robots,',len(loc),'sitemap entries, named sculptor and kit HTML, noindex account, and LLMs guide')
+              break
+            print('Waiting for SEO release',attempt+1,issues[:7],flush=True)
+            time.sleep(8)
+          else:raise SystemExit('Live SEO audit could not confirm production readiness')
+          PY
