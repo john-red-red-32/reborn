@@ -56,9 +56,12 @@ jobs:
             page=browser.new_page(viewport={'width':1280,'height':980})
             page.route('https://api.frankfurter.dev/**',lambda r:r.fulfill(status=200,content_type='application/json',body='[{"date":"2026-10-14","base":"EUR","quote":"USD","rate":1.2},{"date":"2026-10-14","base":"EUR","quote":"GBP","rate":0.85},{"date":"2026-10-14","base":"EUR","quote":"CAD","rate":1.6}]'))
             visit(page,'/materials/kebelka-heat-paints/','46 source-listed products')
-            assert page.locator('.rbrn-material-family-choice').count()==18
+            print('Kebelka family count before wait',page.locator('.rbrn-material-family-choice').count(),flush=True)
+            page.wait_for_function("document.querySelectorAll('.rbrn-material-family-choice').length>=18",timeout=16000)
+            assert page.locator('.rbrn-material-family-choice').count()==18, page.locator('.rbrn-material-family-choice').count()
             print('Kebelka DOM debug',page.locator('.rbrn-material-show-more').count(),page.locator('.rbrn-material-family-top').all_text_contents(),page.locator('.rbrn-material-show-more').all_text_contents(),flush=True)
             page.locator('.rbrn-material-show-more').first.click()
+            page.wait_for_function("document.querySelectorAll('.rbrn-material-family-choice').length>=46",timeout=12000)
             assert page.locator('.rbrn-material-family-choice').count()==46
             gallery=page.locator('.rbrn-material-main-image img')
             start=gallery.get_attribute('src')
