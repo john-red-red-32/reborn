@@ -1,0 +1,72 @@
+name: Audit mobile menu and material photo framing
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-mobile-menu-framing.yml'
+      - 'components/SiteHeader.tsx'
+      - 'app/globals.css'
+      - 'lib/material-image-framing.json'
+      - 'lib/material-image-style.ts'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip -q install playwright==1.55.0
+      - run: python3 -m playwright install --with-deps chromium
+      - name: Check accessible touch targets and original-photo toggle on real mobile browsers
+        run: |
+          python3 - <<'PY'
+          from playwright.sync_api import sync_playwright
+          import time
+          base='https://reborna.co'
+          def visit(page,url,selector):
+           for i in range(25):
+            page.goto(base+url,wait_until="domcontentloaded",timeout=30000)
+            try:
+             page.locator(selector).first.wait_for(state="visible",timeout=3500)
+             return
+            except Exception:time.sleep(7)
+           raise AssertionError('Production not updated: '+url+" "+selector)
+          with sync_playwright() as p:
+           browser=p.chromium.launch(headless=True)
+           for width,height in [(390,844),(360,730),(820,920)]:
+            page=browser.new_page(viewport={"width":width,"height":height},locale="en-GB",device_scale_factor=1,has_touch=True)
+            visit(page,"/materials/",'button[aria-label="Open navigation"]')
+            page.get_by_role("button",name="Open navigation").click()
+            nav=page.locator('nav[aria-label="Main navigation"]')
+            assert nav.is_visible(),"Menu not open"
+            assert page.get_by_role('button',name='Close navigation').get_attribute('aria-expanded')=='true'
+            rows=nav.locator('a')
+            assert rows.count()==7,rows.count()
+            for i in range(rows.count()):
+             row=rows.nth(i)
+             typ=row.evaluate("(el)=>({font:parseFloat(getComputedStyle(el).fontSize),height:el.getBoundingClientRect().height,width:el.getBoundingClientRect().width})")
+             assert typ['font']>=16,("tiny mobile nav text",width,typ)
+             assert typ['height']>=48,("tiny tap target",width,typ)
+             assert typ['width']>=width*0.85,("not full width",width,typ)
+            yHeader=page.locator('.inner-header').bounding_box()
+            yMenu=nav.bounding_box()
+            assert abs(yHeader['y']+yHeader['height']-yMenu['y'])<3,("floating menu gap",width,yHeader,yMenu)
+            rows.get_by_text("Shop materials").click()
+            assert not nav.is_visible(),"Menu should close on selection"
+            assert page.evaluate("document.documentElement.scrollWidth<=window.innerWidth+2"),"Horizontal page overflow"
+            print("PASS MOBILE MENU",width,"7 accessible menu rows (>=16px font, >=48px hit targets), flush to header",flush=True)
+            page.close()
+           eye=browser.new_page(viewport={"width":390,"height":844},locale="en-GB")
+           visit(eye,"/materials/bountiful-baby-eyes/2321/",'button.rbrn-material-frame-toggle')
+           img=eye.locator('.rbrn-material-main-image img')
+           initial=img.get_attribute('style')
+           assert initial and 'scale(' in initial,("automatic framing absent",initial)
+           eye.get_by_role('button',name='View full photograph').click()
+           assert 'scale(' not in (img.get_attribute('style') or ''),"full original not restored"
+           eye.get_by_role('button',name='Focus on product').click()
+           assert 'scale(' in (img.get_attribute('style') or ''),"tight frame not restored"
+           print("PASS EYES cropping toggles between source original and auto-framed view",flush=True)
+           browser.close()
+          PY
