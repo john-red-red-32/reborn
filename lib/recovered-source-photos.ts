@@ -419,6 +419,118 @@ export const recoveredKitPhotos:Record<string,NonNullable<VerifiedKit["photos"]>
       "source": "https://www.irresistables.com/copy-of-soledad-vinyl-doll-kit-by-ping-lau-ldc/",
       "credit": "Irresistables — Soledad, original Ping Lau vinyl kit; individual finished-example photographer not named"
     }
+  ],
+  "river-awake-dawn-donofrio": [
+    {
+      "url": "https://mybabyflowers.com/wp-content/uploads/2026/09/DSC05693-scaled.jpg",
+      "source": "https://mybabyflowers.com/en/baby/river/",
+      "credit": "My Baby Flowers — finished River Awake silicone reborn by Beatriz Senra; original sculpt by Dawn Donofrio"
+    }
+  ],
+  "tatum-dawn-donofrio": [
+    {
+      "url": "https://mybabyflowers.com/wp-content/uploads/2026/09/DSC06303-scaled.jpg",
+      "source": "https://mybabyflowers.com/en/baby/tatum/",
+      "credit": "My Baby Flowers — finished Tatum silicone reborn by Beatriz Senra; original sculpt by Dawn Donofrio"
+    }
+  ],
+  "bibi-elly-knoops": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/3633/images/34162/bibi__82672.1587519263.500.750.jpg?c=2",
+      "source": "https://www.irresistables.com/bibi-reborn-vinyl-doll-kit-by-elly-knoops-22/",
+      "credit": "Irresistables — named Bibi product photograph, original sculpt by Elly Knoops; individual reborn photographer not established"
+    }
+  ],
+  "fleur-elly-knoops": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/3919/images/37027/Fleur_CO_01__90454.1602698715.500.750.jpg?c=2",
+      "source": "https://www.irresistables.com/fleur-reborn-vinyl-doll-kit-by-elly-knoops-21/",
+      "credit": "Irresistables — named Fleur product photograph, original sculpt by Elly Knoops; individual reborn photographer not established"
+    }
+  ],
+  "luca-elly-knoops": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/994/images/4134/luca3__35548.1483489613.500.750.jpg?c=2",
+      "source": "https://www.irresistables.com/luca-by-elly-knoops/",
+      "credit": "Irresistables — original full-size Luca by Elly Knoops, named product photograph; not Little Luca"
+    }
+  ],
+  "candy-ping-lau": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/5294/images/66027/IMG_1483-XL__94758.1714701250.500.750.jpg?c=2",
+      "source": "https://www.irresistables.com/candy-reborn-vinyl-doll-kit-by-ping-lau-20/",
+      "credit": "Irresistables — Candy original reborn sculpt by Ping Lau; retailer photograph under source-specific noncommercial sharing terms"
+    }
+  ],
+  "leo-sabine-altenkirch-junkes": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/2683/images/28171/67404500_2312742965655260_1659126027990859776_o__16368.1564684285.500.750.jpg?c=2",
+      "source": "https://www.irresistables.com/leo-reborn-vinyl-doll-kit-by-sabine-altenkirch-20/",
+      "credit": "Irresistables — Leo original vinyl sculpt by Sabine Altenkirch; finished-example photographer not individually confirmed"
+    }
+  ],
+  "pebbles-severine-piret": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/5249/images/64935/425828430_10232255306469306_4146220900049131079_n__62135.1707582329.500.750.jpg?c=2",
+      "source": "https://www.irresistables.com/pebbles-reborn-vinyl-doll-kit-by-severine-piret/",
+      "credit": "Irresistables — Pebbles original reborn sculpt by Séverine Piret; source-listed finished-example photograph"
+    }
+  ],
+  "max-laura-lee-eagles": [
+    {
+      "url": "https://rebornsweetshop.com/cdn/shop/files/Max-by-Laura-Lee-Eagles-128-K_1024x1024.jpg?v=1726897302",
+      "source": "https://rebornsweetshop.com/products/deposit-custom-max-by-laura-lee-eagles-reborn-baby",
+      "credit": "Reborn, Sweet — source-labelled original Max kit example, sculpt by Laura Lee Eagles; not an image of a completed custom order"
+    }
+  ],
+  "timothy-sabrina-hergarten": [
+    {
+      "url": "https://www.truborns.com/cdn/shop/products/image_1b8176fb-f53f-4398-b0d3-3a7a8058022c_1024x.jpg?v=1615260085",
+      "source": "https://www.truborns.com/products/timothy-by-sabrina-hergarten",
+      "credit": "TruBorn — Timothy original vinyl sculpt by Sabrina Hergarten; exact named product photograph"
+    }
+  ],
+  "talula-severine-piret": [
+    {
+      "url": "https://www.truborns.com/cdn/shop/files/IMG-4622_1024x.jpg?v=1698841829",
+      "source": "https://www.truborns.com/products/talula-by-severine-piret",
+      "credit": "TruBorn — Talula original sculpt by Séverine Piret; exact named product photograph"
+    }
+  ],
+  "dany-iveta-eckertova": [
+    {
+      "url": "https://www.puppen-traumland.de/media/image/53/7f/fe/98050439_3810665852337887_3435978045867950080_n_600x600.jpg",
+      "source": "https://www.puppen-traumland.de/reborn-bausaetze-doll-kits/puppen-traumland-reg-bausaetze/pt-reg-bausaetze-nach-groessen/55-65-cm/1343/reborn-bausatz-dany-von-iveta-eckertova",
+      "credit": "Puppen-Traumland — finished Dany reborn example (photo marked P. Angelkovich), original sculpt by Iveta Eckertová"
+    }
+  ],
+  "lou-severine-piret": [
+    {
+      "url": "https://static.wixstatic.com/media/0e4710_ff7e7a13718a4658a0dffe7646a95e03~mv2.jpg",
+      "source": "https://www.mottandgido.com/product-page/lou-15-preemie-reborn-kit-by-s%C3%A9verine-piret",
+      "credit": "Mott & Gido — Lou original sculpt by Séverine Piret; source-listed reborn example"
+    }
+  ],
+  "mila-gudrun-legler": [
+    {
+      "url": "https://static.wixstatic.com/media/dcc6dd_3246b4f7b92341dd9e13f91a07e849d8~mv2.jpg",
+      "source": "https://www.dollli.uk/product-page/mila-doll-kit-by-gudrun-legler-le1234-19-20",
+      "credit": "Dollli Creations — Mila original sculpt by Gudrun Legler; named vinyl-kit product photograph"
+    }
+  ],
+  "kitty-philomena-donnelly": [
+    {
+      "url": "https://static.wixstatic.com/media/e3ae82_58600f23bd554b9fb4353dc384a4fde7~mv2_d_1362_1833_s_2.jpg",
+      "source": "https://www.phildonnellybabies.co.uk/product-page/demi-donnelly-vinyl-reborn-doll-kit-presale-deposit",
+      "credit": "Phil Donnelly Babies — Kitty original reborn sculpt by Philomena Donnelly; named kit example on official sculptor website"
+    }
+  ],
+  "minnie-ping-lau": [
+    {
+      "url": "https://www.oncesoreal.com/images/products/normal/Once-Reborn-Ping-Lau-Minnie_TOP.jpg",
+      "source": "https://www.oncesoreal.com/minnie-set-inklusive-torso-koerper-kopf-und-armverbinder/p-8129.html",
+      "credit": "Once So Real — Minnie original vinyl sculpt by Ping Lau; German retailer's named product photograph"
+    }
   ]
 };
 export const recoveredArtistCovers:Record<string,ArtistImage[]>={
