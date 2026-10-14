@@ -1,0 +1,38 @@
+name: Research remaining original sculpt galleries
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/research_remaining_photos_pass2.py','.github/workflows/research-remaining-photos-pass2.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip -q install beautifulsoup4
+      - run: python3 scripts/research_remaining_photos_pass2.py
+      - name: Preserve research on private editorial branch
+        env: {RUN_ID: "${{ github.run_id }}"}
+        run: |
+          set -euo pipefail
+          cp photo-review-remaining-pass2.json /tmp/photo-review-remaining-pass2.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin scrape-results
+          git checkout -B scrape-results origin/scrape-results
+          mkdir -p snapshots/image-review
+          cp /tmp/photo-review-remaining-pass2.json snapshots/image-review/photo-review-remaining-pass2.json
+          git add snapshots/image-review/photo-review-remaining-pass2.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive remaining named sculpt source page candidates $RUN_ID [skip ci]"
+            for n in 1 2 3 4 5; do
+              if git push origin HEAD:scrape-results; then exit 0; fi
+              git fetch origin scrape-results
+              git rebase origin/scrape-results || { git rebase --abort; exit 1; }
+              sleep 2
+            done
+            exit 1
+          fi
