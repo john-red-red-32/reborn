@@ -611,3 +611,43 @@ html{scroll-behavior:smooth}
 .rbrn-event-focus-evidence strong{display:block;font-size:11px;letter-spacing:.04em;margin-bottom:4px}
 @media(max-width:1020px){.rbrn-events-explainer{grid-template-columns:auto 1fr}}
 @media(max-width:560px){.rbrn-events-explainer{grid-template-columns:1fr;padding:16px;gap:9px}.rbrn-events-explainer>span{margin-bottom:9px}}
+
+/* Curated makers' supply directory. Product artwork remains with its originating supplier. */
+.rbrn-materials-page .materials-heading{max-width:900px;padding:62px 0 46px}
+.rbrn-materials-page .materials-heading h1{font:normal clamp(44px,5.8vw,77px)/1.12 "Playfair Display",serif;letter-spacing:-.04em}
+.rbrn-materials-page .materials-heading h1 em{color:#987d69;font-weight:400}
+.rbrn-paint-guide{padding:29px 34px;display:grid;grid-template-columns:1fr 1fr;gap:35px;background:#f4eae0;border:1px solid #e5d6c6;margin-bottom:38px}
+.rbrn-paint-guide h2{font:normal clamp(27px,3vw,36px)/1.2 "Playfair Display",serif;margin:12px 0;color:#544034}
+.rbrn-paint-guide p{font:normal 12px/1.9 "DM Sans",sans-serif;color:#7e6c5e;max-width:550px}
+.rbrn-paint-guide-types{display:flex;flex-direction:column;justify-content:center}
+.rbrn-paint-guide-types span{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 0;border-bottom:1px solid #d9c9b9;font-size:11px;letter-spacing:.11em;color:#604b3e;font-weight:700}
+.rbrn-paint-guide-types span small{letter-spacing:0;text-align:right;font-size:10px;font-weight:500;color:#8a7465}
+.rbrn-supplies-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:23px}
+.rbrn-supplies-tabs button{border:1px solid #d5c3b3;background:#fffdfa;color:#705b4d;border-radius:24px;padding:11px 17px;font-size:11px;font-weight:600}
+.rbrn-supplies-tabs button.active,.rbrn-supplies-tabs button:hover{background:#695344;color:white;border-color:#695344}
+.rbrn-supplies-filter{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;padding:17px 0;border-top:1px solid #e1d5ca;border-bottom:1px solid #e1d5ca;margin-bottom:22px}
+.rbrn-supplies-filter>span{display:inline-flex;gap:10px;align-items:center;font-size:12px;font-weight:700}
+.rbrn-supplies-filter>span small{font-size:10px;font-weight:500;color:#968375}
+.rbrn-supplies-filter>div{display:flex;gap:13px;flex-wrap:wrap}
+.rbrn-supplies-filter label{display:inline-flex;align-items:center;gap:9px;font-size:11px;color:#7c695a}
+.rbrn-supplies-filter select{padding:10px 12px;border:1px solid #d3c3b5;background:#fffcf8;color:#5b4b3f}
+.rbrn-supplies-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}
+.rbrn-supply-card{display:grid;grid-template-columns:170px minmax(0,1fr);min-width:0;min-height:249px;border:1px solid #e2d4c8;background:#fffdfb}
+.rbrn-supply-art{background:linear-gradient(145deg,#d7c7b7,#bba08e);padding:17px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;color:#fffdf9}
+.rbrn-supply-card:nth-child(4n+2) .rbrn-supply-art{background:linear-gradient(140deg,#a9917c,#d1b8a6)}
+.rbrn-supply-card:nth-child(4n+3) .rbrn-supply-art{background:linear-gradient(140deg,#dfd1c4,#ad9483)}
+.rbrn-supply-card:nth-child(4n+4) .rbrn-supply-art{background:linear-gradient(140deg,#b8a291,#e4d4c4)}
+.rbrn-supply-art span,.rbrn-supply-art small{font:700 8px/1.5 "DM Sans",sans-serif;letter-spacing:.13em}
+.rbrn-supply-art strong{font:normal 78px/1 Georgia,serif}
+.rbrn-supply-info{min-width:0;padding:19px 21px;display:flex;flex-direction:column}
+.rbrn-supply-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#9a7f6e;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.rbrn-supply-card h3{font:normal 29px/1.16 "Playfair Display",serif;color:#523e31;letter-spacing:-.02em;margin:15px 0 7px}
+.rbrn-supply-info p{font-size:11px;line-height:1.75;color:#897b70;margin:0 0 17px}
+.rbrn-supply-actions{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:auto}
+.rbrn-supply-actions span{font-size:9px;color:#9c8575}
+.rbrn-supply-actions a{display:inline-flex;gap:6px;align-items:center;font-size:11px;font-weight:700;color:#73543f}
+.rbrn-supplies-disclaimer{font-size:10px;line-height:1.7;margin:20px 0 35px;color:#988575}
+.rbrn-supplies-empty{padding:35px;border:1px dashed #d7c6b6;text-align:center;color:#866f5b;font-size:12px}
+.rbrn-supplies-empty button{background:#6b5442;color:#fff;border:0;padding:10px 16px}
+@media(max-width:900px){.rbrn-supplies-grid{grid-template-columns:1fr}.rbrn-supply-card{grid-template-columns:180px 1fr}}
+@media(max-width:650px){.rbrn-paint-guide{grid-template-columns:1fr;padding:20px}.rbrn-supply-card{grid-template-columns:105px 1fr}.rbrn-supply-art strong{font-size:55px}.rbrn-supply-art{padding:12px}.rbrn-supply-info{padding:15px}.rbrn-supply-card h3{font-size:24px}.rbrn-paint-guide-types span{align-items:flex-start;flex-direction:column;gap:3px}.rbrn-paint-guide-types span small{text-align:left}}
