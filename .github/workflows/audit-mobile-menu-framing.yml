@@ -43,7 +43,7 @@ jobs:
             assert nav.is_visible(),"Menu not open"
             assert page.get_by_role('button',name='Close navigation').get_attribute('aria-expanded')=='true'
             rows=nav.locator('a')
-            assert rows.count()==7,rows.count()
+            assert rows.count()==9,('Unexpected mobile navigation links',rows.count())
             for i in range(rows.count()):
              row=rows.nth(i)
              typ=row.evaluate("(el)=>({font:parseFloat(getComputedStyle(el).fontSize),height:el.getBoundingClientRect().height,width:el.getBoundingClientRect().width})")
@@ -56,7 +56,7 @@ jobs:
             rows.get_by_text("Shop materials").click()
             assert not nav.is_visible(),"Menu should close on selection"
             assert page.evaluate("document.documentElement.scrollWidth<=window.innerWidth+2"),"Horizontal page overflow"
-            print("PASS MOBILE MENU",width,"7 accessible menu rows (>=16px font, >=48px hit targets), flush to header",flush=True)
+            print("PASS MOBILE MENU",width,f"{rows.count()} accessible menu rows (>=16px font, >=48px hit targets), flush to header",flush=True)
             page.close()
            eye=browser.new_page(viewport={"width":390,"height":844},locale="en-GB")
            visit(eye,"/materials/bountiful-baby-eyes/2321/",'button.rbrn-material-frame-toggle')
