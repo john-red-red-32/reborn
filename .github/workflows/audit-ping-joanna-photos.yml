@@ -1,0 +1,58 @@
+name: Verify Joanna Willow and Ping original photographs
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-ping-joanna-photos.yml'
+      - 'lib/recovered-source-photos.ts'
+      - 'lib/retailer-kits-ping.ts'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 13
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check exact sources, HTTP image responses, and artist/kit production pages
+        run: |
+          python3 - <<'PY'
+          import json,re,time,urllib.request,html
+          s=open('lib/recovered-source-photos.ts',encoding='utf8').read()
+          k=re.search(r'export const recoveredKitPhotos:[^=]+=([\s\S]*?);\s*export const recoveredArtistCovers:',s)
+          c=re.search(r'export const recoveredArtistCovers:[^=]+=([\s\S]*?);\s*$',s)
+          assert k and c
+          kits=json.loads(k.group(1));covers=json.loads(c.group(1))
+          expected=['willow-joanna-kazmierczak','luca-ping-lau','tori-ping-lau','raven-ping-lau','lovelyn-awake-ping-lau']
+          assert all(x in kits for x in expected)
+          assert all(x in covers for x in ['ping-lau','joanna-kazmierczak'])
+          assert all('irresistables.com' in kits[x][0]['source'] for x in expected[1:])
+          assert 'cityofrebornangels.com.au' in kits[expected[0]][0]['source']
+          for slug in expected:
+            for p in kits[slug]:
+              r=urllib.request.Request(p['url'],headers={'User-Agent':'Mozilla/5.0 (compatible; RebornaImageAudit/1.0)','Accept':'image/*'})
+              with urllib.request.urlopen(r,timeout=20) as response:
+                assert response.status==200,slug
+                assert response.headers.get('Content-Type','').lower().startswith('image/'),(slug,response.headers.get('Content-Type'))
+                assert response.read(64),slug
+            print('PASS source image',slug,len(kits[slug]),flush=True)
+          base='https://reborna.co'
+          routes=['/artists/ping-lau/','/artists/joanna-kazmierczak/']+[f'/kits/{x}/' for x in expected]
+          for attempt in range(40):
+            failures=[]
+            for path in routes:
+              try:
+                with urllib.request.urlopen(urllib.request.Request(base+path,headers={'User-Agent':'Mozilla/5.0 (compatible; RebornaProductionAudit/1.0)'}),timeout=16) as res:
+                  content=html.unescape(res.read(1_700_000).decode('utf-8','replace'))
+                assert 'artist-feature-image' in content if path.startswith('/artists/') else 'kit-main-photo' in content
+                slug=path.strip('/').split('/')[-1]
+                if slug in kits:assert kits[slug][0]['url'] in content
+              except Exception as exc:failures.append((path,str(exc)[:100]))
+            if not failures:
+              print('PASS',len(routes),'live original sculpture photo pages',flush=True)
+              break
+            print('Awaiting Cloudflare',attempt+1,failures[:3],flush=True)
+            time.sleep(8)
+          else:raise SystemExit('Recovered photos not live after production retry window')
+          PY
