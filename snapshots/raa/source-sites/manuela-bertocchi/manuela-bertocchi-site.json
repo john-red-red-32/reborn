@@ -1,0 +1,201 @@
+{
+  "source": "https://manuelabertocchi.wixsite.com/piccolitesori",
+  "host": "manuelabertocchi.wixsite.com",
+  "parser_version": "url-discovery-v2-platform-sitemaps",
+  "started_from": "https://manuelabertocchi.wixsite.com/piccolitesori",
+  "completed_at": "2026-10-14T08:59:28.111687+00:00",
+  "page_limit": 12,
+  "sitemap_discovered_urls": 0,
+  "platforms": {
+    "wix": 3
+  },
+  "pages_checked": 4,
+  "pages_succeeded": 3,
+  "queue_remaining": 0,
+  "complete": false,
+  "errors": [
+    {
+      "url": "https://manuelabertocchi.wixsite.com/",
+      "reason": "HTTPError",
+      "detail": "HTTP Error 404: Not Found"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://manuelabertocchi.wixsite.com/piccolitesori",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:21.394849+00:00",
+      "sha256_html": "bcc55d40e57b18f2cbf1526e1bac212952359606ca164ba7599c35aec4ad3cec",
+      "title": "HOME | piccolitesori",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "HOME | piccolitesori",
+        "og:url": "https://manuelabertocchi.wixsite.com/piccolitesori",
+        "og:site_name": "piccolitesori",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "HOME | piccolitesori"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/30579d_94e3d9fb038b40989affaed925638ca1~mv2.png/v1/fill/w_85,h_85,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/piccoli_tesori.png",
+          "alt": "piccoli_tesori.png",
+          "srcset": "https://static.wixstatic.com/media/30579d_94e3d9fb038b40989affaed925638ca1~mv2.png/v1/fill/w_85,h_85,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/piccoli_tesori.png 1x, https://static.wixstatic.com/media/30579d_94e3d9fb038b40989affaed925638ca1~mv2.png/v1/fill/w_170,h_170,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/piccoli_tesori.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_18,h_18,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1aa082f7c0747168d9cf43e77046142.png",
+          "alt": "Instagram - Black Circle",
+          "srcset": "https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_18,h_18,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1aa082f7c0747168d9cf43e77046142.png 1x, https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1aa082f7c0747168d9cf43e77046142.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_18,h_18,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4057345bcf57474b96976284050c00df.png",
+          "alt": "Facebook - Black Circle",
+          "srcset": "https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_18,h_18,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4057345bcf57474b96976284050c00df.png 1x, https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4057345bcf57474b96976284050c00df.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/30579d_57ca51091d104d0aa75bb0abc1c80b5e~mv2.jpg/v1/fill/w_200,h_100,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/30579d_57ca51091d104d0aa75bb0abc1c80b5e~mv2.jpg",
+          "alt": "lou_1920x960.jpg",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://manuelabertocchi.wixsite.com/",
+        "https://manuelabertocchi.wixsite.com/piccolitesori",
+        "https://manuelabertocchi.wixsite.com/piccolitesori/about-contact",
+        "https://manuelabertocchi.wixsite.com/piccolitesori/dolls-gallery"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://manuelabertocchi.wixsite.com/piccolitesori/about-contact",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:24.715838+00:00",
+      "sha256_html": "cc8f5676889788357e5c0cd665963e571ff82d2199754ef51776d9474bf0980f",
+      "title": "ABOUT-CONTACT | piccolitesori",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "ABOUT-CONTACT | piccolitesori",
+        "og:url": "https://manuelabertocchi.wixsite.com/piccolitesori/about-contact",
+        "og:site_name": "piccolitesori",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "ABOUT-CONTACT | piccolitesori"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/30579d_94e3d9fb038b40989affaed925638ca1~mv2.png/v1/fill/w_85,h_85,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/piccoli_tesori.png",
+          "alt": "piccoli_tesori.png",
+          "srcset": "https://static.wixstatic.com/media/30579d_94e3d9fb038b40989affaed925638ca1~mv2.png/v1/fill/w_85,h_85,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/piccoli_tesori.png 1x, https://static.wixstatic.com/media/30579d_94e3d9fb038b40989affaed925638ca1~mv2.png/v1/fill/w_170,h_170,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/piccoli_tesori.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_18,h_18,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1aa082f7c0747168d9cf43e77046142.png",
+          "alt": "Instagram - Black Circle",
+          "srcset": "https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_18,h_18,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1aa082f7c0747168d9cf43e77046142.png 1x, https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1aa082f7c0747168d9cf43e77046142.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_18,h_18,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4057345bcf57474b96976284050c00df.png",
+          "alt": "Facebook - Black Circle",
+          "srcset": "https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_18,h_18,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4057345bcf57474b96976284050c00df.png 1x, https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4057345bcf57474b96976284050c00df.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/30579d_0ed395b0d6af41d7bea253fd8f1b13ed~mv2.jpg/v1/crop/x_97,y_0,w_1246,h_1440/fill/w_224,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/69494623_1456210997836648_83831977456613.jpg",
+          "alt": "69494623_1456210997836648_83831977456613",
+          "srcset": "https://static.wixstatic.com/media/30579d_0ed395b0d6af41d7bea253fd8f1b13ed~mv2.jpg/v1/crop/x_97,y_0,w_1246,h_1440/fill/w_224,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/69494623_1456210997836648_83831977456613.jpg 1x, https://static.wixstatic.com/media/30579d_0ed395b0d6af41d7bea253fd8f1b13ed~mv2.jpg/v1/crop/x_97,y_0,w_1246,h_1440/fill/w_448,h_508,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/69494623_1456210997836648_83831977456613.jpg 2x"
+        }
+      ],
+      "links": [
+        "https://manuelabertocchi.wixsite.com/piccolitesori",
+        "https://manuelabertocchi.wixsite.com/piccolitesori/about-contact",
+        "https://manuelabertocchi.wixsite.com/piccolitesori/dolls-gallery"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://manuelabertocchi.wixsite.com/piccolitesori/dolls-gallery",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:27.111223+00:00",
+      "sha256_html": "8a02ef7f9aecba399426c725ba6353014aadfae1764aa2ba3a7ece1fbab44017",
+      "title": "DOLLS GALLERY | piccolitesori",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "DOLLS GALLERY | piccolitesori",
+        "og:url": "https://manuelabertocchi.wixsite.com/piccolitesori/dolls-gallery",
+        "og:site_name": "piccolitesori",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "DOLLS GALLERY | piccolitesori"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/30579d_94e3d9fb038b40989affaed925638ca1~mv2.png/v1/fill/w_85,h_85,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/piccoli_tesori.png",
+          "alt": "piccoli_tesori.png",
+          "srcset": "https://static.wixstatic.com/media/30579d_94e3d9fb038b40989affaed925638ca1~mv2.png/v1/fill/w_85,h_85,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/piccoli_tesori.png 1x, https://static.wixstatic.com/media/30579d_94e3d9fb038b40989affaed925638ca1~mv2.png/v1/fill/w_170,h_170,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/piccoli_tesori.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_18,h_18,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1aa082f7c0747168d9cf43e77046142.png",
+          "alt": "Instagram - Black Circle",
+          "srcset": "https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_18,h_18,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1aa082f7c0747168d9cf43e77046142.png 1x, https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1aa082f7c0747168d9cf43e77046142.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_18,h_18,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4057345bcf57474b96976284050c00df.png",
+          "alt": "Facebook - Black Circle",
+          "srcset": "https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_18,h_18,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4057345bcf57474b96976284050c00df.png 1x, https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4057345bcf57474b96976284050c00df.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/30579d_aee7ae3df832459fbcc1a27a14537703~mv2.png/v1/fill/w_442,h_295,q_90,enc_avif,quality_auto/30579d_aee7ae3df832459fbcc1a27a14537703~mv2.png",
+          "alt": "ROISIN by Jamie Lynn Powers",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/30579d_4b2ea77c1fc945ffa76ff3494d592909~mv2.png/v1/fill/w_442,h_332,q_90,enc_avif,quality_auto/30579d_4b2ea77c1fc945ffa76ff3494d592909~mv2.png",
+          "alt": "ROISIN by Jamie Lynn Powers",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/30579d_e5c625d8a8a04eaa85600f38e186c05f~mv2.png/v1/fill/w_163,h_245,q_90,enc_avif,quality_auto/30579d_e5c625d8a8a04eaa85600f38e186c05f~mv2.png",
+          "alt": "ROISIN by Jamie Lynn Powers",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/30579d_3f25968f35b849039efb79bceded69b7~mv2.png/v1/fill/w_334,h_245,q_90,enc_avif,quality_auto/30579d_3f25968f35b849039efb79bceded69b7~mv2.png",
+          "alt": "ROISIN by Jamie Lynn Powers",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/30579d_8cac80d22b514c53978032aa7922aba1~mv2.png/v1/fill/w_502,h_382,q_90,enc_avif,quality_auto/30579d_8cac80d22b514c53978032aa7922aba1~mv2.png",
+          "alt": "Schermata 2022-11-02 alle 11.53.20.png",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/30579d_53287356862943db8f2dc9dc245831db~mv2.png/v1/fill/w_433,h_288,q_90,enc_avif,quality_auto/30579d_53287356862943db8f2dc9dc245831db~mv2.png",
+          "alt": "ROISIN by Jamie Lynn Powers",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/30579d_6c9339eaa3c04e998521ada0fd0f07fc~mv2.png/v1/fill/w_511,h_379,q_90,enc_avif,quality_auto/30579d_6c9339eaa3c04e998521ada0fd0f07fc~mv2.png",
+          "alt": "CECILIA by Bonnie Sieben",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://manuelabertocchi.wixsite.com/piccolitesori",
+        "https://manuelabertocchi.wixsite.com/piccolitesori/about-contact",
+        "https://manuelabertocchi.wixsite.com/piccolitesori/dolls-gallery"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    }
+  ],
+  "notice": "Discovery evidence only. No images copied; no status or release-date inference."
+}
