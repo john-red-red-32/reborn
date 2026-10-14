@@ -17,7 +17,7 @@ export default function MaterialProductViewer({product,evidence,shipping,collect
  const galleryRef=useRef<HTMLDivElement>(null);
  const extra=evidence.products.find(p=>p.sourceUrl===product.sourceUrl);
  const photos=[...new Set([...(product.photoUrls||[]),...(extra?.photos.map(p=>p.url)||[])])];
- const variants=(product.variants?.length?product.variants:extra?.variants.map(v=>({label:v.label,options:v.options,nativePrice:parsedPrice(v.observedPrice)})))??[];
+ const variants=(product.variants?.length?product.variants:extra?.variants.map(v=>({label:v.label,options:v.options,nativePrice:parsedPrice(v.observedPrice),photoUrl:undefined as string|undefined})))??[];
  const sizes=product.unpricedOptions??[];
  const selected=chosen!==null?variants[chosen]:null;
  const chosenPhoto=selected?.photoUrl;
