@@ -18,7 +18,7 @@ The independent catalogue remains static (Next.js on Cloudflare Pages) for speed
 - `/account/` email signup/login, self-description, interests and privacy settings. Registration stays closed unless both `RESEND_API_KEY` and `COMMUNITY_MAIL_FROM` are securely configured.
 - `/messages/` private conversations; `/community/member/?handle=...` limited public profile.
 - Exact product pages show associated discussions. This is an independent conversation, not an endorsement, authentication certificate or verified product review.
-- `functions/api/community/[[path]].js` is the Pages Functions API. The production deployment branch must carry this directory; `sync-cloudflare.yml` intentionally copies it from `main`.
+- `functions/api/community/[[path]].js` is the Pages Functions API. Preview builds have their own EU D1 database, isolated from live members. The production deployment branch must carry this directory; `sync-cloudflare.yml` intentionally copies it from `main`.
 
 ## Trust and community launch
 The eight pinned/unpinned starter topics are published under **Reborna Editorial**. They are not attributed to fake people and have no fake replies or votes. Reborna can invite actual artists to answer real questions and transparently highlight editorial explainers. Reports go into a moderation queue; adding a staffed moderation dashboard and email support address should precede broad promotion.
