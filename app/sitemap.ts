@@ -9,7 +9,7 @@ import {canonical} from "../lib/seo";
 export default function sitemap():MetadataRoute.Sitemap{
  const pages:string[]=[
   "/","/real-kits/","/artists/","/materials/","/events/","/community/",
-  "/community/guidelines/","/contact/","/privacy/","/terms/","/cookies/"
+  "/community/guidelines/","/guides/original-reborn-kits/","/contact/","/privacy/","/terms/","/cookies/"
  ];
  const fixed=pages.map(path=>({url:canonical(path)}));
  const artistPages=artists.map(artist=>({
