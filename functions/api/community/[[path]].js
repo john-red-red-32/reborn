@@ -235,6 +235,8 @@ export async function onRequest(context){
   if(!emailReady(env)||!env.TURNSTILE_SITE_KEY||!env.TURNSTILE_SECRET_KEY)return failure('Registrations are being prepared. Please check back soon.',503);
   if(!(await throttle(db,request,'register',5,3600)))return failure('Please try registering later.',429);
   const d=await readJson(request),email=clean(d.email,254).toLowerCase(),handle=clean(d.handle,24).toLowerCase(),display=clean(d.displayName,70),password=d.password;
+  // Contract acceptance is distinct from optional promotional email consent.
+  if(d.termsAccepted!==true||d.termsVersion!=='2026-10-14')return failure('Please read and agree to the Terms of Use and Community Guidelines before registering.');
   if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){await recordSignupIssue(db,'form','invalid_email');return failure('Please enter a valid email address.')}
   if(!validHandle(handle)){await recordSignupIssue(db,'form','invalid_username');return failure('Choose a username of 3–24 letters, numbers or underscores, starting with a letter. Reserved names such as admin or reborna cannot be used.')}
   const handleError=publicNameError(handle,'handle'),displayError=publicNameError(display,'display');
@@ -247,9 +249,15 @@ export async function onRequest(context){
   let salt,hash;
   try{salt=b64(bytes(20));hash=await passwordHash(password,salt)}catch(e){await recordSignupIssue(db,'password','hash_failure');throw e}
   const id=crypto.randomUUID();
-  await db.prepare('INSERT INTO users(id,email,handle,display_name,password_salt,password_hash,password_iterations,marketing_email,notification_email) VALUES(?,?,?,?,?,?,?,?,?)').bind(id,email,handle,display,salt,hash,ITERATIONS,d.marketingEmail===true?1:0,d.notificationEmail===true?1:0).run();
   const roles=strings(d.roles,ROLES),interests=strings(d.interests,INTERESTS);
-  const statements=[...roles.map(x=>db.prepare('INSERT INTO user_roles(user_id,role) VALUES(?,?)').bind(id,x)),...interests.map(x=>db.prepare('INSERT INTO user_interests(user_id,interest) VALUES(?,?)').bind(id,x))];if(statements.length)await db.batch(statements);
+  // D1 batch keeps account creation, versioned acceptance, and role selections together.
+  const statements=[
+   db.prepare('INSERT INTO users(id,email,handle,display_name,password_salt,password_hash,password_iterations,marketing_email,notification_email) VALUES(?,?,?,?,?,?,?,?,?)').bind(id,email,handle,display,salt,hash,ITERATIONS,d.marketingEmail===true?1:0,d.notificationEmail===true?1:0),
+   db.prepare('INSERT INTO member_terms_acceptance(user_id,terms_version) VALUES(?,?)').bind(id,'2026-10-14'),
+   ...roles.map(x=>db.prepare('INSERT INTO user_roles(user_id,role) VALUES(?,?)').bind(id,x)),
+   ...interests.map(x=>db.prepare('INSERT INTO user_interests(user_id,interest) VALUES(?,?)').bind(id,x))
+  ];
+  await db.batch(statements);
   try{await deliverToken(db,env,{id,email},'verify')}catch(e){await recordSignupIssue(db,'email','send_failure');return failure('Your account was saved, but the verification email could not be delivered. Choose Sign in, then select Resend my verification link.',503)}
   return response({ok:true,message:'Check your inbox to verify your email before signing in.'},201);
  }
