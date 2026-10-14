@@ -7,7 +7,7 @@ export type SavedItemType="kit"|"material"|"artist"|"archive";
 export type SavedItem={type:SavedItemType;path:string;title:string;subtitle?:string;imageUrl?:string|null;collectionStatus?:"wishlist"|"owned";savedAt?:string};
 type State="loading"|"member"|"guest"|"unavailable";
 type WishlistValue={items:SavedItem[];state:State;isSaved:(path:string)=>boolean;toggle:(item:SavedItem)=>Promise<void>;updateStatus:(item:SavedItem,status:"wishlist"|"owned")=>Promise<void>;remove:(item:SavedItem)=>Promise<void>;refresh:()=>Promise<void>};
-const storeKey="reborna-wishlist-v1",legacyKey="reborna-saved-original-kits";
+const storeKey="reborna-wishlist-v1",legacyKey="reborna-saved-original-kits",guestInviteKey="reborna-wishlist-first-save-invited-v1";
 const Context=createContext<WishlistValue|null>(null);
 const normalized=(path:string)=>path.includes("?")?path:(path.endsWith("/")?path:path+"/");
 function guestItems():SavedItem[]{
@@ -31,8 +31,9 @@ async function request(path:string,payload?:unknown){
  return data;
 }
 export function WishlistProvider({children}:{children:React.ReactNode}){
- const[items,setItems]=useState<SavedItem[]>([]),[state,setState]=useState<State>("loading"),[notice,setNotice]=useState("");
+ const[items,setItems]=useState<SavedItem[]>([]),[state,setState]=useState<State>("loading"),[notice,setNotice]=useState(""),[showGuestInvite,setShowGuestInvite]=useState(false);
  const refresh=useCallback(async()=>{
+  setShowGuestInvite(false);
   try{
    // A member's canonical collection is always loaded from Cloudflare D1.
    const res=await request("wishlist") as {items:SavedItem[]};
@@ -62,8 +63,18 @@ export function WishlistProvider({children}:{children:React.ReactNode}){
    action==="save"?exists?previous:[{...item,path,collectionStatus:"wishlist" as const},...previous]:
    previous.map(i=>normalized(i.path)===path?{...i,collectionStatus:action==="mark-owned"?"owned" as const:"wishlist" as const}:i);
   setItems(next);
-  if(state==="guest"||state==="unavailable"){persist(next);setNotice(state==="unavailable"?"Saved on this device for now. Account syncing is temporarily unavailable.":action==="save"?"Saved in this browser. Sign in to sync your collection across devices.":action==="remove"?"Removed from this browser's wishlist.":"Sign in to organise your collection across devices.");return}
-  try{await request("wishlist",{action,item:{...item,path}});setNotice(action==="save"?"Added to your wishlist.":action==="remove"?"Removed from your wishlist.":"Your collection was updated.")}
+  if(state==="guest"||state==="unavailable"){
+   persist(next);
+   let firstSave=false;
+   if(state==="guest"&&action==="save"){
+    try{firstSave=sessionStorage.getItem(guestInviteKey)!=="shown";if(firstSave)sessionStorage.setItem(guestInviteKey,"shown")}
+    catch{firstSave=true}
+   }
+   setShowGuestInvite(firstSave);
+   setNotice(state==="unavailable"?"Saved on this device for now. Account syncing is temporarily unavailable.":action==="save"?"Saved to your favourites.":action==="remove"?"Removed from your favourites.":"Sign in to organise your collection across devices.");
+   return;
+  }
+  try{await request("wishlist",{action,item:{...item,path}});setShowGuestInvite(false);setNotice(action==="save"?"Added to your wishlist.":action==="remove"?"Removed from your wishlist.":"Your collection was updated.")}
   catch(e){setItems(previous);setNotice((e as Error).message)}
  },[items,state]);
  const toggle=useCallback(async(item:SavedItem)=>{if(state==="loading")return;await execute(isSaved(item.path)?"remove":"save",item)},[state,execute,isSaved]);
@@ -71,7 +82,15 @@ export function WishlistProvider({children}:{children:React.ReactNode}){
  const remove=useCallback((item:SavedItem)=>execute("remove",item),[execute]);
  const value=useMemo(()=>({items,state,isSaved,toggle,updateStatus,remove,refresh}),[items,state,isSaved,toggle,updateStatus,remove,refresh]);
  return <Context.Provider value={value}>{children}
-  {notice&&<div className="rbrn-save-toast" role="status"><Heart size={17} fill="currentColor"/><span>{notice}</span>{state==="guest"&&<Link href="/account/">Your account</Link>}<button type="button" aria-label="Dismiss notification" onClick={()=>setNotice("")}><X size={17}/></button></div>}
+  {notice&&showGuestInvite&&state==="guest"?
+   <aside className="rbrn-save-toast rbrn-save-invite" role="status" aria-label="Save your favourites with a free Reborna account">
+    <Heart size={20} fill="currentColor" aria-hidden="true"/>
+    <div className="rbrn-save-invite-copy"><strong>Saved to your favourites.</strong><p>Keep your collection across devices with a free Reborna account. The favourites you've saved here will come with you.</p>
+     <div className="rbrn-save-invite-actions"><Link href="/account/?from=wishlist" onClick={()=>{setNotice("");setShowGuestInvite(false)}}>Create my free account</Link><button type="button" onClick={()=>{setNotice("");setShowGuestInvite(false)}}>Maybe later</button></div>
+    </div>
+    <button className="rbrn-save-close" type="button" aria-label="Dismiss invitation" onClick={()=>{setNotice("");setShowGuestInvite(false)}}><X size={17}/></button>
+   </aside>:
+   notice&&<div className="rbrn-save-toast" role="status"><Heart size={17} fill="currentColor"/><span>{notice}</span>{state==="guest"&&<Link href="/account/?from=wishlist">Free account</Link>}<button type="button" aria-label="Dismiss notification" onClick={()=>setNotice("")}><X size={17}/></button></div>}
  </Context.Provider>;
 }
 export function useWishlist(){const ctx=useContext(Context);if(!ctx)throw Error("WishlistProvider is required.");return ctx}
