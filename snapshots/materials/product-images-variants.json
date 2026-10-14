@@ -20,7 +20,9 @@
               "option1": "Default Title",
               "option2": null,
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 5239,
+              "available_at_review": true
             }
           ],
           "title": "Complete Set of EIGHT Custom Gemini® Heat Set Paints - #6723",
@@ -93,189 +95,243 @@
               "option1": "02: Carmine Red",
               "option2": null,
               "option3": null,
-              "image_id": 72362734387583
+              "image_id": 72362734387583,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "005: ultramarine Blue",
               "option1": "005: ultramarine Blue",
               "option2": null,
               "option3": null,
-              "image_id": 87458736570751
+              "image_id": 87458736570751,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "06: Cyan / Turquoise",
               "option1": "06: Cyan / Turquoise",
               "option2": null,
               "option3": null,
-              "image_id": 72362743366015
+              "image_id": 72362743366015,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "07: Flesh 08",
               "option1": "07: Flesh 08",
               "option2": null,
               "option3": null,
-              "image_id": 87216733454719
+              "image_id": 87216733454719,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "09: Black",
               "option1": "09: Black",
               "option2": null,
               "option3": null,
-              "image_id": 72362755522943
+              "image_id": 72362755522943,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "10: Green",
               "option1": "10: Green",
               "option2": null,
               "option3": null,
-              "image_id": 72362759192959
+              "image_id": 72362759192959,
+              "price_minor": 750,
+              "available_at_review": false
             },
             {
               "label": "11: emerald green",
               "option1": "11: emerald green",
               "option2": null,
               "option3": null,
-              "image_id": 72362762011007
+              "image_id": 72362762011007,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "12: Magenta",
               "option1": "12: Magenta",
               "option2": null,
               "option3": null,
-              "image_id": 72362767417727
+              "image_id": 72362767417727,
+              "price_minor": 750,
+              "available_at_review": false
             },
             {
               "label": "13: Purple",
               "option1": "13: Purple",
               "option2": null,
               "option3": null,
-              "image_id": 72362770923903
+              "image_id": 72362770923903,
+              "price_minor": 750,
+              "available_at_review": false
             },
             {
               "label": "15: Burnt Umber",
               "option1": "15: Burnt Umber",
               "option2": null,
               "option3": null,
-              "image_id": 72362773512575
+              "image_id": 72362773512575,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "17: Lemon Yellow",
               "option1": "17: Lemon Yellow",
               "option2": null,
               "option3": null,
-              "image_id": 87482790510975
+              "image_id": 87482790510975,
+              "price_minor": 750,
+              "available_at_review": false
             },
             {
               "label": "18: Yellow Ochre",
               "option1": "18: Yellow Ochre",
               "option2": null,
               "option3": null,
-              "image_id": 87482639810943
+              "image_id": 87482639810943,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "19: Raw Sienna",
               "option1": "19: Raw Sienna",
               "option2": null,
               "option3": null,
-              "image_id": 72362787996031
+              "image_id": 72362787996031,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "21: Dark Quinacridone",
               "option1": "21: Dark Quinacridone",
               "option2": null,
               "option3": null,
-              "image_id": 72362794713471
+              "image_id": 72362794713471,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "24: White",
               "option1": "24: White",
               "option2": null,
               "option3": null,
-              "image_id": 72362796351871
+              "image_id": 72362796351871,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "35: Mint green",
               "option1": "35: Mint green",
               "option2": null,
               "option3": null,
-              "image_id": 87482802569599
+              "image_id": 87482802569599,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "Lilac",
               "option1": "Lilac",
               "option2": null,
               "option3": null,
-              "image_id": 87482736083327
+              "image_id": 87482736083327,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "Amarillo Yellow",
               "option1": "Amarillo Yellow",
               "option2": null,
               "option3": null,
-              "image_id": 87216693870975
+              "image_id": 87216693870975,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "16 Flesh 01",
               "option1": "16 Flesh 01",
               "option2": null,
               "option3": null,
-              "image_id": 87482713604479
+              "image_id": 87482713604479,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "Flesh 02",
               "option1": "Flesh 02",
               "option2": null,
               "option3": null,
-              "image_id": 87482719764863
+              "image_id": 87482719764863,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "21. Brunette",
               "option1": "21. Brunette",
               "option2": null,
               "option3": null,
-              "image_id": 87482622771583
+              "image_id": 87482622771583,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "Eyelid purple",
               "option1": "Eyelid purple",
               "option2": null,
               "option3": null,
-              "image_id": 87482644463999
+              "image_id": 87482644463999,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "Sky blue",
               "option1": "Sky blue",
               "option2": null,
               "option3": null,
-              "image_id": 87482672611711
+              "image_id": 87482672611711,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "Fresa (pink)",
               "option1": "Fresa (pink)",
               "option2": null,
               "option3": null,
-              "image_id": 87482686144895
+              "image_id": 87482686144895,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "Flesh 01 30ml",
               "option1": "Flesh 01 30ml",
               "option2": null,
               "option3": null,
-              "image_id": 87483250573695
+              "image_id": 87483250573695,
+              "price_minor": 2250,
+              "available_at_review": true
             },
             {
               "label": "Flesh 02 30ml",
               "option1": "Flesh 02 30ml",
               "option2": null,
               "option3": null,
-              "image_id": 87483250573695
+              "image_id": 87483250573695,
+              "price_minor": 2250,
+              "available_at_review": true
             },
             {
               "label": "Flesh 08 30ml",
               "option1": "Flesh 08 30ml",
               "option2": null,
               "option3": null,
-              "image_id": 87483250573695
+              "image_id": 87483250573695,
+              "price_minor": 2250,
+              "available_at_review": true
             }
           ],
           "title": "Heat Set Reborn Paint: Alva & Go 5ml",
@@ -348,392 +404,504 @@
               "option1": "Flesh01",
               "option2": null,
               "option3": null,
-              "image_id": 41199556395262
+              "image_id": 41199556395262,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Flesh02",
               "option1": "Flesh02",
               "option2": null,
               "option3": null,
-              "image_id": 41199556428030
+              "image_id": 41199556428030,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Flesh03",
               "option1": "Flesh03",
               "option2": null,
               "option3": null,
-              "image_id": 41199556460798
+              "image_id": 41199556460798,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Flesh04",
               "option1": "Flesh04",
               "option2": null,
               "option3": null,
-              "image_id": 41199556493566
+              "image_id": 41199556493566,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Flesh05",
               "option1": "Flesh05",
               "option2": null,
               "option3": null,
-              "image_id": 41199556559102
+              "image_id": 41199556559102,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Flesh06",
               "option1": "Flesh06",
               "option2": null,
               "option3": null,
-              "image_id": 41199556591870
+              "image_id": 41199556591870,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Flesh07",
               "option1": "Flesh07",
               "option2": null,
               "option3": null,
-              "image_id": 41199556624638
+              "image_id": 41199556624638,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Flesh08",
               "option1": "Flesh08",
               "option2": null,
               "option3": null,
-              "image_id": 41199556657406
+              "image_id": 41199556657406,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Baby pink skin",
               "option1": "Baby pink skin",
               "option2": null,
               "option3": null,
-              "image_id": 41199556690174
+              "image_id": 41199556690174,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Aqua Vein",
               "option1": "Aqua Vein",
               "option2": null,
               "option3": null,
-              "image_id": 41199556722942
+              "image_id": 41199556722942,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Blue Deep Vein",
               "option1": "Blue Deep Vein",
               "option2": null,
               "option3": null,
-              "image_id": 41199556755710
+              "image_id": 41199556755710,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Green Vein",
               "option1": "Green Vein",
               "option2": null,
               "option3": null,
-              "image_id": 41199556788478
+              "image_id": 41199556788478,
+              "price_minor": 750,
+              "available_at_review": false
             },
             {
               "label": "Newborn lip",
               "option1": "Newborn lip",
               "option2": null,
               "option3": null,
-              "image_id": 41199556854014
+              "image_id": 41199556854014,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "toddler lip",
               "option1": "toddler lip",
               "option2": null,
               "option3": null,
-              "image_id": 41199556886782
+              "image_id": 41199556886782,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "coral lip",
               "option1": "coral lip",
               "option2": null,
               "option3": null,
-              "image_id": 41199659090174
+              "image_id": 41199659090174,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "berry ethnic lip",
               "option1": "berry ethnic lip",
               "option2": null,
               "option3": null,
-              "image_id": 41199659122942
+              "image_id": 41199659122942,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "deep newborn lips",
               "option1": "deep newborn lips",
               "option2": null,
               "option3": null,
-              "image_id": 41199659221246
+              "image_id": 41199659221246,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "strawberry and cream skin blush",
               "option1": "strawberry and cream skin blush",
               "option2": null,
               "option3": null,
-              "image_id": 41199659286782
+              "image_id": 41199659286782,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "strawberry and cream skin lips",
               "option1": "strawberry and cream skin lips",
               "option2": null,
               "option3": null,
-              "image_id": 41199659385086
+              "image_id": 41199659385086,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "strawberry and cream skin creases",
               "option1": "strawberry and cream skin creases",
               "option2": null,
               "option3": null,
-              "image_id": 41199659417854
+              "image_id": 41199659417854,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "peaches and cream skin blush",
               "option1": "peaches and cream skin blush",
               "option2": null,
               "option3": null,
-              "image_id": 41199659483390
+              "image_id": 41199659483390,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "peaches and cream skin lips",
               "option1": "peaches and cream skin lips",
               "option2": null,
               "option3": null,
-              "image_id": 41199659516158
+              "image_id": 41199659516158,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "peaches and cream skin creases",
               "option1": "peaches and cream skin creases",
               "option2": null,
               "option3": null,
-              "image_id": 41199659548926
+              "image_id": 41199659548926,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "sweetheart blush",
               "option1": "sweetheart blush",
               "option2": null,
               "option3": null,
-              "image_id": 41199659581694
+              "image_id": 41199659581694,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "sweetheart lips",
               "option1": "sweetheart lips",
               "option2": null,
               "option3": null,
-              "image_id": 41199659614462
+              "image_id": 41199659614462,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "sweetheart creases",
               "option1": "sweetheart creases",
               "option2": null,
               "option3": null,
-              "image_id": 41199715942654
+              "image_id": 41199715942654,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "brown",
               "option1": "brown",
               "option2": null,
               "option3": null,
-              "image_id": 41199716008190
+              "image_id": 41199716008190,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "lips nails blush",
               "option1": "lips nails blush",
               "option2": null,
               "option3": null,
-              "image_id": 41199716040958
+              "image_id": 41199716040958,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "red ochre",
               "option1": "red ochre",
               "option2": null,
               "option3": null,
-              "image_id": 41199716106494
+              "image_id": 41199716106494,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "brown eyebrow",
               "option1": "brown eyebrow",
               "option2": null,
               "option3": null,
-              "image_id": 41199716139262
+              "image_id": 41199716139262,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "raw umber",
               "option1": "raw umber",
               "option2": null,
               "option3": null,
-              "image_id": 79038568038783
+              "image_id": 79038568038783,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Burnt umber",
               "option1": "Burnt umber",
               "option2": null,
               "option3": null,
-              "image_id": 79038593171839
+              "image_id": 79038593171839,
+              "price_minor": 800,
+              "available_at_review": false
             },
             {
               "label": "Burnt Sienna",
               "option1": "Burnt Sienna",
               "option2": null,
               "option3": null,
-              "image_id": 79038602150271
+              "image_id": 79038602150271,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Red Wine",
               "option1": "Red Wine",
               "option2": null,
               "option3": null,
-              "image_id": 79038616338815
+              "image_id": 79038616338815,
+              "price_minor": 800,
+              "available_at_review": false
             },
             {
               "label": "Yellow Ochre",
               "option1": "Yellow Ochre",
               "option2": null,
               "option3": null,
-              "image_id": 79039037931903
+              "image_id": 79039037931903,
+              "price_minor": 800,
+              "available_at_review": false
             },
             {
               "label": "Yellow Warm",
               "option1": "Yellow Warm",
               "option2": null,
               "option3": null,
-              "image_id": 79039055823231
+              "image_id": 79039055823231,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Cadmium Yellow",
               "option1": "Cadmium Yellow",
               "option2": null,
               "option3": null,
-              "image_id": 79039068602751
+              "image_id": 79039068602751,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Bismuth Yellow",
               "option1": "Bismuth Yellow",
               "option2": null,
               "option3": null,
-              "image_id": 79039094980991
+              "image_id": 79039094980991,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Fluorescent pink",
               "option1": "Fluorescent pink",
               "option2": null,
               "option3": null,
-              "image_id": 79039203934591
+              "image_id": 79039203934591,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Fluorescent yellow",
               "option1": "Fluorescent yellow",
               "option2": null,
               "option3": null,
-              "image_id": 79039209701759
+              "image_id": 79039209701759,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Fluorescent blue",
               "option1": "Fluorescent blue",
               "option2": null,
               "option3": null,
-              "image_id": 79039214387583
+              "image_id": 79039214387583,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Dioxazine Purple",
               "option1": "Dioxazine Purple",
               "option2": null,
               "option3": null,
-              "image_id": 79039221596543
+              "image_id": 79039221596543,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Orange (secondary)",
               "option1": "Orange (secondary)",
               "option2": null,
               "option3": null,
-              "image_id": 79039239487871
+              "image_id": 79039239487871,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Viridian Green",
               "option1": "Viridian Green",
               "option2": null,
               "option3": null,
-              "image_id": 79039245582719
+              "image_id": 79039245582719,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Cobalt Blue",
               "option1": "Cobalt Blue",
               "option2": null,
               "option3": null,
-              "image_id": 79039622152575
+              "image_id": 79039622152575,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Warm Red",
               "option1": "Warm Red",
               "option2": null,
               "option3": null,
-              "image_id": 79039628509567
+              "image_id": 79039628509567,
+              "price_minor": 800,
+              "available_at_review": false
             },
             {
               "label": "Cool Red",
               "option1": "Cool Red",
               "option2": null,
               "option3": null,
-              "image_id": 79039650824575
+              "image_id": 79039650824575,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Pthalo Blue",
               "option1": "Pthalo Blue",
               "option2": null,
               "option3": null,
-              "image_id": 79039730549119
+              "image_id": 79039730549119,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Ultramarine Blue",
               "option1": "Ultramarine Blue",
               "option2": null,
               "option3": null,
-              "image_id": 79039739101567
+              "image_id": 79039739101567,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Blue Vein",
               "option1": "Blue Vein",
               "option2": null,
               "option3": null,
-              "image_id": 79039957401983
+              "image_id": 79039957401983,
+              "price_minor": 800,
+              "available_at_review": false
             },
             {
               "label": "magenta",
               "option1": "magenta",
               "option2": null,
               "option3": null,
-              "image_id": 79039980077439
+              "image_id": 79039980077439,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Black",
               "option1": "Black",
               "option2": null,
               "option3": null,
-              "image_id": 79040011305343
+              "image_id": 79040011305343,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "White",
               "option1": "White",
               "option2": null,
               "option3": null,
-              "image_id": 79040017564031
+              "image_id": 79040017564031,
+              "price_minor": 750,
+              "available_at_review": false
             },
             {
               "label": "Flesh Base",
               "option1": "Flesh Base",
               "option2": null,
               "option3": null,
-              "image_id": 79040021889407
+              "image_id": 79040021889407,
+              "price_minor": 750,
+              "available_at_review": false
             },
             {
               "label": "Diarylide Yellow",
               "option1": "Diarylide Yellow",
               "option2": null,
               "option3": null,
-              "image_id": 79039037931903
+              "image_id": 79039037931903,
+              "price_minor": 800,
+              "available_at_review": true
             },
             {
               "label": "Ethnic Green Vein",
               "option1": "Ethnic Green Vein",
               "option2": null,
               "option3": null,
-              "image_id": 41199556788478
+              "image_id": 41199556788478,
+              "price_minor": 750,
+              "available_at_review": true
             }
           ],
           "title": "Ultimate Fusion - Paint Colours (12ml)",
@@ -780,42 +948,54 @@
               "option1": "Primary Red",
               "option2": "12ml",
               "option3": null,
-              "image_id": 41242083328254
+              "image_id": 41242083328254,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "Primary Red / 30ml",
               "option1": "Primary Red",
               "option2": "30ml",
               "option3": null,
-              "image_id": 41242080379134
+              "image_id": 41242080379134,
+              "price_minor": 1600,
+              "available_at_review": true
             },
             {
               "label": "Primary Blue / 12ml",
               "option1": "Primary Blue",
               "option2": "12ml",
               "option3": null,
-              "image_id": 41242080248062
+              "image_id": 41242080248062,
+              "price_minor": 750,
+              "available_at_review": false
             },
             {
               "label": "Primary Blue / 30ml",
               "option1": "Primary Blue",
               "option2": "30ml",
               "option3": null,
-              "image_id": 41242080346366
+              "image_id": 41242080346366,
+              "price_minor": 1600,
+              "available_at_review": true
             },
             {
               "label": "Primary Yellow / 12ml",
               "option1": "Primary Yellow",
               "option2": "12ml",
               "option3": null,
-              "image_id": 41242080182526
+              "image_id": 41242080182526,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "Primary Yellow / 30ml",
               "option1": "Primary Yellow",
               "option2": "30ml",
               "option3": null,
-              "image_id": 41242080215294
+              "image_id": 41242080215294,
+              "price_minor": 1600,
+              "available_at_review": true
             }
           ],
           "title": "Ultimate Fusion - Primary colours",
@@ -902,7 +1082,9 @@
               "option1": "Default Title",
               "option2": null,
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 8000,
+              "available_at_review": true
             }
           ],
           "title": "Silicone Pigments - Enfis Nature Colours 11 colour pigment trial kit (NO CLEAR PAINT BASE INCLUDED IN THIS SET",
@@ -953,70 +1135,90 @@
               "option1": "50g",
               "option2": "101",
               "option3": null,
-              "image_id": 37437551608062
+              "image_id": 37437551608062,
+              "price_minor": 1499,
+              "available_at_review": true
             },
             {
               "label": "50g / 201",
               "option1": "50g",
               "option2": "201",
               "option3": null,
-              "image_id": 37437551476990
+              "image_id": 37437551476990,
+              "price_minor": 1499,
+              "available_at_review": false
             },
             {
               "label": "50g / 301",
               "option1": "50g",
               "option2": "301",
               "option3": null,
-              "image_id": 37437551640830
+              "image_id": 37437551640830,
+              "price_minor": 1499,
+              "available_at_review": true
             },
             {
               "label": "50g / 401",
               "option1": "50g",
               "option2": "401",
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 1499,
+              "available_at_review": false
             },
             {
               "label": "50g / 501",
               "option1": "50g",
               "option2": "501",
               "option3": null,
-              "image_id": 37437551509758
+              "image_id": 37437551509758,
+              "price_minor": 1499,
+              "available_at_review": false
             },
             {
               "label": "100g / 101",
               "option1": "100g",
               "option2": "101",
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 1899,
+              "available_at_review": false
             },
             {
               "label": "100g / 201",
               "option1": "100g",
               "option2": "201",
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 1899,
+              "available_at_review": false
             },
             {
               "label": "100g / 301",
               "option1": "100g",
               "option2": "301",
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 1899,
+              "available_at_review": false
             },
             {
               "label": "100g / 401",
               "option1": "100g",
               "option2": "401",
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 1899,
+              "available_at_review": false
             },
             {
               "label": "100g / 501",
               "option1": "100g",
               "option2": "501",
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 1899,
+              "available_at_review": false
             }
           ],
           "title": "Enfis Professional Silicone Pigments - Flesh Colours",
@@ -1095,112 +1297,144 @@
               "option1": "Natural blonde",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 18625127743656
+              "image_id": 18625127743656,
+              "price_minor": 5999,
+              "available_at_review": false
             },
             {
               "label": "Nordic blonde / Wavy to Straight",
               "option1": "Nordic blonde",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 18625127612584
+              "image_id": 18625127612584,
+              "price_minor": 5999,
+              "available_at_review": false
             },
             {
               "label": "Golden blonde / Wavy to Straight",
               "option1": "Golden blonde",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 18625128267944
+              "image_id": 18625128267944,
+              "price_minor": 5999,
+              "available_at_review": false
             },
             {
               "label": "Baby blonde / Wavy to Straight",
               "option1": "Baby blonde",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 18635691950248
+              "image_id": 18635691950248,
+              "price_minor": 5999,
+              "available_at_review": false
             },
             {
               "label": "Dark Blonde / Wavy to Straight",
               "option1": "Dark Blonde",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 28301970931880
+              "image_id": 28301970931880,
+              "price_minor": 5999,
+              "available_at_review": false
             },
             {
               "label": "Honey Blonde / Wavy to Straight",
               "option1": "Honey Blonde",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 28301786251432
+              "image_id": 28301786251432,
+              "price_minor": 5999,
+              "available_at_review": false
             },
             {
               "label": "Copper gold / Wavy to Straight",
               "option1": "Copper gold",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 18625126891688
+              "image_id": 18625126891688,
+              "price_minor": 5999,
+              "available_at_review": false
             },
             {
               "label": "Copper Red / Wavy to Straight",
               "option1": "Copper Red",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 28301851394216
+              "image_id": 28301851394216,
+              "price_minor": 5999,
+              "available_at_review": true
             },
             {
               "label": "Ruby Red *NEW / Wavy to Straight",
               "option1": "Ruby Red *NEW",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 28301786185896
+              "image_id": 28301786185896,
+              "price_minor": 5999,
+              "available_at_review": false
             },
             {
               "label": "Chestnut / Wavy to Straight",
               "option1": "Chestnut",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 28301815906472
+              "image_id": 28301815906472,
+              "price_minor": 5999,
+              "available_at_review": false
             },
             {
               "label": "Light brown / Wavy to Straight",
               "option1": "Light brown",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 18635700764840
+              "image_id": 18635700764840,
+              "price_minor": 5999,
+              "available_at_review": true
             },
             {
               "label": "Baby brown / Wavy to Straight",
               "option1": "Baby brown",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 18625126826152
+              "image_id": 18625126826152,
+              "price_minor": 5999,
+              "available_at_review": false
             },
             {
               "label": "Chocolate brown / Wavy to Straight",
               "option1": "Chocolate brown",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 18625127022760
+              "image_id": 18625127022760,
+              "price_minor": 5999,
+              "available_at_review": false
             },
             {
               "label": "Mocha **NEW** / Wavy to Straight",
               "option1": "Mocha **NEW**",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 28302072709288
+              "image_id": 28302072709288,
+              "price_minor": 5999,
+              "available_at_review": false
             },
             {
               "label": "Dark brown / Wavy to Straight",
               "option1": "Dark brown",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 18625127383208
+              "image_id": 18625127383208,
+              "price_minor": 5999,
+              "available_at_review": false
             },
             {
               "label": "Black / Wavy to Straight",
               "option1": "Black",
               "option2": "Wavy to Straight",
               "option3": null,
-              "image_id": 18625127481512
+              "image_id": 18625127481512,
+              "price_minor": 5999,
+              "available_at_review": false
             }
           ],
           "title": "HP Babylocks Premium Mohair STRAIGHT TO WAVY  ***17 COLOURS AVAILABLE***",
@@ -1230,7 +1464,9 @@
               "option1": "Default Title",
               "option2": null,
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 1995,
+              "available_at_review": true
             }
           ],
           "title": "1/4 oz NuBorn Mohair Dark Brown - Curve 6M2 - #5629",
@@ -1253,7 +1489,9 @@
               "option1": "Default Title",
               "option2": null,
               "option3": null,
-              "image_id": 2164642545721
+              "image_id": 2164642545721,
+              "price_minor": 1995,
+              "available_at_review": true
             }
           ],
           "title": "1/4 oz NuBorn Mohair Light Brown - Curve 6SP - #5634",
@@ -1297,14 +1535,18 @@
               "option1": "18mm pair",
               "option2": "Baby Blue",
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 2999,
+              "available_at_review": false
             },
             {
               "label": "20mm pair / Baby Blue",
               "option1": "20mm pair",
               "option2": "Baby Blue",
               "option3": null,
-              "image_id": 86186233266559
+              "image_id": 86186233266559,
+              "price_minor": 2999,
+              "available_at_review": true
             }
           ],
           "title": "German Venus flat back glass eyes for dolls  - standard iris with corneal bulge and subtle limbus ring (baby blue only)",
@@ -1356,70 +1598,90 @@
               "option1": "14mm",
               "option2": "Newborn Blue",
               "option3": null,
-              "image_id": 29386282827944
+              "image_id": 29386282827944,
+              "price_minor": 2499,
+              "available_at_review": true
             },
             {
               "label": "14mm / Baby Blue",
               "option1": "14mm",
               "option2": "Baby Blue",
               "option3": null,
-              "image_id": 20376865276072
+              "image_id": 20376865276072,
+              "price_minor": 2499,
+              "available_at_review": true
             },
             {
               "label": "16mm / Newborn Blue",
               "option1": "16mm",
               "option2": "Newborn Blue",
               "option3": null,
-              "image_id": 29386282827944
+              "image_id": 29386282827944,
+              "price_minor": 2499,
+              "available_at_review": true
             },
             {
               "label": "17mm / Newborn Blue",
               "option1": "17mm",
               "option2": "Newborn Blue",
               "option3": null,
-              "image_id": 29386282827944
+              "image_id": 29386282827944,
+              "price_minor": 2499,
+              "available_at_review": true
             },
             {
               "label": "18mm pair / Baby Blue",
               "option1": "18mm pair",
               "option2": "Baby Blue",
               "option3": null,
-              "image_id": 20376865276072
+              "image_id": 20376865276072,
+              "price_minor": 2499,
+              "available_at_review": false
             },
             {
               "label": "20mm pair / Baby Blue",
               "option1": "20mm pair",
               "option2": "Baby Blue",
               "option3": null,
-              "image_id": 20376865276072
+              "image_id": 20376865276072,
+              "price_minor": 2499,
+              "available_at_review": false
             },
             {
               "label": "20mm pair / Chestnut Brown",
               "option1": "20mm pair",
               "option2": "Chestnut Brown",
               "option3": null,
-              "image_id": 20376864915624
+              "image_id": 20376864915624,
+              "price_minor": 2499,
+              "available_at_review": false
             },
             {
               "label": "22mm / Newborn Blue",
               "option1": "22mm",
               "option2": "Newborn Blue",
               "option3": null,
-              "image_id": 29386282827944
+              "image_id": 29386282827944,
+              "price_minor": 2499,
+              "available_at_review": false
             },
             {
               "label": "14mm / Chestnut brown",
               "option1": "14mm",
               "option2": "Chestnut brown",
               "option3": null,
-              "image_id": 86185686139263
+              "image_id": 86185686139263,
+              "price_minor": 2499,
+              "available_at_review": true
             },
             {
               "label": "17mm / Chestnut Brown",
               "option1": "17mm",
               "option2": "Chestnut Brown",
               "option3": null,
-              "image_id": 86185703506303
+              "image_id": 86185703506303,
+              "price_minor": 2499,
+              "available_at_review": true
             }
           ],
           "title": "German Neptune flat back glass eyes for dolls  - large iris (3 colours,14mm to 22mm)",
@@ -1460,7 +1722,9 @@
               "option1": "Default Title",
               "option2": null,
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 1895,
+              "available_at_review": true
             }
           ],
           "title": "14mm Blue - Oval Glass Eyes - 1 Pair - #1454 *Discontinued*",
@@ -1487,7 +1751,9 @@
               "option1": "Default Title",
               "option2": null,
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 1895,
+              "available_at_review": true
             }
           ],
           "title": "14mm Brown - Oval Glass Eyes - 1 Pair - #1455 *Discontinued*",
@@ -1539,42 +1805,54 @@
               "option1": "Crown",
               "option2": "46G",
               "option3": "5 pack",
-              "image_id": null
+              "image_id": null,
+              "price_minor": 499,
+              "available_at_review": true
             },
             {
               "label": "Crown / 46G / 10 pack",
               "option1": "Crown",
               "option2": "46G",
               "option3": "10 pack",
-              "image_id": null
+              "image_id": null,
+              "price_minor": 899,
+              "available_at_review": true
             },
             {
               "label": "Crown / 43G / 5 pack",
               "option1": "Crown",
               "option2": "43G",
               "option3": "5 pack",
-              "image_id": null
+              "image_id": null,
+              "price_minor": 499,
+              "available_at_review": true
             },
             {
               "label": "Crown / 43G / 10 pack",
               "option1": "Crown",
               "option2": "43G",
               "option3": "10 pack",
-              "image_id": null
+              "image_id": null,
+              "price_minor": 899,
+              "available_at_review": true
             },
             {
               "label": "Crown / 42G / 5 pack",
               "option1": "Crown",
               "option2": "42G",
               "option3": "5 pack",
-              "image_id": null
+              "image_id": null,
+              "price_minor": 499,
+              "available_at_review": true
             },
             {
               "label": "Crown / 42G / 10 pack",
               "option1": "Crown",
               "option2": "42G",
               "option3": "10 pack",
-              "image_id": null
+              "image_id": null,
+              "price_minor": 499,
+              "available_at_review": true
             }
           ],
           "title": "Pixie Kissed Rooting (hair punch) needles Very Fine 46G/43G/42G Crown",
@@ -1632,35 +1910,45 @@
               "option1": "3 x black medium",
               "option2": null,
               "option3": null,
-              "image_id": 19763328581800
+              "image_id": 19763328581800,
+              "price_minor": 650,
+              "available_at_review": true
             },
             {
               "label": "3 x white fine",
               "option1": "3 x white fine",
               "option2": null,
               "option3": null,
-              "image_id": 21277267919016
+              "image_id": 21277267919016,
+              "price_minor": 650,
+              "available_at_review": true
             },
             {
               "label": "twin pack 1 medium/1 coarse",
               "option1": "twin pack 1 medium/1 coarse",
               "option2": null,
               "option3": null,
-              "image_id": 21277195763880
+              "image_id": 21277195763880,
+              "price_minor": 600,
+              "available_at_review": true
             },
             {
               "label": "triple pack 1 of each type",
               "option1": "triple pack 1 of each type",
               "option2": null,
               "option3": null,
-              "image_id": 86319518482815
+              "image_id": 86319518482815,
+              "price_minor": 750,
+              "available_at_review": true
             },
             {
               "label": "3 x blue coarse",
               "option1": "3 x blue coarse",
               "option2": null,
               "option3": null,
-              "image_id": 86319518450047
+              "image_id": 86319518450047,
+              "price_minor": 650,
+              "available_at_review": true
             }
           ],
           "title": "Stippling sponges - 3 effect sizes (for silicone or vinyl painting)",
@@ -1693,7 +1981,9 @@
               "option1": "Default Title",
               "option2": null,
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 1995,
+              "available_at_review": true
             }
           ],
           "title": "19\" Premium Gathered Body for Full Limbs - #3650",
@@ -1716,7 +2006,9 @@
               "option1": "Default Title",
               "option2": null,
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 2295,
+              "available_at_review": true
             }
           ],
           "title": "19-20\" Premium Gathered Body for Full Limbs - #3585",
@@ -1804,63 +2096,81 @@
               "option1": "7g refill bag (good for people with one doll)",
               "option2": null,
               "option3": null,
-              "image_id": 84075927994751
+              "image_id": 84075927994751,
+              "price_minor": 1599,
+              "available_at_review": true
             },
             {
               "label": "Powder Bottle 15g (1/3 full)",
               "option1": "Powder Bottle 15g (1/3 full)",
               "option2": null,
               "option3": null,
-              "image_id": 73402730086783
+              "image_id": 73402730086783,
+              "price_minor": 2499,
+              "available_at_review": true
             },
             {
               "label": "20g  refill bag  (good for artists or people with multiple dolls)",
               "option1": "20g  refill bag  (good for artists or people with multiple dolls)",
               "option2": null,
               "option3": null,
-              "image_id": 84075927994751
+              "image_id": 84075927994751,
+              "price_minor": 2599,
+              "available_at_review": false
             },
             {
               "label": "Powder bottle 40g (3/4 full)",
               "option1": "Powder bottle 40g (3/4 full)",
               "option2": null,
               "option3": null,
-              "image_id": 73402730086783
+              "image_id": 73402730086783,
+              "price_minor": 4000,
+              "available_at_review": true
             },
             {
               "label": "70g refill bag for busy artists",
               "option1": "70g refill bag for busy artists",
               "option2": null,
               "option3": null,
-              "image_id": 84075927863679
+              "image_id": 84075927863679,
+              "price_minor": 6700,
+              "available_at_review": true
             },
             {
               "label": "150g  refill for professional artists",
               "option1": "150g  refill for professional artists",
               "option2": null,
               "option3": null,
-              "image_id": 84075928519039
+              "image_id": 84075928519039,
+              "price_minor": 13500,
+              "available_at_review": true
             },
             {
               "label": "artists gift multipack (6 x 2g sifter jars) plus gift cards (filled)",
               "option1": "artists gift multipack (6 x 2g sifter jars) plus gift cards (filled)",
               "option2": null,
               "option3": null,
-              "image_id": 84075922653567
+              "image_id": 84075922653567,
+              "price_minor": 3000,
+              "available_at_review": true
             },
             {
               "label": "SELF FILL artists gift sifters x 6 (empty) with gift cards",
               "option1": "SELF FILL artists gift sifters x 6 (empty) with gift cards",
               "option2": null,
               "option3": null,
-              "image_id": 84076014895487
+              "image_id": 84076014895487,
+              "price_minor": 1500,
+              "available_at_review": false
             },
             {
               "label": "2g mini sifter (sample)",
               "option1": "2g mini sifter (sample)",
               "option2": null,
               "option3": null,
-              "image_id": 84076014895487
+              "image_id": 84076014895487,
+              "price_minor": 695,
+              "available_at_review": true
             }
           ],
           "title": "Silicone Velvet Matting Powder (select your size)",
@@ -1899,21 +2209,27 @@
               "option1": "single",
               "option2": null,
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 695,
+              "available_at_review": true
             },
             {
               "label": "three pack",
               "option1": "three pack",
               "option2": null,
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 1800,
+              "available_at_review": true
             },
             {
               "label": "12 pack for artists with gift cards",
               "option1": "12 pack for artists with gift cards",
               "option2": null,
               "option3": null,
-              "image_id": null
+              "image_id": null,
+              "price_minor": 6500,
+              "available_at_review": true
             }
           ],
           "title": "Silicone Velvet Doll Matting and Care Powder Mini Jar with Puff.",
