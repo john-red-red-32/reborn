@@ -1,4 +1,5 @@
 import type {MetadataRoute} from "next";
+export const dynamic="force-static";
 import {artists,verifiedKits} from "../lib/real-catalogue";
 import {supplierListings} from "../lib/materials-catalogue";
 import {materialProductPages} from "../lib/material-routing";
