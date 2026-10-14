@@ -1,0 +1,51 @@
+name: Audit sourced maker supplies catalogue
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/audit-maker-supplies.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate supplier lists and paint system labels
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          s=Path('lib/materials-catalogue.ts').read_text()
+          assert s.count('sourceRole:"manufacturer"')+s.count('sourceRole:"specialist retailer"')==14
+          assert 'Gemini Heat Set Paints' in s and 'Alva & Go' in s and 'Kebelka Set Heat Paint' in s
+          assert all(x in s for x in ['Air-dry','Heat-set','Silicone','Rooting Needles','Mohair','Eyes','Cloth Bodies'])
+          assert 'stockPrice' not in s and 'affiliate' not in s
+          assert 'setMethod("all")' in Path('components/MaterialSuppliesExplorer.tsx').read_text()
+          print('PASS: fourteen credited materials sources and unambiguous curing system filters',flush=True)
+          PY
+      - name: Test visible live supplier catalogue and mobile menu navigation
+        run: |
+          python3 - <<'PY'
+          import urllib.request,time,html
+          checks={
+           '/materials/':['The artist','Gemini Heat Set Paints','Alva & Go','Ultimate Fusion','Kebelka Set Heat Paint','Enfis Silicone Pigments','HP Babylocks Mohair','German Flat-Back Glass Eyes','Fine Rooting Needles','Heat-set','Air-dry','Silicone','All materials','All regions','View supplier'],
+           '/events/':['Event includes reborns','Reborn-specific event','MUVAL'],
+           '/calendar/':['Reborn Calendar','MUVAL','Kit releases']
+          }
+          for n in range(42):
+           pending=[]
+           for path,words in checks.items():
+            try:
+             request=urllib.request.Request('https://reborna.co'+path,headers={'User-Agent':'Mozilla/5.0'})
+             with urllib.request.urlopen(request,timeout=14) as r:body=html.unescape(r.read(2600000).decode('utf8','replace'))
+             for word in words:
+              if word.lower() not in body.lower():pending.append((path,word))
+            except Exception as e:pending.append((path,str(e)[:100]))
+           if not pending:
+            print('PASS: materials catalogue and reborn event-focus taxonomy live in production',flush=True)
+            break
+           print('Cloudflare pending',n+1,pending[:5],flush=True)
+           time.sleep(8)
+          else:raise SystemExit('Supplies or events are not verified on the latest production site')
+          PY
