@@ -1,0 +1,712 @@
+{
+  "source": "https://rutagui.wixsite.com/lerubanrose?lang=es",
+  "host": "rutagui.wixsite.com",
+  "parser_version": "url-discovery-v2-platform-sitemaps",
+  "started_from": "https://rutagui.wixsite.com/lerubanrose?lang=es",
+  "completed_at": "2026-10-14T09:00:01.186455+00:00",
+  "page_limit": 12,
+  "sitemap_discovered_urls": 0,
+  "platforms": {
+    "wix": 12
+  },
+  "pages_checked": 12,
+  "pages_succeeded": 12,
+  "queue_remaining": 2,
+  "complete": false,
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://rutagui.wixsite.com/lerubanrose?lang=es",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:24.308756+00:00",
+      "sha256_html": "d6bf325f46bc077cb4597e95d831e78326cf5734853ccb9c43e93d5026e5d250",
+      "title": "Reborn Dolls | Lerubanrose.shop",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "Discover de magic of the most realistic reborn art dolls, here at Le Ruban Rose Nursery you will find the perfect doll that goes Beyond Reality! Reborn Baby | Lerubanrose.shop ",
+        "og:title": "Reborn Dolls | Lerubanrose.shop",
+        "og:description": "Discover de magic of the most realistic reborn art dolls, here at Le Ruban Rose Nursery you will find the perfect doll that goes Beyond Reality! Reborn Baby | Lerubanrose.shop ",
+        "og:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://rutagui.wixsite.com/lerubanrose?lang=es",
+        "og:site_name": "Lerubanrose",
+        "og:type": "website",
+        "fb_admins_meta_tag": "le.ruban.rose.nursery",
+        "facebook-domain-verification": "7xj565ws8oyi1qf61h0r12qw5ep659",
+        "google-site-verification": "GQCRVtYPqj-eTzzYLFVLXH-LvPtrs3ASxz2ybqA6HhQ",
+        "keywords": "adoptions, art dolls, babies, cross stich, dolls, nursery, realistic hiperrealistic dolls, reborn dolls, ruth aguilar, toddles",
+        "fb:admins": "le.ruban.rose.nursery",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Reborn Dolls | Lerubanrose.shop",
+        "twitter:description": "Discover de magic of the most realistic reborn art dolls, here at Le Ruban Rose Nursery you will find the perfect doll that goes Beyond Reality! Reborn Baby | Lerubanrose.shop ",
+        "twitter:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_6b2a012406d14b96ba30e88bafca7fcd~mv2.png/v1/fill/w_96,h_54,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/4ba664_6b2a012406d14b96ba30e88bafca7fcd~mv2.png",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 1x, https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_1688,h_400,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_72a0c2572c3243a0ba700d44a5ddbc05~mv2.jpg/v1/fill/w_108,h_100,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/PREMIO_JPG.jpg",
+          "alt": "PREMIO.JPG",
+          "srcset": "https://static.wixstatic.com/media/4ba664_72a0c2572c3243a0ba700d44a5ddbc05~mv2.jpg/v1/fill/w_108,h_100,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/PREMIO_JPG.jpg 1x, https://static.wixstatic.com/media/4ba664_72a0c2572c3243a0ba700d44a5ddbc05~mv2.jpg/v1/fill/w_216,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/PREMIO_JPG.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_d34ddc008317499db487ff94c591b370~mv2.jpg/v1/fill/w_103,h_100,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/award%20public's%20choice.jpg",
+          "alt": "award public's choice.jpg",
+          "srcset": "https://static.wixstatic.com/media/4ba664_d34ddc008317499db487ff94c591b370~mv2.jpg/v1/fill/w_103,h_100,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/award%20public's%20choice.jpg 1x, https://static.wixstatic.com/media/4ba664_d34ddc008317499db487ff94c591b370~mv2.jpg/v1/fill/w_206,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/award%20public's%20choice.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_2d43c90929e0405db1955af4334b5071~mv2.png/v1/fill/w_453,h_813,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_2d43c90929e0405db1955af4334b5071~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_2d43c90929e0405db1955af4334b5071~mv2.png/v1/fill/w_453,h_813,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_2d43c90929e0405db1955af4334b5071~mv2.png 1x, https://static.wixstatic.com/media/4ba664_2d43c90929e0405db1955af4334b5071~mv2.png/v1/fill/w_906,h_1626,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_2d43c90929e0405db1955af4334b5071~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_6f45a13772b5415ab52eebf4f7881125~mv2.png/v1/fill/w_453,h_805,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Retrato%20de%20mu%C3%B1eca%20reborn%20con%20luz%20c%C3%A1lida.png",
+          "alt": "Retrato de muñeca reborn con luz cálida.png",
+          "srcset": "https://static.wixstatic.com/media/4ba664_6f45a13772b5415ab52eebf4f7881125~mv2.png/v1/fill/w_453,h_805,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Retrato%20de%20mu%C3%B1eca%20reborn%20con%20luz%20c%C3%A1lida.png 1x, https://static.wixstatic.com/media/4ba664_6f45a13772b5415ab52eebf4f7881125~mv2.png/v1/fill/w_906,h_1610,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Retrato%20de%20mu%C3%B1eca%20reborn%20con%20luz%20c%C3%A1lida.png 2x"
+        }
+      ],
+      "links": [
+        "https://rutagui.wixsite.com/lerubanrose/about?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose/contact?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose/faq?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose/items",
+        "https://rutagui.wixsite.com/lerubanrose/sold-dolls?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose?lang=es"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://rutagui.wixsite.com/lerubanrose/about?lang=es",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:26.883390+00:00",
+      "sha256_html": "c2e5b57c1ab56561c66eea6d95005ca24bc1e0cd550cf093333c3ee56ada8a31",
+      "title": "ABOUT | Lerubanrose.shop",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "information about my begining in  this art.",
+        "og:title": "ABOUT | Lerubanrose.shop",
+        "og:description": "information about my begining in  this art.",
+        "og:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://rutagui.wixsite.com/lerubanrose/about?lang=es",
+        "og:site_name": "Lerubanrose",
+        "og:type": "website",
+        "fb_admins_meta_tag": "le.ruban.rose.nursery",
+        "facebook-domain-verification": "7xj565ws8oyi1qf61h0r12qw5ep659",
+        "google-site-verification": "GQCRVtYPqj-eTzzYLFVLXH-LvPtrs3ASxz2ybqA6HhQ",
+        "keywords": "adoptions, art dolls, babies, cross stich, dolls, nursery, realistic hiperrealistic dolls, reborn dolls, ruth aguilar, toddles",
+        "fb:admins": "le.ruban.rose.nursery",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "ABOUT | Lerubanrose.shop",
+        "twitter:description": "information about my begining in  this art.",
+        "twitter:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 1x, https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_1688,h_400,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_4fe9762effbe41d5a26609baf0c74bbf~mv2_d_2323_2395_s_2.png/v1/crop/x_68,y_0,w_2187,h_2395/fill/w_105,h_115,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_4fe9762effbe41d5a26609baf0c74bbf~mv2_d_2323_2395_s_2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_4fe9762effbe41d5a26609baf0c74bbf~mv2_d_2323_2395_s_2.png/v1/crop/x_68,y_0,w_2187,h_2395/fill/w_105,h_115,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_4fe9762effbe41d5a26609baf0c74bbf~mv2_d_2323_2395_s_2.png 1x, https://static.wixstatic.com/media/4ba664_4fe9762effbe41d5a26609baf0c74bbf~mv2_d_2323_2395_s_2.png/v1/crop/x_68,y_0,w_2187,h_2395/fill/w_210,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_4fe9762effbe41d5a26609baf0c74bbf~mv2_d_2323_2395_s_2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_c2697473588145af83f02e019a4513f7~mv2.jpg/v1/crop/x_21,y_0,w_679,h_720/fill/w_476,h_505,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_c2697473588145af83f02e019a4513f7~mv2.jpg",
+          "alt": "ruth aguilar",
+          "srcset": "https://static.wixstatic.com/media/4ba664_c2697473588145af83f02e019a4513f7~mv2.jpg/v1/crop/x_21,y_0,w_679,h_720/fill/w_476,h_505,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_c2697473588145af83f02e019a4513f7~mv2.jpg 1x, https://static.wixstatic.com/media/4ba664_c2697473588145af83f02e019a4513f7~mv2.jpg/v1/crop/x_21,y_0,w_679,h_720/fill/w_679,h_720,al_c,q_85,enc_avif,quality_auto/4ba664_c2697473588145af83f02e019a4513f7~mv2.jpg 2x"
+        }
+      ],
+      "links": [
+        "https://rutagui.wixsite.com/lerubanrose/about?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose/contact?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose/faq?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose/items",
+        "https://rutagui.wixsite.com/lerubanrose/sold-dolls?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose?lang=es"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://rutagui.wixsite.com/lerubanrose/contact?lang=es",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:29.409575+00:00",
+      "sha256_html": "b35078ae6d14b93f616238503fac8a1e2a1a096259fc787a4018fe17e210fc90",
+      "title": "CONTACT | Lerubanrose.shop",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "Here you can contact me to have any information about le ruban rose nursery art reborn dolls",
+        "og:title": "CONTACT | Lerubanrose.shop",
+        "og:description": "Here you can contact me to have any information about le ruban rose nursery art reborn dolls",
+        "og:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://rutagui.wixsite.com/lerubanrose/contact?lang=es",
+        "og:site_name": "Lerubanrose",
+        "og:type": "website",
+        "fb_admins_meta_tag": "le.ruban.rose.nursery",
+        "facebook-domain-verification": "7xj565ws8oyi1qf61h0r12qw5ep659",
+        "google-site-verification": "GQCRVtYPqj-eTzzYLFVLXH-LvPtrs3ASxz2ybqA6HhQ",
+        "keywords": "adoptions, art dolls, babies, cross stich, dolls, nursery, realistic hiperrealistic dolls, reborn dolls, ruth aguilar, toddles",
+        "fb:admins": "le.ruban.rose.nursery",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "CONTACT | Lerubanrose.shop",
+        "twitter:description": "Here you can contact me to have any information about le ruban rose nursery art reborn dolls",
+        "twitter:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 1x, https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_1688,h_400,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/41d000_da12283dd199724471f1235a643eaeea.gif",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/41d000_da12283dd199724471f1235a643eaeea.gif 1x, https://static.wixstatic.com/media/41d000_da12283dd199724471f1235a643eaeea.gif 2x"
+        }
+      ],
+      "links": [
+        "https://rutagui.wixsite.com/lerubanrose/about?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose/contact?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose/faq?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose/items",
+        "https://rutagui.wixsite.com/lerubanrose/sold-dolls?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose?lang=es"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://rutagui.wixsite.com/lerubanrose/faq?lang=es",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:32.164530+00:00",
+      "sha256_html": "76316d6dd991b636e2d4ba30112ffbabd8f10f8a453011eac6861efe6a4a5c55",
+      "title": "FAQ | Lerubanrose.shop",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "facts/questions/answer",
+        "og:title": "FAQ | Lerubanrose.shop",
+        "og:description": "facts/questions/answer",
+        "og:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://rutagui.wixsite.com/lerubanrose/faq?lang=es",
+        "og:site_name": "Lerubanrose",
+        "og:type": "website",
+        "fb_admins_meta_tag": "le.ruban.rose.nursery",
+        "facebook-domain-verification": "7xj565ws8oyi1qf61h0r12qw5ep659",
+        "google-site-verification": "GQCRVtYPqj-eTzzYLFVLXH-LvPtrs3ASxz2ybqA6HhQ",
+        "keywords": "adoptions, art dolls, babies, cross stich, dolls, nursery, realistic hiperrealistic dolls, reborn dolls, ruth aguilar, toddles",
+        "fb:admins": "le.ruban.rose.nursery",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "FAQ | Lerubanrose.shop",
+        "twitter:description": "facts/questions/answer",
+        "twitter:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 1x, https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_1688,h_400,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/41d000_8b5d7436096ab44f82bcdd901375215b.png/v1/fill/w_226,h_169,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/41d000_8b5d7436096ab44f82bcdd901375215b.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/41d000_8b5d7436096ab44f82bcdd901375215b.png/v1/fill/w_226,h_169,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/41d000_8b5d7436096ab44f82bcdd901375215b.png 1x, https://static.wixstatic.com/media/41d000_8b5d7436096ab44f82bcdd901375215b.png/v1/fill/w_452,h_338,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/41d000_8b5d7436096ab44f82bcdd901375215b.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/41d000_8b5d7436096ab44f82bcdd901375215b.png/v1/fill/w_226,h_167,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/41d000_8b5d7436096ab44f82bcdd901375215b.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/41d000_8b5d7436096ab44f82bcdd901375215b.png/v1/fill/w_226,h_167,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/41d000_8b5d7436096ab44f82bcdd901375215b.png 1x, https://static.wixstatic.com/media/41d000_8b5d7436096ab44f82bcdd901375215b.png/v1/fill/w_452,h_334,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/41d000_8b5d7436096ab44f82bcdd901375215b.png 2x"
+        }
+      ],
+      "links": [
+        "https://rutagui.wixsite.com/lerubanrose/about?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose/contact?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose/faq?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose/items",
+        "https://rutagui.wixsite.com/lerubanrose/sold-dolls?lang=es",
+        "https://rutagui.wixsite.com/lerubanrose?lang=es"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://rutagui.wixsite.com/lerubanrose/items",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:35.455205+00:00",
+      "sha256_html": "368d5c827ba8ac65e9a7cf4000fd5a9fe4fdd8bd02a011e07353b1f0df0469d4",
+      "title": "Items (List) | Lerubanrose",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Items (List) | Lerubanrose",
+        "og:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://rutagui.wixsite.com/lerubanrose/items",
+        "og:site_name": "Lerubanrose",
+        "og:type": "website",
+        "fb_admins_meta_tag": "le.ruban.rose.nursery",
+        "facebook-domain-verification": "7xj565ws8oyi1qf61h0r12qw5ep659",
+        "google-site-verification": "GQCRVtYPqj-eTzzYLFVLXH-LvPtrs3ASxz2ybqA6HhQ",
+        "keywords": "adoptions, art dolls, babies, cross stich, dolls, nursery, realistic hiperrealistic dolls, reborn dolls, ruth aguilar, toddles",
+        "fb:admins": "le.ruban.rose.nursery",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Items (List) | Lerubanrose",
+        "twitter:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_6b2a012406d14b96ba30e88bafca7fcd~mv2.png/v1/fill/w_96,h_54,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/4ba664_6b2a012406d14b96ba30e88bafca7fcd~mv2.png",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 1x, https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_1688,h_400,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_62f0356712544a87b392417662c4658df000.jpg/v1/fill/w_147,h_83,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/11062b_62f0356712544a87b392417662c4658df000.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_36c57fc58a844fb9a385506e91ac1361~mv2.jpg/v1/fill/w_265,h_265,al_c,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/Image-empty-state.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_36c57fc58a844fb9a385506e91ac1361~mv2.jpg/v1/fill/w_265,h_265,al_c,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/Image-empty-state.jpg 1x, https://static.wixstatic.com/media/4ba664_36c57fc58a844fb9a385506e91ac1361~mv2.jpg/v1/fill/w_420,h_420,al_c,lg_1,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/Image-empty-state.jpg 2x"
+        }
+      ],
+      "links": [
+        "https://rutagui.wixsite.com/lerubanrose",
+        "https://rutagui.wixsite.com/lerubanrose/about",
+        "https://rutagui.wixsite.com/lerubanrose/contact",
+        "https://rutagui.wixsite.com/lerubanrose/faq",
+        "https://rutagui.wixsite.com/lerubanrose/items",
+        "https://rutagui.wixsite.com/lerubanrose/items/this-is-a-title-01",
+        "https://rutagui.wixsite.com/lerubanrose/items/this-is-a-title-02",
+        "https://rutagui.wixsite.com/lerubanrose/items/this-is-a-title-03",
+        "https://rutagui.wixsite.com/lerubanrose/sold-dolls"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://rutagui.wixsite.com/lerubanrose",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:41.247119+00:00",
+      "sha256_html": "41bb9be3c4767f28e75415b94727396bc45d2f52a18127b78ce22d4a5322ddc3",
+      "title": "Reborn Dolls | Lerubanrose.shop",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "Discover de magic of the most realistic reborn art dolls, here at Le Ruban Rose Nursery you will find the perfect doll that goes Beyond Reality! Reborn Baby | Lerubanrose.shop ",
+        "og:title": "Reborn Dolls | Lerubanrose.shop",
+        "og:description": "Discover de magic of the most realistic reborn art dolls, here at Le Ruban Rose Nursery you will find the perfect doll that goes Beyond Reality! Reborn Baby | Lerubanrose.shop ",
+        "og:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://rutagui.wixsite.com/lerubanrose",
+        "og:site_name": "Lerubanrose",
+        "og:type": "website",
+        "fb_admins_meta_tag": "le.ruban.rose.nursery",
+        "facebook-domain-verification": "7xj565ws8oyi1qf61h0r12qw5ep659",
+        "google-site-verification": "GQCRVtYPqj-eTzzYLFVLXH-LvPtrs3ASxz2ybqA6HhQ",
+        "keywords": "adoptions, art dolls, babies, cross stich, dolls, nursery, realistic hiperrealistic dolls, reborn dolls, ruth aguilar, toddles",
+        "fb:admins": "le.ruban.rose.nursery",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Reborn Dolls | Lerubanrose.shop",
+        "twitter:description": "Discover de magic of the most realistic reborn art dolls, here at Le Ruban Rose Nursery you will find the perfect doll that goes Beyond Reality! Reborn Baby | Lerubanrose.shop ",
+        "twitter:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_6b2a012406d14b96ba30e88bafca7fcd~mv2.png/v1/fill/w_96,h_54,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/4ba664_6b2a012406d14b96ba30e88bafca7fcd~mv2.png",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 1x, https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_1688,h_400,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_72a0c2572c3243a0ba700d44a5ddbc05~mv2.jpg/v1/fill/w_108,h_100,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/PREMIO_JPG.jpg",
+          "alt": "PREMIO.JPG",
+          "srcset": "https://static.wixstatic.com/media/4ba664_72a0c2572c3243a0ba700d44a5ddbc05~mv2.jpg/v1/fill/w_108,h_100,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/PREMIO_JPG.jpg 1x, https://static.wixstatic.com/media/4ba664_72a0c2572c3243a0ba700d44a5ddbc05~mv2.jpg/v1/fill/w_216,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/PREMIO_JPG.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_d34ddc008317499db487ff94c591b370~mv2.jpg/v1/fill/w_103,h_100,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/award%20public's%20choice.jpg",
+          "alt": "award public's choice.jpg",
+          "srcset": "https://static.wixstatic.com/media/4ba664_d34ddc008317499db487ff94c591b370~mv2.jpg/v1/fill/w_103,h_100,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/award%20public's%20choice.jpg 1x, https://static.wixstatic.com/media/4ba664_d34ddc008317499db487ff94c591b370~mv2.jpg/v1/fill/w_206,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/award%20public's%20choice.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_2d43c90929e0405db1955af4334b5071~mv2.png/v1/fill/w_453,h_813,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_2d43c90929e0405db1955af4334b5071~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_2d43c90929e0405db1955af4334b5071~mv2.png/v1/fill/w_453,h_813,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_2d43c90929e0405db1955af4334b5071~mv2.png 1x, https://static.wixstatic.com/media/4ba664_2d43c90929e0405db1955af4334b5071~mv2.png/v1/fill/w_906,h_1626,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_2d43c90929e0405db1955af4334b5071~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_6f45a13772b5415ab52eebf4f7881125~mv2.png/v1/fill/w_453,h_805,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Retrato%20de%20mu%C3%B1eca%20reborn%20con%20luz%20c%C3%A1lida.png",
+          "alt": "Retrato de muñeca reborn con luz cálida.png",
+          "srcset": "https://static.wixstatic.com/media/4ba664_6f45a13772b5415ab52eebf4f7881125~mv2.png/v1/fill/w_453,h_805,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Retrato%20de%20mu%C3%B1eca%20reborn%20con%20luz%20c%C3%A1lida.png 1x, https://static.wixstatic.com/media/4ba664_6f45a13772b5415ab52eebf4f7881125~mv2.png/v1/fill/w_906,h_1610,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Retrato%20de%20mu%C3%B1eca%20reborn%20con%20luz%20c%C3%A1lida.png 2x"
+        }
+      ],
+      "links": [
+        "https://rutagui.wixsite.com/lerubanrose",
+        "https://rutagui.wixsite.com/lerubanrose/about",
+        "https://rutagui.wixsite.com/lerubanrose/contact",
+        "https://rutagui.wixsite.com/lerubanrose/faq",
+        "https://rutagui.wixsite.com/lerubanrose/items",
+        "https://rutagui.wixsite.com/lerubanrose/sold-dolls"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://rutagui.wixsite.com/lerubanrose/about",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:43.637178+00:00",
+      "sha256_html": "225d70d18ecb32c63bff107197eb5062179e1f534f8790481b65daee44517ad6",
+      "title": "ABOUT | Lerubanrose.shop",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "information about my begining in  this art.",
+        "og:title": "ABOUT | Lerubanrose.shop",
+        "og:description": "information about my begining in  this art.",
+        "og:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://rutagui.wixsite.com/lerubanrose/about",
+        "og:site_name": "Lerubanrose",
+        "og:type": "website",
+        "fb_admins_meta_tag": "le.ruban.rose.nursery",
+        "facebook-domain-verification": "7xj565ws8oyi1qf61h0r12qw5ep659",
+        "google-site-verification": "GQCRVtYPqj-eTzzYLFVLXH-LvPtrs3ASxz2ybqA6HhQ",
+        "keywords": "adoptions, art dolls, babies, cross stich, dolls, nursery, realistic hiperrealistic dolls, reborn dolls, ruth aguilar, toddles",
+        "fb:admins": "le.ruban.rose.nursery",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "ABOUT | Lerubanrose.shop",
+        "twitter:description": "information about my begining in  this art.",
+        "twitter:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 1x, https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_1688,h_400,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_4fe9762effbe41d5a26609baf0c74bbf~mv2_d_2323_2395_s_2.png/v1/crop/x_68,y_0,w_2187,h_2395/fill/w_105,h_115,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_4fe9762effbe41d5a26609baf0c74bbf~mv2_d_2323_2395_s_2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_4fe9762effbe41d5a26609baf0c74bbf~mv2_d_2323_2395_s_2.png/v1/crop/x_68,y_0,w_2187,h_2395/fill/w_105,h_115,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_4fe9762effbe41d5a26609baf0c74bbf~mv2_d_2323_2395_s_2.png 1x, https://static.wixstatic.com/media/4ba664_4fe9762effbe41d5a26609baf0c74bbf~mv2_d_2323_2395_s_2.png/v1/crop/x_68,y_0,w_2187,h_2395/fill/w_210,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_4fe9762effbe41d5a26609baf0c74bbf~mv2_d_2323_2395_s_2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_c2697473588145af83f02e019a4513f7~mv2.jpg/v1/crop/x_21,y_0,w_679,h_720/fill/w_476,h_505,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_c2697473588145af83f02e019a4513f7~mv2.jpg",
+          "alt": "ruth aguilar",
+          "srcset": "https://static.wixstatic.com/media/4ba664_c2697473588145af83f02e019a4513f7~mv2.jpg/v1/crop/x_21,y_0,w_679,h_720/fill/w_476,h_505,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_c2697473588145af83f02e019a4513f7~mv2.jpg 1x, https://static.wixstatic.com/media/4ba664_c2697473588145af83f02e019a4513f7~mv2.jpg/v1/crop/x_21,y_0,w_679,h_720/fill/w_679,h_720,al_c,q_85,enc_avif,quality_auto/4ba664_c2697473588145af83f02e019a4513f7~mv2.jpg 2x"
+        }
+      ],
+      "links": [
+        "https://rutagui.wixsite.com/lerubanrose",
+        "https://rutagui.wixsite.com/lerubanrose/about",
+        "https://rutagui.wixsite.com/lerubanrose/contact",
+        "https://rutagui.wixsite.com/lerubanrose/faq",
+        "https://rutagui.wixsite.com/lerubanrose/items",
+        "https://rutagui.wixsite.com/lerubanrose/sold-dolls"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://rutagui.wixsite.com/lerubanrose/contact",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:46.116353+00:00",
+      "sha256_html": "69ee58003620b38a76feed317e2c4c8f40fafb63243814145a71419a93eeba04",
+      "title": "CONTACT | Lerubanrose.shop",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "Here you can contact me to have any information about le ruban rose nursery art reborn dolls",
+        "og:title": "CONTACT | Lerubanrose.shop",
+        "og:description": "Here you can contact me to have any information about le ruban rose nursery art reborn dolls",
+        "og:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://rutagui.wixsite.com/lerubanrose/contact",
+        "og:site_name": "Lerubanrose",
+        "og:type": "website",
+        "fb_admins_meta_tag": "le.ruban.rose.nursery",
+        "facebook-domain-verification": "7xj565ws8oyi1qf61h0r12qw5ep659",
+        "google-site-verification": "GQCRVtYPqj-eTzzYLFVLXH-LvPtrs3ASxz2ybqA6HhQ",
+        "keywords": "adoptions, art dolls, babies, cross stich, dolls, nursery, realistic hiperrealistic dolls, reborn dolls, ruth aguilar, toddles",
+        "fb:admins": "le.ruban.rose.nursery",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "CONTACT | Lerubanrose.shop",
+        "twitter:description": "Here you can contact me to have any information about le ruban rose nursery art reborn dolls",
+        "twitter:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 1x, https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_1688,h_400,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/41d000_da12283dd199724471f1235a643eaeea.gif",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/41d000_da12283dd199724471f1235a643eaeea.gif 1x, https://static.wixstatic.com/media/41d000_da12283dd199724471f1235a643eaeea.gif 2x"
+        }
+      ],
+      "links": [
+        "https://rutagui.wixsite.com/lerubanrose",
+        "https://rutagui.wixsite.com/lerubanrose/about",
+        "https://rutagui.wixsite.com/lerubanrose/contact",
+        "https://rutagui.wixsite.com/lerubanrose/faq",
+        "https://rutagui.wixsite.com/lerubanrose/items",
+        "https://rutagui.wixsite.com/lerubanrose/sold-dolls"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://rutagui.wixsite.com/lerubanrose/faq",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:48.506724+00:00",
+      "sha256_html": "f97d1708692805aa18fa1f711be55519998b219af1131930b2a56e036f8eee43",
+      "title": "FAQ | Lerubanrose.shop",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "facts/questions/answer",
+        "og:title": "FAQ | Lerubanrose.shop",
+        "og:description": "facts/questions/answer",
+        "og:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg",
+        "og:image:width": "2500",
+        "og:image:height": "1330",
+        "og:url": "https://rutagui.wixsite.com/lerubanrose/faq",
+        "og:site_name": "Lerubanrose",
+        "og:type": "website",
+        "fb_admins_meta_tag": "le.ruban.rose.nursery",
+        "facebook-domain-verification": "7xj565ws8oyi1qf61h0r12qw5ep659",
+        "google-site-verification": "GQCRVtYPqj-eTzzYLFVLXH-LvPtrs3ASxz2ybqA6HhQ",
+        "keywords": "adoptions, art dolls, babies, cross stich, dolls, nursery, realistic hiperrealistic dolls, reborn dolls, ruth aguilar, toddles",
+        "fb:admins": "le.ruban.rose.nursery",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "FAQ | Lerubanrose.shop",
+        "twitter:description": "facts/questions/answer",
+        "twitter:image": "https://static.wixstatic.com/media/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/4ba664_e271191ed643465eaa0914bc387fd284%7Emv2.jpg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 1x, https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_1688,h_400,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/41d000_8b5d7436096ab44f82bcdd901375215b.png/v1/fill/w_226,h_169,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/41d000_8b5d7436096ab44f82bcdd901375215b.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/41d000_8b5d7436096ab44f82bcdd901375215b.png/v1/fill/w_226,h_169,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/41d000_8b5d7436096ab44f82bcdd901375215b.png 1x, https://static.wixstatic.com/media/41d000_8b5d7436096ab44f82bcdd901375215b.png/v1/fill/w_452,h_338,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/41d000_8b5d7436096ab44f82bcdd901375215b.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/41d000_8b5d7436096ab44f82bcdd901375215b.png/v1/fill/w_226,h_167,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/41d000_8b5d7436096ab44f82bcdd901375215b.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/41d000_8b5d7436096ab44f82bcdd901375215b.png/v1/fill/w_226,h_167,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/41d000_8b5d7436096ab44f82bcdd901375215b.png 1x, https://static.wixstatic.com/media/41d000_8b5d7436096ab44f82bcdd901375215b.png/v1/fill/w_452,h_334,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/41d000_8b5d7436096ab44f82bcdd901375215b.png 2x"
+        }
+      ],
+      "links": [
+        "https://rutagui.wixsite.com/lerubanrose",
+        "https://rutagui.wixsite.com/lerubanrose/about",
+        "https://rutagui.wixsite.com/lerubanrose/contact",
+        "https://rutagui.wixsite.com/lerubanrose/faq",
+        "https://rutagui.wixsite.com/lerubanrose/items",
+        "https://rutagui.wixsite.com/lerubanrose/sold-dolls"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://rutagui.wixsite.com/lerubanrose/items/this-is-a-title-01",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:54.609273+00:00",
+      "sha256_html": "7ed717a83d2a87c0ad6628f053ad8651ff2b4292e475a098f022ff246534f245",
+      "title": "",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible"
+      },
+      "structured_data": [],
+      "image_candidates": [],
+      "links": [],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://rutagui.wixsite.com/lerubanrose/items/this-is-a-title-02",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:57.583681+00:00",
+      "sha256_html": "bbcfe744e8a38f9a49df3c215908245bf050464e67f81a4d32db671cc516daab",
+      "title": "This is a Title 02 | Lerubanrose",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "This is a Title 02 | Lerubanrose",
+        "og:image": "https://static.wixstatic.com/media/4ba664_36c57fc58a844fb9a385506e91ac1361~mv2.jpg/v1/fill/w_300,h_300,al_c,q_80/UNDER%20CONSTRUCTION.jpg",
+        "og:image:width": "300",
+        "og:image:height": "300",
+        "og:url": "https://rutagui.wixsite.com/lerubanrose/items/this-is-a-title-02",
+        "og:site_name": "Lerubanrose",
+        "og:type": "website",
+        "fb_admins_meta_tag": "le.ruban.rose.nursery",
+        "facebook-domain-verification": "7xj565ws8oyi1qf61h0r12qw5ep659",
+        "google-site-verification": "GQCRVtYPqj-eTzzYLFVLXH-LvPtrs3ASxz2ybqA6HhQ",
+        "keywords": "adoptions, art dolls, babies, cross stich, dolls, nursery, realistic hiperrealistic dolls, reborn dolls, ruth aguilar, toddles",
+        "fb:admins": "le.ruban.rose.nursery",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "This is a Title 02 | Lerubanrose",
+        "twitter:image": "https://static.wixstatic.com/media/4ba664_36c57fc58a844fb9a385506e91ac1361~mv2.jpg/v1/fill/w_300,h_300,al_c,q_80/UNDER%20CONSTRUCTION.jpg"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "ImageObject",
+          "height": 300,
+          "width": 300,
+          "url": "https://static.wixstatic.com/media/4ba664_36c57fc58a844fb9a385506e91ac1361~mv2.jpg/v1/fill/w_300,h_300,al_c,q_80/UNDER%20CONSTRUCTION.jpg"
+        },
+        {}
+      ],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_6b2a012406d14b96ba30e88bafca7fcd~mv2.png/v1/fill/w_96,h_54,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/4ba664_6b2a012406d14b96ba30e88bafca7fcd~mv2.png",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 1x, https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_1688,h_400,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_36c57fc58a844fb9a385506e91ac1361~mv2.jpg/v1/fill/w_420,h_238,al_c,lg_1,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/Image-empty-state.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_36c57fc58a844fb9a385506e91ac1361~mv2.jpg/v1/fill/w_420,h_238,al_c,lg_1,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/Image-empty-state.jpg 1x, https://static.wixstatic.com/media/4ba664_36c57fc58a844fb9a385506e91ac1361~mv2.jpg/v1/fill/w_420,h_238,al_c,lg_1,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/Image-empty-state.jpg 2x"
+        }
+      ],
+      "links": [
+        "https://rutagui.wixsite.com/lerubanrose",
+        "https://rutagui.wixsite.com/lerubanrose/about",
+        "https://rutagui.wixsite.com/lerubanrose/contact",
+        "https://rutagui.wixsite.com/lerubanrose/faq",
+        "https://rutagui.wixsite.com/lerubanrose/items",
+        "https://rutagui.wixsite.com/lerubanrose/sold-dolls"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://rutagui.wixsite.com/lerubanrose/items/this-is-a-title-03",
+      "platform": "wix",
+      "observed_at": "2026-10-14T09:00:00.185817+00:00",
+      "sha256_html": "8ff18dc4d823ec8910edfc8feeac690a1e14e9008a469cc4dce65bd6e68e3da1",
+      "title": "This is a Title 03 | Lerubanrose",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "This is a Title 03 | Lerubanrose",
+        "og:image": "https://static.wixstatic.com/media/4ba664_36c57fc58a844fb9a385506e91ac1361~mv2.jpg/v1/fill/w_300,h_300,al_c,q_80/UNDER%20CONSTRUCTION.jpg",
+        "og:image:width": "300",
+        "og:image:height": "300",
+        "og:url": "https://rutagui.wixsite.com/lerubanrose/items/this-is-a-title-03",
+        "og:site_name": "Lerubanrose",
+        "og:type": "website",
+        "fb_admins_meta_tag": "le.ruban.rose.nursery",
+        "facebook-domain-verification": "7xj565ws8oyi1qf61h0r12qw5ep659",
+        "google-site-verification": "GQCRVtYPqj-eTzzYLFVLXH-LvPtrs3ASxz2ybqA6HhQ",
+        "keywords": "adoptions, art dolls, babies, cross stich, dolls, nursery, realistic hiperrealistic dolls, reborn dolls, ruth aguilar, toddles",
+        "fb:admins": "le.ruban.rose.nursery",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "This is a Title 03 | Lerubanrose",
+        "twitter:image": "https://static.wixstatic.com/media/4ba664_36c57fc58a844fb9a385506e91ac1361~mv2.jpg/v1/fill/w_300,h_300,al_c,q_80/UNDER%20CONSTRUCTION.jpg"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "ImageObject",
+          "height": 300,
+          "width": 300,
+          "url": "https://static.wixstatic.com/media/4ba664_36c57fc58a844fb9a385506e91ac1361~mv2.jpg/v1/fill/w_300,h_300,al_c,q_80/UNDER%20CONSTRUCTION.jpg"
+        },
+        {}
+      ],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_6b2a012406d14b96ba30e88bafca7fcd~mv2.png/v1/fill/w_96,h_54,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/4ba664_6b2a012406d14b96ba30e88bafca7fcd~mv2.png",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_844,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 1x, https://static.wixstatic.com/media/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png/v1/fill/w_1688,h_400,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/4ba664_ff69a7c8a9244135af779630374b107c~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/4ba664_36c57fc58a844fb9a385506e91ac1361~mv2.jpg/v1/fill/w_420,h_238,al_c,lg_1,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/Image-empty-state.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/4ba664_36c57fc58a844fb9a385506e91ac1361~mv2.jpg/v1/fill/w_420,h_238,al_c,lg_1,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/Image-empty-state.jpg 1x, https://static.wixstatic.com/media/4ba664_36c57fc58a844fb9a385506e91ac1361~mv2.jpg/v1/fill/w_420,h_238,al_c,lg_1,q_80,usm_2.00_1.00_0.00,enc_avif,quality_auto/Image-empty-state.jpg 2x"
+        }
+      ],
+      "links": [
+        "https://rutagui.wixsite.com/lerubanrose",
+        "https://rutagui.wixsite.com/lerubanrose/about",
+        "https://rutagui.wixsite.com/lerubanrose/contact",
+        "https://rutagui.wixsite.com/lerubanrose/faq",
+        "https://rutagui.wixsite.com/lerubanrose/items",
+        "https://rutagui.wixsite.com/lerubanrose/sold-dolls"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    }
+  ],
+  "notice": "Discovery evidence only. No images copied; no status or release-date inference."
+}
