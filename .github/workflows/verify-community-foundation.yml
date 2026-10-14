@@ -1,7 +1,7 @@
 name: Verify community foundation
 on:
   push:
-    branches: [main, fix/cloudflare-pbkdf2-runtime-20261014]
+    branches: [main, feature/member-names-avatars-20261014]
     paths:
       - 'app/**'
       - 'components/**'
@@ -12,6 +12,8 @@ on:
       - 'db/community-schema.sql'
       - 'db/community-moderation-v2.sql'
       - 'db/signup-diagnostics.sql'
+      - 'db/member-profile-avatars.sql'
+      - 'scripts/test-community-name-safety.mjs'
       - 'db/contact-enquiries.sql'
       - '.github/workflows/verify-community-foundation.yml'
   workflow_dispatch:
@@ -58,6 +60,11 @@ jobs:
           d.executescript(Path('db/signup-diagnostics.sql').read_text())
           d.executescript(Path('db/signup-diagnostics.sql').read_text())
           assert d.execute("SELECT count(*) FROM signup_diagnostics").fetchone()[0]==0
+          d.executescript(Path('db/member-profile-avatars.sql').read_text())
+          d.executescript(Path('db/member-profile-avatars.sql').read_text())
+          d.execute("INSERT INTO profile_avatars(user_id,mime_type,image_base64,version) VALUES('reborna-editorial','image/webp','UklGRg==',12)")
+          assert d.execute("SELECT version FROM profile_avatars").fetchone()[0]==12
+          d.execute("DELETE FROM profile_avatars WHERE user_id='reborna-editorial'")
           print('PASS D1 schemas: idempotent, private contact, safety and anonymous signup diagnostics')
           PY
       - name: Verify Cloudflare password work-factor compatibility
@@ -77,6 +84,8 @@ jobs:
           assert 'password_iterations=?,updated_at=' in source, 'Password reset must persist updated work factor'
           print('PASS: password hashing work factor is supported on Cloudflare Workers and versioned in account records')
           PY
+      - name: Prevent abusive aliases and innocent-name false positives
+        run: node scripts/test-community-name-safety.mjs
       - name: Install dependencies
         run: npm install --no-audit --no-fund
       - name: Build and typecheck Next application
