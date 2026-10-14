@@ -5,7 +5,7 @@ import {Check,Heart,X} from "lucide-react";
 
 export type SavedItemType="kit"|"material"|"artist"|"archive";
 export type SavedItem={type:SavedItemType;path:string;title:string;subtitle?:string;imageUrl?:string|null;collectionStatus?:"wishlist"|"owned";savedAt?:string};
-type State="loading"|"member"|"guest";
+type State="loading"|"member"|"guest"|"unavailable";
 type WishlistValue={items:SavedItem[];state:State;isSaved:(path:string)=>boolean;toggle:(item:SavedItem)=>Promise<void>;updateStatus:(item:SavedItem,status:"wishlist"|"owned")=>Promise<void>;remove:(item:SavedItem)=>Promise<void>;refresh:()=>Promise<void>};
 const storeKey="reborna-wishlist-v1",legacyKey="reborna-saved-original-kits";
 const Context=createContext<WishlistValue|null>(null);
@@ -14,7 +14,7 @@ function guestItems():SavedItem[]{
  try{
   const raw=JSON.parse(localStorage.getItem(storeKey)||"[]");
   const parsed:Array<SavedItem>=Array.isArray(raw)?raw.filter((x):x is SavedItem=>x&&typeof x.path==="string"&&["kit","material","artist","archive"].includes(x.type)&&typeof x.title==="string").slice(0,1000):[];
-  const old=JSON.parse(localStorage.getItem(legacyKey)||"[]");
+  let old:unknown=[];try{old=JSON.parse(localStorage.getItem(legacyKey)||"[]")}catch{}
   if(Array.isArray(old))for(const slug of old){
    if(typeof slug!=="string"||! /^[a-z0-9-]{2,90}$/.test(slug))continue;
    const path="/kits/"+slug+"/";
@@ -49,7 +49,7 @@ export function WishlistProvider({children}:{children:React.ReactNode}){
    setState("member");
   }catch(e){
    if((e as {status?:number}).status===401){setItems(guestItems());setState("guest")}
-   else{setItems(guestItems());setState("guest");setNotice("Cloud collection couldn't load. Your browser saves are still available.")}
+   else{setItems(guestItems());setState("unavailable");setNotice("Cloud collection couldn't load. Saves will stay on this device until the connection returns.")}
   }
  },[]);
  useEffect(()=>{void refresh()},[refresh]);
@@ -62,7 +62,7 @@ export function WishlistProvider({children}:{children:React.ReactNode}){
    action==="save"?exists?previous:[{...item,path,collectionStatus:"wishlist" as const},...previous]:
    previous.map(i=>normalized(i.path)===path?{...i,collectionStatus:action==="mark-owned"?"owned" as const:"wishlist" as const}:i);
   setItems(next);
-  if(state==="guest"){persist(next);setNotice(action==="save"?"Saved in this browser. Sign in to sync your collection across devices.":action==="remove"?"Removed from this browser's wishlist.":"Sign in to organise your collection across devices.");return}
+  if(state==="guest"||state==="unavailable"){persist(next);setNotice(state==="unavailable"?"Saved on this device for now. Account syncing is temporarily unavailable.":action==="save"?"Saved in this browser. Sign in to sync your collection across devices.":action==="remove"?"Removed from this browser's wishlist.":"Sign in to organise your collection across devices.");return}
   try{await request("wishlist",{action,item:{...item,path}});setNotice(action==="save"?"Added to your wishlist.":action==="remove"?"Removed from your wishlist.":"Your collection was updated.")}
   catch(e){setItems(previous);setNotice((e as Error).message)}
  },[items,state]);
