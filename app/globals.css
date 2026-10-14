@@ -843,3 +843,21 @@ html{scroll-behavior:smooth}
 .rbrn-calendar-inline-show .home-calendar-card-main h5 a:hover{color:#917057}
 .rbrn-calendar-event-link{display:inline-flex;align-items:center;gap:7px;margin-top:17px;font-size:11px;font-weight:700;color:#73543e;border-bottom:1px solid #bca48f;padding-bottom:5px}
 @media(max-width:650px){.rbrn-calendar-display-options{flex-direction:column;align-items:stretch;gap:13px}.rbrn-calendar-event-toggle{padding:13px 0;border-left:0;border-top:1px solid #dfd0c1}.rbrn-calendar-display-options>a{margin-left:0}}
+
+
+/* Non-destructive, CV-audited negative-space zoom: only 50 high-confidence images
+   receive inline CSS transforms. Full supplier originals remain inspectable. */
+.rbrn-supply-photo-card .rbrn-supply-picture{overflow:hidden}
+.rbrn-supply-photo-card .rbrn-supply-picture>img,
+.rbrn-range-card-media img,.rbrn-material-thumbs img,
+.rbrn-material-picker-list img,.rbrn-material-picker-trigger img,
+.rbrn-material-main-image img{transition:transform .22s ease;will-change:auto}
+.rbrn-material-main-image{overflow:hidden}
+.rbrn-material-image-area{overflow:hidden}
+.rbrn-material-frame-toggle{position:absolute;right:14px;bottom:14px;z-index:5;border:1px solid #b29c89;background:#fffcf1ed;color:#68503e;padding:10px 12px;font-size:10px;font-weight:700;cursor:pointer}
+.rbrn-material-thumbs button{overflow:hidden}
+.rbrn-picker-thumbnail,.rbrn-picker-option-thumbnail{display:block;flex:0 0 43px!important;height:43px;width:43px;overflow:hidden;background:#f6eee6}
+.rbrn-picker-thumbnail img,.rbrn-picker-option-thumbnail img{display:block;height:100%;width:100%;object-fit:contain}
+.rbrn-picker-option-thumbnail{flex-basis:42px!important;height:42px;width:42px}
+.rbrn-material-picker-list button span.rbrn-picker-option-thumbnail{flex:0 0 42px!important}
+.rbrn-material-picker-trigger>span.rbrn-picker-thumbnail{flex:0 0 43px!important}

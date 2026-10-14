@@ -4,11 +4,13 @@ import {ArrowUpRight,ChevronLeft,ChevronRight,ChevronDown,ImageIcon,Info,Truck,E
 import {displayMoney,useShopLocale} from "./LocaleProvider";
 import type {MaterialProductEvidence,MaterialShippingPolicy} from "../lib/material-product-evidence";
 import type {FamilyProduct} from "../lib/material-product-families";
+import {materialThumbnailStyle,materialHasTighterFraming} from "../lib/material-image-style";
 function parsedPrice(s?:string){const m=s?.match(/[\d,]+(?:\.\d+)?/);return m?Number(m[0].replace(/,/g,"")):undefined}
 export default function MaterialProductViewer({product,evidence,shipping,collectionUrl,rangeName}:{product:FamilyProduct;evidence:MaterialProductEvidence;shipping:MaterialShippingPolicy;collectionUrl:string;rangeName:string}){
  const{currency,fx,locale}=useShopLocale();
  const[photoIndex,setPhotoIndex]=useState(0);
  const[manualPhoto,setManualPhoto]=useState(false);
+ const[showFullPhoto,setShowFullPhoto]=useState(false);
  const[chosen,setChosen]=useState<number|null>(null);
  const[chosenSize,setChosenSize]=useState<number|null>(null);
  const[open,setOpen]=useState(false);
@@ -22,6 +24,8 @@ export default function MaterialProductViewer({product,evidence,shipping,collect
  const selected=chosen!==null?variants[chosen]:null;
  const chosenPhoto=selected?.photoUrl;
  const featured=chosenPhoto&&!manualPhoto?chosenPhoto:photos[Math.min(photoIndex,Math.max(0,photos.length-1))];
+ const focusStyle=!showFullPhoto?materialThumbnailStyle(featured):undefined;
+ const canToggleFraming=materialHasTighterFraming(featured);
  const selectedPrice=selected?.nativePrice??product.nativePrice??parsedPrice(extra?.priceAtReview);
  const money=selectedPrice!==undefined?displayMoney(selectedPrice,product.currency,currency,fx,locale):null;
  const hasOptions=variants.length>0||sizes.length>0;
@@ -36,16 +40,17 @@ export default function MaterialProductViewer({product,evidence,shipping,collect
   document.addEventListener("keydown",onKey);
   return ()=>{document.removeEventListener("pointerdown",onDown);document.removeEventListener("keydown",onKey)};
  },[open]);
- function afterChoice(){setOpen(false);setManualPhoto(false);setPhotoIndex(0);if(window.matchMedia("(max-width: 1050px)").matches){window.requestAnimationFrame(()=>galleryRef.current?.scrollIntoView({behavior:"smooth",block:"start"}))}}
+ function afterChoice(){setOpen(false);setManualPhoto(false);setShowFullPhoto(false);setPhotoIndex(0);if(window.matchMedia("(max-width: 1050px)").matches){window.requestAnimationFrame(()=>galleryRef.current?.scrollIntoView({behavior:"smooth",block:"start"}))}}
  function chooseVariant(index:number){setChosen(index);setChosenSize(null);afterChoice()}
  function chooseSize(index:number){setChosenSize(index);setChosen(null);afterChoice()}
  const credit="Original supplier — photograph of "+product.title+(selected?.photoUrl&&!manualPhoto?" / "+selected.label:"");
  return <section className="rbrn-material-viewer rbrn-material-single-product" aria-label={product.title+" product information"}>
   <div className="rbrn-material-gallery" ref={galleryRef}>
-   <div className="rbrn-material-image-area">{featured?<figure className="rbrn-material-main-image"><img src={featured} alt={product.title+(selectedLabel?" — "+selectedLabel:"")+" supplier photograph"} decoding="async" loading="eager"/><figcaption>SUPPLIER PHOTO{chosenPhoto&&!manualPhoto?" · SELECTED OPTION":" · "+(photoIndex+1)+" / "+photos.length}</figcaption></figure>:<div className="rbrn-material-photo-missing"><ImageIcon size={34}/><strong>Product photograph awaiting review</strong><p>We don't substitute another product's photograph.</p></div>}
-    {photos.length>1&&<><button type="button" className="rbrn-material-image-prev" aria-label="Previous photograph" onClick={()=>{setManualPhoto(true);setPhotoIndex(p=>(p+photos.length-1)%photos.length)}}><ChevronLeft size={21}/></button><button type="button" className="rbrn-material-image-next" aria-label="Next photograph" onClick={()=>{setManualPhoto(true);setPhotoIndex(p=>(p+1)%photos.length)}}><ChevronRight size={21}/></button></>}
+   <div className="rbrn-material-image-area">{featured?<figure className="rbrn-material-main-image"><img src={featured} style={focusStyle} alt={product.title+(selectedLabel?" — "+selectedLabel:"")+" supplier photograph"} decoding="async" loading="eager"/><figcaption>SUPPLIER PHOTO{chosenPhoto&&!manualPhoto?" · SELECTED OPTION":" · "+(photoIndex+1)+" / "+photos.length}</figcaption></figure>:<div className="rbrn-material-photo-missing"><ImageIcon size={34}/><strong>Product photograph awaiting review</strong><p>We don't substitute another product's photograph.</p></div>}
+    {photos.length>1&&<><button type="button" className="rbrn-material-image-prev" aria-label="Previous photograph" onClick={()=>{setManualPhoto(true);setShowFullPhoto(false);setPhotoIndex(p=>(p+photos.length-1)%photos.length)}}><ChevronLeft size={21}/></button><button type="button" className="rbrn-material-image-next" aria-label="Next photograph" onClick={()=>{setManualPhoto(true);setShowFullPhoto(false);setPhotoIndex(p=>(p+1)%photos.length)}}><ChevronRight size={21}/></button></>}
+    {canToggleFraming&&<button type="button" className="rbrn-material-frame-toggle" onClick={()=>setShowFullPhoto(v=>!v)}>{showFullPhoto?"Focus on product":"View full photograph"}</button>}
    </div>
-   {photos.length>1&&<div className="rbrn-material-thumbs" aria-label="Gallery photographs">{photos.map((url,i)=><button key={url} type="button" aria-pressed={manualPhoto&&photoIndex===i} aria-label={"View photograph "+(i+1)} className={manualPhoto&&photoIndex===i?"active":""} onClick={()=>{setManualPhoto(true);setPhotoIndex(i)}}><img src={url} alt="" decoding="async" loading="lazy"/></button>)}</div>}
+   {photos.length>1&&<div className="rbrn-material-thumbs" aria-label="Gallery photographs">{photos.map((url,i)=><button key={url} type="button" aria-pressed={manualPhoto&&photoIndex===i} aria-label={"View photograph "+(i+1)} className={manualPhoto&&photoIndex===i?"active":""} onClick={()=>{setManualPhoto(true);setShowFullPhoto(false);setPhotoIndex(i)}}><img src={url} style={materialThumbnailStyle(url)} alt="" decoding="async" loading="lazy"/></button>)}</div>}
    {featured&&<p className="rbrn-material-photo-credit">Photo: <a href={product.sourceUrl} target="_blank" rel="noopener noreferrer">{credit} <ExternalLink size={12}/></a></p>}
   </div>
   <div className="rbrn-material-buy-detail">
@@ -60,14 +65,14 @@ export default function MaterialProductViewer({product,evidence,shipping,collect
    {hasOptions&&<div className="rbrn-material-compact-picker" ref={popoverRef}>
     <div className="rbrn-material-picker-heading"><strong>{variants.length?product.optionNames?.filter(s=>s!=="Title").join(" & ")||"Choose an option":"Choose a size"}</strong><span>{variants.length||sizes.length} options</span></div>
     <button type="button" className="rbrn-material-picker-trigger" aria-expanded={open} aria-controls="rbrn-product-variants" onClick={()=>{setOpen(v=>!v);setSearch("")}}>
-     {selected?.photoUrl?<img src={selected.photoUrl} alt="" decoding="async"/>:null}
+     {selected?.photoUrl?<span className="rbrn-picker-thumbnail"><img src={selected.photoUrl} style={materialThumbnailStyle(selected.photoUrl)} alt="" decoding="async"/></span>:null}
      <span><small>{selectedLabel?"YOUR SELECTION":"SELECT A VARIATION"}</small><strong>{selectedLabel||"Choose colour, size or style"}</strong></span><ChevronDown size={18} className={open?"rotated":""}/>
     </button>
     {open&&<div id="rbrn-product-variants" className="rbrn-material-picker-popover">
      {variants.length>18&&<label className="rbrn-material-picker-search"><Search size={15}/><input autoFocus type="search" placeholder="Find a colour or option" value={search} onChange={e=>setSearch(e.target.value)}/></label>}
      <div className="rbrn-material-picker-list">
       {variants.length?filtered.map(v=><button key={v.index} type="button" aria-pressed={chosen===v.index} className={chosen===v.index?"active":""} onClick={()=>chooseVariant(v.index)}>
-       {v.photoUrl&&<img src={v.photoUrl} alt="" loading="lazy" decoding="async"/>}
+       {v.photoUrl&&<span className="rbrn-picker-option-thumbnail"><img src={v.photoUrl} style={materialThumbnailStyle(v.photoUrl)} alt="" loading="lazy" decoding="async"/></span>}
        <span>{v.label}</span>{v.nativePrice!==undefined&&<small>{displayMoney(v.nativePrice,product.currency,currency,fx,locale).text}</small>}
       </button>):sizes.map((v,i)=><button key={v} type="button" aria-pressed={chosenSize===i} className={chosenSize===i?"active":""} onClick={()=>chooseSize(i)}><span>{v}</span></button>)}
      </div>
