@@ -9,6 +9,8 @@ const cocoImage="https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x
 const saraImage="https://www.latiendadelbebereborn.com/wp-content/uploads/2021/02/sara-0.jpg";
 const raaSource="https://rebornartistryalliance.com/products/ebtehal-abul";
 export const raaNewArtists:VerifiedArtist[]=[
+ {slug:"eva-brilli",name:"Eva Brilli",website:"https://www.irresistables.com/reborn-doll-kits/reborn-doll-kits-by-artist/eva-brilli/",websiteRole:"retailer_reference",source:"https://rebornartistryalliance.com/products/eva-brilli",bio:"Italian original reborn sculptor and silicone doll artist. Eva Brilli began reborn art in 2006 and later developed original sculpts manufactured as vinyl kits, including Gabriel and Rachele. Sculpting and finished-doll painting are distinct stages of her work.",images:[{url:"https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/4163/43814/167977430_1756215817897345_7969338892558838550_n__21325.1617416126.jpg?c=2",source:"https://www.irresistables.com/gabriel-reborn-vinyl-doll-kit-by-eva-brilli-19/",credit:"Irresistables — Gabriel original sculpt by Eva Brilli; finished prototype photography, not an artist portrait",role:"banner",reviewStatus:"source_identified"}]},
+
  {slug:"ebtehal-abul",name:"Ebtehal Abul",
   website:"https://macphersoncrafts.com/sculptors/manufacturers/ebtehal-abul?tmpl=component",
   websiteRole:"retailer_reference",
@@ -18,6 +20,8 @@ export const raaNewArtists:VerifiedArtist[]=[
  }
 ];
 export const raaNewKits:VerifiedKit[]=[
+ {slug:"gabriel-eva-brilli",name:"Gabriel",artistSlug:"eva-brilli",material:"vinyl",sizeDescription:"Approximately 19 inches when finished",statusLabel:"Retailer lists sold out; current availability not established",statusChecked:"2026-10-14",photos:[{url:"https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/4163/43814/167977430_1756215817897345_7969338892558838550_n__21325.1617416126.jpg?c=2",source:"https://www.irresistables.com/gabriel-reborn-vinyl-doll-kit-by-eva-brilli-19/",credit:"Irresistables — finished Gabriel prototype example, original vinyl sculpt by Eva Brilli"}],sources:[{label:"Named original kit listing",url:"https://www.irresistables.com/gabriel-reborn-vinyl-doll-kit-by-eva-brilli-19/",kind:"retailer"}]},
+
  {slug:"coco-ebtehal-abul",name:"Coco",artistSlug:"ebtehal-abul",
   material:"vinyl",sizeDescription:"Approximately 20 inches when finished",
   statusLabel:"Retailer lists sold out; current availability not established",
