@@ -53,7 +53,7 @@ jobs:
             else:raise AssertionError('Not published '+url)
           with sync_playwright() as p:
             browser=p.chromium.launch(headless=True)
-            page=browser.new_page(viewport={'width':1280,'height':980})
+            page=browser.new_page(viewport={'width':1280,'height':980},locale='en-GB')
             page.on('pageerror',lambda e:print('CLIENT PAGE ERROR',str(e)[:950],flush=True))
             page.on('console',lambda m:print('CLIENT CONSOLE ERROR',m.text[:950],flush=True) if m.type=='error' else None)
             page.on('response',lambda r:print('ASSET FAILED',r.status,r.url[:190],flush=True) if r.status>=400 and ('_next/' in r.url or 'api.frankfurter' in r.url) else None)
@@ -97,7 +97,7 @@ jobs:
             visit(page,'/materials/','Supplier based in')
             assert page.locator('.rbrn-supply-photo-card .rbrn-supply-meta').first.inner_text().find('SUPPLIER:')==-1
             print('PASS catalogue card simplification')
-            mobile=browser.new_page(viewport={'width':390,'height':800})
+            mobile=browser.new_page(viewport={'width':390,'height':800},locale='en-GB')
             visit(mobile,'/materials/kebelka-heat-paints/','46 source-listed products')
             assert mobile.evaluate('document.documentElement.scrollWidth <= innerWidth + 2'), 'Mobile horizontal overflow'
             print('PASS responsive material family page')
