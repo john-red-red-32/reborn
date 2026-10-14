@@ -1,7 +1,7 @@
 name: Verify community foundation
 on:
   push:
-    branches: [main, feature/contact-form-footer-mail-20261014]
+    branches: [main, fix/community-signup-feedback-20261014]
     paths:
       - 'app/**'
       - 'components/**'
