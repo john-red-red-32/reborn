@@ -1,107 +1,85 @@
 "use client";
-import {useMemo,useState} from "react";
-import {ArrowUpRight,ChevronLeft,ChevronRight,ImageIcon,Info,Truck,ExternalLink,Search} from "lucide-react";
+import {useEffect,useRef,useState} from "react";
+import {ArrowUpRight,ChevronLeft,ChevronRight,ChevronDown,ImageIcon,Info,Truck,ExternalLink,Search} from "lucide-react";
 import {displayMoney,useShopLocale} from "./LocaleProvider";
-import type {MaterialPhoto,MaterialProductEvidence,MaterialShippingPolicy,MaterialSourceVariant} from "../lib/material-product-evidence";
+import type {MaterialProductEvidence,MaterialShippingPolicy} from "../lib/material-product-evidence";
 import type {FamilyProduct} from "../lib/material-product-families";
-import type {SupplyCategory} from "../lib/materials-catalogue";
-
-type Option={label:string;options:string[];nativePrice?:number;photoUrl?:string};
-type Choice={title:string;sourceUrl:string;photos:MaterialPhoto[];currency:string;nativePrice?:number;startingPrice:boolean;variants:Option[];unpricedOptions:string[];optionNames:string[]};
-const supplierCurrency=(url:string)=>url.includes("bountifulbaby.com")?"USD":url.includes("kebelka.com")?"EUR":"GBP";
-const priceNumber=(s?:string)=>{if(!s)return undefined;const match=s.match(/[\d,]+(?:\.\d+)?/);if(!match)return undefined;const n=Number(match[0].replace(/,/g,""));return Number.isFinite(n)?n:undefined};
-function choicesFromEvidence(evidence:MaterialProductEvidence,family:FamilyProduct[]):Choice[]{
- const lookup=new Map(family.map(p=>[p.sourceUrl,p]));
- const a=evidence.products.map(p=>{
-  const familySource=lookup.get(p.sourceUrl);
-  const enriched=p.variants.map(v=>{const match=familySource?.variants?.find(x=>x.label===v.label);
-   return {label:v.label,options:v.options,nativePrice:match?.nativePrice??priceNumber(v.observedPrice),photoUrl:match?.photoUrl};
-  });
-  const firstPrice=familySource?.nativePrice??priceNumber(p.priceAtReview);
-  return {title:p.title,sourceUrl:p.sourceUrl,photos:p.photos,currency:familySource?.currency??supplierCurrency(p.sourceUrl),
-    nativePrice:firstPrice,startingPrice:!!p.priceAtReview?.startsWith("From"),variants:enriched,
-    unpricedOptions:familySource?.unpricedOptions??[],optionNames:p.optionNames};
- });
- const known=new Set(a.map(p=>p.sourceUrl));
- const b:Choice[]=family.filter(p=>!known.has(p.sourceUrl)).map(p=>({
-  title:p.title,sourceUrl:p.sourceUrl,
-  photos:p.photoUrls.map(url=>({url,source:p.sourceUrl,credit:"Original supplier — source-matched "+p.title+" product photograph; photographer not independently identified"})),
-  currency:p.currency,nativePrice:p.nativePrice,startingPrice:p.currency==="EUR"&&p.sourceUrl.includes("kebelka.com"),
-  variants:p.variants??[],unpricedOptions:p.unpricedOptions??[],optionNames:p.optionNames??[]
- }));
- return [...a,...b];
-}
-export default function MaterialProductViewer({itemName,evidence,shipping,collectionUrl,family,category}:{itemName:string;evidence:MaterialProductEvidence;shipping:MaterialShippingPolicy;collectionUrl:string;family:FamilyProduct[];category:SupplyCategory}){
- const {currency,fx,locale}=useShopLocale();
- const products=useMemo(()=>choicesFromEvidence(evidence,family),[evidence,family]);
- const[productIndex,setProductIndex]=useState(0);
+function parsedPrice(s?:string){const m=s?.match(/[\d,]+(?:\.\d+)?/);return m?Number(m[0].replace(/,/g,"")):undefined}
+export default function MaterialProductViewer({product,evidence,shipping,collectionUrl,rangeName}:{product:FamilyProduct;evidence:MaterialProductEvidence;shipping:MaterialShippingPolicy;collectionUrl:string;rangeName:string}){
+ const{currency,fx,locale}=useShopLocale();
  const[photoIndex,setPhotoIndex]=useState(0);
- const[variantIndex,setVariantIndex]=useState<number|null>(null);
- const[sizeIndex,setSizeIndex]=useState<number|null>(null);
- const[manualImage,setManualImage]=useState(false);
- const[filter,setFilter]=useState("");
- const[showAll,setShowAll]=useState(false);
- const product=products[productIndex]??products[0];
- const images=product?.photos??[];
- const variants=product?.variants??[];
- const selectedVariant=variantIndex===null?null:variants[variantIndex];
- const selectedPhoto=selectedVariant?.photoUrl&&!manualImage?{url:selectedVariant.photoUrl,source:product.sourceUrl,credit:"Original supplier — variant-specific photograph for "+selectedVariant.label}:images[Math.min(photoIndex,Math.max(0,images.length-1))];
- const price=selectedVariant?.nativePrice??product?.nativePrice;
- const money=price!==undefined?displayMoney(price,product.currency,currency,fx,locale):null;
- const isFromPrice=product?.startingPrice&&!selectedVariant?.nativePrice;
- function chooseProduct(i:number){setProductIndex(i);setVariantIndex(null);setSizeIndex(null);setPhotoIndex(0);setManualImage(false)}
- function chooseVariant(i:number){setVariantIndex(i);setSizeIndex(null);setPhotoIndex(0);setManualImage(false)}
- function galleryMove(change:number){setPhotoIndex(v=>(v+images.length+change)%images.length);setManualImage(true)}
- const matching=products.map((p,i)=>({...p,index:i})).filter(p=>p.title.toLowerCase().includes(filter.trim().toLowerCase()));
- const visible=showAll?matching:matching.slice(0,18);
- const kindName=category==="paints"?"Paints, shades & sets":category==="hair"?"Hair colours & textures":category==="eyes"?"Eye colours, styles & sizes":category==="tools"?"Tool types & gauges":"Product sizes & styles";
- return <section className="rbrn-material-viewer" aria-label={itemName+" product information"}>
-  <div className="rbrn-material-gallery">
-   <div className="rbrn-material-image-area">
-    {selectedPhoto?<figure className="rbrn-material-main-image"><img src={selectedPhoto.url} alt={product.title+(selectedVariant?" — "+selectedVariant.label:"")+" — original supplier photograph"} loading="eager" decoding="async"/><figcaption>SUPPLIER PHOTO{selectedVariant?.photoUrl&&!manualImage?" · SELECTED OPTION":" · "+(photoIndex+1)+" / "+images.length}</figcaption></figure>
-    :<div className="rbrn-material-photo-missing"><ImageIcon size={34}/><strong>Photograph awaiting review</strong><p>We do not substitute a different product's photo.</p></div>}
-    {images.length>1&&<><button className="rbrn-material-image-prev" aria-label="Previous product photograph" type="button" onClick={()=>galleryMove(-1)}><ChevronLeft size={21}/></button><button className="rbrn-material-image-next" aria-label="Next product photograph" type="button" onClick={()=>galleryMove(1)}><ChevronRight size={21}/></button></>}
+ const[manualPhoto,setManualPhoto]=useState(false);
+ const[chosen,setChosen]=useState<number|null>(null);
+ const[chosenSize,setChosenSize]=useState<number|null>(null);
+ const[open,setOpen]=useState(false);
+ const[search,setSearch]=useState("");
+ const popoverRef=useRef<HTMLDivElement>(null);
+ const galleryRef=useRef<HTMLDivElement>(null);
+ const extra=evidence.products.find(p=>p.sourceUrl===product.sourceUrl);
+ const photos=[...new Set([...(product.photoUrls||[]),...(extra?.photos.map(p=>p.url)||[])])];
+ const variants=(product.variants?.length?product.variants:extra?.variants.map(v=>({label:v.label,options:v.options,nativePrice:parsedPrice(v.observedPrice)})))??[];
+ const sizes=product.unpricedOptions??[];
+ const selected=chosen!==null?variants[chosen]:null;
+ const chosenPhoto=selected?.photoUrl;
+ const featured=chosenPhoto&&!manualPhoto?chosenPhoto:photos[Math.min(photoIndex,Math.max(0,photos.length-1))];
+ const selectedPrice=selected?.nativePrice??product.nativePrice??parsedPrice(extra?.priceAtReview);
+ const money=selectedPrice!==undefined?displayMoney(selectedPrice,product.currency,currency,fx,locale):null;
+ const hasOptions=variants.length>0||sizes.length>0;
+ const selectedLabel=selected?.label??(chosenSize!==null?sizes[chosenSize]:null);
+ const filtered=variants.map((v,i)=>({...v,index:i})).filter(v=>v.label.toLowerCase().includes(search.toLowerCase()));
+ const rangePrice=sizes.length>0&&selected?.nativePrice===undefined;
+ useEffect(()=>{
+  if(!open)return;
+  function onDown(event:PointerEvent){if(popoverRef.current&&!popoverRef.current.contains(event.target as Node))setOpen(false)}
+  function onKey(event:KeyboardEvent){if(event.key==="Escape")setOpen(false)}
+  document.addEventListener("pointerdown",onDown);
+  document.addEventListener("keydown",onKey);
+  return ()=>{document.removeEventListener("pointerdown",onDown);document.removeEventListener("keydown",onKey)};
+ },[open]);
+ function afterChoice(){setOpen(false);setManualPhoto(false);setPhotoIndex(0);if(window.matchMedia("(max-width: 1050px)").matches){window.requestAnimationFrame(()=>galleryRef.current?.scrollIntoView({behavior:"smooth",block:"start"}))}}
+ function chooseVariant(index:number){setChosen(index);setChosenSize(null);afterChoice()}
+ function chooseSize(index:number){setChosenSize(index);setChosen(null);afterChoice()}
+ const credit="Original supplier — photograph of "+product.title+(selected?.photoUrl&&!manualPhoto?" / "+selected.label:"");
+ return <section className="rbrn-material-viewer rbrn-material-single-product" aria-label={product.title+" product information"}>
+  <div className="rbrn-material-gallery" ref={galleryRef}>
+   <div className="rbrn-material-image-area">{featured?<figure className="rbrn-material-main-image"><img src={featured} alt={product.title+(selectedLabel?" — "+selectedLabel:"")+" supplier photograph"} decoding="async" loading="eager"/><figcaption>SUPPLIER PHOTO{chosenPhoto&&!manualPhoto?" · SELECTED OPTION":" · "+(photoIndex+1)+" / "+photos.length}</figcaption></figure>:<div className="rbrn-material-photo-missing"><ImageIcon size={34}/><strong>Product photograph awaiting review</strong><p>We don't substitute another product's photograph.</p></div>}
+    {photos.length>1&&<><button type="button" className="rbrn-material-image-prev" aria-label="Previous photograph" onClick={()=>{setManualPhoto(true);setPhotoIndex(p=>(p+photos.length-1)%photos.length)}}><ChevronLeft size={21}/></button><button type="button" className="rbrn-material-image-next" aria-label="Next photograph" onClick={()=>{setManualPhoto(true);setPhotoIndex(p=>(p+1)%photos.length)}}><ChevronRight size={21}/></button></>}
    </div>
-   {images.length>1&&<div className="rbrn-material-thumbs" aria-label="Product photograph gallery">{images.map((img,i)=><button key={img.url} type="button" aria-label={"View image "+(i+1)} aria-pressed={manualImage&&i===photoIndex} className={manualImage&&i===photoIndex?"active":""} onClick={()=>{setPhotoIndex(i);setManualImage(true)}}><img src={img.url} alt="" loading="lazy" decoding="async"/></button>)}</div>}
-   {selectedPhoto&&<p className="rbrn-material-photo-credit">Source: <a href={selectedPhoto.source} target="_blank" rel="noopener noreferrer">{selectedPhoto.credit} <ExternalLink size={12}/></a></p>}
+   {photos.length>1&&<div className="rbrn-material-thumbs" aria-label="Gallery photographs">{photos.map((url,i)=><button key={url} type="button" aria-pressed={manualPhoto&&photoIndex===i} aria-label={"View photograph "+(i+1)} className={manualPhoto&&photoIndex===i?"active":""} onClick={()=>{setManualPhoto(true);setPhotoIndex(i)}}><img src={url} alt="" decoding="async" loading="lazy"/></button>)}</div>}
+   {featured&&<p className="rbrn-material-photo-credit">Photo: <a href={product.sourceUrl} target="_blank" rel="noopener noreferrer">{credit} <ExternalLink size={12}/></a></p>}
   </div>
   <div className="rbrn-material-buy-detail">
-   <span className="section-kicker">SOURCE-VERIFIED MAKER MATERIALS</span>
-   <h2>{itemName}<span className="period">.</span></h2>
-   <p className="rbrn-material-subheading">Explore the exact colours, sizes and products documented by the supplier. All purchasing takes place on the supplier's own website.</p>
-   {products.length>1&&<section className="rbrn-material-family-section" aria-label={kindName}>
-    <div className="rbrn-material-family-top"><strong>{kindName}</strong><span>{products.length} source-listed products</span></div>
-    {products.length>12&&<label className="rbrn-material-family-search"><Search size={15}/><input type="search" value={filter} onChange={e=>{setFilter(e.target.value);setShowAll(false)}} placeholder="Find a colour, size or product…" aria-label="Search product shades and types"/></label>}
-    <div className="rbrn-material-family-grid">
-     {visible.map(p=><button key={p.sourceUrl} type="button" aria-pressed={p.index===productIndex} className={"rbrn-material-family-choice"+(p.index===productIndex?" active":"")} onClick={()=>chooseProduct(p.index)}>
-      {p.photos[0]&&<img src={p.photos[0].url} loading="lazy" decoding="async" alt=""/>}
-      <span>{p.title}</span>
-      {p.nativePrice!==undefined&&<small>{displayMoney(p.nativePrice,p.currency,currency,fx,locale).text}{p.startingPrice?" +":""}</small>}
-     </button>)}
-    </div>
-    {matching.length>18&&<button type="button" className="rbrn-material-show-more" onClick={()=>setShowAll(v=>!v)}>{showAll?"Show fewer products":"Show all "+matching.length+" products"}</button>}
-    {!matching.length&&<p className="rbrn-material-no-matches">No matching shades in this documented range.</p>}
-   </section>}
-   <div className="rbrn-material-selected-product"><small>{products.length>1?"SELECTED SOURCE PRODUCT":"SOURCE PRODUCT"}</small><h3>{product?.title}</h3>
-    {money&&<div className="rbrn-material-dated-price"><strong>{isFromPrice?"From ":""}{money.converted?"≈ ":""}{money.text}</strong><span>Supplier price observed {evidence.sourceChecked}</span></div>}
-    {money&&money.converted&&<p className="rbrn-material-fx-note">Approximate conversion from {product.currency} using the latest available reference exchange rate dated {fx?.date}. The seller charges in its own currency and determines the final checkout price.</p>}
-    {money&&!money.available&&<p className="rbrn-material-fx-note">Conversion into {currency} is temporarily unavailable. Showing the original supplier currency ({product.currency}).</p>}
-    {price===undefined&&<p className="rbrn-material-fx-note">Price not independently confirmed for this product. Please check with the supplier.</p>}
+   <span className="section-kicker">{rangeName.toUpperCase()} / ORIGINAL SUPPLIER</span>
+   <h2>{product.title}<span className="period">.</span></h2>
+   <p className="rbrn-material-subheading">Explore this product's supplier-listed options, photographs and dated prices. Complete any purchase directly with the original seller.</p>
+   <div className="rbrn-material-selected-product"><small>SUPPLIER LISTED PRODUCT</small>
+    {money?<div className="rbrn-material-dated-price"><strong>{rangePrice?"From ":""}{money.converted?"≈ ":""}{money.text}</strong><span>Observed {evidence.sourceChecked} · not live</span></div>:<p className="rbrn-material-fx-note">Price not independently confirmed for this product.</p>}
+    {money?.converted&&<p className="rbrn-material-fx-note">Approximate currency conversion from {product.currency}, reference rate dated {fx?.date}. The final checkout amount may differ.</p>}
+    {money&&!money.available&&<p className="rbrn-material-fx-note">Conversion unavailable; showing supplier currency {product.currency}.</p>}
    </div>
-   {!!variants.length&&<section className="rbrn-material-variant-picker"><div className="rbrn-material-variant-heading"><strong>Choose {product.optionNames.filter(x=>x!=="Title").join(" & ").toLowerCase()||"an option"}</strong><span>{variants.length} documented choices</span></div>
-    <p>Select a supplier-listed option. Only images actually associated with that option are shown as such.</p>
-    <div className="rbrn-material-option-cards">{variants.map((v,i)=><button key={i} type="button" aria-pressed={i===variantIndex} className={i===variantIndex?"active":""} onClick={()=>chooseVariant(i)}>{v.photoUrl&&<img src={v.photoUrl} loading="lazy" decoding="async" alt=""/>}<span>{v.label}</span>{v.nativePrice!==undefined&&<small>{displayMoney(v.nativePrice,product.currency,currency,fx,locale).text}</small>}</button>)}</div>
-    {selectedVariant&&<p className="rbrn-material-variant-current"><strong>Selected: {selectedVariant.label}</strong><span>Confirm this option and price with the seller.</span></p>}
-   </section>}
-   {!!product.unpricedOptions.length&&<section className="rbrn-material-variant-picker"><div className="rbrn-material-variant-heading"><strong>Container sizes shown by supplier</strong></div><div className="rbrn-material-option-cards rbrn-material-unpriced-options">{product.unpricedOptions.map((size,i)=><button key={size} type="button" aria-pressed={sizeIndex===i} className={sizeIndex===i?"active":""} onClick={()=>setSizeIndex(i)}><span>{size}</span></button>)}</div><p className="rbrn-material-options-note"><Info size={14}/> The price above is the range's observed starting price. We have not verified separate prices for each size; confirm the selected size and total at the supplier.</p></section>}
-   <div className="rbrn-material-shipping-card">
-    <div className="rbrn-material-shipping-title"><Truck size={19}/><strong>Delivery & supplier information</strong></div>
-    <dl><div><dt>Supplier based in</dt><dd>{shipping.basedIn}</dd></div><div><dt>Published shipping policy</dt><dd>{shipping.international}</dd></div><div><dt>Delivery to your location</dt><dd>Confirm at supplier checkout</dd></div></dl>
-    <p>{shipping.summary}</p><a href={shipping.source} target="_blank" rel="noopener noreferrer">Read supplier delivery information <ArrowUpRight size={13}/></a>
-   </div>
-   <a className="rbrn-material-shop-link" href={product?.sourceUrl??collectionUrl} target="_blank" rel="noopener noreferrer">View selected product at supplier <ArrowUpRight size={20}/></a>
-   {product?.sourceUrl&&product.sourceUrl!==collectionUrl&&<a className="rbrn-material-collection-link" href={collectionUrl} target="_blank" rel="noopener noreferrer">Explore full supplier range <ArrowUpRight size={14}/></a>}
-   <p className="rbrn-material-buy-disclaimer">Reborna does not sell or fulfil this item. Product and option names, images and prices are dated editorial observations, not live stock quotes. Supplier prices may have changed; confirm exact options, delivery and total cost directly with the seller. Currency conversions are estimates based on published reference rates, not guaranteed checkout amounts.</p>
+   {hasOptions&&<div className="rbrn-material-compact-picker" ref={popoverRef}>
+    <div className="rbrn-material-picker-heading"><strong>{variants.length?product.optionNames?.filter(s=>s!=="Title").join(" & ")||"Choose an option":"Choose a size"}</strong><span>{variants.length||sizes.length} options</span></div>
+    <button type="button" className="rbrn-material-picker-trigger" aria-expanded={open} aria-controls="rbrn-product-variants" onClick={()=>{setOpen(v=>!v);setSearch("")}}>
+     {selected?.photoUrl?<img src={selected.photoUrl} alt="" decoding="async"/>:null}
+     <span><small>{selectedLabel?"YOUR SELECTION":"SELECT A VARIATION"}</small><strong>{selectedLabel||"Choose colour, size or style"}</strong></span><ChevronDown size={18} className={open?"rotated":""}/>
+    </button>
+    {open&&<div id="rbrn-product-variants" className="rbrn-material-picker-popover">
+     {variants.length>18&&<label className="rbrn-material-picker-search"><Search size={15}/><input autoFocus type="search" placeholder="Find a colour or option" value={search} onChange={e=>setSearch(e.target.value)}/></label>}
+     <div className="rbrn-material-picker-list">
+      {variants.length?filtered.map(v=><button key={v.index} type="button" aria-pressed={chosen===v.index} className={chosen===v.index?"active":""} onClick={()=>chooseVariant(v.index)}>
+       {v.photoUrl&&<img src={v.photoUrl} alt="" loading="lazy" decoding="async"/>}
+       <span>{v.label}</span>{v.nativePrice!==undefined&&<small>{displayMoney(v.nativePrice,product.currency,currency,fx,locale).text}</small>}
+      </button>):sizes.map((v,i)=><button key={v} type="button" aria-pressed={chosenSize===i} className={chosenSize===i?"active":""} onClick={()=>chooseSize(i)}><span>{v}</span></button>)}
+     </div>
+     {variants.length>0&&!filtered.length&&<p className="rbrn-range-empty">No matching options.</p>}
+     <p className="rbrn-material-picker-foot">Source-listed options only · selection is not a reservation</p>
+    </div>}
+    {sizes.length>0&&<p className="rbrn-material-options-note"><Info size={13}/> Individual size prices have not been verified; the price above is a starting price.</p>}
+   </div>}
+   <div className="rbrn-material-shipping-card"><div className="rbrn-material-shipping-title"><Truck size={19}/><strong>Delivery & supplier information</strong></div><dl><div><dt>Supplier based in</dt><dd>{shipping.basedIn}</dd></div><div><dt>Published shipping policy</dt><dd>{shipping.international}</dd></div><div><dt>Delivery to your location</dt><dd>Confirm at supplier checkout</dd></div></dl><p>{shipping.summary}</p><a href={shipping.source} target="_blank" rel="noopener noreferrer">Read supplier shipping policy <ArrowUpRight size={13}/></a></div>
+   <a href={product.sourceUrl} className="rbrn-material-shop-link" target="_blank" rel="noopener noreferrer">View at original supplier <ArrowUpRight size={20}/></a>
+   <a href={collectionUrl} className="rbrn-material-collection-link" target="_blank" rel="noopener noreferrer">Explore supplier's full range <ArrowUpRight size={14}/></a>
+   <p className="rbrn-material-buy-disclaimer">Reborna does not sell or fulfil this item. Photographs, products, variations and prices are dated research, not live stock or binding quotes. Source details were reviewed {evidence.sourceChecked}; confirm exact options, current price and delivery with the seller. Converted prices use reference exchange rates, not guaranteed checkout amounts.</p>
   </div>
  </section>;
 }
