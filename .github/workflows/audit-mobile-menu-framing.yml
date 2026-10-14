@@ -6,6 +6,7 @@ on:
       - '.github/workflows/audit-mobile-menu-framing.yml'
       - 'components/SiteHeader.tsx'
       - 'app/globals.css'
+      - 'app/community.css'
       - 'lib/material-image-framing.json'
       - 'lib/material-image-style.ts'
   workflow_dispatch:
