@@ -1,6 +1,7 @@
 import type {VerifiedKit} from "./real-catalogue";
-/** Explicit artist rights: no photos from Ping Lau's official website used.
- * Original vinyl kit identity from dealer's original-sculptor catalogue.
+/** Source-specific: never use images from pingart.com. Irresistables terms
+ * state photos may be shared noncommercially with restrictions. Every reused
+ * photo must remain source-attributed and reviewed upon any rights request.
  */
 export const retailerKitsPing:VerifiedKit[]=[
   {
@@ -10,7 +11,7 @@ export const retailerKitsPing:VerifiedKit[]=[
     "material": "vinyl",
     "statusLabel": "Original vinyl kit in specialist dealer archive — current stock not confirmed",
     "statusChecked": "2026-10-13",
-    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. The artist's own website restricts commercial photograph use, so no photograph is republished or hotlinked.",
+    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. Official artist site restricts commercial photograph use; source-specific, noncommercial sharing terms must be respected.",
     "sources": [
       {
         "label": "Ping Lau — authenticated specialist kit archive",
@@ -31,7 +32,7 @@ export const retailerKitsPing:VerifiedKit[]=[
     "material": "vinyl",
     "statusLabel": "Original vinyl kit in specialist dealer archive — current stock not confirmed",
     "statusChecked": "2026-10-13",
-    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. The artist's own website restricts commercial photograph use, so no photograph is republished or hotlinked.",
+    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. Official artist site restricts commercial photograph use; source-specific, noncommercial sharing terms must be respected.",
     "sources": [
       {
         "label": "Ping Lau — authenticated specialist kit archive",
@@ -52,7 +53,7 @@ export const retailerKitsPing:VerifiedKit[]=[
     "material": "vinyl",
     "statusLabel": "Original vinyl kit in specialist dealer archive — current stock not confirmed",
     "statusChecked": "2026-10-13",
-    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. The artist's own website restricts commercial photograph use, so no photograph is republished or hotlinked.",
+    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. Official artist site restricts commercial photograph use; source-specific, noncommercial sharing terms must be respected.",
     "sources": [
       {
         "label": "Ping Lau — authenticated specialist kit archive",
@@ -73,7 +74,7 @@ export const retailerKitsPing:VerifiedKit[]=[
     "material": "vinyl",
     "statusLabel": "Original vinyl kit in specialist dealer archive — current stock not confirmed",
     "statusChecked": "2026-10-13",
-    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. The artist's own website restricts commercial photograph use, so no photograph is republished or hotlinked.",
+    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. Official artist site restricts commercial photograph use; source-specific, noncommercial sharing terms must be respected.",
     "sources": [
       {
         "label": "Ping Lau — authenticated specialist kit archive",
@@ -94,7 +95,7 @@ export const retailerKitsPing:VerifiedKit[]=[
     "material": "vinyl",
     "statusLabel": "Original vinyl kit in specialist dealer archive — current stock not confirmed",
     "statusChecked": "2026-10-13",
-    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. The artist's own website restricts commercial photograph use, so no photograph is republished or hotlinked.",
+    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. Official artist site restricts commercial photograph use; source-specific, noncommercial sharing terms must be respected.",
     "sources": [
       {
         "label": "Ping Lau — authenticated specialist kit archive",
@@ -115,8 +116,13 @@ export const retailerKitsPing:VerifiedKit[]=[
     "material": "vinyl",
     "statusLabel": "Original vinyl kit in specialist dealer archive — current stock not confirmed",
     "statusChecked": "2026-10-13",
-    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. The artist's own website restricts commercial photograph use, so no photograph is republished or hotlinked.",
+    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. Official artist site restricts commercial photograph use; source-specific, noncommercial sharing terms must be respected.",
     "sources": [
+      {
+        "label": "Irresistables — named Ping Lau original vinyl kit and image source",
+        "url": "https://www.irresistables.com/lovelyn-awake-reborn-vinyl-doll-kit-by-ping-lau-ultra-soft-vinyl-23/",
+        "kind": "retailer"
+      },
       {
         "label": "Ping Lau — authenticated specialist kit archive",
         "url": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
@@ -136,8 +142,13 @@ export const retailerKitsPing:VerifiedKit[]=[
     "material": "vinyl",
     "statusLabel": "Original vinyl kit in specialist dealer archive — current stock not confirmed",
     "statusChecked": "2026-10-13",
-    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. The artist's own website restricts commercial photograph use, so no photograph is republished or hotlinked.",
+    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. Official artist site restricts commercial photograph use; source-specific, noncommercial sharing terms must be respected.",
     "sources": [
+      {
+        "label": "Irresistables — named Ping Lau original vinyl kit and image source",
+        "url": "https://www.irresistables.com/luca-reborn-vinyl-toddler-doll-kit-by-ping-lau-30/",
+        "kind": "retailer"
+      },
       {
         "label": "Ping Lau — authenticated specialist kit archive",
         "url": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
@@ -157,7 +168,7 @@ export const retailerKitsPing:VerifiedKit[]=[
     "material": "vinyl",
     "statusLabel": "Original vinyl kit in specialist dealer archive — current stock not confirmed",
     "statusChecked": "2026-10-13",
-    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. The artist's own website restricts commercial photograph use, so no photograph is republished or hotlinked.",
+    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. Official artist site restricts commercial photograph use; source-specific, noncommercial sharing terms must be respected.",
     "sources": [
       {
         "label": "Ping Lau — authenticated specialist kit archive",
@@ -178,8 +189,13 @@ export const retailerKitsPing:VerifiedKit[]=[
     "material": "vinyl",
     "statusLabel": "Original vinyl kit in specialist dealer archive — current stock not confirmed",
     "statusChecked": "2026-10-13",
-    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. The artist's own website restricts commercial photograph use, so no photograph is republished or hotlinked.",
+    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. Official artist site restricts commercial photograph use; source-specific, noncommercial sharing terms must be respected.",
     "sources": [
+      {
+        "label": "Irresistables — named Ping Lau original vinyl kit and image source",
+        "url": "https://www.irresistables.com/raven-by-ping-lau-2nd-edition/",
+        "kind": "retailer"
+      },
       {
         "label": "Ping Lau — authenticated specialist kit archive",
         "url": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
@@ -199,7 +215,7 @@ export const retailerKitsPing:VerifiedKit[]=[
     "material": "vinyl",
     "statusLabel": "Original vinyl kit in specialist dealer archive — current stock not confirmed",
     "statusChecked": "2026-10-13",
-    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. The artist's own website restricts commercial photograph use, so no photograph is republished or hotlinked.",
+    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. Official artist site restricts commercial photograph use; source-specific, noncommercial sharing terms must be respected.",
     "sources": [
       {
         "label": "Ping Lau — authenticated specialist kit archive",
@@ -220,7 +236,7 @@ export const retailerKitsPing:VerifiedKit[]=[
     "material": "vinyl",
     "statusLabel": "Original vinyl kit in specialist dealer archive — current stock not confirmed",
     "statusChecked": "2026-10-13",
-    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. The artist's own website restricts commercial photograph use, so no photograph is republished or hotlinked.",
+    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. Official artist site restricts commercial photograph use; source-specific, noncommercial sharing terms must be respected.",
     "sources": [
       {
         "label": "Ping Lau — authenticated specialist kit archive",
@@ -241,8 +257,13 @@ export const retailerKitsPing:VerifiedKit[]=[
     "material": "vinyl",
     "statusLabel": "Original vinyl kit in specialist dealer archive — current stock not confirmed",
     "statusChecked": "2026-10-13",
-    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. The artist's own website restricts commercial photograph use, so no photograph is republished or hotlinked.",
+    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. Official artist site restricts commercial photograph use; source-specific, noncommercial sharing terms must be respected.",
     "sources": [
+      {
+        "label": "Irresistables — named Ping Lau original vinyl kit and image source",
+        "url": "https://www.irresistables.com/copy-of-tori-doll-kit-by-ping-lau-limited-first-edition/",
+        "kind": "retailer"
+      },
       {
         "label": "Ping Lau — authenticated specialist kit archive",
         "url": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
