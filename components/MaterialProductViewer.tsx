@@ -5,8 +5,9 @@ import {displayMoney,useShopLocale} from "./LocaleProvider";
 import type {MaterialProductEvidence,MaterialShippingPolicy} from "../lib/material-product-evidence";
 import type {FamilyProduct} from "../lib/material-product-families";
 import {materialThumbnailStyle,materialHasTighterFraming} from "../lib/material-image-style";
+import {materialDisplayTitle} from "../lib/material-display-title";
 function parsedPrice(s?:string){const m=s?.match(/[\d,]+(?:\.\d+)?/);return m?Number(m[0].replace(/,/g,"")):undefined}
-export default function MaterialProductViewer({product,evidence,shipping,collectionUrl,rangeName}:{product:FamilyProduct;evidence:MaterialProductEvidence;shipping:MaterialShippingPolicy;collectionUrl:string;rangeName:string}){
+export default function MaterialProductViewer({product,evidence,shipping,collectionUrl,rangeName,rangeSlug}:{product:FamilyProduct;evidence:MaterialProductEvidence;shipping:MaterialShippingPolicy;collectionUrl:string;rangeName:string;rangeSlug:string}){
  const{currency,fx,locale}=useShopLocale();
  const[photoIndex,setPhotoIndex]=useState(0);
  const[manualPhoto,setManualPhoto]=useState(false);
@@ -17,6 +18,7 @@ export default function MaterialProductViewer({product,evidence,shipping,collect
  const[search,setSearch]=useState("");
  const popoverRef=useRef<HTMLDivElement>(null);
  const galleryRef=useRef<HTMLDivElement>(null);
+ const displayTitle=materialDisplayTitle(product.title,rangeSlug);
  const extra=evidence.products.find(p=>p.sourceUrl===product.sourceUrl);
  const photos=[...new Set([...(product.photoUrls||[]),...(extra?.photos.map(p=>p.url)||[])])];
  const variants=(product.variants?.length?product.variants:extra?.variants.map(v=>({label:v.label,options:v.options,nativePrice:parsedPrice(v.observedPrice),photoUrl:undefined as string|undefined})))??[];
@@ -55,7 +57,8 @@ export default function MaterialProductViewer({product,evidence,shipping,collect
   </div>
   <div className="rbrn-material-buy-detail">
    <span className="section-kicker">{rangeName.toUpperCase()} / ORIGINAL SUPPLIER</span>
-   <h2>{product.title}<span className="period">.</span></h2>
+   <h2>{displayTitle.name}<span className="period">.</span></h2>
+   {displayTitle.detail&&<p className="rbrn-material-title-meta">{displayTitle.detail}</p>}
    <p className="rbrn-material-subheading">Explore this product's supplier-listed options, photographs and dated prices. Complete any purchase directly with the original seller.</p>
    <div className="rbrn-material-selected-product"><small>SUPPLIER LISTED PRODUCT</small>
     {money?<div className="rbrn-material-dated-price"><strong>{rangePrice?"From ":""}{money.converted?"≈ ":""}{money.text}</strong><span>Observed {evidence.sourceChecked} · not live</span></div>:<p className="rbrn-material-fx-note">Price not independently confirmed for this product.</p>}

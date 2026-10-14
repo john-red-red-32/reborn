@@ -878,3 +878,8 @@ html{scroll-behavior:smooth}
 @media(max-width:380px){
   .inner-header .inner-nav a {font-size:16px;min-height:50px}
 }
+
+/* Product identity stays in the range kicker; keep supplier size / SKU as quiet supporting detail. */
+.rbrn-material-single-product .rbrn-material-title-meta{margin:3px 0 12px;color:#998474;font-size:11px;letter-spacing:.045em;line-height:1.6}
+.rbrn-range-card-detail{color:#988575;font-size:10px;line-height:1.5;letter-spacing:.025em;margin:-8px 0 16px}
+@media(max-width:520px){.rbrn-material-single-product .rbrn-material-buy-detail>h2{font-size:clamp(32px,9vw,40px);line-height:1.14;overflow-wrap:break-word}.rbrn-material-single-product .rbrn-material-title-meta{font-size:10px;margin-top:2px}.rbrn-range-card-detail{margin-top:-5px;font-size:10px}}
