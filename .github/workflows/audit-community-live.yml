@@ -34,7 +34,7 @@ jobs:
                   assert 'application/json' in content_type,(path,content_type)
                   obj=json.loads(data)
                   if path.endswith('status'):
-                    assert obj.get('available') is True and obj.get('registrationOpen') is False,obj
+                    assert obj.get('available') is True and obj.get('registrationOpen') is True,('registration not enabled',obj)
                     assert obj.get('turnstileSiteKey','').startswith('0x4'),obj
                     assert obj.get('aiModerationReady') is True,obj
                     assert obj.get('moderation')=='review-before-publication',obj
@@ -45,7 +45,7 @@ jobs:
                 else:assert b'reborna' in data.lower() and b'<html' in data.lower(),(path,len(data))
               except Exception as e:issues.append((path,str(e)[:190]))
             if not issues:
-              print('PASS: public community routes and D1 content; Turnstile; private Workers AI binding; registration gated on verified email sender',flush=True)
+              print('PASS: public community routes and D1 content; Turnstile; private Workers AI binding; registration available with Resend sending secret',flush=True)
               break
             print('Waiting on Cloudflare Pages deployment:',attempt+1,issues[:8],flush=True)
             time.sleep(9)
