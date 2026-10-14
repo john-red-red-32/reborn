@@ -1,0 +1,46 @@
+name: Audit live Reborna community
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-community-live.yml'
+      - 'functions/api/community/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify deployed community HTML and Cloudflare D1 API
+        run: |
+          python3 - <<'PY'
+          import urllib.request,urllib.error,json,time
+          base='https://reborna.co'
+          paths=['/community/','/community/new/','/community/discussion/','/community/member/','/community/guidelines/','/account/','/messages/','/community/catalogue.json','/api/community/status','/api/community/posts']
+          for attempt in range(32):
+            issues=[]
+            for path in paths:
+              try:
+                req=urllib.request.Request(base+path,headers={'User-Agent':'Mozilla/5.0 (Reborna deployment verification)','Accept':'application/json,text/html,*/*'})
+                with urllib.request.urlopen(req,timeout=20) as r: data=r.read(1000000);status=r.status;content_type=r.headers.get('content-type','')
+                if status!=200:issues.append((path,'HTTP '+str(status)));continue
+                if path.startswith('/api/community/'):
+                  assert 'application/json' in content_type,(path,content_type)
+                  obj=json.loads(data)
+                  if path.endswith('status'):assert obj.get('available') is True and obj.get('registrationOpen') is False,obj
+                  else:assert len(obj['posts'])>=8,('posts',len(obj.get('posts',[])))
+                elif path.endswith('catalogue.json'):
+                  obj=json.loads(data)
+                  assert len(obj)>100,('product index',len(obj))
+                else:assert b'reborna' in data.lower() and b'<html' in data.lower(),(path,len(data))
+              except Exception as e:issues.append((path,str(e)[:190]))
+            if not issues:
+              print('PASS: all 10 production routes, D1 seed posts, safe closed signup, static catalogue',flush=True)
+              break
+            print('Waiting on Cloudflare Pages deployment:',attempt+1,issues[:8],flush=True)
+            time.sleep(9)
+          else:raise SystemExit('Production audit failed: '+str(issues))
+          PY
