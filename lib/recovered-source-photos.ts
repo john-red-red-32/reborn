@@ -391,6 +391,20 @@ export const recoveredKitPhotos:Record<string,NonNullable<VerifiedKit["photos"]>
       "source": "https://www.irresistables.com/lovelyn-awake-reborn-vinyl-doll-kit-by-ping-lau-ultra-soft-vinyl-23/",
       "credit": "Irresistables — Lovelyn Awake, original reborn sculpt by Ping Lau; finished-example photographer not individually named"
     }
+  ],
+  "emma-dawn-donofrio": [
+    {
+      "url": "https://rebornbabycreations.com/cdn/shop/files/il_fullxfull.7584552051_5724_ad55026b-4027-4445-815b-0e2b017eaa36.jpg?v=1772741301&width=533",
+      "source": "https://rebornbabycreations.com/products/super-soft-silicone-baby-emma-by-dawn-64xg8mj82wno0xrd",
+      "credit": "RebornBabyCreations — finished silicone Emma example; original sculpt by Dawn Donofrio (individual photographer not separately named)"
+    }
+  ],
+  "emerson-dawn-donofrio": [
+    {
+      "url": "https://rebornbabycreations.com/cdn/shop/files/il_fullxfull.7584552051_5724_f015b8c1-5b19-4325-a141-59b50541c6ee.jpg?v=1772740909&width=533",
+      "source": "https://rebornbabycreations.com/products/super-soft-silicone-baby-emerson-by-dawn-38489",
+      "credit": "RebornBabyCreations — finished silicone Emerson example; original sculpt by Dawn Donofrio (individual photographer not separately named)"
+    }
   ]
 };
 export const recoveredArtistCovers:Record<string,ArtistImage[]>={
