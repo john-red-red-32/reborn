@@ -47,7 +47,7 @@ jobs:
       - name: Verify actual catalogue browsing and option selection in browser
         run: |
           python3 - <<'PY'
-          from playwright.sync_api import sync_playwright
+          from playwright.sync_api import sync_playwright,expect
           import time
           base='https://reborna.co'
           def visit(page,path,selector):
@@ -89,7 +89,7 @@ jobs:
             visit(page,'/materials/kebelka-heat-paints/','.rbrn-range-card')
             assert page.locator('.rbrn-range-card').count()==24
             page.get_by_role('button',name='Show all 46 products').click()
-            assert page.locator('.rbrn-range-card').count()==46
+            expect(page.locator('.rbrn-range-card')).to_have_count(46,timeout=12000)
             card=page.locator('.rbrn-range-card').filter(has_text='33 CORAL').first
             card.click()
             page.wait_for_url('**/materials/kebelka-heat-paints/*/')
