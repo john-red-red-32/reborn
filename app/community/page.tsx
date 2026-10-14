@@ -1,3 +1,3 @@
 import CommunityForum from "../../components/CommunityForum";
-export const metadata={title:"Reborna Community | Kits, Art & Collectors",description:"Independent conversations about original reborn sculpts, techniques, materials and collecting."};
+export const metadata={title:"Reborna Community | Original Doll Sculptors & Art",description:"Discuss original reborn doll kits, authentic sculptures, techniques, materials and collecting with the Reborna community.",alternates:{canonical:"/community/"}};
 export default function CommunityPage(){return <CommunityForum/>}
