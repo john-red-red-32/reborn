@@ -1,0 +1,280 @@
+[
+  {
+    "slug": "eefje-elly-knoops",
+    "name": "Eefje",
+    "artist": "Elly Knoops",
+    "url": "https://www.oncesoreal.com/eefje-lange-vinylteile-set/p-140.html",
+    "status": "loaded",
+    "title": "Eefje, lange Vinylteile *Set",
+    "og": [
+      "images/products/normal/Once-Reborn-Ellie-Knoops-Eefje-TOP.jpg",
+      "images/products/normal/Once-Reborn-Ellie-Knoops-Eefje-TOP.jpg"
+    ],
+    "img": []
+  },
+  {
+    "slug": "mattia-gudrun-legler",
+    "name": "Mattia",
+    "artist": "Gudrun Legler",
+    "url": "https://www.oncesoreal.com/mattia-set/p-5682.html",
+    "status": "loaded",
+    "title": "Mattia *Set",
+    "og": [
+      "images/products/normal/Once-Reborn-Gudrun-Legler-Mattia_TOP.jpg",
+      "images/products/normal/Once-Reborn-Gudrun-Legler-Mattia_TOP.jpg"
+    ],
+    "img": []
+  },
+  {
+    "slug": "tony-gudrun-legler",
+    "name": "Tony",
+    "artist": "Gudrun Legler",
+    "url": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-tony/",
+    "status": "robots_denied"
+  },
+  {
+    "slug": "ellis-philomena-donnelly",
+    "name": "Ellis",
+    "artist": "Phil Donnelly",
+    "url": "https://www.oncesoreal.com/ellis-set/p-7465.html",
+    "status": "loaded",
+    "title": "Ellis *Set",
+    "og": [
+      "images/products/normal/Once-Reborn-Phil-Donnelly-Ellis_TOP.jpg",
+      "images/products/normal/Once-Reborn-Phil-Donnelly-Ellis_TOP.jpg"
+    ],
+    "img": []
+  },
+  {
+    "slug": "quinn-philomena-donnelly",
+    "name": "Quinn",
+    "artist": "Phil Donnelly",
+    "url": "https://www.oncesoreal.com/quinn-set/p-7574.html",
+    "status": "loaded",
+    "title": "Quinn *Set",
+    "og": [
+      "images/products/normal/Once-Reborn-Phil-Donnelly-Quinn_TOP.jpg",
+      "images/products/normal/Once-Reborn-Phil-Donnelly-Quinn_TOP.jpg"
+    ],
+    "img": []
+  },
+  {
+    "slug": "lil-cry-philomena-donnelly",
+    "name": "Lil' Cry",
+    "artist": "Phil Donnelly",
+    "url": "https://www.phildonnellybabies.co.uk/product-page/lil-cry-coming-soon-20",
+    "status": "URLError",
+    "error": "<urlopen error [Errno -2] Name or service not known>"
+  },
+  {
+    "slug": "josie-awake-ping-lau",
+    "name": "Josie Awake",
+    "artist": "Ping Lau",
+    "url": "https://www.irresistables.com/josie-awake-reborn-vinyl-doll-kit-by-ping-lau/",
+    "status": "HTTPError",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "slug": "josie-ping-lau",
+    "name": "Josie",
+    "artist": "Ping Lau",
+    "url": "https://www.irresistables.com/josie-reborn-vinyl-doll-kit-by-ping-lau/",
+    "status": "HTTPError",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "slug": "baby-george-ping-lau",
+    "name": "Baby George",
+    "artist": "Ping Lau",
+    "url": "https://www.irresistables.com/newborn-george-reborn-vinyl-doll-kit-by-ping-lau-20/",
+    "status": "loaded",
+    "title": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\"",
+    "og": [
+      "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/1512/images/8395/NewbornGeorge1__64992.1495651623.500.750.jpg?c=2"
+    ],
+    "img": [
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/1512/8395/NewbornGeorge1__64992.1495651623.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/1512/8396/NewbornGeorge2__30971.1495651625.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/1512/8397/NewbornGeorge3__39124.1495651627.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/1512/8398/NewbornGeorge4__82598.1495651629.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/1512/8399/NewbornGeorge5__84434.1495651659.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/1512/8400/NewbornGeorge6__06351.1495651663.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/1512/8401/NewbornGeorge7__31640.1495651666.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/1512/8402/NewbornGeorge8__55235.1495651668.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/1512/43727/Ping_Lau_General__81716.1617051384.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/200x200/products/1512/8395/NewbornGeorge1__64992.1495651623.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/200x200/products/1512/8396/NewbornGeorge2__30971.1495651625.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/200x200/products/1512/8397/NewbornGeorge3__39124.1495651627.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/200x200/products/1512/8398/NewbornGeorge4__82598.1495651629.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/200x200/products/1512/8399/NewbornGeorge5__84434.1495651659.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/200x200/products/1512/8400/NewbornGeorge6__06351.1495651663.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/200x200/products/1512/8401/NewbornGeorge7__31640.1495651666.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/200x200/products/1512/8402/NewbornGeorge8__55235.1495651668.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/200x200/products/1512/43727/Ping_Lau_General__81716.1617051384.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/product_images/uploaded_images/moved-7fa7de4c86fa5ec527d45e59938b6da7.jpeg",
+        "data-src": null,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/product_images/uploaded_images/moved-7fa7de4c86fa5ec527d45e59938b6da7.jpeg",
+        "data-src": null,
+        "alt": ""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/160w/products/4252/44414/Newborn_George__03574.1621355641.jpg?c=2",
+        "data-src": null,
+        "alt": "Newborn George Reborn Vinyl Doll Head by Ping Lau - Head Only"
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/160w/products/3497/32166/82861398_211436689987988_5921988701151297536_o__08246.1580062286.jpg?c=2",
+        "data-src": null,
+        "alt": "Ping Ping Reborn Vinyl Doll Kit by Ping Lau 20\""
+      },
+      {
+        "src": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/160w/products/262/838/acn__01004.1699556129.jpg?c=2",
+        "data-src": null,
+        "alt": "Anming Reborn Vinyl Doll Kit by Ping Lau 20\""
+      }
+    ]
+  },
+  {
+    "slug": "sugar-ping-lau",
+    "name": "Sugar",
+    "artist": "Ping Lau",
+    "url": "https://www.oncesoreal.com/sugar-von-ping-lau/p-7500.html",
+    "status": "loaded",
+    "title": "Atem-Simulator *Mini",
+    "og": [
+      "images/products/normal/Once-Reborn-Atem-Mechanismus-1.jpg",
+      "images/products/normal/Once-Reborn-Atem-Mechanismus-1.jpg"
+    ],
+    "img": []
+  },
+  {
+    "slug": "lillegroda-sabine-altenkirch-junkes",
+    "name": "Lillegroda",
+    "artist": "Sabine Altenkirch",
+    "url": "https://www.sabine-altenkirch.com/startseite-home/shop/lillegroda/",
+    "status": "robots_denied"
+  },
+  {
+    "slug": "amy-elly-knoops",
+    "name": "Amy",
+    "artist": "Elly Knoops",
+    "url": "https://macphersoncrafts.com/reborn-doll-kits/amy-by-elly-knoops.htm",
+    "status": "loaded",
+    "title": "Amy by Elly Knoops",
+    "og": [
+      "https://macphersoncrafts.com/images/stories/virtuemart/product/Amy-by-Elly-Knoops-1001.jpg"
+    ],
+    "img": []
+  },
+  {
+    "slug": "river-sleeping-dawn-donofrio",
+    "name": "River Sleeping",
+    "artist": "Dawn Donofrio",
+    "url": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/limited-time-offer-river-sleeping-blank-full-body-silicone-doll-kit/",
+    "status": "robots_denied"
+  },
+  {
+    "slug": "danica-dawn-donofrio",
+    "name": "Danica",
+    "artist": "Dawn Donofrio",
+    "url": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/danica-blank-partial-silicone-5-piece-doll-kit/",
+    "status": "robots_denied"
+  },
+  {
+    "slug": "remi-dawn-donofrio",
+    "name": "Remi",
+    "artist": "Dawn Donofrio",
+    "url": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/remi-blank-full-body-silicone-doll-kit/",
+    "status": "robots_denied"
+  },
+  {
+    "slug": "journey-dawn-donofrio",
+    "name": "Journey",
+    "artist": "Dawn Donofrio",
+    "url": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/journey-blank-full-body-silicone-doll-kit/",
+    "status": "robots_denied"
+  },
+  {
+    "slug": "cameron-laura-tuzio-ross",
+    "name": "Cameron",
+    "artist": "Laura Tuzio Ross",
+    "url": "https://www.myworldofbabies.com/shop/vinyl-reborn-doll-kits/cameron/",
+    "status": "robots_denied"
+  }
+]
