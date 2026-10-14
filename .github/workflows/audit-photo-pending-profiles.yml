@@ -30,7 +30,7 @@ jobs:
             'gudrun-legler':False,'alejandra-de-zuniga':False,
             'severine-piret':False,'elly-knoops':True,
             'iveta-eckertova':True,'olga-auer':True,
-            'sabrina-hergarten':True,'ping-lau':True,
+            'sabrina-hergarten':True,'ping-lau':False,
             'laura-lee-eagles':False,'joanna-kazmierczak':True
           }
           photographed_artists={
