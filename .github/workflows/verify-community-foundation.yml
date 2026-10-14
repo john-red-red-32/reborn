@@ -1,15 +1,17 @@
 name: Verify community foundation
 on:
   push:
-    branches: [main, feature/community-verify-moderation-20261014]
+    branches: [main, feature/contact-form-footer-mail-20261014]
     paths:
       - 'app/**'
       - 'components/**'
       - 'lib/**'
       - 'functions/api/community/**'
+      - 'functions/api/contact.js'
       - 'workers/community-moderation.js'
       - 'db/community-schema.sql'
       - 'db/community-moderation-v2.sql'
+      - 'db/contact-enquiries.sql'
       - '.github/workflows/verify-community-foundation.yml'
   workflow_dispatch:
 permissions:
@@ -26,6 +28,7 @@ jobs:
       - name: Validate Pages Function syntax
         run: |
           node --check 'functions/api/community/[[path]].js'
+          node --check functions/api/contact.js
           node --input-type=module --check < workers/community-moderation.js
       - name: Validate fresh schema and attributed editorial topics
         run: |
@@ -48,7 +51,10 @@ jobs:
           assert d.execute("SELECT count(*) FROM posts p WHERE NOT EXISTS(SELECT 1 FROM content_moderation m WHERE m.content_type='post' AND m.content_id=p.id AND m.state<>'approved')").fetchone()[0] == 7
           d.execute("UPDATE content_moderation SET state='approved' WHERE content_id='guide-welcome'")
           assert d.execute("SELECT count(*) FROM posts p WHERE NOT EXISTS(SELECT 1 FROM content_moderation m WHERE m.content_type='post' AND m.content_id=p.id AND m.state<>'approved')").fetchone()[0] == 8
-          print('PASS D1 schemas: idempotent, genuine editorial content, moderation visibility enforced')
+          d.executescript(Path('db/contact-enquiries.sql').read_text())
+          d.executescript(Path('db/contact-enquiries.sql').read_text())
+          assert d.execute("SELECT count(*) FROM contact_enquiries").fetchone()[0] == 0
+          print('PASS D1 schemas: idempotent, editorial/community moderation and private contact intake')
           PY
       - name: Install dependencies
         run: npm install --no-audit --no-fund
@@ -64,7 +70,8 @@ jobs:
           npm run build
           test -f out/community/index.html
           test -f out/account/index.html
+          test -f out/contact/index.html
           test -f out/messages/index.html
           test -f out/community/moderation/index.html
           test -f out/community/catalogue.json
-          echo 'PASS static export of community pages'
+          echo 'PASS static export of community and contact pages'
