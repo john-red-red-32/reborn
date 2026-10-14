@@ -36,7 +36,7 @@ export default function HomeReleaseCalendar({kits,saved,onToggle}:{kits:readonly
      <h2 id="release-calendar-heading">Kit release preview<span className="period">.</span></h2>
      <p>Illustrative launches, pre-orders and shipping dates, organised by month.</p>
    </div><a className="outline-btn" href="/#catalogue">Browse all kits <span aria-hidden="true">↗</span></a></div>
-   <p className="calendar-preview-warning">Illustrative design preview only: the kit names, dates and amounts in this section are not verified upcoming releases. The community events above are organiser-sourced; these sample kit dates are not.</p>
+   <p className="calendar-preview-warning">Design preview: The kit names, dates and amounts in this section are illustrative examples only, not verified releases. The community events above are organiser-sourced; these sample kit dates are not.</p>
    <div className="home-calendar-archive">
      {groups.map(({year,months})=><section className="home-calendar-year" key={year} aria-label={`Releases in ${year}`}>
        <h3 className="home-calendar-year-title">{year}<span>Releases</span></h3>

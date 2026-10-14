@@ -651,3 +651,10 @@ html{scroll-behavior:smooth}
 .rbrn-supplies-empty button{background:#6b5442;color:#fff;border:0;padding:10px 16px}
 @media(max-width:900px){.rbrn-supplies-grid{grid-template-columns:1fr}.rbrn-supply-card{grid-template-columns:180px 1fr}}
 @media(max-width:650px){.rbrn-paint-guide{grid-template-columns:1fr;padding:20px}.rbrn-supply-card{grid-template-columns:105px 1fr}.rbrn-supply-art strong{font-size:55px}.rbrn-supply-art{padding:12px}.rbrn-supply-info{padding:15px}.rbrn-supply-card h3{font-size:24px}.rbrn-paint-guide-types span{align-items:flex-start;flex-direction:column;gap:3px}.rbrn-paint-guide-types span small{text-align:left}}
+
+/* Keep the seven navigation links inside a menu at tablet widths as well. */
+@media (min-width:701px) and (max-width:920px){
+ .inner-menu{display:block}
+ .inner-nav{display:none;position:absolute;left:0;right:0;top:102px;z-index:45;background:#fffdfb;padding:18px 6%;box-shadow:0 14px 25px #0001;flex-direction:column;align-items:flex-start;gap:18px}
+ .inner-nav.open{display:flex}
+}
