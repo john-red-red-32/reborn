@@ -1,13 +1,14 @@
 name: Verify community foundation
 on:
   push:
-    branches: [main, feature/community-foundation-20261014]
+    branches: [main, feature/community-verify-moderation-20261014]
     paths:
       - 'app/**'
       - 'components/**'
       - 'lib/**'
       - 'functions/api/community/**'
       - 'db/community-schema.sql'
+      - 'db/community-moderation-v2.sql'
       - '.github/workflows/verify-community-foundation.yml'
   workflow_dispatch:
 permissions:
@@ -36,8 +37,15 @@ jobs:
           assert d.execute("SELECT count(*) FROM votes").fetchone()[0] == 0
           assert d.execute("SELECT count(*) FROM replies").fetchone()[0] == 0
           d.executescript(Path('db/community-schema.sql').read_text())
+          d.executescript(Path('db/community-moderation-v2.sql').read_text())
+          d.executescript(Path('db/community-moderation-v2.sql').read_text())
           assert d.execute("SELECT count(*) FROM posts").fetchone()[0] == 8
-          print('PASS D1 schema: idempotent migration; 8 labelled editorial starters; zero fictional votes or replies')
+          assert d.execute("SELECT count(*) FROM content_moderation").fetchone()[0] == 0
+          d.execute("INSERT INTO content_moderation(content_type,content_id,state) VALUES ('post','guide-welcome','pending')")
+          assert d.execute("SELECT count(*) FROM posts p WHERE NOT EXISTS(SELECT 1 FROM content_moderation m WHERE m.content_type='post' AND m.content_id=p.id AND m.state<>'approved')").fetchone()[0] == 7
+          d.execute("UPDATE content_moderation SET state='approved' WHERE content_id='guide-welcome'")
+          assert d.execute("SELECT count(*) FROM posts p WHERE NOT EXISTS(SELECT 1 FROM content_moderation m WHERE m.content_type='post' AND m.content_id=p.id AND m.state<>'approved')").fetchone()[0] == 8
+          print('PASS D1 schemas: idempotent, genuine editorial content, moderation visibility enforced')
           PY
       - name: Install dependencies
         run: npm install --no-audit --no-fund
