@@ -66,7 +66,7 @@ jobs:
           for kind in ['artists','kits']:
             pages=list((out/kind).glob('*/index.html'))
             assert len(pages)>=5,(kind,'too few static pages',len(pages))
-            sample=pages[:min(12,len(pages))]
+            sample=pages
             for file in sample:
               path='/'+str(file.relative_to(out).parent).replace('\\','/')+'/'
               p=page(path)
@@ -78,7 +78,7 @@ jobs:
             print(kind,len(pages),'static indexed profiles checked')
           material_dirs=list((out/'materials').glob('*/*/index.html'))
           assert material_dirs, 'no individual pre-rendered material product pages'
-          for file in material_dirs[:10]:
+          for file in material_dirs:
             rel='/'+str(file.relative_to(out).parent).replace('\\','/')+'/'
             p=page(rel)
             assert p.h1s==1 and p.canonical=='https://reborna.co'+rel,(rel,p.h1s,p.canonical)
