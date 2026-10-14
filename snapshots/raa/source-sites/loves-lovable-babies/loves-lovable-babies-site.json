@@ -1,0 +1,1495 @@
+{
+  "source": "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+  "host": "loveslovablebabies.wixsite.com",
+  "parser_version": "url-discovery-v2-platform-sitemaps",
+  "started_from": "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+  "completed_at": "2026-10-14T09:00:13.311574+00:00",
+  "page_limit": 12,
+  "sitemap_discovered_urls": 0,
+  "platforms": {
+    "wix": 12
+  },
+  "pages_checked": 12,
+  "pages_succeeded": 12,
+  "queue_remaining": 2,
+  "complete": false,
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:39.886550+00:00",
+      "sha256_html": "c02bc58a8423f98a4b8bafd0d83ab989fff278c768f817312e12f82d410f4032",
+      "title": "Home | Loves Lovable Babies",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Home | Loves Lovable Babies",
+        "og:url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+        "og:site_name": "Loves Lovable Babies",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Home | Loves Lovable Babies"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 1x, https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_812,h_684,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_f7490d4c4f6f43408d3a2191053b5d0d~mv2.jpeg/v1/fill/w_318,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_f7490d4c4f6f43408d3a2191053b5d0d~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_f7490d4c4f6f43408d3a2191053b5d0d~mv2.jpeg/v1/fill/w_318,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_f7490d4c4f6f43408d3a2191053b5d0d~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_f7490d4c4f6f43408d3a2191053b5d0d~mv2.jpeg/v1/fill/w_636,h_788,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_f7490d4c4f6f43408d3a2191053b5d0d~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg/v1/fill/w_264,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg/v1/fill/w_264,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg/v1/fill/w_528,h_704,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_af248c68e2fd42f7b6de691984b02c15~mv2.jpeg/v1/fill/w_248,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_af248c68e2fd42f7b6de691984b02c15~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_af248c68e2fd42f7b6de691984b02c15~mv2.jpeg/v1/fill/w_248,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_af248c68e2fd42f7b6de691984b02c15~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_af248c68e2fd42f7b6de691984b02c15~mv2.jpeg/v1/fill/w_496,h_660,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_af248c68e2fd42f7b6de691984b02c15~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg/v1/fill/w_260,h_347,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg/v1/fill/w_260,h_347,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg/v1/fill/w_520,h_694,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_a615b84d4ea846a98707d3a47b77474f~mv2.jpg/v1/fill/w_214,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a615b84d4ea846a98707d3a47b77474f~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_a615b84d4ea846a98707d3a47b77474f~mv2.jpg/v1/fill/w_214,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a615b84d4ea846a98707d3a47b77474f~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_a615b84d4ea846a98707d3a47b77474f~mv2.jpg/v1/fill/w_428,h_572,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a615b84d4ea846a98707d3a47b77474f~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_ca3c95a50e29479fab96796a6499df1a~mv2.jpg/v1/fill/w_182,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_ca3c95a50e29479fab96796a6499df1a~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_ca3c95a50e29479fab96796a6499df1a~mv2.jpg/v1/fill/w_182,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_ca3c95a50e29479fab96796a6499df1a~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_ca3c95a50e29479fab96796a6499df1a~mv2.jpg/v1/fill/w_364,h_422,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_ca3c95a50e29479fab96796a6499df1a~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_3ab4b72739ce4fb2bc73ec9f16a79da5~mv2.jpg/v1/fill/w_182,h_242,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_3ab4b72739ce4fb2bc73ec9f16a79da5~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_3ab4b72739ce4fb2bc73ec9f16a79da5~mv2.jpg/v1/fill/w_182,h_242,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_3ab4b72739ce4fb2bc73ec9f16a79da5~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_3ab4b72739ce4fb2bc73ec9f16a79da5~mv2.jpg/v1/fill/w_364,h_484,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_3ab4b72739ce4fb2bc73ec9f16a79da5~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_8ae99d42a40940e482633eda553ff092~mv2.jpeg/v1/fill/w_258,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8ae99d42a40940e482633eda553ff092~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_8ae99d42a40940e482633eda553ff092~mv2.jpeg/v1/fill/w_258,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8ae99d42a40940e482633eda553ff092~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_8ae99d42a40940e482633eda553ff092~mv2.jpeg/v1/fill/w_516,h_684,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8ae99d42a40940e482633eda553ff092~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_41e83b6aa9cf42d6b3b35a8fdf56fa81~mv2.jpg/v1/fill/w_306,h_408,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_41e83b6aa9cf42d6b3b35a8fdf56fa81~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_41e83b6aa9cf42d6b3b35a8fdf56fa81~mv2.jpg/v1/fill/w_306,h_408,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_41e83b6aa9cf42d6b3b35a8fdf56fa81~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_41e83b6aa9cf42d6b3b35a8fdf56fa81~mv2.jpg/v1/fill/w_612,h_816,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_41e83b6aa9cf42d6b3b35a8fdf56fa81~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_2029b4cf63344f1fb85570a1b1723b9c~mv2.jpg/v1/fill/w_217,h_290,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_2029b4cf63344f1fb85570a1b1723b9c~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_2029b4cf63344f1fb85570a1b1723b9c~mv2.jpg/v1/fill/w_217,h_290,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_2029b4cf63344f1fb85570a1b1723b9c~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_2029b4cf63344f1fb85570a1b1723b9c~mv2.jpg/v1/fill/w_434,h_580,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_2029b4cf63344f1fb85570a1b1723b9c~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_4c6bcd1661b24474a73556e63828a462~mv2.jpg/v1/fill/w_217,h_290,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_4c6bcd1661b24474a73556e63828a462~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_4c6bcd1661b24474a73556e63828a462~mv2.jpg/v1/fill/w_217,h_290,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_4c6bcd1661b24474a73556e63828a462~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_4c6bcd1661b24474a73556e63828a462~mv2.jpg/v1/fill/w_434,h_580,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_4c6bcd1661b24474a73556e63828a462~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_a4119a8f6fc84bd198575efc8e8964eb~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a4119a8f6fc84bd198575efc8e8964eb~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_a4119a8f6fc84bd198575efc8e8964eb~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a4119a8f6fc84bd198575efc8e8964eb~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_a4119a8f6fc84bd198575efc8e8964eb~mv2.jpg/v1/fill/w_454,h_606,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a4119a8f6fc84bd198575efc8e8964eb~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_6ccf0c8340c7448395cfd364c2d2419d~mv2.jpg/v1/fill/w_198,h_263,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6ccf0c8340c7448395cfd364c2d2419d~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_6ccf0c8340c7448395cfd364c2d2419d~mv2.jpg/v1/fill/w_198,h_263,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6ccf0c8340c7448395cfd364c2d2419d~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_6ccf0c8340c7448395cfd364c2d2419d~mv2.jpg/v1/fill/w_396,h_526,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6ccf0c8340c7448395cfd364c2d2419d~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_98eea0f70682463cb687bea15c287297~mv2.jpg/v1/fill/w_289,h_385,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_98eea0f70682463cb687bea15c287297~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_98eea0f70682463cb687bea15c287297~mv2.jpg/v1/fill/w_289,h_385,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_98eea0f70682463cb687bea15c287297~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_98eea0f70682463cb687bea15c287297~mv2.jpg/v1/fill/w_578,h_770,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_98eea0f70682463cb687bea15c287297~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_7dd468096a554598bd9399aff71f9dd5~mv2.jpeg/v1/fill/w_258,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_7dd468096a554598bd9399aff71f9dd5~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_7dd468096a554598bd9399aff71f9dd5~mv2.jpeg/v1/fill/w_258,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_7dd468096a554598bd9399aff71f9dd5~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_7dd468096a554598bd9399aff71f9dd5~mv2.jpeg/v1/fill/w_516,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_7dd468096a554598bd9399aff71f9dd5~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_90c6db5cd8894e8aad02d722eec842fd~mv2.jpeg/v1/fill/w_264,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_90c6db5cd8894e8aad02d722eec842fd~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_90c6db5cd8894e8aad02d722eec842fd~mv2.jpeg/v1/fill/w_264,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_90c6db5cd8894e8aad02d722eec842fd~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_90c6db5cd8894e8aad02d722eec842fd~mv2.jpeg/v1/fill/w_528,h_704,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_90c6db5cd8894e8aad02d722eec842fd~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg/v1/fill/w_158,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg/v1/fill/w_158,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg/v1/fill/w_316,h_422,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg/v1/fill/w_158,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg/v1/fill/w_158,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg/v1/fill/w_316,h_422,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_7cfff42d3a3d482aa8daff97f6d9fe2e~mv2.jpeg/v1/fill/w_214,h_280,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_7cfff42d3a3d482aa8daff97f6d9fe2e~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_7cfff42d3a3d482aa8daff97f6d9fe2e~mv2.jpeg/v1/fill/w_214,h_280,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_7cfff42d3a3d482aa8daff97f6d9fe2e~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_7cfff42d3a3d482aa8daff97f6d9fe2e~mv2.jpeg/v1/fill/w_428,h_560,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_7cfff42d3a3d482aa8daff97f6d9fe2e~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_3df13092e0904218a46f2bd30bbec872~mv2.jpeg/v1/fill/w_238,h_317,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_3df13092e0904218a46f2bd30bbec872~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_3df13092e0904218a46f2bd30bbec872~mv2.jpeg/v1/fill/w_238,h_317,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_3df13092e0904218a46f2bd30bbec872~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_3df13092e0904218a46f2bd30bbec872~mv2.jpeg/v1/fill/w_476,h_634,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_3df13092e0904218a46f2bd30bbec872~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_843d693af04a4bb4bb9e1a643fa2f298~mv2.jpg/v1/fill/w_265,h_354,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_843d693af04a4bb4bb9e1a643fa2f298~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_843d693af04a4bb4bb9e1a643fa2f298~mv2.jpg/v1/fill/w_265,h_354,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_843d693af04a4bb4bb9e1a643fa2f298~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_843d693af04a4bb4bb9e1a643fa2f298~mv2.jpg/v1/fill/w_530,h_708,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_843d693af04a4bb4bb9e1a643fa2f298~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_52f284f8e33b4124a2ca0075acc1818b~mv2.jpg/v1/fill/w_217,h_290,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_52f284f8e33b4124a2ca0075acc1818b~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_52f284f8e33b4124a2ca0075acc1818b~mv2.jpg/v1/fill/w_217,h_290,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_52f284f8e33b4124a2ca0075acc1818b~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_52f284f8e33b4124a2ca0075acc1818b~mv2.jpg/v1/fill/w_434,h_580,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_52f284f8e33b4124a2ca0075acc1818b~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_4bf0c24d50174c5cb39f63d65ced2614~mv2.jpg/v1/fill/w_232,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_4bf0c24d50174c5cb39f63d65ced2614~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_4bf0c24d50174c5cb39f63d65ced2614~mv2.jpg/v1/fill/w_232,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_4bf0c24d50174c5cb39f63d65ced2614~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_4bf0c24d50174c5cb39f63d65ced2614~mv2.jpg/v1/fill/w_464,h_620,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_4bf0c24d50174c5cb39f63d65ced2614~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_68470b9b9adc466d9ecc00077c202ffd~mv2.jpg/v1/fill/w_506,h_506,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_68470b9b9adc466d9ecc00077c202ffd~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_68470b9b9adc466d9ecc00077c202ffd~mv2.jpg/v1/fill/w_506,h_506,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_68470b9b9adc466d9ecc00077c202ffd~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_68470b9b9adc466d9ecc00077c202ffd~mv2.jpg/v1/fill/w_1012,h_1012,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_68470b9b9adc466d9ecc00077c202ffd~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_22f40f8ccf534aefb5f539fbba2dd9fe~mv2.jpg/v1/fill/w_282,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_22f40f8ccf534aefb5f539fbba2dd9fe~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_22f40f8ccf534aefb5f539fbba2dd9fe~mv2.jpg/v1/fill/w_282,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_22f40f8ccf534aefb5f539fbba2dd9fe~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_22f40f8ccf534aefb5f539fbba2dd9fe~mv2.jpg/v1/fill/w_564,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_22f40f8ccf534aefb5f539fbba2dd9fe~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_482830ee2b044d24bd6a3659d30aa6eb~mv2.jpg/v1/fill/w_282,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_482830ee2b044d24bd6a3659d30aa6eb~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_482830ee2b044d24bd6a3659d30aa6eb~mv2.jpg/v1/fill/w_282,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_482830ee2b044d24bd6a3659d30aa6eb~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_482830ee2b044d24bd6a3659d30aa6eb~mv2.jpg/v1/fill/w_564,h_422,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_482830ee2b044d24bd6a3659d30aa6eb~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_bf438f8e793f46cf8b0073a6617de497~mv2.jpg/v1/fill/w_282,h_376,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_bf438f8e793f46cf8b0073a6617de497~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_bf438f8e793f46cf8b0073a6617de497~mv2.jpg/v1/fill/w_282,h_376,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_bf438f8e793f46cf8b0073a6617de497~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_bf438f8e793f46cf8b0073a6617de497~mv2.jpg/v1/fill/w_564,h_752,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_bf438f8e793f46cf8b0073a6617de497~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_032339e05b0e43c587c6eb8b454150ac~mv2.jpg/v1/fill/w_324,h_432,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_032339e05b0e43c587c6eb8b454150ac~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_032339e05b0e43c587c6eb8b454150ac~mv2.jpg/v1/fill/w_324,h_432,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_032339e05b0e43c587c6eb8b454150ac~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_032339e05b0e43c587c6eb8b454150ac~mv2.jpg/v1/fill/w_648,h_864,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_032339e05b0e43c587c6eb8b454150ac~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_3de85e3060da4e1b9a4e2b9d7c24d713~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/461971588_122178839210241317_1323548325058190361_n.jpg",
+          "alt": "461971588_122178839210241317_1323548325058190361_n.jpg",
+          "srcset": "https://static.wixstatic.com/media/fc8189_3de85e3060da4e1b9a4e2b9d7c24d713~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/461971588_122178839210241317_1323548325058190361_n.jpg 1x, https://static.wixstatic.com/media/fc8189_3de85e3060da4e1b9a4e2b9d7c24d713~mv2.jpg/v1/fill/w_568,h_688,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/461971588_122178839210241317_1323548325058190361_n.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_ad56fbee4011478db0130b3faf816925~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/463900995_122182416554241317_1547320443024397029_n.jpg",
+          "alt": "463900995_122182416554241317_1547320443024397029_n.jpg",
+          "srcset": "https://static.wixstatic.com/media/fc8189_ad56fbee4011478db0130b3faf816925~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/463900995_122182416554241317_1547320443024397029_n.jpg 1x, https://static.wixstatic.com/media/fc8189_ad56fbee4011478db0130b3faf816925~mv2.jpg/v1/fill/w_568,h_688,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/463900995_122182416554241317_1547320443024397029_n.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_b2ce5b5ae41b44dc9a23eeddc016b61d~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a.jpg",
+          "alt": "2a.jpg",
+          "srcset": "https://static.wixstatic.com/media/fc8189_b2ce5b5ae41b44dc9a23eeddc016b61d~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a.jpg 1x, https://static.wixstatic.com/media/fc8189_b2ce5b5ae41b44dc9a23eeddc016b61d~mv2.jpg/v1/fill/w_568,h_688,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_9c8dd13fa4964eeb8982622c5898b953~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/7.jpg",
+          "alt": "7.jpg",
+          "srcset": "https://static.wixstatic.com/media/fc8189_9c8dd13fa4964eeb8982622c5898b953~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/7.jpg 1x, https://static.wixstatic.com/media/fc8189_9c8dd13fa4964eeb8982622c5898b953~mv2.jpg/v1/fill/w_568,h_688,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_a8938bf8516d49c488da863f0fd2d467~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3a.jpg",
+          "alt": "3a.jpg",
+          "srcset": "https://static.wixstatic.com/media/fc8189_a8938bf8516d49c488da863f0fd2d467~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3a.jpg 1x, https://static.wixstatic.com/media/fc8189_a8938bf8516d49c488da863f0fd2d467~mv2.jpg/v1/fill/w_568,h_688,al_c,lg_1,q_85,enc_avif,quality_auto/3a.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_e101823a7f814b0ba4e939acb3aa6250~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3.jpg",
+          "alt": "3.jpg",
+          "srcset": "https://static.wixstatic.com/media/fc8189_e101823a7f814b0ba4e939acb3aa6250~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3.jpg 1x, https://static.wixstatic.com/media/fc8189_e101823a7f814b0ba4e939acb3aa6250~mv2.jpg/v1/fill/w_568,h_688,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/3.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_5712aeb47a504a89a94f6e9d9927f5b5~mv2.jpg/v1/fill/w_82,h_82,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_5712aeb47a504a89a94f6e9d9927f5b5~mv2.jpg",
+          "alt": "Leonardo_Phoenix_A_highly_detailed_Ultra_HD_3D_artistic_portra_1.jpg",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_cf54a11741174bd4904dd036f86b051f~mv2.jpg/v1/fill/w_185,h_185,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_cf54a11741174bd4904dd036f86b051f~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_cf54a11741174bd4904dd036f86b051f~mv2.jpg/v1/fill/w_185,h_185,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_cf54a11741174bd4904dd036f86b051f~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_cf54a11741174bd4904dd036f86b051f~mv2.jpg/v1/fill/w_370,h_370,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_cf54a11741174bd4904dd036f86b051f~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_a705376f53774f1f85c2d67001293750~mv2.jpg/v1/fill/w_346,h_229,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a705376f53774f1f85c2d67001293750~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_a705376f53774f1f85c2d67001293750~mv2.jpg/v1/fill/w_346,h_229,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a705376f53774f1f85c2d67001293750~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_a705376f53774f1f85c2d67001293750~mv2.jpg/v1/fill/w_692,h_458,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a705376f53774f1f85c2d67001293750~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_6c4349a08d684a5aa0915aef7dbd5cf4~mv2.jpg/v1/fill/w_152,h_229,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6c4349a08d684a5aa0915aef7dbd5cf4~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_6c4349a08d684a5aa0915aef7dbd5cf4~mv2.jpg/v1/fill/w_152,h_229,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6c4349a08d684a5aa0915aef7dbd5cf4~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_6c4349a08d684a5aa0915aef7dbd5cf4~mv2.jpg/v1/fill/w_304,h_458,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6c4349a08d684a5aa0915aef7dbd5cf4~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_c49903dbaba54a0b896544cfb242c521~mv2.jpg/v1/fill/w_600,h_389,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_c49903dbaba54a0b896544cfb242c521~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_c49903dbaba54a0b896544cfb242c521~mv2.jpg/v1/fill/w_600,h_389,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_c49903dbaba54a0b896544cfb242c521~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_c49903dbaba54a0b896544cfb242c521~mv2.jpg/v1/fill/w_1200,h_778,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_c49903dbaba54a0b896544cfb242c521~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_d9887435edfe431c9498ce7a32c77918~mv2.jpg/v1/fill/w_310,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_d9887435edfe431c9498ce7a32c77918~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_d9887435edfe431c9498ce7a32c77918~mv2.jpg/v1/fill/w_310,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_d9887435edfe431c9498ce7a32c77918~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_d9887435edfe431c9498ce7a32c77918~mv2.jpg/v1/fill/w_620,h_620,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_d9887435edfe431c9498ce7a32c77918~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_52cea1a7921f4cc9a8c5e0a253ed979e~mv2.jpg/v1/fill/w_296,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_52cea1a7921f4cc9a8c5e0a253ed979e~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_52cea1a7921f4cc9a8c5e0a253ed979e~mv2.jpg/v1/fill/w_296,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_52cea1a7921f4cc9a8c5e0a253ed979e~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_52cea1a7921f4cc9a8c5e0a253ed979e~mv2.jpg/v1/fill/w_592,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_52cea1a7921f4cc9a8c5e0a253ed979e~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_70ad9468cfaa4806b0c85ce610b12df9~mv2.jpg/v1/fill/w_191,h_255,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_70ad9468cfaa4806b0c85ce610b12df9~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_70ad9468cfaa4806b0c85ce610b12df9~mv2.jpg/v1/fill/w_191,h_255,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_70ad9468cfaa4806b0c85ce610b12df9~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_70ad9468cfaa4806b0c85ce610b12df9~mv2.jpg/v1/fill/w_382,h_510,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_70ad9468cfaa4806b0c85ce610b12df9~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_8b79f3a384b741acb89de682660528c0~mv2.jpg/v1/fill/w_234,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8b79f3a384b741acb89de682660528c0~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_8b79f3a384b741acb89de682660528c0~mv2.jpg/v1/fill/w_234,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8b79f3a384b741acb89de682660528c0~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_8b79f3a384b741acb89de682660528c0~mv2.jpg/v1/fill/w_468,h_704,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8b79f3a384b741acb89de682660528c0~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_55fbcf003a5a4df1b58dac6cf181259a~mv2.jpg/v1/fill/w_382,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_55fbcf003a5a4df1b58dac6cf181259a~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_55fbcf003a5a4df1b58dac6cf181259a~mv2.jpg/v1/fill/w_382,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_55fbcf003a5a4df1b58dac6cf181259a~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_55fbcf003a5a4df1b58dac6cf181259a~mv2.jpg/v1/fill/w_764,h_508,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_55fbcf003a5a4df1b58dac6cf181259a~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_aea3bc157ed84d44b5e043d57b90d78b~mv2.jpg/v1/fill/w_289,h_192,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_aea3bc157ed84d44b5e043d57b90d78b~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_aea3bc157ed84d44b5e043d57b90d78b~mv2.jpg/v1/fill/w_289,h_192,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_aea3bc157ed84d44b5e043d57b90d78b~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_aea3bc157ed84d44b5e043d57b90d78b~mv2.jpg/v1/fill/w_578,h_384,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_aea3bc157ed84d44b5e043d57b90d78b~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_cdd8f4228f244fd8b210876023e34ca3~mv2.jpg/v1/fill/w_90,h_120,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_cdd8f4228f244fd8b210876023e34ca3~mv2.jpg",
+          "alt": "8.jpg",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_1bd48d49677344e8b363943915c51a2e~mv2.png/v1/fill/w_324,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1bd48d49677344e8b363943915c51a2e~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_1bd48d49677344e8b363943915c51a2e~mv2.png/v1/fill/w_324,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1bd48d49677344e8b363943915c51a2e~mv2.png 1x, https://static.wixstatic.com/media/fc8189_1bd48d49677344e8b363943915c51a2e~mv2.png/v1/fill/w_499,h_925,al_c,q_90,enc_avif,quality_auto/fc8189_1bd48d49677344e8b363943915c51a2e~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png 1x, https://static.wixstatic.com/media/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png 2x"
+        }
+      ],
+      "links": [
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/book-online",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/category/all-products",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/followers",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/groups",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/members",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/portfolio"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/book-online",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:42.877178+00:00",
+      "sha256_html": "d7af5abdfce1c4740c22943f7f67ab802a2655ef613ec5046597550488209dc6",
+      "title": "Book Online | Loves Lovable Babies",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Book Online | Loves Lovable Babies",
+        "og:url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/book-online",
+        "og:site_name": "Loves Lovable Babies",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Book Online | Loves Lovable Babies"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 1x, https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_812,h_684,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 2x"
+        }
+      ],
+      "links": [
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/book-online",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/category/all-products",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/followers",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/groups",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/members",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/portfolio"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/category/all-products",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:46.505489+00:00",
+      "sha256_html": "9606d548cadca6820ea8d8249975fd5516678f8d67fbc916753c3f8e9b02d2d1",
+      "title": "All Products | Loves Lovable Babies",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "robots": "index",
+        "og:title": "All Products | Loves Lovable Babies",
+        "og:description": "This is your category description. It’s a great place to tell customers what this category is about, connect with your audience and draw attention to your products.",
+        "og:image": "https://static.wixstatic.com/media/22e53e_ef2ebbf33af24b7fba34e44589f3dc38~mv2.jpg/v1/fit/w_5000,h_3652,q_90/file.jpg",
+        "og:image:width": "5000",
+        "og:image:height": "3652",
+        "og:url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/category/all-products",
+        "og:site_name": "Loves Lovable Babies",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "All Products | Loves Lovable Babies",
+        "twitter:description": "This is your category description. It’s a great place to tell customers what this category is about, connect with your audience and draw attention to your products.",
+        "twitter:image": "https://static.wixstatic.com/media/22e53e_ef2ebbf33af24b7fba34e44589f3dc38~mv2.jpg/v1/fit/w_5000,h_3652,q_90/file.jpg"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "Product",
+                "name": "click to see more here",
+                "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/product-page/hand-crafted-resin-doll-eyes",
+                "image": "https://static.wixstatic.com/media/fc8189_19ca739b30dd4d32a03291da7034d842~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+                "offers": {
+                  "@type": "Offer",
+                  "price": 15,
+                  "priceCurrency": "USD"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "Product",
+                "name": "Little sleeping baby",
+                "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/product-page/little-sleeping-baby",
+                "image": "https://static.wixstatic.com/media/fc8189_18285dbe6005402584bbb85db51cb54a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+                "offers": {
+                  "@type": "Offer",
+                  "price": 60,
+                  "priceCurrency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 1x, https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_812,h_684,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/22e53e_ef2ebbf33af24b7fba34e44589f3dc38~mv2.jpg/v1/fill/w_147,h_107,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/22e53e_ef2ebbf33af24b7fba34e44589f3dc38~mv2.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_19ca739b30dd4d32a03291da7034d842~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_19ca739b30dd4d32a03291da7034d842~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_6d70b488e0834952b55c9e8e6be1780b~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_6d70b488e0834952b55c9e8e6be1780b~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_18285dbe6005402584bbb85db51cb54a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_18285dbe6005402584bbb85db51cb54a~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_5884b28992a04906a86a8003049288dd~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_5884b28992a04906a86a8003049288dd~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/book-online",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/category/all-products",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/followers",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/groups",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/members",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/portfolio",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/product-page/hand-crafted-resin-doll-eyes",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/product-page/little-sleeping-baby"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/product-page/hand-crafted-resin-doll-eyes",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:49.331842+00:00",
+      "sha256_html": "f71770d313a8dfee0f7df3fee6ed3a8d2d1219818af332506c12d6a6576d0b39",
+      "title": "click to see more here | Loves Lovable Babies",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "robots": "index",
+        "og:title": "click to see more here | Loves Lovable Babies",
+        "og:description": "hand crafted resin doll eyes created by Beth Jewell Perry at Beths Bundles Of Joy \n10.00 per set plus 5.00 shipping in the u.s\nthis are hand made eyes an will have some flaws and or imperfections ",
+        "og:image": "https://static.wixstatic.com/media/fc8189_19ca739b30dd4d32a03291da7034d842~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+        "og:image:width": "1536",
+        "og:image:height": "2048",
+        "og:url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/product-page/hand-crafted-resin-doll-eyes",
+        "og:site_name": "Loves Lovable Babies",
+        "og:type": "product",
+        "og:availability": "InStock",
+        "product:price:amount": "15",
+        "product:price:currency": "USD",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "click to see more here | Loves Lovable Babies",
+        "twitter:description": "hand crafted resin doll eyes created by Beth Jewell Perry at Beths Bundles Of Joy \n10.00 per set plus 5.00 shipping in the u.s\nthis are hand made eyes an will have some flaws and or imperfections ",
+        "twitter:image": "https://static.wixstatic.com/media/fc8189_19ca739b30dd4d32a03291da7034d842~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "click to see more here",
+          "description": "hand crafted resin doll eyes created by Beth Jewell Perry at Beths Bundles Of Joy &#010;10.00 per set plus 5.00 shipping in the u.s&#010;this are hand made eyes an will have some flaws and or imperfections ",
+          "image": [
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_19ca739b30dd4d32a03291da7034d842~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_19ca739b30dd4d32a03291da7034d842~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_6d70b488e0834952b55c9e8e6be1780b~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_6d70b488e0834952b55c9e8e6be1780b~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_7ea267040e544705afd40cf3585f5ffc~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_7ea267040e544705afd40cf3585f5ffc~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_07838b734b764344a06d3b0e2de4d83a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_07838b734b764344a06d3b0e2de4d83a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_c84ae4bf31c24618a980443518c65bd2~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_c84ae4bf31c24618a980443518c65bd2~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_d68001ac0603439d94438103a9dfc3d5~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_d68001ac0603439d94438103a9dfc3d5~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_42be92b7fbe2466ab15e996d98f7f209~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_42be92b7fbe2466ab15e996d98f7f209~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_6bb420cb4b474e2b8f57063f2f6ad3d2~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_6bb420cb4b474e2b8f57063f2f6ad3d2~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_9d80b71cf8b545ee99d79caa5cf6b7b6~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_9d80b71cf8b545ee99d79caa5cf6b7b6~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_904579b390bf4226b999f6bd7cedb4b3~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_904579b390bf4226b999f6bd7cedb4b3~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            }
+          ],
+          "offers": {
+            "@type": "Offer",
+            "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/product-page/hand-crafted-resin-doll-eyes",
+            "priceCurrency": "USD",
+            "price": "15",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "Loves Lovable Babies",
+              "sameAs": "https://loveslovablebabies.wixsite.com/loves-lovable-babies"
+            }
+          }
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 1x, https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_812,h_684,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_19ca739b30dd4d32a03291da7034d842~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_230,h_307,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_19ca739b30dd4d32a03291da7034d842~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "click to see more here",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_19ca739b30dd4d32a03291da7034d842~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_19ca739b30dd4d32a03291da7034d842~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: click to see more here",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_6d70b488e0834952b55c9e8e6be1780b~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_6d70b488e0834952b55c9e8e6be1780b~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: click to see more here",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_7ea267040e544705afd40cf3585f5ffc~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_7ea267040e544705afd40cf3585f5ffc~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: click to see more here",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_07838b734b764344a06d3b0e2de4d83a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_07838b734b764344a06d3b0e2de4d83a~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: click to see more here",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_c84ae4bf31c24618a980443518c65bd2~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_c84ae4bf31c24618a980443518c65bd2~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: click to see more here",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_d68001ac0603439d94438103a9dfc3d5~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_d68001ac0603439d94438103a9dfc3d5~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: click to see more here",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_42be92b7fbe2466ab15e996d98f7f209~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_42be92b7fbe2466ab15e996d98f7f209~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: click to see more here",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_6bb420cb4b474e2b8f57063f2f6ad3d2~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_6bb420cb4b474e2b8f57063f2f6ad3d2~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: click to see more here",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_9d80b71cf8b545ee99d79caa5cf6b7b6~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_9d80b71cf8b545ee99d79caa5cf6b7b6~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: click to see more here",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_904579b390bf4226b999f6bd7cedb4b3~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_904579b390bf4226b999f6bd7cedb4b3~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: click to see more here",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/book-online",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/category/all-products",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/followers",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/groups",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/members",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/portfolio"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/product-page/little-sleeping-baby",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:52.379819+00:00",
+      "sha256_html": "c9f6ef5f9967ddd4ad1a6eaf57479a292d4a02992a04f3a326012c87760fc6f4",
+      "title": "Little sleeping baby | Loves Lovable Babies",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "robots": "index",
+        "og:title": "Little sleeping baby | Loves Lovable Babies",
+        "og:description": "Mini Little Sleeping baby by D3 Creations painted by me\n3 inch detailed mini flate bottom fullbody soft silicone babydoll",
+        "og:image": "https://static.wixstatic.com/media/fc8189_18285dbe6005402584bbb85db51cb54a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+        "og:image:width": "1536",
+        "og:image:height": "2048",
+        "og:url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/product-page/little-sleeping-baby",
+        "og:site_name": "Loves Lovable Babies",
+        "og:type": "product",
+        "og:availability": "InStock",
+        "product:price:amount": "60",
+        "product:price:currency": "USD",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Little sleeping baby | Loves Lovable Babies",
+        "twitter:description": "Mini Little Sleeping baby by D3 Creations painted by me\n3 inch detailed mini flate bottom fullbody soft silicone babydoll",
+        "twitter:image": "https://static.wixstatic.com/media/fc8189_18285dbe6005402584bbb85db51cb54a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "Little sleeping baby",
+          "description": "Mini Little Sleeping baby by D3 Creations painted by me&#010;3 inch detailed mini flate bottom fullbody soft silicone babydoll",
+          "image": [
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_18285dbe6005402584bbb85db51cb54a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_18285dbe6005402584bbb85db51cb54a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_5884b28992a04906a86a8003049288dd~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_5884b28992a04906a86a8003049288dd~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_d92910f2bc85411b9cd86db17ebd808c~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_d92910f2bc85411b9cd86db17ebd808c~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_a494baaa320b4f4ebe52154b9875eb7a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_a494baaa320b4f4ebe52154b9875eb7a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_e3def697ca5843beaae24416b51460ec~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_e3def697ca5843beaae24416b51460ec~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_3a954ceaf1684f49b9c277e8b15ce187~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_3a954ceaf1684f49b9c277e8b15ce187~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            },
+            {
+              "@type": "ImageObject",
+              "height": "2048",
+              "width": "1536",
+              "contentUrl": "https://static.wixstatic.com/media/fc8189_277caf6f7d854448acb505fa70f87a3e~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+              "representativeOfPage": true,
+              "thumbnail": {
+                "@type": "ImageObject",
+                "height": "50",
+                "width": "50",
+                "contentUrl": "https://static.wixstatic.com/media/fc8189_277caf6f7d854448acb505fa70f87a3e~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_50,h_50,q_90/file.jpg"
+              }
+            }
+          ],
+          "offers": {
+            "@type": "Offer",
+            "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/product-page/little-sleeping-baby",
+            "priceCurrency": "USD",
+            "price": "60",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "Loves Lovable Babies",
+              "sameAs": "https://loveslovablebabies.wixsite.com/loves-lovable-babies"
+            }
+          }
+        }
+      ],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 1x, https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_812,h_684,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_18285dbe6005402584bbb85db51cb54a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_230,h_307,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_18285dbe6005402584bbb85db51cb54a~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Little sleeping baby",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_18285dbe6005402584bbb85db51cb54a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_18285dbe6005402584bbb85db51cb54a~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: Little sleeping baby",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_5884b28992a04906a86a8003049288dd~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_5884b28992a04906a86a8003049288dd~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: Little sleeping baby",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_d92910f2bc85411b9cd86db17ebd808c~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_d92910f2bc85411b9cd86db17ebd808c~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: Little sleeping baby",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_a494baaa320b4f4ebe52154b9875eb7a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_a494baaa320b4f4ebe52154b9875eb7a~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: Little sleeping baby",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_e3def697ca5843beaae24416b51460ec~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_e3def697ca5843beaae24416b51460ec~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: Little sleeping baby",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_3a954ceaf1684f49b9c277e8b15ce187~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_3a954ceaf1684f49b9c277e8b15ce187~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: Little sleeping baby",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_277caf6f7d854448acb505fa70f87a3e~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fill/w_147,h_196,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_277caf6f7d854448acb505fa70f87a3e~mv2_jpg_v1_fit_w_1536%2Ch_2048%2Cq_90_file.jpg",
+          "alt": "Thumbnail: Little sleeping baby",
+          "srcset": ""
+        }
+      ],
+      "links": [
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/book-online",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/category/all-products",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/followers",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/groups",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/members",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/portfolio"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/followers",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:54.364353+00:00",
+      "sha256_html": "5b4eab43766134254aa7b774965840e94654e52cddf88106f62907e397d8d5d6",
+      "title": "",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible"
+      },
+      "structured_data": [],
+      "image_candidates": [],
+      "links": [],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/groups",
+      "platform": "wix",
+      "observed_at": "2026-10-14T08:59:59.328249+00:00",
+      "sha256_html": "b24eb2a71d50c0cf003b2dc90ca2c0d2870931720a38eb86a980b40e33295a29",
+      "title": "Groups | Loves Lovable Babies",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Groups | Loves Lovable Babies",
+        "og:url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/groups",
+        "og:site_name": "Loves Lovable Babies",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Groups | Loves Lovable Babies"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 1x, https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_812,h_684,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_40,h_40,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_40,h_40,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg 1x, https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_80,h_80,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg 2x"
+        }
+      ],
+      "links": [
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/book-online",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/category/all-products",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/followers",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group/discussion/e24b28ca-902a-4f50-b3b9-a223b556fef3",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/groups",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/members",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/portfolio"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group",
+      "platform": "wix",
+      "observed_at": "2026-10-14T09:00:02.503715+00:00",
+      "sha256_html": "987a4c9df7bafefcaa0c5bc193dda5579c065346ff9d6caf9dfea9a165c8ae83",
+      "title": "Discussion - Loves Lovable Babies Group | Loves Lovable Babies",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "Welcome to the group! You can connect with other members, get updates and share videos.",
+        "robots": "index",
+        "og:title": "Discussion - Loves Lovable Babies Group | Loves Lovable Babies",
+        "og:description": "Welcome to the group! You can connect with other members, get updates and share videos.",
+        "og:image": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_5090,h_3393,al_c/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg",
+        "og:image:width": "5090",
+        "og:image:height": "3393",
+        "og:url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group",
+        "og:site_name": "Loves Lovable Babies",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Discussion - Loves Lovable Babies Group | Loves Lovable Babies",
+        "twitter:description": "Welcome to the group! You can connect with other members, get updates and share videos.",
+        "twitter:image": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_5090,h_3393,al_c/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 1x, https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_812,h_684,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_940,h_240,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_940,h_240,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg 1x, https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_1880,h_480,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg 2x"
+        }
+      ],
+      "links": [
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/book-online",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/category/all-products",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/followers",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group/discussion/e24b28ca-902a-4f50-b3b9-a223b556fef3",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group/members",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/groups",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/members",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/portfolio"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+      "platform": "wix",
+      "observed_at": "2026-10-14T09:00:05.197794+00:00",
+      "sha256_html": "999c3e42f714b79411e2f509d9929c9cb412df9a6fb4470d0d5eb9de8592a3da",
+      "title": "Home | Loves Lovable Babies",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "og:title": "Home | Loves Lovable Babies",
+        "og:url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+        "og:site_name": "Loves Lovable Babies",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Home | Loves Lovable Babies"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 1x, https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_812,h_684,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_f7490d4c4f6f43408d3a2191053b5d0d~mv2.jpeg/v1/fill/w_318,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_f7490d4c4f6f43408d3a2191053b5d0d~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_f7490d4c4f6f43408d3a2191053b5d0d~mv2.jpeg/v1/fill/w_318,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_f7490d4c4f6f43408d3a2191053b5d0d~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_f7490d4c4f6f43408d3a2191053b5d0d~mv2.jpeg/v1/fill/w_636,h_788,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_f7490d4c4f6f43408d3a2191053b5d0d~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg/v1/fill/w_264,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg/v1/fill/w_264,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg/v1/fill/w_528,h_704,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_af248c68e2fd42f7b6de691984b02c15~mv2.jpeg/v1/fill/w_248,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_af248c68e2fd42f7b6de691984b02c15~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_af248c68e2fd42f7b6de691984b02c15~mv2.jpeg/v1/fill/w_248,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_af248c68e2fd42f7b6de691984b02c15~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_af248c68e2fd42f7b6de691984b02c15~mv2.jpeg/v1/fill/w_496,h_660,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_af248c68e2fd42f7b6de691984b02c15~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg/v1/fill/w_260,h_347,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg/v1/fill/w_260,h_347,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg/v1/fill/w_520,h_694,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_a615b84d4ea846a98707d3a47b77474f~mv2.jpg/v1/fill/w_214,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a615b84d4ea846a98707d3a47b77474f~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_a615b84d4ea846a98707d3a47b77474f~mv2.jpg/v1/fill/w_214,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a615b84d4ea846a98707d3a47b77474f~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_a615b84d4ea846a98707d3a47b77474f~mv2.jpg/v1/fill/w_428,h_572,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a615b84d4ea846a98707d3a47b77474f~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_ca3c95a50e29479fab96796a6499df1a~mv2.jpg/v1/fill/w_182,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_ca3c95a50e29479fab96796a6499df1a~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_ca3c95a50e29479fab96796a6499df1a~mv2.jpg/v1/fill/w_182,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_ca3c95a50e29479fab96796a6499df1a~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_ca3c95a50e29479fab96796a6499df1a~mv2.jpg/v1/fill/w_364,h_422,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_ca3c95a50e29479fab96796a6499df1a~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_3ab4b72739ce4fb2bc73ec9f16a79da5~mv2.jpg/v1/fill/w_182,h_242,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_3ab4b72739ce4fb2bc73ec9f16a79da5~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_3ab4b72739ce4fb2bc73ec9f16a79da5~mv2.jpg/v1/fill/w_182,h_242,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_3ab4b72739ce4fb2bc73ec9f16a79da5~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_3ab4b72739ce4fb2bc73ec9f16a79da5~mv2.jpg/v1/fill/w_364,h_484,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_3ab4b72739ce4fb2bc73ec9f16a79da5~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_8ae99d42a40940e482633eda553ff092~mv2.jpeg/v1/fill/w_258,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8ae99d42a40940e482633eda553ff092~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_8ae99d42a40940e482633eda553ff092~mv2.jpeg/v1/fill/w_258,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8ae99d42a40940e482633eda553ff092~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_8ae99d42a40940e482633eda553ff092~mv2.jpeg/v1/fill/w_516,h_684,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8ae99d42a40940e482633eda553ff092~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_41e83b6aa9cf42d6b3b35a8fdf56fa81~mv2.jpg/v1/fill/w_306,h_408,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_41e83b6aa9cf42d6b3b35a8fdf56fa81~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_41e83b6aa9cf42d6b3b35a8fdf56fa81~mv2.jpg/v1/fill/w_306,h_408,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_41e83b6aa9cf42d6b3b35a8fdf56fa81~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_41e83b6aa9cf42d6b3b35a8fdf56fa81~mv2.jpg/v1/fill/w_612,h_816,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_41e83b6aa9cf42d6b3b35a8fdf56fa81~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_2029b4cf63344f1fb85570a1b1723b9c~mv2.jpg/v1/fill/w_217,h_290,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_2029b4cf63344f1fb85570a1b1723b9c~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_2029b4cf63344f1fb85570a1b1723b9c~mv2.jpg/v1/fill/w_217,h_290,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_2029b4cf63344f1fb85570a1b1723b9c~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_2029b4cf63344f1fb85570a1b1723b9c~mv2.jpg/v1/fill/w_434,h_580,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_2029b4cf63344f1fb85570a1b1723b9c~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_4c6bcd1661b24474a73556e63828a462~mv2.jpg/v1/fill/w_217,h_290,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_4c6bcd1661b24474a73556e63828a462~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_4c6bcd1661b24474a73556e63828a462~mv2.jpg/v1/fill/w_217,h_290,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_4c6bcd1661b24474a73556e63828a462~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_4c6bcd1661b24474a73556e63828a462~mv2.jpg/v1/fill/w_434,h_580,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_4c6bcd1661b24474a73556e63828a462~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_a4119a8f6fc84bd198575efc8e8964eb~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a4119a8f6fc84bd198575efc8e8964eb~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_a4119a8f6fc84bd198575efc8e8964eb~mv2.jpg/v1/fill/w_227,h_303,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a4119a8f6fc84bd198575efc8e8964eb~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_a4119a8f6fc84bd198575efc8e8964eb~mv2.jpg/v1/fill/w_454,h_606,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a4119a8f6fc84bd198575efc8e8964eb~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_6ccf0c8340c7448395cfd364c2d2419d~mv2.jpg/v1/fill/w_198,h_263,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6ccf0c8340c7448395cfd364c2d2419d~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_6ccf0c8340c7448395cfd364c2d2419d~mv2.jpg/v1/fill/w_198,h_263,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6ccf0c8340c7448395cfd364c2d2419d~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_6ccf0c8340c7448395cfd364c2d2419d~mv2.jpg/v1/fill/w_396,h_526,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6ccf0c8340c7448395cfd364c2d2419d~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_98eea0f70682463cb687bea15c287297~mv2.jpg/v1/fill/w_289,h_385,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_98eea0f70682463cb687bea15c287297~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_98eea0f70682463cb687bea15c287297~mv2.jpg/v1/fill/w_289,h_385,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_98eea0f70682463cb687bea15c287297~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_98eea0f70682463cb687bea15c287297~mv2.jpg/v1/fill/w_578,h_770,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_98eea0f70682463cb687bea15c287297~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_7dd468096a554598bd9399aff71f9dd5~mv2.jpeg/v1/fill/w_258,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_7dd468096a554598bd9399aff71f9dd5~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_7dd468096a554598bd9399aff71f9dd5~mv2.jpeg/v1/fill/w_258,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_7dd468096a554598bd9399aff71f9dd5~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_7dd468096a554598bd9399aff71f9dd5~mv2.jpeg/v1/fill/w_516,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_7dd468096a554598bd9399aff71f9dd5~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_90c6db5cd8894e8aad02d722eec842fd~mv2.jpeg/v1/fill/w_264,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_90c6db5cd8894e8aad02d722eec842fd~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_90c6db5cd8894e8aad02d722eec842fd~mv2.jpeg/v1/fill/w_264,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_90c6db5cd8894e8aad02d722eec842fd~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_90c6db5cd8894e8aad02d722eec842fd~mv2.jpeg/v1/fill/w_528,h_704,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_90c6db5cd8894e8aad02d722eec842fd~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg/v1/fill/w_158,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg/v1/fill/w_158,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg/v1/fill/w_316,h_422,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6f914bab6ea0444f9bbcd04fb5fc27aa~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg/v1/fill/w_158,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg/v1/fill/w_158,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg/v1/fill/w_316,h_422,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8815221fbc6d4ce68f53c473f5ea6ab2~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_7cfff42d3a3d482aa8daff97f6d9fe2e~mv2.jpeg/v1/fill/w_214,h_280,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_7cfff42d3a3d482aa8daff97f6d9fe2e~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_7cfff42d3a3d482aa8daff97f6d9fe2e~mv2.jpeg/v1/fill/w_214,h_280,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_7cfff42d3a3d482aa8daff97f6d9fe2e~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_7cfff42d3a3d482aa8daff97f6d9fe2e~mv2.jpeg/v1/fill/w_428,h_560,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_7cfff42d3a3d482aa8daff97f6d9fe2e~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_3df13092e0904218a46f2bd30bbec872~mv2.jpeg/v1/fill/w_238,h_317,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_3df13092e0904218a46f2bd30bbec872~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_3df13092e0904218a46f2bd30bbec872~mv2.jpeg/v1/fill/w_238,h_317,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_3df13092e0904218a46f2bd30bbec872~mv2.jpeg 1x, https://static.wixstatic.com/media/fc8189_3df13092e0904218a46f2bd30bbec872~mv2.jpeg/v1/fill/w_476,h_634,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_3df13092e0904218a46f2bd30bbec872~mv2.jpeg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_843d693af04a4bb4bb9e1a643fa2f298~mv2.jpg/v1/fill/w_265,h_354,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_843d693af04a4bb4bb9e1a643fa2f298~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_843d693af04a4bb4bb9e1a643fa2f298~mv2.jpg/v1/fill/w_265,h_354,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_843d693af04a4bb4bb9e1a643fa2f298~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_843d693af04a4bb4bb9e1a643fa2f298~mv2.jpg/v1/fill/w_530,h_708,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_843d693af04a4bb4bb9e1a643fa2f298~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_52f284f8e33b4124a2ca0075acc1818b~mv2.jpg/v1/fill/w_217,h_290,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_52f284f8e33b4124a2ca0075acc1818b~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_52f284f8e33b4124a2ca0075acc1818b~mv2.jpg/v1/fill/w_217,h_290,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_52f284f8e33b4124a2ca0075acc1818b~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_52f284f8e33b4124a2ca0075acc1818b~mv2.jpg/v1/fill/w_434,h_580,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_52f284f8e33b4124a2ca0075acc1818b~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_4bf0c24d50174c5cb39f63d65ced2614~mv2.jpg/v1/fill/w_232,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_4bf0c24d50174c5cb39f63d65ced2614~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_4bf0c24d50174c5cb39f63d65ced2614~mv2.jpg/v1/fill/w_232,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_4bf0c24d50174c5cb39f63d65ced2614~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_4bf0c24d50174c5cb39f63d65ced2614~mv2.jpg/v1/fill/w_464,h_620,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_4bf0c24d50174c5cb39f63d65ced2614~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_68470b9b9adc466d9ecc00077c202ffd~mv2.jpg/v1/fill/w_506,h_506,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_68470b9b9adc466d9ecc00077c202ffd~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_68470b9b9adc466d9ecc00077c202ffd~mv2.jpg/v1/fill/w_506,h_506,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_68470b9b9adc466d9ecc00077c202ffd~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_68470b9b9adc466d9ecc00077c202ffd~mv2.jpg/v1/fill/w_1012,h_1012,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_68470b9b9adc466d9ecc00077c202ffd~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_22f40f8ccf534aefb5f539fbba2dd9fe~mv2.jpg/v1/fill/w_282,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_22f40f8ccf534aefb5f539fbba2dd9fe~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_22f40f8ccf534aefb5f539fbba2dd9fe~mv2.jpg/v1/fill/w_282,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_22f40f8ccf534aefb5f539fbba2dd9fe~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_22f40f8ccf534aefb5f539fbba2dd9fe~mv2.jpg/v1/fill/w_564,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_22f40f8ccf534aefb5f539fbba2dd9fe~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_482830ee2b044d24bd6a3659d30aa6eb~mv2.jpg/v1/fill/w_282,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_482830ee2b044d24bd6a3659d30aa6eb~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_482830ee2b044d24bd6a3659d30aa6eb~mv2.jpg/v1/fill/w_282,h_211,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_482830ee2b044d24bd6a3659d30aa6eb~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_482830ee2b044d24bd6a3659d30aa6eb~mv2.jpg/v1/fill/w_564,h_422,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_482830ee2b044d24bd6a3659d30aa6eb~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_bf438f8e793f46cf8b0073a6617de497~mv2.jpg/v1/fill/w_282,h_376,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_bf438f8e793f46cf8b0073a6617de497~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_bf438f8e793f46cf8b0073a6617de497~mv2.jpg/v1/fill/w_282,h_376,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_bf438f8e793f46cf8b0073a6617de497~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_bf438f8e793f46cf8b0073a6617de497~mv2.jpg/v1/fill/w_564,h_752,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_bf438f8e793f46cf8b0073a6617de497~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_032339e05b0e43c587c6eb8b454150ac~mv2.jpg/v1/fill/w_324,h_432,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_032339e05b0e43c587c6eb8b454150ac~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_032339e05b0e43c587c6eb8b454150ac~mv2.jpg/v1/fill/w_324,h_432,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_032339e05b0e43c587c6eb8b454150ac~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_032339e05b0e43c587c6eb8b454150ac~mv2.jpg/v1/fill/w_648,h_864,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_032339e05b0e43c587c6eb8b454150ac~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_3de85e3060da4e1b9a4e2b9d7c24d713~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/461971588_122178839210241317_1323548325058190361_n.jpg",
+          "alt": "461971588_122178839210241317_1323548325058190361_n.jpg",
+          "srcset": "https://static.wixstatic.com/media/fc8189_3de85e3060da4e1b9a4e2b9d7c24d713~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/461971588_122178839210241317_1323548325058190361_n.jpg 1x, https://static.wixstatic.com/media/fc8189_3de85e3060da4e1b9a4e2b9d7c24d713~mv2.jpg/v1/fill/w_568,h_688,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/461971588_122178839210241317_1323548325058190361_n.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_ad56fbee4011478db0130b3faf816925~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/463900995_122182416554241317_1547320443024397029_n.jpg",
+          "alt": "463900995_122182416554241317_1547320443024397029_n.jpg",
+          "srcset": "https://static.wixstatic.com/media/fc8189_ad56fbee4011478db0130b3faf816925~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/463900995_122182416554241317_1547320443024397029_n.jpg 1x, https://static.wixstatic.com/media/fc8189_ad56fbee4011478db0130b3faf816925~mv2.jpg/v1/fill/w_568,h_688,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/463900995_122182416554241317_1547320443024397029_n.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_b2ce5b5ae41b44dc9a23eeddc016b61d~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a.jpg",
+          "alt": "2a.jpg",
+          "srcset": "https://static.wixstatic.com/media/fc8189_b2ce5b5ae41b44dc9a23eeddc016b61d~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a.jpg 1x, https://static.wixstatic.com/media/fc8189_b2ce5b5ae41b44dc9a23eeddc016b61d~mv2.jpg/v1/fill/w_568,h_688,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2a.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_9c8dd13fa4964eeb8982622c5898b953~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/7.jpg",
+          "alt": "7.jpg",
+          "srcset": "https://static.wixstatic.com/media/fc8189_9c8dd13fa4964eeb8982622c5898b953~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/7.jpg 1x, https://static.wixstatic.com/media/fc8189_9c8dd13fa4964eeb8982622c5898b953~mv2.jpg/v1/fill/w_568,h_688,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_a8938bf8516d49c488da863f0fd2d467~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3a.jpg",
+          "alt": "3a.jpg",
+          "srcset": "https://static.wixstatic.com/media/fc8189_a8938bf8516d49c488da863f0fd2d467~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3a.jpg 1x, https://static.wixstatic.com/media/fc8189_a8938bf8516d49c488da863f0fd2d467~mv2.jpg/v1/fill/w_568,h_688,al_c,lg_1,q_85,enc_avif,quality_auto/3a.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_e101823a7f814b0ba4e939acb3aa6250~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3.jpg",
+          "alt": "3.jpg",
+          "srcset": "https://static.wixstatic.com/media/fc8189_e101823a7f814b0ba4e939acb3aa6250~mv2.jpg/v1/fill/w_284,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3.jpg 1x, https://static.wixstatic.com/media/fc8189_e101823a7f814b0ba4e939acb3aa6250~mv2.jpg/v1/fill/w_568,h_688,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/3.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_5712aeb47a504a89a94f6e9d9927f5b5~mv2.jpg/v1/fill/w_82,h_82,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_5712aeb47a504a89a94f6e9d9927f5b5~mv2.jpg",
+          "alt": "Leonardo_Phoenix_A_highly_detailed_Ultra_HD_3D_artistic_portra_1.jpg",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_cf54a11741174bd4904dd036f86b051f~mv2.jpg/v1/fill/w_185,h_185,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_cf54a11741174bd4904dd036f86b051f~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_cf54a11741174bd4904dd036f86b051f~mv2.jpg/v1/fill/w_185,h_185,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_cf54a11741174bd4904dd036f86b051f~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_cf54a11741174bd4904dd036f86b051f~mv2.jpg/v1/fill/w_370,h_370,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_cf54a11741174bd4904dd036f86b051f~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_a705376f53774f1f85c2d67001293750~mv2.jpg/v1/fill/w_346,h_229,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a705376f53774f1f85c2d67001293750~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_a705376f53774f1f85c2d67001293750~mv2.jpg/v1/fill/w_346,h_229,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a705376f53774f1f85c2d67001293750~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_a705376f53774f1f85c2d67001293750~mv2.jpg/v1/fill/w_692,h_458,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_a705376f53774f1f85c2d67001293750~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_6c4349a08d684a5aa0915aef7dbd5cf4~mv2.jpg/v1/fill/w_152,h_229,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6c4349a08d684a5aa0915aef7dbd5cf4~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_6c4349a08d684a5aa0915aef7dbd5cf4~mv2.jpg/v1/fill/w_152,h_229,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6c4349a08d684a5aa0915aef7dbd5cf4~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_6c4349a08d684a5aa0915aef7dbd5cf4~mv2.jpg/v1/fill/w_304,h_458,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_6c4349a08d684a5aa0915aef7dbd5cf4~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_c49903dbaba54a0b896544cfb242c521~mv2.jpg/v1/fill/w_600,h_389,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_c49903dbaba54a0b896544cfb242c521~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_c49903dbaba54a0b896544cfb242c521~mv2.jpg/v1/fill/w_600,h_389,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_c49903dbaba54a0b896544cfb242c521~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_c49903dbaba54a0b896544cfb242c521~mv2.jpg/v1/fill/w_1200,h_778,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_c49903dbaba54a0b896544cfb242c521~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_d9887435edfe431c9498ce7a32c77918~mv2.jpg/v1/fill/w_310,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_d9887435edfe431c9498ce7a32c77918~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_d9887435edfe431c9498ce7a32c77918~mv2.jpg/v1/fill/w_310,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_d9887435edfe431c9498ce7a32c77918~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_d9887435edfe431c9498ce7a32c77918~mv2.jpg/v1/fill/w_620,h_620,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_d9887435edfe431c9498ce7a32c77918~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_52cea1a7921f4cc9a8c5e0a253ed979e~mv2.jpg/v1/fill/w_296,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_52cea1a7921f4cc9a8c5e0a253ed979e~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_52cea1a7921f4cc9a8c5e0a253ed979e~mv2.jpg/v1/fill/w_296,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_52cea1a7921f4cc9a8c5e0a253ed979e~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_52cea1a7921f4cc9a8c5e0a253ed979e~mv2.jpg/v1/fill/w_592,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_52cea1a7921f4cc9a8c5e0a253ed979e~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_70ad9468cfaa4806b0c85ce610b12df9~mv2.jpg/v1/fill/w_191,h_255,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_70ad9468cfaa4806b0c85ce610b12df9~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_70ad9468cfaa4806b0c85ce610b12df9~mv2.jpg/v1/fill/w_191,h_255,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_70ad9468cfaa4806b0c85ce610b12df9~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_70ad9468cfaa4806b0c85ce610b12df9~mv2.jpg/v1/fill/w_382,h_510,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_70ad9468cfaa4806b0c85ce610b12df9~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_8b79f3a384b741acb89de682660528c0~mv2.jpg/v1/fill/w_234,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8b79f3a384b741acb89de682660528c0~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_8b79f3a384b741acb89de682660528c0~mv2.jpg/v1/fill/w_234,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8b79f3a384b741acb89de682660528c0~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_8b79f3a384b741acb89de682660528c0~mv2.jpg/v1/fill/w_468,h_704,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_8b79f3a384b741acb89de682660528c0~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_55fbcf003a5a4df1b58dac6cf181259a~mv2.jpg/v1/fill/w_382,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_55fbcf003a5a4df1b58dac6cf181259a~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_55fbcf003a5a4df1b58dac6cf181259a~mv2.jpg/v1/fill/w_382,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_55fbcf003a5a4df1b58dac6cf181259a~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_55fbcf003a5a4df1b58dac6cf181259a~mv2.jpg/v1/fill/w_764,h_508,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_55fbcf003a5a4df1b58dac6cf181259a~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_aea3bc157ed84d44b5e043d57b90d78b~mv2.jpg/v1/fill/w_289,h_192,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_aea3bc157ed84d44b5e043d57b90d78b~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_aea3bc157ed84d44b5e043d57b90d78b~mv2.jpg/v1/fill/w_289,h_192,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_aea3bc157ed84d44b5e043d57b90d78b~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_aea3bc157ed84d44b5e043d57b90d78b~mv2.jpg/v1/fill/w_578,h_384,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_aea3bc157ed84d44b5e043d57b90d78b~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_cdd8f4228f244fd8b210876023e34ca3~mv2.jpg/v1/fill/w_90,h_120,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/fc8189_cdd8f4228f244fd8b210876023e34ca3~mv2.jpg",
+          "alt": "8.jpg",
+          "srcset": ""
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_1bd48d49677344e8b363943915c51a2e~mv2.png/v1/fill/w_324,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1bd48d49677344e8b363943915c51a2e~mv2.png",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_1bd48d49677344e8b363943915c51a2e~mv2.png/v1/fill/w_324,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1bd48d49677344e8b363943915c51a2e~mv2.png 1x, https://static.wixstatic.com/media/fc8189_1bd48d49677344e8b363943915c51a2e~mv2.png/v1/fill/w_499,h_925,al_c,q_90,enc_avif,quality_auto/fc8189_1bd48d49677344e8b363943915c51a2e~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png 1x, https://static.wixstatic.com/media/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png 2x"
+        }
+      ],
+      "links": [
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/book-online",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/category/all-products",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/followers",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/groups",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/members",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/portfolio"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group/members",
+      "platform": "wix",
+      "observed_at": "2026-10-14T09:00:06.484479+00:00",
+      "sha256_html": "57baf826b77c8fc06ab127d9bb2df0c37f8f4d91ee515893150f9ca7ab5d8de1",
+      "title": "Members - Loves Lovable Babies Group | Loves Lovable Babies",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "Welcome to the group! You can connect with other members, get updates and share videos.",
+        "robots": "noindex",
+        "og:title": "Members - Loves Lovable Babies Group | Loves Lovable Babies",
+        "og:description": "Welcome to the group! You can connect with other members, get updates and share videos.",
+        "og:image": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_5090,h_3393,al_c/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg",
+        "og:image:width": "5090",
+        "og:image:height": "3393",
+        "og:url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group/members",
+        "og:site_name": "Loves Lovable Babies",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Members - Loves Lovable Babies Group | Loves Lovable Babies",
+        "twitter:description": "Welcome to the group! You can connect with other members, get updates and share videos.",
+        "twitter:image": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_5090,h_3393,al_c/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 1x, https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_812,h_684,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_940,h_240,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_940,h_240,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg 1x, https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_1880,h_480,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg 2x"
+        }
+      ],
+      "links": [
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/book-online",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/category/all-products",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/followers",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/groups",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/members",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/portfolio"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group/discussion/e24b28ca-902a-4f50-b3b9-a223b556fef3",
+      "platform": "wix",
+      "observed_at": "2026-10-14T09:00:09.504928+00:00",
+      "sha256_html": "380fd30292b39864db6a38c32842d17d52cbf1399cf245a2553df0bbe0ea8809",
+      "title": "Welcome to our group  Loves Lovable Babies Group ! A space f | Loves Lovable Babies Group | Loves Lovable Babies",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "Welcome to our group  Loves Lovable Babies Group ! A space for us to connect and share with each other. Start by posting your thoughts, sharing media, or creating a poll.",
+        "robots": "index",
+        "og:title": "Welcome to our group  Loves Lovable Babies Group ! A space f",
+        "og:description": "Welcome to our group  Loves Lovable Babies Group ! A space for us to connect and share with each other. Start by posting your thoughts, sharing media, or creating a poll.",
+        "og:url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group/discussion/e24b28ca-902a-4f50-b3b9-a223b556fef3",
+        "og:site_name": "Loves Lovable Babies",
+        "og:type": "article",
+        "article:published_time": "2025-01-14T02:49:58.742Z",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Welcome to our group  Loves Lovable Babies Group ! A space f",
+        "twitter:description": "Welcome to our group  Loves Lovable Babies Group ! A space for us to connect and share with each other. Start by posting your thoughts, sharing media, or creating a poll."
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 1x, https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_812,h_684,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_940,h_240,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_940,h_240,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg 1x, https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_1880,h_480,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg 2x"
+        }
+      ],
+      "links": [
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/book-online",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/category/all-products",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/followers",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group/discussion",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group/discussion/e24b28ca-902a-4f50-b3b9-a223b556fef3",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group/members",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/groups",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/members",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/portfolio"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    },
+    {
+      "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group/discussion",
+      "platform": "wix",
+      "observed_at": "2026-10-14T09:00:12.310303+00:00",
+      "sha256_html": "111c39035ee70eb74d225685b8b1c34a4c2a0dd96ede5a11c62e333cc11eb463",
+      "title": "Discussion - Loves Lovable Babies Group | Loves Lovable Babies",
+      "metadata": {
+        "viewport": "width=device-width, initial-scale=1",
+        "generator": "Wix.com Website Builder",
+        "format-detection": "telephone=no",
+        "skype_toolbar": "skype_toolbar_parser_compatible",
+        "description": "Welcome to the group! You can connect with other members, get updates and share videos.",
+        "robots": "index",
+        "og:title": "Discussion - Loves Lovable Babies Group | Loves Lovable Babies",
+        "og:description": "Welcome to the group! You can connect with other members, get updates and share videos.",
+        "og:image": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_5090,h_3393,al_c/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg",
+        "og:image:width": "5090",
+        "og:image:height": "3393",
+        "og:url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group/discussion",
+        "og:site_name": "Loves Lovable Babies",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Discussion - Loves Lovable Babies Group | Loves Lovable Babies",
+        "twitter:description": "Welcome to the group! You can connect with other members, get updates and share videos.",
+        "twitter:image": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_5090,h_3393,al_c/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg"
+      },
+      "structured_data": [],
+      "image_candidates": [
+        {
+          "url": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png",
+          "alt": "Facebook",
+          "srcset": "https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 1x, https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_406,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 1x, https://static.wixstatic.com/media/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg/v1/fill/w_812,h_684,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc8189_1ffe936e86fc405dbf69fadeba51cdf7~mv2.jpg 2x"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_940,h_240,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg",
+          "alt": "",
+          "srcset": "https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_940,h_240,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg 1x, https://static.wixstatic.com/media/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg/v1/fill/w_1880,h_480,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/1cd9b7_fa5dc5086eab48c2bf0f5df91358187a~mv2.jpeg 2x"
+        }
+      ],
+      "links": [
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/book-online",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/category/all-products",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/followers",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group/discussion/e24b28ca-902a-4f50-b3b9-a223b556fef3",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/group/loves-lovable-babies-group/members",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/groups",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/members",
+        "https://loveslovablebabies.wixsite.com/loves-lovable-babies/portfolio"
+      ],
+      "extraction_status": "candidate_unreviewed"
+    }
+  ],
+  "notice": "Discovery evidence only. No images copied; no status or release-date inference."
+}

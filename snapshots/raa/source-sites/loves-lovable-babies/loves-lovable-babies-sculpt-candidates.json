@@ -1,0 +1,142 @@
+{
+  "extractor_version": "candidate-extractor-v3-preorder-evidence",
+  "source": "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+  "scan_completed_at": "2026-10-14T09:00:13.311574+00:00",
+  "scan_complete": false,
+  "pages_succeeded": 12,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "name": "click to see more here",
+      "source_url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/product-page/hand-crafted-resin-doll-eyes",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "hand crafted resin doll eyes created by Beth Jewell Perry at Beths Bundles Of Joy &#010;10.00 per set plus 5.00 shipping in the u.s&#010;this are hand made eyes an will have some flaws and or imperfections",
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_19ca739b30dd4d32a03291da7034d842~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_6d70b488e0834952b55c9e8e6be1780b~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_7ea267040e544705afd40cf3585f5ffc~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_07838b734b764344a06d3b0e2de4d83a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_c84ae4bf31c24618a980443518c65bd2~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_d68001ac0603439d94438103a9dfc3d5~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_42be92b7fbe2466ab15e996d98f7f209~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_6bb420cb4b474e2b8f57063f2f6ad3d2~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_9d80b71cf8b545ee99d79caa5cf6b7b6~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_904579b390bf4226b999f6bd7cedb4b3~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        }
+      ],
+      "image_count": 10,
+      "advertised_offers": [
+        {
+          "price": "15",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/product-page/hand-crafted-resin-doll-eyes"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    },
+    {
+      "name": "Little sleeping baby",
+      "source_url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/product-page/little-sleeping-baby",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "Mini Little Sleeping baby by D3 Creations painted by me&#010;3 inch detailed mini flate bottom fullbody soft silicone babydoll",
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_18285dbe6005402584bbb85db51cb54a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_5884b28992a04906a86a8003049288dd~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_d92910f2bc85411b9cd86db17ebd808c~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_a494baaa320b4f4ebe52154b9875eb7a~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_e3def697ca5843beaae24416b51460ec~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_3a954ceaf1684f49b9c277e8b15ce187~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/fc8189_277caf6f7d854448acb505fa70f87a3e~mv2.jpg/v1/fit/w_1536,h_2048,q_90/file.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+          "width": "1536",
+          "height": "2048"
+        }
+      ],
+      "image_count": 7,
+      "advertised_offers": [
+        {
+          "price": "60",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies/product-page/little-sleeping-baby"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    }
+  ],
+  "warnings": [
+    "A crawl can be complete for visible HTML links without covering JavaScript galleries or historical kits.",
+    "Product data are seller claims pending validation; no automatic publication.",
+    "Images are references, not licensed replicas; no download occurs."
+  ]
+}
