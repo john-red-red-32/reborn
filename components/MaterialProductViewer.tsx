@@ -26,7 +26,7 @@ function choicesFromEvidence(evidence:MaterialProductEvidence,family:FamilyProdu
  const b:Choice[]=family.filter(p=>!known.has(p.sourceUrl)).map(p=>({
   title:p.title,sourceUrl:p.sourceUrl,
   photos:p.photoUrls.map(url=>({url,source:p.sourceUrl,credit:"Original supplier — source-matched "+p.title+" product photograph; photographer not independently identified"})),
-  currency:p.currency,nativePrice:p.nativePrice,startingPrice:!!p.unpricedOptions?.length,
+  currency:p.currency,nativePrice:p.nativePrice,startingPrice:p.currency==="EUR"&&p.sourceUrl.includes("kebelka.com"),
   variants:p.variants??[],unpricedOptions:p.unpricedOptions??[],optionNames:p.optionNames??[]
  }));
  return [...a,...b];
