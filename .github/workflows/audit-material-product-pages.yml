@@ -74,7 +74,7 @@ jobs:
                   for phrase in ['Supplier based in','Discover more','SUPPLIER PHOTOGRAPH','Gemini Heat Set Paints']:
                     if phrase not in body:missing.append((path,phrase))
                 else:
-                  for phrase in ['View product at supplier','Delivery &amp; supplier information','Observed supplier price','SUPPLIER PHOTO']:
+                  for phrase in ['View product at supplier','Delivery &amp; supplier information','Supplier price observed','SUPPLIER PHOTO']:
                     if phrase not in body and phrase.replace('&amp;','&') not in body:missing.append((path,phrase))
                   if 'Add to cart' in body or 'Bid now' in body:missing.append((path,'fake commerce action'))
               except Exception as e:missing.append((path,str(e)[:110]))
