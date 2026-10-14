@@ -6,6 +6,8 @@ import type {MaterialProductEvidence,MaterialShippingPolicy} from "../lib/materi
 import type {FamilyProduct} from "../lib/material-product-families";
 import {materialThumbnailStyle,materialHasTighterFraming} from "../lib/material-image-style";
 import {materialDisplayTitle} from "../lib/material-display-title";
+import {materialProductPath} from "../lib/material-routing";
+import WishlistHeart from "./WishlistHeart";
 function parsedPrice(s?:string){const m=s?.match(/[\d,]+(?:\.\d+)?/);return m?Number(m[0].replace(/,/g,"")):undefined}
 export default function MaterialProductViewer({product,evidence,shipping,collectionUrl,rangeName,rangeSlug}:{product:FamilyProduct;evidence:MaterialProductEvidence;shipping:MaterialShippingPolicy;collectionUrl:string;rangeName:string;rangeSlug:string}){
  const{currency,fx,locale}=useShopLocale();
@@ -57,7 +59,7 @@ export default function MaterialProductViewer({product,evidence,shipping,collect
   </div>
   <div className="rbrn-material-buy-detail">
    <span className="section-kicker">{rangeName.toUpperCase()} / ORIGINAL SUPPLIER</span>
-   <h2>{displayTitle.name}<span className="period">.</span></h2>
+   <h2>{displayTitle.name}<span className="period">.</span></h2><div className="rbrn-detail-wishlist"><WishlistHeart placement="inline" item={{type:"material",path:materialProductPath(rangeSlug,product),title:displayTitle.name,subtitle:rangeName,imageUrl:product.photoUrls[0]}}/><span>Save this material</span></div>
    {displayTitle.detail&&<p className="rbrn-material-title-meta">{displayTitle.detail}</p>}
    <p className="rbrn-material-subheading">Explore this product's supplier-listed options, photographs and dated prices. Complete any purchase directly with the original seller.</p>
    <div className="rbrn-material-selected-product"><small>SUPPLIER LISTED PRODUCT</small>

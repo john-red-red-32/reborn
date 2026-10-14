@@ -1,7 +1,7 @@
 name: Verify community foundation
 on:
   push:
-    branches: [main, feature/member-names-avatars-20261014]
+    branches: [main, feature/wishlists-member-dashboard-20261014]
     paths:
       - 'app/**'
       - 'components/**'
@@ -13,6 +13,8 @@ on:
       - 'db/community-moderation-v2.sql'
       - 'db/signup-diagnostics.sql'
       - 'db/member-profile-avatars.sql'
+      - 'db/member-collections-and-drafts.sql'
+      - 'db/member-saved-archive-extension.sql'
       - 'scripts/test-community-name-safety.mjs'
       - 'db/contact-enquiries.sql'
       - '.github/workflows/verify-community-foundation.yml'
@@ -65,7 +67,18 @@ jobs:
           d.execute("INSERT INTO profile_avatars(user_id,mime_type,image_base64,version) VALUES('reborna-editorial','image/webp','UklGRg==',12)")
           assert d.execute("SELECT version FROM profile_avatars").fetchone()[0]==12
           d.execute("DELETE FROM profile_avatars WHERE user_id='reborna-editorial'")
-          print('PASS D1 schemas: idempotent, private contact, safety and anonymous signup diagnostics')
+          d.executescript(Path('db/member-collections-and-drafts.sql').read_text())
+          d.executescript(Path('db/member-collections-and-drafts.sql').read_text())
+          d.execute("INSERT INTO member_saved_items(user_id,item_type,item_path,item_title) VALUES('reborna-editorial','kit','/kits/example/','Example kit')")
+          d.executescript(Path('db/member-saved-archive-extension.sql').read_text())
+          assert d.execute("SELECT item_title FROM member_saved_items WHERE item_path='/kits/example/'").fetchone()[0]=='Example kit'
+          d.execute("INSERT INTO member_saved_items(user_id,item_type,item_path,item_title) VALUES('reborna-editorial','archive','/artists/example/?sculpt=archive-rosie','Rosie')")
+          d.execute("INSERT INTO member_studio_projects(id,user_id,title) VALUES('studio-ci','reborna-editorial','Test work')")
+          d.execute("INSERT INTO member_listing_drafts(id,user_id,title,item_kind) VALUES('sale-ci','reborna-editorial','Test draft','finished_doll')")
+          assert d.execute("SELECT count(*) FROM member_saved_items").fetchone()[0]==2
+          assert d.execute("SELECT count(*) FROM member_studio_projects").fetchone()[0]==1
+          assert d.execute("SELECT count(*) FROM member_listing_drafts").fetchone()[0]==1
+          print('PASS D1 schemas: idempotent community, avatars, collection, studio and private seller drafts')
           PY
       - name: Verify Cloudflare password work-factor compatibility
         run: |
@@ -100,6 +113,7 @@ jobs:
           npm run build
           test -f out/community/index.html
           test -f out/account/index.html
+          test -f out/dashboard/index.html
           test -f out/contact/index.html
           test -f out/messages/index.html
           test -f out/community/moderation/index.html
