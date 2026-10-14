@@ -51,11 +51,20 @@ async function verifyTurnstile(env,request,token,action){
 const moderationVisible=(alias,type)=>"NOT EXISTS (SELECT 1 FROM content_moderation cm WHERE cm.content_type='"+type+"' AND cm.content_id="+alias+".id AND cm.state<>'approved')";
 async function moderationProcess(db,env,type,id,title,body){
  try{
-  if(!env.AI){await db.prepare("UPDATE content_moderation SET state='needs_review',reason_code='other',reason_text='Automated review is temporarily unavailable',updated_at=datetime('now') WHERE content_type=? AND content_id=? AND state='pending'").bind(type,id).run();return}
+  if(!env.COMMUNITY_SAFETY&&!env.AI){await db.prepare("UPDATE content_moderation SET state='needs_review',reason_code='other',reason_text='Automated review is temporarily unavailable',updated_at=datetime('now') WHERE content_type=? AND content_id=? AND state='pending'").bind(type,id).run();return}
   const text=(title?title+'\n':'')+body;
-  const result=await env.AI.run('@cf/meta/llama-guard-3-8b',{messages:[{role:'user',content:text.slice(0,6400)}],max_tokens:90});
-  const verdict=typeof result?.response==='string'?result.response.trim().toLowerCase():'';
-  const safe=/^safe(?:\s|$)/.test(verdict);
+  let safe;
+  if(env.COMMUNITY_SAFETY){
+   const r=await env.COMMUNITY_SAFETY.fetch('https://reborna.internal/moderate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:text.slice(0,6400)})});
+   if(!r.ok)throw Error('AI moderation service unavailable');
+   const result=await r.json();
+   if(typeof result?.safe!=='boolean')throw Error('Unexpected AI moderation result');
+   safe=result.safe;
+  }else{
+   const result=await env.AI.run('@cf/meta/llama-guard-3-8b',{messages:[{role:'user',content:text.slice(0,6400)}],max_tokens:90});
+   const verdict=typeof result?.response==='string'?result.response.trim().toLowerCase():'';
+   safe=/^safe(?:\s|$)/.test(verdict);
+  }
   // Potentially unsafe results are held for a human; critical product criticism is not automatically censored.
   const state=safe?'approved':'needs_review';
   const reason=safe?null:'other';
@@ -84,7 +93,7 @@ export async function onRequest(context){
  if(method!=='GET'&&method!=='POST')return failure('Method not allowed.',405);
  if(method==='POST'&&!originValid(request))return failure('Invalid request origin.',403);
  try{
- if(method==='GET'&&path==='status')return response({available:true,registrationOpen:emailReady(env)&&!!(env.TURNSTILE_SITE_KEY&&env.TURNSTILE_SECRET_KEY),turnstileSiteKey:env.TURNSTILE_SITE_KEY||null,moderation:'review-before-publication',mediaUploads:false,launch:'editorial'});
+ if(method==='GET'&&path==='status')return response({available:true,registrationOpen:emailReady(env)&&!!(env.TURNSTILE_SITE_KEY&&env.TURNSTILE_SECRET_KEY),turnstileSiteKey:env.TURNSTILE_SITE_KEY||null,moderation:'review-before-publication',aiModerationReady:!!(env.COMMUNITY_SAFETY||env.AI),mediaUploads:false,launch:'editorial'});
  if(!(await throttle(db,request,'all',280,3600)))return failure('Too many requests. Please try again later.',429);
  if(method==='GET'&&path==='posts'){
   const category=clean(query.get('category'),30),product=clean(query.get('product'),260),search=clean(query.get('q'),100),page=Math.min(40,Math.max(1,Number(query.get('page'))||1)),offset=(page-1)*20;
