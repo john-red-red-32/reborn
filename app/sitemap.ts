@@ -6,6 +6,9 @@ import {materialProductPages} from "../lib/material-routing";
 import {communityEvents} from "../lib/community-events";
 import {canonical} from "../lib/seo";
 
+// Next's sitemap serializer does not XML-escape image query strings.
+// Preserve exact remote image URLs while escaping reserved XML characters.
+const imageXmlUrl=(url:string)=>url.replace(/&amp;/g,"&").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 export default function sitemap():MetadataRoute.Sitemap{
  const pages:string[]=[
   "/","/real-kits/","/artists/","/materials/","/events/","/community/",
@@ -14,16 +17,16 @@ export default function sitemap():MetadataRoute.Sitemap{
  const fixed=pages.map(path=>({url:canonical(path)}));
  const artistPages=artists.map(artist=>({
   url:canonical("/artists/"+artist.slug+"/"),
-  ...(artist.images?.[0]?.url?{images:[artist.images[0].url]}:{})
+  ...(artist.images?.[0]?.url?{images:[imageXmlUrl(artist.images[0].url)]}:{})
  }));
  const kitPages=verifiedKits.map(kit=>({
   url:canonical("/kits/"+kit.slug+"/"),
-  ...(kit.photos?.length?{images:kit.photos.slice(0,4).map(photo=>photo.url)}:{})
+  ...(kit.photos?.length?{images:kit.photos.slice(0,4).map(photo=>imageXmlUrl(photo.url))}:{})
  }));
  const ranges=supplierListings.map(listing=>({url:canonical("/materials/"+listing.slug+"/")}));
  const materialPages=materialProductPages.map(item=>({
   url:canonical("/materials/"+item.rangeSlug+"/"+item.productSlug+"/"),
-  ...(item.product.photoUrls.length?{images:item.product.photoUrls.slice(0,3)}:{})
+  ...(item.product.photoUrls.length?{images:item.product.photoUrls.slice(0,3).map(imageXmlUrl)}:{})
  }));
  const events=communityEvents.map(event=>({url:canonical("/events/"+event.slug+"/")}));
  // Avoid duplicates if source feeds repeat a merchant slug; never invent lastmod.
