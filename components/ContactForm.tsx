@@ -19,11 +19,11 @@ export default function ContactForm(){
  const[error,setError]=useState(""),[success,setSuccess]=useState(""),[reference,setReference]=useState("");
  useEffect(()=>{let live=true;fetch('/api/community/status',{cache:'no-store'}).then(r=>r.json()).then(d=>{if(live)setSiteKey(d.turnstileSiteKey||"")}).catch(()=>{});return()=>{live=false}},[]);
  async function submit(e:React.FormEvent<HTMLFormElement>){
-  e.preventDefault();setError("");setSuccess("");
+  e.preventDefault();const website=(e.currentTarget.elements.namedItem("website") as HTMLInputElement|null)?.value||"";setError("");setSuccess("");
   if(!token){setError("Please complete the security check.");return}
   setSending(true);
   try{
-   const r=await fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json"},credentials:"same-origin",body:JSON.stringify({name,email,category,message,turnstileToken:token,website:""})});
+   const r=await fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json"},credentials:"same-origin",body:JSON.stringify({name,email,category,message,turnstileToken:token,website})});
    const result=await r.json().catch(()=>({error:"Our contact service is temporarily unavailable."}));
    if(!r.ok)throw Error(result.error||"Your enquiry could not be saved.");
    setSuccess(result.message||"Thank you. We have received your message.");
