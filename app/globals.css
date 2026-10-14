@@ -883,3 +883,21 @@ html{scroll-behavior:smooth}
 .rbrn-material-single-product .rbrn-material-title-meta{margin:3px 0 12px;color:#998474;font-size:11px;letter-spacing:.045em;line-height:1.6}
 .rbrn-range-card-detail{color:#988575;font-size:10px;line-height:1.5;letter-spacing:.025em;margin:-8px 0 16px}
 @media(max-width:520px){.rbrn-material-single-product .rbrn-material-buy-detail>h2{font-size:clamp(32px,9vw,40px);line-height:1.14;overflow-wrap:break-word}.rbrn-material-single-product .rbrn-material-title-meta{font-size:10px;margin-top:2px}.rbrn-range-card-detail{margin-top:-5px;font-size:10px}}
+
+
+/* Source-backed crawlable artist and sculpt indexes: understated editorial links. */
+.rbrn-seo-related,.rbrn-seo-maker-links,.rbrn-seo-archive-names{padding:35px 0;margin:35px auto;border-top:1px solid #e4d7ca;max-width:1260px}
+.rbrn-seo-related h2,.rbrn-seo-maker-links h2,.rbrn-seo-archive-names h2{font:normal clamp(27px,3.4vw,42px)/1.25 "Playfair Display",Georgia,serif;color:#574334;letter-spacing:-.025em;margin:13px 0}
+.rbrn-seo-related>p,.rbrn-seo-maker-links p,.rbrn-seo-archive-names p{color:#8b7867;font:normal 12px/1.95 "DM Sans",Arial,sans-serif;max-width:760px;margin:0 0 20px}
+.rbrn-seo-link-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#e8dcd0;border:1px solid #e8dcd0;margin:23px 0}
+.rbrn-seo-link-grid>a{background:#fffcf8;color:#5e4636;text-decoration:none;padding:17px 16px;font:normal 17px/1.35 "Playfair Display",Georgia,serif;display:flex;flex-direction:column;gap:8px}
+.rbrn-seo-link-grid>a span{font:normal 10px/1.5 "DM Sans",Arial,sans-serif;letter-spacing:.02em;color:#a18c79}
+.rbrn-seo-link-grid>a:hover{background:#f7eee5;color:#60432e}
+.rbrn-seo-related>p>a,.rbrn-seo-maker-links>a,.rbrn-seo-view-all,.rbrn-seo-product-parent a{font-size:12px;font-weight:600;color:#7e5b44;text-underline-offset:3px}
+.rbrn-home-artist-index{width:90%;max-width:1170px;padding:52px 0}
+.rbrn-home-artist-index .rbrn-seo-link-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.rbrn-seo-product-parent{font-size:12px;color:#84705e;line-height:1.9;margin:30px 0 12px}
+.rbrn-seo-archive-names{background:#f8f1ea;padding:25px}
+.rbrn-seo-archive-names p:last-child{overflow-wrap:anywhere;font-size:11px}
+@media(max-width:850px){.rbrn-seo-link-grid,.rbrn-home-artist-index .rbrn-seo-link-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.rbrn-home-artist-index{padding:33px 0}}
+@media(max-width:530px){.rbrn-seo-link-grid>a{font-size:15px;padding:13px}.rbrn-seo-related,.rbrn-seo-maker-links{padding:28px 0;margin:24px auto}.rbrn-seo-archive-names{padding:17px}.rbrn-home-artist-index{width:91%}}
