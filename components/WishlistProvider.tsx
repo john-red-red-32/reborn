@@ -3,17 +3,17 @@ import {createContext,useCallback,useContext,useEffect,useMemo,useState} from "r
 import Link from "next/link";
 import {Check,Heart,X} from "lucide-react";
 
-export type SavedItemType="kit"|"material"|"artist";
+export type SavedItemType="kit"|"material"|"artist"|"archive";
 export type SavedItem={type:SavedItemType;path:string;title:string;subtitle?:string;imageUrl?:string|null;collectionStatus?:"wishlist"|"owned";savedAt?:string};
 type State="loading"|"member"|"guest";
 type WishlistValue={items:SavedItem[];state:State;isSaved:(path:string)=>boolean;toggle:(item:SavedItem)=>Promise<void>;updateStatus:(item:SavedItem,status:"wishlist"|"owned")=>Promise<void>;remove:(item:SavedItem)=>Promise<void>;refresh:()=>Promise<void>};
 const storeKey="reborna-wishlist-v1",legacyKey="reborna-saved-original-kits";
 const Context=createContext<WishlistValue|null>(null);
-const normalized=(path:string)=>path.endsWith("/")?path:path+"/";
+const normalized=(path:string)=>path.includes("?")?path:(path.endsWith("/")?path:path+"/");
 function guestItems():SavedItem[]{
  try{
   const raw=JSON.parse(localStorage.getItem(storeKey)||"[]");
-  const parsed:Array<SavedItem>=Array.isArray(raw)?raw.filter((x):x is SavedItem=>x&&typeof x.path==="string"&&["kit","material","artist"].includes(x.type)&&typeof x.title==="string").slice(0,1000):[];
+  const parsed:Array<SavedItem>=Array.isArray(raw)?raw.filter((x):x is SavedItem=>x&&typeof x.path==="string"&&["kit","material","artist","archive"].includes(x.type)&&typeof x.title==="string").slice(0,1000):[];
   const old=JSON.parse(localStorage.getItem(legacyKey)||"[]");
   if(Array.isArray(old))for(const slug of old){
    if(typeof slug!=="string"||! /^[a-z0-9-]{2,90}$/.test(slug))continue;
