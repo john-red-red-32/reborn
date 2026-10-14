@@ -1,7 +1,14 @@
 name: Verify community foundation
 on:
   push:
-    branches: [feature/community-foundation-20261014]
+    branches: [main, feature/community-foundation-20261014]
+    paths:
+      - 'app/**'
+      - 'components/**'
+      - 'lib/**'
+      - 'functions/api/community/**'
+      - 'db/community-schema.sql'
+      - '.github/workflows/verify-community-foundation.yml'
   workflow_dispatch:
 permissions:
   contents: read
