@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {ArrowRight,CalendarDays,MapPin} from "lucide-react";
-import {sortedCommunityEvents,eventDateLabel,eventMonthLabel} from "../lib/community-events";
+import {sortedCommunityEvents,eventDateLabel,eventMonthLabel,eventFocusLabel} from "../lib/community-events";
 export default function CommunityEventTimeline(){
  const months=new Map<string,typeof sortedCommunityEvents>();
  for(const event of sortedCommunityEvents){
@@ -15,7 +15,7 @@ export default function CommunityEventTimeline(){
     <h3>{eventMonthLabel(month)}<small>{events.length} {events.length===1?"event":"events"}</small></h3>
     {events.map(event=><Link key={event.slug} href={"/events/"+event.slug+"/"} className="rbrn-timeline-entry">
      <div className="rbrn-timeline-date"><CalendarDays size={17}/><time dateTime={event.startDate}>{eventDateLabel(event)}</time></div>
-     <div className="rbrn-timeline-name"><strong>{event.name}</strong><span><MapPin size={13}/>{event.city}, {event.country}</span></div>
+     <div className="rbrn-timeline-name"><strong>{event.name}</strong><span><MapPin size={13}/>{event.city}, {event.country}</span><span className={"rbrn-event-focus rbrn-focus-"+event.focus}><span aria-hidden="true">✳</span> {eventFocusLabel(event)}</span></div>
      <span className="rbrn-timeline-tag">Show / Expo</span><ArrowRight size={18} className="rbrn-timeline-arrow"/>
     </Link>)}
    </section>)}
