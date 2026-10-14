@@ -1,4 +1,4 @@
-name: Audit RAA Ebtehal original kit production
+name: Audit RAA verified sculptor cohorts
 on:
   push:
     branches: [main]
@@ -18,7 +18,9 @@ jobs:
           pages={
             '/artists/ebtehal-abul/':['Ebtehal Abul','artist-feature-image','Original sculpt collection'],
             '/kits/coco-ebtehal-abul/':['Coco','kit-main-photo','kit-photo-provenance','irresistables.com'],
-            '/kits/sara-ebtehal-abul/':['Sara','kit-main-photo','kit-photo-provenance','latiendadelbebereborn.com']
+            '/kits/sara-ebtehal-abul/':['Sara','kit-main-photo','kit-photo-provenance','latiendadelbebereborn.com'],
+            '/artists/eva-brilli/':['Eva Brilli','artist-feature-image'],
+            '/kits/gabriel-eva-brilli/':['Gabriel','kit-main-photo','kit-photo-provenance','irresistables.com']
           }
           for n in range(30):
             failed=[]
@@ -31,9 +33,9 @@ jobs:
                 assert all(term in body for term in needles), (path,[x for x in needles if x not in body])
               except Exception as e:failed.append((path,str(e)[:140]))
             if not failed:
-              print('PASS Ebtehal artist and both kit galleries on live Cloudflare production')
+              print('PASS Ebtehal and Eva artist portfolios and three photographed original kits on live Cloudflare production')
               break
             print('Waiting for Cloudflare',n+1,failed,flush=True)
             time.sleep(8)
-          else:raise SystemExit('RAA addition not yet verified in production')
+          else:raise SystemExit('RAA sculptor cohort not yet verified in production')
           PY
