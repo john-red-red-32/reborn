@@ -36,17 +36,34 @@ async function sendEmail(env,email,subject,html){
  const r=await fetch('https://api.resend.com/emails',{method:'POST',headers:{'Authorization':'Bearer '+env.RESEND_API_KEY,'Content-Type':'application/json'},body:JSON.stringify({from:env.COMMUNITY_MAIL_FROM,to:[email],subject,html})});
  if(!r.ok)throw Error('Email temporarily unavailable');
 }
-async function verifyTurnstile(env,request,token,action){
- if(!env.TURNSTILE_SECRET_KEY||!env.TURNSTILE_SITE_KEY||typeof token!=='string'||token.length<10||token.length>2048)return false;
+async function recordSignupIssue(db,stage,reason){
+ if(!db)return;
+ try{
+  // Intentionally no IP address, email, password, username, Turnstile token, or request payload.
+  await db.prepare('INSERT INTO signup_diagnostics(id,stage,reason) VALUES(?,?,?)').bind(crypto.randomUUID(),stage,reason).run();
+ }catch(e){console.warn('Reborna diagnostic storage unavailable',String(e).slice(0,90))}
+}
+async function verifyTurnstile(env,request,token,action,db=null){
+ const report=async reason=>{if(action==='register')await recordSignupIssue(db,'human_check',reason)};
+ if(!env.TURNSTILE_SECRET_KEY||!env.TURNSTILE_SITE_KEY){await report('configuration_missing');return false}
+ if(typeof token!=='string'||token.length<10||token.length>2048){await report('token_missing_or_expired');return false}
  try{
   const form=new URLSearchParams({secret:env.TURNSTILE_SECRET_KEY,response:token});
   const ip=request.headers.get('CF-Connecting-IP');if(ip)form.set('remoteip',ip);
   const r=await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify',{method:'POST',body:form});
-  if(!r.ok)return false;
+  if(!r.ok){await report('siteverify_http_failure');return false}
   const answer=await r.json();
+  if(answer.success!==true){
+   const errors=Array.isArray(answer['error-codes'])?answer['error-codes']:[];
+   const code=errors.includes('timeout-or-duplicate')?'token_expired_or_reused':errors.includes('invalid-input-secret')?'secret_rejected':errors.includes('invalid-input-response')?'token_invalid':'siteverify_rejected';
+   await report(code);
+   return false;
+  }
+  if(answer.action!==action){await report('action_mismatch');return false}
   const hostname=answer.hostname||'';
-  return answer.success===true&&answer.action===action&&['reborna.co','www.reborna.co','reborna-site.pages.dev'].some(h=>hostname===h||hostname.endsWith('.'+h));
- }catch{return false}
+  if(!['reborna.co','www.reborna.co','reborna-site.pages.dev'].some(h=>hostname===h||hostname.endsWith('.'+h))){await report('hostname_mismatch');return false}
+  return true;
+ }catch(e){await report('siteverify_unavailable');return false}
 }
 const moderationVisible=(alias,type)=>"NOT EXISTS (SELECT 1 FROM content_moderation cm WHERE cm.content_type='"+type+"' AND cm.content_id="+alias+".id AND cm.state<>'approved')";
 async function moderationProcess(db,env,type,id,title,body){
@@ -117,14 +134,20 @@ export async function onRequest(context){
   if(!emailReady(env)||!env.TURNSTILE_SITE_KEY||!env.TURNSTILE_SECRET_KEY)return failure('Registrations are being prepared. Please check back soon.',503);
   if(!(await throttle(db,request,'register',5,3600)))return failure('Please try registering later.',429);
   const d=await readJson(request),email=clean(d.email,254).toLowerCase(),handle=clean(d.handle,24).toLowerCase(),display=clean(d.displayName,70),password=d.password;
-  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)||!validHandle(handle)||display.length<2||typeof password!=='string'||password.length<12||password.length>128)return failure('Use a valid email, a 3–24 character username, a display name and a password of at least 12 characters.');
-  if(!(await verifyTurnstile(env,request,d.turnstileToken,'register')))return failure('Please complete the security check and try again.',403);
-  const existing=await db.prepare('SELECT 1 FROM users WHERE email=? OR handle=?').bind(email,handle).first();if(existing)return failure('That email or username is already registered.',409);
-  const salt=b64(bytes(20)),hash=await passwordHash(password,salt),id=crypto.randomUUID();
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){await recordSignupIssue(db,'form','invalid_email');return failure('Please enter a valid email address.')}
+  if(!validHandle(handle)){await recordSignupIssue(db,'form','invalid_username');return failure('Choose a username of 3–24 letters, numbers or underscores, starting with a letter. Reserved names such as admin or reborna cannot be used.')}
+  if(display.length<2){await recordSignupIssue(db,'form','invalid_display_name');return failure('Please enter a display name of at least two characters.')}
+  if(typeof password!=='string'||password.length<12||password.length>128){await recordSignupIssue(db,'form','invalid_password');return failure('Your password needs between 12 and 128 characters.')}
+  if(!(await verifyTurnstile(env,request,d.turnstileToken,'register',db)))return failure('The human verification did not validate. Please complete a fresh check and try again.',403);
+  const existing=await db.prepare('SELECT 1 FROM users WHERE email=? OR handle=?').bind(email,handle).first();
+  if(existing){await recordSignupIssue(db,'form','account_exists');return failure('That email or username is already registered. You can sign in or use the verification-link option.',409)}
+  let salt,hash;
+  try{salt=b64(bytes(20));hash=await passwordHash(password,salt)}catch(e){await recordSignupIssue(db,'password','hash_failure');throw e}
+  const id=crypto.randomUUID();
   await db.prepare('INSERT INTO users(id,email,handle,display_name,password_salt,password_hash,marketing_email,notification_email) VALUES(?,?,?,?,?,?,?,?)').bind(id,email,handle,display,salt,hash,d.marketingEmail===true?1:0,d.notificationEmail===true?1:0).run();
   const roles=strings(d.roles,ROLES),interests=strings(d.interests,INTERESTS);
   const statements=[...roles.map(x=>db.prepare('INSERT INTO user_roles(user_id,role) VALUES(?,?)').bind(id,x)),...interests.map(x=>db.prepare('INSERT INTO user_interests(user_id,interest) VALUES(?,?)').bind(id,x))];if(statements.length)await db.batch(statements);
-  try{await deliverToken(db,env,{id,email},'verify')}catch(e){return failure('Account created, but the confirmation email could not be sent. Please use resend verification.',503)}
+  try{await deliverToken(db,env,{id,email},'verify')}catch(e){await recordSignupIssue(db,'email','send_failure');return failure('Your account was saved, but the verification email could not be delivered. Choose Sign in, then select Resend my verification link.',503)}
   return response({ok:true,message:'Check your inbox to verify your email before signing in.'},201);
  }
  if(method==='POST'&&path==='resend-verification'){
@@ -270,5 +293,5 @@ export async function onRequest(context){
   await db.prepare('INSERT INTO reports(id,reporter_id,target_type,target_id,reason) VALUES(?,?,?,?,?)').bind(crypto.randomUUID(),user.id,type,target,reason).run();return response({ok:true});
  }
  return failure('Community endpoint not found.',404);
- }catch(e){if(String(e).includes('UNIQUE constraint'))return failure('That email or username is already in use.',409);if(e instanceof SyntaxError)return failure('Invalid request data.');if(['Send JSON data.','Request too large.'].includes(e.message))return failure(e.message);console.error('Community request failed',path,String(e));return failure('The community service could not complete this request.',500)}
+ }catch(e){if(String(e).includes('UNIQUE constraint'))return failure('That email or username is already in use.',409);if(e instanceof SyntaxError)return failure('Invalid request data.');if(['Send JSON data.','Request too large.'].includes(e.message))return failure(e.message);console.error('Community request failed',path,String(e));if(path==='register')await recordSignupIssue(db,'server','unexpected_error');return failure('The community service could not complete this request.',500)}
 }
