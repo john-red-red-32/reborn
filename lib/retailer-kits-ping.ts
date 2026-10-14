@@ -98,6 +98,11 @@ export const retailerKitsPing:VerifiedKit[]=[
     "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. Official artist site restricts commercial photograph use; source-specific, noncommercial sharing terms must be respected.",
     "sources": [
       {
+        "label": "Irresistables — named Ping Lau sculpt and photograph evidence",
+        "url": "https://www.irresistables.com/lovelyn-asleep-reborn-vinyl-doll-kit-by-ping-lau-ultra-soft-vinyl/",
+        "kind": "retailer"
+      },
+      {
         "label": "Ping Lau — authenticated specialist kit archive",
         "url": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
         "kind": "retailer"
@@ -215,8 +220,13 @@ export const retailerKitsPing:VerifiedKit[]=[
     "material": "vinyl",
     "statusLabel": "Original vinyl kit in specialist dealer archive — current stock not confirmed",
     "statusChecked": "2026-10-13",
-    "releaseInfo": "Historical original unfinished kit attributed to Ping Lau by a specialist dealer. Official artist site restricts commercial photograph use; source-specific, noncommercial sharing terms must be respected.",
+    "releaseInfo": "Authentic Soledad original vinyl sculpt with 3/4 limbs; the specialist retailer identifies this kit as retired. Source images illustrate the original design.",
     "sources": [
+      {
+        "label": "Irresistables — named Ping Lau sculpt and photograph evidence",
+        "url": "https://www.irresistables.com/copy-of-soledad-vinyl-doll-kit-by-ping-lau-ldc/",
+        "kind": "retailer"
+      },
       {
         "label": "Ping Lau — authenticated specialist kit archive",
         "url": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
