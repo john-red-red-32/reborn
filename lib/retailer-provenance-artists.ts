@@ -40,7 +40,7 @@ export const retailerProvenanceArtists:VerifiedArtist[]=[
     "slug": "ping-lau",
     "name": "Ping Lau",
     "website": "https://pingart.com/",
-    "bio": "Ping Lau is an original sculptor whose extensive historical kits are documented by specialist retailers. Her official artist website restricts commercial use of photographs; Reborna does not reuse any artist-owned imagery without authorisation.",
+    "bio": "Ping Lau is an original sculptor whose extensive historical kits are documented by specialist retailers. Her own website places restrictions on photo reuse. Reborna links to verified original kits and credits images shared through sources with their own published noncommercial sharing terms.",
     "source": "https://pingart.com/"
   },
   {
