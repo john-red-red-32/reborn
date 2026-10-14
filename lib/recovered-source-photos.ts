@@ -573,6 +573,20 @@ export const recoveredKitPhotos:Record<string,NonNullable<VerifiedKit["photos"]>
       "source": "https://www.irresistables.com/lillegroda-reborn-vinyl-doll-kit-by-sabine-altenkirch-18/",
       "credit": "Irresistables — Lillegroda original reborn sculpt by Sabine Altenkirch; finished prototype image from named original kit gallery"
     }
+  ],
+  "lil-cry-philomena-donnelly": [
+    {
+      "url": "https://static.wixstatic.com/media/e3ae82_34d5ac1a0b43454b971cff9873bbf993~mv2.jpg",
+      "source": "https://www.phildonnellybabies.co.uk/product-page/lil-cry-coming-soon-20",
+      "credit": "Phil Donnelly Babies — original Lil' Cry reborn vinyl sculpt by Philomena Donnelly; named kit-gallery photograph"
+    }
+  ],
+  "tony-gudrun-legler": [
+    {
+      "url": "https://www.oncesoreal.com/images/products/normal/Once-Reborn-Gudrun-Legler-Tony_TOP.jpg",
+      "source": "https://www.oncesoreal.com/tony-set-inkl-koerper/p-6228.html",
+      "credit": "Once So Real — Tony by Gudrun Legler, named original vinyl kit archival photograph; not a claim of current availability"
+    }
   ]
 };
 export const recoveredArtistCovers:Record<string,ArtistImage[]>={
