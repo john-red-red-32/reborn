@@ -1,0 +1,39 @@
+name: Audit RAA Ebtehal original kit production
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/audit-raa-ebtehal.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Verify live photographic artist and original kit pages
+        run: |
+          python3 - <<'PY'
+          import urllib.request,time,html
+          pages={
+            '/artists/ebtehal-abul/':['Ebtehal Abul','artist-feature-image','Original sculpt collection'],
+            '/kits/coco-ebtehal-abul/':['Coco','kit-main-photo','kit-photo-provenance','irresistables.com'],
+            '/kits/sara-ebtehal-abul/':['Sara','kit-main-photo','kit-photo-provenance','latiendadelbebereborn.com']
+          }
+          for n in range(30):
+            failed=[]
+            for path,needles in pages.items():
+              try:
+                request=urllib.request.Request('https://reborna.co'+path,headers={'User-Agent':'Mozilla/5.0'})
+                with urllib.request.urlopen(request,timeout=15) as r:
+                  body=html.unescape(r.read(1200000).decode('utf-8','replace'))
+                  assert r.status==200,path
+                assert all(term in body for term in needles), (path,[x for x in needles if x not in body])
+              except Exception as e:failed.append((path,str(e)[:140]))
+            if not failed:
+              print('PASS Ebtehal artist and both kit galleries on live Cloudflare production')
+              break
+            print('Waiting for Cloudflare',n+1,failed,flush=True)
+            time.sleep(8)
+          else:raise SystemExit('RAA addition not yet verified in production')
+          PY
