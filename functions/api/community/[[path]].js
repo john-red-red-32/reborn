@@ -89,7 +89,7 @@ export async function onRequest(context){
   const t=await db.prepare("SELECT * FROM email_tokens WHERE token_hash=? AND purpose='verify' AND used_at IS NULL AND expires_at>datetime('now')").bind(hash).first();
   if(!t)return failure('Invalid or expired link.',400);
   await db.batch([db.prepare("UPDATE users SET email_verified_at=datetime('now') WHERE id=?").bind(t.user_id),db.prepare("UPDATE email_tokens SET used_at=datetime('now') WHERE token_hash=? AND used_at IS NULL").bind(hash)]);
-  return response({ok:true},{valueOf(){return 200}} ,{'Set-Cookie':await session(db,t.user_id)});
+  return response({ok:true},200,{'Set-Cookie':await session(db,t.user_id)});
  }
  if(method==='POST'&&path==='login'){
   if(!(await throttle(db,request,'login',12,900)))return failure('Too many attempts. Please try again later.',429);
