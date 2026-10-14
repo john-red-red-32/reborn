@@ -31,6 +31,24 @@ async function readJson(request){if(!(request.headers.get('content-type')||'').s
 function clean(value,length){return typeof value==='string'?value.trim().slice(0,length):''}
 function strings(value,allowed){return Array.isArray(value)?[...new Set(value.filter(x=>typeof x==='string'&&allowed.includes(x)))]:[]}
 function validHandle(s){return /^[a-z][a-z0-9_]{2,23}$/.test(s)&&!['admin','support','moderator','reborna','official','staff','system','help'].includes(s)}
+// Saved items are only canonical catalogue paths; never external redirect URLs.
+function canonicalSavedItem(raw){
+ if(!raw||typeof raw!=='object')return null;
+ const type=raw.type,path=raw.path,title=clean(raw.title,150),subtitle=clean(raw.subtitle,160);
+ if(!['kit','material','artist'].includes(type)||!title||!path||typeof path!=='string')return null;
+ const patterns={kit:/^\/kits\/[a-z0-9-]{2,90}\/?$/,material:/^\/materials\/[a-z0-9-]{2,70}\/[a-z0-9-]{2,100}\/?$/,artist:/^\/artists\/[a-z0-9-]{2,90}\/?$/};
+ if(!patterns[type].test(path))return null;
+ const url=typeof raw.imageUrl==='string'?raw.imageUrl.trim():'';
+ let imageUrl=null;
+ if(url&&url.length<=950){
+  try{
+   const parsed=new URL(url,'https://reborna.co');
+   if(['https:'].includes(parsed.protocol)&&!parsed.username&&!parsed.password)imageUrl=parsed.href;
+  }catch{}
+ }
+ return {type,path:path.endsWith('/')?path:path+'/',title,subtitle,imageUrl};
+}
+const cleanProjectPath=value=>typeof value==='string'&&/^\/kits\/[a-z0-9-]{2,90}\/?$/.test(value)?(value.endsWith('/')?value:value+'/'):null;
 function validatedProducts(p){if(!Array.isArray(p))return[];return p.slice(0,3).filter(v=>v&&typeof v.path==='string'&&typeof v.type==='string'&&((v.type==='kit'&&/^\/kits\/[a-z0-9-]+\/?$/.test(v.path))||(v.type==='material'&&/^\/materials\/[a-z0-9-]+\/[a-z0-9-]+\/?$/.test(v.path)))).map(v=>({path:v.path.endsWith('/')?v.path:v.path+'/',type:v.type})).filter((v,i,a)=>a.findIndex(x=>x.path===v.path)===i)}
 function avatarLink(id,version){return version?'/api/community/avatar?id='+encodeURIComponent(id)+'&v='+encodeURIComponent(version):null}
 function publicUser(u){return {id:u.id,handle:u.handle,displayName:u.display_name,bio:u.bio||'',editorial:!!u.is_editorial,allowMessages:!!u.allow_messages,createdAt:u.created_at,avatarUrl:avatarLink(u.id,u.avatar_version)}}
@@ -283,6 +301,98 @@ export async function onRequest(context){
  }
  const user=await getUser(db,request);
  if(!user)return failure('Please sign in to continue.',401);
+ if(method==='GET'&&path==='wishlist'){
+  const items=(await db.prepare('SELECT item_type AS type,item_path AS path,item_title AS title,item_subtitle AS subtitle,image_url AS imageUrl,saved_at AS savedAt FROM member_saved_items WHERE user_id=? ORDER BY saved_at DESC,item_path ASC LIMIT 1200').bind(user.id).all()).results||[];
+  return response({items});
+ }
+ if(method==='POST'&&path==='wishlist'){
+  if(!(await throttle(db,request,'wishlist-write',180,3600)))return failure('Too many collection changes. Please wait before trying again.',429);
+  const data=await readJson(request),action=data?.action;
+  if(action==='remove'){
+   const item=canonicalSavedItem(data?.item);
+   if(!item)return failure('Select a valid Reborna catalogue item.');
+   await db.prepare('DELETE FROM member_saved_items WHERE user_id=? AND item_path=?').bind(user.id,item.path).run();
+   return response({ok:true,saved:false});
+  }
+  if(action==='save'){
+   const item=canonicalSavedItem(data?.item);
+   if(!item)return failure('Select a valid Reborna catalogue item.');
+   const count=await db.prepare('SELECT COUNT(*) AS total FROM member_saved_items WHERE user_id=?').bind(user.id).first();
+   if(count.total>=1000){
+    const exists=await db.prepare('SELECT 1 FROM member_saved_items WHERE user_id=? AND item_path=?').bind(user.id,item.path).first();
+    if(!exists)return failure('Your collection has reached its 1,000 item limit.',409);
+   }
+   await db.prepare('INSERT INTO member_saved_items(user_id,item_type,item_path,item_title,item_subtitle,image_url) VALUES(?,?,?,?,?,?) ON CONFLICT(user_id,item_path) DO UPDATE SET item_title=excluded.item_title,item_subtitle=excluded.item_subtitle,image_url=COALESCE(excluded.image_url,member_saved_items.image_url)').bind(user.id,item.type,item.path,item.title,item.subtitle,item.imageUrl).run();
+   return response({ok:true,saved:true});
+  }
+  if(action==='import'){
+   const entries=Array.isArray(data?.items)?data.items.slice(0,100):[];
+   if(entries.length===0)return response({ok:true,imported:0});
+   const valid=[...new Map(entries.map(canonicalSavedItem).filter(Boolean).map(i=>[i.path,i])).values()];
+   const count=await db.prepare('SELECT COUNT(*) AS total FROM member_saved_items WHERE user_id=?').bind(user.id).first();
+   if(count.total+valid.length>1000)return failure('Your collection has reached its item limit.',409);
+   if(valid.length)await db.batch(valid.map(i=>db.prepare('INSERT INTO member_saved_items(user_id,item_type,item_path,item_title,item_subtitle,image_url) VALUES(?,?,?,?,?,?) ON CONFLICT(user_id,item_path) DO NOTHING').bind(user.id,i.type,i.path,i.title,i.subtitle,i.imageUrl)));
+   return response({ok:true,imported:valid.length});
+  }
+  return failure('Unknown collection action.');
+ }
+ if(method==='GET'&&path==='studio'){
+  const projects=(await db.prepare('SELECT id,title,notes,linked_kit_path AS linkedKitPath,stage,created_at AS createdAt,updated_at AS updatedAt FROM member_studio_projects WHERE user_id=? ORDER BY updated_at DESC LIMIT 100').bind(user.id).all()).results||[];
+  return response({projects});
+ }
+ if(method==='POST'&&path==='studio'){
+  if(!(await throttle(db,request,'studio-write',60,3600)))return failure('Please wait before making more changes.',429);
+  const d=await readJson(request);
+  if(d?.action==='delete'){
+   if(typeof d.id!=='string'||!/^[a-f0-9-]{36}$/.test(d.id))return failure('Invalid project.');
+   await db.prepare('DELETE FROM member_studio_projects WHERE id=? AND user_id=?').bind(d.id,user.id).run();
+   return response({ok:true});
+  }
+  if(!['create','update'].includes(d?.action))return failure('Unknown studio action.');
+  const title=clean(d.title,111),notes=clean(d.notes,1801),linkedKitPath=cleanProjectPath(d.linkedKitPath),stage=clean(d.stage,30)||'planning';
+  if(title.length<2||title.length>110||notes.length>1800||!['planning','painting','rooting','completed'].includes(stage))return failure('Enter a project name and valid stage (notes up to 1,800 characters).');
+  if(d.linkedKitPath&& !linkedKitPath)return failure('Choose a valid original kit link.');
+  if(d.action==='create'){
+   const count=await db.prepare('SELECT count(*) AS total FROM member_studio_projects WHERE user_id=?').bind(user.id).first();
+   if(count.total>=100)return failure('You can currently save up to 100 studio projects.',409);
+   const id=crypto.randomUUID();
+   await db.prepare('INSERT INTO member_studio_projects(id,user_id,title,notes,linked_kit_path,stage) VALUES(?,?,?,?,?,?)').bind(id,user.id,title,notes,linkedKitPath,stage).run();
+   return response({ok:true,id},201);
+  }
+  if(typeof d.id!=='string'||!/^[a-f0-9-]{36}$/.test(d.id))return failure('Invalid project.');
+  const result=await db.prepare("UPDATE member_studio_projects SET title=?,notes=?,linked_kit_path=?,stage=?,updated_at=datetime('now') WHERE id=? AND user_id=?").bind(title,notes,linkedKitPath,stage,d.id,user.id).run();
+  if(!result.meta?.changes)return failure('Project not found.',404);
+  return response({ok:true,id:d.id});
+ }
+ if(method==='GET'&&path==='listing-drafts'){
+  const drafts=(await db.prepare('SELECT id,title,description,item_kind AS kind,asking_price_minor AS askingPriceMinor,currency,created_at AS createdAt,updated_at AS updatedAt FROM member_listing_drafts WHERE user_id=? ORDER BY updated_at DESC LIMIT 100').bind(user.id).all()).results||[];
+  return response({drafts,salesLive:false,purchasesLive:false});
+ }
+ if(method==='POST'&&path==='listing-drafts'){
+  if(!(await throttle(db,request,'listing-drafts-write',45,3600)))return failure('Please wait before changing more listing drafts.',429);
+  const d=await readJson(request);
+  if(d?.action==='delete'){
+   if(typeof d.id!=='string'||!/^[a-f0-9-]{36}$/.test(d.id))return failure('Invalid listing.');
+   await db.prepare('DELETE FROM member_listing_drafts WHERE id=? AND user_id=?').bind(d.id,user.id).run();
+   return response({ok:true});
+  }
+  if(!['create','update'].includes(d?.action))return failure('Unknown draft action.');
+  const title=clean(d.title,111),description=clean(d.description,2501),kind=clean(d.kind,30),currency=clean(d.currency,3)||'GBP';
+  const price=d.askingPriceMinor===null||d.askingPriceMinor===''?null:d.askingPriceMinor;
+  if(title.length<2||title.length>110||description.length>2500||!['finished_doll','original_kit','materials','other'].includes(kind)||!['GBP','USD','EUR'].includes(currency)||!(price===null||Number.isInteger(price)&&price>=0&&price<=100000000))return failure('Please enter a title, item type and optional valid price.');
+  if(d.action==='create'){
+   const count=await db.prepare('SELECT count(*) AS total FROM member_listing_drafts WHERE user_id=?').bind(user.id).first();
+   if(count.total>=100)return failure('You can currently save up to 100 listing drafts.',409);
+   const id=crypto.randomUUID();
+   await db.prepare('INSERT INTO member_listing_drafts(id,user_id,title,description,item_kind,asking_price_minor,currency) VALUES(?,?,?,?,?,?,?)').bind(id,user.id,title,description,kind,price,currency).run();
+   return response({ok:true,id},201);
+  }
+  if(typeof d.id!=='string'||!/^[a-f0-9-]{36}$/.test(d.id))return failure('Invalid listing.');
+  const result=await db.prepare("UPDATE member_listing_drafts SET title=?,description=?,item_kind=?,asking_price_minor=?,currency=?,updated_at=datetime('now') WHERE id=? AND user_id=?").bind(title,description,kind,price,currency,d.id,user.id).run();
+  if(!result.meta?.changes)return failure('Draft not found.',404);
+  return response({ok:true,id:d.id});
+ }
+
  if(method==='POST'&&path==='avatar'){
   if(!(await throttle(db,request,'avatar-upload',12,86400)))return failure('Too many photo changes. Please try tomorrow.',429);
   const d=await readAvatarBody(request);
