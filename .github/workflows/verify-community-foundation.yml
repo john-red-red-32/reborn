@@ -7,6 +7,7 @@ on:
       - 'components/**'
       - 'lib/**'
       - 'functions/api/community/**'
+      - 'workers/community-moderation.js'
       - 'db/community-schema.sql'
       - 'db/community-moderation-v2.sql'
       - '.github/workflows/verify-community-foundation.yml'
@@ -23,7 +24,9 @@ jobs:
         with:
           node-version: '22'
       - name: Validate Pages Function syntax
-        run: node --check 'functions/api/community/[[path]].js'
+        run: |
+          node --check 'functions/api/community/[[path]].js'
+          node --input-type=module --check < workers/community-moderation.js
       - name: Validate fresh schema and attributed editorial topics
         run: |
           python3 - <<'PY'
@@ -62,5 +65,6 @@ jobs:
           test -f out/community/index.html
           test -f out/account/index.html
           test -f out/messages/index.html
+          test -f out/community/moderation/index.html
           test -f out/community/catalogue.json
           echo 'PASS static export of community pages'
