@@ -47,5 +47,5 @@ jobs:
           test -f out/community/index.html
           test -f out/account/index.html
           test -f out/messages/index.html
-          test -f out/community/product-index/index.html || test -f out/community/product-index.json || (find out/community/product-index -maxdepth 2 -type f; exit 1)
+          test -f out/community/catalogue.json
           echo 'PASS static export of community pages'
