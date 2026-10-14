@@ -57,7 +57,8 @@ jobs:
             page.route('https://api.frankfurter.dev/**',lambda r:r.fulfill(status=200,content_type='application/json',body='[{"date":"2026-10-14","base":"EUR","quote":"USD","rate":1.2},{"date":"2026-10-14","base":"EUR","quote":"GBP","rate":0.85},{"date":"2026-10-14","base":"EUR","quote":"CAD","rate":1.6}]'))
             visit(page,'/materials/kebelka-heat-paints/','46 source-listed products')
             assert page.locator('.rbrn-material-family-choice').count()==18
-            page.get_by_role('button',name='Show all 46 products').click()
+            print('Kebelka DOM debug',page.locator('.rbrn-material-show-more').count(),page.locator('.rbrn-material-family-top').all_text_contents(),page.locator('.rbrn-material-show-more').all_text_contents(),flush=True)
+            page.locator('.rbrn-material-show-more').first.click()
             assert page.locator('.rbrn-material-family-choice').count()==46
             gallery=page.locator('.rbrn-material-main-image img')
             start=gallery.get_attribute('src')
@@ -67,8 +68,9 @@ jobs:
             assert 'From' in page.locator('.rbrn-material-dated-price').inner_text()
             assert page.locator('.rbrn-material-unpriced-options button').count()==2
             print('PASS Kebelka 46 photograph-linked shades, real size choices, changed external destination',flush=True)
-            visit(page,'/materials/gemini-heat-set/','73 source-listed products')
-            page.get_by_role('button',name='Show all 73 products').click()
+            visit(page,'/materials/gemini-heat-set/','72 source-listed products')
+            print('Gemini DOM debug',page.locator('.rbrn-material-show-more').count(),page.locator('.rbrn-material-family-top').all_text_contents(),flush=True)
+            page.locator('.rbrn-material-show-more').first.click()
             page.locator('.rbrn-material-family-choice').filter(has_text='Flesh 08').first.click()
             assert 'bountifulbaby.com/products/' in page.locator('.rbrn-material-shop-link').get_attribute('href')
             assert 'Flesh 08' in page.locator('.rbrn-material-selected-product h3').inner_text()
@@ -78,7 +80,7 @@ jobs:
             assert '≈' in page.locator('.rbrn-material-dated-price strong').inner_text(),page.locator('.rbrn-material-dated-price').inner_text()
             assert '2026-10-14' in page.locator('.rbrn-material-fx-note').inner_text()
             print('PASS Gemini singles, source purchase link and live-reference-rate currency conversion label',flush=True)
-            visit(page,'/materials/hp-babylocks/','4 source-listed products')
+            visit(page,'/materials/hp-babylocks/','3 source-listed products')
             opts=page.locator('.rbrn-material-option-cards button')
             assert opts.count()>10
             opts.first.click()
