@@ -1,7 +1,7 @@
 name: Verify community foundation
 on:
   push:
-    branches: [main, feature/contact-form-footer-mail-20261014]
+    branches: [main, fix/community-signup-feedback-20261014]
     paths:
       - 'app/**'
       - 'components/**'
@@ -11,6 +11,7 @@ on:
       - 'workers/community-moderation.js'
       - 'db/community-schema.sql'
       - 'db/community-moderation-v2.sql'
+      - 'db/signup-diagnostics.sql'
       - 'db/contact-enquiries.sql'
       - '.github/workflows/verify-community-foundation.yml'
   workflow_dispatch:
@@ -54,7 +55,10 @@ jobs:
           d.executescript(Path('db/contact-enquiries.sql').read_text())
           d.executescript(Path('db/contact-enquiries.sql').read_text())
           assert d.execute("SELECT count(*) FROM contact_enquiries").fetchone()[0] == 0
-          print('PASS D1 schemas: idempotent, editorial/community moderation and private contact intake')
+          d.executescript(Path('db/signup-diagnostics.sql').read_text())
+          d.executescript(Path('db/signup-diagnostics.sql').read_text())
+          assert d.execute("SELECT count(*) FROM signup_diagnostics").fetchone()[0]==0
+          print('PASS D1 schemas: idempotent, private contact, safety and anonymous signup diagnostics')
           PY
       - name: Install dependencies
         run: npm install --no-audit --no-fund
