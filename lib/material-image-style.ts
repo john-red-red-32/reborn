@@ -6,12 +6,12 @@ import framing from "./material-image-framing.json";
  */
 export function materialThumbnailStyle(imageUrl?:string|null):CSSProperties|undefined{
  if(!imageUrl)return undefined;
- const entry=(framing as Record<string,[number,number,number]|null>)[imageUrl];
+ const entry=(framing as unknown as Record<string,[number,number,number]|null>)[imageUrl];
  if(!entry)return undefined;
  const [scale,x,y]=entry;
  if(scale<1.2||scale>2.15)return undefined;
  return {transform:"translate("+x+"%, "+y+"%) scale("+scale+")",transformOrigin:"center center"};
 }
 export function materialHasTighterFraming(imageUrl?:string|null):boolean{
- return !!imageUrl&&!!(framing as Record<string,[number,number,number]|null>)[imageUrl];
+ return !!imageUrl&&!!(framing as unknown as Record<string,[number,number,number]|null>)[imageUrl];
 }
