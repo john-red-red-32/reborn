@@ -1,0 +1,213 @@
+{
+  "extractor_version": "candidate-extractor-v3-preorder-evidence",
+  "source": "https://reborn-silicone-dolls-by-nadine.myshopify.com/collections/blank-silicone-kits",
+  "scan_completed_at": "2026-10-14T09:04:21.502723+00:00",
+  "scan_complete": false,
+  "pages_succeeded": 12,
+  "candidate_count": 6,
+  "candidates": [
+    {
+      "name": "Mini baby bottle",
+      "source_url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/collections/accessories-for-reborn-silicone-babies/products/mini-baby-bottle",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "Mini baby glass bottle with silicone teat to achieve more realistic look of your reborn or silicone baby dolls.",
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/cdn/shop/files/F150D5F9-4036-40D3-93B9-A7E4F9F64A11_3024x.jpg?v=1734932885"
+        }
+      ],
+      "image_count": 1,
+      "advertised_offers": [
+        {
+          "price": 20.0,
+          "priceCurrency": "AUD",
+          "availability": "http://schema.org/InStock",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/products/mini-baby-bottle?variant=41072738762885"
+        },
+        {
+          "price": 20.0,
+          "priceCurrency": "AUD",
+          "availability": "http://schema.org/InStock",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/products/mini-baby-bottle?variant=41072739188869"
+        },
+        {
+          "price": 20.0,
+          "priceCurrency": "AUD",
+          "availability": "http://schema.org/InStock",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/products/mini-baby-bottle?variant=41072739221637"
+        },
+        {
+          "price": 20.0,
+          "priceCurrency": "AUD",
+          "availability": "http://schema.org/InStock",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/products/mini-baby-bottle?variant=41072739254405"
+        },
+        {
+          "price": 20.0,
+          "priceCurrency": "AUD",
+          "availability": "http://schema.org/InStock",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/products/mini-baby-bottle?variant=41072739287173"
+        },
+        {
+          "price": 20.0,
+          "priceCurrency": "AUD",
+          "availability": "http://schema.org/InStock",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/products/mini-baby-bottle?variant=41072739319941"
+        },
+        {
+          "price": 20.0,
+          "priceCurrency": "AUD",
+          "availability": "http://schema.org/InStock",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/products/mini-baby-bottle?variant=41072739352709"
+        },
+        {
+          "price": 20.0,
+          "priceCurrency": "AUD",
+          "availability": "http://schema.org/InStock",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/products/mini-baby-bottle?variant=41072739385477"
+        },
+        {
+          "price": 20.0,
+          "priceCurrency": "AUD",
+          "availability": "http://schema.org/InStock",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/products/mini-baby-bottle?variant=41072739418245"
+        },
+        {
+          "price": 20.0,
+          "priceCurrency": "AUD",
+          "availability": "http://schema.org/InStock",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/products/mini-baby-bottle?variant=41072739451013"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    },
+    {
+      "name": "Umbilical cord plastic clip",
+      "source_url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/collections/accessories-for-reborn-silicone-babies/products/umbilical-cord-plastic-clip",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "Plastic clip used on the umbilical cords to achieve more realistic look of your reborn or silicone baby dolls.",
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/cdn/shop/files/1C9C18E8-1F3C-4AC8-9F3A-8D569201BF54_3024x.jpg?v=1723537169"
+        }
+      ],
+      "image_count": 1,
+      "advertised_offers": [
+        {
+          "price": 8.0,
+          "priceCurrency": "AUD",
+          "availability": "http://schema.org/InStock",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/products/umbilical-cord-plastic-clip?variant=40852453490821"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    },
+    {
+      "name": "BLANK vinyl kit Bluebell by Viviane Aleluia (includes: vinyl head, full limbs, non gender belly plate, fabric body & SHIPPING)",
+      "source_url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/collections/blank-reborn-vinyl-kits/products/blank-vinyl-kit-bluebell-by-viviane-aleluia-includes-vinyl-head-full-limbs-non-gender-belly-plate-fabric-body",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "FREE STANDARD SHIPPING IS INCLUDED IN THE PRICE ❤️ PLEASE NOTICE THAT THE BABIES PICTURED ARE THE EXAMPLES OF HOW THE KIT CAN LOOK WHEN COMPLETED, 🛑 you are buying UNPAINTED VINYL kit. Fantasy Baby Bluebell was sculpted by Viviane Aleluia &amp; produced by myself with full reproduction rights. She makes 18” - 20” baby with full arms &amp; full legs (depending on the body size). This listing includes the body. She takes 18mm eyes. Instagram: @nadine_dolotovaFacebook: https://www.facebook.com/profile.php?id=100063769381399YouTube: Nadine DolotovaTic Toc: https://vm.tiktok.com/ZSepHB3tJ/PLEASE READ BEFORE PLACING AN ORDER, by placing an order or starting a payment plan you accept Terms and Conditions, thanks!Terms &amp; ConditionsSilicone babies are hand made one of a kind art pieces.NOT factory produced products therefore minor imperfections in the silicone and painting are perfectly normal. Dolls may have a slight mark or imperfections here and there, which is not considered a flaw.NOT a toy and play doll.Silicone babies are collector’s items. They should be treated with the utmost care.NOT recommened for children under the age of thirteen.Our babies will come from a smoke and pet free studio.Please note that due to the resolution of the screens &amp; lighting the colour you see on your screen may be slightly different from the colour of the real doll, please ask for more pictures (with alternative lighting for instance) to make sure you are happy with the colour. If it’s a custom baby, the artist will send you “work in progress pictures”, if you are not sure about the colour, it is buyers responsibility to let the artist know ASAP, because it’s impossible to change anything when the doll is completed &amp; I do have a policy of no returns or refunds.Payment Plans &amp; LayawaysA deposit of 10% is required to hold a reborn or silicone baby. This deposit as well as all the payments on the payment plan are is non-refundable - please plan carefully in advance - after you place a deposit I invest the money in buying supplies &amp; start working on the doll - I will not refund any of the payments on payment plan (buyers rumours, change of mind/circumstances, etc). Payment plans I offer are a courtesy- I am trying to make the expensive silicone babies affordable to more people, please do not take advantage of that.Once you place the deposit it is now a known and binding contract. The balance is to be paid in regular instalments as mutually agreed upon.Payments can be made via Etsy, bank deposit, PayPal (as mutually agreed upon).Failure to make payments or contact me by payment due dates will result in payment plan being cancelled. I am very fair,reasonable and flexible - communication is vital.Harassment or abuse of the artist of any kind leave the artist with the right to terminate the contract at any point, no refunds will be given and no doll will be sent.I will work on your doll in a timely manner, please understand that they are pieces of art there",
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/cdn/shop/files/F7A32B7A-46DE-4410-959A-6A272A1A4E03_1784x.jpg?v=1764766450"
+        }
+      ],
+      "image_count": 1,
+      "advertised_offers": [
+        {
+          "price": 225.0,
+          "priceCurrency": "AUD",
+          "availability": "http://schema.org/InStock",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/products/blank-vinyl-kit-bluebell-by-viviane-aleluia-includes-vinyl-head-full-limbs-non-gender-belly-plate-fabric-body?variant=41451347705989"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    },
+    {
+      "name": "BLANK vinyl kit Kaito by Irina Kodrashova (includes: vinyl head, full limbs & fabric body, COA & SHIPPING)",
+      "source_url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/collections/blank-reborn-vinyl-kits/products/blank-vinyl-kit-kaito-by-irina-kodrashova-includes-vinyl-head-full-legs-3-4-arms-fabric-body-coa",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "FREE STANDARD SHIPPING IS INCLUDED IN THE PRICE ❤️PLEASE NOTICE THAT THE BABIES PICTURED ARE THE EXAMPLES OF HOW THE KIT CAN LOOK WHEN COMPLETED, 🛑 you are buying UNPAINTED VINYL kit. Baby Kaito was sculpted by Irina Kondrashova &amp; produced by myself with full reproduction rights. She makes 23-25” baby with full arms &amp; full legs (depending on the body size). This listing includes the body. Kaito kit is an open edition. Instagram: @nadine_dolotovaFacebook: https://www.facebook.com/profile.php?id=100063769381399YouTube: Nadine DolotovaTic Toc: https://vm.tiktok.com/ZSepHB3tJ/PLEASE READ BEFORE PLACING AN ORDER, by placing an order or starting a payment plan you accept Terms and Conditions, thanks!Terms &amp; ConditionsSilicone babies are hand made one of a kind art pieces.NOT factory produced products therefore minor imperfections in the silicone and painting are perfectly normal. Dolls may have a slight mark or imperfections here and there, which is not considered a flaw.NOT a toy and play doll.Silicone babies are collector’s items. They should be treated with the utmost care.NOT recommened for children under the age of thirteen.Our babies will come from a smoke and pet free studio.Please note that due to the resolution of the screens &amp; lighting the colour you see on your screen may be slightly different from the colour of the real doll, please ask for more pictures (with alternative lighting for instance) to make sure you are happy with the colour. If it’s a custom baby, the artist will send you “work in progress pictures”, if you are not sure about the colour, it is buyers responsibility to let the artist know ASAP, because it’s impossible to change anything when the doll is completed &amp; I do have a policy of no returns or refunds.Payment Plans &amp; LayawaysA deposit of 10% is required to hold a reborn or silicone baby. This deposit as well as all the payments on the payment plan are is non-refundable - please plan carefully in advance - after you place a deposit I invest the money in buying supplies &amp; start working on the doll - I will not refund any of the payments on payment plan (buyers rumours, change of mind/circumstances, etc). Payment plans I offer are a courtesy- I am trying to make the expensive silicone babies affordable to more people, please do not take advantage of that.Once you place the deposit it is now a known and binding contract. The balance is to be paid in regular instalments as mutually agreed upon.Payments can be made via Etsy, bank deposit, PayPal (as mutually agreed upon).Failure to make payments or contact me by payment due dates will result in payment plan being cancelled. I am very fair,reasonable and flexible - communication is vital.Harassment or abuse of the artist of any kind leave the artist with the right to terminate the contract at any point, no refunds will be given and no doll will be sent.I will work on your doll in a timely manner, please understand that they are pieces of art therefore",
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/cdn/shop/files/7ECD127D-B64C-4761-ACA4-6203A694CB49_667x.jpg?v=1764758603"
+        }
+      ],
+      "image_count": 1,
+      "advertised_offers": [
+        {
+          "price": 255.0,
+          "priceCurrency": "AUD",
+          "availability": "http://schema.org/InStock",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/products/blank-vinyl-kit-kaito-by-irina-kodrashova-includes-vinyl-head-full-legs-3-4-arms-fabric-body-coa?variant=41451304091781"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    },
+    {
+      "name": "BLANK vinyl kit Meimei by Irina Kodrashova (includes: vinyl head, full legs, 3/4 arms & fabric body, COA & SHIPPING)",
+      "source_url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/collections/blank-reborn-vinyl-kits/products/blank-vinyl-kit-meimei-by-irina-kodrashova-includes-vinyl-head-full-limbs-non-gender-belly-plate-fabric-body",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "FREE STANDARD SHIPPING IS INCLUDED IN THE PRICE ❤️ PLEASE NOTICE THAT THE BABIES PICTURED ARE THE EXAMPLES OF HOW THE KIT CAN LOOK WHEN COMPLETED, 🛑 you are buying UNPAINTED VINYL kit. Baby Meimei was sculpted by Irina Kondrashova &amp; produced by myself with full reproduction rights. She makes 23-25” baby with 3/4 arms &amp; full legs (depending on the body size). This listing includes the body. Meimei kit is an open edition. Instagram: @nadine_dolotovaFacebook: https://www.facebook.com/profile.php?id=100063769381399YouTube: Nadine DolotovaTic Toc: https://vm.tiktok.com/ZSepHB3tJ/PLEASE READ BEFORE PLACING AN ORDER, by placing an order or starting a payment plan you accept Terms and Conditions, thanks!Terms &amp; ConditionsSilicone babies are hand made one of a kind art pieces.NOT factory produced products therefore minor imperfections in the silicone and painting are perfectly normal. Dolls may have a slight mark or imperfections here and there, which is not considered a flaw.NOT a toy and play doll.Silicone babies are collector’s items. They should be treated with the utmost care.NOT recommened for children under the age of thirteen.Our babies will come from a smoke and pet free studio.Please note that due to the resolution of the screens &amp; lighting the colour you see on your screen may be slightly different from the colour of the real doll, please ask for more pictures (with alternative lighting for instance) to make sure you are happy with the colour. If it’s a custom baby, the artist will send you “work in progress pictures”, if you are not sure about the colour, it is buyers responsibility to let the artist know ASAP, because it’s impossible to change anything when the doll is completed &amp; I do have a policy of no returns or refunds.Payment Plans &amp; LayawaysA deposit of 10% is required to hold a reborn or silicone baby. This deposit as well as all the payments on the payment plan are is non-refundable - please plan carefully in advance - after you place a deposit I invest the money in buying supplies &amp; start working on the doll - I will not refund any of the payments on payment plan (buyers rumours, change of mind/circumstances, etc). Payment plans I offer are a courtesy- I am trying to make the expensive silicone babies affordable to more people, please do not take advantage of that.Once you place the deposit it is now a known and binding contract. The balance is to be paid in regular instalments as mutually agreed upon.Payments can be made via Etsy, bank deposit, PayPal (as mutually agreed upon).Failure to make payments or contact me by payment due dates will result in payment plan being cancelled. I am very fair,reasonable and flexible - communication is vital.Harassment or abuse of the artist of any kind leave the artist with the right to terminate the contract at any point, no refunds will be given and no doll will be sent.I will work on your doll in a timely manner, please understand that they are pieces of art therefo",
+      "lifecycle_evidence": "not_confirmed",
+      "images": [
+        {
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/cdn/shop/files/50AB29A9-140F-4D18-97A8-9BB025C67210_1365x.jpg?v=1764757740"
+        }
+      ],
+      "image_count": 1,
+      "advertised_offers": [
+        {
+          "price": 255.0,
+          "priceCurrency": "AUD",
+          "availability": "http://schema.org/InStock",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/products/blank-vinyl-kit-meimei-by-irina-kodrashova-includes-vinyl-head-full-limbs-non-gender-belly-plate-fabric-body?variant=41451286364293"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    },
+    {
+      "name": "BLANK vinyl kit Mayven by Viviane Aleluia (includes: vinyl head, full limbs, non gender belly plate & fabric body)",
+      "source_url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/collections/blank-reborn-vinyl-kits/products/preorder-blank-vinyl-baby-mayven",
+      "evidence_type": "structured_product",
+      "confidence": "structured_unreviewed",
+      "description": "PLEASE NOTICE THAT THE BABIES PICTURED ARE THE EXAMPLES OF HOW THE KIT CAN LOOK WHEN COMPLETED, 🛑 you are buying UNPAINTED VINYL kit. Baby Mayven was sculpted by Viviane Aleluia &amp; produced by myself with full reproduction rights. She makes 18” - 20” baby with full arms &amp; full legs (depending on the body size). This listing includes the body &amp; the belly plate. She takes 18-20mm eyes, our prototype artists have used both sizes, it depends on the look you are trying to achieve. Instagram: @nadine_dolotovaFacebook: https://www.facebook.com/profile.php?id=100063769381399YouTube: Nadine DolotovaTic Toc: https://vm.tiktok.com/ZSepHB3tJ/PLEASE READ BEFORE PLACING AN ORDER, by placing an order or starting a payment plan you accept Terms and Conditions, thanks!Terms &amp; ConditionsSilicone babies are hand made one of a kind art pieces.NOT factory produced products therefore minor imperfections in the silicone and painting are perfectly normal. Dolls may have a slight mark or imperfections here and there, which is not considered a flaw.NOT a toy and play doll.Silicone babies are collector’s items. They should be treated with the utmost care.NOT recommened for children under the age of thirteen.Our babies will come from a smoke and pet free studio.Please note that due to the resolution of the screens &amp; lighting the colour you see on your screen may be slightly different from the colour of the real doll, please ask for more pictures (with alternative lighting for instance) to make sure you are happy with the colour. If it’s a custom baby, the artist will send you “work in progress pictures”, if you are not sure about the colour, it is buyers responsibility to let the artist know ASAP, because it’s impossible to change anything when the doll is completed &amp; I do have a policy of no returns or refunds.Payment Plans &amp; LayawaysA deposit of 10% is required to hold a reborn or silicone baby. This deposit as well as all the payments on the payment plan are is non-refundable - please plan carefully in advance - after you place a deposit I invest the money in buying supplies &amp; start working on the doll - I will not refund any of the payments on payment plan (buyers rumours, change of mind/circumstances, etc). Payment plans I offer are a courtesy- I am trying to make the expensive silicone babies affordable to more people, please do not take advantage of that.Once you place the deposit it is now a known and binding contract. The balance is to be paid in regular instalments as mutually agreed upon.Payments can be made via Etsy, bank deposit, PayPal (as mutually agreed upon).Failure to make payments or contact me by payment due dates will result in payment plan being cancelled. I am very fair,reasonable and flexible - communication is vital.Harassment or abuse of the artist of any kind leave the artist with the right to terminate the contract at any point, no refunds will be given and no doll will be sent.I will work on your doll in a timely m",
+      "lifecycle_evidence": "preorder_advertised",
+      "images": [
+        {
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/cdn/shop/files/F882A480-47FE-41BD-9121-69B648621184_959x.jpg?v=1745916580"
+        }
+      ],
+      "image_count": 1,
+      "advertised_offers": [
+        {
+          "price": 225.0,
+          "priceCurrency": "AUD",
+          "availability": "http://schema.org/InStock",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/products/preorder-blank-vinyl-baby-mayven?variant=41083739865221"
+        }
+      ],
+      "variant_options": [],
+      "review_state": "pending"
+    }
+  ],
+  "warnings": [
+    "A crawl can be complete for visible HTML links without covering JavaScript galleries or historical kits.",
+    "Product data are seller claims pending validation; no automatic publication.",
+    "Images are references, not licensed replicas; no download occurs."
+  ]
+}
