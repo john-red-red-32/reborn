@@ -1,0 +1,1059 @@
+{
+  "source": "exact_public_product_page_review",
+  "rows": [
+    {
+      "slug": "danica-dawn-donofrio",
+      "name": "Danica",
+      "artist": "Dawn Donofrio",
+      "source": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/danica-blank-partial-silicone-5-piece-doll-kit/",
+      "status": "robots_denied",
+      "candidates": []
+    },
+    {
+      "slug": "journey-dawn-donofrio",
+      "name": "Journey",
+      "artist": "Dawn Donofrio",
+      "source": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/journey-blank-full-body-silicone-doll-kit/",
+      "status": "robots_denied",
+      "candidates": []
+    },
+    {
+      "slug": "remi-dawn-donofrio",
+      "name": "Remi",
+      "artist": "Dawn Donofrio",
+      "source": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/remi-blank-full-body-silicone-doll-kit/",
+      "status": "robots_denied",
+      "candidates": []
+    },
+    {
+      "slug": "river-awake-dawn-donofrio",
+      "name": "River Awake",
+      "artist": "Dawn Donofrio",
+      "source": "https://mybabyflowers.com/en/baby/river/?lang=en",
+      "status": "fetch_HTTPError",
+      "candidates": [],
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "slug": "river-sleeping-dawn-donofrio",
+      "name": "River Sleeping",
+      "artist": "Dawn Donofrio",
+      "source": "https://www.ddartdolls.com/shop/silicone-dolls/blank-silicone-kits/limited-time-offer-river-sleeping-blank-full-body-silicone-doll-kit/",
+      "status": "robots_denied",
+      "candidates": []
+    },
+    {
+      "slug": "tatum-dawn-donofrio",
+      "name": "Tatum",
+      "artist": "Dawn Donofrio",
+      "source": "https://mybabyflowers.com/en/baby/tatum/?lang=en",
+      "status": "fetch_HTTPError",
+      "candidates": [],
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "slug": "amy-elly-knoops",
+      "name": "Amy",
+      "artist": "Elly Knoops",
+      "source": "https://macphersoncrafts.com/reborn-doll-kits/amy-by-elly-knoops.htm",
+      "status": "review_candidates",
+      "candidates": [
+        {
+          "url": "https://macphersoncrafts.com/images/stories/virtuemart/product/Amy-by-Elly-Knoops-1001.jpg",
+          "basis": "og_product",
+          "alt": "",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://macphersoncrafts.com/modules/mod_gtranslate/tmpl/lang/24/en.png",
+          "basis": "page_img_src",
+          "alt": "en",
+          "http": 200,
+          "type": "image/png",
+          "has_bytes": true
+        },
+        {
+          "url": "https://macphersoncrafts.com/modules/mod_gtranslate/tmpl/lang/24/fr.png",
+          "basis": "page_img_src",
+          "alt": "fr",
+          "http": 200,
+          "type": "image/png",
+          "has_bytes": true
+        },
+        {
+          "url": "https://macphersoncrafts.com/modules/mod_gtranslate/tmpl/lang/24/de.png",
+          "basis": "page_img_src",
+          "alt": "de",
+          "http": 200,
+          "type": "image/png",
+          "has_bytes": true
+        },
+        {
+          "url": "https://macphersoncrafts.com/modules/mod_gtranslate/tmpl/lang/24/it.png",
+          "basis": "page_img_src",
+          "alt": "it"
+        },
+        {
+          "url": "https://macphersoncrafts.com/modules/mod_gtranslate/tmpl/lang/24/pt.png",
+          "basis": "page_img_src",
+          "alt": "pt"
+        },
+        {
+          "url": "https://macphersoncrafts.com/modules/mod_gtranslate/tmpl/lang/24/ru.png",
+          "basis": "page_img_src",
+          "alt": "ru"
+        },
+        {
+          "url": "https://macphersoncrafts.com/modules/mod_gtranslate/tmpl/lang/24/es.png",
+          "basis": "page_img_src",
+          "alt": "es"
+        },
+        {
+          "url": "https://macphersoncrafts.com/images/dot.png",
+          "basis": "page_img_src",
+          "alt": "Amy by Elly Knoops"
+        }
+      ],
+      "title": "Amy by Elly Knoops",
+      "exact_title_match": true,
+      "artist_name_present": true
+    },
+    {
+      "slug": "bibi-elly-knoops",
+      "name": "Bibi",
+      "artist": "Elly Knoops",
+      "source": "https://www.irresistables.com/bibi-reborn-vinyl-doll-kit-by-elly-knoops-22/",
+      "status": "review_candidates",
+      "candidates": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/3633/images/34162/bibi__82672.1587519263.500.750.jpg?c=2",
+          "basis": "og_product",
+          "alt": "",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/500x100/index2_1529612826__12235.original.jpg",
+          "basis": "page_img_src",
+          "alt": "Irresistables",
+          "http": 200,
+          "type": "image/webp",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3633/34162/bibi__82672.1587519263.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "BiBi Reborn Vinyl Doll Kit by Elly Knoops 22\"",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3633/34161/s-l300__83609.1587519220.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "BiBi Reborn Vinyl Doll Kit by Elly Knoops 22\"",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3633/34163/Bibi-by-Elly-Knoops-1001__52952.1587519220.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "BiBi Reborn Vinyl Doll Kit by Elly Knoops 22\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3633/34164/1515a188cde2ae69126146458fda1475__38904.1587519220.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "BiBi Reborn Vinyl Doll Kit by Elly Knoops 22\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3633/34167/ababy5-16__72409.1587519220.JPG?c=2",
+          "basis": "page_img_src",
+          "alt": "BiBi Reborn Vinyl Doll Kit by Elly Knoops 22\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3633/34168/1_d323b047fb7dc0d332be024bfc045d54__70282.1587519220.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "BiBi Reborn Vinyl Doll Kit by Elly Knoops 22\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3633/34165/sale-bibi-reborn-doll-kit-elly-knoops_1_4e2fb6d6d4d5f3f41649a9be0d792cce__30712.1587519235.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "BiBi Reborn Vinyl Doll Kit by Elly Knoops 22\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3633/34160/2a99c74e02c923599a3b311645379499__63590.1587519233.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "BiBi Reborn Vinyl Doll Kit by Elly Knoops 22\""
+        }
+      ],
+      "title": "BiBi Reborn Vinyl Doll Kit by Elly Knoops 22\"",
+      "exact_title_match": true,
+      "artist_name_present": true
+    },
+    {
+      "slug": "eefje-elly-knoops",
+      "name": "Eefje",
+      "artist": "Elly Knoops",
+      "source": "https://www.irresistables.com/little-eefje-reborn-vinyl-doll-kit-by-elly-knoops-15-16/",
+      "status": "review_candidates",
+      "candidates": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/3630/images/34114/Little-Eifje-by-Elly-Knoops-001-800x800jpg__20671.1587507556.500.750.jpg?c=2",
+          "basis": "og_product",
+          "alt": "",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/500x100/index2_1529612826__12235.original.jpg",
+          "basis": "page_img_src",
+          "alt": "Irresistables",
+          "http": 200,
+          "type": "image/webp",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3630/34114/Little-Eifje-by-Elly-Knoops-001-800x800jpg__20671.1587507556.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Little Eefje Reborn Vinyl Doll Kit by Elly Knoops 15-16\"",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3630/34110/jessicagingfrt__88367.1587507543.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Little Eefje Reborn Vinyl Doll Kit by Elly Knoops 15-16\"",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3630/34111/mini-eefje-doll-kit-elly-knoops-mint_1_4162c712eebe0f4c384bdf344ea85782__14980.1587507543.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Little Eefje Reborn Vinyl Doll Kit by Elly Knoops 15-16\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3630/34112/mini-eefje-doll-kit-elly-knoops-mint_1_4162c712eebe0f4c384bdf344ea857821__50139.1587507543.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Little Eefje Reborn Vinyl Doll Kit by Elly Knoops 15-16\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3630/34113/s-l1600__24592.1587507543.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Little Eefje Reborn Vinyl Doll Kit by Elly Knoops 15-16\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/200x200/products/3630/34114/Little-Eifje-by-Elly-Knoops-001-800x800jpg__20671.1587507556.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Little Eefje Reborn Vinyl Doll Kit by Elly Knoops 15-16\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/200x200/products/3630/34110/jessicagingfrt__88367.1587507543.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Little Eefje Reborn Vinyl Doll Kit by Elly Knoops 15-16\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/200x200/products/3630/34111/mini-eefje-doll-kit-elly-knoops-mint_1_4162c712eebe0f4c384bdf344ea85782__14980.1587507543.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Little Eefje Reborn Vinyl Doll Kit by Elly Knoops 15-16\""
+        }
+      ],
+      "title": "Little Eefje Reborn Vinyl Doll Kit by Elly Knoops 15-16\"",
+      "exact_title_match": true,
+      "artist_name_present": true
+    },
+    {
+      "slug": "fleur-elly-knoops",
+      "name": "Fleur",
+      "artist": "Elly Knoops",
+      "source": "https://www.irresistables.com/fleur-reborn-vinyl-doll-kit-by-elly-knoops-21/",
+      "status": "review_candidates",
+      "candidates": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/3919/images/37027/Fleur_CO_01__90454.1602698715.500.750.jpg?c=2",
+          "basis": "og_product",
+          "alt": "",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/500x100/index2_1529612826__12235.original.jpg",
+          "basis": "page_img_src",
+          "alt": "Irresistables",
+          "http": 200,
+          "type": "image/webp",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3919/37027/Fleur_CO_01__90454.1602698715.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Fleur  Reborn Vinyl Doll Kit by Elly Knoops  21\"",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3919/37028/Fleur_CO_02__83290.1602698715.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Fleur  Reborn Vinyl Doll Kit by Elly Knoops  21\"",
+          "http": 200,
+          "type": "image/webp",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3919/37029/Fleur4__95987.1602698715.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Fleur  Reborn Vinyl Doll Kit by Elly Knoops  21\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3919/37030/Fleur5__97039.1602698715.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Fleur  Reborn Vinyl Doll Kit by Elly Knoops  21\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3919/37031/Fleur3__83815.1602698715.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Fleur  Reborn Vinyl Doll Kit by Elly Knoops  21\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/3919/37032/Fleur6__89723.1602698715.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Fleur  Reborn Vinyl Doll Kit by Elly Knoops  21\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/200x200/products/3919/37027/Fleur_CO_01__90454.1602698715.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Fleur  Reborn Vinyl Doll Kit by Elly Knoops  21\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/200x200/products/3919/37028/Fleur_CO_02__83290.1602698715.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Fleur  Reborn Vinyl Doll Kit by Elly Knoops  21\""
+        }
+      ],
+      "title": "Fleur  Reborn Vinyl Doll Kit by Elly Knoops  21\"",
+      "exact_title_match": true,
+      "artist_name_present": true
+    },
+    {
+      "slug": "luca-elly-knoops",
+      "name": "Luca",
+      "artist": "Elly Knoops",
+      "source": "https://www.irresistables.com/luca-by-elly-knoops/",
+      "status": "review_candidates",
+      "candidates": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/994/images/4134/luca3__35548.1483489613.500.750.jpg?c=2",
+          "basis": "og_product",
+          "alt": "",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/500x100/index2_1529612826__12235.original.jpg",
+          "basis": "page_img_src",
+          "alt": "Irresistables",
+          "http": 200,
+          "type": "image/webp",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/994/4134/luca3__35548.1483489613.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Luca Vinyl Reborn Doll Kit by Elly Knoops",
+          "http": 200,
+          "type": "image/webp",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/994/4152/luca5__28182.1483489614.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Luca Vinyl Reborn Doll Kit by Elly Knoops",
+          "http": 200,
+          "type": "image/webp",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/994/4184/luca03__23490.1483489614.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Luca Vinyl Reborn Doll Kit by Elly Knoops"
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/994/4215/luca4__55874.1483489615.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Luca Vinyl Reborn Doll Kit by Elly Knoops"
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/994/4245/img_8058__93830.1483489616.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Luca Vinyl Reborn Doll Kit by Elly Knoops"
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/994/4267/luca2__68057.1483489617.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Luca Vinyl Reborn Doll Kit by Elly Knoops"
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/994/4303/luca002__61391.1483489617.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Luca Vinyl Reborn Doll Kit by Elly Knoops"
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/994/4443/lucaek__48878.1483489622.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Luca Vinyl Reborn Doll Kit by Elly Knoops"
+        }
+      ],
+      "title": "Luca Vinyl Reborn Doll Kit by Elly Knoops",
+      "exact_title_match": true,
+      "artist_name_present": true
+    },
+    {
+      "slug": "mattia-gudrun-legler",
+      "name": "Mattia",
+      "artist": "Gudrun Legler",
+      "source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-mattia/",
+      "status": "robots_denied",
+      "candidates": []
+    },
+    {
+      "slug": "mila-gudrun-legler",
+      "name": "Mila",
+      "artist": "Gudrun Legler",
+      "source": "https://www.dollli.uk/product-page/mila-doll-kit-by-gudrun-legler-le1234-19-20",
+      "status": "review_title_or_artist_mismatch",
+      "candidates": [],
+      "title": "",
+      "exact_title_match": false,
+      "artist_name_present": false
+    },
+    {
+      "slug": "tony-gudrun-legler",
+      "name": "Tony",
+      "artist": "Gudrun Legler",
+      "source": "https://www.gudrun-legler-onlineshop.de/online-shop/reborn-set-tony/",
+      "status": "robots_denied",
+      "candidates": []
+    },
+    {
+      "slug": "max-laura-lee-eagles",
+      "name": "Max",
+      "artist": "Laura Lee Eagles",
+      "source": "https://rebornsweetshop.com/products/deposit-custom-max-by-laura-lee-eagles-reborn-baby",
+      "status": "review_candidates",
+      "candidates": [
+        {
+          "url": "https://rebornsweetshop.com/cdn/shop/files/Max-by-Laura-Lee-Eagles-128-K_{width}x.jpg?v=1726897302",
+          "basis": "page_img_data-src",
+          "alt": "DEPOSIT - CUSTOM \"Max\" by Laura Lee Eagles Reborn Baby",
+          "verify_error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://rebornsweetshop.com/cdn/shop/files/Max-by-Laura-Lee-Eagles-128-K_300x300.jpg?v=1726897302",
+          "basis": "page_img_src",
+          "alt": "DEPOSIT - CUSTOM \"Max\" by Laura Lee Eagles Reborn Baby",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://rebornsweetshop.com/cdn/shop/files/Max-by-Laura-Lee-Eagles-141-K_{width}x.jpg?v=1726897239",
+          "basis": "page_img_data-src",
+          "alt": "DEPOSIT - CUSTOM \"Max\" by Laura Lee Eagles Reborn Baby",
+          "verify_error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://rebornsweetshop.com/cdn/shop/files/Max-by-Laura-Lee-Eagles-141-K_300x300.jpg?v=1726897239",
+          "basis": "page_img_src",
+          "alt": "DEPOSIT - CUSTOM \"Max\" by Laura Lee Eagles Reborn Baby",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://rebornsweetshop.com/cdn/shop/files/Max-by-Laura-Lee-Eagles-111-K2_{width}x.jpg?v=1726897239",
+          "basis": "page_img_data-src",
+          "alt": "DEPOSIT - CUSTOM \"Max\" by Laura Lee Eagles Reborn Baby"
+        },
+        {
+          "url": "https://rebornsweetshop.com/cdn/shop/files/Max-by-Laura-Lee-Eagles-111-K2_300x300.jpg?v=1726897239",
+          "basis": "page_img_src",
+          "alt": "DEPOSIT - CUSTOM \"Max\" by Laura Lee Eagles Reborn Baby"
+        },
+        {
+          "url": "https://rebornsweetshop.com/cdn/shop/files/Max-by-Laura-Lee-Eagles-131-K_{width}x.jpg?v=1726897239",
+          "basis": "page_img_data-src",
+          "alt": "DEPOSIT - CUSTOM \"Max\" by Laura Lee Eagles Reborn Baby"
+        },
+        {
+          "url": "https://rebornsweetshop.com/cdn/shop/files/Max-by-Laura-Lee-Eagles-131-K_300x300.jpg?v=1726897239",
+          "basis": "page_img_src",
+          "alt": "DEPOSIT - CUSTOM \"Max\" by Laura Lee Eagles Reborn Baby"
+        },
+        {
+          "url": "https://rebornsweetshop.com/cdn/shop/files/2023babies-2_3d6cb646-29c2-4c7f-9484-e9fbf6ae0f6b_{width}x.jpg?v=1706837105",
+          "basis": "page_img_data-src",
+          "alt": "DEPOSIT - CUSTOM \"Max\" by Laura Lee Eagles Reborn Baby"
+        },
+        {
+          "url": "https://rebornsweetshop.com/cdn/shop/files/2023babies-2_3d6cb646-29c2-4c7f-9484-e9fbf6ae0f6b_300x300.jpg?v=1706837105",
+          "basis": "page_img_src",
+          "alt": "DEPOSIT - CUSTOM \"Max\" by Laura Lee Eagles Reborn Baby"
+        }
+      ],
+      "title": "DEPOSIT - CUSTOM \"Max\" by Laura Lee Eagles Reborn Baby",
+      "exact_title_match": true,
+      "artist_name_present": true
+    },
+    {
+      "slug": "cameron-laura-tuzio-ross",
+      "name": "Cameron",
+      "artist": "Laura Tuzio Ross",
+      "source": "https://www.myworldofbabies.com/shop/vinyl-reborn-doll-kits/cameron/",
+      "status": "robots_denied",
+      "candidates": []
+    },
+    {
+      "slug": "ellis-philomena-donnelly",
+      "name": "Ellis",
+      "artist": "Phil Donnelly",
+      "source": "https://www.phildonnellybabies.co.uk/reborndollkits",
+      "status": "fetch_URLError",
+      "candidates": [],
+      "error": "<urlopen error [Errno -2] Name or service not known>"
+    },
+    {
+      "slug": "kitty-philomena-donnelly",
+      "name": "Kitty",
+      "artist": "Phil Donnelly",
+      "source": "https://www.phildonnellybabies.co.uk/product-page/demi-donnelly-vinyl-reborn-doll-kit-presale-deposit",
+      "status": "fetch_URLError",
+      "candidates": [],
+      "error": "<urlopen error [Errno -2] Name or service not known>"
+    },
+    {
+      "slug": "lil-cry-philomena-donnelly",
+      "name": "Lil' Cry",
+      "artist": "Phil Donnelly",
+      "source": "https://www.phildonnellybabies.co.uk/product-page/lil-cry-coming-soon-20",
+      "status": "fetch_URLError",
+      "candidates": [],
+      "error": "<urlopen error [Errno -2] Name or service not known>"
+    },
+    {
+      "slug": "quinn-philomena-donnelly",
+      "name": "Quinn",
+      "artist": "Phil Donnelly",
+      "source": "https://www.phildonnellybabies.co.uk/reborndollkits",
+      "status": "fetch_URLError",
+      "candidates": [],
+      "error": "<urlopen error [Errno -2] Name or service not known>"
+    },
+    {
+      "slug": "candy-ping-lau",
+      "name": "Candy",
+      "artist": "Ping Lau",
+      "source": "https://www.irresistables.com/candy-reborn-vinyl-doll-kit-by-ping-lau-20/",
+      "status": "review_candidates",
+      "candidates": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/5294/images/66027/IMG_1483-XL__94758.1714701250.500.750.jpg?c=2",
+          "basis": "og_product",
+          "alt": "",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/500x100/index2_1529612826__12235.original.jpg",
+          "basis": "page_img_src",
+          "alt": "Irresistables",
+          "http": 200,
+          "type": "image/webp",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5294/66027/IMG_1483-XL__94758.1714701250.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Candy Reborn Vinyl Doll Kit by Ping Lau 20\"",
+          "http": 200,
+          "type": "image/webp",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5294/66004/candy1__78686.1714701023.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Candy Reborn Vinyl Doll Kit by Ping Lau 20\"",
+          "http": 200,
+          "type": "image/webp",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5294/66005/candy3__52742.1714701023.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Candy Reborn Vinyl Doll Kit by Ping Lau 20\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5294/66006/candy6__39742.1714701023.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Candy Reborn Vinyl Doll Kit by Ping Lau 20\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5294/66007/candy7__72752.1714701023.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Candy Reborn Vinyl Doll Kit by Ping Lau 20\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5294/66008/DSCF6990__96583.1714701023.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Candy Reborn Vinyl Doll Kit by Ping Lau 20\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5294/66009/DSCF6994__33947.1714701023.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Candy Reborn Vinyl Doll Kit by Ping Lau 20\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5294/66010/DSCF7009__52303.1714701023.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Candy Reborn Vinyl Doll Kit by Ping Lau 20\""
+        }
+      ],
+      "title": "Candy Reborn Vinyl Doll Kit by Ping Lau 20\"",
+      "exact_title_match": true,
+      "artist_name_present": true
+    },
+    {
+      "slug": "baby-george-ping-lau",
+      "name": "Baby George",
+      "artist": "Ping Lau",
+      "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+      "status": "review_title_or_artist_mismatch",
+      "candidates": [],
+      "title": "Ping Lau",
+      "exact_title_match": false,
+      "artist_name_present": true
+    },
+    {
+      "slug": "josie-awake-ping-lau",
+      "name": "Josie Awake",
+      "artist": "Ping Lau",
+      "source": "https://www.puppen-traumland.de/reborn-bausaetze-doll-kits/puppen-traumland-reg-bausaetze/pt-reg-bausaetze-nach-kuenstlern/ping-lau/1075/reborn-bausatz-josie-wach-von-ping-lau",
+      "status": "fetch_HTTPError",
+      "candidates": [],
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "slug": "josie-ping-lau",
+      "name": "Josie",
+      "artist": "Ping Lau",
+      "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+      "status": "review_title_or_artist_mismatch",
+      "candidates": [],
+      "title": "Ping Lau",
+      "exact_title_match": false,
+      "artist_name_present": true
+    },
+    {
+      "slug": "minnie-ping-lau",
+      "name": "Minnie",
+      "artist": "Ping Lau",
+      "source": "https://www.oncesoreal.com/minnie-set-inklusive-torso-koerper-kopf-und-armverbinder/p-8129.html",
+      "status": "review_candidates",
+      "candidates": [
+        {
+          "url": "https://www.oncesoreal.com/minnie-set-inklusive-torso-koerper-kopf-und-armverbinder/images/products/normal/Once-Reborn-Ping-Lau-Minnie_TOP.jpg",
+          "basis": "og_product",
+          "alt": "",
+          "verify_error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.oncesoreal.com/minnie-set-inklusive-torso-koerper-kopf-und-armverbinder/images/products/gross/Once-Reborn-Ping-Lau-Minnie_TOP.jpg",
+          "basis": "page_img_src",
+          "alt": "",
+          "verify_error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.oncesoreal.com/minnie-set-inklusive-torso-koerper-kopf-und-armverbinder/images/products_more/gross/Once-Reborn-Ping-Lau-Minnie-1.jpg",
+          "basis": "page_img_src",
+          "alt": "",
+          "verify_error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.oncesoreal.com/minnie-set-inklusive-torso-koerper-kopf-und-armverbinder/images/products_more/gross/Once-Reborn-Ping-Lau-Minnie-2.jpg",
+          "basis": "page_img_src",
+          "alt": "",
+          "verify_error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.oncesoreal.com/minnie-set-inklusive-torso-koerper-kopf-und-armverbinder/images/products_more/gross/Once-Reborn-Ping-Lau-Minnie-3.jpg",
+          "basis": "page_img_src",
+          "alt": ""
+        },
+        {
+          "url": "https://www.oncesoreal.com/minnie-set-inklusive-torso-koerper-kopf-und-armverbinder/images/products_more/gross/Once-Reborn-Ping-Lau-Minnie-4.jpg",
+          "basis": "page_img_src",
+          "alt": ""
+        },
+        {
+          "url": "https://www.oncesoreal.com/minnie-set-inklusive-torso-koerper-kopf-und-armverbinder/images/products_more/gross/Once-Reborn-Ping-Lau-Minnie-5.jpg",
+          "basis": "page_img_src",
+          "alt": ""
+        },
+        {
+          "url": "https://www.oncesoreal.com/minnie-set-inklusive-torso-koerper-kopf-und-armverbinder/images/products_more/gross/Once-Reborn-Ping-Lau-Minnie-6.jpg",
+          "basis": "page_img_src",
+          "alt": ""
+        },
+        {
+          "url": "https://www.oncesoreal.com/minnie-set-inklusive-torso-koerper-kopf-und-armverbinder/images/products_more/gross/Once-Reborn-Ping-Lau-Minnie-7.jpg",
+          "basis": "page_img_src",
+          "alt": ""
+        },
+        {
+          "url": "https://www.oncesoreal.com/minnie-set-inklusive-torso-koerper-kopf-und-armverbinder/images/products_more/gross/Once-Reborn-Ping-Lau-Minnie-8.jpg",
+          "basis": "page_img_src",
+          "alt": ""
+        }
+      ],
+      "title": "Minnie *Set inklusive Torso, Körper, Kopf- und Armverbinder",
+      "exact_title_match": true,
+      "artist_name_present": true
+    },
+    {
+      "slug": "sugar-ping-lau",
+      "name": "Sugar",
+      "artist": "Ping Lau",
+      "source": "https://macphersoncrafts.com/online-store/manufacturer/ping-lau",
+      "status": "review_title_or_artist_mismatch",
+      "candidates": [],
+      "title": "Ping Lau",
+      "exact_title_match": false,
+      "artist_name_present": true
+    },
+    {
+      "slug": "leo-sabine-altenkirch-junkes",
+      "name": "Leo",
+      "artist": "Sabine Altenkirch",
+      "source": "https://www.irresistables.com/leo-reborn-vinyl-doll-kit-by-sabine-altenkirch-20/",
+      "status": "review_candidates",
+      "candidates": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/2683/images/28171/67404500_2312742965655260_1659126027990859776_o__16368.1564684285.500.750.jpg?c=2",
+          "basis": "og_product",
+          "alt": "",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/500x100/index2_1529612826__12235.original.jpg",
+          "basis": "page_img_src",
+          "alt": "Irresistables",
+          "http": 200,
+          "type": "image/webp",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/2683/23883/53585231_2076328925782783_6480199106621865984_o__14593.1552410300.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Leo Reborn Vinyl Doll Kit by Sabine Altenkirch 20\"",
+          "http": 200,
+          "type": "image/webp",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/2683/23873/53478356_2076329805782695_8630532044515966976_n__21458.1552410245.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Leo Reborn Vinyl Doll Kit by Sabine Altenkirch 20\"",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/2683/23874/52830921_10219266964211765_253923281197858816_n__93575.1552410245.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Leo Reborn Vinyl Doll Kit by Sabine Altenkirch 20\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/2683/23875/53548566_2077419189007090_2732961795810525184_o__02588.1552410246.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Leo Reborn Vinyl Doll Kit by Sabine Altenkirch 20\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/2683/23876/53800854_2077418619007147_3602475257711034368_o__25437.1552410246.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Leo Reborn Vinyl Doll Kit by Sabine Altenkirch 20\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/2683/23877/54433880_2076328745782801_6839313279429378048_n__37677.1552410247.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Leo Reborn Vinyl Doll Kit by Sabine Altenkirch 20\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/2683/23878/53921574_2077419545673721_4008705427914096640_o__54429.1552410247.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Leo Reborn Vinyl Doll Kit by Sabine Altenkirch 20\""
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/2683/23879/54730300_2077418952340447_5619060135163854848_o__55654.1552410247.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Leo Reborn Vinyl Doll Kit by Sabine Altenkirch 20\""
+        }
+      ],
+      "title": "Leo Reborn Vinyl Doll Kit by Sabine Altenkirch 20\"",
+      "exact_title_match": true,
+      "artist_name_present": true
+    },
+    {
+      "slug": "lillegroda-sabine-altenkirch-junkes",
+      "name": "Lillegroda",
+      "artist": "Sabine Altenkirch",
+      "source": "https://www.sabine-altenkirch.com/startseite-home/shop/lillegroda/",
+      "status": "robots_denied",
+      "candidates": []
+    },
+    {
+      "slug": "timothy-sabrina-hergarten",
+      "name": "Timothy",
+      "artist": "Sabrina Hergarten",
+      "source": "https://www.truborns.com/products/timothy-by-sabrina-hergarten",
+      "status": "review_candidates",
+      "candidates": [
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/31739247_10156544537749824_5668831045118590976_n_300x.png?v=1613757077",
+          "basis": "page_img_src",
+          "alt": "truborns",
+          "http": 200,
+          "type": "image/png",
+          "has_bytes": true
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/31739247_10156544537749824_5668831045118590976_n_300x@2x.png?v=1613757077",
+          "basis": "srcset",
+          "alt": "truborns",
+          "http": 200,
+          "type": "image/png",
+          "has_bytes": true
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/13925813-787e-48d3-a1bc-e6f0406c77ca_60x60@2x.jpg?v=1791216330",
+          "basis": "page_img_data-src",
+          "alt": "CYPRESS by Dawn McLeod",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/Melodi22_60x60@2x.jpg?v=1790866729",
+          "basis": "page_img_data-src",
+          "alt": "MELODI by Daniella Domotor",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/796573101_4058946551078367_9209486803846662060_n_60x60@2x.jpg?v=1790383218",
+          "basis": "page_img_data-src",
+          "alt": "FLOWER elf by Olga Auer"
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/3D17B675-6EEF-4349-8EAE-159415C3B28E_60x60@2x.jpg?v=1789013316",
+          "basis": "page_img_data-src",
+          "alt": "SWAN by Nathalie Moiselet D’Ostuni"
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/CADF8BE2-0315-404F-B2DF-A45E4EEB8F80_60x60@2x.jpg?v=1785360004",
+          "basis": "page_img_data-src",
+          "alt": "LOUELLE by Sabine Altenkirch"
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/products/image_1b8176fb-f53f-4398-b0d3-3a7a8058022c_{width}x.jpg?v=1615260085",
+          "basis": "page_img_data-src",
+          "alt": "TIMOTHY by Sabrina Hergarten - truborns"
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/products/image_1b8176fb-f53f-4398-b0d3-3a7a8058022c_300x.jpg?v=1615260085",
+          "basis": "page_img_src",
+          "alt": "TIMOTHY by Sabrina Hergarten - truborns"
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/products/image_1b8176fb-f53f-4398-b0d3-3a7a8058022c_1024x.jpg?v=1615260085",
+          "basis": "page_img_src",
+          "alt": "TIMOTHY by Sabrina Hergarten - truborns"
+        }
+      ],
+      "title": "TIMOTHY by Sabrina Hergarten",
+      "exact_title_match": true,
+      "artist_name_present": true
+    },
+    {
+      "slug": "lou-severine-piret",
+      "name": "Lou",
+      "artist": "Severine Piret",
+      "source": "https://www.mottandgido.com/product-page/lou-15-preemie-reborn-kit-by-s%C3%A9verine-piret",
+      "status": "review_title_or_artist_mismatch",
+      "candidates": [],
+      "title": "Lou 15\" Preemie Reborn Kit by Séverine Piret",
+      "exact_title_match": true,
+      "artist_name_present": false
+    },
+    {
+      "slug": "pebbles-severine-piret",
+      "name": "Pebbles",
+      "artist": "Severine Piret",
+      "source": "https://www.irresistables.com/pebbles-reborn-vinyl-doll-kit-by-severine-piret/",
+      "status": "review_candidates",
+      "candidates": [
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/5249/images/64935/425828430_10232255306469306_4146220900049131079_n__62135.1707582329.500.750.jpg?c=2",
+          "basis": "og_product",
+          "alt": "",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/500x100/index2_1529612826__12235.original.jpg",
+          "basis": "page_img_src",
+          "alt": "Irresistables",
+          "http": 200,
+          "type": "image/webp",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5249/64935/425828430_10232255306469306_4146220900049131079_n__62135.1707582329.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Pebbles Reborn Vinyl Doll Kit by Severine Piret",
+          "http": 200,
+          "type": "image/webp",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5249/64922/421680875_10232181606426851_8788315197252107244_n__72774.1707581625.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Pebbles Reborn Vinyl Doll Kit by Severine Piret",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5249/64933/425750004_10232255312149448_4206787971634394591_n__75255.1707582336.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Pebbles Reborn Vinyl Doll Kit by Severine Piret"
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5249/64936/425829229_10232255310829415_8131421883080099859_n__73204.1707582349.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Pebbles Reborn Vinyl Doll Kit by Severine Piret"
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5249/64923/425645624_10232227760020662_1224264134833105767_n__89871.1707581625.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Pebbles Reborn Vinyl Doll Kit by Severine Piret"
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5249/64925/425665120_10232227732739980_6473882092930459023_n__13708.1707581626.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Pebbles Reborn Vinyl Doll Kit by Severine Piret"
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5249/64931/p1__47066.1707582345.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Pebbles Reborn Vinyl Doll Kit by Severine Piret"
+        },
+        {
+          "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5249/64926/p2__28206.1707581626.jpg?c=2",
+          "basis": "page_img_src",
+          "alt": "Pebbles Reborn Vinyl Doll Kit by Severine Piret"
+        }
+      ],
+      "title": "Pebbles Reborn Vinyl Doll Kit by Severine Piret",
+      "exact_title_match": true,
+      "artist_name_present": true
+    },
+    {
+      "slug": "talula-severine-piret",
+      "name": "Talula",
+      "artist": "Severine Piret",
+      "source": "https://www.truborns.com/products/talula-by-severine-piret",
+      "status": "review_candidates",
+      "candidates": [
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/31739247_10156544537749824_5668831045118590976_n_300x.png?v=1613757077",
+          "basis": "page_img_src",
+          "alt": "truborns",
+          "http": 200,
+          "type": "image/png",
+          "has_bytes": true
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/31739247_10156544537749824_5668831045118590976_n_300x@2x.png?v=1613757077",
+          "basis": "srcset",
+          "alt": "truborns",
+          "http": 200,
+          "type": "image/png",
+          "has_bytes": true
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/13925813-787e-48d3-a1bc-e6f0406c77ca_60x60@2x.jpg?v=1791216330",
+          "basis": "page_img_data-src",
+          "alt": "CYPRESS by Dawn McLeod",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/Melodi22_60x60@2x.jpg?v=1790866729",
+          "basis": "page_img_data-src",
+          "alt": "MELODI by Daniella Domotor",
+          "http": 200,
+          "type": "image/jpeg",
+          "has_bytes": true
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/796573101_4058946551078367_9209486803846662060_n_60x60@2x.jpg?v=1790383218",
+          "basis": "page_img_data-src",
+          "alt": "FLOWER elf by Olga Auer"
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/3D17B675-6EEF-4349-8EAE-159415C3B28E_60x60@2x.jpg?v=1789013316",
+          "basis": "page_img_data-src",
+          "alt": "SWAN by Nathalie Moiselet D’Ostuni"
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/CADF8BE2-0315-404F-B2DF-A45E4EEB8F80_60x60@2x.jpg?v=1785360004",
+          "basis": "page_img_data-src",
+          "alt": "LOUELLE by Sabine Altenkirch"
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/IMG-4622_{width}x.jpg?v=1698841829",
+          "basis": "page_img_data-src",
+          "alt": "Talula by Severine piret - truborns"
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/IMG-4622_300x.jpg?v=1698841829",
+          "basis": "page_img_src",
+          "alt": "Talula by Severine piret - truborns"
+        },
+        {
+          "url": "https://www.truborns.com/cdn/shop/files/IMG-4622_1024x.jpg?v=1698841829",
+          "basis": "page_img_src",
+          "alt": "Talula by Severine piret - truborns"
+        }
+      ],
+      "title": "Talula by Severine piret",
+      "exact_title_match": true,
+      "artist_name_present": true
+    }
+  ],
+  "notice": "This is research evidence, not usage permission or automatic identity acceptance."
+}
