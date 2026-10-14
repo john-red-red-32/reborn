@@ -1,0 +1,58 @@
+name: Verify community foundation
+on:
+  push:
+    branches: [main, feature/community-foundation-20261014]
+    paths:
+      - 'app/**'
+      - 'components/**'
+      - 'lib/**'
+      - 'functions/api/community/**'
+      - 'db/community-schema.sql'
+      - '.github/workflows/verify-community-foundation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate Pages Function syntax
+        run: node --check 'functions/api/community/[[path]].js'
+      - name: Validate fresh schema and attributed editorial topics
+        run: |
+          python3 - <<'PY'
+          import sqlite3
+          from pathlib import Path
+          d=sqlite3.connect(':memory:')
+          d.execute('PRAGMA foreign_keys=ON')
+          d.executescript(Path('db/community-schema.sql').read_text())
+          assert d.execute("SELECT count(*) FROM posts").fetchone()[0] == 8
+          assert d.execute("SELECT count(*) FROM users WHERE is_editorial=1").fetchone()[0] == 1
+          assert d.execute("SELECT count(*) FROM votes").fetchone()[0] == 0
+          assert d.execute("SELECT count(*) FROM replies").fetchone()[0] == 0
+          d.executescript(Path('db/community-schema.sql').read_text())
+          assert d.execute("SELECT count(*) FROM posts").fetchone()[0] == 8
+          print('PASS D1 schema: idempotent migration; 8 labelled editorial starters; zero fictional votes or replies')
+          PY
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Build and typecheck Next application
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+        run: npm run build
+      - name: Verify Cloudflare static export
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+        run: |
+          printf "/** @type {import('next').NextConfig} */\nconst config = {output:'export',trailingSlash:true,images:{unoptimized:true}};\nexport default config;\n" > next.config.mjs
+          npm run build
+          test -f out/community/index.html
+          test -f out/account/index.html
+          test -f out/messages/index.html
+          test -f out/community/catalogue.json
+          echo 'PASS static export of community pages'

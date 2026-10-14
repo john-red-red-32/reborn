@@ -1,0 +1,24 @@
+"use client";
+import Link from "next/link";
+import {useEffect,useMemo,useState} from "react";
+import {ArrowLeft,ArrowRight,Link2,Plus,X} from "lucide-react";
+import {communityApi,communityCategories,type CommunityUser} from "../lib/community";
+type CatalogueItem={type:'kit'|'material';path:string;name:string;group:string};
+export default function CommunityComposer(){
+ const[me,setMe]=useState<CommunityUser|null>(null),[checking,setChecking]=useState(true);
+ const[category,setCategory]=useState('general'),[title,setTitle]=useState(''),[body,setBody]=useState(''),[query,setQuery]=useState(''),[index,setIndex]=useState<CatalogueItem[]>([]),[selected,setSelected]=useState<CatalogueItem[]>([]);
+ const[busy,setBusy]=useState(false),[error,setError]=useState('');
+ useEffect(()=>{communityApi<{user:CommunityUser|null}>('me').then(r=>setMe(r.user)).catch(e=>setError(e.message)).finally(()=>setChecking(false));fetch('/community/catalogue.json').then(r=>r.ok?r.json():[]).then((items:CatalogueItem[])=>{setIndex(items);const product=new URLSearchParams(window.location.search).get('product');if(product){const exact=items.find(i=>i.path===product||i.path===product+'/');if(exact)setSelected([exact])}}).catch(()=>{});},[]);
+ const matches=useMemo(()=>query.trim().length<2?[]:index.filter(i=>(i.name+' '+i.group).toLowerCase().includes(query.toLowerCase())).slice(0,9),[index,query]);
+ async function submit(e:React.FormEvent){e.preventDefault();setError('');setBusy(true);try{const r=await communityApi<{id:string}>('posts',{category,title,body,products:selected.map(x=>({type:x.type,path:x.path}))});window.location.assign('/community/discussion/?id='+encodeURIComponent(r.id))}catch(e){setError((e as Error).message);setBusy(false)}}
+ return <main className="rbrn-community-shell rbrn-community-compose"><Link className="rbrn-community-back" href="/community/"><ArrowLeft size={16}/> Back to discussions</Link><span className="section-kicker">A NEW CONVERSATION</span><h1>What's on your mind<span className="period">?</span></h1><p>Share a technique, ask for advice or discuss an original kit. Your words will be published under your Reborna username.</p>{error&&<p className="rbrn-community-feedback error">{error}</p>}
+ {checking?<p className="rbrn-community-muted">Checking membership…</p>:!me?<div className="rbrn-forum-join"><p>You’ll need a member account to post. Everyone can still read the discussions.</p><Link href="/account/">Join or sign in <ArrowRight size={16}/></Link></div>:
+ <form className="rbrn-account-form" onSubmit={submit}><label className="rbrn-form-field">Category<select value={category} onChange={e=>setCategory(e.target.value)}>{communityCategories.map(c=><option value={c.id} key={c.id}>{c.name}</option>)}</select></label>
+ <label className="rbrn-form-field">Discussion title<input required minLength={8} maxLength={110} value={title} onChange={e=>setTitle(e.target.value)} placeholder="A clear question or topic…"/></label>
+ <label className="rbrn-form-field">Your post<textarea required minLength={40} maxLength={6000} rows={9} value={body} onChange={e=>setBody(e.target.value)} placeholder="Tell people what you're working on, the product you're using and what you'd like to know…"/></label>
+ <section className="rbrn-attach-product"><div className="rbrn-attach-title"><Link2 size={17}/><div><h3>Discussing a particular product?</h3><p>Link up to three existing Reborna kits or materials. Your post will also appear on the related product pages.</p></div></div>{selected.length>0&&<div className="rbrn-selected-product-tags">{selected.map(i=><span key={i.path}>{i.name} <button type="button" aria-label={'Remove '+i.name} onClick={()=>setSelected(s=>s.filter(x=>x.path!==i.path))}><X size={13}/></button></span>)}</div>}
+ <label className="rbrn-form-field">Find a kit, colour or material<input value={query} onChange={e=>setQuery(e.target.value)} placeholder="e.g. Baby Brown, Cassie, Gemini…"/></label>
+ {!!matches.length&&<div className="rbrn-product-suggestions">{matches.map(i=><button key={i.path} type="button" disabled={selected.length>=3||selected.some(x=>x.path===i.path)} onClick={()=>{setSelected(s=>[...s,i]);setQuery('')}}><Plus size={14}/><span><strong>{i.name}</strong><small>{i.group} · {i.type==='kit'?'Original kit':'Material'}</small></span></button>)}</div>}
+ {query.length>=2&&!matches.length&&<p className="rbrn-community-muted">No catalogue matches yet. You can still discuss it without tagging a product.</p>}
+ </section><p className="rbrn-community-muted">Please don't publish private contact details, copied images or unverified allegations as fact. <Link href="/community/guidelines/">Community guidelines</Link></p><button className="rbrn-community-primary" type="submit" disabled={busy}>{busy?'Publishing…':'Publish discussion'} <ArrowRight size={16}/></button></form>}</main>
+}

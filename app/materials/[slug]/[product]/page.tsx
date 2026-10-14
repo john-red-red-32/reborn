@@ -6,6 +6,7 @@ import {supplierListings,supplyCategories} from "../../../../lib/materials-catal
 import {materialShippingPolicies,materialProductEvidence} from "../../../../lib/material-product-evidence";
 import {getMaterialProducts,materialProductSlug,materialProductPages} from "../../../../lib/material-routing";
 import MaterialProductViewer from "../../../../components/MaterialProductViewer";
+import CommunityProductDiscussions from "../../../../components/CommunityProductDiscussions";
 export function generateStaticParams(){return materialProductPages.map(p=>({slug:p.rangeSlug,product:p.productSlug}))}
 type Props={params:Promise<{slug:string;product:string}>};
 export async function generateMetadata({params}:Props):Promise<Metadata>{
@@ -23,6 +24,7 @@ export default async function IndividualMaterialProduct({params}:Props){
  return <main className="rbrn-material-detail detail-shell">
   <div className="detail-top"><Link href={"/materials/"+slug+"/"} className="back-link"><ArrowLeft size={17}/> Back to {listing.name}</Link><span>REBORN / MATERIALS / {group?.label.toUpperCase()}</span></div>
   <MaterialProductViewer product={product} evidence={evidence} shipping={policy} collectionUrl={listing.url} rangeName={listing.name} rangeSlug={listing.slug}/>
+  <CommunityProductDiscussions path={"/materials/"+slug+"/"+productSlug+"/"} title={product.title}/>
   <div className="rbrn-material-editorial-note"><Info size={17}/><p><strong>About this product range.</strong> {listing.description} Product availability, exact variation and delivery must always be confirmed with the original seller before ordering.</p></div>
  </main>;
 }
