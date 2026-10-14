@@ -40,6 +40,7 @@ async function recordSignupIssue(db,stage,reason){
  if(!db)return;
  try{
   // Intentionally no IP address, email, password, username, Turnstile token, or request payload.
+  await db.prepare("DELETE FROM signup_diagnostics WHERE created_at<datetime('now','-7 days')").run();
   await db.prepare('INSERT INTO signup_diagnostics(id,stage,reason) VALUES(?,?,?)').bind(crypto.randomUUID(),stage,reason).run();
  }catch(e){console.warn('Reborna diagnostic storage unavailable',String(e).slice(0,90))}
 }
