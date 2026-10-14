@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS users (
  bio TEXT NOT NULL DEFAULT '',
  password_salt TEXT,
  password_hash TEXT,
- password_iterations INTEGER NOT NULL DEFAULT 310000,
+ password_iterations INTEGER NOT NULL DEFAULT 100000,
  email_verified_at TEXT,
  created_at TEXT NOT NULL DEFAULT (datetime('now')),
  updated_at TEXT NOT NULL DEFAULT (datetime('now')),
