@@ -5,7 +5,7 @@ import EventsExplorer from "../../components/EventsExplorer";
 export const metadata:Metadata={
  title:"Reborn Events Around the World | Reborna",
  description:"Explore independently verified reborn and doll shows in the UK, United States and beyond. Find dates, venues and links directly to event organisers.",
- robots:{index:false,follow:false}
+ alternates:{canonical:"/events/"}
 };
 export default function EventsPage(){
  return <main className="rbrn-events-page">
