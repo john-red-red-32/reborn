@@ -593,3 +593,21 @@ html{scroll-behavior:smooth}
 @media(max-width:1050px){.rbrn-events-grid{grid-template-columns:1fr}.rbrn-event-card{min-height:285px;grid-template-columns:230px 1fr}.inner-nav{gap:11px}.inner-nav a{font-size:11px}}
 @media(max-width:750px){.rbrn-events-hero{grid-template-columns:1fr;padding-top:35px}.rbrn-events-hero-art{display:none}.rbrn-event-detail-layout{grid-template-columns:1fr;gap:35px}.rbrn-timeline-entry{grid-template-columns:1fr 26px;gap:8px}.rbrn-timeline-date,.rbrn-timeline-name,.rbrn-timeline-tag{grid-column:1}.rbrn-timeline-arrow{grid-column:2;grid-row:1/4}.rbrn-calendar-events-top{align-items:start;flex-direction:column}.rbrn-events-home-promo{margin:20px 4% 60px;flex-direction:column;align-items:flex-start}.rbrn-calendar-header{padding-top:35px}}
 @media(max-width:520px){.rbrn-event-card{grid-template-columns:1fr}.rbrn-event-card-art{min-height:175px}.rbrn-event-art-glyph{font-size:90px}.rbrn-event-art-location{font-size:26px}.rbrn-event-card-copy{padding:22px}.rbrn-events-hero h1{font-size:47px}.rbrn-events-selects label{width:100%;justify-content:space-between}.rbrn-calendar-tabs button{padding:11px 17px}.rbrn-event-detail-hero{padding-top:40px}.rbrn-event-detail-signet{height:210px}.rbrn-event-detail-footer{flex-direction:column}.rbrn-timeline-month h3 small{display:block;margin:8px 0 0}.rbrn-event-card h3{font-size:30px}}
+
+/* Prominent organiser-evidenced focus labels; visitors can distinguish types before planning travel. */
+.rbrn-event-focus{display:inline-flex;align-items:center;align-self:flex-start;gap:7px;font:700 10px/1.4 "DM Sans",sans-serif;letter-spacing:.02em;padding:8px 11px;border:1px solid #a58b76;border-radius:3px;width:max-content;max-width:100%}
+.rbrn-focus-reborn-specific{background:#685242;color:#fffdf9;border-color:#685242}
+.rbrn-focus-includes-reborns{background:#f6eee4;color:#65513f;border-color:#c2a894}
+.rbrn-event-focus>span{font-size:13px;line-height:1}
+.rbrn-event-card-copy>.rbrn-event-focus{margin:13px 0 0}
+.rbrn-events-explainer{display:grid;grid-template-columns:auto minmax(120px,1fr) auto minmax(145px,1fr);align-items:center;gap:10px 14px;margin:0 0 25px;padding:19px 23px;border:1px solid #e1d2c4;background:#fcf8f3}
+.rbrn-events-explainer>span{font-size:11px;line-height:1.6;color:#816f61}
+.rbrn-timeline-name>.rbrn-event-focus{margin:3px 0 0;font-size:9px;padding:5px 9px;line-height:1.3;display:inline-flex;color:#fff}
+.rbrn-timeline-name>.rbrn-focus-includes-reborns{color:#65513f}
+.rbrn-event-detail-hero>.rbrn-event-focus{margin-top:24px}
+.rbrn-event-detail-hero>.rbrn-event-focus+h1{margin-top:20px}
+.rbrn-event-detail-aside>.rbrn-event-focus{margin-top:18px;margin-bottom:14px}
+.rbrn-event-detail-story .rbrn-event-focus-evidence{background:#f7f0e9;border-left:3px solid #a28b75;padding:14px 17px;margin:10px 0 20px;color:#6e594a}
+.rbrn-event-focus-evidence strong{display:block;font-size:11px;letter-spacing:.04em;margin-bottom:4px}
+@media(max-width:1020px){.rbrn-events-explainer{grid-template-columns:auto 1fr}}
+@media(max-width:560px){.rbrn-events-explainer{grid-template-columns:1fr;padding:16px;gap:9px}.rbrn-events-explainer>span{margin-bottom:9px}}
