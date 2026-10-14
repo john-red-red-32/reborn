@@ -30,7 +30,7 @@ jobs:
             'gudrun-legler':False,'alejandra-de-zuniga':False,
             'severine-piret':False,'elly-knoops':True,
             'iveta-eckertova':True,'olga-auer':True,
-            'sabrina-hergarten':True,'ping-lau':False,
+            'sabrina-hergarten':True,'ping-lau':True,
             'laura-lee-eagles':False
           }
           photographed_artists={
@@ -38,10 +38,10 @@ jobs:
             'sabine-altenkirch-junkes','gudrun-legler',
             'elly-knoops','iveta-eckertova','olga-auer',
             'alejandra-de-zuniga','severine-piret',
-            'sabrina-hergarten','laura-lee-eagles'
+            'sabrina-hergarten','laura-lee-eagles','ping-lau'
           }
-          photo_pending_kits={'emerson-dawn-donofrio','josie-ping-lau'}
-          source_photographed_kits={'teddy-philomena-donnelly','sam-gudrun-legler','elena-alejandra-de-zuniga'}
+          photo_pending_kits={'josie-ping-lau'}
+          source_photographed_kits={'teddy-philomena-donnelly','sam-gudrun-legler','elena-alejandra-de-zuniga','emerson-dawn-donofrio','emma-dawn-donofrio','willow-joanna-kazmierczak'}
           kits=sorted(photo_pending_kits|source_photographed_kits)
           h={'User-Agent':'Mozilla/5.0 (compatible; RebornaSourceAudit/1.0)','Accept':'text/html'}
           for attempt in range(28):
