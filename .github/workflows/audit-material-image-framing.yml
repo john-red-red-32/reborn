@@ -33,8 +33,23 @@ jobs:
           for vals in good.values():
             assert len(vals)==3
             assert 1.24<=vals[0]<=2.1
-            assert all(-30<=v<=30 for v in vals[1:])
+            assert all(-38<=v<=38 for v in vals[1:])
           print('PASS',len(d),'source assets assessed;',len(good),'conservative smart-framed')
+          PY
+      - name: Test subject-centering regression on flat studio backgrounds
+        run: |
+          python3 - <<'PY'
+          from PIL import Image,ImageDraw
+          from scripts.audit_material_image_framing import analyse
+          canvas=Image.new("RGBA",(120,120),(255,255,255,255))
+          ImageDraw.Draw(canvas).ellipse((8,16,51,61),fill=(77,47,38,255))
+          frame=analyse(canvas,1.0)
+          assert frame and frame[0]>1.24 and frame[1]>5 and frame[2]>5,frame
+          centered=Image.new("RGBA",(120,120),(255,255,255,255))
+          ImageDraw.Draw(centered).ellipse((38,38,82,82),fill=(77,47,38,255))
+          midpoint=analyse(centered,1.0)
+          assert midpoint and abs(midpoint[1])<4 and abs(midpoint[2])<4,midpoint
+          print("PASS: off-centre objects move inward; centred subjects stay centred")
           PY
       - name: Commit metadata only when products/images change
         run: |

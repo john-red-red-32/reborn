@@ -22,7 +22,7 @@ from PIL import Image, ImageOps, UnidentifiedImageError
 ROOT=Path("lib")
 SOURCE=ROOT/"material-product-families.ts"
 OUTPUT=ROOT/"material-image-framing.json"
-VERSION=2
+VERSION=3
 VERSION_FILE=ROOT/"material-image-framing-version.txt"
 EVIDENCE=ROOT/"material-product-evidence.ts"
 START="export const materialFamilies:Record<string,FamilyProduct[]>="
@@ -149,8 +149,8 @@ def analyse(image,aspect):
     # "subject centre": use the middle 10–90% of actual foreground occupancy
     # instead of relying entirely on the extreme foreground bounds.
     #
-    # Blend gently toward the robust centre (<=3.5% of image width/height).
-    # This leaves already well-centred images effectively unchanged.
+    # Favour the occupied subject over background specks or long faint shadows.
+    # Keep movement conservative so centred photographs barely shift.
     def quantile_position(counts,ratio):
         total=sum(counts)
         cutoff=total*ratio
@@ -162,24 +162,33 @@ def analyse(image,aspect):
         return 0.5
     robust_cx=(quantile_position(cols,0.10)+quantile_position(cols,0.90))/2
     robust_cy=(quantile_position(rows,0.10)+quantile_position(rows,0.90))/2
-    cx+=max(-0.035,min(0.035,(robust_cx-cx)*0.60))
-    cy+=max(-0.035,min(0.035,(robust_cy-cy)*0.60))
+    cx+=max(-0.075,min(0.075,(robust_cx-cx)*0.75))
+    cy+=max(-0.075,min(0.075,(robust_cy-cy)*0.75))
     # CSS translate is a percent of image element dimensions before scaling.
     dx=round((0.5-cx)*rw*zoom*100,1)
     dy=round((0.5-cy)*rh*zoom*100,1)
-    dx=max(-30,min(30,dx))
-    dy=max(-30,min(30,dy))
+    dx=max(-38,min(38,dx))
+    dy=max(-38,min(38,dy))
     return [zoom,dx,dy]
 
 def inspect(url):
     try:
         result=fetch_image(url)
-        if not result:return (url,None)
+        if not result:return (url,"unavailable")
         return (url,analyse(*result))
-    except (OSError,ValueError,TypeError,UnidentifiedImageError,ZeroDivisionError):
-        return (url,None)
     except Exception:
-        return (url,None)
+        # A transient CDN/network failure must not erase valid previous framing.
+        return (url,"unavailable")
+
+def eye_image_urls():
+    """Revisit all eyes, including previously rejected candidates, on algorithm upgrades."""
+    families=json.loads(SOURCE.read_text().split(START)[1].strip().removesuffix(";"))
+    urls=set()
+    for slug in ("bountiful-baby-eyes","german-glass-eyes"):
+        for product in families.get(slug,[]):
+            urls.update(product.get("photoUrls",[]))
+            urls.update(v.get("photoUrl") for v in product.get("variants",[]) if v.get("photoUrl"))
+    return urls
 
 def main():
     urls=list(original_urls())
@@ -194,12 +203,13 @@ def main():
     except (OSError,ValueError):
         old_version=1
     recheck=(old_version!=VERSION or os.environ.get("REBORNA_RECHECK_FRAMING")=="1")
-    results={url:previous[url] for url in urls if url in previous and (not recheck or previous[url] is None)}
+    eye_refresh=eye_image_urls() if recheck else set()
+    results={url:previous[url] for url in urls if url in previous and (not recheck or (previous[url] is None and url not in eye_refresh))}
     missing=[url for url in urls if url not in results]
-    print("Framing audit", "algorithm",VERSION,"previous",old_version,"total",len(urls),"cached",len(results),"to_check",len(missing),flush=True)
+    print("Framing audit", "algorithm",VERSION,"previous",old_version,"total",len(urls),"cached",len(results),"to_check",len(missing),"eye_candidates",len(eye_refresh),flush=True)
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
         for index,(url,frame) in enumerate(pool.map(inspect,missing),1):
-            results[url]=frame
+            results[url]=previous.get(url) if frame=="unavailable" else frame
             if index%30==0:print("Examined",index,"of",len(missing),"positive",sum(v is not None for v in results.values()),flush=True)
     # Stable ordering and single tiny metadata entry per original image URL.
     OUTPUT.write_text(json.dumps({url:results[url] for url in urls},ensure_ascii=False,separators=(",",":"))+"\n")

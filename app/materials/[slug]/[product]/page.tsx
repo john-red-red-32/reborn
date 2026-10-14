@@ -22,7 +22,7 @@ export default async function IndividualMaterialProduct({params}:Props){
  const group=supplyCategories.find(p=>p.slug===listing.category);
  return <main className="rbrn-material-detail detail-shell">
   <div className="detail-top"><Link href={"/materials/"+slug+"/"} className="back-link"><ArrowLeft size={17}/> Back to {listing.name}</Link><span>REBORN / MATERIALS / {group?.label.toUpperCase()}</span></div>
-  <MaterialProductViewer product={product} evidence={evidence} shipping={policy} collectionUrl={listing.url} rangeName={listing.name}/>
+  <MaterialProductViewer product={product} evidence={evidence} shipping={policy} collectionUrl={listing.url} rangeName={listing.name} rangeSlug={listing.slug}/>
   <div className="rbrn-material-editorial-note"><Info size={17}/><p><strong>About this product range.</strong> {listing.description} Product availability, exact variation and delivery must always be confirmed with the original seller before ordering.</p></div>
  </main>;
 }
