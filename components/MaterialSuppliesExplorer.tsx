@@ -5,6 +5,7 @@ import {supplierListings,supplyCategories} from "../lib/materials-catalogue";
 import {materialProductEvidence} from "../lib/material-product-evidence";
 import type {SupplyCategory} from "../lib/materials-catalogue";
 import MaterialRangeProducts from "./MaterialRangeProducts";
+import {materialThumbnailStyle} from "../lib/material-image-style";
 export default function MaterialSuppliesExplorer(){
  const[category,setCategory]=useState<SupplyCategory|"all">("all");
  const[country,setCountry]=useState("all");
@@ -31,7 +32,7 @@ export default function MaterialSuppliesExplorer(){
    <div className="rbrn-supplies-grid">{listings.map(item=>{
     const image=materialProductEvidence[item.slug]?.products[0]?.photos[0];
     return <article key={item.slug} className="rbrn-supply-card rbrn-supply-photo-card">
-      <button type="button" onClick={()=>navigateRange(item.slug)} className="rbrn-supply-picture" aria-label={"Browse "+item.name+" products"}>{image?<img src={image.url} alt={item.name+" — source-attributed catalogue photograph"} loading="lazy" decoding="async"/>:<div className="rbrn-supply-art"><span>THE MAKER'S STUDIO</span><strong>✳</strong></div>}<span className="rbrn-supply-image-note">SUPPLIER PHOTOGRAPH</span></button>
+      <button type="button" onClick={()=>navigateRange(item.slug)} className="rbrn-supply-picture" aria-label={"Browse "+item.name+" products"}>{image?<img src={image.url} style={materialThumbnailStyle(image.url)} alt={item.name+" — source-attributed catalogue photograph"} loading="lazy" decoding="async"/>:<div className="rbrn-supply-art"><span>THE MAKER'S STUDIO</span><strong>✳</strong></div>}<span className="rbrn-supply-image-note">SUPPLIER PHOTOGRAPH</span></button>
       <div className="rbrn-supply-info"><div className="rbrn-supply-meta"><span>{item.method??"ARTIST SUPPLIES"}</span></div>
        <h3><button type="button" className="rbrn-supply-title-button" onClick={()=>navigateRange(item.slug)}>{item.name}</button></h3><p>{item.description}</p><div className="rbrn-supply-actions"><span>{item.maker}</span><button type="button" onClick={()=>navigateRange(item.slug)}>Browse products <ArrowRight size={15}/></button></div>
       </div>
