@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'lib/material-product-families.ts'
+      - 'lib/material-product-evidence.ts'
       - 'scripts/audit_material_image_framing.py'
       - '.github/workflows/audit-material-image-framing.yml'
   workflow_dispatch:
