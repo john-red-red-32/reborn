@@ -34,7 +34,7 @@ def product(base,handle):
   data.update(title=obj.get("title"),product_id=obj.get("id"),
     images=[{"url":u if u.startswith("https:") else "https:"+u if u.startswith("//") else u,"basis":"first_party_shopify_product"} for u in obj.get("images",[])[:12] if isinstance(u,str)],
     options=[o.get("name") if isinstance(o,dict) else o for o in obj.get("options",[])],
-    variants=[{"label":v.get("public_title") or v.get("title"),"option1":v.get("option1"),"option2":v.get("option2"),"option3":v.get("option3"),"image_id":(v.get("featured_image") or {}).get("id") if isinstance(v.get("featured_image"),dict) else None} for v in obj.get("variants",[])[:180]])
+    variants=[{"label":v.get("public_title") or v.get("title"),"option1":v.get("option1"),"option2":v.get("option2"),"option3":v.get("option3"),"image_id":(v.get("featured_image") or {}).get("id") if isinstance(v.get("featured_image"),dict) else None,"price_minor":v.get("price"),"available_at_review":v.get("available")} for v in obj.get("variants",[])[:180]])
  except Exception as e:data["status"]=type(e).__name__+":"+str(e)[:120]
  return data
 def research(entry):
