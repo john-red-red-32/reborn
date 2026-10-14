@@ -84,7 +84,7 @@ export async function onRequest(context){
  if(method!=='GET'&&method!=='POST')return failure('Method not allowed.',405);
  if(method==='POST'&&!originValid(request))return failure('Invalid request origin.',403);
  try{
- if(method==='GET'&&path==='status')return response({available:true,registrationOpen:emailReady(env)&&!!(env.TURNSTILE_SITE_KEY&&env.TURNSTILE_SECRET_KEY&&env.AI),turnstileSiteKey:env.TURNSTILE_SITE_KEY||null,moderation:'review-before-publication',mediaUploads:false,launch:'editorial'});
+ if(method==='GET'&&path==='status')return response({available:true,registrationOpen:emailReady(env)&&!!(env.TURNSTILE_SITE_KEY&&env.TURNSTILE_SECRET_KEY),turnstileSiteKey:env.TURNSTILE_SITE_KEY||null,moderation:'review-before-publication',mediaUploads:false,launch:'editorial'});
  if(!(await throttle(db,request,'all',280,3600)))return failure('Too many requests. Please try again later.',429);
  if(method==='GET'&&path==='posts'){
   const category=clean(query.get('category'),30),product=clean(query.get('product'),260),search=clean(query.get('q'),100),page=Math.min(40,Math.max(1,Number(query.get('page'))||1)),offset=(page-1)*20;
@@ -105,7 +105,7 @@ export async function onRequest(context){
  if(method==='GET'&&path==='profile'){const handle=clean(query.get('handle'),25);const u=await db.prepare("SELECT id,handle,display_name,bio,is_editorial,allow_messages,created_at FROM users WHERE handle=? AND status='active'").bind(handle).first();if(!u)return failure('Member not found.',404);const roles=(await db.prepare('SELECT role FROM user_roles WHERE user_id=?').bind(u.id).all()).results.map(x=>x.role);return response({profile:publicUser(u),roles,rolesAreSelfDescribed:true})}
  if(method==='GET'&&path==='me'){const u=await getUser(db,request);if(!u)return response({user:null});const roles=(await db.prepare('SELECT role FROM user_roles WHERE user_id=?').bind(u.id).all()).results.map(x=>x.role);const interests=(await db.prepare('SELECT interest FROM user_interests WHERE user_id=?').bind(u.id).all()).results.map(x=>x.interest);return response({user:{...publicUser(u),email:u.email,roles,interests,notificationEmail:!!u.notification_email,marketingEmail:!!u.marketing_email}})}
  if(method==='POST'&&path==='register'){
-  if(!emailReady(env)||!env.TURNSTILE_SITE_KEY||!env.TURNSTILE_SECRET_KEY||!env.AI)return failure('Registrations are being prepared. Please check back soon.',503);
+  if(!emailReady(env)||!env.TURNSTILE_SITE_KEY||!env.TURNSTILE_SECRET_KEY)return failure('Registrations are being prepared. Please check back soon.',503);
   if(!(await throttle(db,request,'register',5,3600)))return failure('Please try registering later.',429);
   const d=await readJson(request),email=clean(d.email,254).toLowerCase(),handle=clean(d.handle,24).toLowerCase(),display=clean(d.displayName,70),password=d.password;
   if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)||!validHandle(handle)||display.length<2||typeof password!=='string'||password.length<12||password.length>128)return failure('Use a valid email, a 3–24 character username, a display name and a password of at least 12 characters.');
