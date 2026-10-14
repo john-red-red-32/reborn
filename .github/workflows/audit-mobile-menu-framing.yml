@@ -43,7 +43,7 @@ jobs:
             assert nav.is_visible(),"Menu not open"
             assert page.get_by_role('button',name='Close navigation').get_attribute('aria-expanded')=='true'
             rows=nav.locator('a')
-            assert rows.count()==9,('Unexpected mobile navigation links',rows.count())
+            assert rows.count()==10,('Unexpected mobile navigation links',rows.count())
             for i in range(rows.count()):
              row=rows.nth(i)
              typ=row.evaluate("(el)=>({font:parseFloat(getComputedStyle(el).fontSize),height:el.getBoundingClientRect().height,width:el.getBoundingClientRect().width})")
