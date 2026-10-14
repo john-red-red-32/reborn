@@ -1,0 +1,123 @@
+name: Audit two-tier materials catalogue and compact variants
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-materials-two-tier.yml'
+      - 'components/MaterialSuppliesExplorer.tsx'
+      - 'components/MaterialRangeProducts.tsx'
+      - 'components/MaterialProductViewer.tsx'
+      - 'lib/material-routing.ts'
+      - 'app/materials/[slug]/page.tsx'
+      - 'app/materials/[slug]/[product]/page.tsx'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  materials:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check unique product paths, genuine family/option separation
+        run: |
+          python3 - <<'PY'
+          import json,re
+          from pathlib import Path
+          data=json.loads(Path('lib/material-product-families.ts').read_text().split('export const materialFamilies:Record<string,FamilyProduct[]>=')[1].strip().rstrip(';'))
+          assert len(data)==14
+          keys=[]
+          for slug,products in data.items():
+            for product in products:
+              key=re.sub(r'[^a-z0-9]+','-',product['sourceUrl'].split('?')[0].rstrip('/').split('/')[-1].lower()).strip('-')
+              keys.append((slug,key))
+              for option in product.get('variants',[]):
+                assert option['label'] and option['options']
+          assert len(keys)==len(set(keys)), 'duplicate product path'
+          assert len(keys)>=240
+          assert len(data['kebelka-heat-paints'])==46
+          assert len(data['gemini-heat-set'])>=70
+          assert 'rbrn-material-family-section' not in Path('components/MaterialProductViewer.tsx').read_text(), 'Family grid must not be on detail page'
+          assert 'rbrn-material-picker-popover' in Path('components/MaterialProductViewer.tsx').read_text()
+          assert 'MaterialRangeProducts' in Path('components/MaterialSuppliesExplorer.tsx').read_text()
+          print('PASS 242 individually sourced family product paths and compact options architecture')
+          PY
+      - run: pip -q install playwright==1.55.0
+      - run: python3 -m playwright install --with-deps chromium
+      - name: Verify actual catalogue browsing and option selection in browser
+        run: |
+          python3 - <<'PY'
+          from playwright.sync_api import sync_playwright
+          import time
+          base='https://reborna.co'
+          def visit(page,path,selector):
+            for i in range(23):
+              page.goto(base+path,wait_until='domcontentloaded',timeout=30000)
+              try:
+                page.locator(selector).first.wait_for(state='visible',timeout=3000)
+                break
+              except Exception:time.sleep(6)
+            else:raise AssertionError('Site has not deployed '+path)
+          with sync_playwright() as p:
+            browser=p.chromium.launch(headless=True)
+            ctx=browser.new_context(viewport={'width':1280,'height':900},locale='en-GB')
+            page=ctx.new_page()
+            page.on('pageerror',lambda e:print('JS PAGE ERROR',str(e)[:500],flush=True))
+            visit(page,'/materials/','.rbrn-supply-photo-card')
+            page.get_by_role('button',name='Browse HP Babylocks Mohair products').click()
+            assert page.url.rstrip('/').endswith('/materials'),page.url
+            page.locator('.rbrn-range-card').first.wait_for()
+            assert page.locator('.rbrn-range-card').count()==3
+            assert page.locator('.rbrn-material-main-image').count()==0,'Range list must not contain product gallery'
+            print('PASS mohair range opens three separate products without leaving catalogue',flush=True)
+            page.locator('.rbrn-range-card').first.click()
+            page.wait_for_url('**/materials/hp-babylocks/*/')
+            assert page.locator('.rbrn-material-main-image img').count()==1
+            assert page.locator('.rbrn-material-family-grid').count()==0
+            trigger=page.locator('.rbrn-material-picker-trigger')
+            trigger.click()
+            assert trigger.get_attribute('aria-expanded')=='true'
+            options=page.locator('.rbrn-material-picker-list button')
+            assert options.count()>10
+            firstImage=page.locator('.rbrn-material-main-image img').get_attribute('src')
+            photoOption=options.filter(has=page.locator('img')).first
+            photoOption.click()
+            assert trigger.get_attribute('aria-expanded')=='false'
+            assert page.locator('.rbrn-material-picker-popover').count()==0
+            assert page.locator('.rbrn-material-main-image img').get_attribute('src')!=firstImage
+            print('PASS compact mohair variation selector closes and updates main photo',flush=True)
+            visit(page,'/materials/kebelka-heat-paints/','.rbrn-range-card')
+            assert page.locator('.rbrn-range-card').count()==24
+            page.get_by_role('button',name='Show all 46 products').click()
+            assert page.locator('.rbrn-range-card').count()==46
+            card=page.locator('.rbrn-range-card').filter(has_text='33 CORAL').first
+            card.click()
+            page.wait_for_url('**/materials/kebelka-heat-paints/*/')
+            assert '33 CORAL' in page.locator('.rbrn-material-buy-detail h2').inner_text().upper()
+            page.locator('.rbrn-material-picker-trigger').click()
+            assert page.locator('.rbrn-material-picker-list button').count()==2
+            page.locator('.rbrn-material-picker-list button').nth(1).click()
+            assert page.locator('.rbrn-material-picker-popover').count()==0
+            assert '30 ml' in page.locator('.rbrn-material-picker-trigger').inner_text()
+            assert 'From' in page.locator('.rbrn-material-dated-price').inner_text()
+            print('PASS Kebelka 46 distinct shades each with compact size choice',flush=True)
+            visit(page,'/materials/gemini-heat-set/','.rbrn-range-card')
+            page.get_by_role('button',name='Show all 72 products').click()
+            page.locator('.rbrn-range-card').filter(has_text='Flesh 08').first.click()
+            page.wait_for_url('**/materials/gemini-heat-set/*/')
+            assert page.locator('.rbrn-material-picker-trigger').count()==0,'One-off single paint must not have artificial variants'
+            assert 'Flesh 08' in page.locator('.rbrn-material-buy-detail h2').inner_text()
+            assert 'bountifulbaby.com/products/' in page.locator('.rbrn-material-shop-link').get_attribute('href')
+            print('PASS separately sold Gemini singles have no false variation stage',flush=True)
+            mobile=browser.new_context(viewport={'width':390,'height':810},locale='en-GB').new_page()
+            visit(mobile,'/materials/hp-babylocks/','.rbrn-range-card')
+            mobile.locator('.rbrn-range-card').first.click()
+            mobile.wait_for_url('**/materials/hp-babylocks/*/')
+            mobile.locator('.rbrn-material-picker-trigger').click()
+            mobile.locator('.rbrn-material-picker-list button').filter(has=mobile.locator('img')).first.click()
+            mobile.wait_for_timeout(600)
+            assert mobile.evaluate('document.documentElement.scrollWidth <= innerWidth + 2')
+            assert mobile.locator('.rbrn-material-picker-popover').count()==0
+            print('PASS compact options and mobile viewport',flush=True)
+            browser.close()
+          PY
