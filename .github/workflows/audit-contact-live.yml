@@ -23,7 +23,7 @@ jobs:
           import json,time,urllib.request,urllib.error
           base='https://reborna.co'
           def read(path,method='GET',payload=None):
-            headers={'User-Agent':'Reborna-contact-production-audit/1','Accept':'text/html,application/json'}
+            headers={'User-Agent':'Mozilla/5.0 (Reborna contact audit)','Accept':'text/html,application/json'}
             if payload is not None:
               headers['Content-Type']='application/json'
             req=urllib.request.Request(base+path,method=method,headers=headers,data=None if payload is None else json.dumps(payload).encode())
@@ -32,7 +32,7 @@ jobs:
                 return response.status,response.read().decode(errors='replace')
             except urllib.error.HTTPError as e:
               return e.code,e.read().decode(errors='replace')
-          for attempt in range(35):
+          for attempt in range(8):
             errors=[]
             try:
               status,home=read('/')
@@ -51,6 +51,6 @@ jobs:
               print('PASS: contact page, global footer, protected Cloudflare Function and Turnstile readiness')
               break
             print('Awaiting Cloudflare deployment',attempt+1,errors,flush=True)
-            time.sleep(9)
+            time.sleep(4)
           else: raise SystemExit('Contact production audit failed: '+repr(errors))
           PY
