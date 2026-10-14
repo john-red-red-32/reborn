@@ -393,3 +393,38 @@
 .rbrn-wishlist-entry strong{display:block;color:#674b3b;font-size:13px}
 .rbrn-wishlist-entry p{font-size:12px;color:#8b7564;line-height:1.8;margin:5px 0 0}
 @media(max-width:700px){.rbrn-save-toast.rbrn-save-invite{left:12px;right:12px;bottom:16px;width:auto;padding:14px}.rbrn-wishlist-entry{padding:15px;margin-bottom:20px}}
+
+
+/* Reborna's quiet, readable legal pages — intentionally no intrusive header links. */
+.rbrn-legal-page{max-width:1250px}
+.rbrn-legal-intro{padding-bottom:38px;border-bottom:1px solid #e5d8cb;margin:0 0 45px}
+.rbrn-legal-intro h1{font-size:clamp(43px,6.3vw,70px);line-height:1.17;letter-spacing:-.04em;margin:16px 0}
+.rbrn-legal-intro>p{max-width:750px;font-size:15px;line-height:1.95;color:#907a6a}
+.rbrn-legal-meta{display:flex;gap:22px;align-items:center;margin-top:20px;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#a18a7a}
+.rbrn-legal-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,290px);gap:clamp(36px,5vw,90px);align-items:start}
+.rbrn-legal-copy{min-width:0}
+.rbrn-legal-copy section{margin:0 0 38px;scroll-margin-top:24px}
+.rbrn-legal-copy h2{font-size:clamp(23px,2.7vw,30px);line-height:1.35;margin:0 0 16px}
+.rbrn-legal-copy p,.rbrn-legal-copy li{font-size:13px;line-height:2;color:#806c5d}
+.rbrn-legal-copy p{margin:0 0 15px}
+.rbrn-legal-copy strong{color:#5e493b;font-weight:650}
+.rbrn-legal-copy ul{margin:0 0 15px;padding-left:23px}
+.rbrn-legal-copy li{margin:0 0 11px;padding-left:4px}
+.rbrn-legal-copy a{color:#745540;text-decoration:underline;text-underline-offset:3px}
+.rbrn-legal-copy a:hover{color:#453023}
+.rbrn-legal-aside{position:sticky;top:20px;padding:28px;background:#f7efe8;border:1px solid #e7d8ca}
+.rbrn-legal-aside h2{font-size:26px;line-height:1.35;margin:14px 0}
+.rbrn-legal-aside p{font-size:12px;line-height:1.9;color:#8d7665}
+.rbrn-legal-aside>a{display:inline-block;margin:13px 0 20px;font-size:12px;font-weight:650;text-decoration:none;color:#684b38}
+.rbrn-legal-aside nav{display:flex;flex-direction:column;align-items:flex-start;gap:12px;border-top:1px solid #dfcebf;padding-top:20px}
+.rbrn-legal-aside nav a{font-size:11px;color:#7c6553;text-decoration:none}
+.rbrn-legal-aside nav a:hover{text-decoration:underline}
+.rbrn-legal-table-scroll{overflow-x:auto;margin:18px 0 25px;-webkit-overflow-scrolling:touch}
+.rbrn-legal-copy table{width:100%;border-collapse:collapse;min-width:560px;text-align:left}
+.rbrn-legal-copy th{background:#f2e7dc;color:#644a39;font-size:11px;font-weight:650;letter-spacing:.02em}
+.rbrn-legal-copy td{font-size:11px;line-height:1.75;color:#827060;vertical-align:top}
+.rbrn-legal-copy td,.rbrn-legal-copy th{padding:14px 12px;border-bottom:1px solid #e9dccf}
+.rbrn-legal-copy td:first-child{color:#644e3e;overflow-wrap:anywhere}
+.rbrn-legal-copy td strong{font-size:10px}
+@media(max-width:830px){.rbrn-legal-columns{grid-template-columns:1fr;gap:14px}.rbrn-legal-aside{position:static;order:2;margin-top:12px}.rbrn-legal-intro{margin-bottom:31px}.rbrn-legal-page{padding-top:48px}}
+@media(max-width:490px){.rbrn-legal-copy p,.rbrn-legal-copy li{font-size:12px;line-height:1.9}.rbrn-legal-copy section{margin-bottom:31px}.rbrn-legal-intro>p{font-size:13px}}
