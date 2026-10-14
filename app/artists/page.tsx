@@ -1,4 +1,4 @@
 import SculptorDirectory from "../../components/SculptorDirectory";
 import {artists,verifiedKits} from "../../lib/real-catalogue";
-export const metadata={title:"Meet the sculptors | Reborna",robots:{index:false,follow:false}};
+export const metadata={title:"Original Reborn Doll Sculptors & Artists | Reborna",description:"Explore source-backed reborn sculptor biographies, original reborn doll designs and documented sculpt kits.",alternates:{canonical:"/artists/"}};
 export default function Artists(){return <main className="detail-shell"><section className="directory-intro"><span className="section-kicker">THE PEOPLE BEHIND THE ART</span><h1>Meet the sculptors<span className="period">.</span></h1><p>Explore the independent artists shaping the world of reborn sculpting, their stories and documented collections.</p></section><SculptorDirectory artists={artists} kits={verifiedKits}/></main>}
