@@ -9,7 +9,7 @@ declare global {
   }
  }
 }
-type Props={siteKey:string;action:"register"|"topic"|"reply";onVerify:(token:string)=>void;resetKey?:number};
+type Props={siteKey:string;action:"register"|"topic"|"reply"|"contact";onVerify:(token:string)=>void;resetKey?:number};
 export default function TurnstileChallenge({siteKey,action,onVerify,resetKey=0}:Props){
  const root=useRef<HTMLDivElement>(null),callback=useRef(onVerify);
  useEffect(()=>{callback.current=onVerify},[onVerify]);
