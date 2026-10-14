@@ -10,7 +10,7 @@ export async function generateMetadata({params}:Props):Promise<Metadata>{
  const {slug}=await params;
  const event=communityEvents.find(item=>item.slug===slug);
  if(!event)return {title:"Event not found | Reborna"};
- return {title:event.name+" | Reborna Events",description:event.description,robots:{index:false,follow:false}};
+ return {title:event.name+" | Reborn Doll & Art Event | Reborna",description:event.description,alternates:{canonical:"/events/"+slug+"/"},openGraph:{title:event.name+" | Reborna",description:event.description,url:"https://reborna.co/events/"+slug+"/"}};
 }
 function eventJsonLd(event:CommunityEvent){
  return {"@context":"https://schema.org","@type":"Event",

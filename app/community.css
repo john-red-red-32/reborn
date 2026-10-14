@@ -428,3 +428,11 @@
 .rbrn-legal-copy td strong{font-size:10px}
 @media(max-width:830px){.rbrn-legal-columns{grid-template-columns:1fr;gap:14px}.rbrn-legal-aside{position:static;order:2;margin-top:12px}.rbrn-legal-intro{margin-bottom:31px}.rbrn-legal-page{padding-top:48px}}
 @media(max-width:490px){.rbrn-legal-copy p,.rbrn-legal-copy li{font-size:12px;line-height:1.9}.rbrn-legal-copy section{margin-bottom:31px}.rbrn-legal-intro>p{font-size:13px}}
+
+
+/* Quiet, accessible safety controls that do not interrupt ordinary discussions. */
+.rbrn-message-report,.rbrn-profile-report,.rbrn-reply-report{display:inline-flex;align-items:center;gap:6px;border:0;background:transparent;color:#947a69;font:normal 10px/1.4 "DM Sans",Arial,sans-serif;padding:7px 3px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.rbrn-message-report:hover,.rbrn-profile-report:hover,.rbrn-reply-report:hover{color:#684532}
+.rbrn-profile-report{margin:16px 0 0 12px;min-height:38px}
+.rbrn-reply-report{margin:8px 0 0;min-height:33px}
+.rbrn-inbox-messages .rbrn-message-report{margin-top:6px;min-height:34px}

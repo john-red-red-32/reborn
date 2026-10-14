@@ -514,7 +514,22 @@ export async function onRequest(context){
   if(!(await throttle(db,request,'report',12,3600)))return failure('Please wait before submitting another report.',429);
   const d=await readJson(request),type=clean(d.targetType,20),target=clean(d.targetId,100),reason=clean(d.reason,500);
   if(!['post','reply','message','user'].includes(type)||!target||reason.length<10)return failure('Provide an item and a reason (at least 10 characters).');
-  await db.prepare('INSERT INTO reports(id,reporter_id,target_type,target_id,reason) VALUES(?,?,?,?,?)').bind(crypto.randomUUID(),user.id,type,target,reason).run();return response({ok:true});
+  // Verify a real visible target, and never let members probe another conversation's messages.
+  const check=type==='post'
+    ?db.prepare("SELECT 1 FROM posts WHERE id=? AND status='published'").bind(target)
+    :type==='reply'
+    ?db.prepare("SELECT 1 FROM replies r JOIN posts p ON p.id=r.post_id WHERE r.id=? AND r.status='published' AND p.status='published'").bind(target)
+    :type==='message'
+    ?db.prepare("SELECT 1 FROM messages m JOIN conversation_members cm ON cm.conversation_id=m.conversation_id WHERE m.id=? AND cm.user_id=?").bind(target,user.id)
+    :db.prepare("SELECT 1 FROM users WHERE id=? AND status='active'").bind(target);
+  if(!(await check.first()))return failure('The content is unavailable or you do not have access to it.',404);
+  const reportId=crypto.randomUUID();
+  await db.prepare('INSERT INTO reports(id,reporter_id,target_type,target_id,reason) VALUES(?,?,?,?,?)').bind(reportId,user.id,type,target,reason).run();
+  if(emailReady(env)&&typeof context.waitUntil==='function'){
+   const html='<p>A new member safety report needs review on Reborna.</p><p>Category: '+type+'. Reference: '+reportId+'.</p><p><a href="https://reborna.co/community/moderation/">Open the private moderation dashboard</a></p><p>For privacy, the reported content is not included in this email.</p>';
+   context.waitUntil(sendEmail(env,'hello@reborna.co','Reborna member safety report',html).catch(e=>console.error('Member report alert failed',String(e).slice(0,120))));
+  }
+  return response({ok:true});
  }
  return failure('Community endpoint not found.',404);
  }catch(e){if(String(e).includes('UNIQUE constraint'))return failure('That email or username is already in use.',409);if(e instanceof SyntaxError)return failure('Invalid request data.');if(['Send JSON data.','Request too large.'].includes(e.message))return failure(e.message);console.error('Community request failed',path,String(e));if(path==='register')await recordSignupIssue(db,'server','unexpected_error');return failure('The community service could not complete this request.',500)}
