@@ -29,9 +29,61 @@ async function getUser(db,request){const v=(request.headers.get('cookie')||'').s
 async function session(db,userId){const token=b64(bytes(40)),hash=await sha(token);await db.prepare("INSERT INTO sessions(token_hash,user_id,expires_at) VALUES(?,?,datetime('now','+30 days'))").bind(hash,userId).run();return cookie(token,30*86400)}
 async function throttle(db,request,action,limit,window=900){const ip=request.headers.get('cf-connecting-ip')||'unknown';const key=await sha('reborna-ratelimit-v1:'+action+':'+ip);const epoch=now();await db.prepare("INSERT INTO rate_limits(key,count,window_start) VALUES(?,1,?) ON CONFLICT(key) DO UPDATE SET count=CASE WHEN window_start<? THEN 1 ELSE count+1 END,window_start=CASE WHEN window_start<? THEN ? ELSE window_start END").bind(key,epoch,epoch-window,epoch-window,epoch).run();const row=await db.prepare("SELECT count FROM rate_limits WHERE key=?").bind(key).first();return row.count<=limit}
 function originValid(request){const url=new URL(request.url),origin=request.headers.get('origin');return !origin||origin===url.origin}
-async function sendEmail(env,email,subject,html){if(!env.RESEND_API_KEY||!env.COMMUNITY_MAIL_FROM)throw Error('Email provider not configured');const r=await fetch('https://api.resend.com/emails',{method:'POST',headers:{'Authorization':'Bearer '+env.RESEND_API_KEY,'Content-Type':'application/json'},body:JSON.stringify({from:env.COMMUNITY_MAIL_FROM,to:[email],subject,html})});if(!r.ok)throw Error('Email temporarily unavailable')}
+function emailReady(env){return !!(env.COMMUNITY_MAIL_FROM&&(env.RESEND_API_KEY||env.EMAIL))}
+async function sendEmail(env,email,subject,html){
+ if(!emailReady(env))throw Error('Email provider not configured');
+ if(env.EMAIL){await env.EMAIL.send({from:env.COMMUNITY_MAIL_FROM,to:email,subject,html,text:html.replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&')});return}
+ const r=await fetch('https://api.resend.com/emails',{method:'POST',headers:{'Authorization':'Bearer '+env.RESEND_API_KEY,'Content-Type':'application/json'},body:JSON.stringify({from:env.COMMUNITY_MAIL_FROM,to:[email],subject,html})});
+ if(!r.ok)throw Error('Email temporarily unavailable');
+}
+async function verifyTurnstile(env,request,token,action){
+ if(!env.TURNSTILE_SECRET_KEY||!env.TURNSTILE_SITE_KEY||typeof token!=='string'||token.length<10||token.length>2048)return false;
+ try{
+  const form=new URLSearchParams({secret:env.TURNSTILE_SECRET_KEY,response:token});
+  const ip=request.headers.get('CF-Connecting-IP');if(ip)form.set('remoteip',ip);
+  const r=await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify',{method:'POST',body:form});
+  if(!r.ok)return false;
+  const answer=await r.json();
+  const hostname=answer.hostname||'';
+  return answer.success===true&&answer.action===action&&['reborna.co','www.reborna.co','reborna-site.pages.dev'].some(h=>hostname===h||hostname.endsWith('.'+h));
+ }catch{return false}
+}
+const moderationVisible=(alias,type)=>"NOT EXISTS (SELECT 1 FROM content_moderation cm WHERE cm.content_type='"+type+"' AND cm.content_id="+alias+".id AND cm.state<>'approved')";
+async function moderationProcess(db,env,type,id,title,body){
+ try{
+  if(!env.COMMUNITY_SAFETY&&!env.AI){await db.prepare("UPDATE content_moderation SET state='needs_review',reason_code='other',reason_text='Automated review is temporarily unavailable',updated_at=datetime('now') WHERE content_type=? AND content_id=? AND state='pending'").bind(type,id).run();return}
+  const text=(title?title+'\n':'')+body;
+  let safe;
+  if(env.COMMUNITY_SAFETY){
+   const r=await env.COMMUNITY_SAFETY.fetch('https://reborna.internal/moderate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:text.slice(0,6400)})});
+   if(!r.ok)throw Error('AI moderation service unavailable');
+   const result=await r.json();
+   if(typeof result?.safe!=='boolean')throw Error('Unexpected AI moderation result');
+   safe=result.safe;
+  }else{
+   const result=await env.AI.run('@cf/meta/llama-guard-3-8b',{messages:[{role:'user',content:text.slice(0,6400)}],max_tokens:90});
+   const verdict=typeof result?.response==='string'?result.response.trim().toLowerCase():'';
+   safe=/^safe(?:\s|$)/.test(verdict);
+  }
+  // Potentially unsafe results are held for a human; critical product criticism is not automatically censored.
+  const state=safe?'approved':'needs_review';
+  const reason=safe?null:'other';
+  await db.prepare("UPDATE content_moderation SET state=?,reason_code=?,reason_text=?,updated_at=datetime('now') WHERE content_type=? AND content_id=? AND state='pending'").bind(state,reason,safe?null:'AI moderation flagged this for a human decision',type,id).run();
+ }catch(e){
+  console.error('Reborna moderation review temporarily unavailable',type,String(e).slice(0,200));
+  await db.prepare("UPDATE content_moderation SET state='needs_review',reason_code='other',reason_text='Automated review unavailable',updated_at=datetime('now') WHERE content_type=? AND content_id=? AND state='pending'").bind(type,id).run();
+ }
+}
+async function isModerator(db,userId){return !!await db.prepare('SELECT 1 FROM community_moderators WHERE user_id=?').bind(userId).first()}
+async function notifyModeration(db,env,id){
+ const task=await db.prepare("SELECT n.*,u.email FROM moderation_notifications n JOIN users u ON u.id=n.member_id WHERE n.id=? AND n.state IN ('queued','failed')").bind(id).first();
+ if(!task||!task.email||!emailReady(env))return;
+ try{await sendEmail(env,task.email,task.subject,'<p>'+task.body.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))+'</p><p>You can sign in to Reborna to see your submission status.</p>');await db.prepare("UPDATE moderation_notifications SET state='sent',sent_at=datetime('now') WHERE id=?").bind(id).run()}
+ catch(e){console.error('Community moderation email failed',String(e).slice(0,120));await db.prepare("UPDATE moderation_notifications SET state='failed' WHERE id=?").bind(id).run()}
+}
+
 async function deliverToken(db,env,u,purpose){const token=b64(bytes(32)),hash=await sha(token);await db.prepare("DELETE FROM email_tokens WHERE user_id=? AND purpose=?").bind(u.id,purpose).run();await db.prepare("INSERT INTO email_tokens(token_hash,user_id,purpose,expires_at) VALUES(?,?,?,datetime('now',?))").bind(hash,u.id,purpose,purpose==='verify'?'+24 hours':'+30 minutes').run();const path=purpose==='verify'?'/account/?verify=':'/account/?reset=';const link='https://reborna.co'+path+encodeURIComponent(token);const subject=purpose==='verify'?'Verify your Reborna email':'Reset your Reborna password';const html='<p>Hello,</p><p>'+ (purpose==='verify'?'Confirm your Reborna membership:':'Reset your Reborna password:') +'</p><p><a href="'+link+'">Continue securely to Reborna</a></p><p>This link expires '+(purpose==='verify'?'in 24 hours':'in 30 minutes')+'. If you did not request it, you can ignore this email.</p>';await sendEmail(env,u.email,subject,html)}
-async function onePost(db,id,user){const row=await db.prepare(`SELECT p.*,u.handle,u.display_name,u.is_editorial,(SELECT COUNT(*) FROM replies r WHERE r.post_id=p.id AND r.status='published') AS reply_count,(SELECT COUNT(*) FROM votes v WHERE v.post_id=p.id) AS vote_count FROM posts p JOIN users u ON u.id=p.author_id WHERE p.id=? AND p.status='published'`).bind(id).first();if(!row)return null;const products=(await db.prepare('SELECT product_type AS type,product_path AS path FROM post_products WHERE post_id=?').bind(id).all()).results||[];return {...row,products,liked:false};}
+async function onePost(db,id,user){const row=await db.prepare(`SELECT p.*,u.handle,u.display_name,u.is_editorial,(SELECT COUNT(*) FROM replies r WHERE r.post_id=p.id AND r.status='published' AND ${moderationVisible('r','reply')}) AS reply_count,(SELECT COUNT(*) FROM votes v WHERE v.post_id=p.id) AS vote_count FROM posts p JOIN users u ON u.id=p.author_id WHERE p.id=? AND p.status='published' AND ${moderationVisible('p','post')}`).bind(id).first();if(!row)return null;const products=(await db.prepare('SELECT product_type AS type,product_path AS path FROM post_products WHERE post_id=?').bind(id).all()).results||[];return {...row,products,liked:false};}
 export async function onRequest(context){
  const {request,env}=context,db=env.COMMUNITY_DB;
  const path=new URL(request.url).pathname.replace(/^\/api\/community\/?/,'').replace(/\/$/,'');
@@ -41,11 +93,11 @@ export async function onRequest(context){
  if(method!=='GET'&&method!=='POST')return failure('Method not allowed.',405);
  if(method==='POST'&&!originValid(request))return failure('Invalid request origin.',403);
  try{
- if(method==='GET'&&path==='status')return response({available:true,registrationOpen:!!(env.RESEND_API_KEY&&env.COMMUNITY_MAIL_FROM),mediaUploads:false,launch:'editorial'});
+ if(method==='GET'&&path==='status')return response({available:true,registrationOpen:emailReady(env)&&!!(env.TURNSTILE_SITE_KEY&&env.TURNSTILE_SECRET_KEY),turnstileSiteKey:env.TURNSTILE_SITE_KEY||null,moderation:'review-before-publication',aiModerationReady:!!(env.COMMUNITY_SAFETY||env.AI),mediaUploads:false,launch:'editorial'});
  if(!(await throttle(db,request,'all',280,3600)))return failure('Too many requests. Please try again later.',429);
  if(method==='GET'&&path==='posts'){
   const category=clean(query.get('category'),30),product=clean(query.get('product'),260),search=clean(query.get('q'),100),page=Math.min(40,Math.max(1,Number(query.get('page'))||1)),offset=(page-1)*20;
-  let sql=`SELECT p.id,p.title,p.category,p.body,p.created_at,p.pinned,u.handle,u.display_name,u.is_editorial,(SELECT COUNT(*) FROM replies r WHERE r.post_id=p.id AND r.status='published') AS reply_count,(SELECT COUNT(*) FROM votes v WHERE v.post_id=p.id) AS vote_count FROM posts p JOIN users u ON u.id=p.author_id WHERE p.status='published'`,args=[];
+  let sql=`SELECT p.id,p.title,p.category,p.body,p.created_at,p.pinned,u.handle,u.display_name,u.is_editorial,(SELECT COUNT(*) FROM replies r WHERE r.post_id=p.id AND r.status='published' AND ${moderationVisible('r','reply')}) AS reply_count,(SELECT COUNT(*) FROM votes v WHERE v.post_id=p.id) AS vote_count FROM posts p JOIN users u ON u.id=p.author_id WHERE p.status='published' AND ${moderationVisible('p','post')}`,args=[];
   if(CATEGORIES.includes(category)){sql+=' AND p.category=?';args.push(category)}
   if(product&&/^\/(kits|materials)\/[a-z0-9/-]{2,170}\/?$/.test(product)){sql+=' AND EXISTS (SELECT 1 FROM post_products pp WHERE pp.post_id=p.id AND pp.product_path=?)';args.push(product.endsWith('/')?product:product+'/')}
   if(search){sql+=' AND (p.title LIKE ? OR p.body LIKE ?)';args.push('%'+search+'%','%'+search+'%')}
@@ -55,17 +107,18 @@ export async function onRequest(context){
  }
  if(method==='GET'&&path==='post'){
   const id=clean(query.get('id'),100);const post=await onePost(db,id);if(!post)return failure('Discussion not found.',404);
-  const replies=(await db.prepare(`SELECT r.id,r.body,r.created_at,u.handle,u.display_name,u.is_editorial FROM replies r JOIN users u ON u.id=r.author_id WHERE r.post_id=? AND r.status='published' ORDER BY r.created_at LIMIT 250`).bind(id).all()).results||[];
+  const replies=(await db.prepare(`SELECT r.id,r.body,r.created_at,u.handle,u.display_name,u.is_editorial FROM replies r JOIN users u ON u.id=r.author_id WHERE r.post_id=? AND r.status='published' AND ${moderationVisible('r','reply')} ORDER BY r.created_at LIMIT 250`).bind(id).all()).results||[];
   const viewer=await getUser(db,request);if(viewer){const vote=await db.prepare('SELECT 1 FROM votes WHERE post_id=? AND user_id=?').bind(id,viewer.id).first();post.liked=!!vote}
   return response({post,replies});
  }
  if(method==='GET'&&path==='profile'){const handle=clean(query.get('handle'),25);const u=await db.prepare("SELECT id,handle,display_name,bio,is_editorial,allow_messages,created_at FROM users WHERE handle=? AND status='active'").bind(handle).first();if(!u)return failure('Member not found.',404);const roles=(await db.prepare('SELECT role FROM user_roles WHERE user_id=?').bind(u.id).all()).results.map(x=>x.role);return response({profile:publicUser(u),roles,rolesAreSelfDescribed:true})}
  if(method==='GET'&&path==='me'){const u=await getUser(db,request);if(!u)return response({user:null});const roles=(await db.prepare('SELECT role FROM user_roles WHERE user_id=?').bind(u.id).all()).results.map(x=>x.role);const interests=(await db.prepare('SELECT interest FROM user_interests WHERE user_id=?').bind(u.id).all()).results.map(x=>x.interest);return response({user:{...publicUser(u),email:u.email,roles,interests,notificationEmail:!!u.notification_email,marketingEmail:!!u.marketing_email}})}
  if(method==='POST'&&path==='register'){
-  if(!env.RESEND_API_KEY||!env.COMMUNITY_MAIL_FROM)return failure('Registrations are being prepared. Please check back soon.',503);
+  if(!emailReady(env)||!env.TURNSTILE_SITE_KEY||!env.TURNSTILE_SECRET_KEY)return failure('Registrations are being prepared. Please check back soon.',503);
   if(!(await throttle(db,request,'register',5,3600)))return failure('Please try registering later.',429);
   const d=await readJson(request),email=clean(d.email,254).toLowerCase(),handle=clean(d.handle,24).toLowerCase(),display=clean(d.displayName,70),password=d.password;
   if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)||!validHandle(handle)||display.length<2||typeof password!=='string'||password.length<12||password.length>128)return failure('Use a valid email, a 3–24 character username, a display name and a password of at least 12 characters.');
+  if(!(await verifyTurnstile(env,request,d.turnstileToken,'register')))return failure('Please complete the security check and try again.',403);
   const existing=await db.prepare('SELECT 1 FROM users WHERE email=? OR handle=?').bind(email,handle).first();if(existing)return failure('That email or username is already registered.',409);
   const salt=b64(bytes(20)),hash=await passwordHash(password,salt),id=crypto.randomUUID();
   await db.prepare('INSERT INTO users(id,email,handle,display_name,password_salt,password_hash,marketing_email,notification_email) VALUES(?,?,?,?,?,?,?,?)').bind(id,email,handle,display,salt,hash,d.marketingEmail===true?1:0,d.notificationEmail===true?1:0).run();
@@ -78,7 +131,7 @@ export async function onRequest(context){
   if(!(await throttle(db,request,'resend',3,3600)))return failure('Please try later.',429);
   const d=await readJson(request),email=clean(d.email,254).toLowerCase();
   const u=await db.prepare("SELECT id,email FROM users WHERE email=? AND status='active' AND email_verified_at IS NULL").bind(email).first();
-  if(u&&env.RESEND_API_KEY&&env.COMMUNITY_MAIL_FROM)await deliverToken(db,env,u,'verify');
+  if(u&&emailReady(env))await deliverToken(db,env,u,'verify');
   return response({ok:true,message:'If that address has an unverified account, a link has been sent.'});
  }
  if(method==='POST'&&path==='verify'){
@@ -104,7 +157,7 @@ export async function onRequest(context){
  if(method==='POST'&&path==='forgot'){
   if(!(await throttle(db,request,'forgot',3,3600)))return failure('Please try later.',429);
   const d=await readJson(request),email=clean(d.email,254).toLowerCase(),u=await db.prepare("SELECT id,email FROM users WHERE email=? AND status='active' AND email_verified_at IS NOT NULL").bind(email).first();
-  if(u&&env.RESEND_API_KEY&&env.COMMUNITY_MAIL_FROM)await deliverToken(db,env,u,'reset');
+  if(u&&emailReady(env))await deliverToken(db,env,u,'reset');
   return response({ok:true,message:'If your email is registered, a reset link has been sent.'});
  }
  if(method==='POST'&&path==='reset'){
@@ -132,19 +185,28 @@ export async function onRequest(context){
   if(!(await throttle(db,request,'posting',20,3600)))return failure('Please wait before posting again.',429);
   const d=await readJson(request),title=clean(d.title,140),body=clean(d.body,6500),category=clean(d.category,30),products=validatedProducts(d.products);
   if(title.length<8||title.length>110||body.length<40||body.length>6000||!CATEGORIES.includes(category))return failure('Choose a category, title (8–110 characters) and message (40–6000 characters).');
-  const id=crypto.randomUUID(),stmts=[db.prepare('INSERT INTO posts(id,author_id,category,title,body) VALUES(?,?,?,?,?)').bind(id,user.id,category,title,body),...products.map(p=>db.prepare('INSERT INTO post_products(post_id,product_type,product_path) VALUES(?,?,?)').bind(id,p.type,p.path))];await db.batch(stmts);
-  return response({ok:true,id},201);
+  if(!(await verifyTurnstile(env,request,d.turnstileToken,'topic')))return failure('Please complete the security check and try again.',403);
+  const id=crypto.randomUUID(),stmts=[db.prepare('INSERT INTO posts(id,author_id,category,title,body) VALUES(?,?,?,?,?)').bind(id,user.id,category,title,body),
+    db.prepare("INSERT INTO content_moderation(content_type,content_id,state) VALUES('post',?,'pending')").bind(id),
+    ...products.map(p=>db.prepare('INSERT INTO post_products(post_id,product_type,product_path) VALUES(?,?,?)').bind(id,p.type,p.path))];
+  await db.batch(stmts);
+  context.waitUntil(moderationProcess(db,env,'post',id,title,body));
+  return response({ok:true,id,moderation:'pending',message:'Your discussion has been received and is being reviewed before publication.'},202);
  }
  if(method==='POST'&&path==='reply'){
   if(!(await throttle(db,request,'reply',45,3600)))return failure('Please wait before replying again.',429);
   const d=await readJson(request),body=clean(d.body,2200),id=clean(d.postId,100);
   if(body.length<2||body.length>2000)return failure('Replies must be between 2 and 2000 characters.');
-  const p=await db.prepare("SELECT id FROM posts WHERE id=? AND status='published' AND locked=0").bind(id).first();if(!p)return failure('Discussion is unavailable or closed.',404);
-  await db.prepare('INSERT INTO replies(id,post_id,author_id,body) VALUES(?,?,?,?)').bind(crypto.randomUUID(),id,user.id,body).run();return response({ok:true},201);
+  const p=await db.prepare(`SELECT id FROM posts p WHERE id=? AND status='published' AND locked=0 AND ${moderationVisible('p','post')}`).bind(id).first();if(!p)return failure('Discussion is unavailable or closed.',404);
+  if(!(await verifyTurnstile(env,request,d.turnstileToken,'reply')))return failure('Please complete the security check and try again.',403);
+  const replyId=crypto.randomUUID();
+  await db.batch([db.prepare('INSERT INTO replies(id,post_id,author_id,body) VALUES(?,?,?,?)').bind(replyId,id,user.id,body),db.prepare("INSERT INTO content_moderation(content_type,content_id,state) VALUES('reply',?,'pending')").bind(replyId)]);
+  context.waitUntil(moderationProcess(db,env,'reply',replyId,'',body));
+  return response({ok:true,moderation:'pending',message:'Your reply is being reviewed before publication.'},202);
  }
  if(method==='POST'&&path==='vote'){
   if(!(await throttle(db,request,'votes',90,3600)))return failure('Please wait before voting again.',429);
-  const d=await readJson(request),id=clean(d.postId,100),post=await db.prepare("SELECT id FROM posts WHERE id=? AND status='published'").bind(id).first();if(!post)return failure('Discussion not found.',404);
+  const d=await readJson(request),id=clean(d.postId,100),post=await db.prepare(`SELECT id FROM posts p WHERE id=? AND status='published' AND ${moderationVisible('p','post')}`).bind(id).first();if(!post)return failure('Discussion not found.',404);
   const voted=await db.prepare('SELECT 1 FROM votes WHERE post_id=? AND user_id=?').bind(id,user.id).first();
   if(voted)await db.prepare('DELETE FROM votes WHERE post_id=? AND user_id=?').bind(id,user.id).run();else await db.prepare('INSERT OR IGNORE INTO votes(user_id,post_id) VALUES(?,?)').bind(user.id,id).run();return response({ok:true,liked:!voted});
  }
@@ -169,6 +231,37 @@ export async function onRequest(context){
    if(previous)id=previous.id;else{ id=crypto.randomUUID();await db.batch([db.prepare('INSERT INTO conversations(id) VALUES(?)').bind(id),db.prepare('INSERT INTO conversation_members(conversation_id,user_id) VALUES(?,?)').bind(id,user.id),db.prepare('INSERT INTO conversation_members(conversation_id,user_id) VALUES(?,?)').bind(id,other.id)]);}
   }
   await db.batch([db.prepare('INSERT INTO messages(id,conversation_id,sender_id,body) VALUES(?,?,?,?)').bind(crypto.randomUUID(),id,user.id,body),db.prepare("UPDATE conversations SET updated_at=datetime('now') WHERE id=?").bind(id)]);return response({ok:true,conversationId:id},201);
+ }
+ if(method==='GET'&&path==='my-submissions'){
+  const rows=(await db.prepare(`SELECT p.id,p.title,p.created_at,COALESCE(cm.state,'approved') AS moderation_state,cm.reason_code FROM posts p LEFT JOIN content_moderation cm ON cm.content_type='post' AND cm.content_id=p.id WHERE p.author_id=? ORDER BY p.created_at DESC LIMIT 40`).bind(user.id).all()).results||[];
+  return response({submissions:rows});
+ }
+ if(method==='GET'&&path==='moderation-queue'){
+  if(!(await isModerator(db,user.id)))return failure('Not authorised.',403);
+  const state=clean(query.get('state'),30),mode=['pending','needs_review','rejected'].includes(state)?state:'needs_review';
+  const list=(await db.prepare(`SELECT cm.content_type,cm.content_id,cm.state,cm.reason_code,cm.reason_text,cm.created_at,COALESCE(p.title,'Reply') AS title,COALESCE(p.body,r.body) AS body,u.handle FROM content_moderation cm LEFT JOIN posts p ON cm.content_type='post' AND p.id=cm.content_id LEFT JOIN replies r ON cm.content_type='reply' AND r.id=cm.content_id JOIN users u ON u.id=COALESCE(p.author_id,r.author_id) WHERE cm.state=? ORDER BY cm.created_at LIMIT 60`).bind(mode).all()).results||[];
+  return response({items:list});
+ }
+ if(method==='POST'&&path==='moderate'){
+  if(!(await isModerator(db,user.id)))return failure('Not authorised.',403);
+  const d=await readJson(request),type=clean(d.type,10),id=clean(d.id,100),state=clean(d.state,30),reason=clean(d.reason,30);
+  if(!['post','reply'].includes(type)||!['approved','rejected','needs_review'].includes(state)||!id)return failure('Invalid moderation action.');
+  const allowed=['harassment','hate','threats','spam','privacy','other'];
+  if(state==='rejected'&&!allowed.includes(reason))return failure('Choose a clear rejection category.');
+  const m=await db.prepare("SELECT state FROM content_moderation WHERE content_type=? AND content_id=?").bind(type,id).first();
+  if(!m)return failure('Moderation item not found.',404);
+  const reasonText=state==='rejected'?({harassment:'Personal harassment or bullying',hate:'Hateful or discriminatory content',threats:'Threats or intimidation',spam:'Spam or misleading promotion',privacy:'Personal information shared without permission',other:'Our published community guidelines'}[reason]):null;
+  const update=db.prepare("UPDATE content_moderation SET state=?,reason_code=?,reason_text=?,reviewed_by=?,updated_at=datetime('now') WHERE content_type=? AND content_id=?").bind(state,state==='rejected'?reason:null,reasonText,user.id,type,id);
+  const audit=db.prepare('INSERT INTO moderation_audit(id,reviewer_id,content_type,content_id,action,reason_code) VALUES(?,?,?,?,?,?)').bind(crypto.randomUUID(),user.id,type,id,state,state==='rejected'?reason:null);
+  const statements=[update,audit];
+  let noticeId=null;
+  if(state==='rejected'){
+   const author=await db.prepare(type==='post'?'SELECT author_id AS id FROM posts WHERE id=?':'SELECT author_id AS id FROM replies WHERE id=?').bind(id).first();
+   if(author){noticeId=crypto.randomUUID();statements.push(db.prepare('INSERT INTO moderation_notifications(id,content_type,content_id,member_id,subject,body) VALUES(?,?,?,?,?,?)').bind(noticeId,type,id,author.id,'Your Reborna community submission','Your recent '+(type==='post'?'discussion':'reply')+' could not be published because it appears to breach our guidelines regarding '+reasonText.toLowerCase()+'. You may contact the Reborna moderation team if you believe this was a mistake.'))}
+  }
+  await db.batch(statements);
+  if(noticeId)context.waitUntil(notifyModeration(db,env,noticeId));
+  return response({ok:true});
  }
  if(method==='POST'&&path==='report'){
   if(!(await throttle(db,request,'report',12,3600)))return failure('Please wait before submitting another report.',429);
