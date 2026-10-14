@@ -302,12 +302,20 @@ export async function onRequest(context){
  const user=await getUser(db,request);
  if(!user)return failure('Please sign in to continue.',401);
  if(method==='GET'&&path==='wishlist'){
-  const items=(await db.prepare('SELECT item_type AS type,item_path AS path,item_title AS title,item_subtitle AS subtitle,image_url AS imageUrl,saved_at AS savedAt FROM member_saved_items WHERE user_id=? ORDER BY saved_at DESC,item_path ASC LIMIT 1200').bind(user.id).all()).results||[];
+  const items=(await db.prepare('SELECT item_type AS type,item_path AS path,item_title AS title,item_subtitle AS subtitle,collection_status AS collectionStatus,image_url AS imageUrl,saved_at AS savedAt FROM member_saved_items WHERE user_id=? ORDER BY saved_at DESC,item_path ASC LIMIT 1200').bind(user.id).all()).results||[];
   return response({items});
  }
  if(method==='POST'&&path==='wishlist'){
   if(!(await throttle(db,request,'wishlist-write',180,3600)))return failure('Too many collection changes. Please wait before trying again.',429);
   const data=await readJson(request),action=data?.action;
+  if(action==='mark-owned'||action==='mark-wishlist'){
+   const item=canonicalSavedItem(data?.item);
+   if(!item)return failure('Select a valid saved catalogue item.');
+   const state=action==='mark-owned'?'owned':'wishlist';
+   const changed=await db.prepare('UPDATE member_saved_items SET collection_status=? WHERE user_id=? AND item_path=?').bind(state,user.id,item.path).run();
+   if(!changed.meta?.changes)return failure('Save this item to your collection first.',404);
+   return response({ok:true,collectionStatus:state});
+  }
   if(action==='remove'){
    const item=canonicalSavedItem(data?.item);
    if(!item)return failure('Select a valid Reborna catalogue item.');
