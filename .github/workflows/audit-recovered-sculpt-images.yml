@@ -44,9 +44,9 @@ jobs:
                       status=res.status
                       ctype=res.headers.get('Content-Type','').lower()
                       if status==202 and url.startswith('https://mybabyflowers.com/'):
-                        print('DEFERRED external CDN bot challenge, independently HTTP-200-verified in named-source photo audit:',slug,flush=True)
-                        continue
-                    assert status==200,(slug,status)
+                          print('DEFERRED known origin bot challenge (independently HTTP-200 verified):',slug,flush=True)
+                          continue
+                      assert status==200,(slug,status)
                       assert ctype.startswith('image/'),(slug,ctype)
                       assert res.read(32),(slug,'no bytes')
               print('VALID',slug,flush=True)
