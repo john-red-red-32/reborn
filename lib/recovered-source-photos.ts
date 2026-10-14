@@ -1,7 +1,7 @@
 /** Identity-matched source photographs for historical sculpt discovery.
  * Each photo is tied to the exact artist-labelled source page/card. Empty or
- * generic limb images, duplicate kits, and Ping Lau (explicit rights warning)
- * remain excluded. These are editor-reviewed references, not licensed assets.
+ * generic limb images, duplicate kits, and any Ping Lau images from the artist's restricted gallery remain excluded.
+ * Noncommercial retailer images from Irresistables have source-specific sharing terms. These are editor-reviewed references, not licensed assets.
  * Research: scrape-results/snapshots/image-review/dealer-archives-*.json;
  * public original sculptor product galleries consulted 2026-10-14.
  */
@@ -336,6 +336,61 @@ export const recoveredKitPhotos:Record<string,NonNullable<VerifiedKit["photos"]>
       "source": "https://ellamck.com/aspen/",
       "credit": "Ella McK Creations — finished Aspen silicone reborn by Ella McK; original sculpt by Dawn Donofrio"
     }
+  ],
+  "willow-joanna-kazmierczak": [
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/5eccb3d1357f2b58e13697ac/8a7a8d1a-f657-43d3-93f2-1987b601a390/willowa.jpg",
+      "source": "https://www.cityofrebornangels.com.au/reborndoll-kits/p/willow-joanna-kazmierczak",
+      "credit": "City of Reborn Angels — Willow by Joanna Kazmierczak-Pietka; finished reborn example (individual photographer not confirmed)"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/5eccb3d1357f2b58e13697ac/4c6417e1-b36d-4159-9e21-b84b8cc9721a/IMG_1945.JPG",
+      "source": "https://www.cityofrebornangels.com.au/reborndoll-kits/p/willow-joanna-kazmierczak",
+      "credit": "City of Reborn Angels — Willow by Joanna Kazmierczak-Pietka; finished reborn example (individual photographer not confirmed)"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/5eccb3d1357f2b58e13697ac/fffc9c59-ced7-4de9-87b0-ec3fe75786ac/IMG_1942.JPG",
+      "source": "https://www.cityofrebornangels.com.au/reborndoll-kits/p/willow-joanna-kazmierczak",
+      "credit": "City of Reborn Angels — Willow by Joanna Kazmierczak-Pietka; finished reborn example (individual photographer not confirmed)"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/5eccb3d1357f2b58e13697ac/3317c42c-dc92-4476-93f1-e87439cfbe82/IMG_1946.JPG",
+      "source": "https://www.cityofrebornangels.com.au/reborndoll-kits/p/willow-joanna-kazmierczak",
+      "credit": "City of Reborn Angels — Willow by Joanna Kazmierczak-Pietka; finished reborn example (individual photographer not confirmed)"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/5eccb3d1357f2b58e13697ac/f5d168ab-ba5b-40c1-b5c2-423ffa26f29a/IMG_1941.JPG",
+      "source": "https://www.cityofrebornangels.com.au/reborndoll-kits/p/willow-joanna-kazmierczak",
+      "credit": "City of Reborn Angels — Willow by Joanna Kazmierczak-Pietka; finished reborn example (individual photographer not confirmed)"
+    }
+  ],
+  "luca-ping-lau": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/5293/images/65926/27067292_966228513527746_552028084665301222_n__68795.1714700401.500.750.jpg?c=2",
+      "source": "https://www.irresistables.com/luca-reborn-vinyl-toddler-doll-kit-by-ping-lau-30/",
+      "credit": "Irresistables — Luca, original reborn sculpt by Ping Lau; finished-example photographer not individually named"
+    }
+  ],
+  "tori-ping-lau": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/2232/images/17251/25311152_10213722532792864_9064514324990972668_o__81064.1529004455.500.750.jpg?c=2",
+      "source": "https://www.irresistables.com/copy-of-tori-doll-kit-by-ping-lau-limited-first-edition/",
+      "credit": "Irresistables — Tori, original reborn sculpt by Ping Lau; finished-example photographer not individually named"
+    }
+  ],
+  "raven-ping-lau": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/2182/images/16514/raven1__08241.1559584339.500.750.jpg?c=2",
+      "source": "https://www.irresistables.com/raven-by-ping-lau-2nd-edition/",
+      "credit": "Irresistables — Raven, original reborn sculpt by Ping Lau; finished-example photographer not individually named"
+    }
+  ],
+  "lovelyn-awake-ping-lau": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/151/images/785/lovelyn4__20362.1698866525.500.750.jpg?c=2",
+      "source": "https://www.irresistables.com/lovelyn-awake-reborn-vinyl-doll-kit-by-ping-lau-ultra-soft-vinyl-23/",
+      "credit": "Irresistables — Lovelyn Awake, original reborn sculpt by Ping Lau; finished-example photographer not individually named"
+    }
   ]
 };
 export const recoveredArtistCovers:Record<string,ArtistImage[]>={
@@ -434,6 +489,24 @@ export const recoveredArtistCovers:Record<string,ArtistImage[]>={
       "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/images/stencil/1024x1024/products/5122/61680/370214816_10231294285284377_3754750764682753257_n__70691.1693251401.jpg?c=2",
       "source": "https://www.irresistables.com/kiki-reborn-vinyl-doll-kit-by-severine-piret/",
       "credit": "Irresistables — Kiki prototype by Silver Lining Art Dolls, original sculpt by Séverine Piret — featured sculpt artwork, not the sculptor's portrait",
+      "role": "banner",
+      "reviewStatus": "source_identified"
+    }
+  ],
+  "joanna-kazmierczak": [
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/5eccb3d1357f2b58e13697ac/8a7a8d1a-f657-43d3-93f2-1987b601a390/willowa.jpg",
+      "source": "https://www.cityofrebornangels.com.au/reborndoll-kits/p/willow-joanna-kazmierczak",
+      "credit": "City of Reborn Angels — Willow by Joanna Kazmierczak-Pietka; finished reborn example (individual photographer not confirmed) — featured sculpt artwork, not a photograph of the sculptor",
+      "role": "banner",
+      "reviewStatus": "source_identified"
+    }
+  ],
+  "ping-lau": [
+    {
+      "url": "https://cdn11.bigcommerce.com/s-80sd8ywaj3/products/151/images/785/lovelyn4__20362.1698866525.500.750.jpg?c=2",
+      "source": "https://www.irresistables.com/lovelyn-awake-reborn-vinyl-doll-kit-by-ping-lau-ultra-soft-vinyl-23/",
+      "credit": "Irresistables — Lovelyn Awake, original reborn sculpt by Ping Lau; finished-example photographer not individually named — featured sculpt artwork, not a photograph of the sculptor",
       "role": "banner",
       "reviewStatus": "source_identified"
     }
