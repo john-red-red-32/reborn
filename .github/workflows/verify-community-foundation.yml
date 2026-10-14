@@ -1,7 +1,7 @@
 name: Verify community foundation
 on:
   push:
-    branches: [main, feature/wishlists-member-dashboard-20261014]
+    branches: [main, feature/publish-reborna-legal-pages-20261014]
     paths:
       - 'app/**'
       - 'components/**'
@@ -15,6 +15,7 @@ on:
       - 'db/member-profile-avatars.sql'
       - 'db/member-collections-and-drafts.sql'
       - 'db/member-saved-archive-extension.sql'
+      - 'db/member-terms-acceptance.sql'
       - 'scripts/test-community-name-safety.mjs'
       - 'db/contact-enquiries.sql'
       - '.github/workflows/verify-community-foundation.yml'
@@ -78,6 +79,10 @@ jobs:
           assert d.execute("SELECT count(*) FROM member_saved_items").fetchone()[0]==2
           assert d.execute("SELECT count(*) FROM member_studio_projects").fetchone()[0]==1
           assert d.execute("SELECT count(*) FROM member_listing_drafts").fetchone()[0]==1
+          d.executescript(Path('db/member-terms-acceptance.sql').read_text())
+          d.executescript(Path('db/member-terms-acceptance.sql').read_text())
+          d.execute("INSERT INTO member_terms_acceptance(user_id,terms_version) VALUES('reborna-editorial','2026-10-14')")
+          assert d.execute("SELECT terms_version FROM member_terms_acceptance WHERE user_id='reborna-editorial'").fetchone()[0]=='2026-10-14'
           print('PASS D1 schemas: idempotent community, avatars, collection, studio and private seller drafts')
           PY
       - name: Verify Cloudflare password work-factor compatibility
@@ -99,6 +104,21 @@ jobs:
           PY
       - name: Prevent abusive aliases and innocent-name false positives
         run: node scripts/test-community-name-safety.mjs
+      - name: Verify publicly readable legal pages and signup acceptance contract
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          api=Path('functions/api/community/[[path]].js').read_text()
+          ui=Path('components/CommunityAccount.tsx').read_text()
+          assert "d.termsAccepted!==true" in api
+          assert "member_terms_acceptance" in api
+          assert "termsAccepted:terms" in ui
+          for p in ('terms','privacy','cookies'):
+            content=Path(f'app/{p}/page.tsx').read_text()
+            assert 'hello@reborna.co' in content if p != 'cookies' else '/privacy/' in content
+            assert '[LEGAL' not in content and '[DATE' not in content
+          print('PASS: truthful Reborna-branded pages, actual registration acceptance and no placeholders')
+          PY
       - name: Install dependencies
         run: npm install --no-audit --no-fund
       - name: Build and typecheck Next application
@@ -113,9 +133,12 @@ jobs:
           npm run build
           test -f out/community/index.html
           test -f out/account/index.html
+          test -f out/privacy/index.html
+          test -f out/terms/index.html
+          test -f out/cookies/index.html
           test -f out/dashboard/index.html
           test -f out/contact/index.html
           test -f out/messages/index.html
           test -f out/community/moderation/index.html
           test -f out/community/catalogue.json
-          echo 'PASS static export of community and contact pages'
+          echo 'PASS static export of Reborna community, contact and legal policy pages'
