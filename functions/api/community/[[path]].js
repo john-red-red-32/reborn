@@ -1,3 +1,5 @@
+import {publicNameError} from '../../../lib/community-name-safety.mjs';
+
 /* Reborna Community API — Cloudflare Pages Functions + isolated D1.
  * Static Next.js pages call same-origin /api/community/*.
  * Requires COMMUNITY_DB D1 binding. Public signup requires configured transactional email.
@@ -30,8 +32,8 @@ function clean(value,length){return typeof value==='string'?value.trim().slice(0
 function strings(value,allowed){return Array.isArray(value)?[...new Set(value.filter(x=>typeof x==='string'&&allowed.includes(x)))]:[]}
 function validHandle(s){return /^[a-z][a-z0-9_]{2,23}$/.test(s)&&!['admin','support','moderator','reborna','official','staff','system','help'].includes(s)}
 function validatedProducts(p){if(!Array.isArray(p))return[];return p.slice(0,3).filter(v=>v&&typeof v.path==='string'&&typeof v.type==='string'&&((v.type==='kit'&&/^\/kits\/[a-z0-9-]+\/?$/.test(v.path))||(v.type==='material'&&/^\/materials\/[a-z0-9-]+\/[a-z0-9-]+\/?$/.test(v.path)))).map(v=>({path:v.path.endsWith('/')?v.path:v.path+'/',type:v.type})).filter((v,i,a)=>a.findIndex(x=>x.path===v.path)===i)}
-function publicUser(u){return {id:u.id,handle:u.handle,displayName:u.display_name,bio:u.bio||'',editorial:!!u.is_editorial,allowMessages:!!u.allow_messages,createdAt:u.created_at}}
-async function getUser(db,request){const v=(request.headers.get('cookie')||'').split(';').map(s=>s.trim()).find(s=>s.startsWith(COOKIE+'='));if(!v)return null;const raw=v.slice(COOKIE.length+1);if(!/^[\w-]{40,100}$/.test(raw))return null;const h=await sha(raw);return db.prepare("SELECT u.* FROM sessions s JOIN users u ON u.id=s.user_id WHERE s.token_hash=? AND s.expires_at>datetime('now') AND u.status='active' AND u.email_verified_at IS NOT NULL").bind(h).first()}
+function publicUser(u){return {id:u.id,handle:u.handle,displayName:u.display_name,bio:u.bio||'',editorial:!!u.is_editorial,allowMessages:!!u.allow_messages,createdAt:u.created_at,avatarUrl:u.avatar_version?'/api/community/avatar?id='+encodeURIComponent(u.id)+'&v='+encodeURIComponent(u.avatar_version):null}}
+async function getUser(db,request){const v=(request.headers.get('cookie')||'').split(';').map(s=>s.trim()).find(s=>s.startsWith(COOKIE+'='));if(!v)return null;const raw=v.slice(COOKIE.length+1);if(!/^[\w-]{40,100}$/.test(raw))return null;const h=await sha(raw);return db.prepare("SELECT u.*,av.version AS avatar_version FROM sessions s JOIN users u ON u.id=s.user_id LEFT JOIN profile_avatars av ON av.user_id=u.id WHERE s.token_hash=? AND s.expires_at>datetime('now') AND u.status='active' AND u.email_verified_at IS NOT NULL").bind(h).first()}
 async function session(db,userId){const token=b64(bytes(40)),hash=await sha(token);await db.prepare("INSERT INTO sessions(token_hash,user_id,expires_at) VALUES(?,?,datetime('now','+30 days'))").bind(hash,userId).run();return cookie(token,30*86400)}
 async function throttle(db,request,action,limit,window=900){const ip=request.headers.get('cf-connecting-ip')||'unknown';const key=await sha('reborna-ratelimit-v1:'+action+':'+ip);const epoch=now();await db.prepare("INSERT INTO rate_limits(key,count,window_start) VALUES(?,1,?) ON CONFLICT(key) DO UPDATE SET count=CASE WHEN window_start<? THEN 1 ELSE count+1 END,window_start=CASE WHEN window_start<? THEN ? ELSE window_start END").bind(key,epoch,epoch-window,epoch-window,epoch).run();const row=await db.prepare("SELECT count FROM rate_limits WHERE key=?").bind(key).first();return row.count<=limit}
 function originValid(request){const url=new URL(request.url),origin=request.headers.get('origin');return !origin||origin===url.origin}
@@ -72,6 +74,71 @@ async function verifyTurnstile(env,request,token,action,db=null){
   return true;
  }catch(e){await report('siteverify_unavailable');return false}
 }
+// Compact raster-only avatars avoid a paid image-hosting service. The browser
+// removes EXIF metadata when it redraws a source image onto a small canvas.
+async function readAvatarBody(request){
+ if(!(request.headers.get('content-type')||'').startsWith('application/json'))throw Error('Send JSON data.');
+ const length=Number(request.headers.get('content-length')||0);
+ if(length>115000)throw Error('Photo payload is too large.');
+ if(!request.body)throw Error('Photo payload is missing.');
+ const reader=request.body.getReader();let chunks=[],size=0;
+ try{
+  while(true){const {value,done}=await reader.read();if(done)break;size+=value.byteLength;
+   if(size>115000){await reader.cancel();throw Error('Photo payload is too large.')}
+   chunks.push(value);
+  }
+ }finally{reader.releaseLock()}
+ const packed=new Uint8Array(size);let i=0;for(const chunk of chunks){packed.set(chunk,i);i+=chunk.length}
+ return JSON.parse(new TextDecoder().decode(packed));
+}
+function avatarDimensions(raw,type){
+ const b=i=>raw.charCodeAt(i);
+ if(type==='image/webp'){
+  if(raw.length<32||raw.slice(0,4)!=='RIFF'||raw.slice(8,12)!=='WEBP')return null;
+  const format=raw.slice(12,16);
+  if(format==='VP8 '){
+   if(b(23)!==0x9d||b(24)!==0x01||b(25)!==0x2a)return null;
+   return [b(26)|((b(27)&63)<<8),b(28)|((b(29)&63)<<8)];
+  }
+  if(format==='VP8L'){
+   if(b(20)!==0x2f)return null;
+   return [1+b(21)+((b(22)&63)<<8),1+((b(22)>>6)&3)+(b(23)<<2)+((b(24)&15)<<10)];
+  }
+  if(format==='VP8X'){
+   if((b(20)&(0x02|0x04|0x08|0x20))!==0)return null; // no animation, EXIF, ICC or XMP metadata
+   return [1+b(24)+(b(25)<<8)+(b(26)<<16),1+b(27)+(b(28)<<8)+(b(29)<<16)];
+  }
+  return null;
+ }
+ if(type==='image/jpeg'){
+  if(b(0)!==255||b(1)!==216||b(raw.length-2)!==255||b(raw.length-1)!==217)return null;
+  let p=2;
+  while(p+9<raw.length){
+   if(b(p)!==255){p++;continue}
+   while(b(p)===255)p++;
+   const marker=b(p++);if(marker===0xd9||marker===0xda)break;
+   if(marker===0x01||(marker>=0xd0&&marker<=0xd7))continue;
+   const len=(b(p)<<8)+b(p+1);
+   if(len<2||p+len>raw.length)return null;
+   if([0xc0,0xc1,0xc2,0xc3,0xc5,0xc6,0xc7,0xc9,0xca,0xcb,0xcd,0xce,0xcf].includes(marker)){
+    return [(b(p+5)<<8)+b(p+6),(b(p+3)<<8)+b(p+4)];
+   }
+   p+=len;
+  }
+ }
+ return null;
+}
+function validatedAvatar(input){
+ if(typeof input!=='string'||input.length>113000)return null;
+ const match=/^data:(image\/(?:webp|jpeg));base64,([A-Za-z0-9+/]+={0,2})$/.exec(input);
+ if(!match)return null;
+ let raw;try{raw=atob(match[2])}catch{return null}
+ if(raw.length<80||raw.length>76000)return null;
+ const dims=avatarDimensions(raw,match[1]);
+ if(!dims||dims.some(d=>d<1||d>512))return null;
+ return {mime:match[1],image:match[2]};
+}
+
 const moderationVisible=(alias,type)=>"NOT EXISTS (SELECT 1 FROM content_moderation cm WHERE cm.content_type='"+type+"' AND cm.content_id="+alias+".id AND cm.state<>'approved')";
 async function moderationProcess(db,env,type,id,title,body){
  try{
@@ -118,6 +185,14 @@ export async function onRequest(context){
  if(method==='POST'&&!originValid(request))return failure('Invalid request origin.',403);
  try{
  if(method==='GET'&&path==='status')return response({available:true,registrationOpen:emailReady(env)&&!!(env.TURNSTILE_SITE_KEY&&env.TURNSTILE_SECRET_KEY),turnstileSiteKey:env.TURNSTILE_SITE_KEY||null,moderation:'review-before-publication',aiModerationReady:!!(env.COMMUNITY_SAFETY||env.AI),mediaUploads:false,launch:'editorial'});
+ if(method==='GET'&&path==='avatar'){
+  const id=clean(query.get('id'),75);
+  if(!/^[a-zA-Z0-9_-]{8,75}$/.test(id))return failure('Profile photo not found.',404);
+  const row=await db.prepare("SELECT av.mime_type,av.image_base64 FROM profile_avatars av JOIN users u ON u.id=av.user_id WHERE av.user_id=? AND u.status='active' AND u.email_verified_at IS NOT NULL").bind(id).first();
+  if(!row)return failure('Profile photo not found.',404);
+  const raw=atob(row.image_base64);
+  return new Response(Uint8Array.from(raw,c=>c.charCodeAt(0)),{headers:{'Content-Type':row.mime_type,'Cache-Control':'public, max-age=300, stale-while-revalidate=600','X-Content-Type-Options':'nosniff','Content-Security-Policy':"default-src 'none'; sandbox"}});
+ }
  if(!(await throttle(db,request,'all',280,3600)))return failure('Too many requests. Please try again later.',429);
  if(method==='GET'&&path==='posts'){
   const category=clean(query.get('category'),30),product=clean(query.get('product'),260),search=clean(query.get('q'),100),page=Math.min(40,Math.max(1,Number(query.get('page'))||1)),offset=(page-1)*20;
@@ -135,7 +210,7 @@ export async function onRequest(context){
   const viewer=await getUser(db,request);if(viewer){const vote=await db.prepare('SELECT 1 FROM votes WHERE post_id=? AND user_id=?').bind(id,viewer.id).first();post.liked=!!vote}
   return response({post,replies});
  }
- if(method==='GET'&&path==='profile'){const handle=clean(query.get('handle'),25);const u=await db.prepare("SELECT id,handle,display_name,bio,is_editorial,allow_messages,created_at FROM users WHERE handle=? AND status='active'").bind(handle).first();if(!u)return failure('Member not found.',404);const roles=(await db.prepare('SELECT role FROM user_roles WHERE user_id=?').bind(u.id).all()).results.map(x=>x.role);return response({profile:publicUser(u),roles,rolesAreSelfDescribed:true})}
+ if(method==='GET'&&path==='profile'){const handle=clean(query.get('handle'),25);const u=await db.prepare("SELECT u.id,u.handle,u.display_name,u.bio,u.is_editorial,u.allow_messages,u.created_at,av.version AS avatar_version FROM users u LEFT JOIN profile_avatars av ON av.user_id=u.id WHERE u.handle=? AND u.status='active' AND (u.is_editorial=1 OR u.email_verified_at IS NOT NULL)").bind(handle).first();if(!u)return failure('Member not found.',404);const roles=(await db.prepare('SELECT role FROM user_roles WHERE user_id=?').bind(u.id).all()).results.map(x=>x.role);return response({profile:publicUser(u),roles,rolesAreSelfDescribed:true})}
  if(method==='GET'&&path==='me'){const u=await getUser(db,request);if(!u)return response({user:null});const roles=(await db.prepare('SELECT role FROM user_roles WHERE user_id=?').bind(u.id).all()).results.map(x=>x.role);const interests=(await db.prepare('SELECT interest FROM user_interests WHERE user_id=?').bind(u.id).all()).results.map(x=>x.interest);return response({user:{...publicUser(u),email:u.email,roles,interests,notificationEmail:!!u.notification_email,marketingEmail:!!u.marketing_email}})}
  if(method==='POST'&&path==='register'){
   if(!emailReady(env)||!env.TURNSTILE_SITE_KEY||!env.TURNSTILE_SECRET_KEY)return failure('Registrations are being prepared. Please check back soon.',503);
@@ -143,7 +218,9 @@ export async function onRequest(context){
   const d=await readJson(request),email=clean(d.email,254).toLowerCase(),handle=clean(d.handle,24).toLowerCase(),display=clean(d.displayName,70),password=d.password;
   if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){await recordSignupIssue(db,'form','invalid_email');return failure('Please enter a valid email address.')}
   if(!validHandle(handle)){await recordSignupIssue(db,'form','invalid_username');return failure('Choose a username of 3–24 letters, numbers or underscores, starting with a letter. Reserved names such as admin or reborna cannot be used.')}
-  if(display.length<2){await recordSignupIssue(db,'form','invalid_display_name');return failure('Please enter a display name of at least two characters.')}
+  const handleError=publicNameError(handle,'handle'),displayError=publicNameError(display,'display');
+  if(handleError){await recordSignupIssue(db,'form','unsafe_username');return failure(handleError)}
+  if(displayError){await recordSignupIssue(db,'form','unsafe_display_name');return failure(displayError)}
   if(typeof password!=='string'||password.length<12||password.length>128){await recordSignupIssue(db,'form','invalid_password');return failure('Your password needs between 12 and 128 characters.')}
   if(!(await verifyTurnstile(env,request,d.turnstileToken,'register',db)))return failure('The human verification did not validate. Please complete a fresh check and try again.',403);
   const existing=await db.prepare('SELECT 1 FROM users WHERE email=? OR handle=?').bind(email,handle).first();
@@ -205,9 +282,22 @@ export async function onRequest(context){
  }
  const user=await getUser(db,request);
  if(!user)return failure('Please sign in to continue.',401);
+ if(method==='POST'&&path==='avatar'){
+  if(!(await throttle(db,request,'avatar-upload',12,86400)))return failure('Too many photo changes. Please try tomorrow.',429);
+  const d=await readAvatarBody(request);
+  if(d?.remove===true){
+   await db.prepare('DELETE FROM profile_avatars WHERE user_id=?').bind(user.id).run();
+   return response({ok:true,avatarUrl:null,message:'Your profile photo has been removed.'});
+  }
+  const avatar=validatedAvatar(d?.avatarData);
+  if(!avatar)return failure('Please upload a JPEG, PNG or WebP photo. It will be resized to a small square image (up to 512 pixels and 76 KB).');
+  const version=Date.now();
+  await db.prepare("INSERT INTO profile_avatars(user_id,mime_type,image_base64,version) VALUES(?,?,?,?) ON CONFLICT(user_id) DO UPDATE SET mime_type=excluded.mime_type,image_base64=excluded.image_base64,version=excluded.version,uploaded_at=datetime('now')").bind(user.id,avatar.mime,avatar.image,version).run();
+  return response({ok:true,avatarUrl:'/api/community/avatar?id='+encodeURIComponent(user.id)+'&v='+version,message:'Your new profile photo is live.'});
+ }
  if(method==='POST'&&path==='settings'){
-  const d=await readJson(request),roles=strings(d.roles,ROLES),interests=strings(d.interests,INTERESTS),bio=clean(d.bio,600),display=clean(d.displayName,70);
-  if(display.length<2)return failure('Please enter a display name.');
+  const d=await readJson(request),roles=strings(d.roles,ROLES),interests=strings(d.interests,INTERESTS),bio=clean(d.bio,320),display=clean(d.displayName,70);
+  const displayError=publicNameError(display,'display');if(displayError)return failure(displayError);
   await db.batch([db.prepare("UPDATE users SET display_name=?,bio=?,allow_messages=?,notification_email=?,marketing_email=?,updated_at=datetime('now') WHERE id=?").bind(display,bio,d.allowMessages===false?0:1,d.notificationEmail===true?1:0,d.marketingEmail===true?1:0,user.id),db.prepare('DELETE FROM user_roles WHERE user_id=?').bind(user.id),db.prepare('DELETE FROM user_interests WHERE user_id=?').bind(user.id),...roles.map(x=>db.prepare('INSERT INTO user_roles(user_id,role) VALUES(?,?)').bind(user.id,x)),...interests.map(x=>db.prepare('INSERT INTO user_interests(user_id,interest) VALUES(?,?)').bind(user.id,x))]);
   return response({ok:true});
  }
