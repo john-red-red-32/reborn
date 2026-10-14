@@ -17,7 +17,7 @@ Contact: hello@reborna.co
 - [Reborn doll making materials](https://reborna.co/materials/): Paints, rooting materials, eyes, finishing tools and original specialist supplier references.
 - [Reborn and doll shows](https://reborna.co/events/): Independently researched gatherings and event organiser links.
 - [Community](https://reborna.co/community/): Member discussion and learning, moderated according to published community guidelines.
-- [Kit research and authenticity](https://reborna.co/verify/): Guidance and a preview of future verification features, not a working certificate registry.
+- [Original reborn doll kit research guide](https://reborna.co/guides/original-reborn-kits/): Practical steps for researching genuine original sculpt kits and suspicious recasts. Reborna does not yet offer active certificate verification.
 
 ## Read specific creators and designs
 - [Cassie Ann Love (formerly Cassie Brace)](https://reborna.co/artists/cassie-ann-love/)
