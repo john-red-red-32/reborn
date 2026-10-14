@@ -2,7 +2,7 @@ name: Audit complete materials variants and FX
 on:
   push:
     branches: [main]
-    paths: ['.github/workflows/audit-material-families.yml']
+    paths: ['.github/workflows/audit-material-families.yml','components/MaterialProductViewer.tsx','components/LocaleProvider.tsx','lib/material-product-families.ts']
   workflow_dispatch:
 permissions:
   contents: read
