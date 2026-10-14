@@ -66,7 +66,7 @@ export default function DiscoverFeed(){
      const photo=kit.photos?.[0]??cassieOfficialImages[kit.name]?.[0];
      return <article className="discover-feed-card" key={kit.slug}>
        <Link href={`/kits/${kit.slug}/`} className="discover-feed-art">
-         {photo?<img src={photo.url} alt={kit.name+" original sculpt example"} loading="lazy" decoding="async"/>:<span className="discover-feed-initial">{kit.name.charAt(0)}</span>}
+         {photo?<img src={photo.url} alt={kit.name+" original reborn doll sculpt by "+(kitArtist(kit.artistSlug)?.name||"its original sculptor")} loading="lazy" decoding="async"/>:<span className="discover-feed-initial">{kit.name.charAt(0)}</span>}
          <span className={"discover-feed-status unified-badge "+statusTone[state]}>{state==="unknown"?"Historical sculpt":statusNames[state]}</span>
        </Link>
        <WishlistHeart item={{type:"kit",path:`/kits/${kit.slug}/`,title:kit.name,subtitle:kitArtist(kit.artistSlug)?.name||"Original sculptor",imageUrl:photo?.url}}/>
