@@ -162,3 +162,45 @@
 .rbrn-mod-actions label{display:flex;flex-direction:column;gap:7px;font-size:10px;color:#8c7562}
 .rbrn-mod-actions select{background:#fffdfa;border:1px solid #dbcbbe;padding:10px;color:#745844;font-size:11px;max-width:280px}
 @media(max-width:520px){.rbrn-mod-item{padding:15px}.rbrn-mod-actions>*{max-width:100%}}
+
+
+/* Global Reborna footer. Keep the Contact link below primary navigation. */
+.rbrn-site-footer{display:grid;grid-template-columns:minmax(230px,1.5fr) minmax(120px,.75fr) minmax(160px,.9fr) minmax(200px,1fr);gap:clamp(25px,3.5vw,65px);align-items:start;margin-top:35px;padding:62px max(5%,calc((100vw - 1450px)/2)) 58px;border-top:1px solid #e5d9ce;background:#f8f3ed;color:#705b4c}
+.rbrn-site-footer .logo{font-size:33px;color:#544034;letter-spacing:-.055em;text-decoration:none}
+.rbrn-site-footer-brand p{max-width:290px;font-size:12px;line-height:1.85;color:#897567;margin:23px 0 12px}
+.rbrn-site-footer-brand small{max-width:320px;display:block;color:#a28d7b;font-size:10px;line-height:1.75}
+.rbrn-site-footer nav{display:flex;flex-direction:column;align-items:flex-start;gap:15px}
+.rbrn-site-footer nav>span,.rbrn-site-footer-end>span{font-size:10px;letter-spacing:.13em;font-weight:700;color:#947867;margin:7px 0 14px}
+.rbrn-site-footer nav>a{font-size:12px;text-decoration:none;color:#745b48;display:inline-flex;align-items:center;gap:6px;line-height:1.5}
+.rbrn-site-footer nav>a:hover{text-decoration:underline;text-underline-offset:4px;color:#513b2d}
+.rbrn-site-footer-end p{max-width:290px;font-size:11px;line-height:1.9;color:#9a8574}
+.rbrn-site-footer-end small{font-size:10px;color:#9b8574;display:block;margin-top:25px}
+.rbrn-contact-page{max-width:1260px}
+.rbrn-contact-page .rbrn-community-intro{margin-bottom:55px}
+.rbrn-contact-layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.7fr);gap:clamp(36px,6vw,100px);align-items:start}
+.rbrn-contact-main{background:#fffcf8;border:1px solid #e5d8cb;padding:clamp(23px,4vw,47px)}
+.rbrn-contact-main h2{font-size:clamp(30px,3.6vw,43px);line-height:1.24;margin:15px 0}
+.rbrn-contact-main>p{color:#967e6d;font-size:12px;line-height:1.95;margin:0 0 30px}
+.rbrn-contact-two-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.rbrn-contact-main .rbrn-form-field{margin-bottom:22px}
+.rbrn-contact-main .rbrn-form-field input,.rbrn-contact-main .rbrn-form-field select,.rbrn-contact-main .rbrn-form-field textarea{background:#fff;border-color:#dfd1c4}
+.rbrn-contact-main .rbrn-form-field textarea{min-height:178px}
+.rbrn-contact-fineprint{font-size:11px;color:#998474;line-height:1.85;margin:5px 0 20px}
+.rbrn-contact-side{padding-top:14px}
+.rbrn-contact-side h2{font-size:clamp(28px,3.2vw,38px);line-height:1.35;margin:16px 0}
+.rbrn-contact-side>p{font-size:12px;color:#8c7664;line-height:1.95;margin:0 0 25px}
+.rbrn-contact-side>div:not(.rbrn-contact-aside-note){display:flex;gap:14px;align-items:flex-start;padding:22px 0;border-top:1px solid #e7d9ca;color:#91765f}
+.rbrn-contact-side>div span{display:flex;flex-direction:column;gap:8px}
+.rbrn-contact-side strong{color:#735845;font-size:12px}
+.rbrn-contact-side small{color:#98806e;font-size:11px;line-height:1.7}
+.rbrn-contact-aside-note{background:#f3eae1;padding:24px;margin-top:28px;border:1px solid #e8d9cc}
+.rbrn-contact-aside-note p{color:#917967;font-size:11px;line-height:1.85;margin-bottom:0}
+.rbrn-contact-honey{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important}
+.rbrn-contact-success{border:1px solid #ded0bf;background:#f8f2ea;padding:33px;color:#7f5f49}
+.rbrn-contact-success h3{font-size:28px;margin:13px 0}
+.rbrn-contact-success p{font-size:13px;line-height:1.8;color:#8b7462}
+.rbrn-contact-success small{font-size:11px;color:#a08975}
+.rbrn-contact-success button{margin-top:24px;display:inline-flex;align-items:center;gap:8px;border:0;border-bottom:1px solid #89725f;background:transparent;color:#775b48;font-size:11px;cursor:pointer;padding:0 0 6px}
+@media(max-width:1040px){.rbrn-site-footer{grid-template-columns:1.2fr .9fr .9fr;gap:30px}.rbrn-site-footer-end{grid-column:1/-1;display:flex;justify-content:space-between;gap:30px;align-items:flex-start}.rbrn-site-footer-end p{max-width:400px;margin:0}.rbrn-contact-layout{gap:30px}}
+@media(max-width:760px){.rbrn-site-footer{grid-template-columns:repeat(2,minmax(0,1fr));padding:45px 6%}.rbrn-site-footer-brand{grid-column:1/-1}.rbrn-site-footer-brand p{max-width:100%}.rbrn-site-footer-end{grid-column:1/-1;display:block;border-top:1px solid #e2d3c5;padding-top:18px}.rbrn-contact-layout{grid-template-columns:1fr;gap:27px}.rbrn-contact-side{padding:0}.rbrn-contact-page .rbrn-community-intro{margin-bottom:26px}}
+@media(max-width:480px){.rbrn-contact-two-fields{grid-template-columns:1fr;gap:0}.rbrn-contact-main{padding:22px 18px}.rbrn-site-footer{gap:25px}.rbrn-site-footer nav{gap:13px}}
