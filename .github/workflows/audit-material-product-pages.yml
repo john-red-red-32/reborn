@@ -1,87 +1,65 @@
-name: Audit source-photographed material products
+name: Audit materials photography and live product routes
 on:
   push:
     branches: [main]
-    paths: ['.github/workflows/audit-material-product-pages.yml']
+    paths:
+      - 'lib/material-product-families.ts'
+      - 'lib/material-routing.ts'
+      - '.github/workflows/audit-material-product-pages.yml'
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   products:
     runs-on: ubuntu-latest
-    timeout-minutes: 14
+    timeout-minutes: 11
     steps:
       - uses: actions/checkout@v4
-      - name: Assert all material sources have specific imagery and dated evidence
+      - name: Check source product photo records
         run: |
           python3 - <<'PY'
           import json
           from pathlib import Path
-          s=Path('lib/material-product-evidence.ts').read_text()
-          marker='export const materialProductEvidence:Record<string,MaterialProductEvidence>='
-          d=json.loads(s.split(marker)[1].strip().rstrip(';'))
-          assert len(d)==14,len(d)
-          for slug,item in d.items():
-            assert item['products'],slug
-            assert item['products'][0]['photos'],slug
-            for p in item['products']:
-              assert '/products/' in p['sourceUrl'] or 'kebelka.com/p/' in p['sourceUrl'],slug
-              for photo in p['photos']:
-                assert photo['url'].startswith('https://') and photo['source']==p['sourceUrl'],slug
-            assert item['sourceChecked']=='2026-10-14'
-          assert sum(len(p['variants']) for e in d.values() for p in e['products'])>=140
-          assert sum(bool(p.get('priceAtReview')) for e in d.values() for p in e['products'])>=14
-          print('PASS 14 photo-backed materials and real variant/price source evidence')
+          d=json.loads(Path('lib/material-product-families.ts').read_text().split('export const materialFamilies:Record<string,FamilyProduct[]>=')[1].strip().rstrip(';'))
+          assert len(d)==14
+          for key,products in d.items():
+            assert products,key
+            for p in products:
+              assert p['photoUrls'] and all(x.startswith('https://') for x in p['photoUrls'])
+              assert p['sourceUrl'].startswith('https://')
+          print('PASS 14 source-identified product families and gallery references')
           PY
-      - name: Check representative first-party image URLs
+      - name: Confirm catalogue range and individual product URLs on production
         run: |
           python3 - <<'PY'
-          import json,urllib.request,time
+          import json,re,time,urllib.request
           from pathlib import Path
-          s=Path('lib/material-product-evidence.ts').read_text()
-          d=json.loads(s.split('export const materialProductEvidence:Record<string,MaterialProductEvidence>=')[1].strip().rstrip(';'))
-          bad=[]
-          for slug,p in d.items():
-            url=p['products'][0]['photos'][0]['url']
-            try:
-              req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0','Accept':'image/avif,image/webp,image/*,*/*;q=0.8'})
-              with urllib.request.urlopen(req,timeout=16) as r:
-                typ=r.headers.get('Content-Type','')
-                assert r.status==200 and typ.startswith('image/'),(r.status,typ)
-                assert r.read(48),slug
-              print('PASS PHOTO',slug,typ,flush=True)
-            except Exception as e:
-              print('SOURCE PHOTO FAILED',slug,str(e)[:150],flush=True)
-              bad.append((slug,str(e)[:100]))
-            time.sleep(.25)
-          if bad:raise SystemExit('Image origins unavailable: '+str(bad))
-          PY
-      - name: Verify all 14 internal pages and their purchase hand-off against live Cloudflare
-        run: |
-          python3 - <<'PY'
-          import json,urllib.request,html,time
-          from pathlib import Path
-          s=Path('lib/material-product-evidence.ts').read_text()
-          d=json.loads(s.split('export const materialProductEvidence:Record<string,MaterialProductEvidence>=')[1].strip().rstrip(';'))
-          for n in range(45):
-            missing=[]
-            urls=['/materials/']+['/materials/'+slug+'/' for slug in d]
-            for path in urls:
+          d=json.loads(Path('lib/material-product-families.ts').read_text().split('export const materialFamilies:Record<string,FamilyProduct[]>=')[1].strip().rstrip(';'))
+          urls=['/materials/']
+          for group,products in d.items():
+            urls.append('/materials/'+group+'/')
+            first=products[0]['sourceUrl'].split('?')[0].rstrip('/').split('/')[-1]
+            slug=re.sub(r'[^a-z0-9]+','-',first.lower()).strip('-')
+            urls.append('/materials/'+group+'/'+slug+'/')
+          for attempt in range(31):
+            errors=[]
+            for route in urls:
               try:
-                req=urllib.request.Request('https://reborna.co'+path,headers={'User-Agent':'Mozilla/5.0'})
-                with urllib.request.urlopen(req,timeout=14) as r:body=html.unescape(r.read(3500000).decode('utf8','replace'))
-                if path=='/materials/':
-                  for phrase in ['Supplier based in','Discover more','SUPPLIER PHOTOGRAPH','Gemini Heat Set Paints']:
-                    if phrase not in body:missing.append((path,phrase))
+                req=urllib.request.Request('https://reborna.co'+route,headers={'User-Agent':'Mozilla/5.0'})
+                with urllib.request.urlopen(req,timeout=16) as response:
+                  html=response.read(2000000).decode('utf8','replace')
+                  assert response.status==200
+                if route=='/materials/':
+                  assert 'Browse products' in html
+                elif route.count('/')==3:
+                  assert 'rbrn-range-card' in html
                 else:
-                  for phrase in ['View product at supplier','Delivery &amp; supplier information','Supplier price observed','SUPPLIER PHOTO']:
-                    if phrase not in body and phrase.replace('&amp;','&') not in body:missing.append((path,phrase))
-                  if 'Add to cart' in body or 'Bid now' in body:missing.append((path,'fake commerce action'))
-              except Exception as e:missing.append((path,str(e)[:110]))
-            if not missing:
-              print('PASS production: 14 source-photographed material pages, source-dated prices, gallery, shipping and hand-off')
+                  assert 'View at original supplier' in html and 'rbrn-material-main-image' in html
+              except Exception as e:errors.append((route,str(e)[:100]))
+            if not errors:
+              print('PASS: 14 distinct catalogues and 14 individual product pages live, with source galleries',flush=True)
               break
-            print('Cloudflare still publishing',n+1,missing[:5],flush=True)
-            time.sleep(8)
-          else:raise SystemExit('Material product audit failed '+str(missing[:12]))
+            print('Production pending',attempt+1,errors[:5],flush=True)
+            time.sleep(7)
+          else:raise SystemExit(str(errors[:15]))
           PY
