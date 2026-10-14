@@ -240,3 +240,8 @@
 .rbrn-avatar-editor-notice{display:flex;align-items:center;gap:8px;margin:14px 0 0;color:#7c644e;font-size:11px}
 .rbrn-bio-hint{font-size:10px;font-weight:400;color:#9e8774;margin-left:7px}
 @media(max-width:620px){.rbrn-avatar-editor{padding:17px 15px}.rbrn-avatar-editor-main{gap:14px}.rbrn-avatar-editor-main>.rbrn-profile-avatar{width:65px;height:65px}.rbrn-avatar-editor-actions{gap:6px}.rbrn-avatar-editor-actions .rbrn-community-secondary,.rbrn-avatar-editor-actions .rbrn-community-primary{min-height:40px}.rbrn-member-profile>.rbrn-profile-avatar{width:83px;height:83px}}
+
+
+.rbrn-forum-post-author,.rbrn-community-byline{display:flex;align-items:center;flex-wrap:wrap;gap:7px}
+.rbrn-forum-post-author .rbrn-profile-avatar,.rbrn-community-byline .rbrn-profile-avatar,.rbrn-community-replies>article .rbrn-profile-avatar{width:27px;height:27px;margin:0;border-width:1px}
+.rbrn-forum-post-author .rbrn-profile-avatar{width:23px;height:23px}
