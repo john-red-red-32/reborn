@@ -9,6 +9,7 @@ import concurrent.futures
 import io
 import json
 import math
+import os
 import statistics
 import threading
 import urllib.parse
@@ -21,6 +22,8 @@ from PIL import Image, ImageOps, UnidentifiedImageError
 ROOT=Path("lib")
 SOURCE=ROOT/"material-product-families.ts"
 OUTPUT=ROOT/"material-image-framing.json"
+VERSION=2
+VERSION_FILE=ROOT/"material-image-framing-version.txt"
 EVIDENCE=ROOT/"material-product-evidence.ts"
 START="export const materialFamilies:Record<string,FamilyProduct[]>="
 EVIDENCE_START="export const materialProductEvidence:Record<string,MaterialProductEvidence>="
@@ -142,6 +145,25 @@ def analyse(image,aspect):
     zoom=max(1.0,round(zoom,2))
     cx=(l+r)/2
     cy=(t+b)/2
+    # Reject ragged shadows, isolated specks and supplier watermarks as the
+    # "subject centre": use the middle 10–90% of actual foreground occupancy
+    # instead of relying entirely on the extreme foreground bounds.
+    #
+    # Blend gently toward the robust centre (<=3.5% of image width/height).
+    # This leaves already well-centred images effectively unchanged.
+    def quantile_position(counts,ratio):
+        total=sum(counts)
+        cutoff=total*ratio
+        cumulative=0
+        for idx,value in enumerate(counts):
+            cumulative+=value
+            if cumulative>=cutoff:
+                return (idx+0.5)/len(counts)
+        return 0.5
+    robust_cx=(quantile_position(cols,0.10)+quantile_position(cols,0.90))/2
+    robust_cy=(quantile_position(rows,0.10)+quantile_position(rows,0.90))/2
+    cx+=max(-0.035,min(0.035,(robust_cx-cx)*0.60))
+    cy+=max(-0.035,min(0.035,(robust_cy-cy)*0.60))
     # CSS translate is a percent of image element dimensions before scaling.
     dx=round((0.5-cx)*rw*zoom*100,1)
     dy=round((0.5-cy)*rh*zoom*100,1)
@@ -167,15 +189,21 @@ def main():
             previous=json.loads(OUTPUT.read_text())
             if not isinstance(previous,dict):previous={}
         except (ValueError,TypeError):previous={}
-    results={url:previous[url] for url in urls if url in previous}
-    missing=[url for url in urls if url not in previous]
-    print("Framing audit total",len(urls),"cached",len(results),"new",len(missing),flush=True)
+    try:
+        old_version=int(VERSION_FILE.read_text().strip())
+    except (OSError,ValueError):
+        old_version=1
+    recheck=(old_version!=VERSION or os.environ.get("REBORNA_RECHECK_FRAMING")=="1")
+    results={url:previous[url] for url in urls if url in previous and (not recheck or previous[url] is None)}
+    missing=[url for url in urls if url not in results]
+    print("Framing audit", "algorithm",VERSION,"previous",old_version,"total",len(urls),"cached",len(results),"to_check",len(missing),flush=True)
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
         for index,(url,frame) in enumerate(pool.map(inspect,missing),1):
             results[url]=frame
             if index%30==0:print("Examined",index,"of",len(missing),"positive",sum(v is not None for v in results.values()),flush=True)
     # Stable ordering and single tiny metadata entry per original image URL.
     OUTPUT.write_text(json.dumps({url:results[url] for url in urls},ensure_ascii=False,separators=(",",":"))+"\n")
+    VERSION_FILE.write_text(str(VERSION)+"\n")
     count=sum(v is not None for v in results.values())
     print("Framing metadata written",OUTPUT,"checked",len(urls),"autoframed",count,"kept_original",len(urls)-count,flush=True)
     print("Sample",[(url.split("/")[-1][:35],f) for url,f in results.items() if f is not None][:12],flush=True)
