@@ -63,7 +63,7 @@ jobs:
             ctx=browser.new_context(viewport={'width':1280,'height':900},locale='en-GB')
             page=ctx.new_page()
             page.on('pageerror',lambda e:print('JS PAGE ERROR',str(e)[:500],flush=True))
-            visit(page,'/materials/','.rbrn-supply-photo-card')
+            visit(page,'/materials/','button[aria-label="Browse HP Babylocks Mohair products"]')
             page.get_by_role('button',name='Browse HP Babylocks Mohair products').click()
             assert page.url.rstrip('/').endswith('/materials'),page.url
             page.locator('.rbrn-range-card').first.wait_for()
