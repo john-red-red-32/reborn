@@ -1,0 +1,38 @@
+name: Research materials exceptions for actual product photos
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/research_material_exceptions.py','.github/workflows/research-material-exceptions.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/research_material_exceptions.py
+      - name: Preserve source evidence
+        env:
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          cp materials-exceptions.json /tmp/materials-exceptions.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin scrape-results
+          git checkout -B scrape-results origin/scrape-results
+          mkdir -p snapshots/materials
+          cp /tmp/materials-exceptions.json snapshots/materials/product-exceptions.json
+          git add snapshots/materials
+          if ! git diff --cached --quiet; then
+            git commit -m "Review nonstandard product image sources $RUN_ID [skip ci]"
+            for n in 1 2 3 4 5; do
+              if git push origin HEAD:scrape-results; then exit 0; fi
+              git fetch origin scrape-results
+              git rebase origin/scrape-results || { git rebase --abort; exit 1; }
+              sleep 2
+            done
+            exit 1
+          fi
