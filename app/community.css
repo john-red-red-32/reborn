@@ -250,11 +250,13 @@
 /* Shared saved-item controls: familiar top-right heart across photo grids. */
 .rbrn-wishlist-wrapper{position:relative;min-width:0;isolation:isolate}
 .rbrn-wishlist-wrapper>.rbrn-range-card,.rbrn-wishlist-wrapper>.artist-directory-card{height:100%}
-.rbrn-wishlist-heart{display:flex;align-items:center;justify-content:center;flex:none;border:1px solid #e6d8cc;background:#fffdfbee;color:#775f4e;border-radius:50%;width:38px;height:38px;z-index:6;cursor:pointer;transition:transform .18s,color .18s,background .18s,box-shadow .18s;box-shadow:0 2px 8px #2f261b12}
-.rbrn-wishlist-heart.is-overlay{position:absolute;top:12px;right:12px}
+.rbrn-wishlist-heart{display:flex;align-items:center;justify-content:center;flex:none;position:relative;border:1px solid rgba(220,204,190,.66);background:rgba(255,253,251,.76);color:#735c4c;border-radius:50%;width:35px;height:35px;z-index:6;cursor:pointer;transition:transform .18s,color .18s,background .18s,box-shadow .18s;box-shadow:0 1px 5px rgba(47,38,27,.075);-webkit-tap-highlight-color:transparent}
+.rbrn-wishlist-heart.is-overlay{position:absolute;top:10px;right:10px}
+.rbrn-wishlist-heart.is-overlay::before{content:"";position:absolute;inset:-6px;border-radius:50%}
+.rbrn-wishlist-heart.is-overlay svg{width:18px;height:18px}
 .rbrn-wishlist-heart.is-inline{width:38px;height:38px;position:relative}
-.rbrn-wishlist-heart.is-saved{color:#af6b6d;background:#fff3f3;border-color:#e7c6c5}
-.rbrn-wishlist-heart:hover{transform:scale(1.06);background:#fff;box-shadow:0 3px 13px #44302226}
+.rbrn-wishlist-heart.is-saved{color:#a65d60;background:rgba(255,242,243,.88);border-color:rgba(208,166,165,.8)}
+.rbrn-wishlist-heart:hover{transform:scale(1.04);background:rgba(255,253,251,.94);box-shadow:0 2px 8px rgba(68,48,34,.12)}
 .rbrn-wishlist-heart:focus-visible{outline:3px solid #b58e72;outline-offset:3px}
 .rbrn-wishlist-heart:disabled{opacity:.6;cursor:wait}
 .rbrn-wishlist-heart[data-tip]:hover:after,.rbrn-wishlist-heart[data-tip]:focus-visible:after{content:attr(data-tip);position:absolute;z-index:10;top:calc(100% + 8px);right:0;display:block;white-space:nowrap;background:#49392f;color:#fff;padding:8px 10px;font:600 11px/1.2 "DM Sans",Arial,sans-serif;box-shadow:0 3px 12px #0002;border-radius:4px;pointer-events:none}
@@ -267,7 +269,7 @@
 .rbrn-save-toast>button{padding:3px;background:transparent;border:0;color:#fff8ef;cursor:pointer}
 .rbrn-collection-nav{display:flex;align-items:center;justify-content:center;color:#7a6151;min-width:25px}
 .rbrn-collection-nav:hover{color:#a56864}
-@media(max-width:700px){.rbrn-save-toast{right:12px;bottom:16px;left:12px;max-width:none}.rbrn-wishlist-heart.is-overlay{top:9px;right:9px;width:35px;height:35px}.rbrn-wishlist-heart[data-tip]:hover:after{display:none}.rbrn-collection-nav{min-width:22px}.rbrn-collection-nav svg{width:19px;height:19px}}
+@media(max-width:700px){.rbrn-save-toast{right:12px;bottom:16px;left:12px;max-width:none}.rbrn-wishlist-heart.is-overlay{top:8px;right:8px;width:32px;height:32px}.rbrn-wishlist-heart.is-overlay svg{width:17px;height:17px}.rbrn-wishlist-heart[data-tip]:hover:after{display:none}.rbrn-collection-nav{min-width:22px}.rbrn-collection-nav svg{width:19px;height:19px}}
 
 /* Personal member dashboard — private saved collection and pre-launch workspaces. */
 .rbrn-member-dash{max-width:1430px}
