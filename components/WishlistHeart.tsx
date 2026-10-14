@@ -6,7 +6,7 @@ type Props={item:SavedItem;placement?:"overlay"|"inline";compact?:boolean};
 export default function WishlistHeart({item,placement="overlay",compact=false}:Props){
  const{state,isSaved,toggle}=useWishlist();
  const active=isSaved(item.path);
- const label=active?"Remove from wishlist":"Add to wishlist";
+ const label=item.type==="artist"?(active?"Unfollow artist":"Follow artist"):(active?"Remove from wishlist":"Add to wishlist");
  return <button
    type="button"
    className={"rbrn-wishlist-heart "+(placement==="overlay"?"is-overlay":"is-inline")+(active?" is-saved":"")+(compact?" is-compact":"")}
