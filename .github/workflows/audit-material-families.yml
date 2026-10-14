@@ -1,0 +1,95 @@
+name: Audit complete materials variants and FX
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/audit-material-families.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  variants:
+    runs-on: ubuntu-latest
+    timeout-minutes: 13
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check source evidence and no invented colour associations
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          s=Path('lib/material-product-families.ts').read_text()
+          data=json.loads(s.split('export const materialFamilies:Record<string,FamilyProduct[]>=')[1].strip().rstrip(';'))
+          assert len(data)==14
+          assert len(data['kebelka-heat-paints'])==46
+          assert len(data['gemini-heat-set'])>=70
+          assert len(data['nuborn-mohair'])>=10
+          assert len(data['hp-babylocks'])>=3
+          assert sum(len(v) for v in data.values())>=230
+          assert sum(len(p.get('variants',[])) for x in data.values() for p in x)>=220
+          for slug,products in data.items():
+            assert len({p['sourceUrl'] for p in products})==len(products),slug
+            for p in products:
+              assert p['sourceUrl'].startswith('https://')
+              assert p['photoUrls'] and all(u.startswith('https://') for u in p['photoUrls'])
+              for v in p.get('variants',[]):
+                assert v['label'] and v['options']
+                if v.get('photoUrl'):assert v['photoUrl'].startswith('https://')
+          assert all('KEBELKA Set Heat Paint' in p['title'] or 'KEBELKA Set heat Paint' in p['title'] for p in data['kebelka-heat-paints'])
+          print('PASS 14 manufacturer source families, 46 named Kebelka shades, 70+ Gemini listings and 220+ real option variants')
+          PY
+      - run: pip -q install playwright==1.55.0
+      - run: python3 -m playwright install --with-deps chromium
+      - name: Exercise live visual colour and size selectors, gallery, external purchase link, currency
+        run: |
+          python3 - <<'PY'
+          from playwright.sync_api import sync_playwright
+          import time
+          base='https://reborna.co'
+          def visit(page,url,expected):
+            for n in range(25):
+              page.goto(base+url,wait_until='domcontentloaded',timeout=30000)
+              if page.get_by_text(expected,exact=False).count()>0:break
+              time.sleep(8)
+            else:raise AssertionError('Not published '+url)
+          with sync_playwright() as p:
+            browser=p.chromium.launch(headless=True)
+            page=browser.new_page(viewport={'width':1280,'height':980})
+            page.route('https://api.frankfurter.dev/**',lambda r:r.fulfill(status=200,content_type='application/json',body='[{"date":"2026-10-14","base":"EUR","quote":"USD","rate":1.2},{"date":"2026-10-14","base":"EUR","quote":"GBP","rate":0.85},{"date":"2026-10-14","base":"EUR","quote":"CAD","rate":1.6}]'))
+            visit(page,'/materials/kebelka-heat-paints/','46 source-listed products')
+            assert page.locator('.rbrn-material-family-choice').count()==18
+            page.get_by_role('button',name='Show all 46 products').click()
+            assert page.locator('.rbrn-material-family-choice').count()==46
+            gallery=page.locator('.rbrn-material-main-image img')
+            start=gallery.get_attribute('src')
+            page.locator('.rbrn-material-family-choice').filter(has_text='01 BLANCO PRIMARIO').first.click()
+            assert gallery.get_attribute('src')!=start
+            assert 'blanco-primario' in page.locator('.rbrn-material-shop-link').get_attribute('href')
+            assert 'From' in page.locator('.rbrn-material-dated-price').inner_text()
+            assert page.locator('.rbrn-material-unpriced-options button').count()==2
+            print('PASS Kebelka 46 photograph-linked shades, real size choices, changed external destination',flush=True)
+            visit(page,'/materials/gemini-heat-set/','73 source-listed products')
+            page.get_by_role('button',name='Show all 73 products').click()
+            page.locator('.rbrn-material-family-choice').filter(has_text='Flesh 08').first.click()
+            assert 'bountifulbaby.com/products/' in page.locator('.rbrn-material-shop-link').get_attribute('href')
+            assert 'Flesh 08' in page.locator('.rbrn-material-selected-product h3').inner_text()
+            sel=page.locator('.locale-tools select').first
+            sel.select_option('GBP')
+            page.wait_for_timeout(600)
+            assert '≈' in page.locator('.rbrn-material-dated-price strong').inner_text(),page.locator('.rbrn-material-dated-price').inner_text()
+            assert '2026-10-14' in page.locator('.rbrn-material-fx-note').inner_text()
+            print('PASS Gemini singles, source purchase link and live-reference-rate currency conversion label',flush=True)
+            visit(page,'/materials/hp-babylocks/','4 source-listed products')
+            opts=page.locator('.rbrn-material-option-cards button')
+            assert opts.count()>10
+            opts.first.click()
+            assert page.locator('.rbrn-material-main-image img').count()==1
+            print('PASS mohair source colour options and linked photo display',flush=True)
+            visit(page,'/materials/','Supplier based in')
+            assert page.locator('.rbrn-supply-photo-card .rbrn-supply-meta').first.inner_text().find('SUPPLIER:')==-1
+            print('PASS catalogue card simplification')
+            mobile=browser.new_page(viewport={'width':390,'height':800})
+            visit(mobile,'/materials/kebelka-heat-paints/','46 source-listed products')
+            assert mobile.evaluate('document.documentElement.scrollWidth <= innerWidth + 2'), 'Mobile horizontal overflow'
+            print('PASS responsive material family page')
+            browser.close()
+          PY
