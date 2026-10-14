@@ -23,7 +23,7 @@ export function generateStaticParams(){return artists.map(a=>({slug:a.slug}))}
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{
  const {slug}=await params;const artist=artists.find(a=>a.slug===slug);
  if(!artist)return{title:"Artist not found | Reborna",robots:{index:false}};
- const title=`${artist.name} | Original Reborn Doll Sculptor | Reborna`;
+ const title=slug==="cassie-ann-love"?"Cassie Ann Love (Cassie Brace) | Reborn Sculptor | Reborna":`${artist.name} | Original Reborn Doll Sculptor | Reborna`;
  const description=`Discover ${artist.name}, original reborn doll sculptor. Explore documented sculpt designs, artist biography, original kits and source-attributed artwork.`;
  const image=artist.images?.[0]?.url;
  return {title,description,alternates:{canonical:"/artists/"+slug+"/"},openGraph:{title,description,url:canonical("/artists/"+slug+"/"),...(image?{images:[{url:image,alt:artist.images?.[0]?.role==="portrait"?artist.name+" portrait":artist.name+" published sculpt artwork"}]}:{})}};
