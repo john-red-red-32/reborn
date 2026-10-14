@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS member_saved_items (
  item_path TEXT NOT NULL,
  item_title TEXT NOT NULL,
  item_subtitle TEXT NOT NULL DEFAULT '',
+ collection_status TEXT NOT NULL DEFAULT 'wishlist' CHECK(collection_status IN ('wishlist','owned')),
  image_url TEXT,
  saved_at TEXT NOT NULL DEFAULT (datetime('now')),
  PRIMARY KEY(user_id,item_path),
