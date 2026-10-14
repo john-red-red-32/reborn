@@ -26,13 +26,13 @@ jobs:
           b=re.search(r'export const recoveredArtistCovers:[^=]+=([\s\S]*?);\s*$',src)
           assert a and b,'Missing exact photo references'
           photos=json.loads(a.group(1));covers=json.loads(b.group(1))
-          assert len(photos)==70,len(photos)
+          assert len(photos)==76,len(photos)
           assert len(covers)==13,len(covers)
           assert all(p['url'].startswith('https://') and p['source'].startswith('https://') and p['credit'] for ps in photos.values() for p in ps)
           assert {slug for slug in photos if slug.endswith('-ping-lau')}=={'luca-ping-lau','tori-ping-lau','raven-ping-lau','lovelyn-awake-ping-lau','lovelyn-asleep-ping-lau','soledad-ping-lau','candy-ping-lau','minnie-ping-lau'}
           assert covers['ping-lau'][0]['source'].startswith('https://www.irresistables.com/')
           assert len({p['url'] for ps in photos.values() for p in ps})==sum(len(ps) for ps in photos.values()),'A photograph was assigned to more than one kit'
-          print('PASS 70 exact-source photographed kits and thirteen illustrated artist covers; Ping retailer-specific sharing terms enforced',flush=True)
+          print('PASS 76 exact-source photographed kits and thirteen illustrated artist covers; Ping retailer-specific sharing terms enforced',flush=True)
           headers={'User-Agent':'Mozilla/5.0','Accept':'image/avif,image/webp,image/jpeg,image/png,image/*'}
           checked=set()
           for slug,pictures in photos.items():
@@ -55,7 +55,7 @@ jobs:
                       assert res.status==200 and res.headers.get('Content-Type','').lower().startswith('image/'),pic['url']
                       assert res.read(32)
           print('PASS',len(checked),'artist/reborn photo resources are actual images',flush=True)
-          check_slugs=['emma-dawn-donofrio','emerson-dawn-donofrio','willow-joanna-kazmierczak','luca-ping-lau','aspen-dawn-donofrio','ilea-olga-auer','maria-sabrina-hergarten','marty-iveta-eckertova','lyssi-laura-tuzio-ross','sam-gudrun-legler','teddy-philomena-donnelly','amelia-laura-lee-eagles','river-awake-dawn-donofrio','tatum-dawn-donofrio','bibi-elly-knoops','candy-ping-lau','leo-sabine-altenkirch-junkes','pebbles-severine-piret','max-laura-lee-eagles','timothy-sabrina-hergarten','mila-gudrun-legler','lou-severine-piret','minnie-ping-lau']
+          check_slugs=['emma-dawn-donofrio','emerson-dawn-donofrio','willow-joanna-kazmierczak','luca-ping-lau','aspen-dawn-donofrio','ilea-olga-auer','maria-sabrina-hergarten','marty-iveta-eckertova','lyssi-laura-tuzio-ross','sam-gudrun-legler','teddy-philomena-donnelly','amelia-laura-lee-eagles','river-awake-dawn-donofrio','tatum-dawn-donofrio','bibi-elly-knoops','candy-ping-lau','leo-sabine-altenkirch-junkes','pebbles-severine-piret','max-laura-lee-eagles','timothy-sabrina-hergarten','mila-gudrun-legler','lou-severine-piret','minnie-ping-lau','eefje-elly-knoops','mattia-gudrun-legler','ellis-philomena-donnelly','quinn-philomena-donnelly','cameron-laura-tuzio-ross','lillegroda-sabine-altenkirch-junkes']
           for attempt in range(35):
               failed=[]
               for slug in check_slugs:
