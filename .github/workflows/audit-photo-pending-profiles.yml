@@ -31,14 +31,15 @@ jobs:
             'severine-piret':False,'elly-knoops':True,
             'iveta-eckertova':True,'olga-auer':True,
             'sabrina-hergarten':True,'ping-lau':True,
-            'laura-lee-eagles':False
+            'laura-lee-eagles':False,'joanna-kazmierczak':True
           }
           photographed_artists={
             'dawn-donofrio','laura-tuzio-ross','philomena-donnelly',
             'sabine-altenkirch-junkes','gudrun-legler',
             'elly-knoops','iveta-eckertova','olga-auer',
             'alejandra-de-zuniga','severine-piret',
-            'sabrina-hergarten','laura-lee-eagles','ping-lau'
+            'sabrina-hergarten','laura-lee-eagles','ping-lau',
+            'joanna-kazmierczak'
           }
           photo_pending_kits={'josie-ping-lau'}
           source_photographed_kits={'teddy-philomena-donnelly','sam-gudrun-legler','elena-alejandra-de-zuniga','emerson-dawn-donofrio','emma-dawn-donofrio','willow-joanna-kazmierczak'}
@@ -51,10 +52,10 @@ jobs:
               try:
                 with urllib.request.urlopen(urllib.request.Request(root+path,headers=h),timeout=17) as r:
                   html=r.read(1_600_000).decode('utf-8','replace')
-                assert ('ORIGINAL ARTWORK PENDING' not in html) if slug in photographed_artists else ('ORIGINAL ARTWORK PENDING' in html),path
-                assert 'Specialist retailer reference' in html if retailer else 'Official sculptor website' in html
+                assert (('ORIGINAL ARTWORK PENDING' not in html) if slug in photographed_artists else ('ORIGINAL ARTWORK PENDING' in html)),f'{path}: artist artwork state unexpected'
+                assert (('Specialist retailer reference' in html) if retailer else ('Official sculptor website' in html)),f'{path}: source relationship label does not match'
                 if slug=='dawn-donofrio':
-                  assert 'Original silicone sculpture, made for artists to finish' in html
+                  assert 'Original silicone sculpture for artists to finish' in html,f'{path}: editorial heading mismatch'
               except Exception as e:failed.append((path,str(e)[:95]))
             for slug in kits:
               path='/kits/'+slug+'/'
@@ -68,7 +69,7 @@ jobs:
                   assert 'kit-main-photo' in html and 'kit-photo-provenance' in html,path
               except Exception as e:failed.append((path,str(e)[:95]))
             if not failed:
-              print('PASS all 13 original artist portfolios, their recovered covers and remaining transparent fallbacks',flush=True)
+              print('PASS all 14 original artist portfolios, their recovered covers and remaining transparent fallbacks',flush=True)
               break
             print('Waiting Cloudflare',attempt+1,len(failed),'failures',failed[:3],flush=True)
             time.sleep(8)
