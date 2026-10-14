@@ -35,8 +35,8 @@ function validHandle(s){return /^[a-z][a-z0-9_]{2,23}$/.test(s)&&!['admin','supp
 function canonicalSavedItem(raw){
  if(!raw||typeof raw!=='object')return null;
  const type=raw.type,path=raw.path,title=clean(raw.title,150),subtitle=clean(raw.subtitle,160);
- if(!['kit','material','artist'].includes(type)||!title||!path||typeof path!=='string')return null;
- const patterns={kit:/^\/kits\/[a-z0-9-]{2,90}\/?$/,material:/^\/materials\/[a-z0-9-]{2,70}\/[a-z0-9-]{2,100}\/?$/,artist:/^\/artists\/[a-z0-9-]{2,90}\/?$/};
+ if(!['kit','material','artist','archive'].includes(type)||!title||!path||typeof path!=='string')return null;
+ const patterns={kit:/^\/kits\/[a-z0-9-]{2,90}\/?$/,material:/^\/materials\/[a-z0-9-]{2,70}\/[a-z0-9-]{2,100}\/?$/,artist:/^\/artists\/[a-z0-9-]{2,90}\/?$/,archive:/^\/artists\/[a-z0-9-]{2,90}\/\?sculpt=[a-z0-9-]{2,90}$/};
  if(!patterns[type].test(path))return null;
  const url=typeof raw.imageUrl==='string'?raw.imageUrl.trim():'';
  let imageUrl=null;
@@ -46,7 +46,7 @@ function canonicalSavedItem(raw){
    if(['https:'].includes(parsed.protocol)&&!parsed.username&&!parsed.password)imageUrl=parsed.href;
   }catch{}
  }
- return {type,path:path.endsWith('/')?path:path+'/',title,subtitle,imageUrl};
+ return {type,path:path.includes('?')?path:(path.endsWith('/')?path:path+'/'),title,subtitle,imageUrl};
 }
 const cleanProjectPath=value=>typeof value==='string'&&/^\/kits\/[a-z0-9-]{2,90}\/?$/.test(value)?(value.endsWith('/')?value:value+'/'):null;
 function validatedProducts(p){if(!Array.isArray(p))return[];return p.slice(0,3).filter(v=>v&&typeof v.path==='string'&&typeof v.type==='string'&&((v.type==='kit'&&/^\/kits\/[a-z0-9-]+\/?$/.test(v.path))||(v.type==='material'&&/^\/materials\/[a-z0-9-]+\/[a-z0-9-]+\/?$/.test(v.path)))).map(v=>({path:v.path.endsWith('/')?v.path:v.path+'/',type:v.type})).filter((v,i,a)=>a.findIndex(x=>x.path===v.path)===i)}
