@@ -1,7 +1,7 @@
 name: Verify community foundation
 on:
   push:
-    branches: [main, fix/community-signup-feedback-20261014]
+    branches: [main, fix/cloudflare-pbkdf2-runtime-20261014]
     paths:
       - 'app/**'
       - 'components/**'
@@ -59,6 +59,23 @@ jobs:
           d.executescript(Path('db/signup-diagnostics.sql').read_text())
           assert d.execute("SELECT count(*) FROM signup_diagnostics").fetchone()[0]==0
           print('PASS D1 schemas: idempotent, private contact, safety and anonymous signup diagnostics')
+          PY
+      - name: Verify Cloudflare password work-factor compatibility
+        run: |
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          source=Path('functions/api/community/[[path]].js').read_text()
+          schema=Path('db/community-schema.sql').read_text()
+          match=re.search(r'const ITERATIONS=(\d+);',source)
+          assert match,'Missing canonical password work factor'
+          cost=int(match.group(1))
+          assert 10000<=cost<=100000, 'Cloudflare Workers PBKDF2 caps each deriveBits operation at 100,000 iterations'
+          assert f'DEFAULT {cost}' in schema
+          assert 'password_iterations,marketing_email' in source, 'New accounts must persist actual work factor'
+          assert 'u?.password_iterations||ITERATIONS' in source, 'Login must use the account-specific work factor'
+          assert 'password_iterations=?,updated_at=' in source, 'Password reset must persist updated work factor'
+          print('PASS: password hashing work factor is supported on Cloudflare Workers and versioned in account records')
           PY
       - name: Install dependencies
         run: npm install --no-audit --no-fund

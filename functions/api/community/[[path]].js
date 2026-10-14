@@ -7,7 +7,9 @@ const INTERESTS=['kits','finished_dolls','high_end_dolls','materials','technique
 const CATEGORIES=['general','kits','painting','mohair','silicone','authenticity','showcase','marketplace'];
 const encoder=new TextEncoder();
 const COOKIE='rb_session';
-const ITERATIONS=310000;
+// Cloudflare Workers rejects WebCrypto PBKDF2 calls above 100,000 iterations.
+// Work factor is stored per user; do not silently raise it above the edge runtime ceiling.
+const ITERATIONS=100000;
 const now=()=>Math.floor(Date.now()/1000);
 function response(data,status=200,headers={}){return new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff',...headers}})}
 const failure=(message,status=400)=>response({error:message},status);
@@ -15,7 +17,11 @@ function bytes(length){const a=new Uint8Array(length);crypto.getRandomValues(a);
 function b64(a){return btoa(String.fromCharCode(...a)).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'')}
 function unb64(s){const raw=atob(s.replace(/-/g,'+').replace(/_/g,'/')+'='.repeat((4-s.length%4)%4));return Uint8Array.from(raw,c=>c.charCodeAt(0))}
 async function sha(value){return b64(new Uint8Array(await crypto.subtle.digest('SHA-256',encoder.encode(value))))}
-async function passwordHash(password,salt){const key=await crypto.subtle.importKey('raw',encoder.encode(password),'PBKDF2',false,['deriveBits']);return b64(new Uint8Array(await crypto.subtle.deriveBits({name:'PBKDF2',salt:unb64(salt),iterations:ITERATIONS,hash:'SHA-256'},key,256)))}
+async function passwordHash(password,salt,iterations=ITERATIONS){
+ if(!Number.isInteger(iterations)||iterations<1||iterations>100000)throw Error('Unsupported password-hashing work factor');
+ const key=await crypto.subtle.importKey('raw',encoder.encode(password),'PBKDF2',false,['deriveBits']);
+ return b64(new Uint8Array(await crypto.subtle.deriveBits({name:'PBKDF2',salt:unb64(salt),iterations,hash:'SHA-256'},key,256)));
+}
 function safeEqual(a,b){if(!a||!b||a.length!==b.length)return false;let out=0;for(let i=0;i<a.length;i++)out|=a.charCodeAt(i)^b.charCodeAt(i);return out===0}
 function cookie(token,maxAge){return COOKIE+'='+token+'; Path=/; Secure; HttpOnly; SameSite=Lax; Max-Age='+maxAge}
 function clearCookie(){return cookie('',0)}
@@ -145,7 +151,7 @@ export async function onRequest(context){
   let salt,hash;
   try{salt=b64(bytes(20));hash=await passwordHash(password,salt)}catch(e){await recordSignupIssue(db,'password','hash_failure');throw e}
   const id=crypto.randomUUID();
-  await db.prepare('INSERT INTO users(id,email,handle,display_name,password_salt,password_hash,marketing_email,notification_email) VALUES(?,?,?,?,?,?,?,?)').bind(id,email,handle,display,salt,hash,d.marketingEmail===true?1:0,d.notificationEmail===true?1:0).run();
+  await db.prepare('INSERT INTO users(id,email,handle,display_name,password_salt,password_hash,password_iterations,marketing_email,notification_email) VALUES(?,?,?,?,?,?,?,?,?)').bind(id,email,handle,display,salt,hash,ITERATIONS,d.marketingEmail===true?1:0,d.notificationEmail===true?1:0).run();
   const roles=strings(d.roles,ROLES),interests=strings(d.interests,INTERESTS);
   const statements=[...roles.map(x=>db.prepare('INSERT INTO user_roles(user_id,role) VALUES(?,?)').bind(id,x)),...interests.map(x=>db.prepare('INSERT INTO user_interests(user_id,interest) VALUES(?,?)').bind(id,x))];if(statements.length)await db.batch(statements);
   try{await deliverToken(db,env,{id,email},'verify')}catch(e){await recordSignupIssue(db,'email','send_failure');return failure('Your account was saved, but the verification email could not be delivered. Choose Sign in, then select Resend my verification link.',503)}
@@ -173,7 +179,7 @@ export async function onRequest(context){
   const d=await readJson(request),email=clean(d.email,254).toLowerCase();
   const u=await db.prepare("SELECT * FROM users WHERE email=? AND is_editorial=0 AND status='active'").bind(email).first();
   const dummySalt='AAAAAAAAAAAAAAAAAAAAAAAAAAA',pw=typeof d.password==='string'&&d.password.length<=128?d.password:'';
-  const candidate=await passwordHash(pw,u?.password_salt||dummySalt);
+  const candidate=await passwordHash(pw,u?.password_salt||dummySalt,u?.password_iterations||ITERATIONS);
   if(!u||!safeEqual(candidate,u.password_hash))return failure('Email or password is incorrect.',401);
   if(!u.email_verified_at)return failure('Please confirm your email before signing in.',403);
   return response({ok:true,user:publicUser(u)},200,{'Set-Cookie':await session(db,u.id)});
@@ -191,7 +197,7 @@ export async function onRequest(context){
   const hash=await sha(token);
   const t=await db.prepare("SELECT * FROM email_tokens WHERE token_hash=? AND purpose='reset' AND used_at IS NULL AND expires_at>datetime('now')").bind(hash).first();if(!t)return failure('Invalid or expired reset link.');
   const salt=b64(bytes(20)),pwHash=await passwordHash(d.password,salt);
-  await db.batch([db.prepare("UPDATE users SET password_salt=?,password_hash=?,updated_at=datetime('now') WHERE id=?").bind(salt,pwHash,t.user_id),db.prepare('DELETE FROM sessions WHERE user_id=?').bind(t.user_id),db.prepare("UPDATE email_tokens SET used_at=datetime('now') WHERE token_hash=?").bind(hash)]);
+  await db.batch([db.prepare("UPDATE users SET password_salt=?,password_hash=?,password_iterations=?,updated_at=datetime('now') WHERE id=?").bind(salt,pwHash,ITERATIONS,t.user_id),db.prepare('DELETE FROM sessions WHERE user_id=?').bind(t.user_id),db.prepare("UPDATE email_tokens SET used_at=datetime('now') WHERE token_hash=?").bind(hash)]);
   return response({ok:true,message:'Password updated. Please sign in.'});
  }
  if(method==='POST'&&path==='logout'){
