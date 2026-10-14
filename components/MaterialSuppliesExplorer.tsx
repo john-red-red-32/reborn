@@ -20,7 +20,7 @@ export default function MaterialSuppliesExplorer(){
     const image=materialProductEvidence[item.slug]?.products[0]?.photos[0];
     return <article key={item.slug} className="rbrn-supply-card rbrn-supply-photo-card">
       <Link href={"/materials/"+item.slug+"/"} className="rbrn-supply-picture" aria-label={"Discover "+item.name}>{image?<img src={image.url} alt={item.name+" — featured supplier catalogue photograph"} loading="lazy" decoding="async"/>:<div className="rbrn-supply-art"><span>THE MAKER'S STUDIO</span><strong>✳</strong></div>}<span className="rbrn-supply-image-note">SUPPLIER PHOTOGRAPH</span></Link>
-      <div className="rbrn-supply-info"><div className="rbrn-supply-meta"><span>SUPPLIER: {item.supplierCountry==="US"?"USA":item.supplierCountry}</span><span>{item.method??"ARTIST SUPPLIES"}</span></div>
+      <div className="rbrn-supply-info"><div className="rbrn-supply-meta"><span>{item.method??"ARTIST SUPPLIES"}</span></div>
        <h3><Link href={"/materials/"+item.slug+"/"}>{item.name}</Link></h3><p>{item.description}</p><div className="rbrn-supply-actions"><span>{item.maker}</span><Link href={"/materials/"+item.slug+"/"}>Discover more <ArrowRight size={15}/></Link></div>
       </div>
     </article>
