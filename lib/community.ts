@@ -26,8 +26,8 @@ export const communityCategories=[
  {id:'marketplace',name:'Buying & selling',description:'Advice and discussion; transactions are not yet hosted'}
 ] as const;
 export type CommunityUser={id:string;handle:string;displayName:string;bio:string;editorial:boolean;allowMessages:boolean;createdAt:string;avatarUrl:string|null;email:string;roles:string[];interests:string[];notificationEmail:boolean;marketingEmail:boolean};
-export type CommunityPost={id:string;title:string;body:string;category:string;created_at:string;pinned:number;handle:string;display_name:string;is_editorial:number;reply_count:number;vote_count:number;liked?:boolean;products?:{type:string;path:string}[];locked?:number};
-export type CommunityReply={id:string;body:string;created_at:string;handle:string;display_name:string;is_editorial:number};
+export type CommunityPost={id:string;title:string;body:string;category:string;created_at:string;pinned:number;handle:string;display_name:string;is_editorial:number;reply_count:number;vote_count:number;liked?:boolean;avatarUrl?:string|null;products?:{type:string;path:string}[];locked?:number};
+export type CommunityReply={id:string;body:string;created_at:string;handle:string;display_name:string;is_editorial:number;avatarUrl?:string|null};
 export async function communityApi<T>(path:string,body?:unknown):Promise<T>{
  const response=await fetch('/api/community/'+path,{method:body===undefined?'GET':'POST',credentials:'same-origin',headers:body===undefined?undefined:{'Content-Type':'application/json'},body:body===undefined?undefined:JSON.stringify(body),cache:'no-store'});
  const data=await response.json().catch(()=>({error:'The community service is unavailable.'}));
