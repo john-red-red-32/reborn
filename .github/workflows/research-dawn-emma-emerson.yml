@@ -1,0 +1,42 @@
+name: Verify Dawn Emma and Emerson reborn examples
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/research-dawn-emma-emerson.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Check original sculpt identity and independently labelled example images
+        run: |
+          python3 - <<'PY'
+          import urllib.request,urllib.robotparser,re,html
+          from html.parser import HTMLParser
+          base='https://rebornbabycreations.com'
+          robot=urllib.robotparser.RobotFileParser()
+          robot.set_url(base+'/robots.txt')
+          try:robot.read()
+          except Exception as e:
+            print('Robots unknown; no request',str(e),flush=True);raise SystemExit(0)
+          rows=[
+           ('Emma','/products/super-soft-silicone-baby-emma-by-dawn-64xg8mj82wno0xrd','https://rebornbabycreations.com/cdn/shop/files/il_fullxfull.7584552051_5724_ad55026b-4027-4445-815b-0e2b017eaa36.jpg?v=1772741301&width=533'),
+           ('Emerson','/products/super-soft-silicone-baby-emerson-by-dawn-38489','https://rebornbabycreations.com/cdn/shop/files/il_fullxfull.7584552051_5724_f015b8c1-5b19-4325-a141-59b50541c6ee.jpg?v=1772740909&width=533'),
+          ]
+          ua='RebornaDiscovery/0.1 (+https://reborna.co; independent source research)'
+          for name,path,img in rows:
+            source=base+path
+            if not robot.can_fetch(ua,source):
+              print('ROBOTS DISALLOWED',name,flush=True);continue
+            with urllib.request.urlopen(urllib.request.Request(source,headers={'User-Agent':ua}),timeout=18) as response:
+              body=response.read(2_000_000).decode('utf8','replace')
+            print('PAGE',name,'named',bool(re.search(name,body,re.I)),'Dawn attributed',bool(re.search('Dawn Donofrio',body,re.I)),'image included in HTML',img.split('?')[0] in html.unescape(body),flush=True)
+            try:
+              with urllib.request.urlopen(urllib.request.Request(img,headers={'User-Agent':'Mozilla/5.0','Accept':'image/*'}),timeout=18) as res:
+                print('IMAGE',name,res.status,res.headers.get('Content-Type'),len(res.read(512)),flush=True)
+            except Exception as e:print('FAILED IMAGE',name,str(e)[:150],flush=True)
+          PY
