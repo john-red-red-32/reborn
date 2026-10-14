@@ -1,0 +1,1095 @@
+{
+  "source": "https://rebornartistryalliance.com/collections/sculptors",
+  "directory_total": 35,
+  "review_label": "RAA claims are leads; artist-level original kit identity requires independent verification",
+  "site_platform_summary": {
+    "wix": 5,
+    "unverified": 45,
+    "godaddy": 1,
+    "webador": 1,
+    "unknown": 1,
+    "shopify": 2
+  },
+  "members": [
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/the-bonnie-brown-collection",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Website",
+          "url": "https://www.bonniebrowndolls.com/",
+          "host": "www.bonniebrowndolls.com"
+        },
+        {
+          "label": "Visit",
+          "url": "https://www.thebonniebrowncollection.com/",
+          "host": "www.thebonniebrowncollection.com"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Website",
+          "url": "https://www.bonniebrowndolls.com/",
+          "host": "www.bonniebrowndolls.com",
+          "platform": "wix",
+          "fetch_status": "readable"
+        },
+        {
+          "label": "Visit",
+          "url": "https://www.thebonniebrowncollection.com/",
+          "host": "www.thebonniebrowncollection.com",
+          "platform": "wix",
+          "fetch_status": "readable"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "The Bonnie Brown Collection",
+      "raa_member_number": "045",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Prototype My name is Bonnie Brown, I sculpt babies for The Bonnie Brown Collection I started sculpting when I was younger, inspired instantly by many other artists at the time in first discovering reborns existed and with my massive obsession with babies, this art was totally irresistible for me. I love our community of creators and I am happy to be apart of it. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/dm-h-studio-llc",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Website",
+          "url": "https://www.dm-hstudio.com/",
+          "host": "www.dm-hstudio.com"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Website",
+          "url": "https://www.dm-hstudio.com/",
+          "host": "www.dm-hstudio.com",
+          "platform": "unverified",
+          "fetch_status": "ValueError:redirect_off_host"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "DMH SCULPTURES",
+      "raa_member_number": "110",
+      "has_sculptor_claim": true,
+      "bio_excerpt": "DMH SCULPTURES – Reborn Artistry Alliance Skip to content Your cart is empty Continue Home Have an account? Log in to check out faster. Your cart Loading... Order Note Order Note Estimated total $0.00 AUD Taxes, discounts and shipping calculated at checkout Check out UNITY . EXCELLENCE . INTEGRITY \" Empowering Excellence & Uniting The Reborn Industry with Integrity\" APPLY TO JOIN DIRECTORY DIRECTORY ARTISTS SCULPTORS VENDORS AFFILIATES VIEW ALL COMPETITION INFO COMPETITION INFO HOW THE RAA WORKS CODES OF CONDUCT RULES & REGULATIONS COMPETITION SCHEDULE SCORING & JUDGING CRITERIA CATEGORIES & SPECIFICATIONS AWARDS & PRIZES AWARD RESULTS REBORN RESOURCES REBORN RESOURCES WHERE TO SAFELY BUY & SELL REBORNS REBORNING RESOURCES & TUTORIALS ABOUT SCAMS & ILLEGAL COPIES ILLEGAL COPIES & THE LAW SUBMIT A REPORT Log in Facebook Instagram APPLY TO JOIN DIRECTORY ARTISTS SCULPTORS VENDORS AFFILIATES VIEW ALL COMPETITION INFO HOW THE RAA WORKS CODES OF CONDUCT RULES & REGULATIONS COMPETITION SCHEDULE SCORING & JUDGING CRITERIA CATEGORIES & SPECIFICATIONS AWARDS & PRIZES AWARD RESULTS REBORN RESOURCES WHERE TO SAFELY BUY & SELL REBORNS REBORNING RESOURCES & TUTORIALS ABOUT SCAMS & ILLEGAL COPIES ILLEGAL COPIES & THE LAW SUBMIT A REPORT SEARCH Log in Cart ‹ › RAA Member #110 DMH SCULPTURES since 2017 Doris Moyers-Hornbogen | IN, United States Artist/Sculptor I began Reborn painting Jan 2017, sculpting in 2018, and producing silcione kits in 2019. I am obsessed with what I do. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/ebtehal-abul",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Website",
+          "url": "https://www.ebtehalabul.com/",
+          "host": "www.ebtehalabul.com"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Website",
+          "url": "https://www.ebtehalabul.com/",
+          "host": "www.ebtehalabul.com",
+          "platform": "unverified",
+          "fetch_status": "URLError:<urlopen error [Errno -2] Name or service not known>"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Ebtehal Abul",
+      "raa_member_number": "153",
+      "has_sculptor_claim": true,
+      "bio_excerpt": "EBTEHAL ABUL – Reborn Artistry Alliance Skip to content Your cart is empty Continue Home Have an account? Log in to check out faster. Your cart Loading... Order Note Order Note Estimated total $0.00 AUD Taxes, discounts and shipping calculated at checkout Check out UNITY . EXCELLENCE . INTEGRITY \" Empowering Excellence & Uniting The Reborn Industry with Integrity\" APPLY TO JOIN DIRECTORY DIRECTORY ARTISTS SCULPTORS VENDORS AFFILIATES VIEW ALL COMPETITION INFO COMPETITION INFO HOW THE RAA WORKS CODES OF CONDUCT RULES & REGULATIONS COMPETITION SCHEDULE SCORING & JUDGING CRITERIA CATEGORIES & SPECIFICATIONS AWARDS & PRIZES AWARD RESULTS REBORN RESOURCES REBORN RESOURCES WHERE TO SAFELY BUY & SELL REBORNS REBORNING RESOURCES & TUTORIALS ABOUT SCAMS & ILLEGAL COPIES ILLEGAL COPIES & THE LAW SUBMIT A REPORT Log in Facebook Instagram APPLY TO JOIN DIRECTORY ARTISTS SCULPTORS VENDORS AFFILIATES VIEW ALL COMPETITION INFO HOW THE RAA WORKS CODES OF CONDUCT RULES & REGULATIONS COMPETITION SCHEDULE SCORING & JUDGING CRITERIA CATEGORIES & SPECIFICATIONS AWARDS & PRIZES AWARD RESULTS REBORN RESOURCES WHERE TO SAFELY BUY & SELL REBORNS REBORNING RESOURCES & TUTORIALS ABOUT SCAMS & ILLEGAL COPIES ILLEGAL COPIES & THE LAW SUBMIT A REPORT SEARCH Log in Cart ‹ › RAA Member #153 Ebtehal Abul since 2017 Ebtehal Abul | Kuwait, Kuwait Sculptor I am from Kuwait, a small country located in the Arabian peninsula in the Middle East. I am considered as the first reborn sculptor living in the Middle East, whom is producing reborn kits and distributing them worldwide, I have been sculpting since 2017, and had my very first sculpt produced in vinyl in 2020. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/ping-lau",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Website",
+          "url": "https://www.irresistables.com/ping-lau-doll-kits/?fbclid=IwY2xjawFjEL9leHRuA2FlbQIxMAABHYCGNxOI8E3vP-7sAqryjwbG5YgWwcHuec6q7YLIi14na9Pn6pjzycxyWA_aem_CxaMOXuqfEDfHL1IbkYnGQ",
+          "host": "www.irresistables.com"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.pingart.com/?fbclid=IwY2xjawFjD8VleHRuA2FlbQIxMAABHcgOl7-Gh_kb2dchak8Wih4yzcsPHRTbAvhRCj8_zBgWsbhPfAQ5lQrZGw_aem_9c0-E3WhpPAwgSmdcfTV-g",
+          "host": "www.pingart.com"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Website",
+          "url": "https://www.irresistables.com/ping-lau-doll-kits/?fbclid=IwY2xjawFjEL9leHRuA2FlbQIxMAABHYCGNxOI8E3vP-7sAqryjwbG5YgWwcHuec6q7YLIi14na9Pn6pjzycxyWA_aem_CxaMOXuqfEDfHL1IbkYnGQ",
+          "host": "www.irresistables.com",
+          "platform": "godaddy",
+          "fetch_status": "readable"
+        },
+        {
+          "label": "TikTok",
+          "url": "https://www.pingart.com/?fbclid=IwY2xjawFjD8VleHRuA2FlbQIxMAABHcgOl7-Gh_kb2dchak8Wih4yzcsPHRTbAvhRCj8_zBgWsbhPfAQ5lQrZGw_aem_9c0-E3WhpPAwgSmdcfTV-g",
+          "host": "www.pingart.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Ping Lau",
+      "raa_member_number": "360",
+      "has_sculptor_claim": true,
+      "bio_excerpt": "PING LAU – Reborn Artistry Alliance Skip to content Your cart is empty Continue Home Have an account? Log in to check out faster. Your cart Loading... Order Note Order Note Estimated total $0.00 AUD Taxes, discounts and shipping calculated at checkout Check out UNITY . EXCELLENCE . INTEGRITY \" Empowering Excellence & Uniting The Reborn Industry with Integrity\" APPLY TO JOIN DIRECTORY DIRECTORY ARTISTS SCULPTORS VENDORS AFFILIATES VIEW ALL COMPETITION INFO COMPETITION INFO HOW THE RAA WORKS CODES OF CONDUCT RULES & REGULATIONS COMPETITION SCHEDULE SCORING & JUDGING CRITERIA CATEGORIES & SPECIFICATIONS AWARDS & PRIZES AWARD RESULTS REBORN RESOURCES REBORN RESOURCES WHERE TO SAFELY BUY & SELL REBORNS REBORNING RESOURCES & TUTORIALS ABOUT SCAMS & ILLEGAL COPIES ILLEGAL COPIES & THE LAW SUBMIT A REPORT Log in Facebook Instagram APPLY TO JOIN DIRECTORY ARTISTS SCULPTORS VENDORS AFFILIATES VIEW ALL COMPETITION INFO HOW THE RAA WORKS CODES OF CONDUCT RULES & REGULATIONS COMPETITION SCHEDULE SCORING & JUDGING CRITERIA CATEGORIES & SPECIFICATIONS AWARDS & PRIZES AWARD RESULTS REBORN RESOURCES WHERE TO SAFELY BUY & SELL REBORNS REBORNING RESOURCES & TUTORIALS ABOUT SCAMS & ILLEGAL COPIES ILLEGAL COPIES & THE LAW SUBMIT A REPORT SEARCH Log in Cart ‹ › RAA Member #360 Ping Lau since 1995 Ping Lau | DC, United States Artist/Sculptor Ping Lau was raised and educated in Singapore. She has had no formal art training but graduated with a Bachelor of Arts in English Literature from the National University of Singapore. Her characteristically large-sized, meticulously detailed and expressive one of a kind dolls depicting children of all ethnic groups reflect her generous exposure to many different cultures through her life in Singapore. Her dolls receive tremendous response and recognition"
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/severine-piret-mercier",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Website",
+          "url": "https://www.severinepiret.com/?fbclid=IwY2xjawE17dlleHRuA2FlbQIxMAABHXPxUslScG3bVz9P1ppqiRRIGeefR4oSsfZEvYq4aOnqI5eKELbKLdYvXA_aem_ROSF_oatoxNpLNONEfwGeg",
+          "host": "www.severinepiret.com"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Website",
+          "url": "https://www.severinepiret.com/?fbclid=IwY2xjawE17dlleHRuA2FlbQIxMAABHXPxUslScG3bVz9P1ppqiRRIGeefR4oSsfZEvYq4aOnqI5eKELbKLdYvXA_aem_ROSF_oatoxNpLNONEfwGeg",
+          "host": "www.severinepiret.com",
+          "platform": "webador",
+          "fetch_status": "readable"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Severine Piret Mercier",
+      "raa_member_number": "178",
+      "has_sculptor_claim": true,
+      "bio_excerpt": "SEVERINE PIRET MERCIER – Reborn Artistry Alliance Skip to content Your cart is empty Continue Home Have an account? Log in to check out faster. Your cart Loading... Order Note Order Note Estimated total $0.00 AUD Taxes, discounts and shipping calculated at checkout Check out UNITY . EXCELLENCE . INTEGRITY \" Empowering Excellence & Uniting The Reborn Industry with Integrity\" APPLY TO JOIN DIRECTORY DIRECTORY ARTISTS SCULPTORS VENDORS AFFILIATES VIEW ALL COMPETITION INFO COMPETITION INFO HOW THE RAA WORKS CODES OF CONDUCT RULES & REGULATIONS COMPETITION SCHEDULE SCORING & JUDGING CRITERIA CATEGORIES & SPECIFICATIONS AWARDS & PRIZES AWARD RESULTS REBORN RESOURCES REBORN RESOURCES WHERE TO SAFELY BUY & SELL REBORNS REBORNING RESOURCES & TUTORIALS ABOUT SCAMS & ILLEGAL COPIES ILLEGAL COPIES & THE LAW SUBMIT A REPORT Log in Facebook Instagram APPLY TO JOIN DIRECTORY ARTISTS SCULPTORS VENDORS AFFILIATES VIEW ALL COMPETITION INFO HOW THE RAA WORKS CODES OF CONDUCT RULES & REGULATIONS COMPETITION SCHEDULE SCORING & JUDGING CRITERIA CATEGORIES & SPECIFICATIONS AWARDS & PRIZES AWARD RESULTS REBORN RESOURCES WHERE TO SAFELY BUY & SELL REBORNS REBORNING RESOURCES & TUTORIALS ABOUT SCAMS & ILLEGAL COPIES ILLEGAL COPIES & THE LAW SUBMIT A REPORT SEARCH Log in Cart ‹ › RAA Member #178 Severine Piret Mercier since 2020 Severine Piret Mercier | Montpellier, France Sculptor Séverine Piret Mercier is a talented French artist, celebrated for her highly detailed and realistic reborn sculpts. She has garnered significant attention in the reborn community for her exceptional skill in creating beautiful facial expressions and features that capture the delicate essence of newborns and infants. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/my-sweet-little-angels-reborn-nursery",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Website",
+          "url": "https://www.mysweetlittleangels.com.au/",
+          "host": "www.mysweetlittleangels.com.au"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Website",
+          "url": "https://www.mysweetlittleangels.com.au/",
+          "host": "www.mysweetlittleangels.com.au",
+          "platform": "unknown",
+          "fetch_status": "readable"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "My Sweet Little Angels Reborn Nursery",
+      "raa_member_number": "155",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Prototype My name is Jodie, and I have worked in the reborn industry for over 15 years. I am a sculptor and have had babies produced in vinyl. I also mold and pour my own sculpts into silicone. I have created many vinyl prototypes in ethnic skin tones or vibrant fantasy colors. I offer workshops and love to teach others my painting techniques in both ethnic and fantasy. I work with heat set paints and I love color. I am mostly known for my vibrant fantasy babies, beautiful ethnic babies and unique art clowns. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/schattebout-art-dolls",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Schattebout Art Dolls",
+      "raa_member_number": "124",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Prototype I was introduced to reborning by my neighbor, Gina, who found out I was an artist and promptly deposited a box of random kit parts on my porch. She was convinced I would enjoy painting dolls and I absolutely did! This past year I also began sculpting and am loving the process more than I ever thought possible. This hobby has sparked true creative joy in me and I am thankful to be a part of this beautiful community of artists, sculptors, and collectors. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/heavenly-babies-by-stacey-haskins",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Heavenly Babies by Stacey Haskins",
+      "raa_member_number": "654",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Prototype Hello, I am Stacey Haskins. I have been a reborn artist since 2006. I started out painting vinyl dolls, then in 2020 I stopped painting vinyl and started painting silicone full time. I have painted many many prototypes in both mediums over the years. I was a doll show director for many years, and now I am beginning a new adventure in sculpting. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/reborn-elegance",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Reborn Elegance",
+      "raa_member_number": "629",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Prototype My name is Kristal Rainey-Anderson. I have been making reborn dolls since 2010. I currently live in North Texas with my Husband, two children, my mother and our 6 dogs. I sometimes offer private lessons in my home or online through video chat. I can be found on YouTube, Facebook, and Instagram. I have won multiple awards and have done prototypes for sculptors such as Laura Tuzio Ross, Melody Hess, and Jorja Pigott just to name a few. Most of the dolls that I paint have darker skin tones. I personally find it easier to paint a darker skin color than a lighter one. That’s not to say it isn’t more work, the darker the skin color the more layers you have to paint. My favorite part is doing the shading, that’s when you really start to see the baby start to come alive! I get goosebumps just thinking about it! My interests are many, and I seem to have my hand in a little bit of everything. I love making things with my 3D printers and designing new things and coming up with improvements to things that already exist! I designed, printed, and am now mass-producing 3D printed Rooting tools that can be found on my website. I have always enjoyed artistic things, even from a young age, I have no formal background in art other than high school art classes. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/eva-brilli",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Eva Brilli",
+      "raa_member_number": "579",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Advanced I started working with Reborn dolls in 2006, and over time, I developed a passion for sculpting. I have had the opportunity to reproduce a few Reborn kits and have also taught myself the technique of silicone casting. I don’t have a preferred ethnicity for my creations; I usually draw inspiration from the kit itself. Over the past year, I have also focused on producing high-quality eyes, achieving excellent results while continuously refining my coloring techniques. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/ghadir-al-shirazi",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Ghadir Al Shirazi",
+      "raa_member_number": "500",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Prototype I am the first Arabic reborn artist from Kuwait, dedicated to the art of painting vinyl and silicone dolls, as well as sculpting. My work has inspired countless women in my region, and I'm proud to say that my dolls are cherished by many. Every year, I offer reborn painting classes, sharing my passion and skills with others. My dolls have found a place in various TV productions, including movies, series, and advertisements, showcasing the beauty and artistry of reborn creations. My journey made me discover my skills in sculpting and my 1st produced sculpture was \"Sweet Dalal,\" a heartfelt tribute to my late little sister, Dalal, who bravely fought cancer. My mission is to advocate for the use of reborn dolls in the entertainment industry, encouraging a compassionate alternative to using real newborns in acting projects. I pour my heart and soul into this craft, not just as a profession but as a true passion. I proudly support the use of authentic kits, ensuring that my creations reflect the highest standards of quality and artistry. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/le-ruban-rose-nursery",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Website",
+          "url": "https://rutagui.wixsite.com/lerubanrose?lang=es",
+          "host": "rutagui.wixsite.com"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Website",
+          "url": "https://rutagui.wixsite.com/lerubanrose?lang=es",
+          "host": "rutagui.wixsite.com",
+          "platform": "wix",
+          "fetch_status": "readable"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Le Ruban Rose Nursery",
+      "raa_member_number": "383",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " High End Hello! I am the artist behind Le Ruban rose Nursery. I started painting since I can remember, but two years after I graduated as an architect, I decided to develop my passion for painting. And I did it for 13 years. During this period I learned, explore and improve my style and techniques in drawing and painting, until I met Nancy Rossi-capers of Destinyis Nana Reborns. She introduced me to this wonderful and sweet world. I started to reborn dolls 16 years ago. During the first years I was slowly learning this art, but I sold some of my first reborn at the IDEX SHOW in 2009 and 2010. Then in 2011, I began to know that my skills were improving, and I decided that it was time to start on E-bay, and this decision could not have been better!. The success that Le Ruban Rose Nursery has achieved in this short time and the good feedback received from ladies that follows my precious babies auctions have given me the strength to push my skills to the next level of perfection And give each next Reborn Baby \"a look beyond reality.\" Now I am very proud to belong to such a great community! and, I am thankful for the dedication I have made of something that started like a hobby, has become my passion and my life for this wonderful 16 years creating this amazing art! "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/piccoli-tesori",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Website",
+          "url": "https://manuelabertocchi.wixsite.com/piccolitesori?fbclid=IwY2xjawFEeDtleHRuA2FlbQIxMAABHfkINbVv8L_Poz2eYx7aSPbV5ZA0mXqesqeVWmGIbGKOxVc6x5Hq7iPmUw_aem_T4RtFbXW1SqWOmUrNAnczg",
+          "host": "manuelabertocchi.wixsite.com"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Website",
+          "url": "https://manuelabertocchi.wixsite.com/piccolitesori?fbclid=IwY2xjawFEeDtleHRuA2FlbQIxMAABHfkINbVv8L_Poz2eYx7aSPbV5ZA0mXqesqeVWmGIbGKOxVc6x5Hq7iPmUw_aem_T4RtFbXW1SqWOmUrNAnczg",
+          "host": "manuelabertocchi.wixsite.com",
+          "platform": "wix",
+          "fetch_status": "readable"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Piccoli Tesori",
+      "raa_member_number": "275",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Prototype At the age of 9, I painted my first oil painting. I worked in the advertising graphics industry for 30 years. Since 2018, I have developed a passion for reborning, and my curiosity and love for babies have also led me to sculpture. ❤️ "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/art-to-adore",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Art To Adore",
+      "raa_member_number": "296",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " High End I am a mother of 5 and have been a professional artist for over 16 years with my entry into doll making 6 years ago -- I am a self taught sculpting and casting artist and I strive to make affordable full body silicones. I sculpt for movement and I adore portraiture work. I do all of my own casting and work in house with my husband. We are in the humble Midwest South Dakota - our values sit heavily with INCLUSION and advocacy and ally ship with lgbtqia community. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/lynette-daff-art-dolls",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Lynette Daff Art Dolls",
+      "raa_member_number": "256",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Prototype I started painting reproduction porcelain dolls 35 years ago and began painting vinyl dolls in 2012, for the past 6 years I have painted silicone dolls and now I sculpt my own babies, I also tutor paint8ng techniques in my tutorial page "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/sm-creations-nursery",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Website",
+          "url": "https://dollsmagazine.com/jazzy-puppets-macpherson-launches-a-new-twist-on-reborns/",
+          "host": "dollsmagazine.com"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Website",
+          "url": "https://dollsmagazine.com/jazzy-puppets-macpherson-launches-a-new-twist-on-reborns/",
+          "host": "dollsmagazine.com",
+          "platform": "unverified",
+          "fetch_status": "HTTPError:HTTP Error 404: Not Found"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "SM Creations Nursery",
+      "raa_member_number": "255",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Prototype I am a multimedia artist with over 20 year experience in painting vinyl reborn dolls. I have an extensive history with my involvement and studies in the fine arts using various mediums. I brought my art expertise and knowledge into the reborn art industry through working as an in-house artist for an well-known authorized reborn kit dealer. I have since retired and I am now painting and selling vinyl reborns for my own business \"S.M Creations Nursery\". I have done proto type reborns for \"Enchanted Kreatures\" and custom reborns for TV series and movies. Eg. “Handmaid’s Tale”, “Anne With An E”, “Snowpiercer” . I have done various reborn painting tutorials for international doll magazines, taught reborn painting classes and produced many tutorials on you tube. I love painting and bringing a reborn vinyl baby to life and I am not ready to give it up yet. This is the first time I will be listing my reborns for sales on line. Facebook and web site will follow as I begin my online sales setup and journey. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/raquel-romero",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Raquel Romero",
+      "raa_member_number": "588",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " High End I am a reborn sculptor, I started in the reborn world in 2018 as a vinyl artist, and in 2022 I launched as a sculptor and reproduced my first silicone baby. Over the years I have been learning and evolving, I took several courses, sculpture, painting... and I carry out the entire process of a silicone baby, from sculpture, mold, pouring paint and grafting. and I also sell blanks for artists. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/loves-lovable-babies",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Website",
+          "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+          "host": "loveslovablebabies.wixsite.com"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Website",
+          "url": "https://loveslovablebabies.wixsite.com/loves-lovable-babies",
+          "host": "loveslovablebabies.wixsite.com",
+          "platform": "wix",
+          "fetch_status": "readable"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Loves Lovable Babies",
+      "raa_member_number": "536",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " High End I have loved art as long as i can remember, am an authentic artist and sculptor, i enjoy sculpting human and hybrid style babies and adults, i also enjoy painting reborn dolls that are human or alternative style as long as it is in public domain, my number one goal is to always be athentic and have good integrity for all original art work. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/privilege-reborn",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Privilege Reborn",
+      "raa_member_number": "415",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " High End I am a professional high end hyper realistic artist, was studying art at the highest level, I was also art director in international American advertising agency, now i am sculpting, painting and rooting my silicone babies and also the ones of other professional artists' did study the art of sculpting and pouring silicone babies. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/francescas-babies",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Website",
+          "url": "https://gratis-3982904.webador.it/?_gl=1%2A1uovi0c%2A_ga%2AODI1MTM3MTA1LjE2OTU1NjU5NzE.%2A_ga_E6PZPGE4QM%2AMTY5NTU5Mzg0NS40LjEuMTY5NTU5NDQ2OS41Ni4wLjA.&fbclid=IwZXh0bgNhZW0CMTEAAR0AmLWHAq21MXE-5hvhA9jtCS6Tv1Owic6cS7IAwlk77hLaywRUH7xgccY_aem_rSpcu2hEtwPoJ5svXoNboA",
+          "host": "gratis-3982904.webador.it"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Website",
+          "url": "https://gratis-3982904.webador.it/?_gl=1%2A1uovi0c%2A_ga%2AODI1MTM3MTA1LjE2OTU1NjU5NzE.%2A_ga_E6PZPGE4QM%2AMTY5NTU5Mzg0NS40LjEuMTY5NTU5NDQ2OS41Ni4wLjA.&fbclid=IwZXh0bgNhZW0CMTEAAR0AmLWHAq21MXE-5hvhA9jtCS6Tv1Owic6cS7IAwlk77hLaywRUH7xgccY_aem_rSpcu2hEtwPoJ5svXoNboA",
+          "host": "gratis-3982904.webador.it",
+          "platform": "unverified",
+          "fetch_status": "ValueError:redirect_off_host"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Francesca's Babies",
+      "raa_member_number": "179",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " High End Nice to meet you! I'm Francesca Figà, reborn artist from 2018. I paint and root only authentic kits to provide the best quality and keep our community safe. I am a sculpting artist too ,I cast and paint silicone babies and I also produce my own vinyl kits. Remember that life is amazing and needs to be represented with art.. I love you all 🌷 "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/baby-days-reborn-art-dolls",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Baby Days Reborn Art Dolls",
+      "raa_member_number": "168",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Novice Hi I’m Angie the sculptor, caster, pourer, painter & rooter behind Baby days reborn art dolls. I first started painting vinyl reborn kits in lockdown with my daughter as my muse. I have since become a sculptor and produce my own silicone babies. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/bebes-muy-kukis",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Visit",
+          "url": "https://www.vinted.es/member/3138384416-keylat3",
+          "host": "www.vinted.es"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Visit",
+          "url": "https://www.vinted.es/member/3138384416-keylat3",
+          "host": "www.vinted.es",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Bebes muy Kukis",
+      "raa_member_number": "723",
+      "has_sculptor_claim": true,
+      "bio_excerpt": "Bebes muy Kukis – Reborn Artistry Alliance Skip to content Your cart is empty Continue Home Have an account? Log in to check out faster. Your cart Loading... Order Note Order Note Estimated total $0.00 AUD Taxes, discounts and shipping calculated at checkout Check out UNITY . EXCELLENCE . INTEGRITY \" Empowering Excellence & Uniting The Reborn Industry with Integrity\" APPLY TO JOIN DIRECTORY DIRECTORY ARTISTS SCULPTORS VENDORS AFFILIATES VIEW ALL COMPETITION INFO COMPETITION INFO HOW THE RAA WORKS CODES OF CONDUCT RULES & REGULATIONS COMPETITION SCHEDULE SCORING & JUDGING CRITERIA CATEGORIES & SPECIFICATIONS AWARDS & PRIZES AWARD RESULTS REBORN RESOURCES REBORN RESOURCES WHERE TO SAFELY BUY & SELL REBORNS REBORNING RESOURCES & TUTORIALS ABOUT SCAMS & ILLEGAL COPIES ILLEGAL COPIES & THE LAW SUBMIT A REPORT Log in Facebook Instagram APPLY TO JOIN DIRECTORY ARTISTS SCULPTORS VENDORS AFFILIATES VIEW ALL COMPETITION INFO HOW THE RAA WORKS CODES OF CONDUCT RULES & REGULATIONS COMPETITION SCHEDULE SCORING & JUDGING CRITERIA CATEGORIES & SPECIFICATIONS AWARDS & PRIZES AWARD RESULTS REBORN RESOURCES WHERE TO SAFELY BUY & SELL REBORNS REBORNING RESOURCES & TUTORIALS ABOUT SCAMS & ILLEGAL COPIES ILLEGAL COPIES & THE LAW SUBMIT A REPORT SEARCH Log in Cart ‹ › RAA Member #723 Bebes muy Kukis since 2023 Keyla Tellitu | La Rioja, Spain Artist/Sculptor SOY UNA ARTISTA REBORN QUE LLEGÓ A ESTE MUNDO DE CASUALIDAD, ME ENCANTA RENACER BEBES. ME GUSTA MUCHO SOBRE TODO LAS FANTASIAS Y ESTE AÑO ESCULPÍ UNA FANTASIA DE GREMLINS Y HA SIDO MI PRIMERA ESCULTURA AUNQUE NO LA ÚLTIMA.. SEGUIRÉ INTENTANDO CREAR COSAS NUEVAS.VENGO CON MUCHAS GANAS DE APORTAR MI GRANITO DE ARENA EN ESTE ARTE DEL MUNDO REBORN. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/%D0%B3%D0%B0%D1%80%D0%B8%D0%BF%D0%BE%D0%B2%D0%B0-%D0%B6%D0%B0%D0%BD%D0%BD%D0%B0-garipova-zhanna-angel-baby",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Гарипова Жанна (Garipova Zhanna) angel baby",
+      "raa_member_number": "720",
+      "has_sculptor_claim": true,
+      "bio_excerpt": "Гарипова Жанна (Garipova Zhanna) angel baby – Reborn Artistry Alliance Skip to content Your cart is empty Continue Home Have an account? Log in to check out faster. Your cart Loading... Order Note Order Note Estimated total $0.00 AUD Taxes, discounts and shipping calculated at checkout Check out UNITY . EXCELLENCE . INTEGRITY \" Empowering Excellence & Uniting The Reborn Industry with Integrity\" APPLY TO JOIN DIRECTORY DIRECTORY ARTISTS SCULPTORS VENDORS AFFILIATES VIEW ALL COMPETITION INFO COMPETITION INFO HOW THE RAA WORKS CODES OF CONDUCT RULES & REGULATIONS COMPETITION SCHEDULE SCORING & JUDGING CRITERIA CATEGORIES & SPECIFICATIONS AWARDS & PRIZES AWARD RESULTS REBORN RESOURCES REBORN RESOURCES WHERE TO SAFELY BUY & SELL REBORNS REBORNING RESOURCES & TUTORIALS ABOUT SCAMS & ILLEGAL COPIES ILLEGAL COPIES & THE LAW SUBMIT A REPORT Log in Facebook Instagram APPLY TO JOIN DIRECTORY ARTISTS SCULPTORS VENDORS AFFILIATES VIEW ALL COMPETITION INFO HOW THE RAA WORKS CODES OF CONDUCT RULES & REGULATIONS COMPETITION SCHEDULE SCORING & JUDGING CRITERIA CATEGORIES & SPECIFICATIONS AWARDS & PRIZES AWARD RESULTS REBORN RESOURCES WHERE TO SAFELY BUY & SELL REBORNS REBORNING RESOURCES & TUTORIALS ABOUT SCAMS & ILLEGAL COPIES ILLEGAL COPIES & THE LAW SUBMIT A REPORT SEARCH Log in Cart ‹ › RAA Member #720 Гарипова Жанна (Garipova Zhanna) angel baby since 2016 Zhanna Garipova | Sverdlovskaya oblast, Russia Artist/Sculptor I am a reborn artist and currently a budding sculptor. My career began in 2016. During this time, I have become a recognizable master in the world. I have won competitions both in Russia and abroad. I made a prototype that won a competition from a sculptor. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/velvet-touch-babies",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Velvet Touch Babies",
+      "raa_member_number": "676",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Intermediate Hi Im Debbie Marie Mcdonald and my journey started 6 years ago when my 11 month old grandson passed away. His brother couldn't sleep at night so I made him a cusion and printed our babies photo onto it so that he had somthing to cuddle at night and he could always see his brother. I then watched a documentary about reborn dolls and decided I would like to learn to paint them, and over the last few years I've had the privilege to make some custom dolls for people who have also lost their babies. I went to my first doll show 4 years ago and saw a silicone doll and met a wonderful silicone artist who encouraged me with my sculpting. I followed her lessons and learnt to make a mould of my sculpt and pour and paint a silicone doll, I am now the founder of Velvet Touch Babies this is my nursery. I still have so much to learn and will hopfuly never stop learning new techniques to make more realistic dolls. Thank you to all of the artists who give advice and encouragment to new artists. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/bianca-barros",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Bianca Barros",
+      "raa_member_number": "650",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Advanced My name is Bianca Barros, I'm Brazilian and I'm 20 years old. I've been a reborn artist for 1 year (since September 2023), I like representation, I make ethnic and Caucasian babies and I have a lot to learn. I only work with authentic kits, supporting all our sculptors. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/la-nurserie-des-anges-de-mag",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Website",
+          "url": "https://www.la-nurserie-des-anges-de-mag.fr",
+          "host": "www.la-nurserie-des-anges-de-mag.fr"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Website",
+          "url": "https://www.la-nurserie-des-anges-de-mag.fr",
+          "host": "www.la-nurserie-des-anges-de-mag.fr",
+          "platform": "unverified",
+          "fetch_status": "URLError:<urlopen error [Errno -3] Temporary failure in name resolution>"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "La Nurserie Des Anges De Mag",
+      "raa_member_number": "515",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Advanced Je m’appelle Mag, reborneuse professionnelle depuis 2016 créant uniquement sur des kits authentiques. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/janet-lovett-ooak",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Janet Lovett Baby Sculpting Studio",
+      "raa_member_number": "206",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " High End I began reborning in 2006. In 2017 I started sculpting. I am a mentor at Professional Doll Makers Art Guild PDMAG. I mentor in the baby academy. I sculpt for Paradise Galleries and for private use. I reborn and teach it as a hobby. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/reborn-silicone-dolls-by-nadine",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Website",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/collections/all",
+          "host": "reborn-silicone-dolls-by-nadine.myshopify.com"
+        },
+        {
+          "label": "Etsy",
+          "url": "https://www.etsy.com/shop/artbynadinecreations/?etsrc=sdt",
+          "host": "www.etsy.com"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Website",
+          "url": "https://reborn-silicone-dolls-by-nadine.myshopify.com/collections/all",
+          "host": "reborn-silicone-dolls-by-nadine.myshopify.com",
+          "platform": "shopify",
+          "fetch_status": "readable"
+        },
+        {
+          "label": "Etsy",
+          "url": "https://www.etsy.com/shop/artbynadinecreations/?etsrc=sdt",
+          "host": "www.etsy.com",
+          "platform": "unverified",
+          "fetch_status": "HTTPError:HTTP Error 403: Forbidden"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Reborn & Silicone Dolls by Nadine",
+      "raa_member_number": "194",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Advanced I mostly specialize in silicone lately (sculpting, producing, painting, rooting), but also creating vinyl reborns occasionally as well as produce other sculptors kits in vinyl & silicone. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/sweet-tooth-nursery",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Website",
+          "url": "https://sweettoothnursery.com/",
+          "host": "sweettoothnursery.com"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Website",
+          "url": "https://sweettoothnursery.com/",
+          "host": "sweettoothnursery.com",
+          "platform": "unverified",
+          "fetch_status": "URLError:<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fai"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Sweet Tooth Nursery",
+      "raa_member_number": "306",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Intermediate/Advanced I started my reborn journey by sculpting a mini baby head all the way back in 2011. After a few years of collecting reborn dolls and sculpting I also started reborning. Sculpting and reborning has been a great passion of mine and finally, in 2019, I was offered an opportunity to release a vinyl kit from my sculpt Etta. Since then I have made friends all over the world, I have worked with some fellow artists to produce silicone babies and have a few more sculpts hopefully coming soon in vinyl! "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/tiny-succulent-nursery",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Tiny Succulent Nursery",
+      "raa_member_number": "576",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Intermediate/Advanced Hi im Alex. Im a lover of all art forms but have found a foundness for sculpting and bringing my sculptors to life! I am a mom to 5 beautiful girls and have the most amazing supportive husband. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/silicone-art-dolls-llc",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Website",
+          "url": "https://siliconeartdolls.com/",
+          "host": "siliconeartdolls.com"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Website",
+          "url": "https://siliconeartdolls.com/",
+          "host": "siliconeartdolls.com",
+          "platform": "shopify",
+          "fetch_status": "readable"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Silicone Art Dolls LLC",
+      "raa_member_number": "457",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Intermediate/Advanced I am the owner of Silicone Art Dolls. I have been creating silicone dolls since 2012. Perviously I was a reborn artist. I have been in the doll industry since 2005, where I was a reborn artist working on vinyl dolls. I created videos for Bountiful Baby back in 2007-2008. I have really enjoyed the transition from reborn dolls to silicone dolls, to sculpting and production. I produce both my own work, and the work of many other sculptors in the doll industry. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/cindys-dollhouse",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Cindy's Dollhouse",
+      "raa_member_number": "192",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Novice I am a sculptor and produce my own silicone dolls. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/margrietsreborns",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "YouTube",
+          "url": "https://m.youtube.com/@Margrietsreborns",
+          "host": "m.youtube.com"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "YouTube",
+          "url": "https://m.youtube.com/@Margrietsreborns",
+          "host": "m.youtube.com",
+          "platform": "unverified",
+          "fetch_status": "ValueError:redirect_off_host"
+        },
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Margrietsreborns",
+      "raa_member_number": "656",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Intermediate Hi! I am Margriet Shein, a reborn artist and teacher living in the Netherlands who specialises in painting different complexions, skin types and -conditions. I love to represent the underrepresented. Sculpting and reborning is my passion. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/reborns-by-sarah",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Reborns by Sarah",
+      "raa_member_number": "468",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Intermediate I started painting reborns in 2016 and continued to explore the art, in 2017 I started sculpting babies and I am self taught - learning new techniques all the time. "
+    },
+    {
+      "raa_profile": "https://rebornartistryalliance.com/products/babyblues-reborns",
+      "status": "profile_sourced",
+      "external_links": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com"
+        }
+      ],
+      "site_platforms": [
+        {
+          "label": "Powered by Shopify",
+          "url": "https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore",
+          "host": "www.shopify.com",
+          "platform": "unverified",
+          "fetch_status": "PermissionError:robots_denied"
+        }
+      ],
+      "member_name": "Babyblues Reborns",
+      "raa_member_number": "495",
+      "has_sculptor_claim": true,
+      "bio_excerpt": " Novice I’m a mother of 3, with a passion for learning and improving my artistic talents for sculpting, pouring and painting silicone dolls. I have been perfecting my art with each sculpt created, and proud of my accomplishments. I want to share my art with others who would like to purchase from an upcoming artist. "
+    }
+  ]
+}
