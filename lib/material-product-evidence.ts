@@ -4,8 +4,8 @@
  * Source evidence: snapshots/materials/product-images-variants.json and product-exceptions.json
  */
 export type MaterialPhoto={url:string;source:string;credit:string};
-export type MaterialSourceVariant={label:string;options:string[]};
-export type MaterialSourceProduct={title:string;sourceUrl:string;photos:MaterialPhoto[];optionNames:string[];variants:MaterialSourceVariant[]};
+export type MaterialSourceVariant={label:string;options:string[];observedPrice?:string};
+export type MaterialSourceProduct={title:string;sourceUrl:string;photos:MaterialPhoto[];optionNames:string[];variants:MaterialSourceVariant[];priceAtReview?:string};
 export type MaterialProductEvidence={sourceChecked:string;products:MaterialSourceProduct[];identityBasis:string};
 export type MaterialShippingPolicy={basedIn:string;summary:string;international:string;source:string};
 export const materialShippingPolicies:Record<string,MaterialShippingPolicy>={
@@ -43,7 +43,8 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
           }
         ],
         "optionNames": [],
-        "variants": []
+        "variants": [],
+        "priceAtReview": "$52.39"
       }
     ],
     "identityBasis": "Named products and first-party Shopify product gallery. Product options retained only from the source; collection siblings are separate products."
@@ -104,165 +105,193 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
             "label": "02: Carmine Red",
             "options": [
               "02: Carmine Red"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "005: ultramarine Blue",
             "options": [
               "005: ultramarine Blue"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "06: Cyan / Turquoise",
             "options": [
               "06: Cyan / Turquoise"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "07: Flesh 08",
             "options": [
               "07: Flesh 08"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "09: Black",
             "options": [
               "09: Black"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "10: Green",
             "options": [
               "10: Green"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "11: emerald green",
             "options": [
               "11: emerald green"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "12: Magenta",
             "options": [
               "12: Magenta"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "13: Purple",
             "options": [
               "13: Purple"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "15: Burnt Umber",
             "options": [
               "15: Burnt Umber"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "17: Lemon Yellow",
             "options": [
               "17: Lemon Yellow"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "18: Yellow Ochre",
             "options": [
               "18: Yellow Ochre"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "19: Raw Sienna",
             "options": [
               "19: Raw Sienna"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "21: Dark Quinacridone",
             "options": [
               "21: Dark Quinacridone"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "24: White",
             "options": [
               "24: White"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "35: Mint green",
             "options": [
               "35: Mint green"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "Lilac",
             "options": [
               "Lilac"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "Amarillo Yellow",
             "options": [
               "Amarillo Yellow"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "16 Flesh 01",
             "options": [
               "16 Flesh 01"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "Flesh 02",
             "options": [
               "Flesh 02"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "21. Brunette",
             "options": [
               "21. Brunette"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "Eyelid purple",
             "options": [
               "Eyelid purple"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "Sky blue",
             "options": [
               "Sky blue"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "Fresa (pink)",
             "options": [
               "Fresa (pink)"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "Flesh 01 30ml",
             "options": [
               "Flesh 01 30ml"
-            ]
+            ],
+            "observedPrice": "£22.50"
           },
           {
             "label": "Flesh 02 30ml",
             "options": [
               "Flesh 02 30ml"
-            ]
+            ],
+            "observedPrice": "£22.50"
           },
           {
             "label": "Flesh 08 30ml",
             "options": [
               "Flesh 08 30ml"
-            ]
+            ],
+            "observedPrice": "£22.50"
           }
-        ]
+        ],
+        "priceAtReview": "From £7.50"
       }
     ],
     "identityBasis": "Named products and first-party Shopify product gallery. Product options retained only from the source; collection siblings are separate products."
@@ -323,339 +352,396 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
             "label": "Flesh01",
             "options": [
               "Flesh01"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Flesh02",
             "options": [
               "Flesh02"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Flesh03",
             "options": [
               "Flesh03"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Flesh04",
             "options": [
               "Flesh04"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Flesh05",
             "options": [
               "Flesh05"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Flesh06",
             "options": [
               "Flesh06"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Flesh07",
             "options": [
               "Flesh07"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Flesh08",
             "options": [
               "Flesh08"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Baby pink skin",
             "options": [
               "Baby pink skin"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Aqua Vein",
             "options": [
               "Aqua Vein"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Blue Deep Vein",
             "options": [
               "Blue Deep Vein"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Green Vein",
             "options": [
               "Green Vein"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "Newborn lip",
             "options": [
               "Newborn lip"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "toddler lip",
             "options": [
               "toddler lip"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "coral lip",
             "options": [
               "coral lip"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "berry ethnic lip",
             "options": [
               "berry ethnic lip"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "deep newborn lips",
             "options": [
               "deep newborn lips"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "strawberry and cream skin blush",
             "options": [
               "strawberry and cream skin blush"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "strawberry and cream skin lips",
             "options": [
               "strawberry and cream skin lips"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "strawberry and cream skin creases",
             "options": [
               "strawberry and cream skin creases"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "peaches and cream skin blush",
             "options": [
               "peaches and cream skin blush"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "peaches and cream skin lips",
             "options": [
               "peaches and cream skin lips"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "peaches and cream skin creases",
             "options": [
               "peaches and cream skin creases"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "sweetheart blush",
             "options": [
               "sweetheart blush"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "sweetheart lips",
             "options": [
               "sweetheart lips"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "sweetheart creases",
             "options": [
               "sweetheart creases"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "brown",
             "options": [
               "brown"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "lips nails blush",
             "options": [
               "lips nails blush"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "red ochre",
             "options": [
               "red ochre"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "brown eyebrow",
             "options": [
               "brown eyebrow"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "raw umber",
             "options": [
               "raw umber"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Burnt umber",
             "options": [
               "Burnt umber"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Burnt Sienna",
             "options": [
               "Burnt Sienna"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Red Wine",
             "options": [
               "Red Wine"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Yellow Ochre",
             "options": [
               "Yellow Ochre"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Yellow Warm",
             "options": [
               "Yellow Warm"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Cadmium Yellow",
             "options": [
               "Cadmium Yellow"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Bismuth Yellow",
             "options": [
               "Bismuth Yellow"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Fluorescent pink",
             "options": [
               "Fluorescent pink"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Fluorescent yellow",
             "options": [
               "Fluorescent yellow"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Fluorescent blue",
             "options": [
               "Fluorescent blue"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Dioxazine Purple",
             "options": [
               "Dioxazine Purple"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Orange (secondary)",
             "options": [
               "Orange (secondary)"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Viridian Green",
             "options": [
               "Viridian Green"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Cobalt Blue",
             "options": [
               "Cobalt Blue"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Warm Red",
             "options": [
               "Warm Red"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Cool Red",
             "options": [
               "Cool Red"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Pthalo Blue",
             "options": [
               "Pthalo Blue"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Ultramarine Blue",
             "options": [
               "Ultramarine Blue"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Blue Vein",
             "options": [
               "Blue Vein"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "magenta",
             "options": [
               "magenta"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Black",
             "options": [
               "Black"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "White",
             "options": [
               "White"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "Flesh Base",
             "options": [
               "Flesh Base"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "Diarylide Yellow",
             "options": [
               "Diarylide Yellow"
-            ]
+            ],
+            "observedPrice": "£8.00"
           },
           {
             "label": "Ethnic Green Vein",
             "options": [
               "Ethnic Green Vein"
-            ]
+            ],
+            "observedPrice": "£7.50"
           }
-        ]
+        ],
+        "priceAtReview": "From £7.50"
       },
       {
         "title": "Ultimate Fusion - Primary colours",
@@ -707,44 +793,51 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
             "options": [
               "Primary Red",
               "12ml"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "Primary Red / 30ml",
             "options": [
               "Primary Red",
               "30ml"
-            ]
+            ],
+            "observedPrice": "£16.00"
           },
           {
             "label": "Primary Blue / 12ml",
             "options": [
               "Primary Blue",
               "12ml"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "Primary Blue / 30ml",
             "options": [
               "Primary Blue",
               "30ml"
-            ]
+            ],
+            "observedPrice": "£16.00"
           },
           {
             "label": "Primary Yellow / 12ml",
             "options": [
               "Primary Yellow",
               "12ml"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "Primary Yellow / 30ml",
             "options": [
               "Primary Yellow",
               "30ml"
-            ]
+            ],
+            "observedPrice": "£16.00"
           }
-        ]
+        ],
+        "priceAtReview": "From £7.50"
       }
     ],
     "identityBasis": "Named products and first-party Shopify product gallery. Product options retained only from the source; collection siblings are separate products."
@@ -768,7 +861,8 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
           }
         ],
         "optionNames": [],
-        "variants": []
+        "variants": [],
+        "priceAtReview": "From €2.99"
       }
     ],
     "identityBasis": "Named Kebelka 33 Coral source product page; no programme-wide shade-variant feed available"
@@ -822,7 +916,8 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
           }
         ],
         "optionNames": [],
-        "variants": []
+        "variants": [],
+        "priceAtReview": "£80.00"
       },
       {
         "title": "Enfis Professional Silicone Pigments - Flesh Colours",
@@ -879,72 +974,83 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
             "options": [
               "50g",
               "101"
-            ]
+            ],
+            "observedPrice": "£14.99"
           },
           {
             "label": "50g / 201",
             "options": [
               "50g",
               "201"
-            ]
+            ],
+            "observedPrice": "£14.99"
           },
           {
             "label": "50g / 301",
             "options": [
               "50g",
               "301"
-            ]
+            ],
+            "observedPrice": "£14.99"
           },
           {
             "label": "50g / 401",
             "options": [
               "50g",
               "401"
-            ]
+            ],
+            "observedPrice": "£14.99"
           },
           {
             "label": "50g / 501",
             "options": [
               "50g",
               "501"
-            ]
+            ],
+            "observedPrice": "£14.99"
           },
           {
             "label": "100g / 101",
             "options": [
               "100g",
               "101"
-            ]
+            ],
+            "observedPrice": "£18.99"
           },
           {
             "label": "100g / 201",
             "options": [
               "100g",
               "201"
-            ]
+            ],
+            "observedPrice": "£18.99"
           },
           {
             "label": "100g / 301",
             "options": [
               "100g",
               "301"
-            ]
+            ],
+            "observedPrice": "£18.99"
           },
           {
             "label": "100g / 401",
             "options": [
               "100g",
               "401"
-            ]
+            ],
+            "observedPrice": "£18.99"
           },
           {
             "label": "100g / 501",
             "options": [
               "100g",
               "501"
-            ]
+            ],
+            "observedPrice": "£18.99"
           }
-        ]
+        ],
+        "priceAtReview": "From £14.99"
       }
     ],
     "identityBasis": "Named products and first-party Shopify product gallery. Product options retained only from the source; collection siblings are separate products."
@@ -1007,114 +1113,131 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
             "options": [
               "Natural blonde",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           },
           {
             "label": "Nordic blonde / Wavy to Straight",
             "options": [
               "Nordic blonde",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           },
           {
             "label": "Golden blonde / Wavy to Straight",
             "options": [
               "Golden blonde",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           },
           {
             "label": "Baby blonde / Wavy to Straight",
             "options": [
               "Baby blonde",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           },
           {
             "label": "Dark Blonde / Wavy to Straight",
             "options": [
               "Dark Blonde",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           },
           {
             "label": "Honey Blonde / Wavy to Straight",
             "options": [
               "Honey Blonde",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           },
           {
             "label": "Copper gold / Wavy to Straight",
             "options": [
               "Copper gold",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           },
           {
             "label": "Copper Red / Wavy to Straight",
             "options": [
               "Copper Red",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           },
           {
             "label": "Ruby Red *NEW / Wavy to Straight",
             "options": [
               "Ruby Red *NEW",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           },
           {
             "label": "Chestnut / Wavy to Straight",
             "options": [
               "Chestnut",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           },
           {
             "label": "Light brown / Wavy to Straight",
             "options": [
               "Light brown",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           },
           {
             "label": "Baby brown / Wavy to Straight",
             "options": [
               "Baby brown",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           },
           {
             "label": "Chocolate brown / Wavy to Straight",
             "options": [
               "Chocolate brown",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           },
           {
             "label": "Mocha **NEW** / Wavy to Straight",
             "options": [
               "Mocha **NEW**",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           },
           {
             "label": "Dark brown / Wavy to Straight",
             "options": [
               "Dark brown",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           },
           {
             "label": "Black / Wavy to Straight",
             "options": [
               "Black",
               "Wavy to Straight"
-            ]
+            ],
+            "observedPrice": "£59.99"
           }
-        ]
+        ],
+        "priceAtReview": "£59.99"
       }
     ],
     "identityBasis": "Named products and first-party Shopify product gallery. Product options retained only from the source; collection siblings are separate products."
@@ -1133,7 +1256,8 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
           }
         ],
         "optionNames": [],
-        "variants": []
+        "variants": [],
+        "priceAtReview": "$19.95"
       },
       {
         "title": "1/4 oz NuBorn Mohair Light Brown - Curve 6SP - #5634",
@@ -1146,7 +1270,8 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
           }
         ],
         "optionNames": [],
-        "variants": []
+        "variants": [],
+        "priceAtReview": "$19.95"
       }
     ],
     "identityBasis": "Named products and first-party Shopify product gallery. Product options retained only from the source; collection siblings are separate products."
@@ -1209,72 +1334,83 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
             "options": [
               "14mm",
               "Newborn Blue"
-            ]
+            ],
+            "observedPrice": "£24.99"
           },
           {
             "label": "14mm / Baby Blue",
             "options": [
               "14mm",
               "Baby Blue"
-            ]
+            ],
+            "observedPrice": "£24.99"
           },
           {
             "label": "16mm / Newborn Blue",
             "options": [
               "16mm",
               "Newborn Blue"
-            ]
+            ],
+            "observedPrice": "£24.99"
           },
           {
             "label": "17mm / Newborn Blue",
             "options": [
               "17mm",
               "Newborn Blue"
-            ]
+            ],
+            "observedPrice": "£24.99"
           },
           {
             "label": "18mm pair / Baby Blue",
             "options": [
               "18mm pair",
               "Baby Blue"
-            ]
+            ],
+            "observedPrice": "£24.99"
           },
           {
             "label": "20mm pair / Baby Blue",
             "options": [
               "20mm pair",
               "Baby Blue"
-            ]
+            ],
+            "observedPrice": "£24.99"
           },
           {
             "label": "20mm pair / Chestnut Brown",
             "options": [
               "20mm pair",
               "Chestnut Brown"
-            ]
+            ],
+            "observedPrice": "£24.99"
           },
           {
             "label": "22mm / Newborn Blue",
             "options": [
               "22mm",
               "Newborn Blue"
-            ]
+            ],
+            "observedPrice": "£24.99"
           },
           {
             "label": "14mm / Chestnut brown",
             "options": [
               "14mm",
               "Chestnut brown"
-            ]
+            ],
+            "observedPrice": "£24.99"
           },
           {
             "label": "17mm / Chestnut Brown",
             "options": [
               "17mm",
               "Chestnut Brown"
-            ]
+            ],
+            "observedPrice": "£24.99"
           }
-        ]
+        ],
+        "priceAtReview": "£24.99"
       }
     ],
     "identityBasis": "Named products and first-party Shopify product gallery. Product options retained only from the source; collection siblings are separate products."
@@ -1293,7 +1429,8 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
           }
         ],
         "optionNames": [],
-        "variants": []
+        "variants": [],
+        "priceAtReview": "$8.95"
       }
     ],
     "identityBasis": "Named products and first-party Shopify product gallery. Product options retained only from the source; collection siblings are separate products."
@@ -1333,7 +1470,8 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
               "Crown",
               "46G",
               "5 pack"
-            ]
+            ],
+            "observedPrice": "£4.99"
           },
           {
             "label": "Crown / 46G / 10 pack",
@@ -1341,7 +1479,8 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
               "Crown",
               "46G",
               "10 pack"
-            ]
+            ],
+            "observedPrice": "£8.99"
           },
           {
             "label": "Crown / 43G / 5 pack",
@@ -1349,7 +1488,8 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
               "Crown",
               "43G",
               "5 pack"
-            ]
+            ],
+            "observedPrice": "£4.99"
           },
           {
             "label": "Crown / 43G / 10 pack",
@@ -1357,7 +1497,8 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
               "Crown",
               "43G",
               "10 pack"
-            ]
+            ],
+            "observedPrice": "£8.99"
           },
           {
             "label": "Crown / 42G / 5 pack",
@@ -1365,7 +1506,8 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
               "Crown",
               "42G",
               "5 pack"
-            ]
+            ],
+            "observedPrice": "£4.99"
           },
           {
             "label": "Crown / 42G / 10 pack",
@@ -1373,9 +1515,11 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
               "Crown",
               "42G",
               "10 pack"
-            ]
+            ],
+            "observedPrice": "£4.99"
           }
-        ]
+        ],
+        "priceAtReview": "From £4.99"
       }
     ],
     "identityBasis": "Named products and first-party Shopify product gallery. Product options retained only from the source; collection siblings are separate products."
@@ -1394,7 +1538,8 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
           }
         ],
         "optionNames": [],
-        "variants": []
+        "variants": [],
+        "priceAtReview": "$11.95"
       }
     ],
     "identityBasis": "Named products and first-party Shopify product gallery. Product options retained only from the source; collection siblings are separate products."
@@ -1445,33 +1590,39 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
             "label": "3 x black medium",
             "options": [
               "3 x black medium"
-            ]
+            ],
+            "observedPrice": "£6.50"
           },
           {
             "label": "3 x white fine",
             "options": [
               "3 x white fine"
-            ]
+            ],
+            "observedPrice": "£6.50"
           },
           {
             "label": "twin pack 1 medium/1 coarse",
             "options": [
               "twin pack 1 medium/1 coarse"
-            ]
+            ],
+            "observedPrice": "£6.00"
           },
           {
             "label": "triple pack 1 of each type",
             "options": [
               "triple pack 1 of each type"
-            ]
+            ],
+            "observedPrice": "£7.50"
           },
           {
             "label": "3 x blue coarse",
             "options": [
               "3 x blue coarse"
-            ]
+            ],
+            "observedPrice": "£6.50"
           }
-        ]
+        ],
+        "priceAtReview": "From £6.00"
       }
     ],
     "identityBasis": "Named products and first-party Shopify product gallery. Product options retained only from the source; collection siblings are separate products."
@@ -1490,7 +1641,8 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
           }
         ],
         "optionNames": [],
-        "variants": []
+        "variants": [],
+        "priceAtReview": "$19.95"
       },
       {
         "title": "19-20\" Premium Gathered Body for Full Limbs - #3585",
@@ -1503,7 +1655,8 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
           }
         ],
         "optionNames": [],
-        "variants": []
+        "variants": [],
+        "priceAtReview": "$22.95"
       }
     ],
     "identityBasis": "Named products and first-party Shopify product gallery. Product options retained only from the source; collection siblings are separate products."
@@ -1564,57 +1717,67 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
             "label": "7g refill bag (good for people with one doll)",
             "options": [
               "7g refill bag (good for people with one doll)"
-            ]
+            ],
+            "observedPrice": "£15.99"
           },
           {
             "label": "Powder Bottle 15g (1/3 full)",
             "options": [
               "Powder Bottle 15g (1/3 full)"
-            ]
+            ],
+            "observedPrice": "£24.99"
           },
           {
             "label": "20g  refill bag  (good for artists or people with multiple dolls)",
             "options": [
               "20g  refill bag  (good for artists or people with multiple dolls)"
-            ]
+            ],
+            "observedPrice": "£25.99"
           },
           {
             "label": "Powder bottle 40g (3/4 full)",
             "options": [
               "Powder bottle 40g (3/4 full)"
-            ]
+            ],
+            "observedPrice": "£40.00"
           },
           {
             "label": "70g refill bag for busy artists",
             "options": [
               "70g refill bag for busy artists"
-            ]
+            ],
+            "observedPrice": "£67.00"
           },
           {
             "label": "150g  refill for professional artists",
             "options": [
               "150g  refill for professional artists"
-            ]
+            ],
+            "observedPrice": "£135.00"
           },
           {
             "label": "artists gift multipack (6 x 2g sifter jars) plus gift cards (filled)",
             "options": [
               "artists gift multipack (6 x 2g sifter jars) plus gift cards (filled)"
-            ]
+            ],
+            "observedPrice": "£30.00"
           },
           {
             "label": "SELF FILL artists gift sifters x 6 (empty) with gift cards",
             "options": [
               "SELF FILL artists gift sifters x 6 (empty) with gift cards"
-            ]
+            ],
+            "observedPrice": "£15.00"
           },
           {
             "label": "2g mini sifter (sample)",
             "options": [
               "2g mini sifter (sample)"
-            ]
+            ],
+            "observedPrice": "£6.95"
           }
-        ]
+        ],
+        "priceAtReview": "From £6.95"
       },
       {
         "title": "Silicone Velvet Doll Matting and Care Powder Mini Jar with Puff.",
@@ -1654,21 +1817,25 @@ export const materialProductEvidence:Record<string,MaterialProductEvidence>={
             "label": "single",
             "options": [
               "single"
-            ]
+            ],
+            "observedPrice": "£6.95"
           },
           {
             "label": "three pack",
             "options": [
               "three pack"
-            ]
+            ],
+            "observedPrice": "£18.00"
           },
           {
             "label": "12 pack for artists with gift cards",
             "options": [
               "12 pack for artists with gift cards"
-            ]
+            ],
+            "observedPrice": "£65.00"
           }
-        ]
+        ],
+        "priceAtReview": "From £6.95"
       }
     ],
     "identityBasis": "Named products and first-party Shopify product gallery. Product options retained only from the source; collection siblings are separate products."
