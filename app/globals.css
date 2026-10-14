@@ -658,3 +658,70 @@ html{scroll-behavior:smooth}
  .inner-nav{display:none;position:absolute;left:0;right:0;top:102px;z-index:45;background:#fffdfb;padding:18px 6%;box-shadow:0 14px 25px #0001;flex-direction:column;align-items:flex-start;gap:18px}
  .inner-nav.open{display:flex}
 }
+
+/* Source-photographed material catalogue, using product-type-specific pages. */
+.rbrn-supply-photo-card .rbrn-supply-picture{display:block;position:relative;overflow:hidden;background:#fffaf5;min-height:245px}
+.rbrn-supply-photo-card .rbrn-supply-picture>img{width:100%;height:100%;min-height:245px;object-fit:contain;display:block;padding:13px}
+.rbrn-supply-photo-card .rbrn-supply-image-note{position:absolute;bottom:9px;left:9px;padding:6px 8px;background:#faf6f0dd;color:#917d6c;font-size:8px;font-weight:700;letter-spacing:.09em}
+.rbrn-supply-photo-card .rbrn-supply-art{min-height:245px}
+.rbrn-material-detail .detail-top{margin-bottom:33px}
+.rbrn-material-viewer{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:clamp(25px,5vw,70px);align-items:start}
+.rbrn-material-gallery,.rbrn-material-buy-detail{min-width:0}
+.rbrn-material-image-area{position:relative;overflow:hidden;background:#fffdfb;border:1px solid #eadfd4}
+.rbrn-material-main-image{height:clamp(330px,44vw,610px);display:flex;align-items:center;justify-content:center;position:relative;margin:0}
+.rbrn-material-main-image img{width:100%;height:100%;object-fit:contain;display:block;padding:20px}
+.rbrn-material-main-image figcaption{position:absolute;bottom:12px;left:14px;background:#f8f2eddb;padding:7px 10px;color:#7c6555;letter-spacing:.06em;font-size:9px}
+.rbrn-material-image-prev,.rbrn-material-image-next{position:absolute;top:50%;transform:translateY(-50%);background:#fffdfaee;border:1px solid #dbc6b5;width:36px;height:41px;display:flex;align-items:center;justify-content:center;color:#6a5648}
+.rbrn-material-image-prev{left:10px}.rbrn-material-image-next{right:10px}
+.rbrn-material-thumbs{display:flex;gap:8px;overflow-x:auto;padding:12px 1px;scroll-snap-type:x proximity}
+.rbrn-material-thumbs button{width:78px;height:78px;flex:0 0 78px;border:1px solid #dfd2c6;background:#fffdfa;padding:4px;scroll-snap-align:start}
+.rbrn-material-thumbs button.active{border-color:#836956;box-shadow:0 0 0 1px #836956}
+.rbrn-material-thumbs img{width:100%;height:100%;object-fit:contain}
+.rbrn-material-photo-credit{font-size:10px;color:#947e6e;line-height:1.7;margin:13px 0 30px}
+.rbrn-material-photo-credit a{border-bottom:1px solid #e2d4c8;display:inline}
+.rbrn-material-photo-missing{min-height:370px;display:flex;gap:17px;align-items:center;justify-content:center;flex-direction:column;background:#eee2d7;text-align:center;color:#776454;padding:30px}
+.rbrn-material-photo-missing p{font-size:11px}
+.rbrn-material-buy-detail{padding:4px 0 35px}
+.rbrn-material-buy-detail>h2{font:normal clamp(38px,4.4vw,62px)/1.12 "Playfair Display",serif;letter-spacing:-.03em;color:#4b3a2f;margin:13px 0}
+.rbrn-material-subheading{font-size:12px;line-height:1.85;color:#867366;margin:0 0 24px}
+.rbrn-material-selected-product{padding:17px 0;border-top:1px solid #e0d3c7;border-bottom:1px solid #e0d3c7;margin:22px 0}
+.rbrn-material-selected-product small{font-size:9px;letter-spacing:.13em;color:#967966}
+.rbrn-material-selected-product h3{font:normal 23px/1.27 "Playfair Display",serif;color:#4c3b30;margin:7px 0 0}
+.rbrn-material-source-options>strong,.rbrn-material-variant-heading strong{font-size:12px;color:#655141}
+.rbrn-material-product-siblings{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.rbrn-material-product-siblings button{border:1px solid #d5c3b5;background:#fcf8f4;padding:10px 13px;color:#806b5e;text-align:left;font-size:11px;line-height:1.5}
+.rbrn-material-product-siblings button.active,.rbrn-material-variant-scroll button.active{background:#6d5444;color:#fff;border-color:#6d5444}
+.rbrn-material-variant-heading{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.rbrn-material-variant-heading>span{font-size:10px;color:#968071}
+.rbrn-material-variant-picker>p{font-size:11px;color:#8a7769;line-height:1.7}
+.rbrn-material-variant-scroll{display:flex;gap:8px;overflow-x:auto;padding:9px 2px 15px;scroll-snap-type:x proximity}
+.rbrn-material-variant-scroll button{flex:0 0 auto;border:1px solid #d2c0b1;background:#fffdfa;padding:10px 13px;font-size:11px;color:#715949;white-space:nowrap;scroll-snap-align:start}
+.rbrn-material-variant-current{font-size:11px;margin:8px 0;padding:11px 13px;background:#f7f0e9;color:#725c4a;display:flex;flex-direction:column;gap:6px}
+.rbrn-material-options-note{display:flex;gap:8px;align-items:flex-start}
+.rbrn-material-options-note svg{flex-shrink:0;margin-top:2px}
+.rbrn-material-shipping-card{background:#f7f0e8;border:1px solid #e3d3c4;padding:21px;margin:24px 0}
+.rbrn-material-shipping-title{display:flex;gap:10px;align-items:center;margin-bottom:16px}
+.rbrn-material-shipping-title strong{font-size:13px;color:#574437}
+.rbrn-material-shipping-title svg{color:#8f7561}
+.rbrn-material-shipping-card dl{margin:0}
+.rbrn-material-shipping-card dl>div{display:flex;justify-content:space-between;gap:14px;padding:12px 0;border-top:1px solid #e0d3c7}
+.rbrn-material-shipping-card dt{font-size:10px;color:#927e6e}
+.rbrn-material-shipping-card dd{font-size:11px;font-weight:700;color:#614b3d;margin:0;max-width:61%;text-align:right}
+.rbrn-material-shipping-card>p{font-size:11px;color:#826d5d;line-height:1.8;margin:14px 0}
+.rbrn-material-shipping-card>a{font-size:11px;font-weight:700;color:#6c5241;display:inline-flex;align-items:center;gap:5px}
+.rbrn-material-shop-link{background:#705340;color:#fffdf8;padding:17px 19px;display:flex;align-items:center;justify-content:space-between;font-size:13px;font-weight:700}
+.rbrn-material-collection-link{display:flex;align-items:center;justify-content:center;gap:7px;font-size:11px;color:#715744;margin:17px 0}
+.rbrn-material-buy-disclaimer{font-size:10px;line-height:1.8;color:#9a887a;margin:25px 0}
+.rbrn-material-editorial-note{margin:40px 0 65px;display:flex;gap:13px;background:#f5eee6;border-left:2px solid #ad9683;padding:17px 20px;max-width:980px}
+.rbrn-material-editorial-note svg{flex-shrink:0;color:#987e6c;margin-top:3px}
+.rbrn-material-editorial-note p{font-size:12px;line-height:1.8;margin:0;color:#776559}
+.rbrn-material-related{border-top:1px solid #e2d3c6;padding:40px 0 70px}
+.rbrn-material-related h2{font:normal 33px "Playfair Display",serif;color:#514034}
+.rbrn-material-related-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.rbrn-material-related-tile{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid #e3d5c8;background:#fffdfb;min-width:0}
+.rbrn-material-related-tile img,.rbrn-material-related-tile>span{height:69px;width:69px;flex:0 0 69px;object-fit:contain;background:#f6efe7}
+.rbrn-material-related-tile>span{display:grid;place-items:center;font:40px Georgia,serif}
+.rbrn-material-related-tile strong{font-size:11px;color:#614d3e;font-weight:700;line-height:1.5;flex:1}
+.rbrn-material-related-tile svg{flex:0 0 auto;color:#917663}
+@media(max-width:1050px){.rbrn-material-viewer{grid-template-columns:1fr;gap:20px}.rbrn-material-main-image{height:500px}.rbrn-material-related-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.rbrn-material-main-image{height:350px}.rbrn-material-main-image img{padding:13px}.rbrn-material-related-grid{grid-template-columns:1fr}.rbrn-material-shipping-card{padding:16px}.rbrn-material-buy-detail>h2{font-size:42px}.rbrn-supply-photo-card .rbrn-supply-picture>img{min-height:170px}.rbrn-supply-photo-card .rbrn-supply-picture{min-height:170px}.rbrn-supply-photo-card .rbrn-supply-art{min-height:170px}}
