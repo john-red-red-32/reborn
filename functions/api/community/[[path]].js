@@ -425,6 +425,11 @@ async function certificateRequestHash(d){
  return sha('reborna-certificate-request-v2:'+JSON.stringify([d.artistSlug,d.sculptName,d.editionNote,d.sourceUrl,d.quantity]));
 }
 
+ // Retire the original one-off 25-code generator. New issuance requires founder-
+ // reviewed production runs, email step-up and resilient encrypted bulk exports.
+ if(method==='POST'&&(path==='certificate-prepare'||path==='certificate-issue')){
+  return failure('Use the Production & Editions studio to request a founder-reviewed production run. Creating a second batch for reprints is not permitted.',409);
+ }
  // Certificate pilot: only independently authorised original sculptors may issue.
  if(method==='GET'&&path==='certificate-studio'){
   const issuers=(await db.prepare("SELECT artist_slug AS artistSlug,artist_name AS artistName,official_source_url AS officialSourceUrl,state,authorised_at AS authorisedAt FROM verified_sculptor_issuers WHERE user_id=? ORDER BY artist_name").bind(user.id).all()).results||[];
