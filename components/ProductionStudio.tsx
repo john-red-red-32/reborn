@@ -36,6 +36,10 @@ export default function ProductionStudio({catalogueKits}:{catalogueKits:KitCandi
  const requestedSize=Number(runQuantity);
  const increasing=selectedEdition?.editionKind==="limited"&&existingQuantity+requestedSize>(selectedEdition.currentDeclaredQuantity||0);
  const runSculpt=(r:Run)=>data?.sculpts.find(x=>x.id===data?.editions.find(e=>e.id===r.editionId)?.sculptId);
+ const automaticMatches=useMemo(()=>data?.sculpts.filter(s=>s.linkStatus!=="linked").flatMap(s=>{
+  const matches=catalogueKits.filter(k=>k.artistSlug===s.artistSlug&&nice(k.name)===nice(s.sculptName));
+  return matches.length===1?[{sculpt:s,kit:matches[0]}]:[];
+ })||[],[data?.sculpts,catalogueKits]);
  const potential=useMemo(()=>{
   const s=data?.sculpts.find(x=>x.id===linkSculpt);
   if(!s)return [];
@@ -155,7 +159,10 @@ export default function ProductionStudio({catalogueKits}:{catalogueKits:KitCandi
     </>}
     <p className="rbrn-sculptor-small">If you leave or the session expires, simply request a new email approval for this SAME run. Registered codes are never duplicated. Download remains available for seven days, unless you deliberately clear the encrypted export.</p>
    </section>}
-   <details className="rbrn-production-secondary">
+   {automaticMatches.length>0&&<div className="rbrn-production-matches"><span className="section-kicker">NEW POTENTIAL CATALOGUE MATCHES</span><h4>Our catalogue may have found your original sculpt.</h4><p className="rbrn-sculptor-small">These suggestions come from independently sourced kit records as our scrapers and editorial catalogue expand. They are never linked automatically; please confirm the specific sculpt, then Reborna's editor will review it.</p>
+    {automaticMatches.slice(0,8).map(x=><div key={x.sculpt.id}><span><strong>{x.sculpt.sculptName}</strong> → <Link href={"/kits/"+x.kit.slug+"/"} target="_blank">{x.kit.name} ↗</Link></span><button type="button" onClick={()=>{setLinkSculpt(x.sculpt.id);setLinkKit(x.kit.slug);document.getElementById("reborna-kit-link-form")?.scrollIntoView({behavior:"smooth",block:"center"})}}>Review and propose match</button></div>)}
+   </div>}
+   <details id="reborna-kit-link-form" className="rbrn-production-secondary">
     <summary><Link2 size={17}/> Connect a sculpt to its existing Reborna kit page</summary>
     <p>Reborna can suggest matches when our source catalogue grows. A similar sculpt name alone is insufficient: choose the correct page, confirm it's yours, then our editorial team must approve the link. Until then, certificates show the original sculptor's source, not a guessed product.</p>
     <form onSubmit={link}>
