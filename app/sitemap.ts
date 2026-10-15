@@ -12,7 +12,7 @@ const imageXmlUrl=(url:string)=>url.replace(/&amp;/g,"&").replace(/&/g,"&amp;").
 export default function sitemap():MetadataRoute.Sitemap{
  const pages:string[]=[
   "/","/real-kits/","/artists/","/materials/","/events/","/community/",
-  "/community/guidelines/","/guides/original-reborn-kits/","/guides/cassie-ann-love-sculpt-history/","/contact/","/privacy/","/terms/","/cookies/"
+  "/community/guidelines/","/for-sculptors/","/guides/original-reborn-kits/","/guides/cassie-ann-love-sculpt-history/","/contact/","/privacy/","/terms/","/cookies/"
  ];
  const fixed=pages.map(path=>({url:canonical(path)}));
  const artistPages=artists.map(artist=>({
