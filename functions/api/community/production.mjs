@@ -113,6 +113,7 @@ export async function handleProduction(ctx){
   return ok({sculpts:sculpts.results||[],editions:editions.results||[],runs:runs.results||[],proposals:proposals.results||[],corrections:corrections.results||[],issuers,exportReady:!!env.CERTIFICATE_EXPORT_KEY,freePilot:true,maxRunQuantity:MAX_QTY});
  }
  if(method==="POST"&&path==="production-sculpt-create"){
+  if(!(await throttle(db,request,"production-sculpt-create",30,86400)))return fail("Too many new private sculpt records today.",429);
   const artistSlug=txt(body.artistSlug,95),name=txt(body.sculptName,120),url=safeUrl(body.officialUrl);
   if(!slugOk(artistSlug)||name.length<2||name.length>120||url===null)return fail("Enter an approved sculptor, an original sculpt name, and optionally its official source website.");
   const issuer=await db.prepare("SELECT 1 AS yes FROM verified_sculptor_issuers WHERE user_id=? AND artist_slug=? AND state='active'").bind(user.id,artistSlug).first();
@@ -140,6 +141,7 @@ export async function handleProduction(ctx){
   return ok({ok:true,message:"Private sculpt updated. Existing certificate codes were not affected."});
  }
  if(method==="POST"&&path==="production-edition-create"){
+  if(!(await throttle(db,request,"production-edition-create",20,86400)))return fail("Too many edition records created today.",429);
   const sculptId=txt(body.sculptId,45),label=txt(body.editionLabel,95),kind=body.editionKind;
   const declared=body.declaredQuantity;
   if(!isUuid(sculptId)||label.length<2||label.length>90||!["limited","open"].includes(kind))return fail("Please provide the edition name and its publication type.");
@@ -154,6 +156,7 @@ export async function handleProduction(ctx){
   return ok({ok:true,id},201);
  }
  if(method==="POST"&&path==="production-run-request"){
+  if(!(await throttle(db,request,"production-run-request",6,86400)))return fail("Too many new production requests today.",429);
   const editionId=txt(body.editionId,45),qty=body.quantity;
   if(!isUuid(editionId)||!Number.isInteger(qty)||qty<1||qty>MAX_QTY)return fail("Choose an edition and enter an exact quantity between 1 and 5,000.");
   if(body.confirmedNewIssue!==true)return fail("Confirm these are new certificates, not replacements or reprints of previously issued codes.");
@@ -217,6 +220,7 @@ export async function handleProduction(ctx){
   return ok({ok:true,message:decision==="approved"?"Approved. Only this sculptor can now confirm by email and generate the new codes.":"Request rejected; no codes were generated."});
  }
  if(method==="POST"&&path==="production-correction-request"){
+  if(!(await throttle(db,request,"production-correction-request",6,86400)))return fail("Too many correction requests today.",429);
   const sculptId=txt(body.sculptId,45),name=txt(body.sculptName,130),url=safeUrl(body.officialUrl),justification=txt(body.justification,650);
   if(!isUuid(sculptId)||name.length<2||name.length>120||url===null||justification.length<15||justification.length>600)return fail("Provide the new sculpt details and a reason for the correction.");
   if(!(await mySculpt(db,sculptId,user.id)))return fail("Original sculpt not found.",404);
@@ -241,6 +245,7 @@ export async function handleProduction(ctx){
   return ok({ok:true,message:"Correction reviewed. Every original code and edition declaration remains preserved."});
  }
  if(method==="POST"&&path==="production-link-propose"){
+  if(!(await throttle(db,request,"production-link-propose",6,86400)))return fail("Too many catalogue association requests today.",429);
   const sculptId=txt(body.sculptId,45),slug=txt(body.kitSlug,120),note=txt(body.note,450);
   if(!isUuid(sculptId)||!slugOk(slug)||note.length<10)return fail("Select a known Reborna kit page and explain the catalogue match.");
   const sculpt=await mySculpt(db,sculptId,user.id);
