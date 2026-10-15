@@ -220,6 +220,7 @@ export async function onRequest(context){
  if(method==='POST'&&!originValid(request))return failure('Invalid request origin.',403);
  try{
  if(method==='GET'&&path==='status')return response({available:true,registrationOpen:emailReady(env)&&!!(env.TURNSTILE_SITE_KEY&&env.TURNSTILE_SECRET_KEY),turnstileSiteKey:env.TURNSTILE_SITE_KEY||null,moderation:'review-before-publication',aiModerationReady:!!(env.COMMUNITY_SAFETY||env.AI),mediaUploads:false,launch:'editorial'});
+ if(method==='GET'&&path==='production-capabilities')return response({available:!!env.CERTIFICATE_EXPORT_KEY,exactQuantityMin:1,exactQuantityMax:5000,founderApproval:true,verifiedEmailRequired:true,secretExportsEncrypted:true,existingProductionRecordsNeverAutoLinked:true,pricePerCodeMinor:0,currency:'USD'});
  if(method==='POST'&&path==='certificate-lookup'){
   // Never put the submitted code in a URL, cookie, analytics event or log.
   if(!(await throttle(db,request,'certificate-lookup',35,3600)))return failure('Too many code checks from this connection. Please try again later.',429);
