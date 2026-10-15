@@ -24,7 +24,7 @@ Reborna's static source-backed kit catalogue, which includes scraper discoveries
 ## Reviewed issuance and defensive design
 
 1. Only one production request may be pending, approved or generating per issuer. The sculptor must affirm that this is a **new physical production run** and not a request to reprint already-issued certificate codes.
-2. Founder queue includes original edition promises, new quantity, source URL, and warning if production expands a previously declared maximum.
+2. Before review, the sculptor can correct the pending exact quantity without consuming another request. Founder queue includes original edition promises, new quantity, source URL, and warning if production expands a previously declared maximum.
 3. Founder approves/rejects with an audit note. This **does not issue any code**.
 4. Sculptor requests an **eight-digit, 10-minute** emailed approval code, bound to the original run ID and approved quantity. Five failed entries invalidate the approval.
 5. After email confirmation, a 45-minute browser-memory production session is issued, scoped to artist and run. The code list is **never emailed**, stored in public URLs, or persisted as plaintext.
@@ -32,7 +32,8 @@ Reborna's static source-backed kit catalogue, which includes scraper discoveries
 7. A suspended artist cannot continue generation; authenticated account/email confirmation alone does not establish original-artist identity.
 8. On interruption the user signs in, requests a fresh email approval and resumes the SAME production run at its stored `generated_count`; no second set of codes for completed certificate numbers.
 9. When complete, the securely encrypted export is available for **seven days** after the generation ends (unless the artist explicitly clears it sooner). Only authenticated, email-confirmed temporary sessions can decrypt chunks. Download fetches every encrypted fragment, checks row count, and constructs a lightweight UTF-8 CSV in the browser, with certificate number, sculpt, edition, production run and unique concealed code.
-10. After checking and backing up the download, the artist confirms the file is safe, and the server deletes the encrypted export fragments and temporary sessions while preserving hashes, issuance metadata and lookup history. Lost completed exports must not be silently replaced by newly issued codes. Expired exports are not retrievable and are purged in the founder maintenance action; until that cleanup, ciphertext can remain encrypted in D1.
+10. SAMPLE-only CSVs (1, 5, 10 or 25 codes) can be created entirely in the artist's browser, with a `SAMPLE-` prefix rejected by the public certificate lookup. These are never registered or counted against real issuance quotas.
+11. After checking and backing up the download, the artist confirms the file is safe, and the server deletes the encrypted export fragments and temporary sessions while preserving hashes, issuance metadata and lookup history. Lost completed exports must not be silently replaced by newly issued codes. Expired exports are not retrievable and are purged in the founder maintenance action; until that cleanup, ciphertext can remain encrypted in D1.
 
 ## Encryption keys and deployment
 
