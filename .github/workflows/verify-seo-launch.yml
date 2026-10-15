@@ -7,6 +7,13 @@ on:
       - 'components/**'
       - 'lib/**'
       - '.github/workflows/verify-seo-launch.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - 'components/**'
+      - 'lib/**'
+      - '.github/workflows/verify-seo-launch.yml'
   workflow_dispatch:
 permissions:
   contents: read
@@ -21,6 +28,8 @@ jobs:
           node-version: '22'
       - name: Install dependencies
         run: npm install --no-audit --no-fund
+      - name: Typecheck client and server code
+        run: npm run lint
       - name: Build public site as static HTML for Cloudflare
         env:
           NEXT_TELEMETRY_DISABLED: '1'
@@ -60,6 +69,8 @@ jobs:
             p=Page();p.feed(file.read_text());return p
           public=['/','/real-kits/','/artists/','/materials/','/events/','/community/','/privacy/','/terms/','/cookies/']
           for path in public:
+            html=(out/path.strip('/')/'index.html' if path!='/' else out/'index.html').read_text()
+            assert 'googletagmanager.com/gtag/js?id=G-PTENZWZFC1' not in html,(path,'GA4 must not load before consent')
             p=page(path)
             assert p.title and p.h1s==1,(path,'title/H1',p.title,p.h1s)
             assert 'noindex' not in p.robots.lower(),(path,'unexpected noindex',p.robots)
