@@ -49,6 +49,14 @@ export default function ProductionStudio({catalogueKits}:{catalogueKits:KitCandi
  async function createSculpt(e:React.FormEvent){e.preventDefault();await wrapped(async()=>{const r=await communityApi<{id:string}>("production-sculpt-create",{artistSlug:issuerSlug,sculptName,officialUrl});setSculptName("");setOfficialUrl("");setSculptId(r.id);setNotice("Pre-release sculpt saved privately. Next, create its edition.")})}
  async function createEdition(e:React.FormEvent){e.preventDefault();await wrapped(async()=>{const r=await communityApi<{id:string}>("production-edition-create",{sculptId,editionLabel,editionKind,declaredQuantity:editionKind==="limited"?Number(declaredQuantity):null});setEditionId(r.id);setNotice("Edition created. Request your first production run below.")})}
  async function requestRun(e:React.FormEvent){e.preventDefault();await wrapped(async()=>{const r=await communityApi<{message:string}>("production-run-request",{editionId,quantity:requestedSize,confirmedNewIssue:ackNew,acknowledgeEditionChange:ackExpand});setNotice(r.message);setAckNew(false);setAckExpand(false)})}
+ async function editPending(e:React.FormEvent<HTMLFormElement>,run:Run){
+  e.preventDefault();
+  const values=new FormData(e.currentTarget),quantity=Number(values.get("quantity"));
+  await wrapped(async()=>{
+   const result=await communityApi<{message:string}>("production-run-edit",{runId:run.id,quantity,confirmedNewIssue:values.get("confirm")==="on",acknowledgeEditionChange:values.get("expand")==="on"});
+   setNotice(result.message);
+  });
+ }
  async function sendEmail(run:Run){await wrapped(async()=>{const r=await communityApi<{approvalId:string;message:string}>("production-prepare",{runId:run.id});setSelectedRun(run.id);setApprovalId(r.approvalId);setEmailCode("");setSession(null);setProgress(run.generatedCount);setExportDownloaded(false);setNotice(r.message)})}
  async function confirmEmail(e:React.FormEvent){e.preventDefault();await wrapped(async()=>{const r=await communityApi<{sessionToken:string;quantity:number;status:string;generatedCount:number}>("production-confirm",{runId:selectedRun,approvalId,emailCode});setSession({runId:selectedRun,token:r.sessionToken,quantity:r.quantity,status:r.status});setProgress(r.generatedCount);setEmailCode("");setApprovalId("");setNotice(r.status==="ready"?"Email confirmed. Download the secure CSV below.":"Email confirmed. Start or resume generation using the button below.")})}
  async function generate(){
@@ -142,6 +150,13 @@ export default function ProductionStudio({catalogueKits}:{catalogueKits:KitCandi
      <div className="rbrn-production-run-top"><div><strong>{runSculpt(run)?.sculptName||"Original sculpt"}</strong><small>{data.editions.find(x=>x.id===run.editionId)?.editionLabel} · Run {run.runNumber} · certificates {run.serialStart}–{run.serialStart+run.quantity-1}</small></div><span>{description[run.status]}</span></div>
      <p>{run.quantity.toLocaleString("en-GB")} certificates · {run.generatedCount.toLocaleString("en-GB")} issued · Submitted {dateLabel(run.submittedAt)}</p>
      {run.reviewNote&&<p className="rbrn-production-note">Editorial note: {run.reviewNote}</p>}
+     {run.status==="pending"&&<details className="rbrn-production-pending-edit"><summary>Edit this pending quantity</summary><form onSubmit={e=>editPending(e,run)}>
+      <label>Correct number of new certificates<input required type="number" min={1} max={5000} step={1} name="quantity" defaultValue={run.quantity}/></label>
+      {data.editions.find(e=>e.id===run.editionId)?.editionKind==="limited"&&<label className="rbrn-production-check"><input name="expand" type="checkbox"/> I acknowledge if this raises the published edition size; Reborna will separately review the change.</label>}
+      <label className="rbrn-production-check"><input required name="confirm" type="checkbox"/> These are new certificates, not an accidental reprint.</label>
+      <button type="submit" disabled={busy} className="rbrn-production-action">Save corrected pending request</button>
+     </form></details>}
+
      {["approved","generating","ready"].includes(run.status)&&<button disabled={busy} type="button" onClick={()=>sendEmail(run)} className="rbrn-production-action"><MailCheck size={15}/>{run.status==="approved"?"Email confirmation to generate":run.status==="generating"?"Email confirmation to resume":"Email confirmation to download CSV"}</button>}
      {run.status==="archived"&&<p className="rbrn-sculptor-small">The complete codes were issued. The original encrypted export has been cleared; Reborna cannot reconstruct your CSV from the saved code hashes.</p>}
     </article>)}
