@@ -1,3 +1,4 @@
+import {generateCertificateCode,normaliseCertificateCode} from "../../../lib/certificate-code.mjs";
 import {publicNameError} from '../../../lib/community-name-safety.mjs';
 
 /* Reborna Community API — Cloudflare Pages Functions + isolated D1.
@@ -218,6 +219,33 @@ export async function onRequest(context){
  if(method==='POST'&&!originValid(request))return failure('Invalid request origin.',403);
  try{
  if(method==='GET'&&path==='status')return response({available:true,registrationOpen:emailReady(env)&&!!(env.TURNSTILE_SITE_KEY&&env.TURNSTILE_SECRET_KEY),turnstileSiteKey:env.TURNSTILE_SITE_KEY||null,moderation:'review-before-publication',aiModerationReady:!!(env.COMMUNITY_SAFETY||env.AI),mediaUploads:false,launch:'editorial'});
+ if(method==='POST'&&path==='certificate-lookup'){
+  // Never put the submitted code in a URL, cookie, analytics event or log.
+  if(!(await throttle(db,request,'certificate-lookup',35,3600)))return failure('Too many code checks from this connection. Please try again later.',429);
+  const d=await readJson(request),code=normaliseCertificateCode(d?.code);
+  if(!code)return failure('Enter a Reborna code in the format RB-XXXXXX-XXXXXX-XXXXXX-XXXXXX.');
+  const codeHash=await sha('certificate-v1:'+code);
+  const cert=await db.prepare("SELECT c.id,c.state AS code_state,c.lookup_count,c.first_checked_at,c.last_checked_at,c.revoked_at,b.artist_slug,b.artist_name,b.sculpt_name,b.edition_note,b.official_sculpt_url,b.issued_at,v.state AS issuer_state FROM certificate_codes c JOIN certificate_batches b ON b.id=c.batch_id JOIN verified_sculptor_issuers v ON v.user_id=b.issuer_user_id AND v.artist_slug=b.artist_slug WHERE c.code_hash=?").bind(codeHash).first();
+  if(!cert)return response({found:false,message:'No Reborna-issued certificate record matches that code. Check the characters and contact the original sculptor.'});
+  await db.batch([
+    db.prepare("UPDATE certificate_codes SET lookup_count=lookup_count+1,first_checked_at=COALESCE(first_checked_at,datetime('now')),last_checked_at=datetime('now') WHERE id=?").bind(cert.id),
+    db.prepare("INSERT INTO certificate_lookup_events(id,certificate_id) VALUES(?,?)").bind(crypto.randomUUID(),cert.id)
+  ]);
+  const recent=await db.prepare("SELECT COUNT(*) AS total FROM certificate_lookup_events WHERE certificate_id=? AND checked_at>=datetime('now','-1 day')").bind(cert.id).first();
+  const total=cert.lookup_count+1;
+  return response({
+    found:true,
+    status:cert.code_state==='revoked'?'revoked':cert.issuer_state!=='active'?'issuer_suspended':'issued',
+    artistName:cert.artist_name,artistSlug:cert.artist_slug,sculptName:cert.sculpt_name,
+    editionNote:cert.edition_note||'',officialSculptUrl:cert.official_sculpt_url,
+    issuedAt:cert.issued_at,revokedAt:cert.revoked_at||null,
+    previousChecks:cert.lookup_count,totalChecks:total,
+    firstCheckedAt:cert.first_checked_at||null,lastCheckedAt:cert.last_checked_at||null,
+    repeatedChecksIn24h:Math.max(0,(recent?.total||1)-1),
+    reviewSuggested:total>=5||(recent?.total||0)>=4,
+    message:'This record confirms the sculptor account issued this certificate code through Reborna. It cannot authenticate a physical kit or rule out a copied certificate.'
+  });
+ }
  if(method==='GET'&&path==='avatar'){
   const id=clean(query.get('id'),75);
   if(!/^[a-zA-Z0-9_-]{8,75}$/.test(id))return failure('Profile photo not found.',404);
@@ -377,6 +405,82 @@ export async function onRequest(context){
   return response({ok:true,message:'Review state saved. No public catalogue content or identity verification has changed.'});
  }
 
+ // Certificate pilot: only independently authorised original sculptors may issue.
+ if(method==='GET'&&path==='certificate-studio'){
+  const issuers=(await db.prepare("SELECT artist_slug AS artistSlug,artist_name AS artistName,official_source_url AS officialSourceUrl,state,authorised_at AS authorisedAt FROM verified_sculptor_issuers WHERE user_id=? ORDER BY artist_name").bind(user.id).all()).results||[];
+  const batches=(await db.prepare("SELECT id,artist_slug AS artistSlug,artist_name AS artistName,sculpt_name AS sculptName,edition_note AS editionNote,official_sculpt_url AS officialSculptUrl,quantity,price_per_code_minor AS pricePerCodeMinor,currency,issued_at AS issuedAt FROM certificate_batches WHERE issuer_user_id=? ORDER BY issued_at DESC LIMIT 35").bind(user.id).all()).results||[];
+  const codes=(await db.prepare("SELECT c.id,c.batch_id AS batchId,c.hint,c.state,c.lookup_count AS lookupCount,c.first_checked_at AS firstCheckedAt,c.last_checked_at AS lastCheckedAt,c.revoked_at AS revokedAt FROM certificate_codes c JOIN certificate_batches b ON c.batch_id=b.id WHERE b.issuer_user_id=? ORDER BY c.issued_at DESC,c.id DESC LIMIT 350").bind(user.id).all()).results||[];
+  return response({issuers,batches,codes,pricing:{currency:'USD',pricePerCodeMinor:0,freePilot:true},canIssue:issuers.some(x=>x.state==='active')});
+ }
+ if(method==='POST'&&path==='certificate-issue'){
+  if(!(await throttle(db,request,'certificate-issue',8,86400)))return failure('Too many certificate requests today. Please contact Reborna.',429);
+  const d=await readJson(request),artistSlug=clean(d?.artistSlug,95),sculptName=clean(d?.sculptName,125),editionNote=clean(d?.editionNote,95),quantity=d?.quantity;
+  const sourceUrl=sculptorEvidenceUrl(d?.officialSculptUrl);
+  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(artistSlug))return failure('Choose an approved sculptor identity.');
+  if(sculptName.length<2||sculptName.length>120||editionNote.length>90||!sourceUrl)return failure('Enter the original sculpt name and its public official source link.');
+  if(!Number.isInteger(quantity)||quantity<1||quantity>25)return failure('Choose between 1 and 25 codes per request.');
+  const issuer=await db.prepare("SELECT * FROM verified_sculptor_issuers WHERE user_id=? AND artist_slug=? AND state='active'").bind(user.id,artistSlug).first();
+  if(!issuer)return failure('This artist account has not been authorised for certificate issuance.',403);
+  const issued=await db.prepare("SELECT COALESCE(SUM(quantity),0) AS total FROM certificate_batches WHERE issuer_user_id=? AND issued_at>=datetime('now','-1 day')").bind(user.id).first();
+  if((issued?.total||0)+quantity>100)return failure('The free pilot permits up to 100 certificate codes per day per sculptor.',429);
+  // Raw codes live ONLY in this one-time response. Only hashes and last-4 hints
+  // are persisted, so full codes cannot be recovered from an artist dashboard.
+  const records=Array.from({length:quantity},()=>({id:crypto.randomUUID(),code:generateCertificateCode()}));
+  const batchId=crypto.randomUUID();
+  const commands=[
+    db.prepare("INSERT INTO certificate_batches(id,issuer_user_id,artist_slug,artist_name,sculpt_name,edition_note,official_sculpt_url,quantity,price_per_code_minor,currency) VALUES(?,?,?,?,?,?,?,?,0,'USD')").bind(batchId,user.id,artistSlug,issuer.artist_name,sculptName,editionNote,sourceUrl,quantity),
+    ...(await Promise.all(records.map(async row=>db.prepare("INSERT INTO certificate_codes(id,batch_id,code_hash,hint) VALUES(?,?,?,?)").bind(row.id,batchId,await sha('certificate-v1:'+row.code),row.code.slice(-4))))),
+    db.prepare("INSERT INTO certificate_audit(id,actor_id,action,artist_slug,batch_id,note) VALUES(?,?,'issue_batch',?,?,?)").bind(crypto.randomUUID(),user.id,artistSlug,batchId,'Free pilot: '+quantity+' code(s) for '+sculptName)
+  ];
+  await db.batch(commands);
+  return response({ok:true,batchId,artistName:issuer.artist_name,sculptName,quantity,pricePerCodeMinor:0,currency:'USD',codes:records.map(x=>x.code),message:'These codes are shown only now. Download and store them securely; Reborna does not retain their plaintext.'},201);
+ }
+ if(method==='POST'&&path==='certificate-revoke'){
+  const d=await readJson(request),id=clean(d?.id,80),reason=clean(d?.reason,300);
+  if(!/^[0-9a-f-]{36}$/i.test(id)||reason.length<12)return failure('Choose a certificate and provide a clear revocation reason.');
+  const code=await db.prepare("SELECT c.id,c.state,b.artist_slug,b.id AS batch_id FROM certificate_codes c JOIN certificate_batches b ON b.id=c.batch_id WHERE c.id=? AND b.issuer_user_id=?").bind(id,user.id).first();
+  if(!code)return failure('Certificate is not available to this account.',404);
+  if(code.state==='revoked')return response({ok:true,alreadyRevoked:true});
+  await db.batch([
+    db.prepare("UPDATE certificate_codes SET state='revoked',revoked_at=datetime('now'),revoked_by=?,revocation_reason=? WHERE id=? AND state='active'").bind(user.id,reason,id),
+    db.prepare("INSERT INTO certificate_audit(id,actor_id,action,artist_slug,batch_id,certificate_id,note) VALUES(?,?,'revoke_code',?,?,?,?)").bind(crypto.randomUUID(),user.id,code.artist_slug,code.batch_id,id,reason)
+  ]);
+  return response({ok:true,message:'Certificate code revoked. Its check history is preserved for investigation.'});
+ }
+ if(method==='GET'&&path==='certificate-issuers'){
+  if(!(await isModerator(db,user.id)))return failure('Not authorised.',403);
+  const issuers=(await db.prepare("SELECT v.artist_slug AS artistSlug,v.artist_name AS artistName,v.official_source_url AS officialSourceUrl,v.state,v.authorised_at AS authorisedAt,u.handle AS memberHandle FROM verified_sculptor_issuers v JOIN users u ON u.id=v.user_id ORDER BY v.authorised_at DESC LIMIT 70").all()).results||[];
+  return response({issuers});
+ }
+ if(method==='POST'&&path==='certificate-authorise'){
+  if(!(await isModerator(db,user.id)))return failure('Not authorised.',403);
+  const d=await readJson(request),claimId=clean(d?.claimId,90),notes=clean(d?.reviewNote,950),officialSourceUrl=sculptorEvidenceUrl(d?.officialSourceUrl);
+  if(!/^[0-9a-f-]{36}$/i.test(claimId)||notes.length<50||!officialSourceUrl||d?.confirmedOfficialChannel!==true)return failure('Confirm independent original-sculptor evidence and provide a detailed review note before authorising an issuer.');
+  const requestRow=await db.prepare("SELECT r.*,u.email_verified_at,u.status AS member_status FROM sculptor_requests r JOIN users u ON u.id=r.member_id WHERE r.id=? AND r.kind='claim_profile' AND r.state='closed' AND u.email_verified_at IS NOT NULL AND u.status='active'").bind(claimId).first();
+  if(!requestRow?.existing_artist_slug)return failure('A completed claim linked to an existing Reborna sculptor profile is required.',409);
+  const selectedRole=await db.prepare("SELECT 1 AS verified FROM user_roles WHERE user_id=? AND role='sculptor'").bind(requestRow.member_id).first();
+  if(!selectedRole)return failure('The member must identify as an original sculptor in their preferences.',409);
+  const existing=await db.prepare("SELECT user_id FROM verified_sculptor_issuers WHERE artist_slug=?").bind(requestRow.existing_artist_slug).first();
+  if(existing)return failure('This sculptor already has an authorised issuer. Review any transfer privately.',409);
+  await db.batch([
+    db.prepare("INSERT INTO verified_sculptor_issuers(user_id,artist_slug,artist_name,official_source_url,claim_request_id,authorised_by,authorisation_note) VALUES(?,?,?,?,?,?,?)").bind(requestRow.member_id,requestRow.existing_artist_slug,requestRow.artist_name,officialSourceUrl,claimId,user.id,notes),
+    db.prepare("INSERT INTO certificate_audit(id,actor_id,action,artist_slug,note) VALUES(?,?,'authorise_issuer',?,?)").bind(crypto.randomUUID(),user.id,requestRow.existing_artist_slug,notes)
+  ]);
+  return response({ok:true,message:'Authorised certificate issuing for the independently reviewed sculptor. No past codes were fabricated.'});
+ }
+ if(method==='POST'&&path==='certificate-suspend-issuer'){
+  if(!(await isModerator(db,user.id)))return failure('Not authorised.',403);
+  const d=await readJson(request),artistSlug=clean(d?.artistSlug,95),reason=clean(d?.reason,450);
+  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(artistSlug)||reason.length<20)return failure('Provide an approved artist and a documented reason to suspend issuance.');
+  const row=await db.prepare("SELECT state FROM verified_sculptor_issuers WHERE artist_slug=?").bind(artistSlug).first();
+  if(!row)return failure('Issuer not found.',404);
+  if(row.state==='suspended')return response({ok:true,alreadySuspended:true});
+  await db.batch([
+    db.prepare("UPDATE verified_sculptor_issuers SET state='suspended',suspended_at=datetime('now') WHERE artist_slug=? AND state='active'").bind(artistSlug),
+    db.prepare("INSERT INTO certificate_audit(id,actor_id,action,artist_slug,note) VALUES(?,?,'suspend_issuer',?)").bind(crypto.randomUUID(),user.id,artistSlug,reason)
+  ]);
+  return response({ok:true,message:'Issuer suspended. Public lookups will flag this change, and new codes cannot be issued.'});
+ }
  if(method==='GET'&&path==='wishlist'){
   const items=(await db.prepare('SELECT item_type AS type,item_path AS path,item_title AS title,item_subtitle AS subtitle,collection_status AS collectionStatus,image_url AS imageUrl,saved_at AS savedAt FROM member_saved_items WHERE user_id=? ORDER BY saved_at DESC,item_path ASC LIMIT 1200').bind(user.id).all()).results||[];
   return response({items});
