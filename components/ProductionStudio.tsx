@@ -26,7 +26,7 @@ export default function ProductionStudio({catalogueKits}:{catalogueKits:KitCandi
  const [selectedRun,setSelectedRun]=useState(""),[approvalId,setApprovalId]=useState(""),[emailCode,setEmailCode]=useState(""),[session,setSession]=useState<Session|null>(null),[progress,setProgress]=useState(0);
  const [editSculpt,setEditSculpt]=useState(""),[editName,setEditName]=useState(""),[editSource,setEditSource]=useState(""),[editNote,setEditNote]=useState("");
  const [linkSculpt,setLinkSculpt]=useState(""),[linkKit,setLinkKit]=useState(""),[linkNote,setLinkNote]=useState("");
- const [exportDownloaded,setExportDownloaded]=useState(false);
+ const [exportDownloaded,setExportDownloaded]=useState(false),[sampleCount,setSampleCount]=useState(5);
  const refresh=async()=>{const r=await communityApi<Studio>("production-studio");setData(r);setIssuerSlug(v=>v||r.issuers.find(i=>i.state==="active")?.artistSlug||"")};
  useEffect(()=>{void refresh().catch(e=>setError((e as Error).message))},[]);
  const issuerReady=(data?.issuers||[]).some(x=>x.state==="active");
@@ -46,6 +46,22 @@ export default function ProductionStudio({catalogueKits}:{catalogueKits:KitCandi
   return catalogueKits.filter(x=>x.artistSlug===s.artistSlug).sort((a,b)=>Number(nice(b.name)===nice(s.sculptName))-Number(nice(a.name)===nice(s.sculptName))||a.name.localeCompare(b.name)).slice(0,130);
  },[catalogueKits,data?.sculpts,linkSculpt]);
  const wrapped=async(action:()=>Promise<unknown>)=>{setBusy(true);setError("");setNotice("");try{await action();await refresh()}catch(e){setError((e as Error).message)}finally{setBusy(false)}};
+ function sampleCsv(){
+  setError("");setNotice("");
+  if(!window.crypto?.getRandomValues){setError("A secure random number source is not available in this browser.");return}
+  const alphabet="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  const records=new Set<string>();
+  while(records.size<sampleCount){
+   const bytes=window.crypto.getRandomValues(new Uint8Array(12));
+   const chars=Array.from(bytes,x=>alphabet[x&31]).join("");
+   records.add("SAMPLE-"+(chars.match(/.{4}/g)||[]).join("-"));
+  }
+  const lines=["sample_code,notice",...Array.from(records,x=>safeCsv(x)+","+safeCsv("DEMONSTRATION ONLY - NEVER ISSUED OR VALID FOR AUTHENTICITY"))];
+  const blob=new Blob(["\uFEFF"+lines.join("\r\n")+"\r\n"],{type:"text/csv;charset=utf-8"});
+  const url=URL.createObjectURL(blob),a=document.createElement("a");
+  a.href=url;a.download="reborna-SAMPLE-ONLY-"+sampleCount+"-codes.csv";document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+  setNotice("Sample CSV created locally. These SAMPLE-prefixed codes can NEVER verify a physical kit and do not count as issued certificates.");
+ }
  async function createSculpt(e:React.FormEvent){e.preventDefault();await wrapped(async()=>{const r=await communityApi<{id:string}>("production-sculpt-create",{artistSlug:issuerSlug,sculptName,officialUrl});setSculptName("");setOfficialUrl("");setSculptId(r.id);setNotice("Pre-release sculpt saved privately. Next, create its edition.")})}
  async function createEdition(e:React.FormEvent){e.preventDefault();await wrapped(async()=>{const r=await communityApi<{id:string}>("production-edition-create",{sculptId,editionLabel,editionKind,declaredQuantity:editionKind==="limited"?Number(declaredQuantity):null});setEditionId(r.id);setNotice("Edition created. Request your first production run below.")})}
  async function requestRun(e:React.FormEvent){e.preventDefault();await wrapped(async()=>{const r=await communityApi<{message:string}>("production-run-request",{editionId,quantity:requestedSize,confirmedNewIssue:ackNew,acknowledgeEditionChange:ackExpand});setNotice(r.message);setAckNew(false);setAckExpand(false)})}
@@ -109,6 +125,7 @@ export default function ProductionStudio({catalogueKits}:{catalogueKits:KitCandi
   <h3>From the sculpt to every original certificate.</h3>
   <p className="rbrn-sculptor-small">Maintain a private pre-release sculpt, declare its edition, and request the exact number of new certificates required. Our editorial team reviews real production requests before securely issuing up to 5,000 distinct codes. There is no charge during the pilot.</p>
   <div className="rbrn-cert-duplicate-warning"><AlertTriangle size={22}/><div><strong>Already generated certificates for this production run?</strong><p><strong>Do not request additional codes just to print or reprint the same certificates.</strong> Use the exact codes from your original CSV. A new code creates another usable certificate. A genuine new manufacturing run should be entered separately, with its own review and history.</p></div></div>
+  <div className="rbrn-production-sample"><span className="section-kicker">TRY BEFORE YOU ISSUE · NO APPROVAL NEEDED</span><h4>Download a sample certificate CSV</h4><p className="rbrn-sculptor-small">Check how the small concealed codes fit your certificate layout. Sample codes are unmistakably marked SAMPLE, are generated entirely in your browser, cannot be verified, and never create real registry records.</p><div><label>Sample quantity <select value={sampleCount} onChange={e=>setSampleCount(Number(e.target.value))}>{[1,5,10,25].map(n=><option value={n} key={n}>{n} test codes</option>)}</select></label><button onClick={sampleCsv} type="button" className="rbrn-production-action"><Download size={15}/> Download SAMPLE-only CSV</button></div></div>
   {!data?<p>Checking your private studio…</p>:!issuerReady?<p className="rbrn-dash-notlive"><ShieldCheck size={22}/> An independently approved sculptor identity is required before creating production certificates. Use the profile-claim and founder identity-review process above.</p>:<>
    <div className="rbrn-production-steps">
     <details open={data.sculpts.length===0}>
