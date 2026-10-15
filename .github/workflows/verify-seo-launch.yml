@@ -6,6 +6,7 @@ on:
       - 'app/**'
       - 'components/**'
       - 'lib/**'
+      - 'scripts/**'
       - '.github/workflows/verify-seo-launch.yml'
   pull_request:
     branches: [main]
@@ -13,6 +14,7 @@ on:
       - 'app/**'
       - 'components/**'
       - 'lib/**'
+      - 'scripts/**'
       - '.github/workflows/verify-seo-launch.yml'
   workflow_dispatch:
 permissions:
@@ -74,6 +76,13 @@ jobs:
             p=page(path)
             assert p.title and p.h1s==1,(path,'title/H1',p.title,p.h1s)
             assert 'noindex' not in p.robots.lower(),(path,'unexpected noindex',p.robots)
+          history=page('/guides/cassie-ann-love-sculpt-history/')
+          cassie=page('/artists/cassie-ann-love/')
+          assert history.h1s==1 and len(history.title)>20
+          assert history.canonical=='https://reborna.co/guides/cassie-ann-love-sculpt-history/'
+          assert 'noindex' not in history.robots.lower()
+          assert '/guides/cassie-ann-love-sculpt-history/' in cassie.links
+          assert '/artists/cassie-ann-love/' in history.links
           for kind in ['artists','kits']:
             pages=list((out/kind).glob('*/index.html'))
             assert len(pages)>=5,(kind,'too few static pages',len(pages))
@@ -114,3 +123,5 @@ jobs:
           assert 'Reborna' in llm and 'https://reborna.co/artists/' in llm
           print('PASS',len(urls),'sitemap entries; static HTML and privacy-safe index boundaries')
           PY
+      - name: Audit image sitemap discovery, credit sources and third-party photo hosts
+        run: python3 scripts/audit-image-discovery.py out --probe
