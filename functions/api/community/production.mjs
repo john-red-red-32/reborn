@@ -91,7 +91,7 @@ export async function lookupProductionCode({db,codeHash,sha}){
 }
 const productionRoutes=new Set([
  "production-studio","production-sculpt-create","production-sculpt-edit","production-edition-create",
- "production-run-request","production-review-queue","production-run-review",
+ "production-run-request","production-run-edit","production-review-queue","production-run-review",
  "production-correction-request","production-correction-review","production-link-propose","production-link-review",
  "production-prepare","production-confirm","production-next","production-export-chunk",
  "production-export-archive","production-revoke","production-cleanup"
@@ -172,6 +172,20 @@ export async function handleProduction(ctx){
   ])}catch(e){if(String(e).includes("UNIQUE"))return fail("Concurrent production request detected. Refresh before trying again.",409);throw e}
   if(emailReady(env)&&typeof context.waitUntil==="function")context.waitUntil(sendEmail(env,"hello@reborna.co","Reborna production run awaiting editorial review","<p>A verified sculptor submitted a production request. Log in to the private dashboard to review edition history and quantity.</p><p>Reference: "+id+"</p>").catch(()=>{}));
   return ok({ok:true,id,message:"Run sent for editorial approval. No certificate codes have been generated."},201);
+ }
+ if(method==="POST"&&path==="production-run-edit"){
+  const id=txt(body.runId,45),quantity=body.quantity;
+  if(!isUuid(id)||!Number.isInteger(quantity)||quantity<1||quantity>MAX_QTY||body.confirmedNewIssue!==true)return fail("Enter an exact quantity and confirm these are new certificates, not reprints.");
+  const run=await myRun(db,id,user.id);
+  if(!run||run.status!=="pending")return fail("Only pending requests can be edited; reviewed production declarations are locked.",409);
+  const finalCount=run.serial_start+quantity-1;
+  const expanding=run.edition_kind==="limited"&&finalCount>run.current_declared_quantity;
+  if(expanding&&body.acknowledgeEditionChange!==true)return fail("Explicitly acknowledge increasing the edition's published size.",409);
+  await db.batch([
+   db.prepare("UPDATE production_runs SET quantity=?,change_acknowledged=?,submitted_at=datetime('now') WHERE id=? AND status='pending'").bind(quantity,expanding?1:0,id),
+   db.prepare("INSERT INTO production_audit(id,sculpt_id,edition_id,run_id,actor_id,action,old_value,new_value,note) VALUES(?,?,?,?,?,'edit_pending_run',?,?,?)").bind(crypto.randomUUID(),run.sculpt_id,run.edition_id,id,user.id,String(run.quantity),String(quantity),"Pending quantity updated before editorial approval")
+  ]);
+  return ok({ok:true,message:"Pending production quantity updated; the request remains awaiting founder review. No codes have been issued."});
  }
  if(method==="GET"&&path==="production-review-queue"){
   if(!(await isModerator(db,user.id)))return fail("Not authorised.",403);
