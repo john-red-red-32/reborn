@@ -83,6 +83,27 @@ jobs:
         run: |
           printf "/** @type {import('next').NextConfig} */\nconst config = {output:'export',trailingSlash:true,images:{unoptimized:true}};\nexport default config;\n" > next.config.mjs
           npm run build
+      - name: Check Reborna favicon artwork, compatibility files and exported HTML metadata
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import struct
+          out=Path('out')
+          svg=(out/'favicon.svg').read_text()
+          assert '<svg' in svg and 'Reborna' in svg
+          assert '#685649' in svg and '#FBF7F1' in svg
+          ico=(out/'favicon.ico').read_bytes()
+          assert ico[:4]==bytes([0,0,1,0]),'invalid Windows ICO header'
+          assert struct.unpack('<H',ico[4:6])[0]>=2,'ICO should contain 16px and 32px sources'
+          apple=(out/'apple-touch-icon.png').read_bytes()
+          assert apple[:8]==bytes([137,80,78,71,13,10,26,10]),'Apple icon is not a PNG'
+          assert struct.unpack('>II',apple[16:24])==(180,180),'Apple icon must be 180 x 180'
+          for page in (out/'index.html',out/'verify/index.html',out/'artists/cassie-ann-love/index.html'):
+            html=page.read_text()
+            for icon in ('/favicon.svg?v=1','/favicon.ico?v=1','/apple-touch-icon.png?v=1'):
+              assert icon in html,(str(page),'favicon metadata missing',icon)
+          print('PASS: exported SVG/ICO/iOS icons and all-page favicon metadata')
+          PY
       - name: Verify real crawlable HTML, canonical metadata and crawler inventory
         run: |
           python3 - <<'PY'
