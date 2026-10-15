@@ -6,6 +6,7 @@ on:
       - 'app/**'
       - 'components/**'
       - 'lib/**'
+      - 'tests/contact-handler.test.mjs'
       - 'scripts/**'
       - '.github/workflows/verify-seo-launch.yml'
   pull_request:
@@ -32,6 +33,8 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Typecheck client and server code
         run: npm run lint
+      - name: Check protected contact form endpoint regressions
+        run: node --test tests/contact-handler.test.mjs
       - name: Build public site as static HTML for Cloudflare
         env:
           NEXT_TELEMETRY_DISABLED: '1'
