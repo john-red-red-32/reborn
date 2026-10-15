@@ -43,7 +43,7 @@ jobs:
                 return response.status,response.read().decode(errors='replace')
             except urllib.error.HTTPError as e:
               return e.code,e.read().decode(errors='replace')
-          for attempt in range(8):
+          for attempt in range(36):
             errors=[]
             try:
               status,home=read('/')
@@ -61,9 +61,9 @@ jobs:
               if status!=200 or not info.get('turnstileSiteKey'): errors.append(('turnstile readiness',status))
             except Exception as e: errors.append(('exception',str(e)[:140]))
             if not errors:
-              print('PASS: contact page, global footer, protected Cloudflare Function and Turnstile readiness')
+              print('PASS: contact submit enabled, sculptor invitation, protected Cloudflare Function and Turnstile readiness')
               break
             print('Awaiting Cloudflare deployment',attempt+1,errors,flush=True)
-            time.sleep(4)
+            time.sleep(5)
           else: raise SystemExit('Contact production audit failed: '+repr(errors))
           PY
