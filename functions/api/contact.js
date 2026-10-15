@@ -7,6 +7,9 @@ const json=(value,status=200)=>new Response(JSON.stringify(value),{status,header
 const fail=(reason,status=400)=>json({error:reason},status);
 const encoder=new TextEncoder();
 const trim=(x,n)=>typeof x==='string'?x.trim().slice(0,n):'';
+const artistIntents={introduce:'Sculptor introduction',claim_profile:'Request to claim a profile',submit_sculpt:'Submit an original sculpt for review'};
+function sourceUrl(value){if(value===null||value===undefined||value==='')return null;if(typeof value!=='string'||value.length>500)return false;try{const u=new URL(value.trim());if(!['https:','http:'].includes(u.protocol)||u.username||u.password||u.port||!/^([a-z0-9-]+\.)+[a-z]{2,}$/i.test(u.hostname)||u.hostname.endsWith('.local'))return false;return u.href}catch{return false}}
+
 const html=(x)=>x.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 async function sha(s){const a=new Uint8Array(await crypto.subtle.digest('SHA-256',encoder.encode(s)));return Array.from(a).map(x=>x.toString(16).padStart(2,'0')).join('')}
 async function throttle(db,request){
@@ -32,7 +35,7 @@ async function deliver(db,env,record){
  if(!env.RESEND_API_KEY||!env.COMMUNITY_MAIL_FROM)return;
  const body='<div style="max-width:620px;margin:0 auto;padding:26px;font-family:Arial,sans-serif;color:#5b4737"><h1 style="font-family:Georgia,serif;font-weight:normal">New Reborna enquiry</h1><p style="color:#947966">A visitor has contacted Reborna through the website.</p><p><strong>Category:</strong> '+html(TYPES[record.category])+'</p><p><strong>Name:</strong> '+html(record.name)+'</p><p><strong>Email:</strong> '+html(record.email)+'</p><hr style="border:0;border-top:1px solid #e2d6ca"/><p style="white-space:pre-wrap;line-height:1.8">'+html(record.message).replace(/\n/g,'<br/>')+'</p><small>Enquiry reference '+record.id+'. This email is an automated notification. Replying from an ordinary clinic mailbox will show that mailbox as the sender.</small></div>';
  try{
-  const r=await fetch('https://api.resend.com/emails',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+env.RESEND_API_KEY},body:JSON.stringify({from:env.COMMUNITY_MAIL_FROM,to:['hi@thegorgeousclinic.co.uk'],subject:'Reborna enquiry · '+TYPES[record.category],html:body,text:'Reborna website enquiry\n\nCategory: '+TYPES[record.category]+'\nName: '+record.name+'\nEmail: '+record.email+'\n\n'+record.message+'\n\nReference: '+record.id})});
+  const r=await fetch('https://api.resend.com/emails',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+env.RESEND_API_KEY},body:JSON.stringify({from:env.COMMUNITY_MAIL_FROM,to:['hi@thegorgeousclinic.co.uk'],subject:'Reborna enquiry · '+TYPES[record.category],html:body,text:'Reborna website enquiry\n\nCategory: '+TYPES[record.category]+'\nName: '+record.name+'\nEmail: '+record.email+'\nSculptor enquiry: '+(artistIntents[record.artistIntent]||'n/a')+'\nOfficial website: '+(record.websiteUrl||'not supplied')+'\nSocial profile: '+(record.socialUrl||'not supplied')+'\n\n'+record.message+'\n\nReference: '+record.id})});
   if(!r.ok)throw Error('Email provider unavailable ('+r.status+')');
   await db.prepare("UPDATE contact_enquiries SET delivery_status='sent',delivered_at=datetime('now'),delivery_error=NULL WHERE id=?").bind(record.id).run();
  }catch(e){console.error('Contact email delivery failed',String(e).slice(0,130));await db.prepare("UPDATE contact_enquiries SET delivery_status='failed',delivery_error='Delivery service unavailable' WHERE id=?").bind(record.id).run()}
@@ -53,10 +56,13 @@ export async function onRequest(context){
   if(!(await throttle(db,request)))return fail('Too many enquiries. Please try again later.',429);
   const name=trim(input?.name,110),email=trim(input?.email,255).toLowerCase(),category=trim(input?.category,40),message=trim(input?.message,5500);
   if(name.length<2||name.length>100||!email||email.length>200||! /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)||!Object.hasOwn(TYPES,category)||message.length<25||message.length>5000)return fail('Please enter your name, a valid email, an enquiry category and a message of 25–5000 characters.');
+  const artistIntent=category==='artist'&&Object.hasOwn(artistIntents,input?.artistIntent)?input.artistIntent:null;
+  const websiteUrl=category==='artist'?sourceUrl(input?.websiteUrl):null,socialUrl=category==='artist'?sourceUrl(input?.socialUrl):null;
+  if(websiteUrl===false||socialUrl===false)return fail('Please provide complete website and social URLs starting with https://, or leave the fields blank.');
   if(!(await verify(env,request,input?.turnstileToken)))return fail('Please complete the security check.',403);
   const id=crypto.randomUUID();
-  await db.prepare('INSERT INTO contact_enquiries(id,sender_name,sender_email,category,message) VALUES(?,?,?,?,?)').bind(id,name,email,category,message).run();
-  context.waitUntil(deliver(db,env,{id,name,email,category,message}));
+  await db.prepare('INSERT INTO contact_enquiries(id,sender_name,sender_email,category,message,website_url,social_url,artist_intent) VALUES(?,?,?,?,?,?,?,?)').bind(id,name,email,category,message,websiteUrl,socialUrl,artistIntent).run();
+  context.waitUntil(deliver(db,env,{id,name,email,category,message,websiteUrl,socialUrl,artistIntent}));
   return json({ok:true,message:'Thank you. Your message has been received by Reborna.',reference:id.slice(0,8)},202);
  }catch(e){console.error('Contact request failed',String(e).slice(0,130));return fail('Your enquiry could not be saved. Please try again later.',500)}
 }
