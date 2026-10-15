@@ -93,6 +93,17 @@ test("limited edition expansion is blocked without explicit declaration and foun
  assert.equal((await h.call("production-run-request",{...base,acknowledgeEditionChange:true})).status,201);
  assert.equal(h.prepared[0][5],1);
 });
+test("pending quantities can be corrected before approval, but not reprinted",async()=>{
+ const h=harness();
+ h.run.status="pending";
+ const missing=await h.call("production-run-edit",{runId:originalRun.id,quantity:400});
+ assert.equal(missing.status,400);
+ const fixed=await h.call("production-run-edit",{runId:originalRun.id,quantity:400,confirmedNewIssue:true});
+ assert.equal(fixed.status,200);
+ const amended=h.writes.find(x=>x.sql.startsWith("UPDATE production_runs SET quantity="));
+ assert.equal(amended.args[0],400);
+ assert.equal(h.persistedCodes.length,0);
+});
 test("only founder/moderator sees the private production review queue",async()=>{
  const h=harness({moderator:false});
  const r=await h.call("production-review-queue",{},"GET");
