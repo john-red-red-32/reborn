@@ -9,7 +9,7 @@ import {useWishlist,type SavedItem} from "./WishlistProvider";
 type Area="overview"|"collection"|"studio"|"selling"|"purchases"|"community"|"sculptors";
 type Studio={id:string;title:string;notes:string;linkedKitPath:string|null;stage:"planning"|"painting"|"rooting"|"completed";updatedAt:string};
 type Listing={id:string;title:string;description:string;kind:"finished_doll"|"original_kit"|"materials"|"other";currency:"GBP"|"EUR"|"USD";askingPriceMinor:number|null;updatedAt:string};
-const areaNames:Record<Area,string>={overview:"Overview",collection:"My collection",studio:"My studio",selling:"Selling",purchases:"Purchases",community:"Community",sculptors:"Artist requests"};
+const areaNames:Record<Area,string>={overview:"Overview",collection:"My collection",studio:"My studio",selling:"Selling",purchases:"Purchases",community:"Community",sculptors:"Artist verification"};
 const stages:{value:Studio["stage"];label:string}[]=[{value:"planning",label:"Planning"},{value:"painting",label:"Painting"},{value:"rooting",label:"Rooting & finishing"},{value:"completed",label:"Completed"}];
 const kinds:{value:Listing["kind"];label:string}[]=[{value:"finished_doll",label:"Finished reborn doll"},{value:"original_kit",label:"Original sculpt kit"},{value:"materials",label:"Materials & tools"},{value:"other",label:"Other"}];
 export default function MemberDashboard({artists}:{artists:{slug:string;name:string}[]}){
