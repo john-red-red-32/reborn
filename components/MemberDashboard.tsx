@@ -3,22 +3,24 @@ import Link from "next/link";
 import {useEffect,useMemo,useState} from "react";
 import {ArrowRight,Bookmark,Check,Heart,Package,Paintbrush,PenLine,ShoppingBag,MessageCircle,Plus,Trash2,Store,Save,Settings,ShieldCheck,Sparkles,UserRound} from "lucide-react";
 import {communityApi,type CommunityUser} from "../lib/community";
+import SculptorWorkspace from "./SculptorWorkspace";
 import {useWishlist,type SavedItem} from "./WishlistProvider";
 
-type Area="overview"|"collection"|"studio"|"selling"|"purchases"|"community";
+type Area="overview"|"collection"|"studio"|"selling"|"purchases"|"community"|"sculptors";
 type Studio={id:string;title:string;notes:string;linkedKitPath:string|null;stage:"planning"|"painting"|"rooting"|"completed";updatedAt:string};
 type Listing={id:string;title:string;description:string;kind:"finished_doll"|"original_kit"|"materials"|"other";currency:"GBP"|"EUR"|"USD";askingPriceMinor:number|null;updatedAt:string};
-const areaNames:Record<Area,string>={overview:"Overview",collection:"My collection",studio:"My studio",selling:"Selling",purchases:"Purchases",community:"Community"};
+const areaNames:Record<Area,string>={overview:"Overview",collection:"My collection",studio:"My studio",selling:"Selling",purchases:"Purchases",community:"Community",sculptors:"Artist requests"};
 const stages:{value:Studio["stage"];label:string}[]=[{value:"planning",label:"Planning"},{value:"painting",label:"Painting"},{value:"rooting",label:"Rooting & finishing"},{value:"completed",label:"Completed"}];
 const kinds:{value:Listing["kind"];label:string}[]=[{value:"finished_doll",label:"Finished reborn doll"},{value:"original_kit",label:"Original sculpt kit"},{value:"materials",label:"Materials & tools"},{value:"other",label:"Other"}];
-export default function MemberDashboard(){
+export default function MemberDashboard({artists}:{artists:{slug:string;name:string}[]}){
  const {items,state:savedState,remove,updateStatus}=useWishlist();
  const[account,setAccount]=useState<CommunityUser|null>(null),[loaded,setLoaded]=useState(false),[area,setArea]=useState<Area>("overview"),[filter,setFilter]=useState("all"),[projects,setProjects]=useState<Studio[]>([]),[drafts,setDrafts]=useState<Listing[]>([]);
  const[projectForm,setProjectForm]=useState({id:"",title:"",notes:"",stage:"planning" as Studio["stage"],linkedKitPath:""});
  const[draftForm,setDraftForm]=useState({id:"",title:"",description:"",kind:"finished_doll" as Listing["kind"],currency:"GBP" as Listing["currency"],price:""});
  const[projectEditor,setProjectEditor]=useState(false),[draftEditor,setDraftEditor]=useState(false),[busy,setBusy]=useState(false),[error,setError]=useState(""),[notice,setNotice]=useState("");
  const reload=async()=>{const[p,d]=await Promise.all([communityApi<{projects:Studio[]}>("studio"),communityApi<{drafts:Listing[]}>("listing-drafts")]);setProjects(p.projects);setDrafts(d.drafts)};
- useEffect(()=>{let active=true;communityApi<{user:CommunityUser|null}>("me").then(async r=>{if(!active)return;setAccount(r.user);if(r.user)try{await reload()}catch(e){if(active)setError((e as Error).message)}}).catch(e=>{if(active)setError((e as Error).message)}).finally(()=>{if(active)setLoaded(true)});return()=>{active=false}},[]);
+ useEffect(()=>{let active=true;communityApi<{user:CommunityUser|null}>("me").then(async r=>{if(!active)return;setAccount(r.user);if(r.user&&new URLSearchParams(window.location.search).get("area")==="sculptors"&&(r.user.roles.includes("sculptor")||r.user.moderator))setArea("sculptors");
+ if(r.user)try{await reload()}catch(e){if(active)setError((e as Error).message)}}).catch(e=>{if(active)setError((e as Error).message)}).finally(()=>{if(active)setLoaded(true)});return()=>{active=false}},[]);
  const ownedCount=items.filter(i=>i.collectionStatus==="owned").length;
  const wishedCount=items.length-ownedCount;
  const shown=useMemo(()=>items.filter(i=>filter==="all"||filter==="wishlist"&&i.collectionStatus!=="owned"||filter==="owned"&&i.collectionStatus==="owned"||i.type===filter),[items,filter]);
@@ -48,7 +50,7 @@ export default function MemberDashboard(){
    <div className="rbrn-dash-layout">
     <nav className="rbrn-dash-nav" aria-label="Dashboard areas">
       <div className="rbrn-dash-user"><span>{account.avatarUrl?<img src={account.avatarUrl} alt=""/>:<UserRound size={23}/>}</span><div><strong>{account.displayName}</strong><small>@{account.handle}</small></div></div>
-      {([{id:"overview",icon:Sparkles},{id:"collection",icon:Heart},{id:"studio",icon:Paintbrush},{id:"selling",icon:Store},{id:"purchases",icon:ShoppingBag},{id:"community",icon:MessageCircle}] as const).map(({id,icon:Icon})=><button key={id} type="button" className={area===id?"active":""} aria-current={area===id?"page":undefined} onClick={()=>navigate(id)}><Icon size={18}/>{areaNames[id]}{id==="collection"&&items.length>0&&<small>{items.length}</small>}</button>)}
+      {([{id:"overview",icon:Sparkles},{id:"collection",icon:Heart},{id:"studio",icon:Paintbrush},{id:"selling",icon:Store},{id:"purchases",icon:ShoppingBag},{id:"community",icon:MessageCircle},...(account.roles.includes("sculptor")||account.moderator?[{id:"sculptors" as const,icon:ShieldCheck}]:[])] as const).map(({id,icon:Icon})=><button key={id} type="button" className={area===id?"active":""} aria-current={area===id?"page":undefined} onClick={()=>navigate(id)}><Icon size={18}/>{areaNames[id]}{id==="collection"&&items.length>0&&<small>{items.length}</small>}</button>)}
       <Link href="/account/" className="rbrn-dash-settings"><Settings size={16}/> Profile & settings</Link>
     </nav>
     <section className="rbrn-dash-main" aria-live="polite">
@@ -59,6 +61,7 @@ export default function MemberDashboard(){
       <div className="rbrn-dash-stat-grid">{counts.map(x=>{const Icon=x.icon;return <button key={x.area} type="button" onClick={()=>navigate(x.area)}><Icon size={20}/><strong>{x.count}</strong><span>{x.label}</span><small>{x.description}</small><ArrowRight size={16} className="rbrn-dash-stat-arrow"/></button>})}</div>
       <div className="rbrn-dash-overview-grid"><div className="rbrn-dash-panel"><span className="section-kicker">CURATED FOR YOU</span><h3>Make your first favourites.</h3><p>Tap a little heart anywhere in the sculpt, materials or artist galleries. You'll find everything here when you come back.</p><Link href="/real-kits/">Discover original sculpts <ArrowRight size={15}/></Link></div><div className="rbrn-dash-panel"><span className="section-kicker">STAY CONNECTED</span><h3>Your Reborna community.</h3><p>Visit your messages, catch up on genuine discussions or share what you're making.</p><Link href="/messages/">Open your inbox <ArrowRight size={15}/></Link></div></div>
      </>}
+     {area==="sculptors"&&<SculptorWorkspace account={account} artists={artists}/>}
      {area==="collection"&&<>
        <span className="section-kicker">MY COLLECTION</span><h2>All the things you love.</h2><p className="rbrn-dash-lead">Heart original sculpts, individual materials or the artists who inspire you. Use <strong>Wishlist</strong> for pieces you're considering and <strong>My collection</strong> for pieces you already own. Ownership is self-reported and isn't an order record.</p>
        <div className="rbrn-dash-collection-count"><span><Heart size={15}/> {wishedCount} wishlist</span><span><Package size={15}/> {ownedCount} in your collection</span></div>
