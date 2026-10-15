@@ -1,0 +1,21 @@
+name: Verify live Reborna SEO surfaces
+on:
+  push:
+    branches: [cloudflare-pages]
+    paths:
+      - 'app/**'
+      - 'components/**'
+      - 'lib/**'
+      - 'scripts/verify-live-discovery.py'
+      - '.github/workflows/verify-live-discovery.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-seo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Confirm production Cloudflare Pages serves the current SEO release
+        run: python3 scripts/verify-live-discovery.py
