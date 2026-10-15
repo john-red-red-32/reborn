@@ -457,3 +457,36 @@
 .rbrn-contact-retry:hover{background:#f4e8dd}
 .rbrn-contact-fineprint a,.rbrn-community-feedback.error a{color:#77533d;text-decoration:underline;text-underline-offset:3px}
 .rbrn-contact-retry:focus-visible{outline:2px solid #957259;outline-offset:3px}
+
+
+/* Original sculptor source requests: private, reviewed, never self-publishing. */
+.rbrn-contact-artist-fields{margin:12px 0 20px;padding:23px;border:1px solid #e5d5c6;background:#faf4ed;min-width:0}
+.rbrn-contact-artist-fields legend{padding:0 8px;color:#6a503e;font:600 13px/1.5 "DM Sans",Arial,sans-serif}
+.rbrn-contact-artist-fields legend small{color:#9b8470;font-size:10px;font-weight:400}
+.rbrn-contact-artist-fields .rbrn-form-field{margin-bottom:12px}
+.rbrn-sculptor-workspace h2{font:400 clamp(29px,3vw,39px)/1.3 "Playfair Display",Georgia,serif;color:#5c4535;margin:12px 0}
+.rbrn-sculptor-workspace .rbrn-dash-lead{margin-bottom:22px}
+.rbrn-sculptor-panel{padding:30px 28px;margin:25px 0;background:#fffcf8;border:1px solid #e7dacf}
+.rbrn-sculptor-panel h3{font:400 26px/1.4 "Playfair Display",Georgia,serif;color:#654c3c;margin:0 0 14px}
+.rbrn-sculptor-panel .rbrn-dash-edit-form{margin-top:15px}
+.rbrn-sculptor-form-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.rbrn-sculptor-form-pair label,.rbrn-sculptor-request-list article>label{display:flex;flex-direction:column;gap:7px;color:#675443;font-size:12px}
+.rbrn-sculptor-form-pair input,.rbrn-sculptor-request-list textarea{min-width:0;width:100%;background:#fff;border:1px solid #dbcabc;color:#5a4535;border-radius:0;padding:12px;font:400 12px/1.55 "DM Sans",Arial,sans-serif}
+.rbrn-sculptor-form-pair small{font-size:10px;color:#937d6b}
+.rbrn-sculptor-small{color:#927f70;font:400 11px/1.9 "DM Sans",Arial,sans-serif;margin:11px 0}
+.rbrn-sculptor-small a{color:#745038;text-decoration:underline;text-underline-offset:3px;display:inline-flex;align-items:center;gap:5px}
+.rbrn-sculptor-request-list{display:grid;gap:14px;margin-top:20px}
+.rbrn-sculptor-request-list article{padding:23px;background:#faf4ec;border:1px solid #e4d5c6}
+.rbrn-sculptor-request-list h4{font:400 21px/1.45 "Playfair Display",Georgia,serif;margin:7px 0 10px;color:#604735}
+.rbrn-sculptor-request-list strong{display:block;font-size:11px;color:#745b49;letter-spacing:.02em}
+.rbrn-sculptor-request-list p{font-size:12px;line-height:1.8;color:#8c7666;overflow-wrap:anywhere;margin:10px 0}
+.rbrn-sculptor-review-note{border-left:2px solid #ad917a;padding:10px 12px;background:#fffcf9;display:flex;align-items:start;gap:8px}
+.rbrn-sculptor-review-links{display:flex;flex-wrap:wrap;gap:12px;margin:14px 0}
+.rbrn-sculptor-evidence-link{display:inline-flex;align-items:center;gap:5px;color:#70503a;text-decoration:underline;text-underline-offset:3px;font-size:11px;overflow-wrap:anywhere}
+.rbrn-sculptor-review-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:13px}
+.rbrn-sculptor-review-actions button{min-height:39px;padding:8px 14px;background:#fffdf9;color:#6e5140;border:1px solid #cdb4a1;font:600 11px/1.4 "DM Sans",Arial,sans-serif;cursor:pointer}
+.rbrn-sculptor-review-actions button:hover{background:#f3e9df}
+.rbrn-sculptor-review-actions button:disabled{opacity:.5;cursor:not-allowed}
+.rbrn-sculptor-account-hint{padding:13px 16px;background:#f4ece4;border:1px solid #e6d6c7;display:flex;align-items:start;gap:8px;color:#715744;font-size:12px;line-height:1.9}
+.rbrn-sculptor-account-hint a{color:#785138;text-decoration:underline}
+@media(max-width:690px){.rbrn-sculptor-panel{padding:22px 17px}.rbrn-sculptor-form-pair{grid-template-columns:1fr}.rbrn-contact-artist-fields{padding:18px 12px}}
