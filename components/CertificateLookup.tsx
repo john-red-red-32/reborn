@@ -8,6 +8,7 @@ type CertificateResult={
  sculptName?:string;editionNote?:string;officialSculptUrl?:string;issuedAt?:string;revokedAt?:string|null;
  previousChecks?:number;totalChecks?:number;firstCheckedAt?:string|null;lastCheckedAt?:string|null;
  repeatedChecksIn24h?:number;reviewSuggested?:boolean;message?:string;
+ productionRun?:number;certificateNumber?:number;originallyDeclaredSize?:number|null;currentlyDeclaredSize?:number|null;editionKind?:string;kitUrl?:string|null;
 };
 const dateLabel=(s?:string|null)=>s?new Date(s.includes("T")?s.replace(" ","T")+"Z":s.replace(" ","T")+"Z").toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"}):"Not previously checked";
 export default function CertificateLookup(){
@@ -38,14 +39,18 @@ export default function CertificateLookup(){
    <dl className="rbrn-cert-result-details">
     <div><dt>Original sculptor</dt><dd><Link href={"/artists/"+data.artistSlug+"/"}>{data.artistName}</Link></dd></div>
     <div><dt>Original sculpt</dt><dd>{data.sculptName}</dd></div>
-    {data.editionNote&&<div><dt>Edition details supplied by sculptor</dt><dd>{data.editionNote}</dd></div>}
+    {data.editionNote&&<div><dt>Edition</dt><dd>{data.editionNote}</dd></div>}
+    {data.productionRun&&<div><dt>Production run</dt><dd>Run {data.productionRun}</dd></div>}
+    {data.certificateNumber&&<div><dt>Certificate number</dt><dd>{data.certificateNumber.toLocaleString("en-GB")}{data.editionKind==="limited"&&data.currentlyDeclaredSize?" / "+data.currentlyDeclaredSize.toLocaleString("en-GB"):""}</dd></div>}
+    {data.originallyDeclaredSize&&data.currentlyDeclaredSize&&data.currentlyDeclaredSize>data.originallyDeclaredSize&&<div><dt>Edition declaration history</dt><dd>Originally {data.originallyDeclaredSize.toLocaleString("en-GB")}; later expanded to {data.currentlyDeclaredSize.toLocaleString("en-GB")} after review</dd></div>}
+    {data.kitUrl&&<div><dt>Original sculpt catalogue</dt><dd><Link href={data.kitUrl}>View the Reborna kit page ↗</Link></dd></div>}
     <div><dt>Code issued</dt><dd>{dateLabel(data.issuedAt)}</dd></div>
     <div><dt>Checks before yours</dt><dd>{data.previousChecks?.toLocaleString("en-GB")??"0"}</dd></div>
     <div><dt>First previous check</dt><dd>{dateLabel(data.firstCheckedAt)}</dd></div>
     <div><dt>Last previous check</dt><dd>{dateLabel(data.lastCheckedAt)}</dd></div>
    </dl>
    {data.reviewSuggested&&<p className="rbrn-cert-review-warning"><History size={17}/> This code has been checked multiple times. That can happen legitimately, but you may want to ask the sculptor to investigate possible certificate reuse. Multiple checks alone do not establish counterfeiting.</p>}
-   <p className="rbrn-cert-source"><a href={data.officialSculptUrl} target="_blank" rel="noopener noreferrer nofollow">Review the sculptor-supplied official source ↗</a></p>
+   {data.officialSculptUrl&&<p className="rbrn-cert-source"><a href={data.officialSculptUrl} target="_blank" rel="noopener noreferrer nofollow">Review the sculptor-supplied official source ↗</a></p>}
    <p className="rbrn-cert-physical-note"><ShieldCheck size={17}/> {data.message}</p>
   </section>}
   <div className="verify-how">
