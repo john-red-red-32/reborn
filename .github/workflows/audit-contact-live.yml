@@ -5,7 +5,9 @@ on:
     paths:
       - '.github/workflows/audit-contact-live.yml'
       - 'app/contact/**'
+      - 'app/for-sculptors/**'
       - 'components/ContactForm.tsx'
+      - 'components/TurnstileChallenge.tsx'
       - 'components/SiteFooter.tsx'
       - 'functions/api/contact.js'
   workflow_dispatch:
@@ -17,10 +19,19 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
-      - name: Verify deployed contact page, global footer and protected endpoint
+      - name: Test contact Function validation and transactional delivery handling (mocked)
+        run: node --test tests/contact-handler.test.mjs
+      - name: Verify deployed contact page, artist invitation and protected endpoint
         run: |
           python3 - <<'PY'
           import json,time,urllib.request,urllib.error
+          from html.parser import HTMLParser
+          class Buttons(HTMLParser):
+            def __init__(self):super().__init__();self.submits=[]
+            def handle_starttag(self,tag,attrs):
+              if tag=="button":
+                a=dict(attrs)
+                if a.get("type")=="submit":self.submits.append(a)
           base='https://reborna.co'
           def read(path,method='GET',payload=None):
             headers={'User-Agent':'Mozilla/5.0 (Reborna contact audit)','Accept':'text/html,application/json'}
@@ -39,6 +50,10 @@ jobs:
               if status!=200 or 'href="/contact/"' not in home: errors.append(('home footer',status))
               status,contact=read('/contact/')
               if status!=200 or 'drop us a little note' not in contact.lower() or 'get in touch' not in contact.lower(): errors.append(('contact page',status))
+              buttons=Buttons();buttons.feed(contact)
+              if not buttons.submits or any('disabled' in a for a in buttons.submits):errors.append(('submit disabled before Turnstile verification',buttons.submits))
+              status,invite=read('/for-sculptors/')
+              if status!=200 or 'your work deserves to be seen' not in invite.lower() or 'for the artists behind the originals' not in invite.lower():errors.append(('sculptor invitation',status))
               status,api=read('/api/contact')
               if status!=405 or 'Method not allowed' not in api: errors.append(('contact endpoint',status))
               status,community=read('/api/community/status')
