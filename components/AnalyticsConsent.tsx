@@ -96,9 +96,9 @@ export default function AnalyticsConsent() {
   if (!ready || !open) return null;
   return <section className={styles.banner} role="region" aria-label="Analytics privacy choices">
     <div className={styles.copy}>
-      <span className={styles.eyebrow}>A NOTE ABOUT PRIVACY</span>
-      <h2>May we use analytics?</h2>
-      <p>We'd love to understand how visitors discover Reborna. With your permission, Google Analytics uses cookies to measure visits and site activity. It's optional; rejecting won't affect your experience. <Link href="/cookies/">Learn more</Link>.</p>
+      <span className={styles.eyebrow}>YOUR PRIVACY, YOUR CHOICE</span>
+      <h2>Who doesn&apos;t love cookies?</h2>
+      <p>We use optional Google Analytics cookies to understand how people find and explore Reborna, helping us make the experience even better. You can accept or reject them — Reborna works just as beautifully either way. <Link href="/cookies/">Learn more</Link>.</p>
     </div>
     <div className={styles.actions}>
       <button type="button" className={styles.reject} onClick={() => decide("rejected")}>Reject analytics</button>
