@@ -109,3 +109,31 @@ CREATE TABLE IF NOT EXISTS production_audit (
  created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
 CREATE INDEX IF NOT EXISTS production_audit_recent ON production_audit(created_at DESC);
+
+-- Requests for correcting previously-issued sculpt information or linking
+-- to an existing editorially researched public kit page. Nothing auto-publishes.
+CREATE TABLE IF NOT EXISTS production_corrections (
+ id TEXT PRIMARY KEY,
+ sculpt_id TEXT NOT NULL REFERENCES production_sculpts(id),
+ proposed_name TEXT NOT NULL,
+ proposed_official_url TEXT,
+ justification TEXT NOT NULL,
+ state TEXT NOT NULL DEFAULT 'pending' CHECK(state IN ('pending','approved','rejected')),
+ reviewed_by TEXT REFERENCES users(id),
+ review_note TEXT,
+ created_at TEXT NOT NULL DEFAULT (datetime('now')),
+ reviewed_at TEXT
+);
+CREATE INDEX IF NOT EXISTS production_corrections_state ON production_corrections(state,created_at);
+CREATE TABLE IF NOT EXISTS production_link_proposals (
+ id TEXT PRIMARY KEY,
+ sculpt_id TEXT NOT NULL REFERENCES production_sculpts(id),
+ proposed_kit_slug TEXT NOT NULL,
+ source_note TEXT NOT NULL,
+ state TEXT NOT NULL DEFAULT 'pending' CHECK(state IN ('pending','linked','rejected')),
+ reviewed_by TEXT REFERENCES users(id),
+ review_note TEXT,
+ created_at TEXT NOT NULL DEFAULT (datetime('now')),
+ reviewed_at TEXT
+);
+CREATE INDEX IF NOT EXISTS production_link_proposals_state ON production_link_proposals(state,created_at);
