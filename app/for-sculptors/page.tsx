@@ -68,9 +68,9 @@ export default function ForSculptors(){
    <div className={styles.protectionGrid}>
     <article><ShieldCheck size={27} strokeWidth={1.3}/><h3>Source-led discovery</h3><p>We trace designs to credited sculptors and their published sources. A social profile or member role alone doesn't establish ownership or guarantee inclusion.</p></article>
     <article><BookOpenText size={27} strokeWidth={1.3}/><h3>Questions welcome</h3><p>Artists and collectors can report suspected copies, incorrect credits or uncertain origins. Every concern deserves evidence and fair human review.</p></article>
-    <article><FileCheck2 size={27} strokeWidth={1.3}/><h3>Future certificate tools</h3><p>We envisage verified sculptors requesting unique codes for their certificates, with a way for collectors to review code histories. This service isn't available yet; a code alone cannot authenticate a physical kit.</p></article>
+    <article><FileCheck2 size={27} strokeWidth={1.3}/><h3>Future certificate tools</h3><p>Our free certificate pilot now lets independently approved sculptors request unique codes for certificates; collectors can check code issuance and lookup history. A code alone cannot authenticate a physical kit.</p></article>
    </div>
-   <div className={styles.protectionNote}><strong>Available now:</strong> source-backed research, profile corrections and reviewed submissions. <strong>In development:</strong> verified sculptor access, certificate-code issuance and further counterfeit protections. Reborna does not currently issue authenticity certificates or guarantees.</div>
+   <div className={styles.protectionNote}><strong>Available now:</strong> source-backed research, reviewed artist submissions, collector certificate lookup and free code issuance for independently authorised original sculptors. <strong>Still in development:</strong> wider artist onboarding, more anti-counterfeit signals and a possible paid code service. A recorded code is never a guarantee that the physical product is original.</div>
   </section>
   <section className={styles.process} aria-labelledby="contribute-heading">
    <span className={styles.kicker}>HELP US GET THE DETAILS RIGHT</span>
@@ -92,7 +92,7 @@ export default function ForSculptors(){
   <section className={styles.closing}>
    <HeartHandshake size={31} strokeWidth={1.1} aria-hidden="true"/>
    <h2>Made for the artists behind the art<span className={styles.period}>.</span></h2>
-   <p>No paid placement, artist-verification badges or certificate-code service is currently offered here. We're beginning with something simpler: careful documentation, useful discovery and open dialogue.</p>
+   <p>We're beginning with careful documentation, useful discovery, reviewed artist onboarding and a free certificate-code pilot for independently approved sculptors. We do not offer authenticity guarantees, public paid placement, or marketplace checkout.</p>
    <Link className={styles.primary} href="/contact/?category=artist&intent=introduce">Say hello to Reborna <ArrowUpRight size={16} aria-hidden="true"/></Link>
    <small>Prefer email? <a href="mailto:hello@reborna.co">hello@reborna.co</a></small>
   </section>
