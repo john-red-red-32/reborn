@@ -177,6 +177,13 @@ test("only an independently verified artist can create a new private sculpt",asy
  const valid=harness({approved:true});
  assert.equal((await valid.call("production-sculpt-create",{artistSlug:"original-sculptor",sculptName:"Sample original"})).status,201);
 });
+test("founder cannot approve a stale quantity changed while they were reviewing it",async()=>{
+ const h=harness({moderator:true});
+ h.run.status="pending";
+ const base={runId:originalRun.id,decision:"approved",note:"Independently checked the original sculptor's production declaration and source.",expectedSerialStart:1};
+ assert.equal((await h.call("production-run-review",{...base,expectedQuantity:500})).status,409);
+ assert.equal((await h.call("production-run-review",{...base,expectedQuantity:80})).status,200);
+});
 test("founder cannot approve an edition run without a substantive review note",async()=>{
  const h=harness({moderator:true});
  assert.equal((await h.call("production-run-review",{runId:originalRun.id,decision:"approved",note:"Looks fine"})).status,400);
