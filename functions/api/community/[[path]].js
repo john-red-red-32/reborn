@@ -1,4 +1,5 @@
 import {generateCertificateCode,normaliseCertificateCode} from "../../../lib/certificate-code.mjs";
+import {handleProduction,isProductionPath,lookupProductionCode} from "./production.mjs";
 import {publicNameError} from '../../../lib/community-name-safety.mjs';
 
 /* Reborna Community API — Cloudflare Pages Functions + isolated D1.
@@ -219,6 +220,7 @@ export async function onRequest(context){
  if(method==='POST'&&!originValid(request))return failure('Invalid request origin.',403);
  try{
  if(method==='GET'&&path==='status')return response({available:true,registrationOpen:emailReady(env)&&!!(env.TURNSTILE_SITE_KEY&&env.TURNSTILE_SECRET_KEY),turnstileSiteKey:env.TURNSTILE_SITE_KEY||null,moderation:'review-before-publication',aiModerationReady:!!(env.COMMUNITY_SAFETY||env.AI),mediaUploads:false,launch:'editorial'});
+ if(method==='GET'&&path==='production-capabilities')return response({available:!!env.CERTIFICATE_EXPORT_KEY,exactQuantityMin:1,exactQuantityMax:5000,founderApproval:true,verifiedEmailRequired:true,secretExportsEncrypted:true,existingProductionRecordsNeverAutoLinked:true,pricePerCodeMinor:0,currency:'USD'});
  if(method==='POST'&&path==='certificate-lookup'){
   // Never put the submitted code in a URL, cookie, analytics event or log.
   if(!(await throttle(db,request,'certificate-lookup',35,3600)))return failure('Too many code checks from this connection. Please try again later.',429);
@@ -226,7 +228,10 @@ export async function onRequest(context){
   if(!code)return failure('Enter a concealed Reborna code in the format XXXX-XXXX-XXXX.');
   const codeHash=await sha('certificate-v2:'+code);
   const cert=await db.prepare("SELECT c.id,c.state AS code_state,c.lookup_count,c.first_checked_at,c.last_checked_at,c.revoked_at,b.artist_slug,b.artist_name,b.sculpt_name,b.edition_note,b.official_sculpt_url,b.issued_at,v.state AS issuer_state FROM certificate_codes c JOIN certificate_batches b ON b.id=c.batch_id JOIN verified_sculptor_issuers v ON v.user_id=b.issuer_user_id AND v.artist_slug=b.artist_slug WHERE c.code_hash=?").bind(codeHash).first();
-  if(!cert)return response({found:false,message:'No Reborna-issued certificate record matches that code. Check the characters and contact the original sculptor.'});
+  if(!cert){
+   const bulk=await lookupProductionCode({db,codeHash,sha});
+   return response(bulk||{found:false,message:'No Reborna-issued certificate record matches that code. Check the characters and contact the original sculptor.'});
+  }
   await db.batch([
     db.prepare("UPDATE certificate_codes SET lookup_count=lookup_count+1,first_checked_at=COALESCE(first_checked_at,datetime('now')),last_checked_at=datetime('now') WHERE id=?").bind(cert.id),
     db.prepare("INSERT INTO certificate_lookup_events(id,certificate_id) VALUES(?,?)").bind(crypto.randomUUID(),cert.id)
@@ -351,6 +356,7 @@ export async function onRequest(context){
  }
  const user=await getUser(db,request);
  if(!user)return failure('Please sign in to continue.',401);
+ if(isProductionPath(path))return handleProduction({path,request,env,db,user,sha,readJson,sendEmail,emailReady,isModerator,throttle,context});
 
  // Sculptor contribution intake is private. Self-described role is only a UI gate;
  // it never verifies authorship, establishes profile ownership, or publishes kits.
@@ -420,6 +426,11 @@ async function certificateRequestHash(d){
  return sha('reborna-certificate-request-v2:'+JSON.stringify([d.artistSlug,d.sculptName,d.editionNote,d.sourceUrl,d.quantity]));
 }
 
+ // Retire the original one-off 25-code generator. New issuance requires founder-
+ // reviewed production runs, email step-up and resilient encrypted bulk exports.
+ if(method==='POST'&&(path==='certificate-prepare'||path==='certificate-issue')){
+  return failure('Use the Production & Editions studio to request a founder-reviewed production run. Creating a second batch for reprints is not permitted.',409);
+ }
  // Certificate pilot: only independently authorised original sculptors may issue.
  if(method==='GET'&&path==='certificate-studio'){
   const issuers=(await db.prepare("SELECT artist_slug AS artistSlug,artist_name AS artistName,official_source_url AS officialSourceUrl,state,authorised_at AS authorisedAt FROM verified_sculptor_issuers WHERE user_id=? ORDER BY artist_name").bind(user.id).all()).results||[];

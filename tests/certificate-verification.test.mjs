@@ -12,7 +12,7 @@ test("the concealed code uses 12 uniformly random base32 characters and three co
   assert.equal(normaliseCertificateCode(code),code);
   assert.equal(normaliseCertificateCode(code.toLowerCase().replaceAll("-"," ")),code);
  }
- for(const invalid of ["","RB-ABCD","RB-AAAAAA-AAAAAA-AAAAAA-AAAAAA","<script>","AAAA-AAAA-AAAA-I","AAAA-AAAA-AAAA-0","AAAA-AAAA-AAAA-1"])
+ for(const invalid of ["","RB-ABCD","SAMPLE-AAAA-AAAA-AAAA","RB-AAAAAA-AAAAAA-AAAAAA-AAAAAA","<script>","AAAA-AAAA-AAAA-I","AAAA-AAAA-AAAA-0","AAAA-AAAA-AAAA-1"])
   assert.equal(normaliseCertificateCode(invalid),null);
  assert.equal(32**12,2**60);
 });
@@ -123,69 +123,19 @@ test("rate-limited lookup resists bulk guessing",async()=>{
  finally{h.restore()}
 });
 
-test("artist who merely self-identifies as a sculptor cannot get an email approval or issue codes",async()=>{
- const h=harness({loggedIn:true,authorised:false});
+test("retired 25-code endpoint cannot bypass reviewed production runs or email issuance",async()=>{
+ const h=harness({loggedIn:true,authorised:true});
  try{
-  assert.equal((await h.call("certificate-prepare",h.input)).status,403);
+  const payload={...h.input,confirmedNewIssue:true};
+  const prepare=await h.call("certificate-prepare",payload);
+  const issue=await h.call("certificate-issue",{...payload,approvalId:"123e4567-e89b-12d3-a456-426614174000",emailCode:"12345678"});
+  assert.equal(prepare.status,409);
+  assert.equal(issue.status,409);
+  assert.match(prepare.body.error,/Production & Editions/i);
   assert.equal(h.mail.length,0);
-  assert.equal((await h.call("certificate-issue",h.input)).status,400);
   assert.ok(!h.writes.some(x=>x.sql.includes("INSERT INTO certificate_codes")));
  }finally{h.restore()}
 });
-test("clear duplication warning acknowledgment is mandatory before email step-up",async()=>{
- const h=harness({loggedIn:true,authorised:true});
- try{
-  assert.equal((await h.call("certificate-prepare",{...h.input,confirmedNewIssue:false})).status,400);
-  assert.equal(h.mail.length,0);
- }finally{h.restore()}
-});
-test("email approval is short-lived, bound to exact issuance details, and plaintext secrets are never emailed",async()=>{
- const h=harness({loggedIn:true,authorised:true});
- try{
-  const requested=await h.call("certificate-prepare",h.input);
-  assert.equal(requested.status,200);
-  assert.equal(requested.body.expiresInMinutes,10);
-  assert.equal(h.mail.length,1);
-  assert.equal(h.mail[0].to[0],"artist@example.org");
-  const pin=h.mail[0].html.match(/one-time approval code: ([0-9]{8})/i)?.[1];
-  assert.match(pin,/^[0-9]{8}$/);
-  assert.ok(!JSON.stringify(h.writes).includes(pin));
-  const changed=await h.call("certificate-issue",{...h.input,quantity:5,approvalId:requested.body.approvalId,emailCode:pin});
-  assert.equal(changed.status,403,"email approval must bind to exact quantity");
-  const wrong=await h.call("certificate-issue",{...h.input,approvalId:requested.body.approvalId,emailCode:"99999999"===pin?"88888888":"99999999"});
-  assert.equal(wrong.status,403,"incorrect email code must not issue codes");
-  const issued=await h.call("certificate-issue",{...h.input,approvalId:requested.body.approvalId,emailCode:pin});
-  assert.equal(issued.status,201);
-  assert.equal(issued.body.quantity,4);
-  assert.equal(issued.body.pricePerCodeMinor,0);
-  assert.equal(issued.body.codes.length,4);
-  for(const code of issued.body.codes)assert.match(code,CODE_FORMAT);
-  assert.equal(new Set(issued.body.codes).size,4);
-  assert.equal(h.writes.filter(x=>x.sql.includes("INSERT INTO certificate_codes")).length,4);
-  const stored=JSON.stringify(h.writes),emails=JSON.stringify(h.mail);
-  for(const code of issued.body.codes){
-   assert.ok(!stored.includes(code),"certificate code leaked into D1");
-   assert.ok(!emails.includes(code),"certificate code leaked into mail provider");
-  }
-  assert.equal(h.mail.length,2,"a separate email receipt, WITHOUT codes, must be requested");
-  assert.ok(h.mail[1].html.includes("were presented ONCE"));
-  assert.ok(h.writes.some(x=>x.sql.includes("certificate_audit")));
-  const reuse=await h.call("certificate-issue",{...h.input,approvalId:requested.body.approvalId,emailCode:pin});
-  assert.equal(reuse.status,403,"one-time approval must not be reusable");
-  const retry=await h.call("certificate-prepare",h.input);
-  assert.equal(retry.status,429,"one completed batch per rolling 24 hours");
- }finally{h.restore()}
-});
-test("email failure does not mint secret certificate codes or leave usable approval",async()=>{
- const h=harness({loggedIn:true,authorised:true,mailFails:true});
- try{
-  const attempted=await h.call("certificate-prepare",h.input);
-  assert.equal(attempted.status,503);
-  assert.ok(!h.getApproval());
-  assert.equal(h.writes.filter(x=>x.sql.includes("INSERT INTO certificate_codes")).length,0);
- }finally{h.restore()}
-});
-
 test("only independently verified original artist with founder review may get issuance permission",async()=>{
  const payload={claimId:"123e4567-e89b-12d3-a456-426614174000",officialSourceUrl:"https://artist.example/original-portfolio",reviewNote:"I independently contacted the original artist through their established studio website and confirmed ownership of the registered account.",confirmedOfficialChannel:true};
  const outsider=harness({loggedIn:true,moderator:false});
