@@ -597,3 +597,10 @@
 .rbrn-production-pending-edit>summary{font:600 11px/1.5 Arial,sans-serif;color:#805a41;cursor:pointer}
 .rbrn-production-pending-edit form{padding:12px 0 0;background:transparent;border:0}
 .rbrn-production-pending-edit .rbrn-production-action{justify-self:start}
+
+
+.rbrn-production-sample{background:#f6f0e8;border:1px solid #e2d1c1;padding:19px;margin:23px 0 28px}
+.rbrn-production-sample h4{margin:8px 0 10px}
+.rbrn-production-sample>div{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end}
+.rbrn-production-sample label{font:600 11px/1.6 Arial,sans-serif;color:#735843;display:grid;gap:8px}
+.rbrn-production-sample select{width:145px}
