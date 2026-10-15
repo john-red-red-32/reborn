@@ -10,7 +10,7 @@ export default function KitPhotoGallery({kitName,artistName,photos,sourceUrl}:{k
  const active=photos[Math.min(selected,photos.length-1)];
  return <div className="kit-photo-gallery">
    <figure className="kit-main-photo">
-    <img src={active.url} alt={`${kitName} original reborn doll sculpt${artistName?" by "+artistName:""} — source-attributed photograph ${selected+1} of ${photos.length}`} loading="eager" decoding="async"/>
+    <img src={active.url} alt={`${kitName} design${artistName?" by sculptor "+artistName:""} — photograph credited to ${active.credit} (${selected+1} of ${photos.length})`} loading="eager" fetchPriority={selected===0?"high":"auto"} decoding="async"/>
     <figcaption>PHOTO · {active.credit.split(" — ")[0]} · {selected+1}/{photos.length}</figcaption>
    </figure>
    {photos.length>1&&<div className="kit-photo-thumbnails" aria-label={`Browse photographs of ${kitName}`}>{photos.map((p,i)=><button type="button" key={p.url} className={i===selected?"kit-photo-thumb selected":"kit-photo-thumb"} aria-label={`Show image ${i+1} of ${kitName}`} aria-pressed={i===selected} onClick={()=>setSelected(i)}><img src={p.url} alt="" loading="lazy" decoding="async"/></button>)}</div>}
