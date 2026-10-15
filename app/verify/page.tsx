@@ -15,10 +15,10 @@ export default function VerifyPage(){
    <div className="section-kicker">ORIGINAL SCULPTS · BETTER PROVENANCE</div>
    <ShieldCheck size={39} strokeWidth={1.2}/>
    <h1>Verify the original<span className="period">.</span></h1>
-   <p>Have a Reborna certificate code? Check its issuing sculptor and historical usage. This service helps trace artist-issued certificates, alongside independent checks of the physical kit and its seller.</p>
+   <p>Have a concealed Reborna certificate code? Check its issuing sculptor and historical usage. This service helps trace artist-issued certificates, alongside independent checks of the physical kit and its seller.</p>
   </section>
   <CertificateLookup/>
-  <p className="verify-disclaimer">A genuine issuance record does not prove the physical kit in front of you is original: genuine codes and certificates can be copied. Reborna records certificate issuance only for authorised sculptor accounts. It does not guarantee individual items, transactions or retailers.</p>
+  <p className="verify-disclaimer">The short certificate code should remain concealed until the owner chooses to reveal it. A genuine issuance record does not prove the physical kit in front of you is original: genuine codes and certificates can be copied. Reborna records certificate issuance only for authorised sculptor accounts. It does not guarantee individual items, transactions or retailers.</p>
   <section className="authenticity-guide" aria-labelledby="verify-checklist-title">
    <div className="section-kicker">BEFORE YOU BUY</div>
    <h2 id="verify-checklist-title">How to research a genuine kit<span className="period">.</span></h2>

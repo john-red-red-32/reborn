@@ -223,8 +223,8 @@ export async function onRequest(context){
   // Never put the submitted code in a URL, cookie, analytics event or log.
   if(!(await throttle(db,request,'certificate-lookup',35,3600)))return failure('Too many code checks from this connection. Please try again later.',429);
   const d=await readJson(request),code=normaliseCertificateCode(d?.code);
-  if(!code)return failure('Enter a Reborna code in the format RB-XXXXXX-XXXXXX-XXXXXX-XXXXXX.');
-  const codeHash=await sha('certificate-v1:'+code);
+  if(!code)return failure('Enter a concealed Reborna code in the format XXXX-XXXX-XXXX.');
+  const codeHash=await sha('certificate-v2:'+code);
   const cert=await db.prepare("SELECT c.id,c.state AS code_state,c.lookup_count,c.first_checked_at,c.last_checked_at,c.revoked_at,b.artist_slug,b.artist_name,b.sculpt_name,b.edition_note,b.official_sculpt_url,b.issued_at,v.state AS issuer_state FROM certificate_codes c JOIN certificate_batches b ON b.id=c.batch_id JOIN verified_sculptor_issuers v ON v.user_id=b.issuer_user_id AND v.artist_slug=b.artist_slug WHERE c.code_hash=?").bind(codeHash).first();
   if(!cert)return response({found:false,message:'No Reborna-issued certificate record matches that code. Check the characters and contact the original sculptor.'});
   await db.batch([
@@ -405,6 +405,21 @@ export async function onRequest(context){
   return response({ok:true,message:'Review state saved. No public catalogue content or identity verification has changed.'});
  }
 
+
+function certificateRequestInputs(d){
+ const artistSlug=clean(d?.artistSlug,95),sculptName=clean(d?.sculptName,125);
+ const editionNote=clean(d?.editionNote,95),quantity=d?.quantity;
+ const sourceUrl=sculptorEvidenceUrl(d?.officialSculptUrl);
+ if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(artistSlug))return {error:'Choose an approved sculptor identity.'};
+ if(sculptName.length<2||sculptName.length>120||editionNote.length>90||!sourceUrl)return {error:'Enter the original sculpt name and its official public source.'};
+ if(!Number.isInteger(quantity)||quantity<1||quantity>25)return {error:'The current pilot supports batches of 1–25 codes. Large production runs will use a separately reviewed bulk workflow.'};
+ if(d?.confirmedNewIssue!==true)return {error:'Confirm that you are requesting genuinely new certificate codes, not reprinting previously issued codes.'};
+ return {artistSlug,sculptName,editionNote,sourceUrl,quantity};
+}
+async function certificateRequestHash(d){
+ return sha('reborna-certificate-request-v2:'+JSON.stringify([d.artistSlug,d.sculptName,d.editionNote,d.sourceUrl,d.quantity]));
+}
+
  // Certificate pilot: only independently authorised original sculptors may issue.
  if(method==='GET'&&path==='certificate-studio'){
   const issuers=(await db.prepare("SELECT artist_slug AS artistSlug,artist_name AS artistName,official_source_url AS officialSourceUrl,state,authorised_at AS authorisedAt FROM verified_sculptor_issuers WHERE user_id=? ORDER BY artist_name").bind(user.id).all()).results||[];
@@ -412,28 +427,66 @@ export async function onRequest(context){
   const codes=(await db.prepare("SELECT c.id,c.batch_id AS batchId,c.hint,c.state,c.lookup_count AS lookupCount,c.first_checked_at AS firstCheckedAt,c.last_checked_at AS lastCheckedAt,c.revoked_at AS revokedAt FROM certificate_codes c JOIN certificate_batches b ON c.batch_id=b.id WHERE b.issuer_user_id=? ORDER BY c.issued_at DESC,c.id DESC LIMIT 350").bind(user.id).all()).results||[];
   return response({issuers,batches,codes,pricing:{currency:'USD',pricePerCodeMinor:0,freePilot:true},canIssue:issuers.some(x=>x.state==='active')});
  }
- if(method==='POST'&&path==='certificate-issue'){
-  if(!(await throttle(db,request,'certificate-issue',8,86400)))return failure('Too many certificate requests today. Please contact Reborna.',429);
-  const d=await readJson(request),artistSlug=clean(d?.artistSlug,95),sculptName=clean(d?.sculptName,125),editionNote=clean(d?.editionNote,95),quantity=d?.quantity;
-  const sourceUrl=sculptorEvidenceUrl(d?.officialSculptUrl);
-  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(artistSlug))return failure('Choose an approved sculptor identity.');
-  if(sculptName.length<2||sculptName.length>120||editionNote.length>90||!sourceUrl)return failure('Enter the original sculpt name and its public official source link.');
-  if(!Number.isInteger(quantity)||quantity<1||quantity>25)return failure('Choose between 1 and 25 codes per request.');
-  const issuer=await db.prepare("SELECT * FROM verified_sculptor_issuers WHERE user_id=? AND artist_slug=? AND state='active'").bind(user.id,artistSlug).first();
+
+ // Email step-up confirmation: only a verified email holder can approve
+ // a specific certificate order. Secret certificate codes are never emailed.
+ if(method==='POST'&&path==='certificate-prepare'){
+  if(!(await throttle(db,request,'certificate-prepare',4,3600)))return failure('Too many certificate confirmation requests. Please try again later.',429);
+  if(!emailReady(env)||!user.email||!user.email_verified_at)return failure('Verified email delivery is required to issue certificates.',503);
+  const d=certificateRequestInputs(await readJson(request));
+  if(d.error)return failure(d.error);
+  const issuer=await db.prepare("SELECT artist_name FROM verified_sculptor_issuers WHERE user_id=? AND artist_slug=? AND state='active'").bind(user.id,d.artistSlug).first();
   if(!issuer)return failure('This artist account has not been authorised for certificate issuance.',403);
-  const issued=await db.prepare("SELECT COALESCE(SUM(quantity),0) AS total FROM certificate_batches WHERE issuer_user_id=? AND issued_at>=datetime('now','-1 day')").bind(user.id).first();
-  if((issued?.total||0)+quantity>100)return failure('The free pilot permits up to 100 certificate codes per day per sculptor.',429);
-  // Raw codes live ONLY in this one-time response. Only hashes and last-4 hints
-  // are persisted, so full codes cannot be recovered from an artist dashboard.
-  const records=Array.from({length:quantity},()=>({id:crypto.randomUUID(),code:generateCertificateCode()}));
+  const used=await db.prepare("SELECT COUNT(*) AS total FROM certificate_batches WHERE issuer_user_id=? AND issued_at>=datetime('now','-1 day')").bind(user.id).first();
+  if((used?.total||0)>=1)return failure('Only one completed real certificate batch is permitted per rolling 24 hours during the pilot. Reprint existing codes instead of generating replacements.',429);
+  // Invalidate previous approval requests for this account, even if the
+  // previous email was already sent, to prevent stale approvals being reused.
+  await db.prepare("DELETE FROM certificate_issue_approvals WHERE user_id=? OR expires_at<datetime('now')").bind(user.id).run();
+  const approvalId=crypto.randomUUID();
+  const pin=String(crypto.getRandomValues(new Uint32Array(1))[0]%100000000).padStart(8,'0');
+  const approvalHash=await sha('reborna-certificate-email-v1:'+approvalId+':'+pin);
+  const requestHash=await certificateRequestHash(d);
+  await db.prepare("INSERT INTO certificate_issue_approvals(id,user_id,artist_slug,request_hash,approval_hash) VALUES(?,?,?,?,?)").bind(approvalId,user.id,d.artistSlug,requestHash,approvalHash).run();
+  const emailBody='<p>You requested '+d.quantity+' new Reborna certificate code(s) for '+issuer.artist_name.replace(/[&<>"']/g,'')+' / '+d.sculptName.replace(/[&<>"']/g,'')+'.</p>'
+   +'<p><strong>Your one-time approval code: '+pin+'</strong></p>'
+   +'<p>Enter this approval code in your signed-in Reborna dashboard within 10 minutes. Do not share it. If you did not request this, contact hello@reborna.co; do not approve the request.</p>'
+   +'<p>Reborna does not email the actual secret certificate codes. They must be downloaded securely after approval.</p>';
+  try{await sendEmail(env,user.email,'Confirm your Reborna certificate request',emailBody)}
+  catch(e){await db.prepare("DELETE FROM certificate_issue_approvals WHERE id=? AND user_id=?").bind(approvalId,user.id).run();return failure('We could not deliver the confirmation email. No certificate codes were generated. Please try again.',503)}
+  return response({ok:true,approvalId,expiresInMinutes:10,message:'A one-time approval code has been sent to your verified email address. Please check your inbox and spam folder.'});
+ }
+ if(method==='POST'&&path==='certificate-issue'){
+  if(!(await throttle(db,request,'certificate-issue',10,86400)))return failure('Too many certificate issuance attempts today. Please try again later.',429);
+  const input=await readJson(request),d=certificateRequestInputs(input);
+  if(d.error)return failure(d.error);
+  const approvalId=clean(input?.approvalId,60),emailCode=clean(input?.emailCode,12);
+  if(!/^[0-9a-f-]{36}$/i.test(approvalId)||!/^[0-9]{8}$/.test(emailCode))return failure('Enter the eight-digit confirmation code sent to your verified email.',400);
+  const approvalHash=await sha('reborna-certificate-email-v1:'+approvalId+':'+emailCode);
+  const requestHash=await certificateRequestHash(d);
+  const approval=await db.prepare("UPDATE certificate_issue_approvals SET used_at=datetime('now') WHERE id=? AND user_id=? AND artist_slug=? AND approval_hash=? AND request_hash=? AND used_at IS NULL AND expires_at>datetime('now') AND attempts<5 RETURNING id").bind(approvalId,user.id,d.artistSlug,approvalHash,requestHash).first();
+  if(!approval){
+   await db.prepare("UPDATE certificate_issue_approvals SET attempts=attempts+1 WHERE id=? AND user_id=? AND used_at IS NULL AND attempts<5").bind(approvalId,user.id).run();
+   return failure('Approval code invalid, expired or already used. Please check your email or request a new code.',403);
+  }
+  // Check issuer again AFTER step-up: access may have been suspended between emails.
+  const issuer=await db.prepare("SELECT * FROM verified_sculptor_issuers WHERE user_id=? AND artist_slug=? AND state='active'").bind(user.id,d.artistSlug).first();
+  if(!issuer)return failure('This sculptor no longer has permission to issue certificate codes.',403);
+  const used=await db.prepare("SELECT COUNT(*) AS total FROM certificate_batches WHERE issuer_user_id=? AND issued_at>=datetime('now','-1 day')").bind(user.id).first();
+  if((used?.total||0)>=1)return failure('A batch has already been issued in the last 24 hours. Reprint the previously downloaded codes instead.',429);
+  // A one-time HTTPS response contains the full codes. Only hashes persist.
+  const records=Array.from({length:d.quantity},()=>({id:crypto.randomUUID(),code:generateCertificateCode()}));
   const batchId=crypto.randomUUID();
   const commands=[
-    db.prepare("INSERT INTO certificate_batches(id,issuer_user_id,artist_slug,artist_name,sculpt_name,edition_note,official_sculpt_url,quantity,price_per_code_minor,currency) VALUES(?,?,?,?,?,?,?,?,0,'USD')").bind(batchId,user.id,artistSlug,issuer.artist_name,sculptName,editionNote,sourceUrl,quantity),
-    ...(await Promise.all(records.map(async row=>db.prepare("INSERT INTO certificate_codes(id,batch_id,code_hash,hint) VALUES(?,?,?,?)").bind(row.id,batchId,await sha('certificate-v1:'+row.code),row.code.slice(-4))))),
-    db.prepare("INSERT INTO certificate_audit(id,actor_id,action,artist_slug,batch_id,note) VALUES(?,?,'issue_batch',?,?,?)").bind(crypto.randomUUID(),user.id,artistSlug,batchId,'Free pilot: '+quantity+' code(s) for '+sculptName)
+   db.prepare("INSERT INTO certificate_batches(id,issuer_user_id,artist_slug,artist_name,sculpt_name,edition_note,official_sculpt_url,quantity,price_per_code_minor,currency) VALUES(?,?,?,?,?,?,?,?,0,'USD')").bind(batchId,user.id,d.artistSlug,issuer.artist_name,d.sculptName,d.editionNote,d.sourceUrl,d.quantity),
+   ...(await Promise.all(records.map(async row=>db.prepare("INSERT INTO certificate_codes(id,batch_id,code_hash,hint) VALUES(?,?,?,?)").bind(row.id,batchId,await sha('certificate-v2:'+row.code),row.code.slice(-4))))),
+   db.prepare("INSERT INTO certificate_audit(id,actor_id,action,artist_slug,batch_id,note) VALUES(?,?,'issue_batch',?,?,?)").bind(crypto.randomUUID(),user.id,d.artistSlug,batchId,'Email-approved free pilot: '+d.quantity+' code(s) for '+d.sculptName)
   ];
   await db.batch(commands);
-  return response({ok:true,batchId,artistName:issuer.artist_name,sculptName,quantity,pricePerCodeMinor:0,currency:'USD',codes:records.map(x=>x.code),message:'These codes are shown only now. Download and store them securely; Reborna does not retain their plaintext.'},201);
+  const emailBody='<p>Your Reborna certificate request was completed.</p><p>Original sculpt: '+d.sculptName.replace(/[&<>"']/g,'')+'</p><p>New certificates: '+d.quantity+'</p>'
+   +'<p>The secret codes were presented ONCE for secure CSV download in your Reborna dashboard. They are not attached to this email or recoverable from the registry.</p>'
+   +'<p>If you did not approve this issuance, contact hello@reborna.co immediately to investigate and revoke affected codes.</p>';
+  if(typeof context.waitUntil==='function')context.waitUntil(sendEmail(env,user.email,'Reborna certificate codes issued',emailBody).catch(e=>console.error('Certificate issuance notification unavailable',String(e).slice(0,90))));
+  return response({ok:true,batchId,artistName:issuer.artist_name,sculptName:d.sculptName,quantity:d.quantity,pricePerCodeMinor:0,currency:'USD',codes:records.map(x=>x.code),message:'Your codes are shown only now. Download and protect the CSV; the confirmation email contains no secret certificate codes.'},201);
  }
  if(method==='POST'&&path==='certificate-revoke'){
   const d=await readJson(request),id=clean(d?.id,80),reason=clean(d?.reason,300);

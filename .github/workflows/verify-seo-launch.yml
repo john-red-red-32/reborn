@@ -50,12 +50,15 @@ jobs:
           from pathlib import Path
           d=sqlite3.connect(':memory:')
           d.execute('PRAGMA foreign_keys=ON')
-          for path in ('db/community-schema.sql','db/community-moderation-v2.sql','db/contact-enquiries.sql','db/sculptor-intake-v1.sql','db/certificate-verification-v1.sql'):
+          for path in ('db/community-schema.sql','db/community-moderation-v2.sql','db/contact-enquiries.sql','db/sculptor-intake-v1.sql','db/certificate-verification-v1.sql','db/certificate-email-approval-v2.sql'):
             d.executescript(Path(path).read_text())
-          for table in ('verified_sculptor_issuers','certificate_batches','certificate_codes','certificate_lookup_events','certificate_audit'):
+          for table in ('verified_sculptor_issuers','certificate_batches','certificate_codes','certificate_lookup_events','certificate_audit','certificate_issue_approvals'):
             assert d.execute("SELECT name FROM sqlite_master WHERE type='table' AND name=?",(table,)).fetchone(),table
           columns=[x[1] for x in d.execute("PRAGMA table_info(certificate_codes)")]
           assert 'code_hash' in columns and 'code' not in columns
+          challenge_columns=[x[1] for x in d.execute("PRAGMA table_info(certificate_issue_approvals)")]
+          assert 'approval_hash' in challenge_columns and 'approval_code' not in challenge_columns
+          assert 'expires_at' in challenge_columns and 'used_at' in challenge_columns
           d.execute("INSERT INTO users(id,email,handle,display_name,is_editorial,email_verified_at) VALUES('pilot-user',NULL,'pilot_user','Pilot User',1,datetime('now'))")
           d.execute("INSERT INTO sculptor_requests(id,member_id,kind,artist_name,state) VALUES('pilot-claim','pilot-user','claim_profile','Pilot Sculptor','closed')")
           d.execute("INSERT INTO verified_sculptor_issuers(user_id,artist_slug,artist_name,official_source_url,claim_request_id,authorised_by,authorisation_note) VALUES('pilot-user','pilot-sculptor','Pilot Sculptor','https://example.org/artist','pilot-claim','pilot-user','CI sample only')")
