@@ -11,6 +11,10 @@ on:
       - 'app/artists/**'
       - 'app/kits/**'
       - 'app/materials/**'
+      - 'app/guides/**'
+      - 'components/KitPhotoGallery.tsx'
+      - 'scripts/verify-live-discovery.py'
+      - 'lib/cassie-profile.ts'
   workflow_dispatch:
 permissions:
   contents: read
@@ -72,3 +76,6 @@ jobs:
             time.sleep(8)
           else:raise SystemExit('Live SEO audit could not confirm production readiness')
           PY
+      - uses: actions/checkout@v4
+      - name: Verify newly published sculpt history, image links and public HTTP
+        run: python3 scripts/verify-live-discovery.py
