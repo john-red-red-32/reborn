@@ -51,13 +51,19 @@ def probe_remote(item: tuple[str, str]) -> dict:
         request = Request(url, headers={"User-Agent": "RebornaSourceImageAudit/1.0 (+https://reborna.co/)"}, method="HEAD")
         try:
             with urlopen(request, timeout=8) as response:
-                return {"host": hostname, "status": response.status, "content_type": response.headers.get("Content-Type", ""), "classification": "accessible"}
+                content_type = response.headers.get("Content-Type", "").lower()
+                if response.status in (200, 206) and content_type.startswith("image/"):
+                    return {"host": hostname, "status": response.status, "content_type": content_type, "classification": "image_response"}
+                # Some source hosts return HTML challenges with a 2xx status.
+                # Fall back to a ranged GET before flagging manual review.
         except HTTPError as exc:
             if exc.code not in (403, 405):
                 raise
         request = Request(url, headers={"User-Agent": "RebornaSourceImageAudit/1.0 (+https://reborna.co/)", "Range": "bytes=0-0"})
         with urlopen(request, timeout=8) as response:
-            return {"host": hostname, "status": response.status, "content_type": response.headers.get("Content-Type", ""), "classification": "accessible"}
+            content_type = response.headers.get("Content-Type", "").lower()
+            valid = response.status in (200, 206) and content_type.startswith("image/")
+            return {"host": hostname, "status": response.status, "content_type": content_type, "classification": "image_response" if valid else "needs_browser_review"}
     except (HTTPError, URLError, TimeoutError, OSError) as exc:
         return {"host": hostname, "classification": "needs_browser_review", "detail": str(exc)[:160]}
 
