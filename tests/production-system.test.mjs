@@ -134,6 +134,36 @@ test("bulk generation writes hashed certificates, never plain codes, and AES-GCM
  assert.equal(again.status,200);assert.equal(again.body.done,true);
  assert.equal(h.persistedCodes.length,80,"completed production must never create another set of codes");
 });
+test("a complete 5,000-code edition is resumable, unique and exportable without plaintext database storage",async()=>{
+ const h=harness();
+ h.run.quantity=5000;
+ let last=0;
+ for(let i=0;i<70;i++){
+  const result=await h.call("production-next",{runId:originalRun.id,sessionToken:"a".repeat(64)});
+  assert.equal(result.status,200);
+  assert.ok(result.body.generatedCount>=last);
+  assert.ok(result.body.generatedCount-last<=80);
+  last=result.body.generatedCount;
+  if(result.body.done)break;
+ }
+ assert.equal(last,5000);
+ assert.equal(h.persistedCodes.length,5000);
+ assert.equal(h.run.status,"ready");
+ assert.equal(h.chunks.size,63);
+ const checked=new Set();
+ let start=0;
+ while(start<5000){
+  const r=await h.call("production-export-chunk",{runId:originalRun.id,sessionToken:"a".repeat(64),start});
+  assert.equal(r.status,200);
+  for(const record of r.body.records)checked.add(record.code);
+  start=r.body.nextStart;
+ }
+ assert.equal(start,5000);
+ assert.equal(checked.size,5000);
+ const again=await h.call("production-next",{runId:originalRun.id,sessionToken:"a".repeat(64)});
+ assert.equal(again.body.done,true);
+ assert.equal(h.persistedCodes.length,5000,"retrying a complete run must never duplicate issued codes");
+});
 test("an expired or missing export session cannot decrypt the temporary certificates",async()=>{
  const h=harness({sessionValid:false});
  const out=await h.call("production-export-chunk",{runId:originalRun.id,sessionToken:"b".repeat(64),start:0});
