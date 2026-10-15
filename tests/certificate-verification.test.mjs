@@ -12,7 +12,7 @@ test("the concealed code uses 12 uniformly random base32 characters and three co
   assert.equal(normaliseCertificateCode(code),code);
   assert.equal(normaliseCertificateCode(code.toLowerCase().replaceAll("-"," ")),code);
  }
- for(const invalid of ["","RB-ABCD","RB-AAAAAA-AAAAAA-AAAAAA-AAAAAA","<script>","AAAA-AAAA-AAAA-I","AAAA-AAAA-AAAA-0","AAAA-AAAA-AAAA-1"])
+ for(const invalid of ["","RB-ABCD","SAMPLE-AAAA-AAAA-AAAA","RB-AAAAAA-AAAAAA-AAAAAA-AAAAAA","<script>","AAAA-AAAA-AAAA-I","AAAA-AAAA-AAAA-0","AAAA-AAAA-AAAA-1"])
   assert.equal(normaliseCertificateCode(invalid),null);
  assert.equal(32**12,2**60);
 });
