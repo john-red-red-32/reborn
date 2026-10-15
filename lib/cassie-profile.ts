@@ -67,7 +67,7 @@ export const cassieProfile={
   headline:"An artist's eye. A sculptor's touch.",
   lead:"Cassie Ann Love, formerly known to collectors as Cassie Brace, has spent well over a decade developing a distinctive place within the art of reborning. Beginning as a self-taught reborn artist, she learned the subtleties of colour, expression and character before turning her hand to clay — transforming the smallest details into original sculpted personalities.",
   story:"Her first production kit, Hattie, arrived in 2012. Since then, a remarkable and continually evolving collection has followed, from early pieces remembered by longstanding collectors to contemporary releases discovered by a new generation of artists. Her process moves between the intimate craft of shaping a sculpture and the shared creativity of the reborn community, where other artists bring each sculpt to life through painting and rooting.",
-  legacy:"Reborn brings together Cassie's published sculpt archive, selected releases and independent retailer links as an evolving record of her work. Each piece belongs to a broader story: the artist's original vision, the interpretations it inspires, and the collectors who continue to seek it out.",
+  legacy:"Reborna brings together Cassie's published sculpt archive, selected releases and independent retailer links as an evolving record of her work. Each piece belongs to a broader story: the artist's original vision, the interpretations it inspires, and the collectors who continue to seek it out.",
   origin:"UK · Warwickshire",
   debut:"Hattie · 2012",
   source:"https://www.cassielove.co.uk/about-me",

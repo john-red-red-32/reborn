@@ -31,6 +31,7 @@ export default async function KitPage({params}:{params:Promise<{slug:string}>}){
   {"@type":"CreativeWork","@id":url+"#sculpt",name:kit.name+" — original reborn doll sculpt",description:"Original reborn doll sculpt design credited to "+(artist?.name||"its documented sculptor"),url,
    genre:"Reborn doll sculpture",...(artist?{creator:{"@type":"Person",name:artist.name,url:canonical("/artists/"+artist.slug+"/")}}:{}),
    ...(kit.photos?.[0]?{image:kit.photos[0].url}:{}),
+   ...(kit.photos?.length?{associatedMedia:kit.photos.slice(0,4).map(photo=>({"@type":"ImageObject",contentUrl:photo.url,creditText:photo.credit}))}:{}),
    ...(kit.sources?.length?{citation:kit.sources.map(source=>source.url)}:{})},
   {...breadcrumbJsonLd([{name:"Reborna",path:"/"},{name:"Original reborn kits",path:"/real-kits/"},{name:kit.name,path:"/kits/"+slug+"/"}]),"@id":url+"#breadcrumbs"}
  ]};
