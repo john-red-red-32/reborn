@@ -592,3 +592,8 @@
 .rbrn-production-matches>div span{font-size:12px;line-height:1.6}
 .rbrn-production-matches a{color:#79533c;text-decoration:underline}
 .rbrn-production-matches button{min-height:38px;padding:9px 12px;border:1px solid #bba18b;background:#fffbf5;color:#704f38;cursor:pointer;font-size:11px}
+
+.rbrn-production-pending-edit{border-top:1px solid #e5d6c8;margin-top:14px;padding-top:12px}
+.rbrn-production-pending-edit>summary{font:600 11px/1.5 Arial,sans-serif;color:#805a41;cursor:pointer}
+.rbrn-production-pending-edit form{padding:12px 0 0;background:transparent;border:0}
+.rbrn-production-pending-edit .rbrn-production-action{justify-self:start}
