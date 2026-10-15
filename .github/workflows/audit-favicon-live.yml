@@ -1,0 +1,49 @@
+name: Audit Reborna favicon on live website
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/favicon.svg'
+      - 'public/favicon.ico'
+      - 'public/apple-touch-icon.png'
+      - 'app/layout.tsx'
+      - '.github/workflows/audit-favicon-live.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Verify browser icon links and exact image assets on reborna.co
+        run: |
+          python3 - <<'PY'
+          import time,struct,urllib.request,urllib.error
+          root='https://reborna.co'
+          def fetch(path):
+            req=urllib.request.Request(root+path,headers={'User-Agent':'Reborna live favicon verification','Accept':'text/html,image/*'})
+            with urllib.request.urlopen(req,timeout=18) as response:
+              return response.status,response.headers.get('Content-Type',''),response.read()
+          for attempt in range(45):
+            try:
+              status,typ,svg=fetch('/favicon.svg?v=1')
+              assert status==200 and 'image/svg+xml' in typ,('SVG content type',status,typ)
+              assert b'<svg' in svg and b'Reborna' in svg and b'#685649' in svg
+              status,typ,ico=fetch('/favicon.ico?v=1')
+              assert status==200 and ico[:4]==bytes([0,0,1,0]),('ICO icon invalid',status,typ)
+              assert struct.unpack('<H',ico[4:6])[0]>=2
+              status,typ,apple=fetch('/apple-touch-icon.png?v=1')
+              assert status==200 and apple[:8]==bytes([137,80,78,71,13,10,26,10])
+              assert struct.unpack('>II',apple[16:24])==(180,180)
+              for path in ('/','/verify/','/materials/'):
+                _,_,html=fetch(path)
+                for icon in (b'/favicon.svg?v=1',b'/favicon.ico?v=1',b'/apple-touch-icon.png?v=1'):
+                  assert icon in html,(path,'missing icon metadata',icon)
+              print('PASS: Reborna favicon works on live pages with SVG, ICO and 180px Apple icons')
+              break
+            except Exception as e:
+              if attempt==44:raise
+              print('Waiting for production favicon assets',attempt+1,str(e)[:120],flush=True)
+              time.sleep(9)
+          PY
