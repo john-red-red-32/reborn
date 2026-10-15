@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   description: "Discover original reborn doll sculptors, source-attributed artist biographies, original sculpt kits, historic designs and specialist doll-making materials.",
   metadataBase: new URL("https://reborna.co"),
   applicationName: "Reborna",
+  icons: {
+    icon: [
+      {url:"/favicon.svg?v=1",type:"image/svg+xml",sizes:"any"},
+      {url:"/favicon.ico?v=1",type:"image/x-icon",sizes:"16x16 32x32"}
+    ],
+    shortcut: "/favicon.ico?v=1",
+    apple: [{url:"/apple-touch-icon.png?v=1",sizes:"180x180",type:"image/png"}]
+  },
   openGraph: {siteName:"Reborna",type:"website",locale:"en_GB"},
   twitter: {card:"summary_large_image"},
   robots: {index:true,follow:true,googleBot:{index:true,follow:true}}
