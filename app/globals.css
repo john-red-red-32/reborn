@@ -901,3 +901,23 @@ html{scroll-behavior:smooth}
 .rbrn-seo-archive-names p:last-child{overflow-wrap:anywhere;font-size:11px}
 @media(max-width:850px){.rbrn-seo-link-grid,.rbrn-home-artist-index .rbrn-seo-link-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.rbrn-home-artist-index{padding:33px 0}}
 @media(max-width:530px){.rbrn-seo-link-grid>a{font-size:15px;padding:13px}.rbrn-seo-related,.rbrn-seo-maker-links{padding:28px 0;margin:24px auto}.rbrn-seo-archive-names{padding:17px}.rbrn-home-artist-index{width:91%}}
+
+/* Verified sculptor certificate pilot — private registry, Reborna editorial styling. */
+.rbrn-cert-result{margin-top:23px;border:1px solid #e3d6c9;background:#fffaf4;padding:20px}
+.rbrn-cert-result-status{display:flex;align-items:flex-start;gap:12px;padding:15px;background:#f2eee5;color:#65503d}
+.rbrn-cert-result-status.warning{background:#f8e8dd;color:#8c4e35}
+.rbrn-cert-result-status svg{flex:none;margin-top:3px}
+.rbrn-cert-result-status strong{font:600 14px/1.5 "DM Sans",sans-serif}
+.rbrn-cert-result-status p{margin:4px 0 0;color:inherit;font:400 11px/1.75 "DM Sans",sans-serif}
+.rbrn-cert-result-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 25px;margin:25px 0}
+.rbrn-cert-result-details>div{padding-bottom:13px;border-bottom:1px solid #e9ddd2}
+.rbrn-cert-result-details dt{font:700 9px/1.6 "DM Sans",sans-serif;color:#957f6b;letter-spacing:.07em;text-transform:uppercase}
+.rbrn-cert-result-details dd{font:500 13px/1.8 "DM Sans",sans-serif;color:#5f4b3e;margin:4px 0 0;overflow-wrap:anywhere}
+.rbrn-cert-result-details a,.rbrn-cert-source a{color:#684d38;text-decoration:underline;text-underline-offset:3px}
+.rbrn-cert-review-warning,.rbrn-cert-physical-note{display:flex;align-items:flex-start;gap:10px;font:400 11px/1.9 "DM Sans",sans-serif;padding:13px 16px;color:#6e5645;background:#eee5da}
+.rbrn-cert-review-warning svg,.rbrn-cert-physical-note svg{flex:none;margin-top:2px}
+.rbrn-cert-source{font:600 11px/1.7 "DM Sans",sans-serif;margin:20px 0;color:#6b513e}
+.rbrn-cert-physical-note{background:#f9f4ed;margin:19px 0 0}
+.verify-info p{margin:0}
+.verify-card input:focus-visible,.verify-card button:focus-visible{outline:2px solid #a18b76;outline-offset:3px}
+@media(max-width:570px){.rbrn-cert-result{padding:14px}.rbrn-cert-result-details{grid-template-columns:1fr;gap:10px}}
