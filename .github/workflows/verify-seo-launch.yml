@@ -42,7 +42,28 @@ jobs:
       - name: Typecheck client and server code
         run: npm run lint
       - name: Check protected contact form endpoint regressions
-        run: node --test tests/contact-handler.test.mjs tests/sculptor-request-handler.test.mjs
+        run: node --test tests/contact-handler.test.mjs tests/sculptor-request-handler.test.mjs tests/certificate-verification.test.mjs
+      - name: Check fresh certificate registry D1 schema
+        run: |
+          python3 - <<'PY'
+          import sqlite3
+          from pathlib import Path
+          d=sqlite3.connect(':memory:')
+          d.execute('PRAGMA foreign_keys=ON')
+          for path in ('db/community-schema.sql','db/community-moderation-v2.sql','db/contact-enquiries.sql','db/sculptor-intake-v1.sql','db/certificate-verification-v1.sql'):
+            d.executescript(Path(path).read_text())
+          for table in ('verified_sculptor_issuers','certificate_batches','certificate_codes','certificate_lookup_events','certificate_audit'):
+            assert d.execute("SELECT name FROM sqlite_master WHERE type='table' AND name=?",(table,)).fetchone(),table
+          columns=[x[1] for x in d.execute("PRAGMA table_info(certificate_codes)")]
+          assert 'code_hash' in columns and 'code' not in columns
+          d.execute("INSERT INTO users(id,email,handle,display_name,is_editorial,email_verified_at) VALUES('pilot-user',NULL,'pilot_user','Pilot User',1,datetime('now'))")
+          d.execute("INSERT INTO sculptor_requests(id,member_id,kind,artist_name,state) VALUES('pilot-claim','pilot-user','claim_profile','Pilot Sculptor','closed')")
+          d.execute("INSERT INTO verified_sculptor_issuers(user_id,artist_slug,artist_name,official_source_url,claim_request_id,authorised_by,authorisation_note) VALUES('pilot-user','pilot-sculptor','Pilot Sculptor','https://example.org/artist','pilot-claim','pilot-user','CI sample only')")
+          d.execute("INSERT INTO certificate_batches(id,issuer_user_id,artist_slug,artist_name,sculpt_name,official_sculpt_url,quantity) VALUES('pilot-batch','pilot-user','pilot-sculptor','Pilot Sculptor','Sample Sculpt','https://example.org/sculpt',1)")
+          d.execute("INSERT INTO certificate_codes(id,batch_id,code_hash,hint) VALUES('pilot-code','pilot-batch','sample-secure-hash','ABCD')")
+          assert d.execute("SELECT code_hash FROM certificate_codes WHERE id='pilot-code'").fetchone()[0]=='sample-secure-hash'
+          print('PASS: isolated D1 issuer, code, and lookup registry schema with no plaintext code column')
+          PY
       - name: Build public site as static HTML for Cloudflare
         env:
           NEXT_TELEMETRY_DISABLED: '1'
@@ -87,6 +108,11 @@ jobs:
             p=page(path)
             assert p.title and p.h1s==1,(path,'title/H1',p.title,p.h1s)
             assert 'noindex' not in p.robots.lower(),(path,'unexpected noindex',p.robots)
+          verify=page('/verify/')
+          assert verify.h1s==1 and 'noindex' not in verify.robots.lower()
+          assert verify.canonical=='https://reborna.co/verify/'
+          assert 'verify the original' in verify.h1.lower()
+          assert '/verify/' in page('/').links or '/verify/' in page('/for-sculptors/').links
           history=page('/guides/cassie-ann-love-sculpt-history/')
           cassie=page('/artists/cassie-ann-love/')
           assert history.h1s==1 and len(history.title)>20

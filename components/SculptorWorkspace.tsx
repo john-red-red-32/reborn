@@ -3,6 +3,8 @@ import {useEffect,useState} from "react";
 import Link from "next/link";
 import {ArrowRight,CheckCircle2,ExternalLink,FileCheck2,FolderSearch,Send,ShieldCheck} from "lucide-react";
 import {communityApi,dateLabel,type CommunityUser} from "../lib/community";
+import CertificateStudio from "./CertificateStudio";
+import CertificateModerator from "./CertificateModerator";
 
 type ArtistRef={slug:string;name:string};
 type Kind="claim_profile"|"submit_sculpt";
@@ -112,8 +114,10 @@ export default function SculptorWorkspace({account,artists}:{account:CommunityUs
      </article>)}
     </div>}
    </section>}
+  {(isSculptor||account.moderator)&&<CertificateStudio/>}
+  {account.moderator&&<CertificateModerator claims={queue}/>}
   {notice&&<p className="rbrn-community-feedback" role="status"><CheckCircle2 size={16}/>{notice}</p>}
   {error&&<p className="rbrn-community-feedback error" role="alert">{error}</p>}
-  <p className="rbrn-sculptor-small">A future artist-managed listing and certificate programme is still in planning. <Link href="/for-sculptors/">Read how Reborna protects original work <ArrowRight size={13}/></Link>.</p>
+  <p className="rbrn-sculptor-small">Artist-managed marketplace listings remain in planning. Secure certificate-code issuance is now available to independently approved sculptors during the free pilot. <Link href="/for-sculptors/">Read how Reborna protects original work <ArrowRight size={13}/></Link>.</p>
  </div>;
 }
