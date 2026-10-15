@@ -49,3 +49,15 @@
 .closing small a{color:#765640;text-decoration:underline}
 @media(max-width:850px){.intro,.research{grid-template-columns:1fr;gap:28px}.intro{padding-top:62px}.research{padding:38px 30px}.valueGrid{margin-bottom:65px}.value{padding:30px 23px}.steps{gap:14px}.steps h3{font-size:20px}}
 @media(max-width:610px){.hero{padding:65px 6%}.hero h1{font-size:clamp(43px,9vw,58px)}.heroActions{flex-direction:column;align-items:stretch;max-width:340px;margin-left:auto;margin-right:auto}.intro{gap:10px}.valueGrid,.steps{grid-template-columns:1fr}.valueGrid{gap:1px}.value{padding:26px}.research{width:100%;padding:42px 6%}.researchPanel{padding:30px 24px}.process{padding-bottom:65px}.steps{margin-top:35px;gap:22px}.processActions{flex-direction:column}.processActions .primary{max-width:100%;text-align:center}.sessions{grid-template-columns:1fr;gap:17px;padding:52px 0}.closing{padding:64px 0 80px}}
+
+.protection{padding:77px max(5%,calc((100% - 1160px)/2));background:#f4ebe2;color:#604b3c;text-align:center;margin:0 0 78px}
+.protection h2{font:400 clamp(33px,4vw,57px)/1.24 "Playfair Display",Georgia,serif;letter-spacing:-.035em;margin:19px 0}
+.protection h2 em{color:#977359;font-style:italic}
+.protection>p{max-width:850px;margin:0 auto;font:400 13px/2 "DM Sans",Arial,sans-serif;color:#847060}
+.protectionGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:42px 0 26px;text-align:left}
+.protectionGrid article{background:#fffbf7;border:1px solid #e3d5c7;padding:30px}
+.protectionGrid svg{color:#a1866d}.protectionGrid h3{font:400 21px/1.35 "Playfair Display",Georgia,serif;margin:16px 0 11px}
+.protectionGrid p{font:400 12px/1.9 "DM Sans",Arial,sans-serif;color:#847466}
+.protectionNote{max-width:930px;margin:0 auto;font:400 11px/1.95 "DM Sans",Arial,sans-serif;color:#897161}.protectionNote strong{color:#584335}
+.fineprint a{color:#735440;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:750px){.protection{padding:52px 6%}.protectionGrid{grid-template-columns:1fr}.protectionGrid article{padding:23px}}
