@@ -42,7 +42,7 @@ jobs:
       - name: Typecheck client and server code
         run: npm run lint
       - name: Check protected contact form endpoint regressions
-        run: node --test tests/contact-handler.test.mjs tests/sculptor-request-handler.test.mjs tests/certificate-verification.test.mjs
+        run: node --test tests/contact-handler.test.mjs tests/sculptor-request-handler.test.mjs tests/certificate-verification.test.mjs tests/production-system.test.mjs
       - name: Check fresh certificate registry D1 schema
         run: |
           python3 - <<'PY'
@@ -50,9 +50,9 @@ jobs:
           from pathlib import Path
           d=sqlite3.connect(':memory:')
           d.execute('PRAGMA foreign_keys=ON')
-          for path in ('db/community-schema.sql','db/community-moderation-v2.sql','db/contact-enquiries.sql','db/sculptor-intake-v1.sql','db/certificate-verification-v1.sql','db/certificate-email-approval-v2.sql'):
+          for path in ('db/community-schema.sql','db/community-moderation-v2.sql','db/contact-enquiries.sql','db/sculptor-intake-v1.sql','db/certificate-verification-v1.sql','db/certificate-email-approval-v2.sql','db/certificate-production-v3.sql'):
             d.executescript(Path(path).read_text())
-          for table in ('verified_sculptor_issuers','certificate_batches','certificate_codes','certificate_lookup_events','certificate_audit','certificate_issue_approvals'):
+          for table in ('verified_sculptor_issuers','certificate_batches','certificate_codes','certificate_lookup_events','certificate_audit','certificate_issue_approvals','production_sculpts','production_editions','production_runs','production_codes','production_code_lookups','production_export_chunks','production_export_sessions','production_audit','production_corrections','production_link_proposals'):
             assert d.execute("SELECT name FROM sqlite_master WHERE type='table' AND name=?",(table,)).fetchone(),table
           columns=[x[1] for x in d.execute("PRAGMA table_info(certificate_codes)")]
           assert 'code_hash' in columns and 'code' not in columns
@@ -65,7 +65,17 @@ jobs:
           d.execute("INSERT INTO certificate_batches(id,issuer_user_id,artist_slug,artist_name,sculpt_name,official_sculpt_url,quantity) VALUES('pilot-batch','pilot-user','pilot-sculptor','Pilot Sculptor','Sample Sculpt','https://example.org/sculpt',1)")
           d.execute("INSERT INTO certificate_codes(id,batch_id,code_hash,hint) VALUES('pilot-code','pilot-batch','sample-secure-hash','ABCD')")
           assert d.execute("SELECT code_hash FROM certificate_codes WHERE id='pilot-code'").fetchone()[0]=='sample-secure-hash'
-          print('PASS: isolated D1 issuer, code, and lookup registry schema with no plaintext code column')
+          production_columns=[x[1] for x in d.execute("PRAGMA table_info(production_codes)")]
+          export_columns=[x[1] for x in d.execute("PRAGMA table_info(production_export_chunks)")]
+          assert 'code_hash' in production_columns and 'code' not in production_columns
+          assert 'encrypted_data' in export_columns and 'code' not in export_columns
+          d.execute("INSERT INTO production_sculpts(id,issuer_user_id,artist_slug,sculpt_name) VALUES('example-sculpt','pilot-user','pilot-sculptor','Example')")
+          d.execute("INSERT INTO production_editions(id,sculpt_id,edition_label,edition_kind,initially_declared_quantity,current_declared_quantity) VALUES('example-edition','example-sculpt','First vinyl','limited',500,500)")
+          d.execute("INSERT INTO production_runs(id,edition_id,run_number,quantity,serial_start) VALUES('example-run','example-edition',1,5000,1)")
+          d.execute("INSERT INTO production_codes(id,run_id,serial_number,code_hash,hint) VALUES('example-code','example-run',1,'example-unique-hash','ABCD')")
+          assert d.execute("SELECT quantity FROM production_runs WHERE id='example-run'").fetchone()[0]==5000
+          assert d.execute("PRAGMA foreign_key_check").fetchall()==[]
+          print('PASS: D1 production schema, 5,000-code run, foreign keys, encrypted exports and hashed registry')
           PY
       - name: Build public site as static HTML for Cloudflare
         env:
