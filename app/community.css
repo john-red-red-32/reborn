@@ -525,3 +525,20 @@
 .rbrn-cert-issuer-list article{display:grid;gap:7px;margin:10px 0;padding:14px;background:#f7f0e8;border:1px solid #e2d1c1;color:#604a38;font-size:12px}
 .rbrn-cert-issuer-list article>a{color:#785039;text-decoration:underline;font-size:11px}
 @media(max-width:700px){.rbrn-cert-studio,.rbrn-cert-moderator{padding:20px 16px}.rbrn-cert-batch-title{align-items:start}.rbrn-cert-revoke input{width:100%}}
+
+
+/* Concealed short-code pilot: duplicated-run warning and independent email approval. */
+.rbrn-cert-duplicate-warning{display:flex;align-items:flex-start;gap:13px;padding:19px 18px;border:1px solid #d7baa0;background:#fbf2e8;color:#6e503d}
+.rbrn-cert-duplicate-warning svg{flex:none;margin-top:1px;color:#9a6b44}
+.rbrn-cert-duplicate-warning strong{font:700 12px/1.6 "DM Sans",sans-serif}
+.rbrn-cert-duplicate-warning p{font:400 11px/1.9 "DM Sans",sans-serif;color:#806956;margin:6px 0 0}
+.rbrn-cert-duplicate-warning p strong{font-size:11px}
+.rbrn-cert-email-confirm{padding:23px 21px;background:#f6eee3;border:1px solid #d7c5b5;display:grid;gap:13px}
+.rbrn-cert-email-confirm>svg{color:#96735b}
+.rbrn-cert-email-confirm h4{margin:0;font:400 23px/1.4 "Playfair Display",Georgia,serif}
+.rbrn-cert-email-confirm p{font:400 12px/1.85 "DM Sans",sans-serif;color:#826b59;margin:0}
+.rbrn-cert-email-confirm label{font:600 11px/1.6 "DM Sans",sans-serif;color:#735a49;display:grid;gap:8px}
+.rbrn-cert-email-confirm input{padding:12px 14px;max-width:240px!important;background:#fff;border:1px solid #d8c6b6;font:600 20px/1.5 monospace!important;letter-spacing:.25em}
+.rbrn-cert-email-confirm .rbrn-community-primary,.rbrn-cert-email-confirm .rbrn-community-secondary{justify-self:start}
+.rbrn-cert-attestation:has(input:focus-visible){outline:2px solid #a58a72;outline-offset:4px}
+@media(max-width:610px){.rbrn-cert-duplicate-warning{padding:15px 13px}.rbrn-cert-email-confirm{padding:17px 14px}.rbrn-cert-email-confirm input{max-width:100%!important}}
