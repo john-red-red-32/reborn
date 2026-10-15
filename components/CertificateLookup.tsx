@@ -22,10 +22,10 @@ export default function CertificateLookup(){
   }catch(e){setError((e as Error).message)}finally{setBusy(false)}
  }
  return <div className="verify-card">
-  <div className="verify-heading"><LockKeyhole size={20}/><div><h2>Check a certificate code</h2><p>Enter the unique code beneath the scratch-off sticker on a certificate issued through Reborna.</p></div></div>
+  <div className="verify-heading"><LockKeyhole size={20}/><div><h2>Check a certificate code</h2><p>Enter the compact 12-character code concealed beneath the tamper-evident or scratch-off seal on a certificate issued through Reborna.</p></div></div>
   <form onSubmit={submit}>
    <label htmlFor="cert-code">REBORNA CERTIFICATE CODE</label>
-   <div className="verify-entry"><input id="cert-code" required value={code} onChange={e=>{setCode(e.target.value.toUpperCase());setData(null);setError("")}} placeholder="RB-XXXXXX-XXXXXX-XXXXXX-XXXXXX" maxLength={60} autoComplete="off" autoCapitalize="characters" spellCheck={false}/><button disabled={busy||!code.trim()} type="submit">{busy?"Checking…":"Check code"} <Search size={16}/></button></div>
+   <div className="verify-entry"><input id="cert-code" required value={code} onChange={e=>{setCode(e.target.value.toUpperCase());setData(null);setError("")}} placeholder="XXXX-XXXX-XXXX" maxLength={30} autoComplete="off" autoCapitalize="characters" spellCheck={false}/><button disabled={busy||!code.trim()} type="submit">{busy?"Checking…":"Check code"} <Search size={16}/></button></div>
   </form>
   {error&&<div className="verify-info" role="alert"><AlertCircle size={19}/><p>{error}</p></div>}
   {data&&!data.found&&<div className="verify-info" role="status"><AlertCircle size={19}/><div><strong>No certificate issuance record found</strong><p>{data.message}</p><p>Check that you typed every character accurately. An unregistered code cannot be used to establish authenticity.</p></div></div>}
