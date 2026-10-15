@@ -1,7 +1,34 @@
-"use client";
-import {useState} from "react";
-import {ShieldCheck,Search,AlertCircle,LockKeyhole,History,ArrowRight} from "lucide-react";
+import type {Metadata} from "next";
+import Link from "next/link";
+import {ArrowRight,ShieldCheck} from "lucide-react";
+import CertificateLookup from "../../components/CertificateLookup";
+
+export const metadata:Metadata={
+ title:"Check an Original Reborn Kit Certificate Code | Reborna",
+ description:"Check a Reborna-issued sculptor certificate code, view the issuing original sculptor and previous lookup history, and learn the limits of certificate authentication.",
+ alternates:{canonical:"/verify/"}
+};
+
 export default function VerifyPage(){
- const[code,setCode]=useState("");const[submitted,setSubmitted]=useState(false);
- return <main className="verify-wrap"><section className="verify-hero"><div className="section-kicker">COLLECT WITH CONFIDENCE</div><ShieldCheck size={39} strokeWidth={1.2}/><h1>Verify the original<span className="period">.</span></h1><p>Protect the creativity behind every original sculpt. Use this practical checklist to research genuine reborn kits, and learn about Reborna’s future certificate-verification service.</p></section><section className="authenticity-guide" aria-labelledby="verify-checklist-title"><div className="section-kicker">BEFORE YOU BUY</div><h2 id="verify-checklist-title">How to verify a kit<span className="period">.</span></h2><div className="authenticity-guide-grid"><article><span>01 · KNOW THE SCULPTOR</span><h3>Find the original design</h3><p>Match the sculpt name, original artist and edition details with the sculptor’s own website or established studio announcements. Similar names are not proof of origin.</p></article><article><span>02 · CHECK THE SELLER</span><h3>Follow trusted sources</h3><p>Prefer the sculptor’s direct shop or sellers they identify as authorised dealers. If the seller is unfamiliar, ask the original artist to confirm their relationship.</p></article><article><span>03 · EXAMINE THE EVIDENCE</span><h3>Look beyond a certificate</h3><p>Check edition information, packaging, mould marks and any artist-issued certificate. Copies of certificates can also be forged; no single photograph or certificate proves authenticity.</p></article></div><p className="authenticity-guide-note">Concerned a kit might be copied? Check with the original sculptor before purchasing and share suspicious listings with them. Reborna does not knowingly promote counterfeit kits or copied designs, but independently verifying every third-party sale is not yet possible.</p></section><div className="verify-card"><div className="verify-heading"><LockKeyhole size={20}/><div><h2>Certificate verification</h2><p>Enter the code concealed beneath the scratch-off panel on your certificate.</p></div></div><form onSubmit={e=>{e.preventDefault();setSubmitted(true)}}><label htmlFor="cert-code">AUTHENTICITY CODE</label><div className="verify-entry"><input id="cert-code" value={code} onChange={e=>{setCode(e.target.value.toUpperCase());setSubmitted(false)}} placeholder="RB-XXXX-XXXX-XXXX" maxLength={60} autoComplete="off" spellCheck={false}/><button disabled={!code.trim()} type="submit">Check code <Search size={16}/></button></div></form>{submitted&&<div className="verify-info"><AlertCircle size={19}/><div><strong>Verification service not yet active</strong><p>Reborn has not issued production certificate codes. We cannot confirm or reject this code until the secure artist registry is live. Your entry has not been submitted or recorded.</p></div></div>}<div className="verify-how"><div><History size={21}/><strong>Verification history</strong><p>Once launched, the system will show the number of previous checks and their dates, without disclosing buyer identities.</p></div><div><ShieldCheck size={21}/><strong>Artist-issued codes</strong><p>Codes will only be issued through verified sculptor accounts and linked to a specific kit edition.</p></div></div></div><p className="verify-disclaimer">A valid code confirms that a code exists in the issuer's registry, not that the item in your hands is genuine. Repeated checks can indicate reuse or copying but are not proof of counterfeiting.</p><div className="verify-end"><span>FOR SCULPTORS</span><h2>Protect the work behind the art.</h2><p>Artist onboarding, secure code batches and printable certificate exports are the next phase of Reborn's authenticity programme.</p><a href="/for-sculptors">Request artist access <ArrowRight size={16}/></a></div></main>
+ return <main className="verify-wrap">
+  <section className="verify-hero">
+   <div className="section-kicker">ORIGINAL SCULPTS · BETTER PROVENANCE</div>
+   <ShieldCheck size={39} strokeWidth={1.2}/>
+   <h1>Verify the original<span className="period">.</span></h1>
+   <p>Have a Reborna certificate code? Check its issuing sculptor and historical usage. This service helps trace artist-issued certificates, alongside independent checks of the physical kit and its seller.</p>
+  </section>
+  <CertificateLookup/>
+  <p className="verify-disclaimer">A genuine issuance record does not prove the physical kit in front of you is original: genuine codes and certificates can be copied. Reborna records certificate issuance only for authorised sculptor accounts. It does not guarantee individual items, transactions or retailers.</p>
+  <section className="authenticity-guide" aria-labelledby="verify-checklist-title">
+   <div className="section-kicker">BEFORE YOU BUY</div>
+   <h2 id="verify-checklist-title">How to research a genuine kit<span className="period">.</span></h2>
+   <div className="authenticity-guide-grid">
+    <article><span>01 · KNOW THE SCULPTOR</span><h3>Find the original design</h3><p>Check the original artist's portfolio and the particular sculpt or edition. A matching name or image alone isn't proof of origin.</p></article>
+    <article><span>02 · CHECK THE SELLER</span><h3>Follow trusted sources</h3><p>Prefer the sculptor's shop or dealers identified by the artist. Request original production, provenance and edition information where relevant.</p></article>
+    <article><span>03 · EXAMINE THE EVIDENCE</span><h3>Look beyond the code</h3><p>Compare physical kit details, packaging, edition markers and certificate condition. Codes can be copied: unusual check histories are signals for review, not accusations.</p></article>
+   </div>
+   <p className="authenticity-guide-note">Worried about a copied kit? Contact the original sculptor with relevant evidence. Read our <Link href="/guides/original-reborn-kits/">independent original-kit guide</Link> and <Link href="/contact/?category=verification">report concerns</Link> where appropriate.</p>
+  </section>
+  <div className="verify-end"><span>FOR ORIGINAL SCULPTORS</span><h2>Protect the work behind the art.</h2><p>Verified sculptor accounts can request secure certificate codes at no charge during our limited pilot. Identity approval is required. Future pricing may be $1 per code, but no purchase or charge is currently available.</p><Link href="/for-sculptors/">Explore sculptor verification <ArrowRight size={16}/></Link></div>
+ </main>;
 }
