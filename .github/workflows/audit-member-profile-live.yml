@@ -52,7 +52,9 @@ jobs:
             'email':'never-created-profile-audit@example.invalid',
             'handle':'f_u_c_k',
             'displayName':'A test name',
-            'password':'ThisIsNotAnAccount123!'
+            'password':'ThisIsNotAnAccount123!',
+            'termsAccepted':True,
+            'termsVersion':'2026-10-14'
           })
           assert status==400 and 'profanity' in result.get('error','').lower(),(status,result)
           print('PASS: member API healthy, avatar serving route active, explicitly profane handle rejected before any signup')
