@@ -1,0 +1,60 @@
+name: Audit live certificate verification pilot
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-certificate-live.yml'
+      - 'app/verify/**'
+      - 'app/for-sculptors/**'
+      - 'components/Certificate*.tsx'
+      - 'components/SculptorWorkspace.tsx'
+      - 'functions/api/community/**'
+      - 'db/certificate-verification-v1.sql'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  certificate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test certificate registry API and code security (mocked)
+        run: node --test tests/certificate-verification.test.mjs
+      - name: Verify deployed public certificate lookup and private issuer access
+        run: |
+          python3 - <<'PY'
+          import json,time,urllib.request,urllib.error
+          from html.parser import HTMLParser
+          base='https://reborna.co'
+          def read(path,method='GET',payload=None):
+            hdr={'User-Agent':'Reborna certificate deployment audit','Accept':'text/html,application/json','Origin':base}
+            if payload is not None:hdr['Content-Type']='application/json'
+            req=urllib.request.Request(base+path,method=method,headers=hdr,data=None if payload is None else json.dumps(payload).encode())
+            try:
+              with urllib.request.urlopen(req,timeout=18) as resp:return resp.status,resp.read().decode(errors='replace')
+            except urllib.error.HTTPError as e:return e.code,e.read().decode(errors='replace')
+          for attempt in range(35):
+            errors=[]
+            try:
+              status,html=read('/verify/')
+              if status!=200 or 'check a certificate code' not in html.lower() or 'reborna certificate code' not in html.lower():errors.append(('public collector form',status))
+              status,artist=read('/for-sculptors/')
+              if status!=200 or 'our free certificate pilot' not in artist.lower():errors.append(('artist copy',status))
+              status,auth=read('/api/community/certificate-studio')
+              if status!=401 or 'sign in' not in auth.lower():errors.append(('private artist API exposed or unavailable',status))
+            except Exception as e:errors.append(('not ready',str(e)[:150]))
+            if not errors:break
+            print('Waiting for certificate production release',attempt+1,errors,flush=True)
+            time.sleep(8)
+          else:raise SystemExit('Certificate release not ready: '+repr(errors))
+          # Safe live negative probe only. Do not mint or revoke real certificates.
+          example='RB-'+'-'.join(['AAAAAA']*4)
+          status,text=read('/api/community/certificate-lookup','POST',{'code':example})
+          assert status==200,(status,text[:200])
+          result=json.loads(text)
+          assert result.get('found') is False,result
+          status,text=read('/api/community/certificate-issue','POST',{'artistSlug':'nonexistent-artist','sculptName':'Not a kit','officialSculptUrl':'https://example.org','quantity':1})
+          assert status==401,(status,text[:200])
+          print('PASS: live public certificate lookup, unknown code safely unmatched, unauthorised issuing denied and sculptor programme accurately described')
+          PY
