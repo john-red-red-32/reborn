@@ -3,7 +3,8 @@ import {useEffect,useState} from "react";
 import Link from "next/link";
 import {ArrowRight,CheckCircle2,ExternalLink,FileCheck2,FolderSearch,Send,ShieldCheck} from "lucide-react";
 import {communityApi,dateLabel,type CommunityUser} from "../lib/community";
-import CertificateStudio from "./CertificateStudio";
+import ProductionStudio from "./ProductionStudio";
+import ProductionModerator from "./ProductionModerator";
 import CertificateModerator from "./CertificateModerator";
 
 type ArtistRef={slug:string;name:string};
@@ -23,7 +24,7 @@ function ExternalEvidence({href,title}:{href:string|null;title:string}){
  if(!href)return null;
  return <a href={href} target="_blank" rel="noopener noreferrer nofollow" className="rbrn-sculptor-evidence-link">{title} <ExternalLink size={13}/></a>;
 }
-export default function SculptorWorkspace({account,artists}:{account:CommunityUser;artists:ArtistRef[]}){
+export default function SculptorWorkspace({account,artists,catalogueKits}:{account:CommunityUser;artists:ArtistRef[];catalogueKits:{slug:string;name:string;artistSlug:string}[]}){
  const isSculptor=account.roles.includes("sculptor");
  const [form,setForm]=useState<FormState>(initial);
  const [own,setOwn]=useState<RequestItem[]>([]),[queue,setQueue]=useState<RequestItem[]>([]);
@@ -114,10 +115,11 @@ export default function SculptorWorkspace({account,artists}:{account:CommunityUs
      </article>)}
     </div>}
    </section>}
-  {(isSculptor||account.moderator)&&<CertificateStudio/>}
+  {(isSculptor||account.moderator)&&<ProductionStudio catalogueKits={catalogueKits}/>}
+  {account.moderator&&<ProductionModerator catalogueKits={catalogueKits}/>}
   {account.moderator&&<CertificateModerator claims={queue}/>}
   {notice&&<p className="rbrn-community-feedback" role="status"><CheckCircle2 size={16}/>{notice}</p>}
   {error&&<p className="rbrn-community-feedback error" role="alert">{error}</p>}
-  <p className="rbrn-sculptor-small">Artist-managed marketplace listings remain in planning. Secure certificate-code issuance is now available to independently approved sculptors during the free pilot. <Link href="/for-sculptors/">Read how Reborna protects original work <ArrowRight size={13}/></Link>.</p>
+  <p className="rbrn-sculptor-small">Artist-managed marketplace listings remain in planning. Free approved production runs of up to 5,000 certificate codes, with email-confirmed, recoverable exports, are now available to independently verified original sculptors. <Link href="/for-sculptors/">Read how Reborna protects original work <ArrowRight size={13}/></Link>.</p>
  </div>;
 }

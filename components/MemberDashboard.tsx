@@ -12,7 +12,7 @@ type Listing={id:string;title:string;description:string;kind:"finished_doll"|"or
 const areaNames:Record<Area,string>={overview:"Overview",collection:"My collection",studio:"My studio",selling:"Selling",purchases:"Purchases",community:"Community",sculptors:"Artist verification"};
 const stages:{value:Studio["stage"];label:string}[]=[{value:"planning",label:"Planning"},{value:"painting",label:"Painting"},{value:"rooting",label:"Rooting & finishing"},{value:"completed",label:"Completed"}];
 const kinds:{value:Listing["kind"];label:string}[]=[{value:"finished_doll",label:"Finished reborn doll"},{value:"original_kit",label:"Original sculpt kit"},{value:"materials",label:"Materials & tools"},{value:"other",label:"Other"}];
-export default function MemberDashboard({artists}:{artists:{slug:string;name:string}[]}){
+export default function MemberDashboard({artists,catalogueKits}:{artists:{slug:string;name:string}[];catalogueKits:{slug:string;name:string;artistSlug:string}[]}){
  const {items,state:savedState,remove,updateStatus}=useWishlist();
  const[account,setAccount]=useState<CommunityUser|null>(null),[loaded,setLoaded]=useState(false),[area,setArea]=useState<Area>("overview"),[filter,setFilter]=useState("all"),[projects,setProjects]=useState<Studio[]>([]),[drafts,setDrafts]=useState<Listing[]>([]);
  const[projectForm,setProjectForm]=useState({id:"",title:"",notes:"",stage:"planning" as Studio["stage"],linkedKitPath:""});
@@ -61,7 +61,7 @@ export default function MemberDashboard({artists}:{artists:{slug:string;name:str
       <div className="rbrn-dash-stat-grid">{counts.map(x=>{const Icon=x.icon;return <button key={x.area} type="button" onClick={()=>navigate(x.area)}><Icon size={20}/><strong>{x.count}</strong><span>{x.label}</span><small>{x.description}</small><ArrowRight size={16} className="rbrn-dash-stat-arrow"/></button>})}</div>
       <div className="rbrn-dash-overview-grid"><div className="rbrn-dash-panel"><span className="section-kicker">CURATED FOR YOU</span><h3>Make your first favourites.</h3><p>Tap a little heart anywhere in the sculpt, materials or artist galleries. You'll find everything here when you come back.</p><Link href="/real-kits/">Discover original sculpts <ArrowRight size={15}/></Link></div><div className="rbrn-dash-panel"><span className="section-kicker">STAY CONNECTED</span><h3>Your Reborna community.</h3><p>Visit your messages, catch up on genuine discussions or share what you're making.</p><Link href="/messages/">Open your inbox <ArrowRight size={15}/></Link></div></div>
      </>}
-     {area==="sculptors"&&<SculptorWorkspace account={account} artists={artists}/>}
+     {area==="sculptors"&&<SculptorWorkspace account={account} artists={artists} catalogueKits={catalogueKits}/>}
      {area==="collection"&&<>
        <span className="section-kicker">MY COLLECTION</span><h2>All the things you love.</h2><p className="rbrn-dash-lead">Heart original sculpts, individual materials or the artists who inspire you. Use <strong>Wishlist</strong> for pieces you're considering and <strong>My collection</strong> for pieces you already own. Ownership is self-reported and isn't an order record.</p>
        <div className="rbrn-dash-collection-count"><span><Heart size={15}/> {wishedCount} wishlist</span><span><Package size={15}/> {ownedCount} in your collection</span></div>
