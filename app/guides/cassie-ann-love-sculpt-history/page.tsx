@@ -13,7 +13,6 @@ export const metadata:Metadata={
  alternates:{canonical:"/guides/cassie-ann-love-sculpt-history/"}
 };
 
-const firstThirty=new Set<string>(cassieOriginalProductionOrder);
 const matchedPhotos=publishedGalleryEvidence.filter(item=>item.artistSlug==="cassie-ann-love"&&item.matchStatus==="exact_editorial_match");
 const works=verifiedKits.filter(item=>item.artistSlug==="cassie-ann-love");
 const workByName=new Map(works.map(kit=>[kit.name.toLocaleLowerCase("en"),kit]));
