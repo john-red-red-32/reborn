@@ -436,3 +436,18 @@
 .rbrn-profile-report{margin:16px 0 0 12px;min-height:38px}
 .rbrn-reply-report{margin:8px 0 0;min-height:33px}
 .rbrn-inbox-messages .rbrn-message-report{margin-top:6px;min-height:34px}
+
+
+/* Cassie Ann Love: sourced sculpt-history guide; understated editorial treatment. */
+.rbrn-history-index{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 26px;padding:16px 5px 16px 31px;margin:18px 0 23px}
+.rbrn-history-index li{padding:6px 0 9px 4px;border-bottom:1px solid #e9ded3;color:#7d6654;font-size:12px;line-height:1.7}
+.rbrn-history-index a{font-weight:700;color:#685242;text-decoration:underline;text-underline-offset:3px}
+.rbrn-history-index small{display:block;color:#a08a78;font-size:10px}
+.rbrn-history-evidence{list-style:none;padding:0;margin:20px 0;display:grid;gap:12px}
+.rbrn-history-evidence>li{padding:17px 19px;background:#f8f3ed;border:1px solid #e9ddd1}
+.rbrn-history-evidence strong{color:#655144;font-size:13px}
+.rbrn-history-evidence p{margin:7px 0 0!important;font-size:12px}
+.rbrn-history-profile-link{font-size:12px;line-height:1.85;margin:18px 0 0!important}
+.rbrn-history-profile-link a{color:#80614e;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:760px){.rbrn-history-index{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.rbrn-history-index{grid-template-columns:1fr}}
