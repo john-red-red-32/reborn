@@ -184,6 +184,20 @@ async function moderationProcess(db,env,type,id,title,body){
   await db.prepare("UPDATE content_moderation SET state='needs_review',reason_code='other',reason_text='Automated review unavailable',updated_at=datetime('now') WHERE content_type=? AND content_id=? AND state='pending'").bind(type,id).run();
  }
 }
+
+/** Only store declared public evidence URLs. They are not visited automatically and do not establish identity or image rights. */
+function sculptorEvidenceUrl(raw){
+ if(raw===undefined||raw===null||raw==='')return '';
+ if(typeof raw!=='string'||raw.length>500)return null;
+ try{
+  const u=new URL(raw.trim());
+  const host=u.hostname.toLowerCase();
+  if(!['https:','http:'].includes(u.protocol)||u.username||u.password||u.port||!/^([a-z0-9-]+\.)+[a-z]{2,}$/i.test(host)||host.endsWith('.local'))return null;
+  u.hash='';
+  return u.href;
+ }catch{return null}
+}
+
 async function isModerator(db,userId){return !!await db.prepare('SELECT 1 FROM community_moderators WHERE user_id=?').bind(userId).first()}
 async function notifyModeration(db,env,id){
  const task=await db.prepare("SELECT n.*,u.email FROM moderation_notifications n JOIN users u ON u.id=n.member_id WHERE n.id=? AND n.state IN ('queued','failed')").bind(id).first();
@@ -230,7 +244,7 @@ export async function onRequest(context){
   return response({post,replies:replies.map(r=>({...r,avatarUrl:avatarLink(r.avatar_user_id,r.avatar_version)}))});
  }
  if(method==='GET'&&path==='profile'){const handle=clean(query.get('handle'),25);const u=await db.prepare("SELECT u.id,u.handle,u.display_name,u.bio,u.is_editorial,u.allow_messages,u.created_at,av.version AS avatar_version FROM users u LEFT JOIN profile_avatars av ON av.user_id=u.id WHERE u.handle=? AND u.status='active' AND (u.is_editorial=1 OR u.email_verified_at IS NOT NULL)").bind(handle).first();if(!u)return failure('Member not found.',404);const roles=(await db.prepare('SELECT role FROM user_roles WHERE user_id=?').bind(u.id).all()).results.map(x=>x.role);return response({profile:publicUser(u),roles,rolesAreSelfDescribed:true})}
- if(method==='GET'&&path==='me'){const u=await getUser(db,request);if(!u)return response({user:null});const roles=(await db.prepare('SELECT role FROM user_roles WHERE user_id=?').bind(u.id).all()).results.map(x=>x.role);const interests=(await db.prepare('SELECT interest FROM user_interests WHERE user_id=?').bind(u.id).all()).results.map(x=>x.interest);return response({user:{...publicUser(u),email:u.email,roles,interests,notificationEmail:!!u.notification_email,marketingEmail:!!u.marketing_email}})}
+ if(method==='GET'&&path==='me'){const u=await getUser(db,request);if(!u)return response({user:null});const roles=(await db.prepare('SELECT role FROM user_roles WHERE user_id=?').bind(u.id).all()).results.map(x=>x.role);const interests=(await db.prepare('SELECT interest FROM user_interests WHERE user_id=?').bind(u.id).all()).results.map(x=>x.interest);return response({user:{...publicUser(u),email:u.email,roles,interests,notificationEmail:!!u.notification_email,marketingEmail:!!u.marketing_email,moderator:await isModerator(db,u.id)}})}
  if(method==='POST'&&path==='register'){
   if(!emailReady(env)||!env.TURNSTILE_SITE_KEY||!env.TURNSTILE_SECRET_KEY)return failure('Registrations are being prepared. Please check back soon.',503);
   if(!(await throttle(db,request,'register',5,3600)))return failure('Please try registering later.',429);
@@ -309,6 +323,60 @@ export async function onRequest(context){
  }
  const user=await getUser(db,request);
  if(!user)return failure('Please sign in to continue.',401);
+
+ // Sculptor contribution intake is private. Self-described role is only a UI gate;
+ // it never verifies authorship, establishes profile ownership, or publishes kits.
+ if(method==='GET'&&path==='sculptor-requests'){
+  const requests=(await db.prepare('SELECT id,kind,artist_name AS artistName,existing_artist_slug AS existingArtistSlug,sculpt_name AS sculptName,source_url AS sourceUrl,website_url AS websiteUrl,social_url AS socialUrl,details,state,moderator_note AS reviewerMessage,created_at AS createdAt,updated_at AS updatedAt FROM sculptor_requests WHERE member_id=? ORDER BY created_at DESC LIMIT 35').bind(user.id).all()).results||[];
+  return response({requests});
+ }
+ if(method==='POST'&&path==='sculptor-requests'){
+  if(!(await throttle(db,request,'sculptor-request',6,86400)))return failure('Too many artist requests today. Please contact Reborna if you need urgent help.',429);
+  const role=await db.prepare("SELECT 1 AS yes FROM user_roles WHERE user_id=? AND role='sculptor'").bind(user.id).first();
+  if(!role)return failure('Select Original sculptor in your account preferences before submitting a request.',403);
+  const d=await readJson(request);
+  const kind=clean(d.kind,30),artistName=clean(d.artistName,130),sculptName=clean(d.sculptName,130),details=clean(d.details,1600);
+  const existingArtistSlug=clean(d.existingArtistSlug,95);
+  if(!['claim_profile','submit_sculpt'].includes(kind)||artistName.length<2||artistName.length>120||details.length>1400)return failure('Please provide the sculptor name and a valid request type.');
+  if(existingArtistSlug&&!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(existingArtistSlug))return failure('Please select a listed sculptor or leave that field blank.');
+  const websiteUrl=sculptorEvidenceUrl(d.websiteUrl),socialUrl=sculptorEvidenceUrl(d.socialUrl),sourceUrl=sculptorEvidenceUrl(d.sourceUrl);
+  if([websiteUrl,socialUrl,sourceUrl].some(x=>x===null))return failure('Evidence links must be complete public website URLs starting with https:// or http://.');
+  if(kind==='claim_profile'&&!websiteUrl&&!socialUrl&&!sourceUrl)return failure('Please include at least one public website or social profile that supports your artist enquiry.');
+  if(kind==='submit_sculpt'&&(sculptName.length<2||sculptName.length>120||!sourceUrl))return failure('Provide the original sculpt name and an official source link so our editors can review it.');
+  const prior=await db.prepare("SELECT COUNT(*) AS count FROM sculptor_requests WHERE member_id=? AND state IN ('pending','reviewing','needs_info')").bind(user.id).first();
+  if((prior?.count||0)>=10)return failure('You already have several open requests. Please wait for editorial review before submitting more.',429);
+  const id=crypto.randomUUID();
+  await db.prepare("INSERT INTO sculptor_requests(id,member_id,kind,artist_name,existing_artist_slug,sculpt_name,source_url,website_url,social_url,details) VALUES(?,?,?,?,?,?,?,?,?,?)").bind(id,user.id,kind,artistName,existingArtistSlug||null,kind==='submit_sculpt'?sculptName:null,sourceUrl||null,websiteUrl||null,socialUrl||null,details).run();
+  if(emailReady(env)&&typeof context.waitUntil==='function'){
+   context.waitUntil(sendEmail(env,'hello@reborna.co','Reborna sculptor request awaiting review','<p>A new source-led artist '+(kind==='claim_profile'?'profile':'sculpt')+' request has been received.</p><p>Sign in to the private moderator dashboard to review the evidence. Reference: '+id+'</p><p>Do not treat supplied websites or social links as proof of artist identity.</p>').catch(e=>console.error('Artist request alert failed',String(e).slice(0,100))));
+  }
+  return response({ok:true,id,message:'Your request has been received for editorial review. It is not yet a verified artist claim or a public listing.'},201);
+ }
+ if(method==='GET'&&path==='sculptor-review-queue'){
+  if(!(await isModerator(db,user.id)))return failure('Not authorised.',403);
+  const state=clean(query.get('state'),20);
+  if(state&&!['pending','reviewing','needs_info','closed','all'].includes(state))return failure('Unknown request status.');
+  const sql=state&&state!=='all'?'WHERE r.state=?':'';
+  const stmt=db.prepare("SELECT r.id,r.kind,r.artist_name AS artistName,r.existing_artist_slug AS existingArtistSlug,r.sculpt_name AS sculptName,r.source_url AS sourceUrl,r.website_url AS websiteUrl,r.social_url AS socialUrl,r.details,r.state,r.moderator_note AS reviewerMessage,r.created_at AS createdAt,r.updated_at AS updatedAt,u.handle AS memberHandle FROM sculptor_requests r JOIN users u ON u.id=r.member_id "+sql+" ORDER BY CASE r.state WHEN 'pending' THEN 0 WHEN 'needs_info' THEN 1 WHEN 'reviewing' THEN 2 ELSE 3 END,r.created_at DESC LIMIT 70");
+  const requests=(await (state&&state!=='all'?stmt.bind(state):stmt).all()).results||[];
+  return response({requests});
+ }
+ if(method==='POST'&&path==='sculptor-review'){
+  if(!(await isModerator(db,user.id)))return failure('Not authorised.',403);
+  const d=await readJson(request),id=clean(d.id,100),state=clean(d.state,30),message=clean(d.message,650);
+  if(!/^[0-9a-f-]{36}$/i.test(id)||!['reviewing','needs_info','closed'].includes(state)||message.length>600)return failure('Invalid review details.');
+  if(state==='needs_info'&&message.length<10)return failure('Please explain what evidence is needed; the member can read your message.');
+  const current=await db.prepare('SELECT state FROM sculptor_requests WHERE id=?').bind(id).first();
+  if(!current)return failure('Request not found.',404);
+  if(current.state==='closed'&&state!=='closed')return failure('Closed requests cannot be reopened automatically; ask the member to submit updated evidence.',409);
+  if(current.state===state&&state==='closed')return response({ok:true});
+  await db.batch([
+   db.prepare("UPDATE sculptor_requests SET state=?,moderator_note=?,reviewed_by=?,updated_at=datetime('now') WHERE id=?").bind(state,message||null,user.id,id),
+   db.prepare("INSERT INTO sculptor_request_audit(id,request_id,moderator_id,old_state,new_state,note) VALUES(?,?,?,?,?,?)").bind(crypto.randomUUID(),id,user.id,current.state,state,message||null)
+  ]);
+  return response({ok:true,message:'Review state saved. No public catalogue content or identity verification has changed.'});
+ }
+
  if(method==='GET'&&path==='wishlist'){
   const items=(await db.prepare('SELECT item_type AS type,item_path AS path,item_title AS title,item_subtitle AS subtitle,collection_status AS collectionStatus,image_url AS imageUrl,saved_at AS savedAt FROM member_saved_items WHERE user_id=? ORDER BY saved_at DESC,item_path ASC LIMIT 1200').bind(user.id).all()).results||[];
   return response({items});

@@ -87,3 +87,28 @@ test("email failure does not falsely report that a saved enquiry was lost",async
   assert.ok(h.updates.some(x=>x.includes("delivery_status='failed'")));
  }finally{h.restore()}
 });
+
+test("sculptor source fields are stored privately and included in notifications",async()=>{
+ const h=harness();
+ try{
+  const {response}=await h.submit({artistIntent:"claim_profile",websiteUrl:"https://originalartist.example.com/gallery",socialUrl:"https://instagram.com/sculptingstudio"});
+  assert.equal(response.status,202);
+  assert.equal(h.saved.length,1);
+  assert.equal(h.saved[0][5],"https://originalartist.example.com/gallery");
+  assert.equal(h.saved[0][6],"https://instagram.com/sculptingstudio");
+  assert.equal(h.saved[0][7],"claim_profile");
+  assert.match(h.deliveries[0].html,/Social profile:/);
+  assert.match(h.deliveries[0].text,/Sculptor enquiry:/);
+ }finally{h.restore()}
+});
+
+test("invalid source URLs cannot be saved or emailed",async()=>{
+ const h=harness();
+ try{
+  const {response,data}=await h.submit({websiteUrl:"javascript:alert(1)",artistIntent:"claim_profile"});
+  assert.equal(response.status,400);
+  assert.match(data.error,/URLs/i);
+  assert.equal(h.saved.length,0);
+  assert.equal(h.deliveries.length,0);
+ }finally{h.restore()}
+});

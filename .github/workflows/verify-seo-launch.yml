@@ -6,8 +6,13 @@ on:
       - 'app/**'
       - 'components/**'
       - 'lib/**'
-      - 'tests/contact-handler.test.mjs'
+      - 'tests/**'
+      - 'functions/api/**'
+      - 'db/**'
       - 'scripts/**'
+      - 'tests/**'
+      - 'functions/api/**'
+      - 'db/**'
       - '.github/workflows/verify-seo-launch.yml'
   pull_request:
     branches: [main]
@@ -16,6 +21,9 @@ on:
       - 'components/**'
       - 'lib/**'
       - 'scripts/**'
+      - 'tests/**'
+      - 'functions/api/**'
+      - 'db/**'
       - '.github/workflows/verify-seo-launch.yml'
   workflow_dispatch:
 permissions:
@@ -34,7 +42,7 @@ jobs:
       - name: Typecheck client and server code
         run: npm run lint
       - name: Check protected contact form endpoint regressions
-        run: node --test tests/contact-handler.test.mjs
+        run: node --test tests/contact-handler.test.mjs tests/sculptor-request-handler.test.mjs
       - name: Build public site as static HTML for Cloudflare
         env:
           NEXT_TELEMETRY_DISABLED: '1'

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type {Metadata} from "next";
-import {ArrowUpRight,BookOpenText,Camera,HeartHandshake,MessagesSquare,ShieldCheck,Sparkles} from "lucide-react";
+import {ArrowUpRight,BookOpenText,Camera,FileCheck2,HeartHandshake,MessagesSquare,ShieldCheck,Sparkles} from "lucide-react";
 import {canonical,safeJsonLd,breadcrumbJsonLd} from "../../lib/seo";
 import styles from "./sculptors.module.css";
 
@@ -61,16 +61,27 @@ export default function ForSculptors(){
    </div>
   </section>
 
+  <section className={styles.protection} aria-labelledby="protect-originals">
+   <span className={styles.kicker}>PROTECTING ORIGINALITY · BUILDING TRUST</span>
+   <h2 id="protect-originals">Original art. Carefully credited.<br/><em>Better protected.</em></h2>
+   <p>Reborna helps collectors identify the artists behind original sculpts—and reduces confusion caused by unauthorised copies, recasts and misleading product claims. We prioritise traceable sources, fair corrections and independent review, not commercial favouritism.</p>
+   <div className={styles.protectionGrid}>
+    <article><ShieldCheck size={27} strokeWidth={1.3}/><h3>Source-led discovery</h3><p>We trace designs to credited sculptors and their published sources. A social profile or member role alone doesn't establish ownership or guarantee inclusion.</p></article>
+    <article><BookOpenText size={27} strokeWidth={1.3}/><h3>Questions welcome</h3><p>Artists and collectors can report suspected copies, incorrect credits or uncertain origins. Every concern deserves evidence and fair human review.</p></article>
+    <article><FileCheck2 size={27} strokeWidth={1.3}/><h3>Future certificate tools</h3><p>We envisage verified sculptors requesting unique codes for their certificates, with a way for collectors to review code histories. This service isn't available yet; a code alone cannot authenticate a physical kit.</p></article>
+   </div>
+   <div className={styles.protectionNote}><strong>Available now:</strong> source-backed research, profile corrections and reviewed submissions. <strong>In development:</strong> verified sculptor access, certificate-code issuance and further counterfeit protections. Reborna does not currently issue authenticity certificates or guarantees.</div>
+  </section>
   <section className={styles.process} aria-labelledby="contribute-heading">
    <span className={styles.kicker}>HELP US GET THE DETAILS RIGHT</span>
    <h2 id="contribute-heading">Your perspective belongs in the story<span className={styles.period}>.</span></h2>
    <p className={styles.processLead}>If you are an original sculptor, we'd love to hear about an omission, correction, source photo, historical release or potential editorial feature. Here's how enquiries work today.</p>
    <div className={styles.steps}>{steps.map(step=><article key={step.number}><span>{step.number}</span><h3>{step.title}</h3><p>{step.description}</p></article>)}</div>
    <div className={styles.processActions}>
-    <Link className={styles.primary} href="/contact/?category=artist">Introduce yourself or contribute a source <ArrowUpRight size={16} aria-hidden="true"/></Link>
+    <Link className={styles.primary} href="/contact/?category=artist&intent=claim_profile">Introduce yourself or contribute a source <ArrowUpRight size={16} aria-hidden="true"/></Link>
     <Link className={styles.textLink} href="/contact/?category=report">Request a factual correction <ArrowUpRight size={15} aria-hidden="true"/></Link>
    </div>
-   <p className={styles.fineprint}>Please send links rather than uploading someone else's artwork. Publication or reuse of new photography requires an appropriate review of rights and attribution. A contribution is not automatically published.</p>
+   <p className={styles.fineprint}>Already have a Reborna account? Identify as an original sculptor in your account preferences, then <Link href="/dashboard/?area=sculptors">send a private profile claim or original kit submission from your dashboard</Link>. All requests are reviewed before any public changes. Please send links rather than uploading someone else's artwork. Publication or reuse of new photography requires an appropriate review of rights and attribution. A contribution is not automatically published.</p>
   </section>
 
   <section className={styles.sessions} aria-labelledby="sessions-heading">
@@ -81,8 +92,8 @@ export default function ForSculptors(){
   <section className={styles.closing}>
    <HeartHandshake size={31} strokeWidth={1.1} aria-hidden="true"/>
    <h2>Made for the artists behind the art<span className={styles.period}>.</span></h2>
-   <p>No paid placement, artist-verification badges or production certificate service is currently offered here. We're beginning with something simpler: careful documentation, useful discovery and open dialogue.</p>
-   <Link className={styles.primary} href="/contact/?category=artist">Say hello to Reborna <ArrowUpRight size={16} aria-hidden="true"/></Link>
+   <p>No paid placement, artist-verification badges or certificate-code service is currently offered here. We're beginning with something simpler: careful documentation, useful discovery and open dialogue.</p>
+   <Link className={styles.primary} href="/contact/?category=artist&intent=introduce">Say hello to Reborna <ArrowUpRight size={16} aria-hidden="true"/></Link>
    <small>Prefer email? <a href="mailto:hello@reborna.co">hello@reborna.co</a></small>
   </section>
  </main>;

@@ -4,9 +4,11 @@ import {ArrowRight,CheckCircle2,Mail,Send,ShieldCheck} from "lucide-react";
 import TurnstileChallenge from "./TurnstileChallenge";
 
 type Category="general"|"artist"|"verification"|"community"|"supplier"|"events"|"report";
+type ArtistIntent="introduce"|"claim_profile"|"submit_sculpt";
+const artistIntents:{value:ArtistIntent;label:string}[]=[{value:"introduce",label:"Introduce myself or my studio"},{value:"claim_profile",label:"Request to claim / correct my sculptor profile"},{value:"submit_sculpt",label:"Suggest an original sculpt or kit"}];
 const categories:[Category,string][]=[
  ["general","Something else"],
- ["artist","Artist or original sculptor enquiry"],
+ ["artist","Original sculptor / artist enquiries"],
  ["verification","Kit provenance or authenticity"],
  ["community","Accounts and community"],
  ["supplier","Materials supplier or partnership"],
@@ -15,6 +17,7 @@ const categories:[Category,string][]=[
 ];
 export default function ContactForm(){
  const[name,setName]=useState(""),[email,setEmail]=useState(""),[category,setCategory]=useState<Category>("general"),[message,setMessage]=useState("");
+ const[artistIntent,setArtistIntent]=useState<ArtistIntent>("introduce"),[websiteUrl,setWebsiteUrl]=useState(""),[socialUrl,setSocialUrl]=useState("");
  const[siteKey,setSiteKey]=useState(""),[token,setToken]=useState(""),[resetKey,setResetKey]=useState(0),[sending,setSending]=useState(false);
  const[error,setError]=useState(""),[success,setSuccess]=useState(""),[reference,setReference]=useState("");
  const[securityIssue,setSecurityIssue]=useState(""),[securityChecked,setSecurityChecked]=useState(false);
@@ -22,6 +25,8 @@ export default function ContactForm(){
   let live=true;
   const requested=new URLSearchParams(window.location.search).get("category");
   if(requested&&categories.some(([id])=>id===requested))setCategory(requested as Category);
+  const intention=new URLSearchParams(window.location.search).get("intent");
+  if(intention&&artistIntents.some(x=>x.value===intention)){setArtistIntent(intention as ArtistIntent);setCategory("artist")}
   fetch("/api/community/status",{cache:"no-store"})
    .then(r=>{if(!r.ok)throw Error("Security configuration unavailable");return r.json()})
    .then(d=>{if(!live)return;const key=typeof d.turnstileSiteKey==="string"?d.turnstileSiteKey:"";setSiteKey(key);if(!key)setSecurityIssue("The security check is temporarily unavailable.")})
@@ -35,7 +40,7 @@ export default function ContactForm(){
   if(!token){setError("Your message has not been sent yet. Please complete the security check below, or retry it if it is not appearing.");return}
   setSending(true);
   try{
-   const r=await fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json"},credentials:"same-origin",body:JSON.stringify({name,email,category,message,turnstileToken:token,website})});
+   const r=await fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json"},credentials:"same-origin",body:JSON.stringify({name,email,category,message,turnstileToken:token,website,...(category==="artist"?{artistIntent,websiteUrl,socialUrl}:{})})});
    const result=await r.json().catch(()=>({error:"Our contact service is temporarily unavailable."}));
    if(!r.ok)throw Error(result.error||"Your enquiry could not be saved.");
    setSuccess(result.message||"Thank you. We have received your message.");
@@ -54,6 +59,14 @@ export default function ContactForm(){
       <label className="rbrn-form-field">Your email<input required type="email" maxLength={200} autoComplete="email" value={email} onChange={e=>setEmail(e.target.value)} placeholder="Where can we reply?"/></label>
      </div>
      <label className="rbrn-form-field">What's this about?<select value={category} onChange={e=>setCategory(e.target.value as Category)}>{categories.map(([id,label])=><option key={id} value={id}>{label}</option>)}</select></label>
+     {category==="artist"&&<fieldset className="rbrn-contact-artist-fields"><legend>About your original sculpting work <small>Only if relevant</small></legend>
+       <label className="rbrn-form-field">How can we help?<select value={artistIntent} onChange={e=>setArtistIntent(e.target.value as ArtistIntent)}>{artistIntents.map(x=><option key={x.value} value={x.value}>{x.label}</option>)}</select></label>
+       <div className="rbrn-contact-two-fields">
+        <label className="rbrn-form-field">Official website <small>Optional</small><input type="url" maxLength={500} autoComplete="url" value={websiteUrl} onChange={e=>setWebsiteUrl(e.target.value)} placeholder="https://yourstudio.com"/></label>
+        <label className="rbrn-form-field">Social profile <small>Optional · Instagram, Facebook, etc.</small><input type="url" maxLength={500} value={socialUrl} onChange={e=>setSocialUrl(e.target.value)} placeholder="https://instagram.com/yourstudio"/></label>
+       </div>
+       <p className="rbrn-contact-fineprint">Don't have a website? A social profile is absolutely fine. These links help our team research your work, but they don't automatically verify identity or authorise image reuse.</p>
+      </fieldset>}
      <label className="rbrn-form-field">Your message<textarea required minLength={25} maxLength={5000} rows={7} value={message} onChange={e=>setMessage(e.target.value)} placeholder="Tell us a little about what you need…"/></label>
      <label className="rbrn-contact-honey" aria-hidden="true">Website<input tabIndex={-1} type="text" autoComplete="off" name="website"/></label>
      <TurnstileChallenge siteKey={siteKey} action="contact" onVerify={next=>{setToken(next);if(next){setError("");setSecurityIssue("")}}} onError={()=>setSecurityIssue("The security check failed to load or complete.")} resetKey={resetKey}/>
