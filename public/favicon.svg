@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Reborna eight-point signature mark">
+  <title>Reborna</title>
+  <rect width="64" height="64" rx="14" fill="#685649"/>
+  <g fill="#FBF7F1" transform="translate(32 32)">
+    <path id="petal" d="M0-8.6C-3.6-13.4-3.9-20.9 0-24.8C3.9-20.9 3.6-13.4 0-8.6Z"/>
+    <use href="#petal" transform="rotate(45)"/>
+    <use href="#petal" transform="rotate(90)"/>
+    <use href="#petal" transform="rotate(135)"/>
+    <use href="#petal" transform="rotate(180)"/>
+    <use href="#petal" transform="rotate(225)"/>
+    <use href="#petal" transform="rotate(270)"/>
+    <use href="#petal" transform="rotate(315)"/>
+    <circle r="4.2"/>
+  </g>
+</svg>
