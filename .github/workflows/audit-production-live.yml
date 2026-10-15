@@ -1,0 +1,66 @@
+name: Audit live Reborna production editions
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app/dashboard/**'
+      - 'app/for-sculptors/**'
+      - 'components/Production*.tsx'
+      - 'components/SculptorWorkspace.tsx'
+      - 'components/CertificateLookup.tsx'
+      - 'functions/api/community/**'
+      - 'lib/certificate-code.mjs'
+      - 'db/certificate-production-v3.sql'
+      - '.github/workflows/audit-production-live.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test bulk generation, export confidentiality and edition safeguards
+        run: node --test tests/production-system.test.mjs tests/certificate-verification.test.mjs
+      - name: Verify deployed bulk production settings and private API restrictions
+        run: |
+          python3 - <<'PY'
+          import json,time,urllib.request,urllib.error
+          root='https://reborna.co'
+          def read(path,method='GET',payload=None):
+            hdr={'User-Agent':'Reborna production integrity audit','Origin':root,'Accept':'application/json,text/html'}
+            if payload is not None:hdr['Content-Type']='application/json'
+            req=urllib.request.Request(root+path,headers=hdr,method=method,data=None if payload is None else json.dumps(payload).encode())
+            try:
+              with urllib.request.urlopen(req,timeout=18) as r:return r.status,r.read().decode(errors='replace')
+            except urllib.error.HTTPError as e:return e.code,e.read().decode(errors='replace')
+          for attempt in range(45):
+            errors=[]
+            try:
+              status,cap=read('/api/community/production-capabilities')
+              if status!=200:errors.append(('capabilities unavailable',status))
+              else:
+                value=json.loads(cap)
+                if not(value.get('available') is True and value.get('exactQuantityMax')==5000 and value.get('founderApproval') is True and value.get('secretExportsEncrypted') is True and value.get('pricePerCodeMinor')==0):
+                  errors.append(('old production capability version',value))
+              status,art=read('/for-sculptors/')
+              if status!=200 or '5,000' not in art:errors.append(('new artist information not live',status))
+              status,verify=read('/verify/')
+              if status!=200 or 'XXXX-XXXX-XXXX' not in verify:errors.append(('collector lookup unexpectedly missing',status))
+            except Exception as e:errors.append(('deploy pending',str(e)[:160]))
+            if not errors:break
+            print('Waiting for deployed production service',attempt+1,errors,flush=True)
+            time.sleep(7)
+          else:raise SystemExit('Production release failed live validation: '+repr(errors))
+          for path in ['production-studio','production-review-queue']:
+            status,data=read('/api/community/'+path)
+            assert status==401,(path,status,data[:200])
+          for path in ['production-sculpt-create','production-next','production-export-chunk','production-run-review','production-prepare']:
+            status,data=read('/api/community/'+path,'POST',{})
+            assert status==401,(path,status,data[:200])
+          status,data=read('/api/community/certificate-prepare','POST',{})
+          assert status==401,(status,data[:200])
+          # No registered test art or user was created. Never probe live issuance.
+          print('PASS: secure encrypted bulk generation is configured, exact 5000 ceiling, free pricing, collector lookup unaffected and private production routes reject anonymous requests')
+          PY
