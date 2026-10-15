@@ -34,12 +34,12 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch origin main cloudflare-pages
           git checkout -B cloudflare-pages origin/cloudflare-pages
-          git rm -r -f --ignore-unmatch app components lib >/dev/null
-          git checkout origin/main -- app components lib package.json tsconfig.json
+          git rm -r -f --ignore-unmatch app components lib public >/dev/null
+          git checkout origin/main -- app components lib public package.json tsconfig.json
           mkdir -p functions/api/community
           git checkout origin/main -- functions/api/community functions/api/contact.js
           git rm -f --ignore-unmatch app/api/exchange-rates/route.ts app/api/admin/media/route.ts
-          git add -A app components lib functions/api/community functions/api/contact.js package.json tsconfig.json
+          git add -A app components lib public functions/api/community functions/api/contact.js package.json tsconfig.json
           if ! git diff --cached --quiet; then
             git commit -m "Sync Reborna website updates from main to Cloudflare Pages"
             git push origin HEAD:cloudflare-pages
