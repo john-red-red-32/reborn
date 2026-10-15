@@ -177,6 +177,7 @@ export async function handleProduction(ctx){
   return ok({ok:true,id,message:"Run sent for editorial approval. No certificate codes have been generated."},201);
  }
  if(method==="POST"&&path==="production-run-edit"){
+  if(!(await throttle(db,request,"production-run-edit",8,3600)))return fail("Too many revisions to this production request. Try again later.",429);
   const id=txt(body.runId,45),quantity=body.quantity;
   if(!isUuid(id)||!Number.isInteger(quantity)||quantity<1||quantity>MAX_QTY||body.confirmedNewIssue!==true)return fail("Enter an exact quantity and confirm these are new certificates, not reprints.");
   const run=await myRun(db,id,user.id);
@@ -205,6 +206,7 @@ export async function handleProduction(ctx){
   if(!isUuid(runId)||!["approved","rejected"].includes(decision)||note.length<20||note.length>450)return fail("Review needs a valid run, decision, and an explanation of at least 20 characters.");
   const r=await db.prepare("SELECT r.*,e.current_declared_quantity,e.initially_declared_quantity,e.edition_kind,e.sculpt_id,s.issuer_user_id,s.artist_slug,v.state AS issuer_state FROM production_runs r JOIN production_editions e ON e.id=r.edition_id JOIN production_sculpts s ON s.id=e.sculpt_id JOIN verified_sculptor_issuers v ON v.user_id=s.issuer_user_id AND v.artist_slug=s.artist_slug WHERE r.id=?").bind(runId).first();
   if(!r||r.status!=="pending")return fail("This request has already been reviewed, or no longer exists.",409);
+  if(body.expectedQuantity!==r.quantity||body.expectedSerialStart!==r.serial_start)return fail("This production request changed while you were reviewing it. Refresh and verify the new exact quantity before deciding.",409);
   if(r.issuer_state!=="active"&&decision==="approved")return fail("The sculptor's issuing account is suspended.",403);
   const total=r.serial_start+r.quantity-1;
   if(r.edition_kind==="limited"&&total>r.current_declared_quantity&&!r.change_acknowledged&&decision==="approved")return fail("Edition expansion was not explicitly acknowledged by its original sculptor.",409);
