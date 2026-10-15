@@ -18,8 +18,8 @@ export default function ProductionModerator({catalogueKits}:{catalogueKits:{slug
   if(!window.confirm("Record this "+decision+" editorial decision? This changes private production permissions or a source-backed public link."))return;
   setBusy(id);setError("");setNotice("");
   try{
-   const data=path==="production-run-review"?{runId:id,decision,note}:{id,decision,note};
-   const result=await communityApi<{message:string}>(path,data);await refresh();setNotice(result.message);
+   const run=data?.runs.find(r=>r.id===id);const payload=path==="production-run-review"?{runId:id,decision,note,expectedQuantity:run?.quantity,expectedSerialStart:run?.serialStart}:{id,decision,note};
+   const result=await communityApi<{message:string}>(path,payload);await refresh();setNotice(result.message);
   }catch(e){setError((e as Error).message)}finally{setBusy("")}
  };
  const reason=(id:string,placeholder:string)=> <textarea value={messages[id]||""} maxLength={450} rows={3} onChange={e=>setMessages(s=>({...s,[id]:e.target.value}))} placeholder={placeholder} aria-label="Document the evidence and editorial decision"/>;
