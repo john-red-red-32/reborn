@@ -17,10 +17,22 @@ export default function ContactForm(){
  const[name,setName]=useState(""),[email,setEmail]=useState(""),[category,setCategory]=useState<Category>("general"),[message,setMessage]=useState("");
  const[siteKey,setSiteKey]=useState(""),[token,setToken]=useState(""),[resetKey,setResetKey]=useState(0),[sending,setSending]=useState(false);
  const[error,setError]=useState(""),[success,setSuccess]=useState(""),[reference,setReference]=useState("");
- useEffect(()=>{let live=true;fetch('/api/community/status',{cache:'no-store'}).then(r=>r.json()).then(d=>{if(live)setSiteKey(d.turnstileSiteKey||"")}).catch(()=>{});return()=>{live=false}},[]);
+ const[securityIssue,setSecurityIssue]=useState(""),[securityChecked,setSecurityChecked]=useState(false);
+ useEffect(()=>{
+  let live=true;
+  const requested=new URLSearchParams(window.location.search).get("category");
+  if(requested&&categories.some(([id])=>id===requested))setCategory(requested as Category);
+  fetch("/api/community/status",{cache:"no-store"})
+   .then(r=>{if(!r.ok)throw Error("Security configuration unavailable");return r.json()})
+   .then(d=>{if(!live)return;const key=typeof d.turnstileSiteKey==="string"?d.turnstileSiteKey:"";setSiteKey(key);if(!key)setSecurityIssue("The security check is temporarily unavailable.")})
+   .catch(()=>{if(live)setSecurityIssue("The security check could not be loaded.")})
+   .finally(()=>{if(live)setSecurityChecked(true)});
+  return()=>{live=false};
+ },[]);
  async function submit(e:React.FormEvent<HTMLFormElement>){
   e.preventDefault();const website=(e.currentTarget.elements.namedItem("website") as HTMLInputElement|null)?.value||"";setError("");setSuccess("");
-  if(!token){setError("Please complete the security check.");return}
+  if(!siteKey){setError("The security check is unavailable, so your message has not been sent. Please email hello@reborna.co instead.");return}
+  if(!token){setError("Your message has not been sent yet. Please complete the security check below, or retry it if it is not appearing.");return}
   setSending(true);
   try{
    const r=await fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json"},credentials:"same-origin",body:JSON.stringify({name,email,category,message,turnstileToken:token,website})});
@@ -44,10 +56,12 @@ export default function ContactForm(){
      <label className="rbrn-form-field">What's this about?<select value={category} onChange={e=>setCategory(e.target.value as Category)}>{categories.map(([id,label])=><option key={id} value={id}>{label}</option>)}</select></label>
      <label className="rbrn-form-field">Your message<textarea required minLength={25} maxLength={5000} rows={7} value={message} onChange={e=>setMessage(e.target.value)} placeholder="Tell us a little about what you need…"/></label>
      <label className="rbrn-contact-honey" aria-hidden="true">Website<input tabIndex={-1} type="text" autoComplete="off" name="website"/></label>
-     <TurnstileChallenge siteKey={siteKey} action="contact" onVerify={setToken} resetKey={resetKey}/>
-     {error&&<p className="rbrn-community-feedback error" role="alert">{error}</p>}
-     <p className="rbrn-contact-fineprint">We use these details only to deal with your enquiry. No marketing emails, and your message isn't posted publicly. Please avoid including sensitive personal or payment information.</p>
-     <button className="rbrn-community-primary" type="submit" disabled={sending||!token||message.trim().length<25}>{sending?"Sending your note…":"Send your message"} <Send size={16}/></button>
+     <TurnstileChallenge siteKey={siteKey} action="contact" onVerify={next=>{setToken(next);if(next){setError("");setSecurityIssue("")}}} onError={()=>setSecurityIssue("The security check failed to load or complete.")} resetKey={resetKey}/>
+     {!token&&<p className="rbrn-contact-fineprint" role="status">{!securityChecked?"Preparing the security check…":securityIssue||"Please complete the security check before sending. A challenge may appear automatically."}</p>}
+     {securityIssue&&<button type="button" className="rbrn-contact-retry" onClick={()=>{setToken("");setSecurityIssue("");setResetKey(x=>x+1)}}>Retry security check</button>}
+     {error&&<p className="rbrn-community-feedback error" role="alert">{error} <a href="mailto:hello@reborna.co">Email Reborna directly ↗</a></p>}
+     <p className="rbrn-contact-fineprint">We use these details only to deal with your enquiry. No marketing emails, and your message isn't posted publicly. Please avoid including sensitive personal or payment information. If the form will not send, email <a href="mailto:hello@reborna.co">hello@reborna.co</a>.</p>
+     <button className="rbrn-community-primary" type="submit" disabled={sending}>{sending?"Sending your note…":"Send your message"} <Send size={16}/></button>
     </form>
    }
   </section>
