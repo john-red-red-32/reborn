@@ -66,6 +66,7 @@ jobs:
               expect(page.locator('html')).to_have_attribute('lang','en')
               expect(page.locator('.rbrn-language-welcome')).to_have_count(0)
               page.reload(wait_until='domcontentloaded')
+              expect(page.locator('.inner-menu')).to_be_enabled(timeout=12000)  # React hydration completed
               expect(page.locator('html')).to_have_attribute('lang','en',timeout=12000)
               expect(page.locator('.rbrn-language-welcome')).to_have_count(0)
               page.locator('.locale-tools label:last-child select').select_option(language)
