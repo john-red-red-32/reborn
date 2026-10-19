@@ -46,7 +46,7 @@ jobs:
                 ('IT','it','Benvenuto su Reborna!','Scopri'),
                 ('RU','ru','Добро пожаловать в Reborna!','Открыть')]:
               context=browser.new_context(locale='en-GB',viewport={'width':390,'height':844},has_touch=True)
-              context.route('**/api/locale',lambda route,country=country:route.fulfill(status=200,content_type='application/json',body=json.dumps({'country':country}),headers={'Cache-Control':'no-store'}))
+              context.route('**/api/locale',lambda route:route.fulfill(status=200,content_type='application/json',body=json.dumps({'country':country}),headers={'Cache-Control':'no-store'}))
               page=context.new_page()
               page.goto(base+'/',wait_until='domcontentloaded',timeout=35000)
               expect(page.locator('html')).to_have_attribute('lang',language,timeout=12000)
