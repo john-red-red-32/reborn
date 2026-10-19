@@ -55,13 +55,13 @@ export const extendedPhrases: Readonly<Record<string,readonly [string,string,str
   "От первых прозрачных слоёв краски до последних ресничек. Тщательно изученный каталог материалов и специализированных поставщиков для создания кукол из оригинальных скульптур."
  ],
  "FIND YOUR PROCESS": [
-  "ВЫБЕРИТЕ СВОЙ МЕТОД",
+  "ENCUENTRA TU TÉCNICA",
   "TROVA IL TUO METODO",
   "FINDE DEINE TECHNIK",
   "ВЫБЕРИТЕ СВОЙ МЕТОД"
  ],
  "Not all paints work the same.": [
-  "Не все краски одинаковы.",
+  "No todas las pinturas funcionan igual.",
   "Non tutte le vernici funzionano allo stesso modo.",
   "Nicht alle Farben funktionieren gleich.",
   "Не все краски работают одинаково."
@@ -187,7 +187,7 @@ export const extendedPhrases: Readonly<Record<string,readonly [string,string,str
   "СООБЩЕСТВО REBORNA"
  ],
  "Made to be shared": [
-  "Создано, чтобы делиться",
+  "Hecho para compartir",
   "Fatto per essere condiviso",
   "Zum Teilen gemacht",
   "Создано, чтобы делиться"
@@ -205,7 +205,7 @@ export const extendedPhrases: Readonly<Record<string,readonly [string,string,str
   "Начать обсуждение"
  ],
  "All discussions": [
-  "Todas las обсуждения",
+  "Todas las conversaciones",
   "Tutte le discussioni",
   "Alle Diskussionen",
   "Все обсуждения"
@@ -517,7 +517,7 @@ export const extendedPhrases: Readonly<Record<string,readonly [string,string,str
   "Даты и места проверены у организаторов 14 октября 2026 года и могут измениться. Уточняйте информацию и билеты у организаторов. Размещение редакционное, не платное."
  ],
  "ORIGINAL SCULPTS · BETTER PROVENANCE": [
-  "ОРИГИНАЛЬНЫЕ СКУЛЬПТУРЫ · ПРОИСХОЖДЕНИЕ",
+  "ESCULTURAS ORIGINALES · MEJOR PROCEDENCIA",
   "SCULTURE ORIGINALI · TRACCIABILITÀ",
   "ORIGINALSKULPTUREN · HERKUNFT",
   "ОРИГИНАЛЬНЫЕ СКУЛЬПТУРЫ · ПРОИСХОЖДЕНИЕ"
