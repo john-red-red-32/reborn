@@ -1,5 +1,5 @@
 /** Extended curated interface translations. Source records are never translated. */
-export const extendedPhrases: Readonly<Record<string,readonly [string,string,string,string]>> = {
+export const extendedPhrases: Readonly<Record<string,string>> = {
  "of what’s next.": [
   "de lo que está por venir.",
   "di ciò che verrà.",
