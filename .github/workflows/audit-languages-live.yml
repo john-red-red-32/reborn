@@ -1,0 +1,69 @@
+name: Audit live language selection and geolocation welcome
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'components/LocaleProvider.tsx'
+      - 'components/LanguageWelcome.tsx'
+      - 'components/SiteHeader.tsx'
+      - 'components/T.tsx'
+      - 'lib/i18n/**'
+      - 'functions/api/locale.js'
+      - '.github/workflows/audit-languages-live.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  international:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip -q install playwright==1.55.0
+      - run: python3 -m playwright install --with-deps chromium
+      - name: Audit privacy-safe country endpoint and language switches in real Chromium
+        run: |
+          python3 - <<'PY'
+          import json,time,urllib.request,urllib.error
+          from playwright.sync_api import sync_playwright,expect
+          base='https://reborna.co'
+          for attempt in range(40):
+            try:
+              with urllib.request.urlopen(base+'/api/locale',timeout=15) as r:
+                data=json.loads(r.read())
+                assert r.status==200 and list(data.keys())==['country'] and ('no-store' in r.headers.get('Cache-Control',''))
+              break
+            except Exception as ex:
+              if attempt==39:raise
+              print('Waiting for live Cloudflare locale endpoint',attempt+1,str(ex)[:100],flush=True)
+              time.sleep(8)
+          with sync_playwright() as p:
+            browser=p.chromium.launch(headless=True)
+            for country,language,title,nav in [
+                ('DE','de','Willkommen bei Reborna!','Entdecken'),
+                ('ES','es','¡Bienvenido a Reborna!','Descubrir'),
+                ('IT','it','Benvenuto su Reborna!','Scopri'),
+                ('RU','ru','Добро пожаловать в Reborna!','Открыть')]:
+              context=browser.new_context(locale='en-GB',viewport={'width':390,'height':844},has_touch=True)
+              context.route('**/api/locale',lambda route,country=country:route.fulfill(status=200,content_type='application/json',body=json.dumps({'country':country}),headers={'Cache-Control':'no-store'}))
+              page=context.new_page()
+              page.goto(base+'/',wait_until='domcontentloaded',timeout=35000)
+              expect(page.locator('html')).to_have_attribute('lang',language,timeout=12000)
+              expect(page.locator('.rbrn-language-welcome')).to_be_visible(timeout=10000)
+              expect(page.locator('.rbrn-language-welcome h2')).to_have_text(title)
+              expect(page.locator('.inner-nav a').first).to_have_text(nav)
+              assert page.evaluate('document.documentElement.scrollWidth<=window.innerWidth+2'),(country,'horizontal overflow')
+              # Header override persists for the same browser, across refresh and routes.
+              page.locator('.locale-tools label:last-child select').select_option('en')
+              expect(page.locator('html')).to_have_attribute('lang','en')
+              expect(page.locator('.rbrn-language-welcome')).to_have_count(0)
+              page.reload(wait_until='domcontentloaded')
+              expect(page.locator('html')).to_have_attribute('lang','en',timeout=12000)
+              expect(page.locator('.rbrn-language-welcome')).to_have_count(0)
+              page.locator('.locale-tools label:last-child select').select_option(language)
+              page.goto(base+'/artists/',wait_until='domcontentloaded')
+              expect(page.locator('html')).to_have_attribute('lang',language,timeout=12000)
+              print('PASS',country,language,'native-language welcome, translated navigation, persistent English override, artist-page language',flush=True)
+              context.close()
+            browser.close()
+          PY
