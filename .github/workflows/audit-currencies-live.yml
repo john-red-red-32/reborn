@@ -65,7 +65,7 @@ jobs:
               print('PASS regional currency',country,currency,'kit offers, calendar preview, material cards and product detail',flush=True)
               context.close()
             context=browser.new_context(locale='ru-RU',viewport={'width':1440,'height':900})
-            context.add_init_script("localStorage.setItem('reborn-currency','GBP')")
+            context.add_init_script("if (!localStorage.getItem('reborn-currency')) localStorage.setItem('reborn-currency','GBP')")
             context.route('**/api/locale',lambda route:route.fulfill(status=200,content_type='application/json',body='{"country":"RU"}'))
             context.route('https://api.frankfurter.dev/**',stub_rates)
             page=context.new_page()
