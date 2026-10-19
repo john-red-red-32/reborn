@@ -921,3 +921,20 @@ html{scroll-behavior:smooth}
 .verify-info p{margin:0}
 .verify-card input:focus-visible,.verify-card button:focus-visible{outline:2px solid #a18b76;outline-offset:3px}
 @media(max-width:570px){.rbrn-cert-result{padding:14px}.rbrn-cert-result-details{grid-template-columns:1fr;gap:10px}}
+
+
+/* Privacy-first language detection notice. Appears once per visitor choice; not a blocking modal. */
+.locale-tools select[aria-label]{min-width:75px;max-width:115px}
+.rbrn-language-welcome{position:fixed;z-index:78;top:92px;right:clamp(13px,3vw,42px);width:min(440px,calc(100vw - 26px));display:flex;align-items:flex-start;gap:15px;background:#fdfaf5;border:1px solid #d9c8b7;box-shadow:0 11px 45px rgba(56,36,24,.18);padding:20px 22px;color:#674f3d}
+.rbrn-language-welcome-mark{font:400 30px/1 Georgia,serif;color:#80604d;flex:none;margin-top:4px}
+.rbrn-language-welcome-body{min-width:0;flex:1}
+.rbrn-language-welcome-eyebrow{display:block;font:600 10px/1.6 "DM Sans",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#9e816a;margin-bottom:6px}
+.rbrn-language-welcome h2{font:400 23px/1.32 Georgia,serif;color:#5d4635;margin:0 0 6px}
+.rbrn-language-welcome p{font:400 12px/1.75 "DM Sans",sans-serif;color:#7b6352;margin:0 0 15px}
+.rbrn-language-welcome-actions{display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap}
+.rbrn-language-welcome-confirm{background:#765a48;color:#fffdf9;border:1px solid #765a48;cursor:pointer;padding:10px 13px;min-height:43px;font:600 11px/1.4 "DM Sans",sans-serif}
+.rbrn-language-welcome-actions label{display:grid;gap:4px;font:600 10px/1.4 "DM Sans",sans-serif;color:#816b57}
+.rbrn-language-welcome select{background:white;color:#624d3c;border:1px solid #d9c8b7;min-width:130px;max-width:175px;min-height:43px;padding:8px;font:500 12px "DM Sans",sans-serif}
+.rbrn-language-welcome button:focus-visible,.rbrn-language-welcome select:focus-visible{outline:2px solid #a38872;outline-offset:2px}
+@media(max-width:800px){.rbrn-language-welcome{top:76px;padding:15px 14px;gap:10px}.rbrn-language-welcome-mark{font-size:24px}.rbrn-language-welcome h2{font-size:20px}.locale-tools select[aria-label]{max-width:90px}}
+@media(prefers-reduced-motion:reduce){.rbrn-language-welcome *{scroll-behavior:auto}}
