@@ -11,7 +11,7 @@ export const languageLabels:Record<WebsiteLanguage,string>={
 };
 export function translate(text:string,language:WebsiteLanguage):string{
  if(language==="en")return text;
- if(language==="es")return corePhrases[text]||extendedPhrases[text]||formPhrases[text]||text;
+ if(language==="es")return corePhrases[text]||extendedPhrases[text]?.[0]||formPhrases[text]?.[0]||text;
  const variant=coreRegional[text]||extendedRegional[text]||formsRegional[text];
  return variant?.[{it:0,de:1,ru:2}[language]]||text;
 }
