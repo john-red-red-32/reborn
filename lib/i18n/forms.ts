@@ -343,7 +343,7 @@ export const formPhrases: Readonly<Record<string,readonly [string,string,string,
   "Мы используем данные только для ответа на обращение. Без рассылок и публичной публикации сообщения. Не отправляйте конфиденциальные или платёжные данные. Если форма не работает, напишите на"
  ],
  "Kit provenance or authenticity": [
-  "Происхождение или подлинность набора",
+  "Procedencia o autenticidad del kit",
   "Provenienza o autenticità del kit",
   "Kit-Herkunft oder Echtheit",
   "Происхождение или подлинность набора"
@@ -439,7 +439,7 @@ export const formPhrases: Readonly<Record<string,readonly [string,string,string,
   "Проверьте правильность каждого символа. Незарегистрированный код не подтверждает подлинность."
  ],
  "This is a recorded issuance by an approved sculptor account—not physical authentication.": [
-  "Это зарегистрированная выдача кода проверенным скульптором, а не подтверждение подлинности физического набора.",
+  "Se ha registrado la emisión del código por un escultor aprobado; esto no autentica el kit físico.",
   "È un'emissione registrata da uno scultore approvato, non l'autenticazione del kit fisico.",
   "Dies ist eine registrierte Ausgabe durch ein geprüftes Bildhauerkonto, keine physische Echtheitsprüfung.",
   "Это зарегистрированная выдача кода проверенным автором, а не подтверждение подлинности самого набора."
