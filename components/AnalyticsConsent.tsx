@@ -3,6 +3,7 @@
 import {useEffect, useState} from "react";
 import Link from "next/link";
 import styles from "./AnalyticsConsent.module.css";
+import {useShopLocale} from "./LocaleProvider";
 
 const MEASUREMENT_ID = "G-PTENZWZFC1";
 const STORAGE_KEY = "reborna-analytics-consent-v1";
@@ -54,10 +55,12 @@ function stopAnalytics() {
 }
 
 export function AnalyticsSettingsButton() {
-  return <button type="button" className={styles.settingsButton} onClick={() => window.dispatchEvent(new Event(SETTINGS_EVENT))}>Analytics choices</button>;
+  const{t}=useShopLocale();
+  return <button type="button" className={styles.settingsButton} onClick={() => window.dispatchEvent(new Event(SETTINGS_EVENT))}>{t("Analytics choices")}</button>;
 }
 
 export default function AnalyticsConsent() {
+  const{t}=useShopLocale();
   const [ready, setReady] = useState(false);
   const [choice, setChoice] = useState<Choice | null>(null);
   const [open, setOpen] = useState(false);
@@ -94,16 +97,16 @@ export default function AnalyticsConsent() {
   };
 
   if (!ready || !open) return null;
-  return <section className={styles.banner} role="region" aria-label="Analytics privacy choices">
+  return <section className={styles.banner} role="region" aria-label={t("Analytics privacy choices")}>
     <div className={styles.copy}>
-      <span className={styles.eyebrow}>YOUR PRIVACY, YOUR CHOICE</span>
-      <h2>Who doesn&apos;t love cookies?</h2>
-      <p>We use optional Google Analytics cookies to understand how people find and explore Reborna, helping us make the experience even better. You can accept or reject them — Reborna works just as beautifully either way. <Link href="/cookies/">Learn more</Link>.</p>
+      <span className={styles.eyebrow}>{t("YOUR PRIVACY, YOUR CHOICE")}</span>
+      <h2>{t("Who doesn't love cookies?")}</h2>
+      <p>{t("We use optional Google Analytics cookies to understand how people find and explore Reborna, helping us make the experience even better. You can accept or reject them — Reborna works just as beautifully either way.")} <Link href="/cookies/">{t("Learn more")}</Link>.</p>
     </div>
     <div className={styles.actions}>
-      <button type="button" className={styles.reject} onClick={() => decide("rejected")}>Reject analytics</button>
-      <button type="button" className={styles.accept} onClick={() => decide("accepted")}>Accept analytics</button>
-      {choice && <button type="button" className={styles.close} onClick={() => setOpen(false)}>Keep current choice</button>}
+      <button type="button" className={styles.reject} onClick={() => decide("rejected")}>{t("Reject analytics")}</button>
+      <button type="button" className={styles.accept} onClick={() => decide("accepted")}>{t("Accept analytics")}</button>
+      {choice && <button type="button" className={styles.close} onClick={() => setOpen(false)}>{t("Keep current choice")}</button>}
     </div>
   </section>;
 }
