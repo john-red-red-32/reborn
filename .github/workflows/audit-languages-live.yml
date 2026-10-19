@@ -69,6 +69,8 @@ jobs:
               expect(page.locator('html')).to_have_attribute('lang','en',timeout=12000)
               expect(page.locator('.rbrn-language-welcome')).to_have_count(0)
               page.locator('.locale-tools label:last-child select').select_option(language)
+              expect(page.locator('html')).to_have_attribute('lang',language,timeout=12000)
+              assert page.evaluate('JSON.parse(localStorage.getItem("reborna-website-language-v1")).language')==language,(country,'manual preference not persisted')
               page.goto(base+'/artists/',wait_until='domcontentloaded')
               expect(page.locator('html')).to_have_attribute('lang',language,timeout=12000)
               print('PASS',country,language,'native-language welcome, translated navigation, persistent English override, artist-page language',flush=True)
