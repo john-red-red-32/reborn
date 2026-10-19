@@ -6,6 +6,7 @@ import SiteFooter from "../components/SiteFooter";
 import {LocaleProvider} from "../components/LocaleProvider";
 import {WishlistProvider} from "../components/WishlistProvider";
 import AnalyticsConsent from "../components/AnalyticsConsent";
+import LanguageWelcome from "../components/LanguageWelcome";
 export const metadata: Metadata = {
   title: "Original Reborn Doll Sculptors, Kits & Art | Reborna",
   description: "Discover original reborn doll sculptors, source-attributed artist biographies, original sculpt kits, historic designs and specialist doll-making materials.",
@@ -24,5 +25,5 @@ export const metadata: Metadata = {
   robots: {index:true,follow:true,googleBot:{index:true,follow:true}}
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body><LocaleProvider><WishlistProvider><SiteHeader/>{children}<SiteFooter/><AnalyticsConsent/></WishlistProvider></LocaleProvider></body></html>;
+  return <html lang="en"><body><LocaleProvider><WishlistProvider><SiteHeader/>{children}<SiteFooter/><LanguageWelcome/><AnalyticsConsent/></WishlistProvider></LocaleProvider></body></html>;
 }

@@ -42,7 +42,7 @@ jobs:
       - name: Typecheck client and server code
         run: npm run lint
       - name: Check protected contact form endpoint regressions
-        run: node --test tests/contact-handler.test.mjs tests/sculptor-request-handler.test.mjs tests/certificate-verification.test.mjs tests/production-system.test.mjs
+        run: node --test tests/contact-handler.test.mjs tests/sculptor-request-handler.test.mjs tests/certificate-verification.test.mjs tests/production-system.test.mjs tests/language-geolocation.test.mjs tests/localization-content.test.mjs
       - name: Check fresh certificate registry D1 schema
         run: |
           python3 - <<'PY'

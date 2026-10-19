@@ -8,6 +8,7 @@ on:
       - 'lib/**'
       - 'functions/api/community/**'
       - 'functions/api/contact.js'
+      - 'functions/api/locale.js'
       - 'public/**'
       - 'package.json'
       - 'tsconfig.json'
@@ -37,9 +38,9 @@ jobs:
           git rm -r -f --ignore-unmatch app components lib public >/dev/null
           git checkout origin/main -- app components lib public package.json tsconfig.json
           mkdir -p functions/api/community
-          git checkout origin/main -- functions/api/community functions/api/contact.js
+          git checkout origin/main -- functions/api/community functions/api/contact.js functions/api/locale.js
           git rm -f --ignore-unmatch app/api/exchange-rates/route.ts app/api/admin/media/route.ts
-          git add -A app components lib public functions/api/community functions/api/contact.js package.json tsconfig.json
+          git add -A app components lib public functions/api/community functions/api/contact.js functions/api/locale.js package.json tsconfig.json
           if ! git diff --cached --quiet; then
             git commit -m "Sync Reborna website updates from main to Cloudflare Pages"
             git push origin HEAD:cloudflare-pages
