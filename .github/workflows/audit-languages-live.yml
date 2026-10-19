@@ -46,9 +46,16 @@ jobs:
                 ('IT','it','Benvenuto su Reborna!','Scopri'),
                 ('RU','ru','Добро пожаловать в Reborna!','Открыть')]:
               context=browser.new_context(locale='en-GB',viewport={'width':390,'height':844},has_touch=True)
-              context.route('**/api/locale',lambda route:route.fulfill(status=200,content_type='application/json',body=json.dumps({'country':country}),headers={'Cache-Control':'no-store'}))
+              def mock_country(route):
+                print('MOCK country',country,'url',route.request.url,flush=True)
+                route.fulfill(status=200,content_type='application/json',body=json.dumps({'country':country}),headers={'Cache-Control':'no-store'})
+              context.route('**/api/locale',mock_country)
               page=context.new_page()
-              page.goto(base+'/',wait_until='domcontentloaded',timeout=35000)
+              page.on('pageerror',lambda ex:print('BROWSER JS ERROR',str(ex)[:500],flush=True))
+              page.on('response',lambda r:print('HTTP ERROR',r.status,r.url[:150],flush=True) if r.status>=400 and 'reborna.co' in r.url else None)
+              response=page.goto(base+'/',wait_until='domcontentloaded',timeout=35000)
+              page.wait_for_timeout(2500)
+              print('DEBUG landing',country,'status',response.status,'url',page.url,'title',page.title(),'html_lang',page.locator('html').get_attribute('lang'),'locale_selects',page.locator('.locale-tools select').count(),'scripts',page.locator('script[src]').count(),flush=True)
               expect(page.locator('html')).to_have_attribute('lang',language,timeout=12000)
               expect(page.locator('.rbrn-language-welcome')).to_be_visible(timeout=10000)
               expect(page.locator('.rbrn-language-welcome h2')).to_have_text(title)
