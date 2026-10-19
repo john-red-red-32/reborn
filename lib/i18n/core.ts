@@ -1,5 +1,5 @@
 /* Curated human-reviewed interface vocabulary. Artist names, catalogue titles, user posts and source quotations remain original. */
-export const corePhrases: Readonly<Record<string,readonly [string,string,string,string]>> = {
+export const corePhrases: Readonly<Record<string,string>> = {
  "Discover": "Descubrir",
  "Shop kits": "Comprar kits",
  "Shop materials": "Comprar materiales",
