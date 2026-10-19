@@ -403,7 +403,7 @@ export const extendedPhrases: Readonly<Record<string,readonly [string,string,str
   "На мероприятии представлены реборн"
  ],
  "The show focuses on reborn and silicone doll artistry.": [
-  "Выставка посвящена реборн и силиконовым куклам.",
+  "La exposición se centra en el arte de las muñecas reborn y de silicona.",
   "L'evento si concentra sull'arte delle bambole reborn e in silicone.",
   "Die Veranstaltung konzentriert sich auf Reborn- und Silikonpuppenkunst.",
   "Выставка посвящена искусству создания кукол реборн и силиконовых кукол."
