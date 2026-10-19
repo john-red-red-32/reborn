@@ -1,8 +1,10 @@
+"use client";
 import Link from "next/link";
 import {ArrowRight,CalendarDays,Heart,MapPin} from "lucide-react";
 import type {Kit} from "../lib/demo-data";
 import type {CommunityEvent} from "../lib/community-events";
 import {eventDateLabel,eventFocusLabel} from "../lib/community-events";
+import {displayMoney,useShopLocale} from "./LocaleProvider";
 
 type KitEntry={kind:"kit";kit:Kit;date:string;dateKind:"shipping"|"release"};
 type ShowEntry={kind:"show";event:CommunityEvent;date:string};
@@ -33,6 +35,12 @@ export function createReleaseTimeline(kits:readonly Kit[],events:readonly Commun
 }
 export default function HomeReleaseCalendar({kits,saved,onToggle,events=[]}:{kits:readonly Kit[];saved:readonly string[];onToggle:(id:string)=>void;events?:readonly CommunityEvent[]}){
  const groups=createReleaseTimeline(kits,events);
+ const {currency,fx,locale}=useShopLocale();
+ const examplePrice=(amount?:number)=>{
+  if(amount===undefined)return "TBA";
+  const formatted=displayMoney(amount,"GBP",currency,fx,locale);
+  return (formatted.converted?"≈ ":"")+formatted.text;
+ };
  return <section className="content home-calendar-section" id="release-calendar" aria-labelledby="release-calendar-heading">
    <div className="section-kicker">SCULPT RELEASES — DESIGN PREVIEW</div>
    <div className="section-head home-calendar-head"><div>
@@ -51,7 +59,7 @@ export default function HomeReleaseCalendar({kits,saved,onToggle,events=[]}:{kit
              <button type="button" className={saved.includes(entry.kit.id)?"heart saved":"heart"} onClick={()=>onToggle(entry.kit.id)} aria-label={saved.includes(entry.kit.id)?"Remove "+entry.kit.name+" from watchlist":"Save "+entry.kit.name+" to watchlist"} aria-pressed={saved.includes(entry.kit.id)}><Heart size={19} fill={saved.includes(entry.kit.id)?"currentColor":"none"}/></button>
            </div>
            <div className="home-calendar-event-line"><span className="calendar-event-type"><CalendarDays size={14}/>{entry.dateKind==="shipping"?"Estimated shipping":"Release / pre-order"}</span><time dateTime={entry.date}>{dateLabel(entry.date)}</time></div>
-           <div className="home-calendar-card-bottom"><span className={"status "+entry.kit.status.toLowerCase().replaceAll(" ","-")}>{entry.kit.status}</span><div className="home-calendar-financials"><span>Deposit <b>{entry.kit.deposit!==undefined?"£"+entry.kit.deposit:"TBA"}</b></span><span>Final balance <b>{entry.kit.balance!==undefined?"£"+entry.kit.balance:"TBA"}</b></span><span>Total <b>{entry.kit.deposit!==undefined&&entry.kit.balance!==undefined?"£"+(entry.kit.deposit+entry.kit.balance):"TBA"}</b></span></div></div>
+           <div className="home-calendar-card-bottom"><span className={"status "+entry.kit.status.toLowerCase().replaceAll(" ","-")}>{entry.kit.status}</span><div className="home-calendar-financials"><span>Deposit <b>{examplePrice(entry.kit.deposit)}</b></span><span>Final balance <b>{examplePrice(entry.kit.balance)}</b></span><span>Total <b>{examplePrice(entry.kit.deposit!==undefined&&entry.kit.balance!==undefined?entry.kit.deposit+entry.kit.balance:undefined)}</b></span></div></div>
            {entry.kit.ship&&entry.kit.launch&&entry.dateKind==="shipping"&&<details className="home-calendar-more"><summary>More dates</summary><p>Pre-order / launch: <time dateTime={entry.kit.launch}>{dateLabel(entry.kit.launch)}</time></p></details>}
          </article>:<article className="home-calendar-card rbrn-calendar-inline-show" key={"show-"+entry.event.slug}>
            <div className="rbrn-calendar-inline-label"><CalendarDays size={15}/> Confirmed show <span>REBORNS</span></div>

@@ -1,0 +1,88 @@
+name: Audit live regional currencies and cross-page prices
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'components/LocaleProvider.tsx'
+      - 'components/LocalizedOfferPrice.tsx'
+      - 'components/MaterialRangeProducts.tsx'
+      - 'components/MaterialProductViewer.tsx'
+      - 'components/HomeReleaseCalendar.tsx'
+      - 'lib/i18n/geography.mjs'
+      - 'lib/i18n/geography.d.mts'
+      - 'app/api/exchange-rates/route.ts'
+      - '.github/workflows/audit-currencies-live.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  currency:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip -q install playwright==1.55.0
+      - run: python3 -m playwright install --with-deps chromium
+      - name: Verify live geo defaults, conversion, calendar, materials and manual override
+        run: |
+          python3 - <<'PY'
+          import json,time
+          from playwright.sync_api import sync_playwright,expect
+          base='https://reborna.co'
+          test_rates={'USD':1.2,'GBP':0.85,'MXN':20,'PLN':4.3,'RUB':95,'CAD':1.6,'AUD':1.8,'CZK':25,'DKK':7.45,'HUF':395,'RON':5.0,'SEK':11,'CHF':0.92,'NOK':12}
+          payload=json.dumps([{'date':'2026-10-19','base':'EUR','quote':name,'rate':value} for name,value in test_rates.items()])
+          def stub_rates(route):
+            route.fulfill(status=200,content_type='application/json',body=payload,headers={'Access-Control-Allow-Origin':'*'})
+          with sync_playwright() as p:
+            browser=p.chromium.launch(headless=True)
+            # A new currency option is the deployment marker: don't check stale assets
+            # while GitHub-to-Cloudflare synchronisation and the Pages build run.
+            ready=browser.new_page(viewport={'width':1280,'height':800})
+            for attempt in range(48):
+              ready.goto(base+'/',wait_until='domcontentloaded',timeout=35000)
+              if ready.locator('.locale-tools select option[value="CHF"]').count():break
+              print('Awaiting regional-currency production assets',attempt+1,flush=True)
+              time.sleep(6)
+            else:raise AssertionError('Updated currency selector is not deployed')
+            ready.close()
+            for country,currency,symbol in [('GB','GBP','£'),('DE','EUR','€'),('BG','EUR','€'),('RU','RUB','₽'),('PL','PLN','zł')]:
+              context=browser.new_context(locale='en-GB',viewport={'width':390,'height':844},has_touch=True)
+              context.route('**/api/locale',lambda route:route.fulfill(status=200,content_type='application/json',body=json.dumps({'country':country}),headers={'Cache-Control':'no-store'}))
+              context.route('https://api.frankfurter.dev/**',stub_rates)
+              page=context.new_page()
+              page.goto(base+'/kits/lennox-cassie-ann-love/',wait_until='domcontentloaded',timeout=35000)
+              expect(page.locator('.locale-tools select').first).to_have_value(currency,timeout=15000)
+              expect(page.locator('.localized-price strong').filter(has_text=symbol).first).to_be_visible(timeout=15000)
+              page.goto(base+'/calendar/',wait_until='domcontentloaded',timeout=35000)
+              expect(page.locator('.home-calendar-financials b').filter(has_text=symbol).first).to_be_visible(timeout=15000)
+              page.goto(base+'/materials/gemini-heat-set/',wait_until='domcontentloaded',timeout=35000)
+              expect(page.locator('.rbrn-range-card strong').filter(has_text=symbol).first).to_be_visible(timeout=15000)
+              card=page.locator('.rbrn-range-card').filter(has=page.locator('strong').filter(has_text=symbol)).first
+              path=card.get_attribute('href')
+              assert path and path.startswith('/materials/'),(country,'material product path missing')
+              page.goto(base+path,wait_until='domcontentloaded',timeout=35000)
+              expect(page.locator('.rbrn-material-dated-price strong')).to_contain_text(symbol,timeout=15000)
+              print('PASS regional currency',country,currency,'kit offers, calendar preview, material cards and product detail',flush=True)
+              context.close()
+            context=browser.new_context(locale='ru-RU',viewport={'width':1440,'height':900})
+            context.add_init_script("if (!localStorage.getItem('reborn-currency')) localStorage.setItem('reborn-currency','GBP')")
+            context.route('**/api/locale',lambda route:route.fulfill(status=200,content_type='application/json',body='{"country":"RU"}'))
+            context.route('https://api.frankfurter.dev/**',stub_rates)
+            page=context.new_page()
+            page.goto(base+'/kits/lennox-cassie-ann-love/',wait_until='domcontentloaded',timeout=35000)
+            expect(page.locator('.locale-tools select').first).to_have_value('GBP',timeout=15000)
+            expect(page.locator('html')).to_have_attribute('lang','ru',timeout=15000)
+            expect(page.locator('.inner-menu')).to_be_enabled(timeout=15000)
+            page.reload(wait_until='domcontentloaded')
+            expect(page.locator('.locale-tools select').first).to_have_value('GBP',timeout=15000)
+            expect(page.locator('.inner-menu')).to_be_enabled(timeout=15000)
+            page.locator('.locale-tools select').first.select_option('EUR')
+            expect(page.locator('.locale-tools select').first).to_have_value('EUR')
+            assert page.evaluate("localStorage.getItem('reborn-currency')")=='EUR'
+            page.goto(base+'/calendar/',wait_until='domcontentloaded')
+            expect(page.locator('.locale-tools select').first).to_have_value('EUR',timeout=15000)
+            expect(page.locator('.home-calendar-financials b').filter(has_text='€').first).to_be_visible()
+            print('PASS manual currency preference survives Russian geolocation, reload and navigation independently of language',flush=True)
+            context.close()
+            browser.close()
+          PY
