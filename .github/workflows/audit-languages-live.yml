@@ -29,7 +29,8 @@ jobs:
           base='https://reborna.co'
           for attempt in range(40):
             try:
-              with urllib.request.urlopen(base+'/api/locale',timeout=15) as r:
+              req=urllib.request.Request(base+'/api/locale',headers={'User-Agent':'Mozilla/5.0 (Reborna language audit)','Accept':'application/json'})
+              with urllib.request.urlopen(req,timeout=15) as r:
                 data=json.loads(r.read())
                 assert r.status==200 and list(data.keys())==['country'] and ('no-store' in r.headers.get('Cache-Control',''))
               break
