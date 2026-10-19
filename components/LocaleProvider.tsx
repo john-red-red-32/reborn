@@ -1,8 +1,8 @@
 "use client";
 import {createContext,useContext,useEffect,useMemo,useRef,useState} from "react";
 import {isWebsiteLanguage,translate,type WebsiteLanguage} from "../lib/i18n/translation";
-import {suggestLanguage,preferredSupportedLanguage} from "../lib/i18n/geography.mjs";
-export const CURRENCIES=["USD","EUR","GBP","MXN","PLN","RUB","CAD","AUD"] as const;
+import {suggestLanguage,preferredSupportedLanguage,preferredCurrency,suggestCurrency,SUPPORTED_CURRENCIES} from "../lib/i18n/geography.mjs";
+export const CURRENCIES=SUPPORTED_CURRENCIES;
 export type Currency=typeof CURRENCIES[number];
 type FX={date:string;rates:Record<string,number>};
 type LocaleState={currency:Currency;setCurrency:(c:Currency)=>void;fx:FX|null;locale:string;
@@ -15,7 +15,6 @@ const Context=createContext<LocaleState>({currency:"USD",setCurrency:()=>{},fx:n
 const STORAGE_KEY="reborna-website-language-v1";
 /** Non-standard browser language tags (e.g. en-US@posix) must never crash price formatting. */
 const safeLocale=(raw:string)=>{const candidate=(raw||"en").split("@")[0];try{return Intl.getCanonicalLocales(candidate)[0]||"en"}catch{return "en"}};
-const zoneCurrency=(language:string):Currency=>{const l=language.toLowerCase();if(l.includes("-mx"))return "MXN";if(l.includes("-gb"))return "GBP";if(l.includes("-pl"))return "PLN";if(l.includes("-ru"))return "RUB";if(l.includes("-ca"))return "CAD";if(l.includes("-au"))return "AUD";if(/-(es|fr|de|it|pt|nl|ie|at|be|fi|gr|eu)\b/.test(l))return "EUR";return "USD"};
 function persistChoice(language:WebsiteLanguage){
  try{localStorage.setItem(STORAGE_KEY,JSON.stringify({language,chosenAt:new Date().toISOString()}))}catch{/* Nothing private is required for the site to work. */}
 }
@@ -28,21 +27,29 @@ export function LocaleProvider({children}:{children:React.ReactNode}){
  const[welcomeLanguage,setWelcomeLanguage]=useState<WebsiteLanguage|null>(null);
  const[welcomeReason,setWelcomeReason]=useState<"region"|"browser"|null>(null);
  const manuallyChosen=useRef(false);
+ const currencyChosen=useRef(false);
  useEffect(()=>{
   const languages=navigator.languages?.length?Array.from(navigator.languages):[navigator.language||"en"];
   const browserLocale=safeLocale(languages[0]||"en");
   setLocale(browserLocale);
   let savedCurrency:string|null=null;
   try{savedCurrency=localStorage.getItem("reborn-currency")}catch{}
-  update(savedCurrency&&CURRENCIES.includes(savedCurrency as Currency)?savedCurrency as Currency:zoneCurrency(browserLocale));
+  // An explicit currency preference is independent of the visitor's language.
+  const existingCurrency=savedCurrency&&CURRENCIES.includes(savedCurrency as Currency)?savedCurrency as Currency:null;
+  if(existingCurrency){currencyChosen.current=true;update(existingCurrency)}
+  else update(preferredCurrency(languages));
   const chosen=readChoice();
   if(chosen){manuallyChosen.current=true;updateLanguage(chosen)}
-  else{
-   fetch("/api/locale",{cache:"no-store",credentials:"same-origin"})
+  // Always request the same privacy-safe country hint, even when a language
+  // was saved on a previous visit: geography is also used for currency.
+  fetch("/api/locale",{cache:"no-store",credentials:"same-origin"})
    .then(r=>r.ok?r.json():Promise.reject(Error("Geolocation unavailable")))
    .then((data:unknown)=>{
-     if(manuallyChosen.current)return;
      const country=typeof data==="object"&&data!==null&&"country" in data?(data as {country?:string|null}).country:null;
+     // The flag also protects against a visitor choosing currency while this
+     // asynchronous request is pending.
+     if(!currencyChosen.current)update(suggestCurrency(country,languages));
+     if(manuallyChosen.current)return;
      const decision=suggestLanguage(country,languages);
      if(decision.language!=="en"){
        updateLanguage(decision.language);
@@ -55,8 +62,7 @@ export function LocaleProvider({children}:{children:React.ReactNode}){
      const browser=preferredSupportedLanguage(languages);
      if(browser!=="en"){updateLanguage(browser);setWelcomeLanguage(browser);setWelcomeReason("browser")}
    });
-  }
-  fetch("https://api.frankfurter.dev/v2/rates?base=EUR&quotes=USD,GBP,MXN,PLN,RUB,CAD,AUD",{cache:"no-store"})
+  fetch("https://api.frankfurter.dev/v2/rates?base=EUR&quotes=USD,GBP,MXN,PLN,RUB,CAD,AUD,CZK,DKK,HUF,RON,SEK,CHF,NOK",{cache:"no-store"})
    .then(r=>r.ok?r.json():Promise.reject()).then((rows:unknown)=>{
     if(!Array.isArray(rows))throw Error("Invalid reference rates");
     const rates:Record<string,number>={EUR:1};let date="";
@@ -66,7 +72,7 @@ export function LocaleProvider({children}:{children:React.ReactNode}){
    }).catch(()=>fetch("/api/exchange-rates").then(r=>r.ok?r.json():Promise.reject()).then(setFx).catch(()=>setFx(null)));
  },[]);
  useEffect(()=>{document.documentElement.lang=language},[language]);
- const setCurrency=(c:Currency)=>{update(c);try{localStorage.setItem("reborn-currency",c)}catch{}};
+ const setCurrency=(c:Currency)=>{if(!CURRENCIES.includes(c))return;currencyChosen.current=true;update(c);try{localStorage.setItem("reborn-currency",c)}catch{}};
  const setLanguage=(value:WebsiteLanguage)=>{
   if(!isWebsiteLanguage(value))return;
   manuallyChosen.current=true;updateLanguage(value);setWelcomeLanguage(null);setWelcomeReason(null);persistChoice(value);
