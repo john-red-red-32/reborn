@@ -1,5 +1,5 @@
 /** Consent, contacts and certificate integrity: human-authored safety meanings are retained across translations. */
-export const formPhrases: Readonly<Record<string,readonly [string,string,string,string]>> = {
+export const formPhrases: Readonly<Record<string,string>> = {
  "YOUR PRIVACY, YOUR CHOICE": [
   "TU PRIVACIDAD, TU ELECCIÓN",
   "LA TUA PRIVACY, LA TUA SCELTA",
