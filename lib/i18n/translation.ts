@@ -1,4 +1,5 @@
 import {corePhrases} from "./core";
+import {extendedPhrases} from "./extended";
 export const LANGUAGES=["en","es","it","de","ru"] as const;
 export type WebsiteLanguage=typeof LANGUAGES[number];
 export const languageLabels:Record<WebsiteLanguage,string>={
@@ -6,7 +7,7 @@ export const languageLabels:Record<WebsiteLanguage,string>={
 };
 export function translate(text:string,language:WebsiteLanguage):string{
  if(language==="en")return text;
- const phrase=corePhrases[text];
+ const phrase=corePhrases[text]||extendedPhrases[text];
  return phrase?.[{es:0,it:1,de:2,ru:3}[language]]||text;
 }
 export function isWebsiteLanguage(value:unknown):value is WebsiteLanguage{
