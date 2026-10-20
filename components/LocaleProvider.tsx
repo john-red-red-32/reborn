@@ -62,7 +62,7 @@ export function LocaleProvider({children}:{children:React.ReactNode}){
      const browser=preferredSupportedLanguage(languages);
      if(browser!=="en"){updateLanguage(browser);setWelcomeLanguage(browser);setWelcomeReason("browser")}
    });
-  fetch("https://api.frankfurter.dev/v2/rates?base=EUR&quotes=USD,GBP,MXN,PLN,RUB,CAD,AUD,CZK,DKK,HUF,RON,SEK,CHF,NOK",{cache:"no-store"})
+  fetch("https://api.frankfurter.dev/v2/rates?base=EUR&quotes=USD,GBP,MXN,PLN,RUB,CAD,AUD,CZK,DKK,HUF,RON,SEK,CHF,NOK,ARS,BOB,BRL,CLP,COP,GYD,PYG,PEN,SRD,UYU,VES,FKP",{cache:"no-store"})
    .then(r=>r.ok?r.json():Promise.reject()).then((rows:unknown)=>{
     if(!Array.isArray(rows))throw Error("Invalid reference rates");
     const rates:Record<string,number>={EUR:1};let date="";
