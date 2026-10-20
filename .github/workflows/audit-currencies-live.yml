@@ -81,13 +81,17 @@ jobs:
               page.goto(base+'/kits/lennox-cassie-ann-love/',wait_until='domcontentloaded',timeout=35000)
               expect(page.locator('.locale-tools select').first).to_have_value(currency,timeout=15000)
               euro_target=1 if currency=='EUR' else test_rates[currency]
-              expected=page.evaluate("([amount, curr]) => new Intl.NumberFormat('en-GB',{style:'currency',currency:curr,currencyDisplay:'narrowSymbol',maximumFractionDigits:2}).format(amount)",[20/0.85*euro_target,currency])
+              if country in ('MX','AR','BO','CL','CO','EC','PY','PE','UY','VE'):
+                expect(page.locator('html')).to_have_attribute('lang','es',timeout=15000)
+              display_locale=page.evaluate("() => document.documentElement.lang === 'en' ? 'en-GB' : document.documentElement.lang")
+              expected=page.evaluate("([amount, curr, locale]) => new Intl.NumberFormat(locale,{style:'currency',currency:curr,currencyDisplay:'narrowSymbol',maximumFractionDigits:2}).format(amount)",[20/0.85*euro_target,currency,display_locale])
               expect(page.locator('.localized-price strong').filter(has_text=expected).first).to_be_visible(timeout=15000)
               if country in ('MX','BR'):
                 page.goto(base+'/calendar/',wait_until='domcontentloaded',timeout=35000)
                 sample=page.locator('.home-calendar-financials b').first
                 expect(sample).not_to_have_text('TBA',timeout=12000)
-                expected_symbol=page.evaluate("(curr) => new Intl.NumberFormat('en-GB',{style:'currency',currency:curr,currencyDisplay:'narrowSymbol'}).formatToParts(2).find(x=>x.type==='currency').value",currency)
+                display_locale=page.evaluate("() => document.documentElement.lang === 'en' ? 'en-GB' : document.documentElement.lang")
+                expected_symbol=page.evaluate("([curr, locale]) => new Intl.NumberFormat(locale,{style:'currency',currency:curr,currencyDisplay:'narrowSymbol'}).formatToParts(2).find(x=>x.type==='currency').value",[currency,display_locale])
                 expect(sample).to_contain_text(expected_symbol,timeout=12000)
                 page.goto(base+'/materials/gemini-heat-set/',wait_until='domcontentloaded',timeout=35000)
                 card=page.locator('.rbrn-range-card').filter(has=page.locator('strong').filter(has_text=expected_symbol)).first
