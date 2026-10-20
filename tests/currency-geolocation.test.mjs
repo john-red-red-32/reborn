@@ -60,3 +60,34 @@ test("all consumer-facing price components use one shared converter, including p
   for(const currency of SUPPORTED_CURRENCIES)if(currency!=="EUR")assert.ok(source.includes(currency),file+" quote "+currency);
  }
 });
+
+test("Mexico and every South American sovereign state receive the local display currency",()=>{
+ const countries={
+  MX:"MXN",AR:"ARS",BO:"BOB",BR:"BRL",CL:"CLP",CO:"COP",
+  EC:"USD",GY:"GYD",PY:"PYG",PE:"PEN",SR:"SRD",UY:"UYU",VE:"VES"
+ };
+ for(const [country,currency] of Object.entries(countries)){
+  assert.equal(suggestCurrency(country,["en-GB"]),currency,country);
+  assert.equal(suggestCurrency(country,["ru-RU"]),currency,"currency must not depend on page language");
+  assert.ok(SUPPORTED_CURRENCIES.includes(currency),country+" missing currency dropdown");
+ }
+ // Cloudflare may independently identify South American non-sovereign regions.
+ assert.equal(suggestCurrency("GF",["en-GB"]),"EUR","French Guiana uses euro");
+ assert.equal(suggestCurrency("FK",["en-GB"]),"FKP","Falklands use local pounds");
+});
+test("Latin American browser fallbacks work without a Cloudflare location, preserving manual logic",()=>{
+ const cases=[["es-MX","MXN"],["pt-BR","BRL"],["es-AR","ARS"],
+              ["es-CL","CLP"],["es-CO","COP"],["es-PE","PEN"],["es-UY","UYU"]];
+ for(const [locale,currency] of cases){
+  assert.equal(preferredCurrency([locale]),currency,locale);
+  assert.equal(suggestCurrency(null,[locale]),currency,locale);
+ }
+ assert.equal(suggestCurrency("BR",["en-US"]),"BRL","country outranks browser currency");
+ assert.equal(suggestCurrency("MX",["pt-BR"]),"MXN","Mexican visitors get pesos");
+});
+test("Latin American currency codes are available to native browser Intl formatting",()=>{
+ for(const code of ["MXN","ARS","BOB","BRL","CLP","COP","USD","GYD","PYG","PEN","SRD","UYU","VES","FKP"]){
+  const str=new Intl.NumberFormat("en-GB",{style:"currency",currency:code,currencyDisplay:"narrowSymbol",maximumFractionDigits:2}).format(25.5);
+  assert.ok(str.length>0&&/[0-9]/.test(str),code);
+ }
+});

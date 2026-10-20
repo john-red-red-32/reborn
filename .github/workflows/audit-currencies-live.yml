@@ -29,7 +29,7 @@ jobs:
           import json,time
           from playwright.sync_api import sync_playwright,expect
           base='https://reborna.co'
-          test_rates={'USD':1.2,'GBP':0.85,'MXN':20,'PLN':4.3,'RUB':95,'CAD':1.6,'AUD':1.8,'CZK':25,'DKK':7.45,'HUF':395,'RON':5.0,'SEK':11,'CHF':0.92,'NOK':12}
+          test_rates={'USD':1.2,'GBP':0.85,'MXN':20,'PLN':4.3,'RUB':95,'CAD':1.6,'AUD':1.8,'CZK':25,'DKK':7.45,'HUF':395,'RON':5.0,'SEK':11,'CHF':0.92,'NOK':12,'ARS':1400,'BOB':8.2,'BRL':6.35,'CLP':1080,'COP':4700,'GYD':245,'PYG':7800,'PEN':4.25,'SRD':47,'UYU':46,'VES':265,'FKP':0.85}
           payload=json.dumps([{'date':'2026-10-19','base':'EUR','quote':name,'rate':value} for name,value in test_rates.items()])
           def stub_rates(route):
             route.fulfill(status=200,content_type='application/json',body=payload,headers={'Access-Control-Allow-Origin':'*'})
@@ -40,7 +40,7 @@ jobs:
             ready=browser.new_page(viewport={'width':1280,'height':800})
             for attempt in range(48):
               ready.goto(base+'/',wait_until='domcontentloaded',timeout=35000)
-              if ready.locator('.locale-tools select option[value="CHF"]').count():break
+              if ready.locator('.locale-tools select option[value="BRL"]').count():break
               print('Awaiting regional-currency production assets',attempt+1,flush=True)
               time.sleep(6)
             else:raise AssertionError('Updated currency selector is not deployed')
@@ -63,6 +63,40 @@ jobs:
               page.goto(base+path,wait_until='domcontentloaded',timeout=35000)
               expect(page.locator('.rbrn-material-dated-price strong')).to_contain_text(symbol,timeout=15000)
               print('PASS regional currency',country,currency,'kit offers, calendar preview, material cards and product detail',flush=True)
+              context.close()
+            # Price checks against a known 20 GBP original seller deposit, at
+            # fixed EUR-base reference rates. This catches missing quotes and
+            # misleading supplier-currency fallback that a dropdown-only test misses.
+            # A full regional loop verifies all South American countries, not
+            # merely availability of a currency option.
+            for country,currency in [
+              ('MX','MXN'),('BR','BRL'),('AR','ARS'),('BO','BOB'),('CL','CLP'),
+              ('CO','COP'),('EC','USD'),('GY','GYD'),('PY','PYG'),('PE','PEN'),
+              ('SR','SRD'),('UY','UYU'),('VE','VES'),('GF','EUR'),('FK','FKP')
+            ]:
+              context=browser.new_context(locale='en-GB',viewport={'width':390,'height':844},has_touch=True)
+              context.route('**/api/locale',lambda route:route.fulfill(status=200,content_type='application/json',body=json.dumps({'country':country}),headers={'Cache-Control':'no-store'}))
+              context.route('https://api.frankfurter.dev/**',stub_rates)
+              page=context.new_page()
+              page.goto(base+'/kits/lennox-cassie-ann-love/',wait_until='domcontentloaded',timeout=35000)
+              expect(page.locator('.locale-tools select').first).to_have_value(currency,timeout=15000)
+              euro_target=1 if currency=='EUR' else test_rates[currency]
+              expected=page.evaluate("([amount, curr]) => new Intl.NumberFormat('en-GB',{style:'currency',currency:curr,currencyDisplay:'narrowSymbol',maximumFractionDigits:2}).format(amount)",[20/0.85*euro_target,currency])
+              expect(page.locator('.localized-price strong').filter(has_text=expected).first).to_be_visible(timeout=15000)
+              if country in ('MX','BR'):
+                page.goto(base+'/calendar/',wait_until='domcontentloaded',timeout=35000)
+                sample=page.locator('.home-calendar-financials b').first
+                expect(sample).not_to_have_text('TBA',timeout=12000)
+                expected_symbol=page.evaluate("(curr) => new Intl.NumberFormat('en-GB',{style:'currency',currency:curr,currencyDisplay:'narrowSymbol'}).formatToParts(2).find(x=>x.type==='currency').value",currency)
+                expect(sample).to_contain_text(expected_symbol,timeout=12000)
+                page.goto(base+'/materials/gemini-heat-set/',wait_until='domcontentloaded',timeout=35000)
+                card=page.locator('.rbrn-range-card').filter(has=page.locator('strong').filter(has_text=expected_symbol)).first
+                expect(card).to_be_visible(timeout=15000)
+                product_path=card.get_attribute('href')
+                assert product_path and product_path.startswith('/materials/'),country
+                page.goto(base+product_path,wait_until='domcontentloaded',timeout=35000)
+                expect(page.locator('.rbrn-material-dated-price strong')).to_contain_text(expected_symbol,timeout=15000)
+              print('PASS LATAM',country,currency,'real GBP kit converted to local currency'+(' plus calendar and materials' if country in ('MX','BR') else ''),flush=True)
               context.close()
             context=browser.new_context(locale='ru-RU',viewport={'width':1440,'height':900})
             context.add_init_script("if (!localStorage.getItem('reborn-currency')) localStorage.setItem('reborn-currency','GBP')")
