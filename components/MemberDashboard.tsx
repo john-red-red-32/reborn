@@ -4,12 +4,13 @@ import {useEffect,useMemo,useState} from "react";
 import {ArrowRight,Bookmark,Check,Heart,Package,Paintbrush,PenLine,ShoppingBag,MessageCircle,Plus,Trash2,Store,Save,Settings,ShieldCheck,Sparkles,UserRound} from "lucide-react";
 import {communityApi,type CommunityUser} from "../lib/community";
 import SculptorWorkspace from "./SculptorWorkspace";
+import GalleryStudio from "./GalleryStudio";
 import {useWishlist,type SavedItem} from "./WishlistProvider";
 
-type Area="overview"|"collection"|"studio"|"selling"|"purchases"|"community"|"sculptors";
+type Area="overview"|"collection"|"studio"|"gallery"|"selling"|"purchases"|"community"|"sculptors";
 type Studio={id:string;title:string;notes:string;linkedKitPath:string|null;stage:"planning"|"painting"|"rooting"|"completed";updatedAt:string};
 type Listing={id:string;title:string;description:string;kind:"finished_doll"|"original_kit"|"materials"|"other";currency:"GBP"|"EUR"|"USD";askingPriceMinor:number|null;updatedAt:string};
-const areaNames:Record<Area,string>={overview:"Overview",collection:"My collection",studio:"My studio",selling:"Selling",purchases:"Purchases",community:"Community",sculptors:"Artist verification"};
+const areaNames:Record<Area,string>={overview:"Overview",collection:"My collection",studio:"My studio",gallery:"Artist gallery",selling:"Selling",purchases:"Purchases",community:"Community",sculptors:"Artist verification"};
 const stages:{value:Studio["stage"];label:string}[]=[{value:"planning",label:"Planning"},{value:"painting",label:"Painting"},{value:"rooting",label:"Rooting & finishing"},{value:"completed",label:"Completed"}];
 const kinds:{value:Listing["kind"];label:string}[]=[{value:"finished_doll",label:"Finished reborn doll"},{value:"original_kit",label:"Original sculpt kit"},{value:"materials",label:"Materials & tools"},{value:"other",label:"Other"}];
 export default function MemberDashboard({artists,catalogueKits}:{artists:{slug:string;name:string}[];catalogueKits:{slug:string;name:string;artistSlug:string}[]}){
@@ -19,7 +20,7 @@ export default function MemberDashboard({artists,catalogueKits}:{artists:{slug:s
  const[draftForm,setDraftForm]=useState({id:"",title:"",description:"",kind:"finished_doll" as Listing["kind"],currency:"GBP" as Listing["currency"],price:""});
  const[projectEditor,setProjectEditor]=useState(false),[draftEditor,setDraftEditor]=useState(false),[busy,setBusy]=useState(false),[error,setError]=useState(""),[notice,setNotice]=useState("");
  const reload=async()=>{const[p,d]=await Promise.all([communityApi<{projects:Studio[]}>("studio"),communityApi<{drafts:Listing[]}>("listing-drafts")]);setProjects(p.projects);setDrafts(d.drafts)};
- useEffect(()=>{let active=true;communityApi<{user:CommunityUser|null}>("me").then(async r=>{if(!active)return;setAccount(r.user);if(r.user&&new URLSearchParams(window.location.search).get("area")==="sculptors"&&(r.user.roles.includes("sculptor")||r.user.moderator))setArea("sculptors");
+ useEffect(()=>{let active=true;communityApi<{user:CommunityUser|null}>("me").then(async r=>{if(!active)return;setAccount(r.user);if(r.user){const requested=new URLSearchParams(window.location.search).get("area");if(requested==="gallery")setArea("gallery");else if(requested==="selling")setArea("selling");else if(requested==="sculptors"&&(r.user.roles.includes("sculptor")||r.user.moderator))setArea("sculptors");}
  if(r.user)try{await reload()}catch(e){if(active)setError((e as Error).message)}}).catch(e=>{if(active)setError((e as Error).message)}).finally(()=>{if(active)setLoaded(true)});return()=>{active=false}},[]);
  const ownedCount=items.filter(i=>i.collectionStatus==="owned").length;
  const wishedCount=items.length-ownedCount;
@@ -50,7 +51,7 @@ export default function MemberDashboard({artists,catalogueKits}:{artists:{slug:s
    <div className="rbrn-dash-layout">
     <nav className="rbrn-dash-nav" aria-label="Dashboard areas">
       <div className="rbrn-dash-user"><span>{account.avatarUrl?<img src={account.avatarUrl} alt=""/>:<UserRound size={23}/>}</span><div><strong>{account.displayName}</strong><small>@{account.handle}</small></div></div>
-      {([{id:"overview",icon:Sparkles},{id:"collection",icon:Heart},{id:"studio",icon:Paintbrush},{id:"selling",icon:Store},{id:"purchases",icon:ShoppingBag},{id:"community",icon:MessageCircle},...(account.roles.includes("sculptor")||account.moderator?[{id:"sculptors" as const,icon:ShieldCheck}]:[])] as const).map(({id,icon:Icon})=><button key={id} type="button" className={area===id?"active":""} aria-current={area===id?"page":undefined} onClick={()=>navigate(id)}><Icon size={18}/>{areaNames[id]}{id==="collection"&&items.length>0&&<small>{items.length}</small>}</button>)}
+      {([{id:"overview",icon:Sparkles},{id:"collection",icon:Heart},{id:"studio",icon:Paintbrush},{id:"gallery",icon:Store},{id:"selling",icon:Store},{id:"purchases",icon:ShoppingBag},{id:"community",icon:MessageCircle},...(account.roles.includes("sculptor")||account.moderator?[{id:"sculptors" as const,icon:ShieldCheck}]:[])] as const).map(({id,icon:Icon})=><button key={id} type="button" className={area===id?"active":""} aria-current={area===id?"page":undefined} onClick={()=>navigate(id)}><Icon size={18}/>{areaNames[id]}{id==="collection"&&items.length>0&&<small>{items.length}</small>}</button>)}
       <Link href="/account/" className="rbrn-dash-settings"><Settings size={16}/> Profile & settings</Link>
     </nav>
     <section className="rbrn-dash-main" aria-live="polite">
@@ -75,7 +76,9 @@ export default function MemberDashboard({artists,catalogueKits}:{artists:{slug:s
        {projectEditor&&<form className="rbrn-dash-edit-form" onSubmit={saveProject}><h3>{projectForm.id?"Edit your project":"Create a studio project"}</h3><label>Project title<input required minLength={2} maxLength={110} value={projectForm.title} onChange={e=>setProjectForm({...projectForm,title:e.target.value})} placeholder="e.g. Painting my Hattie kit"/></label><label>Stage<select value={projectForm.stage} onChange={e=>setProjectForm({...projectForm,stage:e.target.value as Studio["stage"]})}>{stages.map(x=><option key={x.value} value={x.value}>{x.label}</option>)}</select></label><label>Original kit link <small>Optional</small><input value={projectForm.linkedKitPath} onChange={e=>setProjectForm({...projectForm,linkedKitPath:e.target.value})} placeholder="/kits/hattie/"/></label><label>Your notes<textarea maxLength={1800} rows={5} value={projectForm.notes} onChange={e=>setProjectForm({...projectForm,notes:e.target.value})} placeholder="Paint colours, rooting plans, little ideas…"/></label><div><button type="submit" className="rbrn-community-primary" disabled={busy}><Save size={15}/> {busy?"Saving…":"Save privately"}</button><button type="button" className="rbrn-community-secondary" onClick={()=>setProjectEditor(false)}>Cancel</button></div></form>}
        {projects.length?<div className="rbrn-dash-draft-list">{projects.map(p=><article key={p.id}><span className="section-kicker">STUDIO PROJECT · {stages.find(s=>s.value===p.stage)?.label.toUpperCase()}</span><h3>{p.title}</h3>{p.notes&&<p>{p.notes}</p>}{p.linkedKitPath&&<Link href={p.linkedKitPath}>View linked sculpt <ArrowRight size={13}/></Link>}<footer><button type="button" onClick={()=>editProject(p)}><PenLine size={14}/> Edit</button><button type="button" disabled={busy} onClick={()=>void deleteProject(p.id)}><Trash2 size={14}/> Delete</button></footer></article>)}</div>:!projectEditor&&<div className="rbrn-dash-empty"><Paintbrush size={31}/><h3>Your studio is ready.</h3><p>Plan a new project and keep the notes safely in your account.</p></div>}
      </>}
+     {area==="gallery"&&<GalleryStudio handle={account.handle} moderator={account.moderator}/>}
      {area==="selling"&&<>
+       <Link href="/marketplace/" className="rbrn-community-secondary">Explore the new artist marketplace <ArrowRight size={15}/></Link>
        <span className="section-kicker">SELLING WORKSPACE</span><h2>A beautiful beginning.</h2><p className="rbrn-dash-lead">Start organising your future listings and asking prices without publishing anything. Reborna does not currently accept orders or payments.</p>
        <div className="rbrn-dash-notlive"><ShieldCheck size={21}/><div><strong>Private drafts only — marketplace transactions are not live.</strong><p>We'll introduce seller identity checks, clear kit provenance, content review, payment processing, fees and buyer protections before enabling public listings or checkout.</p></div></div>
        {!draftEditor&&<button type="button" className="rbrn-community-primary" onClick={()=>editDraft()}><Plus size={16}/> Create a listing draft</button>}
