@@ -5,8 +5,22 @@ import {onRequest as galleryPage} from '../functions/u/[[handle]].js';
 import {esc,slugValid} from '../functions/_gallery.mjs';
 const req=(path,method='GET',headers={},body)=>new Request('https://reborna.co'+path,{method,headers,body});
 function fakeDb(respond){
- return {prepare(sql){return{bind(...args){return{first:async()=>respond(sql,args,'first'),all:async()=>({results:respond(sql,args,'all')||[]}),run:async()=>({meta:{changes:1}})}}},all:async()=>({results:respond(sql,[],'all')||[]})}}};
+ return {
+  prepare(sql){
+   return {
+    bind(...args){
+     return {
+      first:async()=>respond(sql,args,'first'),
+      all:async()=>({results:respond(sql,args,'all')||[]}),
+      run:async()=>({meta:{changes:1}})
+     };
+    },
+    all:async()=>({results:respond(sql,[],'all')||[]})
+   };
+  }
+ };
 }
+
 test('artist slugs are scoped, safe, human-readable and exclude privileged handles',()=>{
  for(const s of ['little-babies-by-anna','studio-123','anna'])assert.equal(slugValid(s),true);
  for(const s of ['admin','reborna','../bad','A B','u','', 'marketplace'])assert.equal(slugValid(s),false);
