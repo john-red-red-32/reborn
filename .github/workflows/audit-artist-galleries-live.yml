@@ -27,7 +27,7 @@ jobs:
             try:
               with urllib.request.urlopen(request,timeout=25) as r:return r.status,r.headers,r.read().decode(errors='replace')
             except urllib.error.HTTPError as e:return e.code,e.headers,e.read().decode(errors='replace')
-          for attempt in range(5):
+          for attempt in range(36):
             problems=[]
             try:
               code,headers,html=get('/marketplace/')
