@@ -27,7 +27,7 @@ jobs:
             try:
               with urllib.request.urlopen(request,timeout=25) as r:return r.status,r.headers,r.read().decode(errors='replace')
             except urllib.error.HTTPError as e:return e.code,e.headers,e.read().decode(errors='replace')
-          for attempt in range(50):
+          for attempt in range(5):
             problems=[]
             try:
               code,headers,html=get('/marketplace/')
@@ -52,6 +52,6 @@ jobs:
               print('PASS: marketplace, sitemap, public discovery, no live checkout, private galleries, unpublished noindex and CSRF guard')
               break
             print('Waiting for gallery production deployment',attempt+1,problems,flush=True)
-            time.sleep(9)
+            time.sleep(5)
           else:raise SystemExit('Live artist gallery audit failed')
           PY
