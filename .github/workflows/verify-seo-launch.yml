@@ -42,7 +42,7 @@ jobs:
       - name: Typecheck client and server code
         run: npm run lint
       - name: Check protected contact form endpoint regressions
-        run: node --test tests/contact-handler.test.mjs tests/sculptor-request-handler.test.mjs tests/certificate-verification.test.mjs tests/production-system.test.mjs tests/language-geolocation.test.mjs tests/localization-content.test.mjs tests/currency-geolocation.test.mjs
+        run: node --test tests/contact-handler.test.mjs tests/sculptor-request-handler.test.mjs tests/certificate-verification.test.mjs tests/production-system.test.mjs tests/language-geolocation.test.mjs tests/localization-content.test.mjs tests/currency-geolocation.test.mjs tests/gallery-foundation.test.mjs
       - name: Check fresh certificate registry D1 schema
         run: |
           python3 - <<'PY'
@@ -50,9 +50,9 @@ jobs:
           from pathlib import Path
           d=sqlite3.connect(':memory:')
           d.execute('PRAGMA foreign_keys=ON')
-          for path in ('db/community-schema.sql','db/community-moderation-v2.sql','db/contact-enquiries.sql','db/sculptor-intake-v1.sql','db/certificate-verification-v1.sql','db/certificate-email-approval-v2.sql','db/certificate-production-v3.sql'):
+          for path in ('db/community-schema.sql','db/community-moderation-v2.sql','db/contact-enquiries.sql','db/sculptor-intake-v1.sql','db/certificate-verification-v1.sql','db/certificate-email-approval-v2.sql','db/certificate-production-v3.sql','db/artist-gallery-v1.sql'):
             d.executescript(Path(path).read_text())
-          for table in ('verified_sculptor_issuers','certificate_batches','certificate_codes','certificate_lookup_events','certificate_audit','certificate_issue_approvals','production_sculpts','production_editions','production_runs','production_codes','production_code_lookups','production_export_chunks','production_export_sessions','production_audit','production_corrections','production_link_proposals'):
+          for table in ('artist_galleries','gallery_works','gallery_images','gallery_review_log','verified_sculptor_issuers','certificate_batches','certificate_codes','certificate_lookup_events','certificate_audit','certificate_issue_approvals','production_sculpts','production_editions','production_runs','production_codes','production_code_lookups','production_export_chunks','production_export_sessions','production_audit','production_corrections','production_link_proposals'):
             assert d.execute("SELECT name FROM sqlite_master WHERE type='table' AND name=?",(table,)).fetchone(),table
           columns=[x[1] for x in d.execute("PRAGMA table_info(certificate_codes)")]
           assert 'code_hash' in columns and 'code' not in columns

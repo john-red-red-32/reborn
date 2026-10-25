@@ -938,3 +938,92 @@ html{scroll-behavior:smooth}
 .rbrn-language-welcome button:focus-visible,.rbrn-language-welcome select:focus-visible{outline:2px solid #a38872;outline-offset:2px}
 @media(max-width:800px){.rbrn-language-welcome{top:76px;padding:15px 14px;gap:10px}.rbrn-language-welcome-mark{font-size:24px}.rbrn-language-welcome h2{font-size:20px}.locale-tools select[aria-label]{max-width:90px}}
 @media(prefers-reduced-motion:reduce){.rbrn-language-welcome *{scroll-behavior:auto}}
+
+
+/* Reborna artist galleries: editorial, photography-led, deliberately not a generic checkout grid. */
+.rbrn-marketplace{background:#faf7f1;color:#624b3b;min-height:80vh}
+.rbrn-marketplace-hero{max-width:1350px;margin:auto;padding:clamp(50px,7vw,105px) 24px 65px;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(35px,6vw,90px);align-items:center}
+.rbrn-marketplace-hero h1{font:400 clamp(45px,6.3vw,88px)/1.07 Georgia,serif;letter-spacing:-.045em;margin:20px 0 27px}
+.rbrn-marketplace-hero h1 em,.rbrn-marketplace-fees h2 em{font-style:italic;color:#96785f}
+.rbrn-marketplace-hero p{max-width:570px;color:#816a57;font:400 clamp(15px,1.7vw,19px)/1.8 Georgia,serif}
+.rbrn-marketplace-actions{display:flex;flex-wrap:wrap;gap:12px;margin:33px 0 24px}
+.rbrn-marketplace-actions>a,.rbrn-marketplace-bottom a{display:inline-flex;align-items:center;gap:8px;min-height:47px;text-decoration:none}
+.rbrn-marketplace-beta{font:700 10px/1.7 "DM Sans",sans-serif;letter-spacing:.16em;color:#9d8069}
+.rbrn-marketplace-arch{border-radius:47% 47% 3px 3px;aspect-ratio:4/5;background:linear-gradient(150deg,#e6d8c7,#cdb69d);padding:clamp(16px,3vw,38px);box-shadow:18px 20px 0 #efe8dd}
+.rbrn-marketplace-arch-inner{height:100%;border:1px solid #f5ece2;border-radius:46% 46% 3px 3px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:25px;color:#87684f;background:radial-gradient(ellipse at 50% 30%,#f4ebe0,#dfccba)}
+.rbrn-marketplace-arch-inner span{font:600 11px/1.6 "DM Sans",sans-serif;letter-spacing:.18em}
+.rbrn-marketplace-features{max-width:1350px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;padding:35px 24px 75px}
+.rbrn-marketplace-features>div{border-top:1px solid #d7c3b1;padding:25px 8px 0}
+.rbrn-marketplace-features svg{color:#967960}
+.rbrn-marketplace-features h2{font:400 25px/1.3 Georgia,serif;margin:13px 0 10px}
+.rbrn-marketplace-features p{font:13px/1.85 "DM Sans",sans-serif;color:#826c5c;margin:0}
+.rbrn-marketplace-features code{overflow-wrap:anywhere}
+.rbrn-marketplace-collection{background:#f2eae0;padding:75px max(24px,calc((100vw - 1302px)/2)) 95px}
+.rbrn-marketplace-sectionhead{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}
+.rbrn-marketplace-sectionhead h2{font:400 clamp(35px,4vw,56px) Georgia,serif;margin:12px 0 0}
+.rbrn-marketplace-sectionhead>p{font:12px/1.6 "DM Sans",sans-serif;color:#897464;max-width:230px}
+.rbrn-marketplace-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.rbrn-marketplace-card{text-decoration:none;color:inherit;display:block;background:#fffbf5;padding:12px 12px 25px}
+.rbrn-marketplace-card-photo{aspect-ratio:4/5;display:grid;place-items:center;background:#e4d4c4;color:#a1846b;overflow:hidden;margin-bottom:19px}
+.rbrn-marketplace-card-photo img{width:100%;height:100%;object-fit:cover}
+.rbrn-marketplace-card h3{font:400 27px Georgia,serif;margin:8px 6px}
+.rbrn-marketplace-card p{font:13px/1.7 "DM Sans",sans-serif;color:#8a7360;margin:8px 6px 14px}
+.rbrn-marketplace-card small{display:flex;gap:7px;align-items:center;margin:0 6px;font-size:11px}
+.rbrn-marketplace-empty{border:1px solid #d7c6b5;max-width:720px;margin:10px auto;text-align:center;padding:55px 25px;background:#faf6ef}
+.rbrn-marketplace-empty svg{color:#a18871}
+.rbrn-marketplace-empty h3{font:400 30px Georgia,serif;margin:15px 0}
+.rbrn-marketplace-empty p{font:13px/1.8 "DM Sans",sans-serif;color:#806d5b;max-width:480px;margin:0 auto 23px}
+.rbrn-marketplace-empty a{font-size:12px;color:#74563e}
+.rbrn-marketplace-fees{max-width:1350px;margin:auto;padding:100px 24px;display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.rbrn-marketplace-fees h2{font:400 clamp(35px,4.6vw,65px)/1.16 Georgia,serif;margin:18px 0}
+.rbrn-marketplace-fees>div>p{font:14px/1.9 "DM Sans",sans-serif;color:#816d5c;max-width:530px}
+.rbrn-marketplace-fee-card{padding:32px;background:#eee3d5;border:1px solid #d6c2ac}
+.rbrn-marketplace-fee-card>span{font:700 10px "DM Sans",sans-serif;letter-spacing:.16em}
+.rbrn-marketplace-fee-card>div{display:flex;align-items:baseline;gap:22px;margin:15px 0 0}
+.rbrn-marketplace-fee-card s{font:400 30px Georgia,serif;color:#a68c77}
+.rbrn-marketplace-fee-card>div strong{font:400 72px Georgia,serif}
+.rbrn-marketplace-fee-card p{font:12px/1.7 "DM Sans",sans-serif;color:#826c59}
+.rbrn-marketplace-fee-card hr{border:0;border-top:1px solid #d3c1ae;margin:20px 0}
+.rbrn-marketplace-total{display:block;font:600 15px "DM Sans",sans-serif;margin:17px 0}
+.rbrn-marketplace-fee-card small{display:block;color:#947e6c;line-height:1.65}
+.rbrn-marketplace-bottom{text-align:center;background:#e8dbcb;padding:75px 22px 90px}
+.rbrn-marketplace-bottom>svg{color:#95765d}
+.rbrn-marketplace-bottom h2{font:400 clamp(28px,4vw,45px) Georgia,serif;max-width:670px;margin:18px auto}
+.rbrn-marketplace-bottom p{font:14px/1.8 "DM Sans",sans-serif;max-width:550px;margin:0 auto 28px;color:#7c6552}
+.rbrn-marketplace-bottom>div{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.rbrn-gallery-studio{color:#604b3b}
+.rbrn-gallery-editor{margin:25px 0 35px;padding:clamp(15px,3vw,30px);border:1px solid #dcc9b8;background:#fcf9f4}
+.rbrn-gallery-editor-head{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:20px;flex-wrap:wrap}
+.rbrn-gallery-editor-head h3{font:400 30px Georgia,serif;margin:7px 0}
+.rbrn-gallery-editor-head h4{font:400 25px Georgia,serif;margin:7px 0}
+.rbrn-gallery-state{border:1px solid #c9b8a5;padding:6px 9px;font-size:10px;color:#866b54}
+.rbrn-gallery-state-approved{color:#4e735a;border-color:#93ac94}
+.rbrn-gallery-state-pending{color:#866540;border-color:#c8a474}
+.rbrn-gallery-cover{background:#e7d9ca;max-height:400px;min-height:180px;overflow:hidden;display:grid;place-items:center;border-radius:46% 46% 3px 3px;max-width:360px;aspect-ratio:4/4.7}
+.rbrn-gallery-cover img{width:100%;height:100%;object-fit:cover}
+.rbrn-gallery-cover>div{display:flex;align-items:center;flex-direction:column;gap:12px;color:#92765e}
+.rbrn-gallery-upload,.rbrn-gallery-add-photo{display:inline-flex;align-items:center;gap:9px;cursor:pointer;border:1px dashed #bfa991;padding:10px 15px;margin:15px 0;color:#765941;font-size:12px}
+.rbrn-gallery-upload input,.rbrn-gallery-add-photo input{max-width:220px;font-size:10px}
+.rbrn-gallery-form{display:grid;gap:17px;margin-top:24px}
+.rbrn-gallery-form>label,.rbrn-gallery-fields>label{display:grid;gap:7px;font:600 12px/1.5 "DM Sans",sans-serif}
+.rbrn-gallery-form small{font:400 11px/1.5 "DM Sans",sans-serif;color:#917b67}
+.rbrn-gallery-form input:not([type=file]),.rbrn-gallery-form textarea,.rbrn-gallery-form select{background:#fffdf9;border:1px solid #d9c8b6;border-radius:2px;padding:12px;font:13px/1.6 "DM Sans",sans-serif;color:#604936;width:100%;min-width:0}
+.rbrn-gallery-slug{display:flex;align-items:center;border:1px solid #d9c8b6;background:#fffdf9;max-width:540px}
+.rbrn-gallery-slug span{font-size:12px;padding:0 12px;color:#987e68;white-space:nowrap}
+.rbrn-gallery-slug input{border:0!important}
+.rbrn-gallery-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.rbrn-gallery-actions{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+.rbrn-gallery-actions button,.rbrn-gallery-actions a{display:inline-flex;gap:7px;align-items:center;min-height:42px;text-decoration:none}
+.rbrn-gallery-work-list{display:grid;gap:20px;margin-top:22px}
+.rbrn-gallery-work-list>article,.rbrn-gallery-review{border:1px solid #e1d3c4;padding:20px;background:#fffcf7}
+.rbrn-gallery-work-list p{color:#816c59;line-height:1.7}
+.rbrn-gallery-photos{display:flex;gap:9px;overflow-x:auto;padding:12px 0}
+.rbrn-gallery-photos>div{position:relative;flex:0 0 160px;height:185px}
+.rbrn-gallery-photos img{height:185px;max-width:220px;object-fit:cover;border-radius:2px}
+.rbrn-gallery-photos>div img{width:100%;height:100%}
+.rbrn-gallery-photos>div button{position:absolute;right:5px;top:5px;background:#fff9f2;border:1px solid #c8b39d;padding:6px;cursor:pointer}
+.rbrn-gallery-add-photo{flex:0 0 155px;height:185px;display:flex;flex-direction:column;justify-content:center;gap:8px;margin:0;text-align:center}
+.rbrn-gallery-add-photo input{max-width:140px}
+.rbrn-gallery-review{margin:15px 0}
+@media(max-width:800px){.rbrn-marketplace-hero,.rbrn-marketplace-fees{grid-template-columns:1fr}.rbrn-marketplace-arch{max-width:470px;width:100%;margin:auto}.rbrn-marketplace-features{grid-template-columns:1fr;gap:22px}.rbrn-marketplace-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.rbrn-marketplace-sectionhead{align-items:start;flex-direction:column}.rbrn-marketplace-fees{gap:25px}}
+@media(max-width:530px){.rbrn-marketplace-hero{padding:35px 16px 50px}.rbrn-marketplace-hero h1{font-size:43px}.rbrn-marketplace-collection{padding:50px 16px}.rbrn-marketplace-grid{grid-template-columns:1fr}.rbrn-marketplace-fees{padding:55px 16px}.rbrn-gallery-fields{grid-template-columns:1fr}.rbrn-gallery-editor{padding:14px}.rbrn-gallery-slug span{font-size:10px;padding:0 5px}.rbrn-gallery-slug input{font-size:11px!important}}

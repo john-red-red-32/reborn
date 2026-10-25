@@ -11,7 +11,7 @@ import {canonical} from "../lib/seo";
 const imageXmlUrl=(url:string)=>url.replace(/&amp;/g,"&").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 export default function sitemap():MetadataRoute.Sitemap{
  const pages:string[]=[
-  "/","/real-kits/","/artists/","/materials/","/events/","/community/",
+  "/","/real-kits/","/artists/","/materials/","/events/","/community/","/marketplace/",
   "/community/guidelines/","/for-sculptors/","/verify/","/guides/original-reborn-kits/","/guides/cassie-ann-love-sculpt-history/","/contact/","/privacy/","/terms/","/cookies/"
  ];
  const fixed=pages.map(path=>({url:canonical(path)}));
