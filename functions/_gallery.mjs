@@ -9,9 +9,9 @@ export async function viewer(db,request){
  const cookie=(request.headers.get('cookie')||'').split(';').map(x=>x.trim()).find(x=>x.startsWith('rb_session='));
  if(!cookie)return null;
  const token=cookie.slice(11);
- if(!/^[\\w-]{40,100}$/.test(token))return null;
+ if(!/^[\w-]{40,100}$/.test(token))return null;
  const hash=await crypto.subtle.digest('SHA-256',enc.encode(token));
- const value=btoa(String.fromCharCode(...new Uint8Array(hash))).replace(/\\+/g,'-').replace(/\\//g,'_').replace(/=+$/,'');
+ const value=btoa(String.fromCharCode(...new Uint8Array(hash))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
  return db.prepare("SELECT u.id,u.handle,u.display_name,u.email FROM sessions s JOIN users u ON u.id=s.user_id WHERE s.token_hash=? AND s.expires_at>datetime('now') AND u.status='active' AND u.email_verified_at IS NOT NULL").bind(value).first();
 }
 export async function moderator(db,id){return !!await db.prepare('SELECT 1 FROM community_moderators WHERE user_id=?').bind(id).first()}
