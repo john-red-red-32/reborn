@@ -54,6 +54,7 @@ jobs:
             d.executescript(Path(path).read_text())
           for table in ('artist_galleries','gallery_works','gallery_images','gallery_review_log','verified_sculptor_issuers','certificate_batches','certificate_codes','certificate_lookup_events','certificate_audit','certificate_issue_approvals','production_sculpts','production_editions','production_runs','production_codes','production_code_lookups','production_export_chunks','production_export_sessions','production_audit','production_corrections','production_link_proposals'):
             assert d.execute("SELECT name FROM sqlite_master WHERE type='table' AND name=?",(table,)).fetchone(),table
+          d.execute("SELECT g.slug,u.display_name AS displayName,g.headline,(SELECT i.id FROM gallery_images i JOIN gallery_works w ON w.id=i.work_id WHERE w.user_id=g.user_id AND w.state='approved' ORDER BY w.created_at DESC,i.sort_order LIMIT 1) AS coverId,COUNT(w.id) AS works FROM artist_galleries g JOIN users u ON u.id=g.user_id LEFT JOIN gallery_works w ON w.user_id=g.user_id AND w.state='approved' WHERE g.state='approved' AND u.status='active' GROUP BY g.user_id ORDER BY g.updated_at DESC LIMIT 48").fetchall()
           columns=[x[1] for x in d.execute("PRAGMA table_info(certificate_codes)")]
           assert 'code_hash' in columns and 'code' not in columns
           challenge_columns=[x[1] for x in d.execute("PRAGMA table_info(certificate_issue_approvals)")]
