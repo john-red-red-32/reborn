@@ -1,0 +1,57 @@
+name: Audit live Reborna artist galleries
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'functions/api/gallery/**'
+      - 'functions/u/**'
+      - 'functions/_gallery.mjs'
+      - 'components/GalleryStudio.tsx'
+      - 'components/ArtistMarketplace.tsx'
+      - '.github/workflows/audit-artist-galleries-live.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  gallery-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - name: Confirm reviewed-only artist galleries, private dashboard API and no checkout
+        run: |
+          python3 - <<'PY'
+          import time,json,urllib.request,urllib.error
+          base='https://reborna.co'
+          def get(path,method='GET',body=None,headers=None):
+            request=urllib.request.Request(base+path,method=method,data=body,headers=headers or {'User-Agent':'Reborna artist-gallery live audit'})
+            try:
+              with urllib.request.urlopen(request,timeout=25) as r:return r.status,r.headers,r.read().decode(errors='replace')
+            except urllib.error.HTTPError as e:return e.code,e.headers,e.read().decode(errors='replace')
+          for attempt in range(50):
+            problems=[]
+            try:
+              code,headers,html=get('/marketplace/')
+              if code!=200 or 'A gallery for' not in html or 'Estimated combined fees' not in html:problems.append(('marketplace',code))
+              code,headers,body=get('/api/gallery/public')
+              if code!=200:problems.append(('public api',code))
+              else:
+                d=json.loads(body)
+                if d.get('checkoutLive') is not False or d.get('auctionsLive') is not False or not isinstance(d.get('artists'),list):problems.append('unsafe marketplace response')
+              code,headers,body=get('/api/gallery/me')
+              if code!=401:problems.append(('private api',code))
+              code,headers,body=get('/api/gallery/review')
+              if code!=401:problems.append(('review api',code))
+              code,headers,body=get('/u/reborna-nonexistent-artist-test/')
+              if code!=404 or 'noindex' not in headers.get('X-Robots-Tag',''):problems.append(('unpublished artist URL',code))
+              code,headers,body=get('/api/gallery/profile','POST',b'{}',{'Content-Type':'application/json','Origin':'https://malicious.example'})
+              if code!=403:problems.append(('cross origin',code))
+              code,headers,body=get('/sitemap.xml')
+              if code!=200 or 'https://reborna.co/marketplace/' not in body:problems.append(('marketplace sitemap',code))
+            except Exception as e:problems.append(('network',str(e)[:160]))
+            if not problems:
+              print('PASS: marketplace, sitemap, public discovery, no live checkout, private galleries, unpublished noindex and CSRF guard')
+              break
+            print('Waiting for gallery production deployment',attempt+1,problems,flush=True)
+            time.sleep(9)
+          else:raise SystemExit('Live artist gallery audit failed')
+          PY
