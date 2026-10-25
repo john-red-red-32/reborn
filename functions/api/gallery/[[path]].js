@@ -1,7 +1,6 @@
 import {json,fail,clean,slugValid,viewer,moderator,publicProfile,publicWorks,imagesFor,sendReviewEmail,jsonBody,sameOrigin,photoUrl} from '../../_gallery.mjs';
 
 const UUID=/^[a-f0-9-]{36}$/;
-const state=['draft','pending','approved','rejected','hidden'];
 const fmt=['fixed','auction'];
 const status=['gallery','available','sold'];
 const kinds=['finished_doll','original_kit'];
@@ -13,10 +12,6 @@ function magicOK(bytes,mime){
  if(mime==='image/png')return bytes[0]===137&&bytes[1]===80&&bytes[2]===78&&bytes[3]===71&&bytes[4]===13&&bytes[5]===10&&bytes[6]===26&&bytes[7]===10;
  if(mime==='image/webp')return String.fromCharCode(...bytes.slice(0,4))==='RIFF'&&String.fromCharCode(...bytes.slice(8,12))==='WEBP';
  return false;
-}
-async function imageList(db,workIds){
- if(!workIds.length)return [];
- return (await db.prepare('SELECT id,work_id AS workId,sort_order AS sortOrder FROM gallery_images WHERE user_id=? ORDER BY created_at LIMIT 800').bind(workIds[0].user_id).all()).results||[];
 }
 async function fetchMine(db,user){
  const gallery=await db.prepare('SELECT slug,headline,story,cover_image_id AS coverImageId,state,updated_at AS updatedAt FROM artist_galleries WHERE user_id=?').bind(user.id).first();
@@ -60,9 +55,9 @@ export async function onRequest(context){
   }
   if(request.method==='GET'&&path==='photo'){
    const id=query.get('id');if(!safeId(id))return fail('Photo not found.',404);
-   const row=await db.prepare("SELECT i.*,w.state AS work_state,w.user_id AS work_owner,g.state AS gallery_state FROM gallery_images i LEFT JOIN gallery_works w ON w.id=i.work_id LEFT JOIN artist_galleries g ON g.user_id=i.user_id WHERE i.id=?").bind(id).first();
+   const row=await db.prepare("SELECT i.*,w.state AS work_state,w.user_id AS work_owner,g.state AS gallery_state,u.status AS owner_status FROM gallery_images i LEFT JOIN gallery_works w ON w.id=i.work_id LEFT JOIN artist_galleries g ON g.user_id=i.user_id JOIN users u ON u.id=i.user_id WHERE i.id=?").bind(id).first();
    if(!row)return fail('Photo not found.',404);
-   const publicImage=row.work_id?row.work_state==='approved'&&row.gallery_state==='approved':row.gallery_state==='approved'&&row.id===await db.prepare('SELECT cover_image_id FROM artist_galleries WHERE user_id=?').bind(row.user_id).first().then(x=>x?.cover_image_id);
+   const publicImage=row.owner_status==='active'&&(row.work_id?row.work_state==='approved'&&row.gallery_state==='approved':row.gallery_state==='approved'&&row.id===await db.prepare('SELECT cover_image_id FROM artist_galleries WHERE user_id=?').bind(row.user_id).first().then(x=>x?.cover_image_id));
    if(!publicImage){
     const current=await viewer(db,request);
     if(!current||current.id!==row.user_id&&!(await moderator(db,current.id)))return fail('Photo not found.',404);
@@ -128,6 +123,10 @@ export async function onRequest(context){
   if(path==='submit')return submit(db,env,context,user,await jsonBody(request));
   if(path==='upload'){
    if(!env.MEDIA_BUCKET)return fail('Photo uploads are not enabled in this environment.',503);
+   const totalPhotos=await db.prepare('SELECT COUNT(*) AS total FROM gallery_images WHERE user_id=?').bind(user.id).first();
+   if(totalPhotos.total>=80)return fail('The gallery pilot currently allows up to 80 photographs per artist.',409);
+   const recentPhotos=await db.prepare("SELECT COUNT(*) AS total FROM gallery_images WHERE user_id=? AND created_at>=datetime('now','-1 day')").bind(user.id).first();
+   if(recentPhotos.total>=20)return fail('Please wait until tomorrow to upload more gallery photos.',429);
    const workId=query.get('work'),scope=query.get('scope');
    if(scope!=='cover'&&!safeId(workId))return fail('Choose an artwork for this photo.');
    if(scope!=='cover'){
