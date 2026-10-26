@@ -3,6 +3,8 @@ import Link from "next/link";
 import {notFound} from "next/navigation";
 import {ArrowLeft,ArrowUpRight,CalendarDays,MapPin,ExternalLink} from "lucide-react";
 import {communityEvents,eventDateLabel,eventFocusLabel} from "../../../lib/community-events";
+import {eventSearchSnippet} from "../../../lib/search-growth";
+import {canonical} from "../../../lib/seo";
 import type {CommunityEvent} from "../../../lib/community-events";
 type Props={params:Promise<{slug:string}>};
 export function generateStaticParams(){return communityEvents.map(event=>({slug:event.slug}));}
@@ -10,7 +12,8 @@ export async function generateMetadata({params}:Props):Promise<Metadata>{
  const {slug}=await params;
  const event=communityEvents.find(item=>item.slug===slug);
  if(!event)return {title:"Event not found | Reborna"};
- return {title:event.name+" | Reborn Doll & Art Event | Reborna",description:event.description,alternates:{canonical:"/events/"+slug+"/"},openGraph:{title:event.name+" | Reborna",description:event.description,url:"https://reborna.co/events/"+slug+"/"}};
+ const {title,description}=eventSearchSnippet(event);
+ return {title,description,alternates:{canonical:"/events/"+slug+"/"},openGraph:{title,description,url:canonical("/events/"+slug+"/")}};
 }
 function eventJsonLd(event:CommunityEvent){
  return {"@context":"https://schema.org","@type":"Event",
@@ -19,13 +22,14 @@ function eventJsonLd(event:CommunityEvent){
   description:event.description,
   location:{"@type":"Place",name:event.venue,address:{"@type":"PostalAddress",streetAddress:event.streetAddress,addressLocality:event.city,addressRegion:event.region,postalCode:event.postalCode,addressCountry:event.countryCode}},
   organizer:{"@type":"Organization",name:event.organiser,url:event.officialUrl},
-  url:event.officialUrl};
+  url:canonical("/events/"+event.slug+"/"),sameAs:event.officialUrl};
 }
 export default async function EventDetail({params}:Props){
  const {slug}=await params;
  const event=communityEvents.find(item=>item.slug===slug);
  if(!event)notFound();
  const ld=JSON.stringify(eventJsonLd(event)).replace(/</g,"\\u003c");
+ const checkedOn=new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"long",year:"numeric",timeZone:"UTC"}).format(new Date(event.verifiedOn+"T12:00:00Z"));
  return <main className="rbrn-event-detail">
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:ld}}/>
   <div className="calendar-page-top"><Link href="/events/" className="back-link"><ArrowLeft size={16}/> All events</Link><span><CalendarDays size={16}/> SHOW / EXPO</span></div>
@@ -35,7 +39,7 @@ export default async function EventDetail({params}:Props){
    <h2>A little more about the gathering.</h2><p className="rbrn-event-focus-evidence"><strong>What kind of show is this?</strong> {event.focusEvidence}</p><p>{event.description}</p>
    <h3>What to look forward to</h3><ul>{event.highlights.map(item=><li key={item}>{item}</li>)}</ul>
    {event.featuredArtistSlug&&<p className="rbrn-event-artist-link">Artist spotlight: <Link href={"/artists/"+event.featuredArtistSlug+"/"}>Meet Bonnie Brown →</Link></p>}
-   <p className="rbrn-event-source">Event details verified 14 October 2026 via <a href={event.sourceUrl} target="_blank" rel="noopener noreferrer">the organiser's published information <ExternalLink size={13}/></a>. Dates and arrangements may change.</p>
+   <p className="rbrn-event-source">Event details verified {checkedOn} via <a href={event.sourceUrl} target="_blank" rel="noopener noreferrer">the organiser's published information <ExternalLink size={13}/></a>. Dates and arrangements may change.</p>
   </div>
   <aside className="rbrn-event-detail-aside" aria-label="Event information">
    <span className="rbrn-event-aside-eyebrow">THE ESSENTIALS</span><div className={"rbrn-event-focus rbrn-focus-"+event.focus}><span aria-hidden="true">✳</span> {eventFocusLabel(event)}</div>
