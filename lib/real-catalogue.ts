@@ -22,6 +22,7 @@ import {retailerProvenanceArtists} from "./retailer-provenance-artists";
 import {retailerProvenanceKits} from "./retailer-provenance-kits";
 import {recoveredKitPhotos,recoveredArtistCovers} from "./recovered-source-photos";
 import {raaNewArtists,raaNewKits} from "./raa-sculptor-catalogue";
+import {joannaResearchedKits} from "./joanna-researched-kits";
 export type ArtistImage={url:string;source:string;credit:string;role:"portrait"|"square"|"banner";reviewStatus:"source_identified"|"artist_approved";};
 export type VerifiedArtist = {slug:string;name:string;website:string;bio:string;source:string;websiteRole?:"artist"|"retailer_reference";images?:ArtistImage[]};
 export type KitVariant = {id:string;label:string;options:Record<string,string>;includedParts?:string[];photos?:{url:string;credit:string;source:string}[];sourceUrl?:string;verifiedAt?:string};
@@ -29,7 +30,7 @@ export type VerifiedKit = {material?:SculptMaterial;variants?:KitVariant[];varia
 const baseArtists:VerifiedArtist[]=[
 {slug:"nikki-johnston",name:"Nikki Johnston",website:"https://nikkisseasidebabies.co.uk/",bio:nikkiProfile.lead,source:"https://nikkisseasidebabies.co.uk/",images:[{url:nikkiKits[0].photos![0].url,source:nikkiKits[0].sources[0].url,credit:"Nikki’s Seaside Babies — featured sculpt artwork, not a portrait",role:"banner",reviewStatus:"source_identified"}]},
 {slug:"cassie-ann-love",name:"Cassie Ann Love",website:"https://www.cassielove.co.uk/",bio:"Independent reborn sculptor, previously known as Cassie Brace. Her official portfolio includes a range of original reborn doll sculpts.",source:"https://www.cassielove.co.uk/",images:[{url:cassieProfile.portrait.url,source:cassieProfile.portrait.source,credit:"Cassie Ann Love official website",role:"portrait",reviewStatus:"source_identified"}]},
-{slug:"joanna-kazmierczak",name:"Joanna Kazmierczak",website:"https://macphersoncrafts.com/",websiteRole:"retailer_reference",bio:"Sculptor whose Willow release is featured by specialist retailer MacPherson Arts & Crafts.",source:"https://macphersoncrafts.com/"},
+{slug:"joanna-kazmierczak",name:"Joanna Kazmierczak",website:"https://macphersoncrafts.com/",websiteRole:"retailer_reference",bio:"Joanna Kazmierczak is an original reborn doll sculptor whose documented vinyl designs include Willow, Lily, Irys, Charlie and other sculpt kits. A published MacPherson interview records her early work in polymer clay and her first Grantham kit in 2013. Reborna links to independent sources; this artist has not claimed her profile.",source:"https://macphersoncrafts.com/online-store/manufacturer/joanna-kazmierczak/by,category_name"},
 {slug:"dawn-mcleod",name:"Dawn McLeod",website:"https://macphersoncrafts.com/",websiteRole:"retailer_reference",bio:"Sculptor of Cypress, featured among specialist retailer MacPherson's pre-order releases.",source:"https://macphersoncrafts.com/"}
 ,...shopifyCohortArtists,...wixCohortArtists,mayraOriginalArtist,sandyOriginalArtist,adrieOriginalArtist,...indexedOriginalArtists,...retailerProvenanceArtists,...raaNewArtists
 ];
@@ -91,7 +92,7 @@ const cassieCuratedWithImages=manuallyCuratedKits.map(kit=>{
    ]:kit.sources
  };
 });
-const baseVerifiedKits:VerifiedKit[]=[...cassieCuratedWithImages,...cassieExpandedHistoricalKits,...shopifyCohortKits,...wixCohortKits,...mayraOriginalKits,...sandyOriginalKits,...adrieOriginalKits,...indexedOriginalKits,...retailerProvenanceKits,...raaNewKits];
+const baseVerifiedKits:VerifiedKit[]=[...cassieCuratedWithImages,...cassieExpandedHistoricalKits,...shopifyCohortKits,...wixCohortKits,...mayraOriginalKits,...sandyOriginalKits,...adrieOriginalKits,...indexedOriginalKits,...retailerProvenanceKits,...raaNewKits,...joannaResearchedKits];
 export const verifiedKits:VerifiedKit[]=baseVerifiedKits.map(kit=>kit.photos?.length||!recoveredKitPhotos[kit.slug]?kit:
   {...kit,photos:recoveredKitPhotos[kit.slug]});
 export const kitArtist=(slug:string)=>artists.find(a=>a.slug===slug);
