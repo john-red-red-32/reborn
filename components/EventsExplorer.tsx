@@ -28,6 +28,6 @@ export default function EventsExplorer(){
   </div>
   <div className="rbrn-events-grid">{events.map(event=><CommunityEventCard key={event.slug} event={event}/>)}</div>
   {!events.length&&<div className="rbrn-events-empty"><h3>{t("Nothing on the calendar here just yet.")}</h3><p>{t("Try another country. We only publish events whose dates and venues we can trace to an organiser.")}</p><button type="button" onClick={()=>{setCountry("all");setKind("all");setFocus("all");}}>{t("Show all events")}</button></div>}
-  <p className="rbrn-events-fineprint">{t("Dates and venues were checked against organisers on 14 October 2026 and may change. Always confirm details and tickets with the event organiser. Listings are editorial, not paid placements.")}</p>
+  <p className="rbrn-events-fineprint">{t("Event dates and venues come from organiser sources. Each event page shows its last verification date. Always confirm details and tickets with the organiser. Listings are editorial, not paid placements.")}</p>
  </section>;
 }
