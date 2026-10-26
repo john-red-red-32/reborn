@@ -510,11 +510,11 @@ export const extendedPhrases: Readonly<Record<string,readonly [string,string,str
   "Alle Veranstaltungen",
   "Показать все события"
  ],
- "Dates and venues were checked against organisers on 14 October 2026 and may change. Always confirm details and tickets with the event organiser. Listings are editorial, not paid placements.": [
-  "Las fechas y lugares se comprobaron con los organizadores el 14 de octubre de 2026 y pueden cambiar. Confirma detalles y entradas con ellos. Las fichas son editoriales, no publicidad de pago.",
-  "Date e sedi sono state verificate con gli organizzatori il 14 ottobre 2026 e possono cambiare. Conferma i dettagli e i biglietti con gli organizzatori. Gli annunci sono editoriali, non a pagamento.",
-  "Termine und Orte wurden am 14. Oktober 2026 bei den Veranstaltern geprüft und können sich ändern. Bitte bestätige Details und Tickets direkt beim Veranstalter. Einträge sind redaktionell, nicht bezahlt.",
-  "Даты и места проверены у организаторов 14 октября 2026 года и могут измениться. Уточняйте информацию и билеты у организаторов. Размещение редакционное, не платное."
+ "Event dates and venues come from organiser sources. Each event page shows its last verification date. Always confirm details and tickets with the organiser. Listings are editorial, not paid placements.": [
+   "Las fechas y los lugares proceden de fuentes oficiales de los organizadores. Cada evento indica cuándo se verificó por última vez. Confirma los detalles y las entradas con el organizador. Las fichas son editoriales, no anuncios de pago.",
+  "Le date e le sedi provengono da fonti degli organizzatori. Ogni evento indica la data dell'ultima verifica. Conferma dettagli e biglietti direttamente con l'organizzatore. Gli annunci sono editoriali, non a pagamento.",
+  "Termine und Veranstaltungsorte stammen von den Veranstaltern. Jede Eventseite zeigt das Datum der letzten Überprüfung. Bitte bestätige Details und Tickets direkt beim Veranstalter. Einträge sind redaktionell und nicht bezahlt.",
+  "Даты и места взяты из источников организаторов. На странице каждого события указана дата последней проверки. Уточняйте подробности и билеты у организатора. Размещение редакционное, не платное."
  ],
  "ORIGINAL SCULPTS · BETTER PROVENANCE": [
   "ESCULTURAS ORIGINALES · MEJOR PROCEDENCIA",

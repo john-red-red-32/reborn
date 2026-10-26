@@ -195,5 +195,7 @@ jobs:
           assert 'Reborna' in llm and 'https://reborna.co/artists/' in llm
           print('PASS',len(urls),'sitemap entries; static HTML and privacy-safe index boundaries')
           PY
+      - name: Audit source-backed artist snippets, new reborn kit records and event discovery
+        run: python3 scripts/audit_search_growth.py out
       - name: Audit image sitemap discovery, credit sources and third-party photo hosts
         run: python3 scripts/audit-image-discovery.py out --probe

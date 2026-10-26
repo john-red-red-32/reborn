@@ -1,15 +1,28 @@
-/** Organiser-sourced community events. Editorial facts checked 14 October 2026.
+/** Organiser-sourced community events. Each event has its own source and last-verified date; see verifiedOn.
  * No speculative dates, artist participation or affiliate relationships.
  * Shared source for the Events directory, event detail pages and Reborn Calendar.
  */
 export type CommunityEvent={
  slug:string; name:string; kind:"expo"|"class"; focus:"reborn-specific"|"includes-reborns"; focusEvidence:string; startDate:string; endDate:string;
- country:"United Kingdom"|"United States"|"Spain"; countryCode:"GB"|"US"|"ES";
+ country:"United Kingdom"|"United States"|"Spain"|"Germany"; countryCode:"GB"|"US"|"ES"|"DE";
  city:string; region:string; venue:string; streetAddress:string; postalCode:string;
  organiser:string; officialUrl:string; sourceUrl:string; description:string;
  highlights:readonly string[]; verifiedOn:string; featuredArtistSlug?:string;
 };
 export const communityEvents:readonly CommunityEvent[]=[
+ {
+  slug:"weissenfels-reborn-event-2027",name:"4. Reborn-Event Weißenfels",kind:"expo",
+  focus:"reborn-specific",
+  focusEvidence:"The city of Weißenfels describes an event dedicated specifically to realistic reborn baby doll art, featuring artists' work and demonstrations of painting, rooting and fine sculpt detail.",
+  startDate:"2027-03-06",endDate:"2027-03-07",country:"Germany",countryCode:"DE",
+  city:"Weißenfels",region:"Saxony-Anhalt",venue:"Kulturhaus Weißenfels",
+  streetAddress:"Merseburger Straße 14",postalCode:"06667",organiser:"Kulturamt Weißenfels",
+  officialUrl:"https://weissenfels.de/Kurzmen%C3%BC/4-REBORN-EVENT.php?FID=3720.260314.1&La=1&ModID=11&NavID=3678.7&object=tx%2C3720.4.1",
+  sourceUrl:"https://weissenfels-erlebnis.de/Entdecken-/Veranstaltungen/4-REBORN-EVENT.php?FID=3720.260315.1&ModID=11",
+  description:"The city of Weißenfels hosts its fourth Reborn-Event at the Kulturhaus on 6–7 March 2027. Collectors can meet reborn doll artists, see their detailed creations and learn about painting, hair rooting and the techniques used to create lifelike baby dolls.",
+  highlights:["Saturday 6 March: 10:00–17:00; Sunday 7 March: 10:00–16:00","Reborn baby doll artistry and hands-on demonstrations","Tickets available through the municipal organiser's advertised sales channels"],
+  verifiedOn:"2026-10-26"
+ },
  {
   slug:"muval-valencia-2026",name:"MUVAL — Salón de Muñecas y Coleccionismo",kind:"expo",
   focus:"includes-reborns",focusEvidence:"The organiser explicitly lists reborn art alongside Blythe, OOAK, vintage dolls, miniatures, bears and other collectibles. This is a mixed doll show, not a reborn-only expo.",

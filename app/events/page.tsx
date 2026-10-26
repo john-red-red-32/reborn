@@ -4,8 +4,8 @@ import Link from "next/link";
 import {ArrowLeft,CalendarDays,ArrowRight} from "lucide-react";
 import EventsExplorer from "../../components/EventsExplorer";
 export const metadata:Metadata={
- title:"Reborn Events Around the World | Reborna",
- description:"Explore independently verified reborn and doll shows in the UK, United States and beyond. Find dates, venues and links directly to event organisers.",
+ title:"Reborn Doll Shows & Events | UK, Europe & USA | Reborna",
+ description:"Find independently sourced reborn doll shows in Basildon, Orlando, Weißenfels, Spain and beyond. Explore dates, venues, show types and official organiser links.",
  alternates:{canonical:"/events/"}
 };
 export default function EventsPage(){
