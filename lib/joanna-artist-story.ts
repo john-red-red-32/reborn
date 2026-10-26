@@ -2,7 +2,7 @@
  * published interview, not a claim that Joanna has joined or endorsed Reborna.
  * Interview details are historical and are not statements of current stock.
  */
-export const joannaArtistStories={
+export const joannaArtistStories:Record<string,{headline:string;lead:string;story:string;legacy:string;sources:{label:string;url:string}[]}>= {
  "joanna-kazmierczak":{
   headline:"The sculptor behind original vinyl and silicone baby designs",
   lead:"Joanna Kazmierczak (also credited as Joanna Kazmierczak-Pietka) is an original reborn doll sculptor. Her documented vinyl designs include Grantham, April, Lou Lou, Willow, Lily, Irys and Charlie; independent specialist retailers publish named kit records and original artist credits.",
