@@ -30,6 +30,7 @@ export default async function EventDetail({params}:Props){
  if(!event)notFound();
  const ld=JSON.stringify(eventJsonLd(event)).replace(/</g,"\\u003c");
  const checkedOn=new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"long",year:"numeric",timeZone:"UTC"}).format(new Date(event.verifiedOn+"T12:00:00Z"));
+ const related=[...communityEvents].filter(item=>item.slug!==slug).sort((a,b)=>Math.abs(Date.parse(a.startDate)-Date.parse(event.startDate))-Math.abs(Date.parse(b.startDate)-Date.parse(event.startDate))).slice(0,3);
  return <main className="rbrn-event-detail">
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:ld}}/>
   <div className="calendar-page-top"><Link href="/events/" className="back-link"><ArrowLeft size={16}/> All events</Link><span><CalendarDays size={16}/> SHOW / EXPO</span></div>
@@ -49,6 +50,7 @@ export default async function EventDetail({params}:Props){
    <a href={event.officialUrl} className="rbrn-event-organiser-button" target="_blank" rel="noopener noreferrer">Visit official event site <ArrowUpRight size={18}/></a>
    <p>For tickets and final arrangements, always check directly with the organiser.</p>
   </aside></div>
+  {related.length>0&&<section className="rbrn-seo-related" aria-labelledby="related-reborn-shows"><span className="section-kicker">DISCOVER MORE REAL-WORLD EVENTS</span><h2 id="related-reborn-shows">Other documented reborn doll shows</h2><p>Explore individually researched events, keeping dedicated reborn shows distinct from broader doll fairs that include reborn artists. Always reconfirm the latest details with organisers.</p><div className="rbrn-seo-link-grid">{related.map(other=><Link key={other.slug} href={"/events/"+other.slug+"/"}>{other.name} <span>{other.city} · {eventDateLabel(other)} →</span></Link>)}</div></section>}
   <div className="rbrn-event-detail-footer"><Link href="/events/">← All community events</Link><Link href="/calendar/">Explore the Reborn Calendar →</Link></div>
  </main>;
 }
