@@ -515,7 +515,7 @@ export const extendedPhrases: Readonly<Record<string,readonly [string,string,str
   "Le date e le sedi provengono da fonti degli organizzatori. Ogni evento indica la data dell'ultima verifica. Conferma dettagli e biglietti direttamente con l'organizzatore. Gli annunci sono editoriali, non a pagamento.",
   "Termine und Veranstaltungsorte stammen von den Veranstaltern. Jede Eventseite zeigt das Datum der letzten Überprüfung. Bitte bestätige Details und Tickets direkt beim Veranstalter. Einträge sind redaktionell und nicht bezahlt.",
   "Даты и места взяты из источников организаторов. На странице каждого события указана дата последней проверки. Уточняйте подробности и билеты у организатора. Размещение редакционное, не платное."
- ]
+ ],
  "ORIGINAL SCULPTS · BETTER PROVENANCE": [
   "ESCULTURAS ORIGINALES · MEJOR PROCEDENCIA",
   "SCULTURE ORIGINALI · TRACCIABILITÀ",
