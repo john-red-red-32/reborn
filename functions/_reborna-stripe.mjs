@@ -39,7 +39,7 @@ export async function verifiedSignature(payload,signature,secret,now=Math.floor(
  if(!Number.isSafeInteger(ts)||Math.abs(now-ts)>300)return false;
  const signatures=signature.split(',').filter(x=>x.startsWith('v1=')).map(x=>x.slice(3).trim());
  if(!signatures.length)return false;
- const key=await crypto.subtle.importKey('raw',encoder.encode(secret),'HMAC',false,['sign']);
+ const key=await crypto.subtle.importKey('raw',encoder.encode(secret),{name:'HMAC',hash:'SHA-256'},false,['sign']);
  const digest=await crypto.subtle.sign('HMAC',key,encoder.encode(String(ts)+'.'+payload));
  const expected=Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');
  return signatures.some(given=>{
