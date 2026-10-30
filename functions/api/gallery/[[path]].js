@@ -5,6 +5,7 @@ const fmt=['fixed','auction'];
 const status=['gallery','available','sold'];
 const kinds=['finished_doll','original_kit'];
 const currencies=['GBP','EUR','USD'];
+const durations=[3,5,7,10,14];
 const safeId=id=>typeof id==='string'&&UUID.test(id);
 const imgMime={'image/jpeg':true,'image/webp':true,'image/png':true};
 function magicOK(bytes,mime){
@@ -17,7 +18,8 @@ async function fetchMine(db,user){
  const gallery=await db.prepare('SELECT slug,headline,story,cover_image_id AS coverImageId,state,updated_at AS updatedAt FROM artist_galleries WHERE user_id=?').bind(user.id).first();
  const works=(await db.prepare('SELECT id,title,description,kind,original_sculpt AS originalSculpt,original_sculptor AS originalSculptor,materials,provenance_note AS provenanceNote,display_status AS displayStatus,sale_format AS saleFormat,asking_price_minor AS askingPriceMinor,currency,state,created_at AS createdAt,updated_at AS updatedAt FROM gallery_works WHERE user_id=? ORDER BY updated_at DESC LIMIT 100').bind(user.id).all()).results||[];
  const images=(await db.prepare('SELECT id,work_id AS workId,sort_order AS sortOrder FROM gallery_images WHERE user_id=? ORDER BY sort_order,created_at LIMIT 800').bind(user.id).all()).results||[];
- return {gallery:gallery||null,works:works.map(w=>({...w,images:images.filter(i=>i.workId===w.id).map(i=>({...i,url:photoUrl(i.id)}))})),coverUrl:gallery?.coverImageId?photoUrl(gallery.coverImageId):null};
+ const sales=(await db.prepare('SELECT work_id AS workId,auction_duration_days AS auctionDurationDays,reserve_price_minor AS reservePriceMinor,buy_now_price_minor AS buyNowPriceMinor FROM gallery_sale_settings WHERE work_id IN (SELECT id FROM gallery_works WHERE user_id=?)').bind(user.id).all()).results||[];
+ return {gallery:gallery||null,works:works.map(w=>({...w,...(sales.find(s=>s.workId===w.id)||{auctionDurationDays:7,reservePriceMinor:null,buyNowPriceMinor:null}),images:images.filter(i=>i.workId===w.id).map(i=>({...i,url:photoUrl(i.id)}))})),coverUrl:gallery?.coverImageId?photoUrl(gallery.coverImageId):null};
 }
 async function submit(db,env,context,user,d){
  const type=clean(d.type,20),id=clean(d.id,60);
@@ -103,21 +105,25 @@ export async function onRequest(context){
    return json({ok:true,state:'draft',message:'Gallery saved privately. Request review when ready.'});
   }
   if(path==='work'){
-   const d=await jsonBody(request),title=clean(d.title,111),description=clean(d.description,3001),kind=clean(d.kind,30),sculpt=clean(d.originalSculpt,121),sculptor=clean(d.originalSculptor,121),materials=clean(d.materials,141),provenance=clean(d.provenanceNote,601),display=clean(d.displayStatus,20),format=clean(d.saleFormat,20),currency=clean(d.currency,3),price=d.askingPriceMinor;
+   const d=await jsonBody(request),title=clean(d.title,111),description=clean(d.description,3001),kind=clean(d.kind,30),sculpt=clean(d.originalSculpt,121),sculptor=clean(d.originalSculptor,121),materials=clean(d.materials,141),provenance=clean(d.provenanceNote,601),display=clean(d.displayStatus,20),format=clean(d.saleFormat,20),currency=clean(d.currency,3),price=d.askingPriceMinor,duration=d.auctionDurationDays??7,reserve=d.reservePriceMinor??null,buyNow=d.buyNowPriceMinor??null;
    if(title.length<2||title.length>110||description.length>3000||sculpt.length>120||sculptor.length>120||materials.length>140||provenance.length>600||!kinds.includes(kind)||!status.includes(display)||!fmt.includes(format)||!currencies.includes(currency)||!(price===null||Number.isInteger(price)&&price>=0&&price<=100000000))return fail('Please check the artwork details and price.');
    if(display==='available'&&price===null)return fail('An available artwork needs an asking price or opening bid.');
+   if(!durations.includes(duration)||![reserve,buyNow].every(n=>n===null||Number.isSafeInteger(n)&&n>=0&&n<=100000000))return fail('Check auction duration, reserve and Buy It Now prices.');
+   if(format==='auction'&&display==='available'&&price!==null&&(reserve!==null&&reserve<price||buyNow!==null&&buyNow<=price||buyNow!==null&&reserve!==null&&buyNow<=reserve))return fail('Reserve must not be below the opening bid, and Buy It Now must exceed the opening bid and reserve.');
    if(d.id){
     if(!safeId(d.id))return fail('Invalid artwork ID.');
     const old=await db.prepare('SELECT state FROM gallery_works WHERE id=? AND user_id=?').bind(d.id,user.id).first();
     if(!old)return fail('Artwork not found.',404);
     if(old.state==='pending')return fail('Wait for review before editing this artwork.',409);
     await db.prepare("UPDATE gallery_works SET title=?,description=?,kind=?,original_sculpt=?,original_sculptor=?,materials=?,provenance_note=?,display_status=?,sale_format=?,asking_price_minor=?,currency=?,state='draft',updated_at=datetime('now') WHERE id=? AND user_id=?").bind(title,description,kind,sculpt,sculptor,materials,provenance,display,format,price,currency,d.id,user.id).run();
+    await db.prepare("INSERT INTO gallery_sale_settings(work_id,auction_duration_days,reserve_price_minor,buy_now_price_minor) VALUES(?,?,?,?) ON CONFLICT(work_id) DO UPDATE SET auction_duration_days=excluded.auction_duration_days,reserve_price_minor=excluded.reserve_price_minor,buy_now_price_minor=excluded.buy_now_price_minor,updated_at=datetime('now')").bind(d.id,duration,format==='auction'?reserve:null,format==='auction'?buyNow:null).run();
     return json({ok:true,id:d.id,state:'draft'});
    }
    const count=await db.prepare('SELECT COUNT(*) AS total FROM gallery_works WHERE user_id=?').bind(user.id).first();
    if(count.total>=80)return fail('The pilot currently allows up to 80 artworks.',409);
    const id=crypto.randomUUID();
    await db.prepare("INSERT INTO gallery_works(id,user_id,title,description,kind,original_sculpt,original_sculptor,materials,provenance_note,display_status,sale_format,asking_price_minor,currency) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)").bind(id,user.id,title,description,kind,sculpt,sculptor,materials,provenance,display,format,price,currency).run();
+   await db.prepare('INSERT INTO gallery_sale_settings(work_id,auction_duration_days,reserve_price_minor,buy_now_price_minor) VALUES(?,?,?,?)').bind(id,duration,format==='auction'?reserve:null,format==='auction'?buyNow:null).run();
    return json({ok:true,id,state:'draft'},201);
   }
   if(path==='submit')return submit(db,env,context,user,await jsonBody(request));
