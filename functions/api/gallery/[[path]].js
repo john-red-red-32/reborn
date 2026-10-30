@@ -53,7 +53,8 @@ export async function onRequest(context){
  try{
   if(request.method==='GET'&&path==='public'){
    const list=(await db.prepare("SELECT g.slug,u.display_name AS displayName,g.headline,(SELECT i.id FROM gallery_images i JOIN gallery_works w ON w.id=i.work_id WHERE w.user_id=g.user_id AND w.state='approved' ORDER BY w.created_at DESC,i.sort_order LIMIT 1) AS coverId,COUNT(w.id) AS works FROM artist_galleries g JOIN users u ON u.id=g.user_id LEFT JOIN gallery_works w ON w.user_id=g.user_id AND w.state='approved' WHERE g.state='approved' AND u.status='active' GROUP BY g.user_id ORDER BY g.updated_at DESC LIMIT 48").all()).results||[];
-   return json({artists:list.map(a=>({...a,coverUrl:a.coverId?photoUrl(a.coverId):null})),checkoutLive:false,auctionsLive:false});
+   const listings=(await db.prepare("SELECT w.id,w.title,w.sale_format AS saleFormat,w.asking_price_minor AS askingPriceMinor,w.currency,g.slug,u.display_name AS artistName,(SELECT i.id FROM gallery_images i WHERE i.work_id=w.id ORDER BY i.sort_order,i.created_at LIMIT 1) AS photoId FROM gallery_works w JOIN artist_galleries g ON g.user_id=w.user_id JOIN users u ON u.id=w.user_id WHERE w.kind='finished_doll' AND w.display_status='available' AND w.state='approved' AND g.state='approved' AND u.status='active' ORDER BY w.updated_at DESC LIMIT 48").all()).results||[];
+   return json({artists:list.map(a=>({...a,coverUrl:a.coverId?photoUrl(a.coverId):null})),listings:listings.map(w=>({...w,photoUrl:w.photoId?photoUrl(w.photoId):null})),checkoutLive:false,auctionsLive:false});
   }
   if(request.method==='GET'&&path==='photo'){
    const id=query.get('id');if(!safeId(id))return fail('Photo not found.',404);
