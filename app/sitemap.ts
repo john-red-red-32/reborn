@@ -5,6 +5,7 @@ import {supplierListings} from "../lib/materials-catalogue";
 import {materialProductPages} from "../lib/material-routing";
 import {communityEvents} from "../lib/community-events";
 import {canonical} from "../lib/seo";
+import {editArticles} from "../lib/the-edit";
 
 // Next's sitemap serializer does not XML-escape image query strings.
 // Preserve exact remote image URLs while escaping reserved XML characters.
@@ -12,7 +13,7 @@ const imageXmlUrl=(url:string)=>url.replace(/&amp;/g,"&").replace(/&/g,"&amp;").
 export default function sitemap():MetadataRoute.Sitemap{
  const pages:string[]=[
   "/","/real-kits/","/artists/","/materials/","/events/","/community/","/marketplace/",
-  "/community/guidelines/","/for-sculptors/","/verify/","/guides/original-reborn-kits/","/guides/cassie-ann-love-sculpt-history/","/contact/","/privacy/","/terms/","/cookies/"
+  "/the-edit/","/collection/","/community/guidelines/","/for-sculptors/","/verify/","/guides/original-reborn-kits/","/guides/cassie-ann-love-sculpt-history/","/contact/","/privacy/","/terms/","/cookies/"
  ];
  const fixed=pages.map(path=>({url:canonical(path)}));
  const artistPages=artists.map(artist=>({
@@ -29,6 +30,7 @@ export default function sitemap():MetadataRoute.Sitemap{
   ...(item.product.photoUrls.length?{images:item.product.photoUrls.slice(0,3).map(imageXmlUrl)}:{})
  }));
  const events=communityEvents.map(event=>({url:canonical("/events/"+event.slug+"/")}));
+ const editorial=editArticles.map(article=>({url:canonical("/the-edit/"+article.slug+"/"),lastModified:new Date(article.published+"T12:00:00Z")}));
  // Avoid duplicates if source feeds repeat a merchant slug; never invent lastmod.
- return [...new Map([...fixed,...artistPages,...kitPages,...ranges,...materialPages,...events].map(page=>[page.url,page])).values()];
+ return [...new Map([...fixed,...artistPages,...kitPages,...ranges,...materialPages,...events,...editorial].map(page=>[page.url,page])).values()];
 }
