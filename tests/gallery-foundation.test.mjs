@@ -107,3 +107,24 @@ test('public marketplace only sources reviewed available completed dolls with re
  const query=sqlSeen.find(x=>x.includes("FROM gallery_works w JOIN artist_galleries g"));
  for(const restriction of ["w.kind='finished_doll'","w.display_status='available'","w.state='approved'","g.state='approved'","u.status='active'"])assert.ok(query.includes(restriction),restriction);
 });
+
+test('only approved artist artwork has a canonical individual listing page',async()=>{
+ const id='aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa';
+ const db=fakeDb((sql,args)=>{
+  if(sql.includes('FROM artist_galleries g JOIN users'))return {user_id:'artist-1',slug:'anna-studio',headline:'Beautiful finished dolls',story:'Artist statement',displayName:'Anna Studio',handle:'anna'};
+  if(sql.includes('FROM gallery_works w WHERE'))return [{id,title:'Little Evie',description:'Hand-painted reborn doll by Anna Studio',kind:'finished_doll',originalSculpt:'Evie',originalSculptor:'The Sculptor',materials:'Vinyl',provenanceNote:'Original source documented',displayStatus:'available',saleFormat:'auction',askingPriceMinor:12000,currency:'GBP'}];
+  if(sql.includes('SELECT cover_image_id'))return {cover_image_id:null};
+  if(sql.includes('FROM gallery_images WHERE work_id'))return [{id:'photo-1',workId:id,sortOrder:0}];
+  return null;
+ });
+ const good=await galleryPage({request:req('/u/anna-studio/artwork/'+id+'/'),env:{COMMUNITY_DB:db}});
+ assert.equal(good.status,200);
+ const markup=await good.text();
+ assert.match(markup,/Little Evie/);
+ assert.match(markup,/Proposed opening bid/);
+ assert.match(markup,/reborna.co\/u\/anna-studio\/artwork\/aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa\//);
+ assert.match(markup,/No payment or binding bid is accepted/);
+ const other=await galleryPage({request:req('/u/anna-studio/artwork/bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb/'),env:{COMMUNITY_DB:db}});
+ assert.equal(other.status,404);
+ assert.equal(other.headers.get('X-Robots-Tag'),'noindex');
+});
