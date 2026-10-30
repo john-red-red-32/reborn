@@ -10,10 +10,10 @@ export const isAccount=s=>typeof s==='string'&&/^acct_[A-Za-z0-9]{12,}$/.test(s)
 export const amountFee=minor=>Math.round(minor*FEE_BPS/10000);
 export function requestJson(body,status=200){return new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}})}
 export function error(message,status=400){return requestJson({error:message},status)}
-export function stripeEnabled(env){return env.REBORNA_STRIPE_LIVE_ENABLED==='enabled'&&typeof env.STRIPE_SECRET_KEY==='string'&&env.STRIPE_SECRET_KEY.startsWith('sk_live_')&&!!env.REBORNA_STRIPE_WEBHOOK_SECRET}
-export function onboardEnabled(env){return env.REBORNA_STRIPE_ONBOARDING_ENABLED==='enabled'&&typeof env.STRIPE_SECRET_KEY==='string'&&/^sk_(live|test)_/.test(env.STRIPE_SECRET_KEY)}
+export function stripeEnabled(env){return env.REBORNA_STRIPE_LIVE_ENABLED==='enabled'&&typeof env.STRIPE_SECRET_KEY==='string'&&/^(sk|rk)_live_/.test(env.STRIPE_SECRET_KEY)&&!!env.REBORNA_STRIPE_WEBHOOK_SECRET}
+export function onboardEnabled(env){return env.REBORNA_STRIPE_ONBOARDING_ENABLED==='enabled'&&typeof env.STRIPE_SECRET_KEY==='string'&&/^(sk|rk)_(live|test)_/.test(env.STRIPE_SECRET_KEY)}
 export async function stripe(env,path,{method='GET',params=null,idempotency=null}={}){
- if(!/^sk_(live|test)_/.test(env.STRIPE_SECRET_KEY||''))throw Error('Stripe account key is not configured for Reborna.');
+ if(!/^(sk|rk)_(live|test)_/.test(env.STRIPE_SECRET_KEY||''))throw Error('Stripe account key is not configured for Reborna.');
  const headers={'Authorization':'Bearer '+env.STRIPE_SECRET_KEY};
  if(idempotency)headers['Idempotency-Key']=idempotency;
  let body;
