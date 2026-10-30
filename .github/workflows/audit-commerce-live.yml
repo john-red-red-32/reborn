@@ -1,0 +1,44 @@
+name: Audit live Reborna Stripe marketplace readiness
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'functions/api/commerce/**'
+      - 'functions/_reborna-stripe.mjs'
+      - '.github/workflows/audit-commerce-live.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Verify production boundary without making payments
+        run: |
+          python3 - <<'PY'
+          import json,time,urllib.request,urllib.error
+          base='https://reborna.co'
+          def call(path,method='GET',data=None,headers=None):
+              req=urllib.request.Request(base+path,method=method,data=data,headers=headers or {'User-Agent':'Reborna commerce audit'})
+              try:
+                  with urllib.request.urlopen(req,timeout=22) as resp:return resp.status,resp.read().decode(errors='replace')
+              except urllib.error.HTTPError as e:return e.code,e.read().decode(errors='replace')
+          for attempt in range(30):
+              status,body=call('/api/commerce/status')
+              if status==200:
+                  data=json.loads(body)
+                  if data.get('checkoutLive') is False and data.get('sellerOnboardingAvailable') is False:break
+              time.sleep(5)
+          else:raise SystemExit('Marketplace runtime missing or financial gates unexpectedly open')
+          for path in ['/api/commerce/me','/api/commerce/orders']:
+              status,body=call(path)
+              assert status==401,(path,status,body[:180])
+          status,body=call('/api/commerce/checkout','POST',b'{}',{'Content-Type':'application/json','Origin':'https://untrusted.example'})
+          assert status==403,(status,body[:180])
+          status,body=call('/api/commerce/webhook','POST',b'{}',{'Content-Type':'application/json'})
+          assert status==400,(status,body[:180])
+          status,body=call('/marketplace/')
+          assert status==200,(status,body[:180])
+          print('PASS: public commerce status, signed-in requirements, origin guard, invalid webhook rejection and marketplace live; no transaction created')
+          PY
