@@ -1,6 +1,7 @@
 "use client";
 
 import {useEffect, useState} from "react";
+import {usePathname} from "next/navigation";
 import Link from "next/link";
 import styles from "./AnalyticsConsent.module.css";
 import {useShopLocale} from "./LocaleProvider";
@@ -26,29 +27,23 @@ function readChoice(): Choice | null {
 
 function startAnalytics(saved: Choice | null) {
   if (document.getElementById(SCRIPT_ID)) return;
-  // Advanced consent mode: load the Google tag immediately, but deny analytics
-  // cookies until a visitor has explicitly accepted. Denied mode sends only
-  // cookieless measurement pings, not full GA cookie-based visitor analytics.
   const win = window as AnalyticsWindow;
-  (window as unknown as Record<string, boolean>)[`ga-disable-${MEASUREMENT_ID}`] = false;
   win.dataLayer = win.dataLayer || [];
   win.gtag = (...args: unknown[]) => { win.dataLayer?.push(args); };
+  // Advanced Consent Mode: the Google tag loads on entry, but analytics
+  // storage remains denied until the visitor has opted in.
   win.gtag("consent", "default", {
     analytics_storage: "denied",
     ad_storage: "denied",
     ad_user_data: "denied",
     ad_personalization: "denied"
   });
-  if (saved === "accepted") win.gtag("consent", "update", {analytics_storage: "granted"});
+  if (saved === "accepted") {
+    win.gtag("consent", "update", {analytics_storage: "granted"});
+  }
   win.gtag("js", new Date());
-  // Strip query parameters: these can contain member or payment identifiers.
-  const pageLocation = location.origin + location.pathname;
-  let referrer = "";
-  try { const r = new URL(document.referrer); referrer = r.origin + r.pathname; } catch {}
   win.gtag("config", MEASUREMENT_ID, {
-    page_location: pageLocation,
-    page_path: location.pathname,
-    page_referrer: referrer,
+    send_page_view: false,
     allow_google_signals: false,
     allow_ad_personalization_signals: false
   });
@@ -59,9 +54,7 @@ function startAnalytics(saved: Choice | null) {
   document.head.appendChild(script);
 }
 
-function stopAnalytics() {
-  // Consent mode denies storage without removing the already loaded Google tag.
-  // Clear accessible first-party GA cookies when permission is withdrawn.
+function clearGaCookies() {
   for (const cookie of document.cookie.split(";")) {
     const name = cookie.split("=")[0]?.trim();
     if (!name || !/^_ga(?:_|$)|^_gid$|^_gat(?:_|$)/.test(name)) continue;
@@ -71,41 +64,63 @@ function stopAnalytics() {
   }
 }
 
+function updateConsent(next: Choice) {
+  (window as AnalyticsWindow).gtag?.("consent", "update", {
+    analytics_storage: next === "accepted" ? "granted" : "denied",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied"
+  });
+  if (next === "rejected") clearGaCookies();
+}
+
+// Don't send member account, private conversations, seller or admin routes,
+// search terms, session codes, emails or other query-string values to Google.
+function isPublicAnalyticsPath(pathname: string): boolean {
+  return !/^\/(?:account|dashboard|admin|inbox|messages|checkout|api|studio|seller|settings|verify|reset-password)(?:\/|$)/i.test(pathname);
+}
+
 export function AnalyticsSettingsButton() {
-  const{t}=useShopLocale();
+  const {t} = useShopLocale();
   return <button type="button" className={styles.settingsButton} onClick={() => window.dispatchEvent(new Event(SETTINGS_EVENT))}>{t("Analytics choices")}</button>;
 }
 
 export default function AnalyticsConsent() {
-  const{t}=useShopLocale();
+  const {t} = useShopLocale();
+  const pathname = usePathname();
+  const [ready, setReady] = useState(false);
   const [choice, setChoice] = useState<Choice | null>(null);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const saved = readChoice();
+    startAnalytics(saved);
     setChoice(saved);
     setOpen(!saved);
-    startAnalytics(saved);
+    setReady(true);
     const showSettings = () => setOpen(true);
     window.addEventListener(SETTINGS_EVENT, showSettings);
     return () => window.removeEventListener(SETTINGS_EVENT, showSettings);
   }, []);
 
+  useEffect(() => {
+    if (!ready || !isPublicAnalyticsPath(pathname)) return;
+    // Strip search parameters and fragments; never transmit user identifiers.
+    const pagePath = pathname || "/";
+    (window as AnalyticsWindow).gtag?.("event", "page_view", {
+      page_location: window.location.origin + pagePath,
+      page_path: pagePath,
+      page_title: "Reborna"
+    });
+  }, [pathname, ready]);
+
   const decide = (next: Choice) => {
-    const previouslyAccepted = choice === "accepted";
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify({choice: next, updatedAt: new Date().toISOString()}));
     } catch {
-      // Blocked storage must never accidentally authorise tracking.
       if (next === "accepted") return;
     }
-    (window as AnalyticsWindow).gtag?.("consent", "update", {
-      analytics_storage: next === "accepted" ? "granted" : "denied",
-      ad_storage: "denied",
-      ad_user_data: "denied",
-      ad_personalization: "denied"
-    });
-    if (next === "rejected" && previouslyAccepted) stopAnalytics();
+    updateConsent(next);
     setChoice(next);
     setOpen(false);
   };
@@ -115,7 +130,7 @@ export default function AnalyticsConsent() {
     <div className={styles.copy}>
       <span className={styles.eyebrow}>{t("YOUR PRIVACY, YOUR CHOICE")}</span>
       <h2>{t("Who doesn't love cookies?")}</h2>
-      <p>{t("Google Analytics measures visits with cookies disabled by default. Before you accept, it sends limited cookieless measurement to help us understand how Reborna is used. Accept for fuller analytics, or reject to keep optional cookies off.")} <Link href="/cookies/">{t("Learn more")}</Link>.</p>
+      <p>{t("Google Analytics loads with analytics cookies disabled, allowing limited cookieless measurement. If you accept, analytics cookies help us understand how visitors find Reborna. Reject keeps those cookies off, and you can change your choice at any time.")} <Link href="/cookies/">{t("Learn more")}</Link>.</p>
     </div>
     <div className={styles.actions}>
       <button type="button" className={styles.reject} onClick={() => decide("rejected")}>{t("Reject analytics")}</button>
