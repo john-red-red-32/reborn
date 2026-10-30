@@ -9,14 +9,33 @@ const format=(minor,currency)=>{try{return new Intl.NumberFormat('en-GB',{style:
 export async function onRequest({request,env}){
  const db=env.COMMUNITY_DB;
  const url=new URL(request.url);
- const slug=decodeURIComponent(url.pathname.replace(/^\/u\//,'').replace(/\/$/,''));
- if(!db||!slugValid(slug))return new Response('Gallery not found',{status:404,headers:{'X-Robots-Tag':'noindex'}});
+ const segments=url.pathname.replace(/^\/u\//,'').replace(/\/$/,'').split('/');
+ const slug=decodeURIComponent(segments[0]||'');
+ const workId=segments.length===3&&segments[1]==='artwork'?decodeURIComponent(segments[2]):null;
+ if(!db||!slugValid(slug)||(segments.length!==1&&!workId)||workId&&!/^[a-f0-9-]{36}$/.test(workId))return new Response('Gallery not found',{status:404,headers:{'X-Robots-Tag':'noindex'}});
  try{
   const artist=await publicProfile(db,slug);
   if(!artist)return new Response('This artist gallery is not published yet.',{status:404,headers:{'X-Robots-Tag':'noindex'}});
   const works=await publicWorks(db,artist.user_id);
   const cover=await db.prepare('SELECT cover_image_id FROM artist_galleries WHERE user_id=?').bind(artist.user_id).first();
   const coverSrc=cover?.cover_image_id?photoUrl(cover.cover_image_id):'';
+  if(workId){
+   const work=works.find(w=>w.id===workId);
+   if(!work)return new Response('Artwork is not published',{status:404,headers:{'X-Robots-Tag':'noindex'}});
+   const images=await imagesFor(db,work.id);
+   const photos=images.length?'<div class="photos" aria-label="Artwork photographs">'+images.map((i,n)=>'<img src="'+esc(photoUrl(i.id))+'" alt="'+esc(work.title)+' — photograph '+(n+1)+'" '+(n?'loading="lazy"':'')+'>').join('')+'</div>':'<div class="placeholder">Artwork photograph</div>';
+   const status=work.displayStatus==='sold'?'Previously collected — not for sale':work.displayStatus==='available'?'Available · enquiries only':'Artist portfolio — not for sale';
+   const displayPrice=work.displayStatus==='available'&&work.askingPriceMinor!==null?'<p class="price">'+esc(work.saleFormat==='auction'?'Proposed opening bid: ':'Asking price: ')+esc(format(work.askingPriceMinor,work.currency))+'</p>':'';
+   const pieces=[
+    work.originalSculpt?'Original sculpt: '+work.originalSculpt:'',
+    work.originalSculptor?'Original sculptor: '+work.originalSculptor:'',
+    work.materials?'Materials and techniques: '+work.materials:'',
+    work.provenanceNote?'Artist-supplied provenance: '+work.provenanceNote:''
+   ].filter(Boolean).map(x=>'<p class="details">'+esc(x)+'</p>').join('');
+   const individualBody='<main class="shell"><a class="back" href="/u/'+esc(slug)+'/">← Back to '+esc(artist.displayName)+'’s gallery</a><section class="hero"><div>'+photos+'</div><div><span class="eyebrow">ONE-OF-A-KIND '+(work.kind==='finished_doll'?'FINISHED REBORN':'ORIGINAL KIT')+'</span><h1>'+esc(work.title)+'</h1><p class="lead">By '+esc(artist.displayName)+'</p><p class="status">'+esc(status)+'</p>'+displayPrice+'<p class="story">'+esc(work.description)+'</p>'+pieces+'<p class="note">Availability and provenance details are supplied by the artist and independently reviewed for publication. No payment or binding bid is accepted through Reborna yet.</p></div></section></main>';
+   const canonical='https://reborna.co/u/'+encodeURIComponent(slug)+'/artwork/'+encodeURIComponent(work.id)+'/';
+   return new Response(html({title:work.title+' | '+artist.displayName+' | Reborna',description:work.description.slice(0,155)||'A finished reborn artwork by '+artist.displayName,canonical,body:individualBody,image:images[0]?'https://reborna.co'+photoUrl(images[0].id):null}),{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'public, max-age=60','X-Content-Type-Options':'nosniff'}});
+  }
   const cards={available:[],sold:[],gallery:[]};
   for(const w of works){
    const images=await imagesFor(db,w.id);
@@ -24,7 +43,7 @@ export async function onRequest({request,env}){
    const badge=w.displayStatus==='sold'?'Previously collected':w.displayStatus==='available'?'Available · enquiries only':'From the archive';
    const money=w.askingPriceMinor!==null&&w.displayStatus==='available'?'<div class="price">'+esc(format(w.askingPriceMinor,w.currency))+'</div>':'';
    const details=[w.originalSculpt?'Original sculpt: '+w.originalSculpt:'',w.originalSculptor?'Sculptor: '+w.originalSculptor:'',w.materials].filter(Boolean).map(x=>esc(x)).join(' · ');
-   cards[w.displayStatus==='available'?'available':w.displayStatus==='sold'?'sold':'gallery'].push('<article class="work">'+photos+'<div class="meta"><small>'+esc(w.kind==='original_kit'?'ORIGINAL SCULPT KIT':'COMPLETED REBORN')+'</small><span class="status">'+esc(badge)+'</span></div><h3>'+esc(w.title)+'</h3><p>'+esc(w.description)+'</p><div class="details">'+details+'</div>'+money+'</article>');
+   cards[w.displayStatus==='available'?'available':w.displayStatus==='sold'?'sold':'gallery'].push('<article class="work">'+photos+'<div class="meta"><small>'+esc(w.kind==='original_kit'?'ORIGINAL SCULPT KIT':'COMPLETED REBORN')+'</small><span class="status">'+esc(badge)+'</span></div><h3><a href="/u/'+encodeURIComponent(slug)+'/artwork/'+encodeURIComponent(w.id)+'/">'+esc(w.title)+'</a></h3><p>'+esc(w.description)+'</p><div class="details">'+details+'</div>'+money+'</article>');
   }
   const gallerySection=(title,subtitle,items)=>items.length?'<section><div class="divider"><div><span class="eyebrow">'+subtitle+'</span><h2>'+title+'</h2></div><span>'+items.length+' work'+(items.length===1?'':'s')+'</span></div><div class="gallery">'+items.join('')+'</div></section>':'';
   const body='<main class="shell"><a class="back" href="/marketplace/">← Explore artist galleries</a><section class="hero"><div class="hero-image">'+(coverSrc?'<img src="'+esc(coverSrc)+'" alt="'+esc(artist.displayName)+' studio cover">':'<span aria-hidden="true">✳</span>')+'</div><div><span class="eyebrow">THE REBORNA ARTIST GALLERY</span><h1>'+esc(artist.displayName)+'</h1><p class="lead">'+esc(artist.headline)+'</p><p class="story">'+esc(artist.story)+'</p></div></section>'+gallerySection('Currently available','AVAILABLE ARTWORK · ENQUIRIES ONLY',cards.available)+gallerySection('Previously collected','SOLD WORK · ARTIST ARCHIVE',cards.sold)+gallerySection('The artist’s portfolio','GALLERY WORK · NOT FOR SALE',cards.gallery)+'<p class="note">This is an independently managed artist gallery. Reborna reviews submissions before publication but does not authenticate physical dolls. Checkout and auctions are not yet enabled; displayed availability is artist-supplied and may change. Please use the contact page for feedback.</p></main>';
