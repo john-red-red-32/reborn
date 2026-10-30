@@ -33,7 +33,7 @@ export async function stripe(env,path,{method='GET',params=null,idempotency=null
 }
 export function sameSite(request){const origin=request.headers.get('Origin');return !origin||origin===LIVE_ORIGIN}
 export async function verifiedSignature(payload,signature,secret,now=Math.floor(Date.now()/1000)){
- if(!signature||!secret?.startsWith('whsec_')||typeof payload!=='string'||payload.length>250000)return false;
+ if(!signature||(typeof secret!=='string'||secret.length<9)||typeof payload!=='string'||payload.length>250000)return false;
  const parts=Object.fromEntries(signature.split(',').map(part=>part.trim().split('=',2)));
  const ts=Number(parts.t);
  if(!Number.isSafeInteger(ts)||Math.abs(now-ts)>300)return false;
