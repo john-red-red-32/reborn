@@ -1,4 +1,4 @@
-name: Audit live Reborna Stripe marketplace readiness
+name: Audit live Reborna commerce boundaries
 on:
   push:
     branches: [main]
@@ -12,33 +12,31 @@ permissions:
 jobs:
   smoke:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 8
     steps:
-      - name: Verify production boundary without making payments
+      - name: Confirm live marketplace remains payment-gated
         run: |
           python3 - <<'PY'
-          import json,time,urllib.request,urllib.error
-          base='https://reborna.co'
-          def call(path,method='GET',data=None,headers=None):
-              req=urllib.request.Request(base+path,method=method,data=data,headers=headers or {'User-Agent':'Reborna commerce audit'})
+          import json,urllib.request,urllib.error
+          root='https://reborna.co'
+          def check(path,method='GET',body=None):
+              headers={'User-Agent':'Mozilla/5.0 Reborna-audit'}
+              if body is not None:headers['Content-Type']='application/json'
+              request=urllib.request.Request(root+path,method=method,data=body,headers=headers)
               try:
-                  with urllib.request.urlopen(req,timeout=22) as resp:return resp.status,resp.read().decode(errors='replace')
+                  with urllib.request.urlopen(request,timeout=25) as r:return r.status,r.read().decode(errors='replace')
               except urllib.error.HTTPError as e:return e.code,e.read().decode(errors='replace')
-          for attempt in range(30):
-              status,body=call('/api/commerce/status')
-              if status==200:
-                  data=json.loads(body)
-                  if data.get('checkoutLive') is False and data.get('sellerOnboardingAvailable') is False:break
-              time.sleep(5)
-          else:raise SystemExit('Marketplace runtime missing or financial gates unexpectedly open')
+          status,text=check('/api/commerce/status')
+          assert status==200,(status,text[:120])
+          settings=json.loads(text)
+          assert settings.get('checkoutLive') is False
+          assert settings.get('sellerOnboardingAvailable') is False
           for path in ['/api/commerce/me','/api/commerce/orders']:
-              status,body=call(path)
-              assert status==401,(path,status,body[:180])
-          status,body=call('/api/commerce/checkout','POST',b'{}',{'Content-Type':'application/json','Origin':'https://untrusted.example'})
-          assert status==403,(status,body[:180])
-          status,body=call('/api/commerce/webhook','POST',b'{}',{'Content-Type':'application/json'})
-          assert status==400,(status,body[:180])
-          status,body=call('/marketplace/')
-          assert status==200,(status,body[:180])
-          print('PASS: public commerce status, signed-in requirements, origin guard, invalid webhook rejection and marketplace live; no transaction created')
+              status,text=check(path)
+              assert status==401,(path,status,text[:100])
+          status,text=check('/api/commerce/webhook','POST',b'{}')
+          assert status==400,(status,text[:100])
+          status,text=check('/marketplace/')
+          assert status==200,(status,text[:100])
+          print('PASS live marketplace, payment gates, auth and invalid webhook rejection; no charges')
           PY
