@@ -1,7 +1,7 @@
 import {viewer,clean,jsonBody} from '../../_gallery.mjs';
 import {requestJson,error,stripe,stripeEnabled,onboardEnabled,sameSite,verifiedSignature,isUuid,isAccount,amountFee,MINIMUM_PRICE_MINOR,orderGuard,LIVE_ORIGIN} from '../../_reborna-stripe.mjs';
 const ID=/^[a-f0-9-]{36}$/i;
-const EXPIRES_SECONDS=1800;
+const EXPIRES_SECONDS=2400;
 const isId=x=>typeof x==='string'&&ID.test(x);
 async function getSeller(db,id){
  return db.prepare('SELECT user_id,stripe_account_id,country,charges_enabled,payouts_enabled,details_submitted FROM gallery_stripe_sellers WHERE user_id=?').bind(id).first();
@@ -111,6 +111,7 @@ async function checkout(request,env,db,user){
  }
 }
 async function webhook(request,env,db){
+ if(Number(request.headers.get('content-length')||0)>250000)return error('Webhook is too large.',413);
  const body=await request.text();
  if(!await verifiedSignature(body,request.headers.get('stripe-signature'),env.REBORNA_STRIPE_WEBHOOK_SECRET))return error('Invalid Stripe webhook signature.',400);
  let ev;try{ev=JSON.parse(body)}catch{return error('Invalid Stripe event.',400)}
@@ -125,6 +126,7 @@ async function webhook(request,env,db){
    if(!order)return error('Checkout order not yet recorded.',503);
    // Ignore the untrusted webhook body for financial amounts: retrieve Stripe's authoritative session.
    const live=await stripe(env,'checkout/sessions/'+encodeURIComponent(item.id));
+   if(live.payment_status!=='paid')return requestJson({received:true,paymentPending:true});
    if(!orderGuard(order,live))return error('Payment record did not match order details.',409);
    if(order.status==='checkout'){
     const change=await db.prepare("UPDATE gallery_purchase_orders SET status='paid',stripe_payment_intent_id=?,updated_at=datetime('now') WHERE id=? AND status='checkout'").bind(String(live.payment_intent||''),order.id).run();
