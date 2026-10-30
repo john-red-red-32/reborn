@@ -1,0 +1,55 @@
+name: Verify Reborna shared Stripe Connect foundation
+on:
+  push:
+    branches: [feature/reborna-shared-stripe-connect-20261030, main]
+    paths:
+      - 'functions/api/commerce/**'
+      - 'functions/_reborna-stripe.mjs'
+      - 'functions/api/gallery/**'
+      - 'functions/u/**'
+      - 'components/GalleryStudio.tsx'
+      - 'db/reborna-*.sql'
+      - 'tests/reborna-shared-stripe.test.mjs'
+      - '.github/workflows/verify-reborna-stripe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Verify edge function syntax and payment boundaries
+        run: |
+          node --check 'functions/api/commerce/[[path]].js'
+          node --check functions/_reborna-stripe.mjs
+          node --check 'functions/u/[[handle]].js'
+          node --test tests/reborna-shared-stripe.test.mjs tests/gallery-foundation.test.mjs
+      - name: Validate additive SQLite schema and integrity
+        run: |
+          python3 - <<'PY'
+          import sqlite3
+          from pathlib import Path
+          db=sqlite3.connect(':memory:')
+          db.execute('PRAGMA foreign_keys=ON')
+          for f in ['db/community-schema.sql','db/artist-gallery-v1.sql','db/artist-marketplace-sale-settings-v1.sql','db/reborna-shared-stripe-connect-v1.sql','db/reborna-marketplace-shipping-v1.sql']:
+              script=Path(f).read_text()
+              db.executescript(script)
+          for f in ['db/reborna-shared-stripe-connect-v1.sql','db/reborna-marketplace-shipping-v1.sql']:
+              db.executescript(Path(f).read_text())
+          expected={'gallery_stripe_sellers','gallery_purchase_orders','gallery_checkout_holds','gallery_stripe_events','gallery_shipping_terms'}
+          found={r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+          assert expected<=found,(expected-found)
+          assert db.execute('SELECT COUNT(*) FROM gallery_purchase_orders').fetchone()[0]==0
+          assert db.execute('SELECT COUNT(*) FROM gallery_stripe_sellers').fetchone()[0]==0
+          print('PASS: additive repeatable Stripe Connect ledger, no real seller or order inserted')
+          PY
+      - name: Build and typecheck production website
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+        run: npm run build
