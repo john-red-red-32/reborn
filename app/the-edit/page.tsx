@@ -1,20 +1,30 @@
 import Link from "next/link";
 import type {Metadata} from "next";
-export const metadata:Metadata={title:"The Edit | Reborna — Reborn Doll Culture, Kits & Collecting",description:"The occasionally opinionated Reborna editorial: original sculpt kits, doll shows, collecting culture and why authenticity matters.",alternates:{canonical:"/the-edit/"}};
-const stories=[
-{tag:"THE COLLECTOR'S MANIFESTO",title:"Your wishlist is allowed to be completely unreasonable",dek:"One sculpt becomes three. Three becomes a spreadsheet. Darling, this is a collection, not a character flaw.",href:"/dashboard/",cta:"Build your collection"},
-{tag:"AUTHENTICITY, PLEASE",title:"The counterfeit kit problem: cute doll, ugly backstory",dek:"A suspiciously cheap kit is not always a bargain. Here's why the artist behind the original sculpt deserves to stay in the picture.",href:"/verify/",cta:"Explore kit verification"},
-{tag:"OUT & ABOUT",title:"Doll shows are having their main-character moment",dek:"Meet the makers, inspect the details and leave with approximately seventeen new favourites. Browse the event calendar before planning your next outing.",href:"/events/",cta:"Find upcoming shows"},
-{tag:"THE SCULPT WATCH",title:"The next obsession is probably already in the catalogue",dek:"From expressive little faces to distinctive artist signatures, discover original sculpts without the counterfeit chaos.",href:"/real-kits/",cta:"Discover original kits"}
-];
-export default function TheEdit(){return <main style={{maxWidth:1160,margin:"0 auto",padding:"clamp(36px,6vw,88px) 22px 110px"}}>
-<div style={{fontSize:12,letterSpacing:3,textTransform:"uppercase",color:"#8b766c"}}>REBORNA PRESENTS · THE EDIT</div>
-<h1 style={{fontFamily:"Georgia,serif",fontWeight:400,fontSize:"clamp(54px,9vw,110px)",lineHeight:1.04,margin:"22px 0"}}>Little dolls.<br/><em>Big opinions.</em></h1>
-<p style={{fontSize:"clamp(18px,2vw,23px)",lineHeight:1.65,maxWidth:730,color:"#655951"}}>A delightfully nosy corner of reborn culture: original sculpts, collector obsessions, shows worth knowing about and the occasional counterfeit side-eye. Written with love, not a corporate clipboard.</p>
-<p style={{fontSize:13,letterSpacing:1,color:"#917e73",marginTop:28}}>THE EDITORIAL DESK · BY FELIX FROST</p>
-<div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(min(100%,300px),1fr))",gap:24,marginTop:60}}>
-{stories.map((s,i)=><article key={s.title} style={{background:i%2?"#f3eee9":"#f8f5f1",padding:"clamp(26px,4vw,42px)",border:"1px solid #e8ded6",minHeight:320,display:"flex",flexDirection:"column"}}>
-<span style={{fontSize:11,letterSpacing:2,color:"#90796d"}}>{s.tag}</span><h2 style={{fontFamily:"Georgia,serif",fontSize:30,fontWeight:400,lineHeight:1.18,margin:"20px 0"}}>{s.title}</h2><p style={{lineHeight:1.7,color:"#675b54",flex:1}}>{s.dek}</p><Link style={{color:"#6e4c3e",fontWeight:600,marginTop:18}} href={s.href}>{s.cta} →</Link></article>)}
-</div><section style={{marginTop:70,padding:"40px",background:"#eae1da",textAlign:"center"}}><h2 style={{fontFamily:"Georgia,serif",fontSize:36,fontWeight:400}}>Keep the ones you love.</h2><p>Save your favourite sculpts now. Create a free account to bring your collection across devices.</p><Link href="/account/?from=the-edit" style={{display:"inline-block",background:"#503d34",color:"white",padding:"15px 26px",marginTop:14}}>Create your free account →</Link></section>
-<p style={{fontSize:12,color:"#82756d",marginTop:32}}>Editorial commentary and collecting inspiration. We distinguish opinion from verified release information; no invented artist quotes, release dates or event reports.</p>
-</main>}
+import {ArrowRight,ArrowUpRight,Heart} from "lucide-react";
+import {editArticles,editAuthor,editDate} from "../../lib/the-edit";
+import styles from "./editorial.module.css";
+export const metadata:Metadata={
+ title:"The Edit | Reborn Doll Stories, Collecting & Culture | Reborna",
+ description:"Original reborn doll kits, collector culture, doll show diaries and counterfeit awareness — an irreverent, source-conscious editorial by Reborna.",
+ alternates:{canonical:"/the-edit/"},
+ openGraph:{title:"The Edit — Little dolls. Big opinions.",description:"An occasionally outrageous, always original editorial corner of reborn collecting.",url:"https://reborna.co/the-edit/"}
+};
+export default function TheEdit(){return <main className={styles.editShell}>
+ <section className={styles.hero}><div>
+  <div className={styles.kicker}>REBORNA PRESENTS · THE EDIT</div>
+  <h1>Little dolls.<br/><em>Big opinions.</em></h1>
+  <p>Artist obsessions, original kits, event diaries and the occasional perfectly justified counterfeit side-eye. A little wit, a lot of love for the craft, and not a corporate clipboard in sight.</p>
+  <div className={styles.byline}>WITH FELIX FROST · REBORNA'S FICTIONAL EDITORIAL PERSONA</div>
+  <div className={styles.topics}><a href="#latest">The latest stories</a><Link href="/collection/">My collection</Link><Link href="/community/">The community forum</Link></div>
+ </div><div className={styles.heroArt} aria-label="Decorative Reborna editorial monogram"><span>r.</span><small>COLLECTING CULTURE<br/>WITHOUT THE BORING BITS</small></div></section>
+ <section id="latest" aria-labelledby="edit-latest"><div className={styles.sectionHeading}><div><span className={styles.kicker}>PULL UP A CHAIR, DARLING</span><h2 id="edit-latest">Fresh from the edit.</h2></div></div>
+ <div className={styles.grid}>{editArticles.map(article=><article key={article.slug} className={styles.feature+" "+styles[article.accent as keyof typeof styles]}>
+  <div><span className={styles.kicker}>{article.category} · {editDate(article.published)}</span>
+  <h3>{article.title}</h3><p>{article.deck}</p></div>
+  <Link className={styles.featureLink} href={"/the-edit/"+article.slug+"/"}>Read the story <ArrowUpRight size={17}/></Link>
+ </article>)}</div>
+ </section>
+ <section className={styles.signup}><div><span className={styles.kicker}>YOUR COLLECTION, YOUR RULES</span><h2>Keep the ones you love.</h2><p>Follow favourite sculptors, heart original kits, and make a gloriously unreasonable wishlist. You can start as a guest — a free account keeps everything together across devices.</p></div>
+ <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",gap:14}}><Link href="/collection/" className={styles.primary}>Open my collection <Heart size={17}/></Link><Link href="/account/?from=the-edit" className={styles.secondary}>Create a free account <ArrowRight size={15}/></Link></div></section>
+ <p className={styles.articleNote}>Felix Frost is Reborna's playful editorial pen name, not a real-world journalist. Stories clearly separate opinion from sourced event and product information. No invented interviews or collector quotes.</p>
+ </main>}
