@@ -38,7 +38,7 @@ test('all private gallery APIs require a verified account and reject cross-origi
 test('public artist discovery returns no unreviewed artwork and does not enable checkout',async()=>{
  const db=fakeDb(()=>[]);
  const r=await api({request:req('/api/gallery/public'),env:{COMMUNITY_DB:db}});
- assert.equal(r.status,200);assert.deepEqual(await r.json(),{artists:[],checkoutLive:false,auctionsLive:false});
+ assert.equal(r.status,200);assert.deepEqual(await r.json(),{artists:[],listings:[],checkoutLive:false,auctionsLive:false});
 });
 test('unapproved artist gallery pages never appear in public or in search',async()=>{
  const db=fakeDb(()=>null);
@@ -87,4 +87,23 @@ test('public reborn artist portfolio separates collected works from current avai
  assert.ok(markup.indexOf('Sold Robin')<markup.indexOf('Archive Daisy'));
  assert.match(markup,/£120\.00/);
  assert.match(markup,/Checkout and auctions are not yet enabled/);
+});
+
+test('public marketplace only sources reviewed available completed dolls with reviewed artists',async()=>{
+ const sqlSeen=[];
+ const db=fakeDb((sql,args,kind)=>{
+  sqlSeen.push(sql);
+  if(sql.includes("FROM gallery_works w JOIN artist_galleries g"))return [{id:'real-work',slug:'anna-studio',title:'Little Evie',artistName:'Anna Studio',saleFormat:'auction',askingPriceMinor:12000,currency:'GBP',photoId:'image-1'}];
+  return [];
+ });
+ const r=await api({request:req('/api/gallery/public'),env:{COMMUNITY_DB:db}});
+ assert.equal(r.status,200);
+ const data=await r.json();
+ assert.equal(data.listings.length,1);
+ assert.equal(data.listings[0].title,'Little Evie');
+ assert.equal(data.listings[0].photoUrl,'/api/gallery/photo?id=image-1');
+ assert.equal(data.checkoutLive,false);
+ assert.equal(data.auctionsLive,false);
+ const query=sqlSeen.find(x=>x.includes("FROM gallery_works w JOIN artist_galleries g"));
+ for(const restriction of ["w.kind='finished_doll'","w.display_status='available'","w.state='approved'","g.state='approved'","u.status='active'"])assert.ok(query.includes(restriction),restriction);
 });
