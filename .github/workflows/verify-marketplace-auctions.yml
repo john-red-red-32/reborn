@@ -1,7 +1,7 @@
 name: Verify marketplace auction foundations
 on:
   push:
-    branches: [feature/seller-studio-auction-first-20261030]
+    branches: [feature/marketplace-approved-listings-20261030]
   workflow_dispatch:
 permissions:
   contents: read
