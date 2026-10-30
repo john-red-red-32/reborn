@@ -31,7 +31,7 @@ export async function stripe(env,path,{method='GET',params=null,idempotency=null
  if(!response.ok){const code=String(data?.error?.code||'unknown').slice(0,80);throw Error('Stripe rejected the operation ('+code+').')}
  return data;
 }
-export function sameSite(request){const origin=request.headers.get('Origin');return !origin||origin===LIVE_ORIGIN}
+export function sameSite(request){const origin=request.headers.get('Origin');return !origin||(['https://reborna.co','https://www.reborna.co'].includes(origin)&&origin===new URL(request.url).origin)}
 export async function verifiedSignature(payload,signature,secret,now=Math.floor(Date.now()/1000)){
  if(!signature||(typeof secret!=='string'||secret.length<9)||typeof payload!=='string'||payload.length>250000)return false;
  const parts=Object.fromEntries(signature.split(',').map(part=>part.trim().split('=',2)));
