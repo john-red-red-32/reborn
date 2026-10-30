@@ -24,15 +24,34 @@ function readChoice(): Choice | null {
   }
 }
 
-function startAnalytics() {
+function startAnalytics(saved: Choice | null) {
   if (document.getElementById(SCRIPT_ID)) return;
-  // Withhold the tag entirely until the visitor has affirmatively opted in.
+  // Advanced consent mode: load the Google tag immediately, but deny analytics
+  // cookies until a visitor has explicitly accepted. Denied mode sends only
+  // cookieless measurement pings, not full GA cookie-based visitor analytics.
   const win = window as AnalyticsWindow;
   (window as unknown as Record<string, boolean>)[`ga-disable-${MEASUREMENT_ID}`] = false;
   win.dataLayer = win.dataLayer || [];
   win.gtag = (...args: unknown[]) => { win.dataLayer?.push(args); };
+  win.gtag("consent", "default", {
+    analytics_storage: "denied",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied"
+  });
+  if (saved === "accepted") win.gtag("consent", "update", {analytics_storage: "granted"});
   win.gtag("js", new Date());
-  win.gtag("config", MEASUREMENT_ID);
+  // Strip query parameters: these can contain member or payment identifiers.
+  const pageLocation = location.origin + location.pathname;
+  let referrer = "";
+  try { const r = new URL(document.referrer); referrer = r.origin + r.pathname; } catch {}
+  win.gtag("config", MEASUREMENT_ID, {
+    page_location: pageLocation,
+    page_path: location.pathname,
+    page_referrer: referrer,
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false
+  });
   const script = document.createElement("script");
   script.id = SCRIPT_ID;
   script.async = true;
@@ -41,10 +60,8 @@ function startAnalytics() {
 }
 
 function stopAnalytics() {
-  (window as unknown as Record<string, boolean>)[`ga-disable-${MEASUREMENT_ID}`] = true;
-  document.getElementById(SCRIPT_ID)?.remove();
-  // Removing the script does not unload a script already executed. The page
-  // is reloaded after withdrawal, and first-party GA cookies are cleared.
+  // Consent mode denies storage without removing the already loaded Google tag.
+  // Clear accessible first-party GA cookies when permission is withdrawn.
   for (const cookie of document.cookie.split(";")) {
     const name = cookie.split("=")[0]?.trim();
     if (!name || !/^_ga(?:_|$)|^_gid$|^_gat(?:_|$)/.test(name)) continue;
@@ -61,7 +78,6 @@ export function AnalyticsSettingsButton() {
 
 export default function AnalyticsConsent() {
   const{t}=useShopLocale();
-  const [ready, setReady] = useState(false);
   const [choice, setChoice] = useState<Choice | null>(null);
   const [open, setOpen] = useState(false);
 
@@ -69,15 +85,11 @@ export default function AnalyticsConsent() {
     const saved = readChoice();
     setChoice(saved);
     setOpen(!saved);
-    setReady(true);
+    startAnalytics(saved);
     const showSettings = () => setOpen(true);
     window.addEventListener(SETTINGS_EVENT, showSettings);
     return () => window.removeEventListener(SETTINGS_EVENT, showSettings);
   }, []);
-
-  useEffect(() => {
-    if (ready && choice === "accepted") startAnalytics();
-  }, [ready, choice]);
 
   const decide = (next: Choice) => {
     const previouslyAccepted = choice === "accepted";
@@ -87,11 +99,13 @@ export default function AnalyticsConsent() {
       // Blocked storage must never accidentally authorise tracking.
       if (next === "accepted") return;
     }
-    if (next === "rejected" && previouslyAccepted) {
-      stopAnalytics();
-      window.location.reload();
-      return;
-    }
+    (window as AnalyticsWindow).gtag?.("consent", "update", {
+      analytics_storage: next === "accepted" ? "granted" : "denied",
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied"
+    });
+    if (next === "rejected" && previouslyAccepted) stopAnalytics();
     setChoice(next);
     setOpen(false);
   };
@@ -101,7 +115,7 @@ export default function AnalyticsConsent() {
     <div className={styles.copy}>
       <span className={styles.eyebrow}>{t("YOUR PRIVACY, YOUR CHOICE")}</span>
       <h2>{t("Who doesn't love cookies?")}</h2>
-      <p>{t("We use optional Google Analytics cookies to understand how people find and explore Reborna, helping us make the experience even better. You can accept or reject them — Reborna works just as beautifully either way.")} <Link href="/cookies/">{t("Learn more")}</Link>.</p>
+      <p>{t("Google Analytics measures visits with cookies disabled by default. Before you accept, it sends limited cookieless measurement to help us understand how Reborna is used. Accept for fuller analytics, or reject to keep optional cookies off.")} <Link href="/cookies/">{t("Learn more")}</Link>.</p>
     </div>
     <div className={styles.actions}>
       <button type="button" className={styles.reject} onClick={() => decide("rejected")}>{t("Reject analytics")}</button>
