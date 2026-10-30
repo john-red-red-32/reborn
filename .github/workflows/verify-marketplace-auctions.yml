@@ -1,0 +1,42 @@
+name: Verify marketplace auction foundations
+on:
+  push:
+    branches: [feature/seller-studio-auction-first-20261030]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: Check Cloudflare Function syntax and gallery regression tests
+        run: |
+          node --check 'functions/api/gallery/[[path]].js'
+          node --check 'functions/u/[[handle]].js'
+          node --test tests/gallery-foundation.test.mjs
+      - name: Validate non-transactional auction migration
+        run: |
+          python3 - <<'PY'
+          import sqlite3
+          from pathlib import Path
+          db=sqlite3.connect(':memory:')
+          db.executescript(Path('db/community-schema.sql').read_text())
+          db.executescript(Path('db/artist-gallery-v1.sql').read_text())
+          schema=Path('db/artist-marketplace-sale-settings-v1.sql').read_text()
+          db.executescript(schema)
+          db.executescript(schema)
+          fields={row[1] for row in db.execute('PRAGMA table_info(gallery_sale_settings)')}
+          assert {'work_id','auction_duration_days','reserve_price_minor','buy_now_price_minor'}<=fields
+          assert db.execute("SELECT count(*) FROM gallery_sale_settings").fetchone()[0]==0
+          print('PASS: repeatable new auction table; no bids or transactions created')
+          PY
+      - name: TypeScript and Next.js production build
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+        run: npm run build

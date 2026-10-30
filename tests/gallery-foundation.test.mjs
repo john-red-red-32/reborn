@@ -67,3 +67,24 @@ test('private images are never publicly returned without gallery approval',async
  const r=await api({request:req('/api/gallery/photo?id=aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa'),env:{COMMUNITY_DB:db,MEDIA_BUCKET:{get:async()=>{throw Error('Storage should never be reached')}}}});
  assert.equal(r.status,404);
 });
+
+
+test('public reborn artist portfolio separates collected works from current availability',async()=>{
+ const db=fakeDb((sql,args,kind)=>{
+  if(sql.includes('FROM artist_galleries g JOIN users'))return {user_id:'artist-1',slug:'art-by-anna',headline:'Artfully painted dolls',story:'Portfolio of reborn doll artistry',displayName:'Anna Studio',handle:'anna'};
+  if(sql.includes('FROM gallery_works w WHERE'))return [
+    {id:'w1',title:'Available Evie',description:'Original finished reborn',kind:'finished_doll',originalSculpt:'Evie',originalSculptor:'Maker',materials:'Vinyl',displayStatus:'available',saleFormat:'auction',askingPriceMinor:12000,currency:'GBP'},
+    {id:'w2',title:'Sold Robin',description:'From my earlier collection',kind:'finished_doll',originalSculpt:'Robin',originalSculptor:'Maker',materials:'Vinyl',displayStatus:'sold',saleFormat:'fixed',askingPriceMinor:null,currency:'GBP'},
+    {id:'w3',title:'Archive Daisy',description:'Exhibition only',kind:'finished_doll',originalSculpt:'Daisy',originalSculptor:'Maker',materials:'Vinyl',displayStatus:'gallery',saleFormat:'fixed',askingPriceMinor:null,currency:'GBP'}
+  ];
+  if(sql.includes('SELECT cover_image_id'))return {cover_image_id:null};
+  return [];
+ });
+ const r=await galleryPage({request:req('/u/art-by-anna/'),env:{COMMUNITY_DB:db}});
+ assert.equal(r.status,200);const markup=await r.text();
+ for(const title of ['Currently available','Previously collected','The artist’s portfolio'])assert.match(markup,new RegExp(title));
+ assert.ok(markup.indexOf('Available Evie')<markup.indexOf('Sold Robin'));
+ assert.ok(markup.indexOf('Sold Robin')<markup.indexOf('Archive Daisy'));
+ assert.match(markup,/£120\.00/);
+ assert.match(markup,/Checkout and auctions are not yet enabled/);
+});
