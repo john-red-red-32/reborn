@@ -1,0 +1,60 @@
+name: Audit live The Edit publication and SEO
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'lib/edit-*.ts'
+      - 'lib/edit-release.json'
+      - 'app/the-edit/**'
+      - '.github/workflows/audit-the-edit-live.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Verify deployed HTML, canonical sitemap and unpublished embargo
+        run: |
+          python3 - <<'PY'
+          import time,urllib.request,urllib.error
+          BASE='https://reborna.co'
+          def get(path):
+              req=urllib.request.Request(BASE+path,headers={'User-Agent':'Mozilla/5.0 (compatible; Reborna-Editorial-Audit/1.0)','Accept':'text/html,application/xml'})
+              try:
+                  with urllib.request.urlopen(req,timeout=25) as r:return r.status,r.read().decode('utf8',errors='replace')
+              except urllib.error.HTTPError as e:return e.code,e.read().decode('utf8',errors='replace')
+          launched=[
+           'basildon-doll-show-2026-collector-field-notes',
+           'yophi-orlando-2026-artistry-beyond-showroom',
+           'weissenfels-reborn-event-2027-art-behind-the-baby',
+           'willow-joanna-kazmierczak-original-sculpt-guide',
+           'nikki-johnston-sculptor-collector-spotlight'
+          ]
+          future=['west-coast-doll-show-2027-bonnie-brown-ontario','kansas-doll-show-2027-ten-years-of-making']
+          # Cloudflare may be building concurrently with the merged source.
+          for attempt in range(40):
+              status,html=get('/the-edit/'+launched[0]+'/')
+              if status==200 and 'Basildon, baby' in html:break
+              time.sleep(9)
+          else:raise SystemExit('Cloudflare production has not published the initial story')
+          for slug in launched:
+              status,html=get('/the-edit/'+slug+'/')
+              assert status==200,(slug,status)
+              assert 'application/ld+json' in html,(slug,'no structured article data')
+              assert 'BreadcrumbList' in html,(slug,'no breadcrumbs')
+              assert '<link rel="canonical"' in html,(slug,'missing canonical')
+          for slug in future:
+              status,html=get('/the-edit/'+slug+'/')
+              assert status==404,(slug,status,'scheduled story is visible before publication')
+          status,sitemap=get('/sitemap.xml')
+          assert status==200,(status,'missing sitemap')
+          for slug in launched:assert '/the-edit/'+slug+'/' in sitemap,(slug,'not indexed')
+          for slug in future:assert '/the-edit/'+slug+'/' not in sitemap,(slug,'scheduled page leaked to sitemap')
+          status,listing=get('/events/the-doll-show-basildon-2026/')
+          assert status==200 and launched[0] in listing,(status,'missing event to story link')
+          status,home=get('/the-edit/')
+          assert status==200 and launched[0] in home,(status,'story missing from archive')
+          print('PASS: five first features live with structured data, event link, canonical URLs; 15 scheduled embargoed')
+          PY

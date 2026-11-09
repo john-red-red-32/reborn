@@ -1,0 +1,57 @@
+name: Verify The Edit editorial launch
+on:
+  push:
+    branches: [feature/the-edit-events-seo-20-articles-20261109, main]
+    paths:
+      - 'lib/edit-*.ts'
+      - 'lib/edit-*.json'
+      - 'lib/the-edit.ts'
+      - 'app/the-edit/**'
+      - 'app/events/[slug]/page.tsx'
+      - 'app/sitemap.ts'
+      - 'scripts/publish-the-edit.mjs'
+      - 'tests/the-edit-publishing.test.mjs'
+      - '.github/workflows/verify-the-edit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate dated publication schedule, content and source architecture
+        run: |
+          node --check scripts/publish-the-edit.mjs
+          node scripts/publish-the-edit.mjs --check --date=2026-11-09
+          node --test tests/the-edit-publishing.test.mjs
+      - name: Install dependency tree
+        run: npm install --no-audit --no-fund
+      - name: TypeScript and full production build
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+        run: |
+          npm run lint
+          npm run build
+      - name: Validate Cloudflare static export and editorial embargo
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+        run: |
+          cat > next.config.mjs <<'CONFIG'
+          /** @type {import('next').NextConfig} */
+          const config={output:'export',trailingSlash:true,images:{unoptimized:true}};
+          export default config;
+          CONFIG
+          npm run build
+          test -f out/the-edit/basildon-doll-show-2026-collector-field-notes/index.html
+          test -f out/the-edit/nikki-johnston-sculptor-collector-spotlight/index.html
+          test -f out/the-edit/yophi-orlando-2026-artistry-beyond-showroom/index.html
+          test ! -e out/the-edit/west-coast-doll-show-2027-bonnie-brown-ontario/index.html
+          test ! -e out/the-edit/kansas-doll-show-2027-ten-years-of-making/index.html
+          grep -q 'basildon-doll-show-2026-collector-field-notes' out/sitemap.xml
+          if grep -q 'west-coast-doll-show-2027-bonnie-brown-ontario' out/sitemap.xml; then exit 1; fi
+          echo 'PASS: initial five published as HTML, future editorial URLs remain unpublished and absent from sitemap.'

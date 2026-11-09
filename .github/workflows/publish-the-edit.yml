@@ -1,0 +1,61 @@
+name: Publish scheduled Felix Frost articles
+on:
+  schedule:
+    # November and December UK local time is GMT; allow for delayed GitHub cron execution.
+    - cron: '17 9 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: reborna-the-edit-publications
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Determine which articles have reached their date
+        run: |
+          set -euo pipefail
+          node scripts/publish-the-edit.mjs --check
+          node scripts/publish-the-edit.mjs
+          if git diff --quiet -- lib/edit-release.json; then
+            echo "PUBLISH_CHANGED=false" >> "$GITHUB_ENV"
+            echo "No publication due today."
+          else
+            echo "PUBLISH_CHANGED=true" >> "$GITHUB_ENV"
+          fi
+      - name: Verify all published article routes and build
+        if: env.PUBLISH_CHANGED == 'true'
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+        run: |
+          npm install --no-audit --no-fund
+          npm run lint
+          npm run build
+      - name: Publish due manifests to main and Cloudflare production source
+        if: env.PUBLISH_CHANGED == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lib/edit-release.json
+          git commit -m "Publish due stories in The Edit"
+          git push origin HEAD:main
+          git fetch origin main cloudflare-pages
+          git checkout -B cloudflare-pages origin/cloudflare-pages
+          git checkout origin/main -- lib/edit-release.json
+          git add lib/edit-release.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish scheduled The Edit stories on Cloudflare"
+            git push origin HEAD:cloudflare-pages
+          else
+            echo "Cloudflare publication manifest already up to date."
+          fi

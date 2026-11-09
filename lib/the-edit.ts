@@ -1,11 +1,18 @@
+import {editEventFeatures} from './edit-events';
+import {editSculptFeatures} from './edit-sculpts';
+import {editCollectingFeatures} from './edit-collecting';
+import {editCommunityFeatures} from './edit-community';
+import editorialRelease from './edit-release.json';
+
 export type EditArticle={
  slug:string;category:string;title:string;deck:string;published:string;readingMinutes:number;accent:string;
+ metaDescription?:string;eventSlug?:string;sourceLinks?:{label:string;url:string}[];
  lead:string;sections:{heading:string;paragraphs:string[]}[];
  related:{label:string;href:string}[];
  sourceNote?:string;
 };
 export const editAuthor="Felix Frost";
-export const editArticles:EditArticle[]=[
+const legacyEditArticles:EditArticle[]=[
  {
  slug:"wishlist-unreasonable",category:"THE COLLECTOR'S LIFE",title:"Your wishlist is allowed to be completely unreasonable",
  deck:"Some people collect stamps. You have seventeen tabs open and a very specific opinion about tiny vinyl toes. We see you.",
@@ -101,5 +108,13 @@ export const editArticles:EditArticle[]=[
  related:[{label:"Explore Nikki Johnston's original sculpts",href:"/artists/nikki-johnston/"},{label:"Discover Cassie Ann Love's sculpt history",href:"/guides/cassie-ann-love-sculpt-history/"},{label:"Save your favourites",href:"/collection/"},{label:"Browse the release calendar",href:"/calendar/"}]
  }
 ];
+// The schedule is checked by a daily GitHub Actions publisher. Only committed
+// release manifest slugs enter static routes, sitemap, related links and RSS.
+// Future manuscript content is never exposed by a pre-publication URL.
+export const editPipeline:EditArticle[]=[...editEventFeatures,...editSculptFeatures,...editCollectingFeatures,...editCommunityFeatures];
+const publishedSlugs=new Set<string>(editorialRelease.released);
+export const editArticles:EditArticle[]=[...legacyEditArticles,...editPipeline.filter(article=>publishedSlugs.has(article.slug))]
+ .sort((a,b)=>b.published.localeCompare(a.published)||a.title.localeCompare(b.title));
+export const editCategories=[...new Set(editArticles.map(article=>article.category))];
 export function editArticle(slug:string){return editArticles.find(article=>article.slug===slug)}
 export function editDate(date:string){return new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"long",year:"numeric",timeZone:"UTC"}).format(new Date(date+"T12:00:00Z"))}
