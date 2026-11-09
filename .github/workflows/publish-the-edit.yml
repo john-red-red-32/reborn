@@ -37,7 +37,7 @@ jobs:
         env:
           NEXT_TELEMETRY_DISABLED: '1'
         run: |
-          npm ci --no-audit --no-fund
+          npm install --no-audit --no-fund
           npm run lint
           npm run build
       - name: Publish due manifests to main and Cloudflare production source
