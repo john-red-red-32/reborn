@@ -1,20 +1,20 @@
 import Link from "next/link";
 import type {Metadata} from "next";
 import {ArrowRight,ArrowUpRight,Heart} from "lucide-react";
-import {editArticles,editDate} from "../../lib/the-edit";
+import {editArticles,editDate,editCategories} from "../../lib/the-edit";
 import {verifiedKits,kitArtist} from "../../lib/real-catalogue";
 import {sculptStatus,statusNames} from "../../lib/sculpt-status";
 import {communityEvents,eventDateLabel} from "../../lib/community-events";
 import styles from "./editorial.module.css";
 export const metadata:Metadata={
- title:"The Edit | Reborn Doll Stories, Collecting & Culture | Reborna",
- description:"Original reborn doll kits, collector culture, doll show diaries and counterfeit awareness — an irreverent, source-conscious editorial by Reborna.",
+ title:"The Edit | Reborn Doll Shows, Sculptors & Collector Culture | Reborna",
+ description:"Reborn doll event guides, original sculptor stories, authentic kit research and collector culture. Source-checked editorial by Felix Frost.",
  alternates:{canonical:"/the-edit/"},
  openGraph:{title:"The Edit — Little dolls. Big opinions.",description:"An occasionally outrageous, always original editorial corner of reborn collecting.",url:"https://reborna.co/the-edit/"}
 };
 export default function TheEdit(){
  const radar=verifiedKits.filter(k=>k.statusChecked?.startsWith("2026-10")&&["announced","preorder_open","in_production"].includes(sculptStatus(k))&&k.photos?.length).slice(0,4);
- const upcoming=communityEvents.filter(e=>e.startDate>="2026-10-30").sort((a,b)=>a.startDate.localeCompare(b.startDate)).slice(0,3);
+ const upcoming=communityEvents.filter(e=>e.endDate>=new Date().toISOString().slice(0,10)).sort((a,b)=>a.startDate.localeCompare(b.startDate)).slice(0,3);
  return <main className={styles.editShell}>
  <section className={styles.hero}><div>
   <div className={styles.kicker}>REBORNA PRESENTS · THE EDIT</div>
@@ -23,12 +23,16 @@ export default function TheEdit(){
   <div className={styles.byline}>WITH FELIX FROST · REBORNA'S FICTIONAL EDITORIAL PERSONA</div>
   <div className={styles.topics}><a href="#latest">The latest stories</a><Link href="/collection/">My collection</Link><Link href="/community/">The community forum</Link></div>
  </div><div className={styles.heroArt} aria-label="Decorative Reborna editorial monogram"><span>r.</span><small>COLLECTING CULTURE<br/>WITHOUT THE BORING BITS</small></div></section>
- <section id="latest" aria-labelledby="edit-latest"><div className={styles.sectionHeading}><div><span className={styles.kicker}>PULL UP A CHAIR, DARLING</span><h2 id="edit-latest">Fresh from the edit.</h2></div></div>
- <div className={styles.grid}>{editArticles.map(article=><article key={article.slug} className={styles.feature+" "+styles[article.accent as keyof typeof styles]}>
-  <div><span className={styles.kicker}>{article.category} · {editDate(article.published)}</span>
-  <h3>{article.title}</h3><p>{article.deck}</p></div>
-  <Link className={styles.featureLink} href={"/the-edit/"+article.slug+"/"}>Read the story <ArrowUpRight size={17}/></Link>
+ <section id="latest" aria-labelledby="edit-latest"><div className={styles.sectionHeading}><div><span className={styles.kicker}>PULL UP A CHAIR, DARLING</span><h2 id="edit-latest">The latest, with receipts.</h2></div></div>
+ <nav className={styles.categoryNav} aria-label="The Edit sections">{editCategories.map(category=><a key={category} href={"#category-"+category.toLowerCase().replace(/[^a-z0-9]+/g,"-")}>{category}</a>)}</nav>
+ {editCategories.map(category=><section key={category} className={styles.categorySection} id={"category-"+category.toLowerCase().replace(/[^a-z0-9]+/g,"-")}>
+ <h3 className={styles.categoryTitle}>{category}</h3>
+ <div className={styles.grid}>{editArticles.filter(article=>article.category===category).map(article=><article key={article.slug} className={styles.feature+" "+styles[article.accent as keyof typeof styles]}>
+ <div><span className={styles.kicker}>{editDate(article.published)} · {article.readingMinutes} min</span>
+ <h3>{article.title}</h3><p>{article.deck}</p></div>
+ <Link className={styles.featureLink} href={"/the-edit/"+article.slug+"/"}>Read the story <ArrowUpRight size={17}/></Link>
  </article>)}</div>
+ </section>)}
  </section>
  <section className={styles.recs}><div className={styles.sectionHeading}><div><span className={styles.kicker}>WHAT'S ON THE RADAR · SOURCED CATALOGUE</span><h2>Currently making eyes at us.</h2></div><Link className={styles.secondary} href="/calendar/">Full release calendar <ArrowUpRight size={15}/></Link></div>
  <p>Original kits marked as announced, in production or on pre-order in our October catalogue observations. This isn't a live stock guarantee; each kit links to its dated evidence.</p>
