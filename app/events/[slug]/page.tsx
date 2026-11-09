@@ -4,7 +4,8 @@ import {notFound} from "next/navigation";
 import {ArrowLeft,ArrowUpRight,CalendarDays,MapPin,ExternalLink} from "lucide-react";
 import {communityEvents,eventDateLabel,eventFocusLabel} from "../../../lib/community-events";
 import {eventSearchSnippet} from "../../../lib/search-growth";
-import {canonical} from "../../../lib/seo";
+import {canonical,safeJsonLd,breadcrumbJsonLd,homeCrumb} from "../../../lib/seo";
+import {editArticles} from "../../../lib/the-edit";
 import type {CommunityEvent} from "../../../lib/community-events";
 type Props={params:Promise<{slug:string}>};
 export function generateStaticParams(){return communityEvents.map(event=>({slug:event.slug}));}
@@ -28,11 +29,14 @@ export default async function EventDetail({params}:Props){
  const {slug}=await params;
  const event=communityEvents.find(item=>item.slug===slug);
  if(!event)notFound();
- const ld=JSON.stringify(eventJsonLd(event)).replace(/</g,"\\u003c");
+ const ld=safeJsonLd(eventJsonLd(event));
+ const breadcrumb=safeJsonLd(breadcrumbJsonLd([homeCrumb,{name:"Events",path:"/events/"},{name:event.name,path:"/events/"+event.slug+"/"}]));
+ const editorial=editArticles.filter(article=>article.eventSlug===event.slug);
  const checkedOn=new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"long",year:"numeric",timeZone:"UTC"}).format(new Date(event.verifiedOn+"T12:00:00Z"));
  const related=[...communityEvents].filter(item=>item.slug!==slug).sort((a,b)=>Math.abs(Date.parse(a.startDate)-Date.parse(event.startDate))-Math.abs(Date.parse(b.startDate)-Date.parse(event.startDate))).slice(0,3);
  return <main className="rbrn-event-detail">
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:ld}}/>
+  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:breadcrumb}}/>
   <div className="calendar-page-top"><Link href="/events/" className="back-link"><ArrowLeft size={16}/> All events</Link><span><CalendarDays size={16}/> SHOW / EXPO</span></div>
   <section className="rbrn-event-detail-hero"><span className="section-kicker">THE REBORNA COMMUNITY EDIT</span><div className={"rbrn-event-focus rbrn-focus-"+event.focus}><span aria-hidden="true">✳</span> {eventFocusLabel(event)}</div><h1>{event.name}<span className="period">.</span></h1><p>{event.city}, {event.region} · {event.country}</p></section>
   <div className="rbrn-event-detail-layout"><div className="rbrn-event-detail-story">
@@ -50,6 +54,7 @@ export default async function EventDetail({params}:Props){
    <a href={event.officialUrl} className="rbrn-event-organiser-button" target="_blank" rel="noopener noreferrer">Visit official event site <ArrowUpRight size={18}/></a>
    <p>For tickets and final arrangements, always check directly with the organiser.</p>
   </aside></div>
+  {editorial.length>0&&<section className="rbrn-seo-related" aria-labelledby="event-edit-stories"><span className="section-kicker">FROM FELIX FROST · THE EDIT</span><h2 id="event-edit-stories">Beyond the event listing</h2><p>Visitor context, collector perspective and independently attributed source links. This event listing remains the definitive Reborna page for dates and venue information.</p><div className="rbrn-seo-link-grid">{editorial.map(article=><Link key={article.slug} href={"/the-edit/"+article.slug+"/"}>{article.title}<span>Read the editorial →</span></Link>)}</div></section>}
   {related.length>0&&<section className="rbrn-seo-related" aria-labelledby="related-reborn-shows"><span className="section-kicker">DISCOVER MORE REAL-WORLD EVENTS</span><h2 id="related-reborn-shows">Other documented reborn doll shows</h2><p>Explore individually researched events, keeping dedicated reborn shows distinct from broader doll fairs that include reborn artists. Always reconfirm the latest details with organisers.</p><div className="rbrn-seo-link-grid">{related.map(other=><Link key={other.slug} href={"/events/"+other.slug+"/"}>{other.name} <span>{other.city} · {eventDateLabel(other)} →</span></Link>)}</div></section>}
   <div className="rbrn-event-detail-footer"><Link href="/events/">← All community events</Link><Link href="/calendar/">Explore the Reborn Calendar →</Link></div>
  </main>;
