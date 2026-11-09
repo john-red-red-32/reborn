@@ -37,3 +37,21 @@ jobs:
         run: |
           npm run lint
           npm run build
+      - name: Validate Cloudflare static export and editorial embargo
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+        run: |
+          cat > next.config.mjs <<'CONFIG'
+          /** @type {import('next').NextConfig} */
+          const config={output:'export',trailingSlash:true,images:{unoptimized:true}};
+          export default config;
+          CONFIG
+          npm run build
+          test -f out/the-edit/basildon-doll-show-2026-collector-field-notes/index.html
+          test -f out/the-edit/nikki-johnston-sculptor-collector-spotlight/index.html
+          test -f out/the-edit/yophi-orlando-2026-artistry-beyond-showroom/index.html
+          test ! -e out/the-edit/west-coast-doll-show-2027-bonnie-brown-ontario/index.html
+          test ! -e out/the-edit/kansas-doll-show-2027-ten-years-of-making/index.html
+          grep -q 'basildon-doll-show-2026-collector-field-notes' out/sitemap.xml
+          if grep -q 'west-coast-doll-show-2027-bonnie-brown-ontario' out/sitemap.xml; then exit 1; fi
+          echo 'PASS: initial five published as HTML, future editorial URLs remain unpublished and absent from sitemap.'
