@@ -1,0 +1,39 @@
+name: Verify The Edit editorial launch
+on:
+  push:
+    branches: [feature/the-edit-events-seo-20-articles-20261109, main]
+    paths:
+      - 'lib/edit-*.ts'
+      - 'lib/edit-*.json'
+      - 'lib/the-edit.ts'
+      - 'app/the-edit/**'
+      - 'app/events/[slug]/page.tsx'
+      - 'app/sitemap.ts'
+      - 'scripts/publish-the-edit.mjs'
+      - 'tests/the-edit-publishing.test.mjs'
+      - '.github/workflows/verify-the-edit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate dated publication schedule, content and source architecture
+        run: |
+          node --check scripts/publish-the-edit.mjs
+          node scripts/publish-the-edit.mjs --check --date=2026-11-09
+          node --test tests/the-edit-publishing.test.mjs
+      - name: Install dependency tree
+        run: npm install --no-audit --no-fund
+      - name: TypeScript and full production build
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+        run: |
+          npm run lint
+          npm run build
