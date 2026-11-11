@@ -35,6 +35,20 @@ export function artistSearchSnippet(artist:VerifiedArtist,kits:readonly Verified
 }
 export function eventSearchSnippet(event:CommunityEvent){
  const date=eventDateLabel(event);
+ // These pages already show relevant searches in GSC. Lead with exactly what
+ // the person searched for, while keeping every date and venue sourced.
+ if(event.slug==="the-doll-show-basildon-2026"){
+  return {
+   title:"Basildon Doll Show 2026 | 22 Nov, Tickets & Venue | Reborna",
+   description:readableSummary("The Doll Show in Basildon is scheduled for Sunday 22 November 2026 at Holiday Inn Basildon. Check admission, show hours, organiser sources and a collector's guide.")
+  };
+ }
+ if(event.slug==="yophi-doll-show-2026"){
+  return {
+   title:"Yophi Doll Show 2026 | Orlando, 14–15 Nov | Reborna",
+   description:readableSummary("Yophi Doll Show takes place in Orlando on 14–15 November 2026. Explore the reborn-art event, the documented venue, classes context and official organiser links.")
+  };
+ }
  const shortDay=new Intl.DateTimeFormat("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"}).format(new Date(event.startDate+"T12:00:00Z"));
  const dateLabel=event.startDate===event.endDate?shortDay:date;
  const base=`${event.name} | ${dateLabel} | Reborna`;
