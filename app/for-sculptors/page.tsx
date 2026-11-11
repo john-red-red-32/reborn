@@ -6,7 +6,7 @@ import styles from "./sculptors.module.css";
 
 export const metadata:Metadata={
  title:"For Original Reborn Sculptors & Artists | Reborna",
- description:"Original reborn sculptors: discover Reborna's independently researched archive, suggest factual profile corrections, share original sources and explore editorial collaborations.",
+ description:"Original reborn sculptors: join Reborna’s free, identity-reviewed certificate-code pilot. Document production runs, conceal unique codes and help collectors check issue history.",
  alternates:{canonical:"/for-sculptors/"},
  openGraph:{title:"For the artists behind the originals | Reborna",description:"A place to discover and credit independent reborn doll sculptors. Contribute source-backed portfolio information and explore future features.",url:canonical("/for-sculptors/")}
 };
@@ -32,7 +32,7 @@ export default function ForSculptors(){
    <p>Every original reborn doll begins with a sculptor's imagination, patience and craftsmanship. Reborna is building a carefully researched place to discover those designs, connect their stories and celebrate the people who created them.</p>
    <div className={styles.heroActions}>
     <Link className={styles.primary} href="/contact/?category=artist">Get in touch <ArrowUpRight size={17} aria-hidden="true"/></Link>
-    <Link className={styles.secondary} href="/artists/">Explore the artist archive <ArrowUpRight size={15} aria-hidden="true"/></Link>
+    <Link className={styles.secondary} href="#free-certificate-pilot">Free certificate pilot <ArrowUpRight size={15} aria-hidden="true"/></Link>
    </div>
    <p className={styles.heroNote}>An independent editorial platform, not an artist-managed marketplace. Participation is optional and does not imply endorsement.</p>
   </section>
