@@ -72,6 +72,22 @@ export default function ForSculptors(){
    </div>
    <div className={styles.protectionNote}><strong>Available now:</strong> source-backed research, reviewed artist submissions, collector certificate lookup and free code issuance for independently authorised original sculptors. <strong>Still in development:</strong> wider artist onboarding, more anti-counterfeit signals and a possible paid code service. A recorded code is never a guarantee that the physical product is original.</div>
   </section>
+  <section className={styles.certificatePilot} id="free-certificate-pilot" aria-labelledby="certificate-pilot-title">
+    <span className={styles.kicker}>ORIGINAL SCULPTORS · FREE PILOT</span>
+    <h2 id="certificate-pilot-title">Your work. Your edition. One more way to trace it.</h2>
+    <p>We’re inviting a small number of independent original sculptors to try Reborna’s certificate-code pilot. There is no charge for approved pilot runs, and no obligation to list or sell your work through Reborna.</p>
+    <div className={styles.pilotSteps}>
+      <article><strong>01</strong><h3>Join and identify your studio</h3><p>Create a free account, select the original sculptor role and submit your artist identity or profile claim for independent review. Issuing codes is not immediate or automatic.</p></article>
+      <article><strong>02</strong><h3>Request your production codes</h3><p>Once approved, request a named production run of 1–5,000 codes and export them securely. Conceal each unique code underneath a scratch-off or tamper-evident area; never post uncovered codes publicly.</p></article>
+      <article><strong>03</strong><h3>Give collectors a way to check</h3><p>Owners can enter the concealed code at Reborna to see the issuing sculptor, production record and prior checks. Repeated lookups can signal possible copying, but cannot prove a physical kit is genuine or fake.</p></article>
+    </div>
+    <div className={styles.pilotActions}>
+      <Link className={styles.primary} href="/account/?from=sculptor-pilot">Create a free sculptor account <ArrowUpRight size={17}/></Link>
+      <Link className={styles.secondary} href="/verify/">See the public code checker <ArrowUpRight size={16}/></Link>
+      <Link className={styles.textLink} href="/contact/?category=verification">Ask about the pilot</Link>
+    </div>
+    <p className={styles.pilotNote}>An artist-approved issuance record is one element of provenance, not a guarantee of authenticity. Codes can be copied. We review sculptor identity before enabling certificate generation, and artists remain responsible for keeping unused codes confidential.</p>
+  </section>
   <section className={styles.process} aria-labelledby="contribute-heading">
    <span className={styles.kicker}>HELP US GET THE DETAILS RIGHT</span>
    <h2 id="contribute-heading">Your perspective belongs in the story<span className={styles.period}>.</span></h2>
